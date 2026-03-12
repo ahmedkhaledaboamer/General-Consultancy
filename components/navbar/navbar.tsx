@@ -1,6 +1,5 @@
 "use client";
 
-import Button from "@/components/button";
 import { Link, usePathname } from "@/i18n/routing";
 import { cn } from "@/utils/cn";
 import { useLocale, useTranslations } from "next-intl";
@@ -8,6 +7,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import LocaleSwitcher from "../locale-switcher";
 import Logo from "../logo";
 import MobileNavbar from "./mobile-nav";
+import useMediaQuery from "@/hooks/useMediaQuery";
 
 interface Route {
   label: string;
@@ -20,6 +20,9 @@ export default function Navbar() {
   const locale = useLocale();
   const isRTL = useMemo(() => locale === "ar", [locale]);
   const routesRaw = t.raw("routes");
+  const isLaptop = useMediaQuery("(max-width: 1536px)");
+  const isMobile = useMediaQuery("(max-width: 768px)");
+
 
   // Memoize routes processing
   const routes = useMemo<Route[]>(() => {
@@ -33,6 +36,25 @@ export default function Navbar() {
       })
       .filter((route) => route.href && route.href !== "[object Object]");
   }, [routesRaw]);
+
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   // Memoize active route check
   const isActive = useCallback(
@@ -48,20 +70,20 @@ export default function Navbar() {
   return (
     <nav
       className={cn(
-        "bg-secondary/95 backdrop-blur-sm",
-        "absolute left-1/2 -translate-x-1/2 z-50",
-        "flex justify-between items-center",
-        "shadow-lg shadow-black/20",
+        "fixed inset-x-0 top-0 z-50 px-[5%]",
+        "flex justify-between items-center py-4",
         "transition-all duration-300 ease-in-out",
-        "w-full top-0 rounded-none fixed",
-        'px-4 py-4'
+        "w-full rounded-none ",
+        isScrolled
+          ? "bg-secondary/95 backdrop-blur-sm shadow-lg shadow-black/20"
+          : "bg-transparent backdrop-blur-none shadow-none"
       )}
       role="navigation"
       aria-label="Main navigation"
       dir={isRTL ? "rtl" : "ltr"}
     >
       {/* Logo */}
-      <Logo className=" transition-transform duration-300 hover:scale-105 w-fit" size={100} />
+      <Logo className=" transition-transform duration-300 hover:scale-105 w-fit" size={isLaptop && !isMobile ? 80: isMobile ? 60 : 100} />
 
       {/* Desktop Navigation Links */}
       <ul
@@ -82,7 +104,7 @@ export default function Navbar() {
                 isActive(route.href) ? "text-primary" : "hover:opacity-90"
               )}
               style={{
-                fontSize: "clamp(1rem, 1.25vw, 1.5rem)",
+                fontSize: "clamp(1rem, 0.55rem + 0.5vw, 1.75rem)",
                 paddingTop: "clamp(0.25rem, 0.5vw, 0.5rem)",
                 paddingBottom: "clamp(0.25rem, 0.5vw, 0.5rem)",
                 paddingLeft: "clamp(0.5rem, 0.75vw, 1rem)",
@@ -118,13 +140,7 @@ export default function Navbar() {
         <div className="hidden md:flex">
           <LocaleSwitcher />
         </div>
-        <Button
-          className="hidden lg:flex whitespace-nowrap"
-          variant="primary"
-          aria-label={t("cta")}
-        >
-          {t("cta")}
-        </Button>
+         
         <MobileNavbar />
       </div>
     </nav>

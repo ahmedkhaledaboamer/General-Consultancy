@@ -1,0 +1,181 @@
+"use client";
+import { motion } from 'framer-motion';
+import { CheckCircleIcon } from 'lucide-react';
+export function VisionMission() {
+  return (
+    <section className="py-24 md:py-32 bg-white overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Mission Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-32 relative">
+          <motion.div
+            className="lg:col-span-5"
+            initial={{
+              opacity: 0,
+              x: 50
+            }}
+            whileInView={{
+              opacity: 1,
+              x: 0
+            }}
+            viewport={{
+              once: true
+            }}
+            transition={{
+              duration: 0.8
+            }}>
+            
+            <div className="inline-block px-6 py-2 bg-gradient-to-r from-brand-pink to-brand-rose text-white rounded-full font-tajawal font-bold mb-6 shadow-lg shadow-brand-pink/30">
+              الغاية والهدف
+            </div>
+            <h2 className="text-5xl md:text-6xl font-cairo font-bold text-gray-900 mb-8">
+              رسالتنا
+            </h2>
+            <p className="text-2xl text-gray-600 leading-relaxed font-tajawal relative z-10">
+              تقديم استشارات واستراتيجيات استثمارية متكاملة تمكن عملائنا من
+              تحقيق أهدافهم ونمو مستدام، مع الالتزام بأعلى معايير الجودة،
+              الشفافية، والمصداقية.
+            </p>
+
+            {/* Small decorative thumbnail */}
+            <div className="absolute -bottom-10 -right-10 w-32 h-32 rounded-2xl overflow-hidden border-4 border-white shadow-2xl z-20 hidden md:block">
+              <img
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&q=80"
+                alt="Success"
+                className="w-full h-full object-cover" />
+              
+            </div>
+          </motion.div>
+
+          <motion.div
+            className="lg:col-span-7 relative"
+            initial={{
+              opacity: 0,
+              scale: 0.9
+            }}
+            whileInView={{
+              opacity: 1,
+              scale: 1
+            }}
+            viewport={{
+              once: true
+            }}
+            transition={{
+              duration: 0.8,
+              delay: 0.2
+            }}>
+            
+            <div className="absolute -inset-4 bg-gradient-to-tr from-brand-pink via-brand-purple to-brand-orange rounded-[2.5rem] opacity-50 blur-lg" />
+            <div className="relative h-80 lg:h-[500px] rounded-[2rem] overflow-hidden shadow-2xl border-8 border-white">
+              <div className="absolute inset-0 bg-brand-purple/10 mix-blend-overlay z-10" />
+              <img
+                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80"
+                alt="Strategy Planning"
+                className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700" />
+              
+            </div>
+          </motion.div>
+        </div>
+
+        {/* Decorative Divider */}
+        <div className="flex justify-center items-center my-20 relative">
+          <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent absolute" />
+          <div className="w-16 h-16 rounded-full bg-gradient-to-br from-brand-teal to-brand-blue flex items-center justify-center shadow-lg shadow-brand-teal/30 relative z-10 animate-pulse-slow">
+            <div className="w-8 h-8 rounded-full bg-white/20 backdrop-blur-sm" />
+          </div>
+        </div>
+
+        {/* Vision Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <motion.div
+            className="lg:col-span-7 relative order-2 lg:order-1"
+            initial={{
+              opacity: 0,
+              scale: 0.9
+            }}
+            whileInView={{
+              opacity: 1,
+              scale: 1
+            }}
+            viewport={{
+              once: true
+            }}
+            transition={{
+              duration: 0.8,
+              delay: 0.2
+            }}>
+            
+            <div className="absolute -inset-4 bg-gradient-to-bl from-brand-teal via-brand-blue to-brand-indigo rounded-[2.5rem] opacity-50 blur-lg" />
+            <div className="relative h-80 lg:h-[500px] rounded-[2rem] overflow-hidden shadow-2xl border-8 border-white">
+              <div className="absolute inset-0 bg-brand-teal/10 mix-blend-overlay z-10" />
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80"
+                alt="Growth Chart"
+                className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700" />
+              
+            </div>
+
+            {/* Small decorative thumbnail */}
+            <div className="absolute -top-10 -left-10 w-32 h-32 rounded-2xl overflow-hidden border-4 border-white shadow-2xl z-20 hidden md:block">
+              <img
+                src="https://images.unsplash.com/photo-1557682250-33bd709cbe85?w=400&q=80"
+                alt="Abstract"
+                className="w-full h-full object-cover" />
+              
+            </div>
+          </motion.div>
+
+          <motion.div
+            className="lg:col-span-5 order-1 lg:order-2"
+            initial={{
+              opacity: 0,
+              x: -50
+            }}
+            whileInView={{
+              opacity: 1,
+              x: 0
+            }}
+            viewport={{
+              once: true
+            }}
+            transition={{
+              duration: 0.8
+            }}>
+            
+            <div className="inline-block px-6 py-2 bg-gradient-to-r from-brand-teal to-brand-blue text-white rounded-full font-tajawal font-bold mb-6 shadow-lg shadow-brand-teal/30">
+              المستقبل والطموح
+            </div>
+            <h2 className="text-5xl md:text-6xl font-cairo font-bold text-gray-900 mb-8">
+              رؤيتنا
+            </h2>
+            <p className="text-2xl text-gray-600 leading-relaxed font-tajawal mb-10">
+              أن نصبح الشركة الرائدة والأكثر موثوقية في مجال الاستشارات العامة
+              والاستثمارية، من خلال:
+            </p>
+            <ul className="space-y-6 font-tajawal text-xl text-gray-700">
+              <li className="flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                <div className="w-10 h-10 rounded-full bg-brand-emerald/10 flex items-center justify-center flex-shrink-0">
+                  <CheckCircleIcon className="text-brand-emerald w-6 h-6" />
+                </div>
+                <span className="font-bold">قيادة مبتكرة ومؤثرة</span>
+              </li>
+              <li className="flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                <div className="w-10 h-10 rounded-full bg-brand-emerald/10 flex items-center justify-center flex-shrink-0">
+                  <CheckCircleIcon className="text-brand-emerald w-6 h-6" />
+                </div>
+                <span className="font-bold">تطوير حلول مستدامة</span>
+              </li>
+              <li className="flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                <div className="w-10 h-10 rounded-full bg-brand-emerald/10 flex items-center justify-center flex-shrink-0">
+                  <CheckCircleIcon className="text-brand-emerald w-6 h-6" />
+                </div>
+                <span className="font-bold">
+                  تحقيق أثر إيجابي ملموس على شركائنا وعملائنا
+                </span>
+              </li>
+            </ul>
+          </motion.div>
+        </div>
+      </div>
+    </section>);
+
+}
