@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { EyeIcon, TargetIcon } from 'lucide-react';
 export function VisionMission() {
   return (
-    <section className="py-32 relative overflow-hidden">
+    <section className=" p-[5%]  relative overflow-hidden">
       {/* Full-width Background Image with Colorful Gradient Overlay */}
       <div className="absolute inset-0 z-0">
         <img
@@ -39,7 +39,7 @@ export function VisionMission() {
         </svg>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className=" px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-20">
           <motion.div
             initial={{

@@ -109,7 +109,7 @@ function StatItem({ stat, index }: {stat: any;index: number;}) {
 }
 export function StatsSection() {
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className=" p-[5%]  relative overflow-hidden">
       {/* Background Image with Vibrant Gradient */}
       <div className="absolute inset-0 z-0">
         <img
@@ -120,7 +120,7 @@ export function StatsSection() {
         <div className="absolute inset-0 bg-gradient-to-r from-sky/90 via-violet/90 to-magenta/90 mix-blend-multiply"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="  relative z-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) =>
           <StatItem key={index} stat={stat} index={index} />

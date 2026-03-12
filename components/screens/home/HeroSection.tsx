@@ -1,8 +1,7 @@
 "use client";
 import { motion } from 'framer-motion';
 import {
-  ChevronDownIcon,
-  TrendingUpIcon,
+   TrendingUpIcon,
   BriefcaseIcon,
   AwardIcon } from
 'lucide-react';
@@ -19,7 +18,7 @@ export function HeroSection() {
           alt="Dubai Skyline Night"
           className="w-full h-full object-cover object-center" />
         
-        <div className="absolute inset-0 bg-hero-gradient"></div>
+        <div className="absolute inset-0 bg-black/50"></div>
       </div>
 
       {/* Floating Decorative Shapes */}
@@ -53,7 +52,7 @@ export function HeroSection() {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-32 pb-20 flex-grow flex flex-col justify-center">
+      <div className="relative z-10 p-[5%]  text-center   flex-grow flex flex-col justify-center">
         <motion.div
           initial={{
             opacity: 0,
@@ -67,7 +66,7 @@ export function HeroSection() {
             duration: 1,
             ease: 'easeOut'
           }}
-          className="max-w-5xl mx-auto">
+          className=" ">
           
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-colored bg-white/5 border-white/10 mb-8">
             <span className="w-2 h-2 rounded-full bg-emerald animate-pulse"></span>
@@ -96,7 +95,7 @@ export function HeroSection() {
               delay: 0.4,
               duration: 0.8
             }}
-            className="text-xl md:text-2xl text-slate-200 mb-6 leading-relaxed max-w-3xl mx-auto font-light">
+            className="text-xl md:text-2xl text-slate-200 mb-6 leading-relaxed   font-light">
             
             في عالم اقتصادي تتغير فيه المعادلات بسرعة، وتتصاعد فيه التحديات أمام
             المستثمرين وصناع القرار، يصبح امتلاك الرؤية الواضحة والمنهجية
@@ -116,7 +115,7 @@ export function HeroSection() {
               delay: 0.6,
               duration: 0.8
             }}
-            className="text-lg text-slate-400 mb-12 leading-relaxed hidden md:block max-w-4xl mx-auto">
+            className="text-lg text-slate-400 mb-12 leading-relaxed hidden md:block ">
             
             تعمل شركة الشيخ عبد العزيز بن عبد الله المعلا للاستشارات العامة على
             بناء منظومة متكاملة من الاستشارات الاستراتيجية وإدارة الاستثمارات
@@ -189,7 +188,7 @@ export function HeroSection() {
         }}
         className="relative z-20 w-full bg-gradient-to-t from-navy to-transparent pt-10 pb-6">
         
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-3 gap-4 md:gap-8 divide-x divide-x-reverse divide-white/10">
             <div className="text-center px-4">
               <div className="flex justify-center mb-2">

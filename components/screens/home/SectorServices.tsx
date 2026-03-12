@@ -132,12 +132,12 @@ const sectors = [
 
 export function SectorServices() {
   return (
-    <section id="sectors" className="py-32 bg-navy relative overflow-hidden">
+    <section id="sectors" className=" p-[5%]  bg-navy relative overflow-hidden">
       {/* Background Decor */}
       <div className="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80')] bg-cover bg-fixed mix-blend-screen"></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-20">
+      <div className=" relative z-10">
+        <div className="text-center   mb-20">
           <motion.div
             initial={{
               opacity: 0,

@@ -25,7 +25,7 @@ const promises = [
 
 export function OurPromise() {
   return (
-    <section className="py-32 relative overflow-hidden">
+    <section className=" p-[5%]  relative overflow-hidden">
       {/* Dramatic Background Image */}
       <div className="absolute inset-0 z-0">
         <img
@@ -36,7 +36,7 @@ export function OurPromise() {
         <div className="absolute inset-0 bg-gradient-to-r from-navy/95 via-navy/80 to-transparent"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="  relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div
             initial={{

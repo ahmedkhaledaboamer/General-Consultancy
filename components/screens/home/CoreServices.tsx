@@ -87,15 +87,15 @@ const services = [
 export function CoreServices() {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(0);
   return (
-    <section id="services" className="py-32 bg-slate-50 relative">
+    <section id="services" className=" p-[5%]  bg-slate-50 relative">
       {/* Background Decor */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 -right-64 w-[800px] h-[800px] bg-gradient-to-b from-sky/5 to-transparent rounded-full blur-3xl"></div>
         <div className="absolute bottom-1/4 -left-64 w-[600px] h-[600px] bg-gradient-to-t from-violet/5 to-transparent rounded-full blur-3xl"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-20">
+      <div className=" relative z-10">
+        <div className="text-center   mb-20">
           <motion.div
             initial={{
               opacity: 0,
