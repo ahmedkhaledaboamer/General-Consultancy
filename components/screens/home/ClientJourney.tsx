@@ -1,0 +1,184 @@
+"use client";
+import { motion } from 'framer-motion';
+const steps = [
+{
+  title: 'فهم الاحتياجات',
+  description:
+  'نبدأ بتحليل أهداف العميل وتحدياته الحالية لفهم الصورة الكاملة.',
+  number: '01',
+  color: 'from-sky-400 to-blue-600',
+  image:
+  'https://images.unsplash.com/photo-1573164713988-8665fc963095?w=200&q=80'
+},
+{
+  title: 'التحليل والتقييم',
+  description: 'نقوم بدراسة السوق والفرص المتاحة وتقييم الخيارات الممكنة.',
+  number: '02',
+  color: 'from-emerald-400 to-teal-600',
+  image:
+  'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&q=80'
+},
+{
+  title: 'بناء المسار الاستراتيجي',
+  description:
+  'نصمم خطة عمل واضحة تعتمد على أفضل الممارسات والخبرات المتخصصة.',
+  number: '03',
+  color: 'from-violet-400 to-purple-600',
+  image:
+  'https://images.unsplash.com/photo-1552664730-d307ca884978?w=200&q=80'
+},
+{
+  title: 'التنفيذ والمتابعة',
+  description: 'نرافق شركاءنا في مراحل التنفيذ لضمان تحقيق النتائج المطلوبة.',
+  number: '04',
+  color: 'from-magenta-400 to-pink-600',
+  image:
+  'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=200&q=80'
+},
+{
+  title: 'التطوير والنمو',
+  description:
+  'نستمر في دعم شركائنا لتطوير أعمالهم وتعزيز قدرتهم على التوسع المستقبلي.',
+  number: '05',
+  color: 'from-gold to-amber',
+  image:
+  'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=200&q=80'
+}];
+
+export function ClientJourney() {
+  return (
+    <section className="py-32 relative overflow-hidden">
+      {/* Background Image with Colorful Gradient Overlay */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80"
+          alt="Modern Office"
+          className="w-full h-full object-cover" />
+        
+        <div className="absolute inset-0 bg-gradient-to-br from-navy/95 via-purple-deep/90 to-navy/95 mix-blend-multiply"></div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center max-w-3xl mx-auto mb-24">
+          <motion.h2
+            initial={{
+              opacity: 0,
+              y: 20
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0
+            }}
+            viewport={{
+              once: true
+            }}
+            className="text-4xl md:text-5xl font-black text-white mb-6">
+            
+            رحلة العميل معنا
+          </motion.h2>
+          <motion.p
+            initial={{
+              opacity: 0,
+              y: 20
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0
+            }}
+            viewport={{
+              once: true
+            }}
+            transition={{
+              delay: 0.1
+            }}
+            className="text-xl text-slate-300 font-light">
+            
+            رحلة العمل معنا ليست مجرد خدمة استشارية، بل هي مسار متكامل يبدأ
+            بالفهم وينتهي بتحقيق النتائج.
+          </motion.p>
+        </div>
+
+        <div className="relative">
+          {/* Horizontal Connecting Line (Desktop) */}
+          <div className="hidden lg:block absolute top-24 left-0 right-0 h-1 bg-white/10 rounded-full z-0">
+            <div className="absolute top-0 right-0 h-full w-full bg-gradient-to-l from-sky via-magenta to-gold opacity-50"></div>
+            {/* Animated dot on line */}
+            <motion.div
+              className="absolute top-1/2 right-0 w-3 h-3 rounded-full bg-white shadow-[0_0_10px_#fff] -translate-y-1/2"
+              animate={{
+                right: ['0%', '100%']
+              }}
+              transition={{
+                duration: 10,
+                repeat: Infinity,
+                ease: 'linear'
+              }} />
+            
+          </div>
+
+          {/* Vertical Connecting Line (Mobile) */}
+          <div className="lg:hidden absolute top-0 bottom-0 right-1/2 w-1 bg-gradient-to-b from-sky via-magenta to-gold opacity-30 translate-x-1/2 z-0"></div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-6 relative z-10">
+            {steps.map((step, index) =>
+            <motion.div
+              key={index}
+              initial={{
+                opacity: 0,
+                y: 50
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0
+              }}
+              viewport={{
+                once: true
+              }}
+              transition={{
+                duration: 0.6,
+                delay: index * 0.15
+              }}
+              className="relative flex flex-col items-center text-center group">
+              
+                {/* Image Circle */}
+                <div className="w-48 h-48 rounded-full p-2 bg-white/5 backdrop-blur-sm border border-white/10 mb-8 relative z-10 group-hover:scale-105 transition-transform duration-500">
+                  <div
+                  className={`absolute inset-0 rounded-full bg-gradient-to-br ${step.color} opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-500 -z-10`}>
+                </div>
+                  <div className="w-full h-full rounded-full overflow-hidden relative">
+                    <img
+                    src={step.image}
+                    alt={step.title}
+                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
+                  
+                    <div
+                    className={`absolute inset-0 bg-gradient-to-t ${step.color} mix-blend-multiply opacity-60 group-hover:opacity-20 transition-opacity duration-500`}>
+                  </div>
+                  </div>
+
+                  {/* Number Badge */}
+                  <div
+                  className={`absolute -bottom-4 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-gradient-to-br ${step.color} flex items-center justify-center shadow-lg border-4 border-navy`}>
+                  
+                    <span className="text-lg font-black text-white">
+                      {step.number}
+                    </span>
+                  </div>
+                </div>
+
+                <div className="glass-colored bg-navy/40 p-6 rounded-2xl w-full border-t-4 border-transparent group-hover:border-white/50 transition-all duration-300">
+                  <h3 className="text-xl font-bold text-white mb-3">
+                    {step.title}
+                  </h3>
+                  <p className="text-sm text-slate-300 leading-relaxed font-light">
+                    {step.description}
+                  </p>
+                </div>
+              </motion.div>
+            )}
+          </div>
+        </div>
+      </div>
+    </section>);
+
+}

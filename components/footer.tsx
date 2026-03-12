@@ -1,318 +1,174 @@
-import { Link } from "@/i18n/routing";
-import { cn } from "@/utils/cn";
-import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react";
-import { getLocale, getTranslations } from "next-intl/server";
-import Logo from "./logo";
-
-interface FooterLink {
-  label: string;
-  href: string;
-}
-
-interface GroupEntity {
-  name: string;
-  href: string;
-}
-
-export default async function Footer() {
-  const t = await getTranslations("footer");
-  const locale = await getLocale();
-  const isRTL = locale === "ar";
-
-  // Get contact information
-  const contact = {
-    title: t("contact.title"),
-    phone: t("contact.phone"),
-    email: t("contact.email"),
-    location: t("contact.location"),
-  };
-
-  // Get quick links
-  const quickLinksRaw = t.raw("quickLinks.links");
-  const quickLinks: FooterLink[] = Array.isArray(quickLinksRaw)
-    ? quickLinksRaw
-        .map((link: unknown) => {
-          const l = link as { label?: unknown; href?: unknown };
-          return {
-            label: String(l.label || ""),
-            href: String(l.href || ""),
-          };
-        })
-        .filter((link) => link.href && link.href !== "[object Object]")
-    : [];
-
-  // Get group entities
-  const groupEntitiesRaw = t.raw("ourGroup.entities");
-  const groupEntities: GroupEntity[] = Array.isArray(groupEntitiesRaw)
-    ? groupEntitiesRaw
-        .map((entity: unknown) => {
-          const e = entity as { name?: unknown; href?: unknown };
-          return {
-            name: String(e.name || ""),
-            href: String(e.href || ""),
-          };
-        })
-        .filter((entity) => entity.name)
-    : [];
-
-  // Social media links
-  const socialLinks = [
-    {
-      name: t("socialMedia.linkedin"),
-      icon: Linkedin,
-      href: "https://linkedin.com",
-      ariaLabel: t("socialMedia.linkedin"),
-    },
-    {
-      name: t("socialMedia.twitter"),
-      icon: Twitter,
-      href: "https://twitter.com",
-      ariaLabel: t("socialMedia.twitter"),
-    },
-    {
-      name: t("socialMedia.instagram"),
-      icon: Instagram,
-      href: "https://instagram.com",
-      ariaLabel: t("socialMedia.instagram"),
-    },
-    {
-      name: t("socialMedia.facebook"),
-      icon: Facebook,
-      href: "https://facebook.com",
-      ariaLabel: t("socialMedia.facebook"),
-    },
-  ];
-
+ import {
+  FacebookIcon,
+  TwitterIcon,
+  LinkedinIcon,
+  InstagramIcon,
+  MailIcon,
+  MapPinIcon,
+  PhoneIcon,
+} from 'lucide-react'
+export function Footer() {
   return (
-    <footer
-      className="bg-secondary text-white"
-      style={{
-        paddingTop: "clamp(3rem, 4vw, 6rem)",
-        paddingBottom: "clamp(3rem, 4vw, 6rem)",
-      }}
-      dir={isRTL ? "rtl" : "ltr"}
-    >
-      <div className="container">
-        {/* Main Footer Content */}
-        <div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
-          style={{
-            gap: "clamp(2rem, 3vw, 4rem)",
-            marginBottom: "clamp(2rem, 3vw, 4rem)",
-          }}
-        >
-          {/* Column 1: Logo and Mission Statement */}
-          <div className="flex flex-col" style={{ gap: "clamp(1rem, 1.5vw, 2rem)" }}>
-            <Logo className=" transition-transform duration-300 hover:scale-105 w-fit" size={120} />
-            {t("description") && (
-              <p
-                className="text-white/80 leading-relaxed text-center md:text-start max-w-full"
-                style={{
-                  fontSize: "clamp(0.875rem, 1vw, 1.125rem)",
-                }}
+    <footer className="bg-[#071226] text-white pt-20 pb-10 border-t-4 border-gold">
+      <div className="container mx-auto px-4 md:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+          {/* Company Info */}
+          <div className="lg:col-span-1">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-10 h-10 rounded-lg bg-gold flex items-center justify-center text-navy-900 font-bold text-xl">
+                ع
+              </div>
+              <div className="flex flex-col">
+                <span className="text-white font-bold text-lg leading-tight">
+                  الشيخ عبد العزيز بن عبد الله المعلا
+                </span>
+                <span className="text-gold text-xs font-medium">
+                  للاستشارات العامة
+                </span>
+              </div>
+            </div>
+            <p className="text-white/60 text-sm leading-relaxed mb-6">
+              نحن كيان استشاري واستثماري يعمل على دعم المؤسسات والمستثمرين عبر
+              منظومة متكاملة من الخبرات المتخصصة في مجالات الاستثمار وإدارة
+              المشاريع والاستشارات الاستراتيجية.
+            </p>
+            <div className="flex items-center gap-4">
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-gold hover:text-navy-900 transition-colors"
               >
-                {t("description")}
-              </p>
-            )}
-          </div>
-
-          {/* Column 2: Our Group */}
-          <div className="flex flex-col" style={{ gap: "clamp(1rem, 1.5vw, 2rem)" }}>
-            <h3
-              className="text-primary font-bold"
-              style={{
-                fontSize: "clamp(1.25rem, 1.75vw, 2rem)",
-              }}
-            >
-              {t("ourGroup.title")}
-            </h3>
-            <div
-              className="flex flex-col overflow-y-auto custom-scrollbar"
-              style={{
-                gap: "clamp(0.5rem, 0.75vw, 1rem)",
-                maxHeight: "clamp(20rem, 25vw, 30rem)",
-              }}
-            >
-              {groupEntities.map((entity, index) => (
-                <a
-                  key={index}
-                  href={entity.href}
-                  className="bg-primary/10 hover:bg-primary/20 border border-primary/30 rounded-lg text-white/90 hover:text-primary transition-all duration-200 font-medium"
-                  style={{
-                    padding: "clamp(0.75rem, 1vw, 1.25rem) clamp(1rem, 1.5vw, 2rem)",
-                    fontSize: "clamp(0.875rem, 1vw, 1.125rem)",
-                  }}
-                  aria-label={entity.name}
-                >
-                  {entity.name}
-                </a>
-              ))}
+                <LinkedinIcon className="w-5 h-5" />
+              </a>
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-gold hover:text-navy-900 transition-colors"
+              >
+                <TwitterIcon className="w-5 h-5" />
+              </a>
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-gold hover:text-navy-900 transition-colors"
+              >
+                <FacebookIcon className="w-5 h-5" />
+              </a>
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-gold hover:text-navy-900 transition-colors"
+              >
+                <InstagramIcon className="w-5 h-5" />
+              </a>
             </div>
           </div>
 
-          {/* Column 3: Quick Links */}
-          <div className="flex flex-col" style={{ gap: "clamp(1rem, 1.5vw, 2rem)" }}>
-            <h3
-              className="text-primary font-bold"
-              style={{
-                fontSize: "clamp(1.25rem, 1.75vw, 2rem)",
-              }}
-            >
-              {t("quickLinks.title")}
-            </h3>
-            <ul className="flex flex-col" style={{ gap: "clamp(0.75rem, 1vw, 1.25rem)" }}>
-              {quickLinks.map((link) => (
-                <li key={link.href} role="none">
-                  <Link
-                    href={link.href}
-                    className="text-white/80 hover:text-primary transition-colors font-medium block"
-                    style={{
-                      fontSize: "clamp(1rem, 1.25vw, 1.5rem)",
-                      paddingTop: "clamp(0.25rem, 0.5vw, 0.5rem)",
-                      paddingBottom: "clamp(0.25rem, 0.5vw, 0.5rem)",
-                    }}
-                    aria-label={link.label}
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
+          {/* Quick Links */}
+          <div>
+            <h4 className="text-lg font-bold text-white mb-6 border-b border-white/10 pb-4 inline-block">
+              روابط سريعة
+            </h4>
+            <ul className="space-y-3">
+              <li>
+                <a
+                  href="#hero"
+                  className="text-white/60 hover:text-gold transition-colors"
+                >
+                  الرئيسية
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  className="text-white/60 hover:text-gold transition-colors"
+                >
+                  من نحن
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  className="text-white/60 hover:text-gold transition-colors"
+                >
+                  خدماتنا الأساسية
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#sectors"
+                  className="text-white/60 hover:text-gold transition-colors"
+                >
+                  القطاعات
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  className="text-white/60 hover:text-gold transition-colors"
+                >
+                  تواصل معنا
+                </a>
+              </li>
             </ul>
           </div>
 
-          {/* Column 4: Contact Information */}
-          <div className="flex flex-col" style={{ gap: "clamp(1rem, 1.5vw, 2rem)" }}>
-            <h3
-              className="text-primary font-bold"
-              style={{
-                fontSize: "clamp(1.25rem, 1.75vw, 2rem)",
-              }}
-            >
-              {contact.title}
-            </h3>
-            <div className="flex flex-col" style={{ gap: "clamp(0.75rem, 1vw, 1.5rem)" }}>
-              {/* Phone */}
-              <Link
-                href={`tel:${contact.phone.replace(/\s/g, "")}`}
-                className="flex items-center text-white/90 hover:text-primary transition-colors group"
-                style={{
-                  gap: "clamp(0.75rem, 1vw, 1.25rem)",
-                }}
-                aria-label={`Call us: ${contact.phone}`}
-              >
-                <Phone
-                  className="text-primary group-hover:scale-110 transition-transform shrink-0"
-                  style={{
-                    width: "clamp(1.25rem, 1.5vw, 1.75rem)",
-                    height: "clamp(1.25rem, 1.5vw, 1.75rem)",
-                  }}
-                />
-                <span
-                  style={{
-                    fontSize: "clamp(1rem, 1.25vw, 1.5rem)",
-                  }}
-                >
-                  {contact.phone}
-                </span>
-              </Link>
+          {/* Services */}
+          <div>
+            <h4 className="text-lg font-bold text-white mb-6 border-b border-white/10 pb-4 inline-block">
+              خدماتنا
+            </h4>
+            <ul className="space-y-3">
+              <li className="text-white/60">إدارة الاستثمارات</li>
+              <li className="text-white/60">الاستشارات الاستراتيجية</li>
+              <li className="text-white/60">تطوير المشاريع</li>
+              <li className="text-white/60">الاستشارات المالية</li>
+              <li className="text-white/60">تطوير الأعمال</li>
+            </ul>
+          </div>
 
-              {/* Email */}
-              <Link
-                href={`mailto:${contact.email}`}
-                className="flex items-center text-white/90 hover:text-primary transition-colors group"
-                style={{
-                  gap: "clamp(0.75rem, 1vw, 1.25rem)",
-                }}
-                aria-label={`Email us: ${contact.email}`}
-              >
-                <Mail
-                  className="text-primary group-hover:scale-110 transition-transform shrink-0"
-                  style={{
-                    width: "clamp(1.25rem, 1.5vw, 1.75rem)",
-                    height: "clamp(1.25rem, 1.5vw, 1.75rem)",
-                  }}
-                />
-                <span
-                  className="break-all"
-                  style={{
-                    fontSize: "clamp(1rem, 1.25vw, 1.5rem)",
-                  }}
-                >
-                  {contact.email}
+          {/* Contact */}
+          <div>
+            <h4 className="text-lg font-bold text-white mb-6 border-b border-white/10 pb-4 inline-block">
+              معلومات التواصل
+            </h4>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3">
+                <MapPinIcon className="w-5 h-5 text-gold shrink-0 mt-1" />
+                <span className="text-white/60 text-sm leading-relaxed">
+                  الإمارات العربية المتحدة
+                  <br />
+                  دبي، شارع الشيخ زايد
                 </span>
-              </Link>
-
-              {/* Location */}
-              <div
-                className="flex items-start text-white/90"
-                style={{
-                  gap: "clamp(0.75rem, 1vw, 1.25rem)",
-                }}
-              >
-                <MapPin
-                  className="text-primary shrink-0"
-                  style={{
-                    width: "clamp(1.25rem, 1.5vw, 1.75rem)",
-                    height: "clamp(1.25rem, 1.5vw, 1.75rem)",
-                    marginTop: "clamp(0.25rem, 0.5vw, 0.5rem)",
-                  }}
-                />
-                <span
-                  style={{
-                    fontSize: "clamp(1rem, 1.25vw, 1.5rem)",
-                  }}
-                >
-                  {contact.location}
+              </li>
+              <li className="flex items-center gap-3">
+                <PhoneIcon className="w-5 h-5 text-gold shrink-0" />
+                <span className="text-white/60 text-sm" dir="ltr">
+                  +971 50 000 0000
                 </span>
-              </div>
-
-              {/* Social Media Icons */}
-              <div
-                className="flex items-center"
-                style={{
-                  gap: "clamp(0.75rem, 1vw, 1.5rem)",
-                  marginTop: "clamp(0.5rem, 0.75vw, 1rem)",
-                }}
-              >
-                {socialLinks.map((social) => {
-                  const Icon = social.icon;
-                  return (
-                    <Link
-                      key={social.name}
-                      href={social.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-white/80 hover:text-primary transition-colors hover:scale-110 transform duration-200"
-                      aria-label={social.ariaLabel}
-                    >
-                      <Icon
-                        style={{
-                          width: "clamp(1.25rem, 1.5vw, 1.75rem)",
-                          height: "clamp(1.25rem, 1.5vw, 1.75rem)",
-                        }}
-                      />
-                    </Link>
-                  );
-                })}
-              </div>
-            </div>
+              </li>
+              <li className="flex items-center gap-3">
+                <MailIcon className="w-5 h-5 text-gold shrink-0" />
+                <span className="text-white/60 text-sm">
+                  info@almuallaconsulting.com
+                </span>
+              </li>
+            </ul>
           </div>
         </div>
 
-        {/* Copyright */}
-        <div
-          className={cn(
-            "border-t border-white/10 text-white/60",
-            isRTL ? "text-right" : "text-left md:text-center"
-          )}
-          style={{
-            paddingTop: "clamp(1.5rem, 2vw, 2.5rem)",
-            fontSize: "clamp(0.875rem, 1vw, 1.125rem)",
-          }}
-        >
-          <p>{t("copyright")}</p>
+        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-white/40 text-sm text-center md:text-start">
+            جميع الحقوق محفوظة © {new Date().getFullYear()} شركة الشيخ عبد
+            العزيز بن عبد الله المعلا للاستشارات العامة
+          </p>
+          <div className="flex items-center gap-4 text-sm text-white/40">
+            <a href="#" className="hover:text-gold transition-colors">
+              الشروط والأحكام
+            </a>
+            <span>|</span>
+            <a href="#" className="hover:text-gold transition-colors">
+              سياسة الخصوصية
+            </a>
+          </div>
         </div>
       </div>
     </footer>
-  );
+  )
 }

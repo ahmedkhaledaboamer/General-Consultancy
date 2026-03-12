@@ -1,3 +1,8 @@
-export default function servicesPage() {
-  return <div>page</div>;
+
+const ServicesPage = () => {
+  return (
+    <div>ServicesPage</div>
+  )
 }
+
+export default ServicesPage

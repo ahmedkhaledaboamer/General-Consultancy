@@ -1,7 +1,7 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
-import Footer from "@/components/footer";
-import Navbar from "@/components/navbar/navbar";
+ import Navbar from "@/components/navbar/navbar";
+import { Footer } from '@/components/footer';
 
 export default async function LocaleLayout({
   children,

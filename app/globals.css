@@ -11,6 +11,45 @@
   --color-tertiary: #00d3ff;
   --color-theme-black: #181f29;
   
+  /* Tailwind theme: fonts */
+  --font-cairo: "Cairo", sans-serif;
+  
+  /* Tailwind theme: extended colors */
+  --color-navy: #0a1628;
+  --color-navy-light: #1e3a5f;
+  --color-gold: #c8a45c;
+  --color-gold-light: #e6c875;
+  --color-royal: #1e3a5f;
+  --color-purple-deep: #2d1b69;
+  --color-amber: #d4a843;
+  --color-sky: #0ea5e9;
+  --color-magenta: #ec4899;
+  --color-orange: #f97316;
+  --color-emerald: #10b981;
+  --color-violet: #8b5cf6;
+  --color-rose: #f43f5e;
+  --color-cyan: #06b6d4;
+  
+  /* Tailwind theme: background images */
+  --bg-gradient-radial: radial-gradient(var(--tw-gradient-stops));
+  --bg-hero-gradient: linear-gradient(
+    to bottom right,
+    rgba(10, 22, 40, 0.95),
+    rgba(45, 27, 105, 0.85),
+    rgba(10, 22, 40, 0.4)
+  );
+  --bg-glass-gradient: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  
+  /* Tailwind theme: animations */
+  --animate-shimmer: shimmer 2s linear infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-float-delayed: float 6s ease-in-out 3s infinite;
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  
   /* Responsive font sizes using viewport units */
   --font-xs: clamp(0.75rem, 0.5vw + 0.5rem, 1rem);
   --font-sm: clamp(0.875rem, 0.75vw + 0.625rem, 1.25rem);
@@ -28,6 +67,25 @@
   --spacing-xl: clamp(1.5rem, 2vw, 3rem);
   --spacing-2xl: clamp(2rem, 3vw, 4rem);
   --spacing-3xl: clamp(3rem, 4vw, 6rem);
+}
+
+@keyframes shimmer {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
 .navbar-text {
