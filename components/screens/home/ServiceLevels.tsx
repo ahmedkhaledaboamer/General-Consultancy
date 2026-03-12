@@ -34,7 +34,7 @@ const levels = [
 
 export function ServiceLevels() {
   return (
-    <section className="py-32 relative overflow-hidden">
+    <section className=" p-[5%]  relative overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
@@ -45,8 +45,8 @@ export function ServiceLevels() {
         <div className="absolute inset-0 bg-navy/95 mix-blend-multiply"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-20">
+      <div className="  relative z-10">
+        <div className="text-center  mb-20">
           <motion.h2
             initial={{
               opacity: 0,

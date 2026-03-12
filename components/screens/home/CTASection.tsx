@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion';
 export function CTASection() {
   return (
-    <section id="contact" className="py-32 relative overflow-hidden">
+    <section id="contact" className=" p-[5%]  relative overflow-hidden">
       {/* Dramatic Sunset Background */}
       <div className="absolute inset-0 z-0">
         <img
@@ -52,7 +52,7 @@ export function CTASection() {
         
       </div>
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <div className="  relative z-10 text-center">
         <motion.div
           initial={{
             opacity: 0,

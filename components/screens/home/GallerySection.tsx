@@ -34,12 +34,12 @@ const images = [
 
 export function GallerySection() {
   return (
-    <section className="py-32 bg-slate-50 relative overflow-hidden">
+    <section className=" p-[5%]  bg-slate-50 relative overflow-hidden">
       {/* Decorative Background */}
       <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-b from-slate-100 to-white z-0"></div>
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-sky/10 via-magenta/10 to-gold/10 rounded-full blur-3xl z-0 pointer-events-none"></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className=" relative z-10">
         <div className="text-center mb-16">
           <motion.h2
             initial={{

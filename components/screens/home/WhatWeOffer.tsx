@@ -37,8 +37,8 @@ const offerings = [
 
 export function WhatWeOffer() {
   return (
-    <section className="py-32 bg-white overflow-hidden relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className=" p-[5%]  bg-white overflow-hidden relative">
+      <div className="  ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div
             initial={{
