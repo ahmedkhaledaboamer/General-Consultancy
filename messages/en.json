@@ -4,6 +4,9 @@
     },
     "navbar": {
         "cta": "Book Your Consultation",
+        "navMenu": "Navigation menu",
+        "openMenu": "Open navigation menu",
+        "closeMenu": "Close navigation menu",
         "routes": [
             {
                 "label": "Home",

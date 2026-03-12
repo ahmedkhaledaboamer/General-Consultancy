@@ -1,0 +1,182 @@
+"use client";
+import { motion } from 'framer-motion';
+export function HeroSection() {
+  return (
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-brand-indigo-dark pt-20 pb-32 px-4 sm:px-6 lg:px-8">
+      {/* Background Collage */}
+      <div className="absolute inset-0 z-0">
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-40 mix-blend-luminosity"
+          style={{
+            backgroundImage:
+            'url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80")'
+          }} />
+        
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-indigo-dark via-brand-purple/80 to-brand-rose/70 opacity-90" />
+      </div>
+
+      {/* Floating Image Cards */}
+      <motion.div
+        className="absolute top-20 right-10 w-64 h-80 rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20 animate-float hidden lg:block z-0"
+        initial={{
+          opacity: 0,
+          scale: 0.8
+        }}
+        animate={{
+          opacity: 1,
+          scale: 1
+        }}
+        transition={{
+          duration: 1,
+          delay: 0.2
+        }}
+        style={{
+          transform: 'rotate(6deg)'
+        }}>
+        
+        <img
+          src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80"
+          alt="Business Meeting"
+          className="w-full h-full object-cover" />
+        
+        <div className="absolute inset-0 bg-brand-purple/20 mix-blend-overlay" />
+      </motion.div>
+
+      <motion.div
+        className="absolute bottom-20 left-10 w-72 h-64 rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20 animate-float-reverse hidden lg:block z-0"
+        initial={{
+          opacity: 0,
+          scale: 0.8
+        }}
+        animate={{
+          opacity: 1,
+          scale: 1
+        }}
+        transition={{
+          duration: 1,
+          delay: 0.4
+        }}
+        style={{
+          transform: 'rotate(-8deg)'
+        }}>
+        
+        <img
+          src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80"
+          alt="Corporate Office"
+          className="w-full h-full object-cover" />
+        
+        <div className="absolute inset-0 bg-brand-orange/20 mix-blend-overlay" />
+      </motion.div>
+
+      {/* Animated Geometric Shapes */}
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 border-[1px] border-white/10 rounded-full animate-spin-slow z-0" />
+      <div className="absolute bottom-1/4 right-1/4 w-64 h-64 border-[2px] border-brand-pink/20 rounded-full animate-spin-slow animation-delay-2000 z-0" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-blue/20 rounded-full blur-[100px] animate-pulse-slow z-0 pointer-events-none" />
+
+      <div className="relative z-10 max-w-5xl mx-auto text-center mt-10">
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: -20
+          }}
+          animate={{
+            opacity: 1,
+            y: 0
+          }}
+          transition={{
+            duration: 0.6
+          }}
+          className="inline-block mb-8">
+          
+          <div className="px-6 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-lg">
+            <span className="text-white/90 font-tajawal font-bold tracking-wide">
+              الشيخ عبد العزيز بن عبد الله المعلا للاستشارات العامة
+            </span>
+          </div>
+        </motion.div>
+
+        <motion.h1
+          className="text-5xl md:text-7xl lg:text-8xl font-cairo font-bold mb-8 leading-tight drop-shadow-2xl"
+          initial={{
+            opacity: 0,
+            y: 40
+          }}
+          animate={{
+            opacity: 1,
+            y: 0
+          }}
+          transition={{
+            duration: 0.8,
+            delay: 0.2
+          }}>
+          
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-brand-pink-light to-brand-orange-light">
+            هوية مؤسسية متينة…
+          </span>
+          <br className="hidden md:block" />
+          <span className="text-white">تصنع الفرق في كل خطوة</span>
+        </motion.h1>
+
+        <motion.p
+          className="text-xl md:text-3xl text-white/90 mb-12 max-w-4xl mx-auto font-tajawal leading-relaxed drop-shadow-md"
+          initial={{
+            opacity: 0,
+            y: 40
+          }}
+          animate={{
+            opacity: 1,
+            y: 0
+          }}
+          transition={{
+            duration: 0.8,
+            delay: 0.4
+          }}>
+          
+          في عالم سريع التغير، تبقى الهوية المؤسسية هي البوصلة التي توجه
+          أعمالنا. لا نرى الهوية مجرد شعار أو تصميم، بل هي قيمنا، وعدنا، ونهجنا
+          في العمل. نعمل على بناء ثقة متينة مع عملائنا وشركائنا من خلال
+          الشفافية، الاحترافية، والنتائج الملموسة.
+        </motion.p>
+
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: 40
+          }}
+          animate={{
+            opacity: 1,
+            y: 0
+          }}
+          transition={{
+            duration: 0.8,
+            delay: 0.6
+          }}>
+          
+          <button className="group relative inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-white transition-all duration-300 bg-gradient-to-r from-brand-coral to-brand-orange font-cairo rounded-full hover:scale-105 hover:shadow-[0_0_40px_rgba(249,115,22,0.5)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-orange overflow-hidden">
+            <span className="relative z-10">
+              اكتشف هويتنا المؤسسية وتأثيرها على شركائنا
+            </span>
+            <div className="absolute inset-0 bg-gradient-to-r from-brand-orange to-brand-coral opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <div className="absolute inset-0 w-[200%] h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
+          </button>
+        </motion.div>
+      </div>
+
+      {/* Bottom curved divider */}
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-10">
+        <svg
+          className="relative block w-full h-[100px]"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none">
+          
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.08,130.83,119.2,192.39,101.3Z"
+            className="fill-gray-50">
+          </path>
+        </svg>
+      </div>
+    </section>);
+
+}

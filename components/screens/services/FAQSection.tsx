@@ -1,0 +1,183 @@
+"use client";
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { PlusIcon, MinusIcon } from 'lucide-react';
+const faqs = [
+{
+  question: 'ما نوع الخدمات التي تقدمها الشركة؟',
+  answer:
+  'نقدم مجموعة واسعة من الخدمات الاستشارية والاستثمارية التي تشمل إدارة الاستثمارات، الاستشارات الاستراتيجية، تطوير المشاريع، دراسات الجدوى، والاستشارات المتخصصة في قطاعات متعددة.'
+},
+{
+  question: 'هل تقدمون خدمات للمستثمرين الأفراد؟',
+  answer:
+  'نعم، نقدم خدماتنا للمستثمرين الأفراد، إضافة إلى الشركات والمؤسسات والجهات الحكومية.'
+},
+{
+  question: 'هل يمكنكم دعم المشاريع الجديدة؟',
+  answer:
+  'نعم، نقدم خدمات متكاملة لدعم المشاريع الجديدة تشمل دراسات الجدوى، التخطيط الاستراتيجي، وتطوير المشروع حتى مرحلة التنفيذ.'
+},
+{
+  question: 'هل تعمل الشركة في قطاعات محددة فقط؟',
+  answer:
+  'لا، نقدم خدماتنا في مجموعة واسعة من القطاعات مثل الصناعة، الطاقة، الصحة، التعليم، السياحة، التكنولوجيا، والتجارة وغيرها.'
+}];
+
+export function FAQSection() {
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  return (
+    <section id="faq" className="py-24 bg-gray-50 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col lg:flex-row gap-12 items-start">
+          {/* Decorative Image Column */}
+          <motion.div
+            initial={{
+              opacity: 0,
+              x: 50
+            }}
+            whileInView={{
+              opacity: 1,
+              x: 0
+            }}
+            viewport={{
+              once: true
+            }}
+            className="w-full lg:w-5/12 relative hidden lg:block">
+            
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl h-[600px]">
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
+                alt="Data Analytics and Consulting"
+                className="w-full h-full object-cover" />
+              
+              <div className="absolute inset-0 bg-gradient-to-tr from-navy/80 via-teal/30 to-transparent mix-blend-multiply" />
+
+              {/* Overlay Badge */}
+              <div className="absolute top-8 right-8 bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl shadow-xl">
+                <h3 className="text-2xl font-heading font-bold text-white mb-2">
+                  رؤية واضحة
+                </h3>
+                <p className="text-teal-100 font-body">
+                  إجابات شفافة لكل استفساراتك
+                </p>
+              </div>
+            </div>
+
+            {/* Decorative Blob */}
+            <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-gradient-to-br from-teal-400 to-emerald-500 rounded-full mix-blend-multiply filter blur-[80px] opacity-50 -z-10" />
+          </motion.div>
+
+          {/* FAQ Content Column */}
+          <div className="w-full lg:w-7/12">
+            <div className="mb-12">
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  y: 20
+                }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0
+                }}
+                viewport={{
+                  once: true
+                }}>
+                
+                <div className="inline-block px-4 py-1.5 rounded-full bg-teal/10 border border-teal/20 text-teal mb-4">
+                  <span className="font-body font-medium">مركز المعرفة</span>
+                </div>
+                <h2 className="text-3xl md:text-5xl font-heading font-bold text-navy mb-4">
+                  الأسئلة{' '}
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal to-emerald-500">
+                    الشائعة
+                  </span>
+                </h2>
+                <p className="text-lg text-gray-600 font-body">
+                  إجابات على أبرز الاستفسارات حول خدماتنا ومنهجية عملنا.
+                </p>
+              </motion.div>
+            </div>
+
+            <div className="space-y-4">
+              {faqs.map((faq, index) => {
+                const isOpen = openIndex === index;
+                return (
+                  <motion.div
+                    key={index}
+                    initial={{
+                      opacity: 0,
+                      y: 10
+                    }}
+                    whileInView={{
+                      opacity: 1,
+                      y: 0
+                    }}
+                    viewport={{
+                      once: true
+                    }}
+                    transition={{
+                      delay: index * 0.1
+                    }}
+                    className={`bg-white rounded-2xl border transition-all duration-300 overflow-hidden shadow-sm relative ${isOpen ? 'border-teal/30 shadow-md' : 'border-gray-100 hover:border-gray-200'}`}>
+                    
+                    {/* Colored active border */}
+                    {isOpen &&
+                    <div className="absolute top-0 right-0 w-1.5 h-full bg-gradient-to-b from-teal-400 to-emerald-500" />
+                    }
+
+                    <button
+                      onClick={() => setOpenIndex(isOpen ? null : index)}
+                      className="w-full px-6 py-5 flex items-center justify-between text-right focus:outline-none">
+                      
+                      <span
+                        className={`text-lg font-heading font-bold pr-4 transition-colors ${isOpen ? 'text-teal-700' : 'text-navy'}`}>
+                        
+                        {faq.question}
+                      </span>
+                      <div
+                        className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${isOpen ? 'bg-gradient-to-br from-teal-400 to-emerald-500 text-white shadow-md transform rotate-180' : 'bg-gray-50 text-gray-500 hover:bg-gray-100'}`}>
+                        
+                        {isOpen ?
+                        <MinusIcon className="w-5 h-5" /> :
+
+                        <PlusIcon className="w-5 h-5" />
+                        }
+                      </div>
+                    </button>
+
+                    <AnimatePresence>
+                      {isOpen &&
+                      <motion.div
+                        initial={{
+                          height: 0,
+                          opacity: 0
+                        }}
+                        animate={{
+                          height: 'auto',
+                          opacity: 1
+                        }}
+                        exit={{
+                          height: 0,
+                          opacity: 0
+                        }}
+                        transition={{
+                          duration: 0.3
+                        }}>
+                        
+                          <div className="px-6 pb-6 pt-2 text-gray-600 font-body leading-relaxed border-t border-gray-50 mx-6">
+                            {faq.answer}
+                          </div>
+                        </motion.div>
+                      }
+                    </AnimatePresence>
+                  </motion.div>);
+
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>);
+
+}
