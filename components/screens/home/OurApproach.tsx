@@ -65,7 +65,7 @@ export function OurApproach() {
             viewport={{
               once: true
             }}
-            className="text-4xl md:text-5xl font-black text-navy mb-6">
+            className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-black text-navy mb-6">
             
             نهجنا في العمل
           </motion.h2>
@@ -84,7 +84,7 @@ export function OurApproach() {
             transition={{
               delay: 0.1
             }}
-            className="text-xl text-slate-600 font-light">
+            className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-slate-600 font-light">
             
             نعتمد منهجية متكاملة تقوم على:
           </motion.p>
@@ -116,7 +116,7 @@ export function OurApproach() {
               className="relative flex flex-col items-center w-full lg:w-1/5 group">
               
                 {/* Image Card */}
-                <div className="w-full md:w-40 h-40 rounded-3xl overflow-hidden shadow-xl mb-6 relative border-4 border-white transform group-hover:-translate-y-4 transition-transform duration-500">
+                <div className="w-full md:w-40 xl:w-48 2xl:w-60 h-40 md:h-48 xl:h-52 2xl:h-60 rounded-3xl overflow-hidden shadow-xl mb-6 relative border-4 border-white transform group-hover:-translate-y-4 transition-transform duration-500">
                   <Image
                   src={item.image}
                   alt={item.text}
@@ -131,13 +131,13 @@ export function OurApproach() {
 
                   {/* Floating Icon */}
                   <div
-                  className={`absolute bottom-2 ${!isRTL ? 'left-2' : 'right-2'} w-12 h-12 rounded-xl bg-gradient-to-br ${item.color} flex items-center justify-center shadow-lg border-2 border-white`}>
+                  className={`absolute bottom-2 ${!isRTL ? 'left-2' :   'right-2'} w-12 h-12 md:w-14 md:h-14 xl:w-16 xl:h-16 2xl:w-18 2xl:h-18 rounded-xl bg-gradient-to-br ${item.color} flex items-center justify-center shadow-lg border-2 border-white`}>
                   
-                    <item.icon className="w-6 h-6 text-white" />
+                    <item.icon className="w-6 h-6 md:w-8 md:h-8 xl:w-10 xl:h-10 2xl:w-12 2xl:h-12 2xl:text-2xl text-white" />
                   </div>
                 </div>
 
-                <span className="font-bold text-navy text-xl text-center mt-2">
+                <span className="font-bold text-navy text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-center mt-2">
                   {item.text}
                 </span>
               </motion.div>

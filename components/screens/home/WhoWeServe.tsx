@@ -86,14 +86,14 @@ export function WhoWeServe() {
             }}
             className={`mb-12 text-center ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
             
-            <h2 className="text-4xl md:text-5xl font-black text-navy mb-6">
+            <h2 className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-black text-navy mb-6">
               من نخدم؟
             </h2>
-            <p className="text-xl text-slate-600 mb-8 font-light leading-relaxed">
+            <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-slate-600 mb-8 font-light leading-relaxed">
               نقدم خدماتنا لشريحة واسعة من المستثمرين والمؤسسات التي تسعى إلى
               تحقيق النمو والتوسع.
             </p>
-            <div className="mx-auto md:mx-0 w-24 h-1.5 bg-gradient-to-r from-sky via-magenta to-gold rounded-full"></div>
+            <div className="mx-auto md:mx-0 w-24 h-1.5 md:w-28 md:h-1.5 xl:w-32 xl:h-1.5 2xl:w-36 2xl:h-1.5 bg-gradient-to-r from-sky via-magenta to-gold rounded-full"></div>
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -117,11 +117,11 @@ export function WhoWeServe() {
               className={`flex items-center p-5 rounded-2xl bg-white shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 group ${index === clients.length - 1 ? 'sm:col-span-2' : ''}`}>
               
                 <div
-                className={`w-12 h-12 rounded-xl bg-gradient-to-br ${client.color} flex items-center justify-center ${isRTL ? 'ml-4' : 'mr-4'} flex-shrink-0 shadow-md transform group-hover:scale-110 group-hover:rotate-3 transition-transform`}>
+                className={`w-12 h-12 md:w-14 md:h-14 xl:w-16 xl:h-16 2xl:w-18 2xl:h-18 rounded-xl bg-gradient-to-br ${client.color} flex items-center justify-center ${isRTL ? 'ml-4' : 'mr-4'} flex-shrink-0 shadow-md transform group-hover:scale-110 group-hover:rotate-3 transition-transform`}>
                 
-                  <client.icon className="w-6 h-6 text-white" />
+                  <client.icon className="w-6 h-6 md:w-8 md:h-8 xl:w-10 xl:h-10 2xl:w-12 2xl:h-12 text-white" />
                 </div>
-                <span className="font-bold text-navy text-lg">
+                <span className="font-bold text-navy text-lg md:text-xl xl:text-2xl 2xl:text-3xl">
                   {client.text}
                 </span>
               </motion.div>

@@ -65,12 +65,12 @@ export function WhatWeOffer() {
               <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-magenta to-orange flex items-center justify-center shadow-lg">
                 <LayersIcon className="w-8 h-8 text-white" />
               </div>
-              <h2 className="text-4xl md:text-5xl font-black text-navy">
+              <h2 className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-black text-navy">
                 ماذا نقدّم؟
               </h2>
             </div>
 
-            <p className="text-xl text-slate-600 mb-10 font-light leading-relaxed">
+            <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-slate-600 mb-10 font-light leading-relaxed">
               نقدّم منظومة متكاملة من الحلول التي تساعد شركاءنا على تحويل الرؤية
               إلى واقع، والطموح إلى مشاريع ناجحة. تشمل خدماتنا:
             </p>
@@ -99,7 +99,7 @@ export function WhatWeOffer() {
                   <div
                   className={`w-3 h-3 rounded-full bg-gradient-to-r ${offer.color} ${isRTL ? 'ml-3' : 'mr-3'} group-hover:scale-150 transition-transform`}>
                 </div>
-                  <span className="text-sm md:text-base font-bold text-navy">
+                  <span className="text-sm md:text-base xl:text-lg 2xl:text-xl font-bold text-navy">
                     {offer.text}
                   </span>
                 </motion.div>
@@ -110,11 +110,11 @@ export function WhatWeOffer() {
               <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-sky/30 to-transparent rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
 
               <div className="flex items-center gap-6 relative z-10">
-                <div className="text-7xl font-black text-transparent bg-clip-text bg-gradient-to-b from-gold to-amber opacity-90">
+                <div className="text-7xl md:text-8xl xl:text-9xl 2xl:text-10xl font-black text-transparent bg-clip-text bg-gradient-to-b from-gold to-amber opacity-90">
                   8
                 </div>
                 <div className="w-1 h-16 bg-white/20 rounded-full"></div>
-                <p className="font-medium text-xl leading-relaxed">
+                <p className="font-medium text-xl md:text-2xl xl:text-3xl 2xl:text-4xl leading-relaxed">
                   خدمات رئيسية متكاملة ترتكز على التحليل العميق والخبرة المتخصصة
                   لبناء حلول عملية قابلة للتنفيذ.
                 </p>
@@ -137,7 +137,7 @@ export function WhatWeOffer() {
             transition={{
               duration: 0.8
             }}
-            className="relative h-[700px] rounded-[3rem] overflow-hidden shadow-2xl border-8 border-slate-50">
+            className="relative h-[700px] md:h-[800px] xl:h-[900px] 2xl:h-[1000px] rounded-[3rem] overflow-hidden shadow-2xl border-8 border-slate-50">
             
             <Image
               src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80"
@@ -157,7 +157,7 @@ export function WhatWeOffer() {
                 <div className="w-12 h-12 rounded-full bg-gradient-to-r from-emerald to-teal-500 flex items-center justify-center">
                   <CheckCircle2Icon className="w-6 h-6 text-white" />
                 </div>
-                <p className="text-white font-bold text-lg">
+                <p className="text-white font-bold text-lg md:text-xl xl:text-2xl 2xl:text-3xl">
                   نحول الرؤية إلى واقع ملموس
                 </p>
               </div>

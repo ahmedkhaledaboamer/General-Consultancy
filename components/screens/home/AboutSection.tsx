@@ -37,12 +37,12 @@ export function AboutSection() {
             
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white shadow-sm border border-slate-100 mb-8">
               <span className="w-2 h-2 rounded-full bg-gradient-to-r from-gold to-orange"></span>
-              <span className="text-sm font-bold text-navy tracking-wide">
+              <span className="text-sm md:text-base xl:text-lg 2xl:text-2xl font-bold text-navy tracking-wide">
                 من نحن؟
               </span>
             </div>
 
-            <h2 className="text-4xl md:text-5xl font-black text-navy mb-8 leading-[1.2]">
+            <h2 className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-black text-navy mb-8 leading-[1.2]">
               نبني منظومة متكاملة تساعد شركاءنا على{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky via-violet to-magenta">
                 النمو بثقة وثبات
@@ -53,18 +53,18 @@ export function AboutSection() {
               {/* Decorative line behind text */}
               <div className="absolute right-0 top-2 bottom-2 w-1 bg-gradient-to-b from-slate-200 to-transparent rounded-full -mr-6 hidden md:block"></div>
 
-              <p className="font-medium text-navy text-xl">
+              <p className="font-medium text-navy text-xl md:text-2xl xl:text-3xl 2xl:text-5xl">
                 نحن كيان استشاري واستثماري يعمل على دعم المؤسسات والمستثمرين عبر
                 منظومة متكاملة من الخبرات المتخصصة في مجالات الاستثمار وإدارة
                 المشاريع والاستشارات الاستراتيجية.
               </p>
-              <p>
+              <p className="font-medium text-navy text-sm md:text-lg xl:text-xl 2xl:text-2xl">
                 انطلقت شركة الشيخ عبد العزيز بن عبد الله المعلا للاستشارات
                 العامة برؤية واضحة تهدف إلى تمكين المستثمرين والجهات المؤسسية من
                 تحويل الفرص إلى مشاريع ناجحة، وبناء هياكل تشغيلية قوية، وتطوير
                 استثمارات قادرة على تحقيق قيمة مستدامة في السوق.
               </p>
-              <p>
+              <p className="font-medium text-navy text-sm md:text-lg xl:text-xl 2xl:text-2xl">
                 نعمل عبر شبكة من الخبرات متعددة التخصصات، تجمع بين التحليل
                 الاقتصادي، والإدارة الاستراتيجية، وتطوير الأعمال، والاستشارات
                 المتخصصة في قطاعات متنوعة تشمل الصناعة، والطاقة، والصحة،
@@ -74,7 +74,7 @@ export function AboutSection() {
               <div className="mt-10 p-6 bg-gradient-to-br from-navy to-purple-deep rounded-2xl shadow-xl border border-white/10 relative overflow-hidden group">
                 <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80')] opacity-10 bg-cover bg-center mix-blend-overlay group-hover:scale-110 transition-transform duration-700"></div>
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gold/20 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2"></div>
-                <p className="relative z-10 font-bold text-white text-xl leading-relaxed">
+                <p className="relative z-10 font-bold text-white text-xl md:text-2xl xl:text-3xl 2xl:text-4xl leading-relaxed">
                   نحن لا نعمل فقط على تقديم الحلول… بل نعمل على بناء منظومة
                   متكاملة تساعد شركاءنا على النمو بثقة وثبات.
                 </p>
@@ -155,10 +155,10 @@ export function AboutSection() {
                   </svg>
                 </div>
                 <div className={`${isRTL ? 'text-right' : 'text-left'}`}>
-                  <p className="text-[.7rem] md:text-lg text-slate-500 font-bold uppercase tracking-wider mb-1">
+                  <p className="text-[.7rem] md:text-lg xl:text-xl 2xl:text-2xl text-slate-500 font-bold uppercase tracking-wider mb-1">
                     رؤية استراتيجية
                   </p>
-                  <p className="text-[.8rem] md:text-lg font-black text-navy">نمو مستدام</p>
+                  <p className="text-[.8rem] md:text-lg xl:text-xl 2xl:text-2xl font-black text-navy">نمو مستدام</p>
                 </div>
               </div>
             </div>

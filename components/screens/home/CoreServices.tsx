@@ -116,13 +116,13 @@ export function CoreServices() {
               once: true
             }}>
             
-            <h2 className="text-4xl md:text-5xl font-black text-navy mb-6">
+            <h2 className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-black text-navy mb-6">
               خدماتنا{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky to-violet">
                 الأساسية
               </span>
             </h2>
-            <p className="text-xl text-slate-600 font-light">
+            <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-slate-600 font-light">
               نعمل عبر مجموعة واسعة من المجالات الاستشارية والاستثمارية التي
               تمكّن المؤسسات من تحقيق أهدافها وتعزيز قدرتها التنافسية.
             </p>
@@ -153,7 +153,7 @@ export function CoreServices() {
                 className="bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden flex flex-col group border border-slate-100">
                 
                 {/* Header Image Area */}
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-48 md:h-52 xl:h-60 2xl:h-120 overflow-hidden">
                   <Image
                     src={service.image}
                     alt={service.title}
@@ -181,10 +181,10 @@ export function CoreServices() {
                     className={`absolute top-0 bottom-0 left-0 w-1.5 bg-gradient-to-b ${service.gradient}`}>
                   </div>
 
-                  <h3 className="text-2xl font-bold text-navy mb-4">
+                  <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-navy mb-4">
                     {service.title}
                   </h3>
-                  <p className="text-slate-600 mb-6 text-lg leading-relaxed">
+                  <p className="text-slate-600 mb-6 text-lg md:text-xl xl:text-2xl 2xl:text-3xl leading-relaxed">
                     {service.description}
                   </p>
 
@@ -228,7 +228,7 @@ export function CoreServices() {
                     {/* Close button */}
                     <button
                       onClick={() => setExpandedIndex(null)}
-                      className="cursor-pointer absolute top-4 left-4 z-10 rounded-full bg-white/80 px-3 py-1 text-sm font-medium text-slate-700 shadow hover:bg-white"
+                      className="cursor-pointer absolute top-4 left-4 z-10 rounded-full bg-white/80 px-3 py-1 text-sm md:text-base xl:text-lg 2xl:text-2xl font-medium text-slate-700 shadow hover:bg-white"
                     >
                       إغلاق
                     </button>
@@ -252,10 +252,10 @@ export function CoreServices() {
                           )}
                         </div>
                         <div>
-                          <h3 className="text-xl md:text-2xl font-bold">
+                          <h3 className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-bold">
                             {activeService.title}
                           </h3>
-                          <p className="text-sm md:text-base text-slate-100/80">
+                          <p className="text-sm md:text-base xl:text-lg 2xl:text-xl text-slate-100/80">
                             تفاصيل الخدمة
                           </p>
                         </div>
@@ -273,10 +273,10 @@ export function CoreServices() {
                           {activeService.items.map((item, i) => (
                             <li
                               key={i}
-                              className="flex items-start text-sm md:text-base text-slate-800 bg-slate-50 p-3 rounded-lg border border-slate-100"
+                              className="flex items-start text-sm md:text-base xl:text-lg 2xl:text-xl text-slate-800 bg-slate-50 p-3 rounded-lg border border-slate-100"
                             >
                               <span
-                                className={`w-2 h-2 rounded-full bg-gradient-to-r ${activeService.gradient} mt-2  ${isRTL ? 'ml-3' : 'mr-3'} flex-shrink-0 shadow-sm`}
+                                className={`w-2 h-2 rounded-full bg-gradient-to-r ${activeService.gradient} mt-2  ${isRTL ? 'ml-3' : 'mr-3'} flex-shrink-0 shadow-sm text-sm md:text-base xl:text-lg 2xl:text-xl`}
                               ></span>
                               <span>{item}</span>
                             </li>

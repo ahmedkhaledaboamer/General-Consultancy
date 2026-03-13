@@ -66,10 +66,10 @@ export function OurPromise() {
               {/* Decorative Corner */}
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-gold/30 to-transparent rounded-bl-full"></div>
 
-              <h2 className={`text-center text-4xl md:text-5xl font-black text-white mb-6 drop-shadow-lg ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
+              <h2 className={`text-center text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-black text-white mb-6 drop-shadow-lg ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
                 وعدنا لك
               </h2>
-              <p className={`text-center  text-xl text-slate-200 mb-10 leading-relaxed font-light ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
+              <p className={`text-center  text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-slate-200 mb-10 leading-relaxed font-light ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
                 نعد شركاءنا بتقديم خدمات استشارية واستثمارية تعتمد على الخبرة،
                 والتحليل الدقيق، والرؤية الواضحة. نلتزم بأن نكون الشريك الذي
                 يساعدك على:
@@ -96,17 +96,17 @@ export function OurPromise() {
                   className="flex items-center text-white group">
                   
                     <div
-                    className={`w-8 h-8 rounded-full bg-gradient-to-br ${promise.color} flex items-center justify-center ${isRTL ? 'ml-4' : 'mr-4'} flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform`}>
+                    className={`w-8 h-8 md:w-10 md:h-10 xl:w-12 xl:h-12 2xl:w-14 2xl:h-14 rounded-full bg-gradient-to-br ${promise.color} flex items-center justify-center ${isRTL ? 'ml-4' : 'mr-4'} flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform`}>
                     
-                      <CheckIcon className="w-5 h-5 text-white" />
+                      <CheckIcon className="w-5 h-5 md:w-6 md:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8 text-white" />
                     </div>
-                    <span className="font-bold text-xl">{promise.text}</span>
+                    <span className="font-bold text-xl md:text-2xl xl:text-3xl 2xl:text-4xl">{promise.text}</span>
                   </motion.li>
                 )}
               </ul>
 
               <div className="pt-8 border-t border-white/20">
-                <p className={`text-center text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-gold via-amber to-orange ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
+                <p className={`text-center text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-gold via-amber to-orange ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
                   هدفنا أن نكون شريكًا يعتمد عليه في بناء المستقبل الاستثماري.
                 </p>
               </div>
@@ -127,9 +127,9 @@ export function OurPromise() {
             transition={{
               duration: 0.8
             }}
-            className="relative h-[400px] md:h-[500px] lg:h-[700px] w-full hidden lg:block">
+            className="relative h-[400px] md:h-[500px] lg:h-[700px] 2xl:h-[800px] w-full hidden lg:block">
             
-            <div className="absolute top-0 right-0 w-7/8 h-7/8 rounded-3xl overflow-hidden shadow-2xl border-4 border-white z-10">
+            <div className="absolute top-0 right-0 w-7/8 h-7/8 md:w-8/8 md:h-8/8 xl:w-9/9 xl:h-9/9 2xl:w-10/10 2xl:h-10/10 rounded-3xl overflow-hidden shadow-2xl border-4 border-white z-10">
               <Image
                 src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80"
                 alt="Business Meeting"

@@ -10,7 +10,7 @@
 export function Footer() {
   return (
     <footer className="bg-[#071226] text-white pt-20 pb-10 border-t-4 border-gold">
-      <div className="container mx-auto px-4 md:px-8">
+      <div className="px-[5%]">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Company Info */}
           <div className="lg:col-span-1">
@@ -19,15 +19,15 @@ export function Footer() {
                 ع
               </div>
               <div className="flex flex-col">
-                <span className="text-white font-bold text-lg leading-tight">
+                <span className="text-white font-bold text-lg md:text-xl xl:text-2xl 2xl:text-3xl leading-tight">
                   الشيخ عبد العزيز بن عبد الله المعلا
                 </span>
-                <span className="text-gold text-xs font-medium">
+                <span className="text-gold text-xs md:text-sm xl:text-base 2xl:text-lg font-medium">
                   للاستشارات العامة
                 </span>
               </div>
             </div>
-            <p className="text-white/60 text-sm leading-relaxed mb-6">
+            <p className="text-white/60 text-sm md:text-base xl:text-lg 2xl:text-xl leading-relaxed mb-6">
               نحن كيان استشاري واستثماري يعمل على دعم المؤسسات والمستثمرين عبر
               منظومة متكاملة من الخبرات المتخصصة في مجالات الاستثمار وإدارة
               المشاريع والاستشارات الاستراتيجية.
@@ -37,32 +37,32 @@ export function Footer() {
                 href="#"
                 className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-gold hover:text-navy-900 transition-colors"
               >
-                <LinkedinIcon className="w-5 h-5" />
+                <LinkedinIcon className="w-5 h-5 md:w-6 md:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8" />
               </a>
               <a
                 href="#"
                 className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-gold hover:text-navy-900 transition-colors"
               >
-                <TwitterIcon className="w-5 h-5" />
+                <TwitterIcon className="w-5 h-5 md:w-6 md:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8" />
               </a>
               <a
                 href="#"
                 className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-gold hover:text-navy-900 transition-colors"
               >
-                <FacebookIcon className="w-5 h-5" />
+                <FacebookIcon className="w-5 h-5 md:w-6 md:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8" />
               </a>
               <a
                 href="#"
                 className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-gold hover:text-navy-900 transition-colors"
               >
-                <InstagramIcon className="w-5 h-5" />
+                <InstagramIcon className="w-5 h-5 md:w-6 md:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8" />
               </a>
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-bold text-white mb-6 border-b border-white/10 pb-4 inline-block">
+            <h4 className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl font-bold text-white mb-6 border-b border-white/10 pb-4 inline-block">
               روابط سريعة
             </h4>
             <ul className="space-y-3">
@@ -111,7 +111,7 @@ export function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-bold text-white mb-6 border-b border-white/10 pb-4 inline-block">
+            <h4 className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl font-bold text-white mb-6 border-b border-white/10 pb-4 inline-block">
               خدماتنا
             </h4>
             <ul className="space-y-3">
@@ -125,12 +125,12 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-lg font-bold text-white mb-6 border-b border-white/10 pb-4 inline-block">
+            <h4 className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl font-bold text-white mb-6 border-b border-white/10 pb-4 inline-block">
               معلومات التواصل
             </h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <MapPinIcon className="w-5 h-5 text-gold shrink-0 mt-1" />
+                <MapPinIcon className="w-5 h-5 md:w-6 md:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8 text-gold shrink-0 mt-1" />
                 <span className="text-white/60 text-sm leading-relaxed">
                   الإمارات العربية المتحدة
                   <br />
@@ -138,13 +138,13 @@ export function Footer() {
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <PhoneIcon className="w-5 h-5 text-gold shrink-0" />
+                <PhoneIcon className="w-5 h-5 md:w-6 md:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8 text-gold shrink-0" />
                 <span className="text-white/60 text-sm" dir="ltr">
                   +971 50 000 0000
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <MailIcon className="w-5 h-5 text-gold shrink-0" />
+                <MailIcon className="w-5 h-5 md:w-6 md:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8 text-gold shrink-0" />
                 <span className="text-white/60 text-sm">
                   info@almuallaconsulting.com
                 </span>
@@ -154,16 +154,16 @@ export function Footer() {
         </div>
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-white/40 text-sm text-center md:text-start">
+          <p className="text-white/40 text-sm md:text-base xl:text-lg 2xl:text-xl text-center md:text-start">
             جميع الحقوق محفوظة © {new Date().getFullYear()} شركة الشيخ عبد
             العزيز بن عبد الله المعلا للاستشارات العامة
           </p>
-          <div className="flex items-center gap-4 text-sm text-white/40">
-            <a href="#" className="hover:text-gold transition-colors">
+          <div className="flex items-center gap-4 text-sm md:text-base xl:text-lg 2xl:text-xl text-white/40">
+            <a href="#" className="hover:text-gold transition-colors text-sm md:text-base xl:text-lg 2xl:text-xl">
               الشروط والأحكام
             </a>
             <span>|</span>
-            <a href="#" className="hover:text-gold transition-colors">
+            <a href="#" className="hover:text-gold transition-colors text-sm md:text-base xl:text-lg 2xl:text-xl">
               سياسة الخصوصية
             </a>
           </div>

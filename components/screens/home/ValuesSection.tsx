@@ -69,7 +69,7 @@ export function ValuesSection() {
             viewport={{
               once: true
             }}
-            className="text-4xl md:text-5xl font-black text-white mb-6">
+            className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-black text-white mb-6">
             
             قيمنا ومبادئنا
           </motion.h2>
@@ -88,7 +88,7 @@ export function ValuesSection() {
             transition={{
               delay: 0.1
             }}
-            className="text-xl text-slate-300 font-light">
+            className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-slate-300 font-light">
             
             نؤمن بأن نجاح أي مشروع يعتمد على منظومة قيم واضحة تحكم طريقة العمل
             واتخاذ القرار.
@@ -114,7 +114,7 @@ export function ValuesSection() {
               duration: 0.5,
               delay: index * 0.1
             }}
-            className="relative rounded-3xl overflow-hidden shadow-2xl w-full md:w-[calc(50%-16px)] lg:w-[calc(33.333%-22px)] group h-80">
+            className="relative rounded-3xl overflow-hidden shadow-2xl w-full md:w-[calc(50%-16px)] lg:w-[calc(33.333%-22px)] group h-80 md:h-96 xl:h-120 2xl:h-144">
             
               {/* Background Image */}
               <img
@@ -132,7 +132,7 @@ export function ValuesSection() {
               {/* Content */}
               <div className="absolute inset-0 p-8 flex flex-col items-center justify-center text-center z-10">
                 {/* Hexagonal Icon Container */}
-                <div className="relative w-20 h-20 mb-6 transform group-hover:-translate-y-2 transition-transform duration-300">
+                <div className="relative w-20 h-20 md:w-24 md:h-24 xl:w-28 xl:h-28 2xl:w-32 2xl:h-32 mb-6 transform group-hover:-translate-y-2 transition-transform duration-300">
                   <div
                   className={`absolute inset-0 bg-gradient-to-br ${value.color} rotate-45 rounded-xl opacity-50 blur-md`}>
                 </div>
@@ -143,10 +143,10 @@ export function ValuesSection() {
                   </div>
                 </div>
 
-                <h3 className="text-2xl font-bold text-white mb-3 drop-shadow-md">
+                <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-white mb-3 drop-shadow-md">
                   {value.title}
                 </h3>
-                <p className="text-slate-200 text-base leading-relaxed font-light drop-shadow-sm opacity-100 translate-y-0 lg:opacity-0 lg:group-hover:opacity-100 lg:translate-y-4 lg:group-hover:translate-y-0 transition-all duration-300">
+                <p className="text-slate-200 text-base md:text-lg xl:text-xl 2xl:text-2xl leading-relaxed font-light drop-shadow-sm opacity-100 translate-y-0 lg:opacity-0 lg:group-hover:opacity-100 lg:translate-y-4 lg:group-hover:translate-y-0 transition-all duration-300">
                   {value.description}
                 </p>
               </div>

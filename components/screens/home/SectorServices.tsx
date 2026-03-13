@@ -155,13 +155,13 @@ export function SectorServices() {
               once: true
             }}>
             
-            <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
+            <h2 className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-black text-white mb-6">
               الاستثمار وتطوير المشاريع{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald to-sky">
                 القطاعية
               </span>
             </h2>
-            <p className="text-xl text-slate-300 font-light">
+            <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-slate-300 font-light">
               نساهم في تطوير وإدارة الاستثمارات في قطاعات اقتصادية متعددة من
               خلال دراسات متخصصة وخطط تشغيلية واضحة.
             </p>
@@ -169,7 +169,7 @@ export function SectorServices() {
         </div>
 
         {/* Masonry-style Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-[300px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-[300px] md:auto-rows-[400px] xl:auto-rows-[500px] 2xl:auto-rows-[600px]">
           {sectors.map((sector, index) =>
           <motion.div
             key={index}
@@ -188,7 +188,7 @@ export function SectorServices() {
               duration: 0.5,
               delay: index * 0.05
             }}
-            className={`relative rounded-3xl overflow-hidden group shadow-2xl ${sector.colSpan}`}>
+            className={`relative rounded-3xl  overflow-hidden group shadow-2xl ${sector.colSpan}`}>
             
               {/* Background Image */}
               <Image
@@ -207,11 +207,11 @@ export function SectorServices() {
 
               {/* Content */}
               <div className="absolute inset-0 p-8 flex flex-col justify-end z-10">
-                <div className="w-14 h-14 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center mb-6 transform group-hover:-translate-y-2 transition-transform duration-300 border border-white/30 shadow-lg">
+                <div className="w-14 h-14 md:w-16 md:h-16 xl:w-20 xl:h-20 2xl:w-24 2xl:h-24 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center mb-6 transform group-hover:-translate-y-2 transition-transform duration-300 border border-white/30 shadow-lg">
                   <sector.icon className="w-7 h-7 text-white" />
                 </div>
 
-                <h3 className="text-2xl font-bold text-white mb-4 drop-shadow-md">
+                <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-white mb-4 drop-shadow-md">
                   {sector.title}
                 </h3>
 
@@ -221,10 +221,10 @@ export function SectorServices() {
                     {sector.items.map((item, i) => (
                       <li
                         key={i}
-                        className="flex items-start text-sm text-white/90 font-medium"
+                        className="flex items-start text-sm md:text-base xl:text-lg 2xl:text-xl text-white/90 font-medium"
                       >
                         <span
-                          className={`w-1.5 h-1.5 rounded-full bg-white mt-1.5 ${
+                          className={`w-1.5 h-1.5 rounded-full bg-white mt-1.5 text-sm md:text-base xl:text-lg 2xl:text-xl ${
                             isRTL ? 'ml-2' : 'mr-2'
                           } flex-shrink-0 shadow-[0_0_5px_rgba(255,255,255,0.8)]`}
                         ></span>

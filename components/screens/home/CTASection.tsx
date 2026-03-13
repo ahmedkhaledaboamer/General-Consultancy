@@ -77,7 +77,7 @@ export function CTASection() {
           }}
           className="glass-colored bg-navy/40 p-12 md:p-16 rounded-[3rem] border border-white/20 shadow-2xl">
           
-          <h2 className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight drop-shadow-lg">
+          <h2 className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-black text-white mb-6 leading-tight drop-shadow-lg">
             ابدأ اليوم خطوة جديدة نحو <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold via-orange to-magenta">
               تطوير أعمالك واستثماراتك.
@@ -101,7 +101,7 @@ export function CTASection() {
               scale: 0.95
             }}
             href={`/${locale}/execution`}
-            className="relative overflow-hidden bg-gradient-to-r from-gold via-orange to-magenta text-white font-black text-2xl py-6 px-16 rounded-full shadow-[0_0_40px_rgba(249,115,22,0.5)] hover:shadow-[0_0_60px_rgba(236,72,153,0.6)] transition-all group">
+            className="relative overflow-hidden bg-gradient-to-r from-gold via-orange to-magenta text-white font-black text-sm md:text-base xl:text-lg 2xl:text-xl py-6 px-16 rounded-full shadow-[0_0_40px_rgba(249,115,22,0.5)] hover:shadow-[0_0_60px_rgba(236,72,153,0.6)] transition-all group">
             
             <span className="relative z-10">تواصل معنا</span>
           </motion.a>
