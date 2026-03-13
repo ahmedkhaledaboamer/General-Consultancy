@@ -134,10 +134,10 @@ export function ServicesSection() {
               once: true
             }}>
             
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6 drop-shadow-lg">
+            <h2 className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-heading font-bold text-white mb-6 drop-shadow-lg">
               منظومة خدماتنا المتكاملة
             </h2>
-            <p className="text-lg md:text-xl text-gray-200 font-body leading-relaxed mx-auto">
+            <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-gray-200 font-body leading-relaxed mx-auto">
               تعتمد خدماتنا على منهجية متكاملة تجمع بين الخبرة الاستشارية
               والرؤية الاستثمارية، مما يتيح للمؤسسات والمستثمرين الوصول إلى حلول
               عملية تدعم اتخاذ القرار وتحقق نتائج ملموسة.
@@ -152,7 +152,7 @@ export function ServicesSection() {
           <div className="flex gap-3 min-w-max px-2">
             <button
               onClick={() => setActiveCategory(null)}
-              className={`cursor-pointer px-6 py-3 rounded-full font-body font-medium transition-all shadow-sm ${activeCategory === null ? 'bg-navy text-white shadow-md shadow-navy/20' : 'bg-white text-gray-600 hover:bg-gray-100 border border-gray-200'}`}>
+              className={`cursor-pointer px-6 py-3 rounded-full font-body font-medium transition-all shadow-sm text-sm md:text-base xl:text-lg 2xl:text-xl ${activeCategory === null ? 'bg-navy text-white shadow-md shadow-navy/20' : 'bg-white text-gray-600 hover:bg-gray-100 border border-gray-200'}`}>
               
               عرض الكل
             </button>
@@ -163,11 +163,11 @@ export function ServicesSection() {
                 <button
                   key={category.id}
                   onClick={() => setActiveCategory(category.id)}
-                  className={`cursor-pointer flex items-center gap-2 px-6 py-3 rounded-full font-body font-medium transition-all shadow-sm ${isActive ? `bg-gradient-to-r ${colorTheme.gradient} text-white shadow-md` : 'bg-white text-gray-600 hover:bg-gray-50 border border-gray-200'}`}>
+                  className={`cursor-pointer flex items-center gap-2 px-6 py-3 rounded-full font-body font-medium transition-all shadow-sm text-sm md:text-base xl:text-lg 2xl:text-xl ${isActive ? `bg-gradient-to-r ${colorTheme.gradient} text-white shadow-md` : 'bg-white text-gray-600 hover:bg-gray-50 border border-gray-200'}`}>
                   
                   <IconComponent
                     name={category.icon}
-                    className={`w-4 h-4 ${isActive ? 'text-white' : colorTheme.text}`} />
+                    className={`w-4 h-4 md:w-6 md:h-6 xl:w-8 xl:h-8 2xl:w-10 2xl:h-10 ${isActive ? 'text-white' : colorTheme.text}`} />
                   
                   {category.name}
                 </button>);
@@ -210,7 +210,7 @@ export function ServicesSection() {
                   className="bg-white rounded-2xl shadow-lg shadow-gray-200/50 border border-gray-100 overflow-hidden">
                   
                   {/* Category Header with Image */}
-                  <div className="relative h-48 md:h-56 overflow-hidden">
+                  <div className="relative h-48 md:h-56 lg:h-64 2xl:h-72 overflow-hidden">
                     <img
                       src={category.image}
                       alt={category.name}
@@ -225,7 +225,7 @@ export function ServicesSection() {
 
                     <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 flex items-end gap-5">
                       <div
-                        className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${colorTheme.gradient} flex items-center justify-center text-white shadow-xl flex-shrink-0 ring-4 ${colorTheme.ring}`}>
+                        className={`w-16 h-16 md:w-20 md:h-20 xl:w-24 xl:h-24 2xl:w-28 2xl:h-28 rounded-2xl bg-gradient-to-br ${colorTheme.gradient} flex items-center justify-center text-white shadow-xl flex-shrink-0 ring-4 ${colorTheme.ring}`}>
                         
                         <IconComponent
                           name={category.icon}
@@ -233,10 +233,10 @@ export function ServicesSection() {
                         
                       </div>
                       <div>
-                        <h3 className="text-2xl md:text-3xl font-heading font-bold text-white drop-shadow-md">
+                        <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-heading font-bold text-white drop-shadow-md">
                           {category.name}
                         </h3>
-                        <p className="text-gray-300 font-body text-sm mt-1">
+                        <p className="text-gray-300 font-body text-sm md:text-base xl:text-lg 2xl:text-xl mt-1">
                           {category.subServices.length} خدمة متخصصة
                         </p>
                       </div>
@@ -255,7 +255,7 @@ export function ServicesSection() {
                         className="group rounded-xl overflow-hidden bg-white border border-gray-100 hover:shadow-xl hover:shadow-gray-200/60 transition-all duration-300">
                         
                           {/* Sub-service Image */}
-                          <div className="relative h-40 overflow-hidden">
+                          <div className="relative h-40 md:h-48 lg:h-72 2xl:h-120 overflow-hidden">
                             <Image
                               src={sub.image}
                               alt={sub.name}
@@ -268,7 +268,7 @@ export function ServicesSection() {
                             className={`absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/30 to-transparent opacity-60 group-hover:opacity-40 transition-opacity`} />
                           
                             <div
-                            className={`absolute top-3 ${!isRTL ? 'left-3' : 'right-3'} w-10 h-10 rounded-lg bg-gradient-to-br ${colorTheme.gradient} flex items-center justify-center text-white shadow-lg`}>
+                            className={`absolute top-3 ${!isRTL ? 'left-3' : 'right-3'} w-10 h-10 md:w-12 md:h-12 xl:w-14 xl:h-14 2xl:w-16 2xl:h-16 rounded-lg bg-gradient-to-br ${colorTheme.gradient} flex items-center justify-center text-white shadow-lg`}>
                             
                               <IconComponent
                               name={sub.icon}
@@ -279,7 +279,7 @@ export function ServicesSection() {
 
                           {/* Sub-service Content */}
                           <div
-                          className={`p-5 border-t-3 border-transparent group-hover:border-t-[3px]`}
+                          className={`p-5 md:p-6 xl:p-7 2xl:p-8 border-t-3 border-transparent group-hover:border-t-[3px]`}
                           style={{
                             borderTopColor: 'transparent'
                           }}>
@@ -287,10 +287,10 @@ export function ServicesSection() {
                             <div
                             className={`w-full h-0.5 bg-gradient-to-r ${colorTheme.gradient} mb-4 rounded-full opacity-40 group-hover:opacity-100 transition-opacity`} />
                           
-                            <h4 className="text-base font-heading font-bold text-navy mb-2 leading-snug">
+                            <h4 className="text-base md:text-lg xl:text-xl 2xl:text-2xl font-heading font-bold text-navy mb-2 leading-snug">
                               {sub.name}
                             </h4>
-                            <p className="text-gray-500 font-body text-sm leading-relaxed line-clamp-3">
+                            <p className="text-gray-500 font-body text-sm md:text-base xl:text-lg 2xl:text-xl leading-relaxed line-clamp-3">
                               {sub.description}
                             </p>
                           </div>

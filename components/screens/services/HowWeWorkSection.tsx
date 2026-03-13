@@ -90,10 +90,10 @@ export function HowWeWorkSection() {
               once: true
             }}>
             
-            <h2 className="text-3xl md:text-5xl font-heading font-bold text-white mb-6 drop-shadow-lg">
+            <h2 className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-heading font-bold text-white mb-6 drop-shadow-lg">
               كيف نعمل
             </h2>
-            <p className="text-lg text-gray-300 font-body leading-relaxed bg-navy/30 p-4 rounded-xl backdrop-blur-sm border border-white/5">
+            <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-gray-300 font-body leading-relaxed bg-navy/30 p-4 rounded-xl backdrop-blur-sm border border-white/5">
               تعتمد منهجية عملنا على فهم عميق لاحتياجات شركائنا، وتحليل دقيق
               للفرص والتحديات، ثم تطوير حلول عملية قابلة للتنفيذ. تمر عملية
               العمل لدينا عبر مراحل واضحة:
@@ -103,9 +103,9 @@ export function HowWeWorkSection() {
 
         <div className="relative mt-16">
           {/* Multi-color Connecting Line (Desktop) */}
-          <div className="hidden lg:block absolute top-12 left-0 right-0 h-1 bg-gradient-to-r from-purple-500 via-emerald-500 via-amber-500 via-blue-500 to-teal-500 opacity-40 rounded-full" />
+          <div className="hidden lg:block absolute top-12 left-0 right-0 h-1 md:h-2 lg:h-3 2xl:h-4 bg-gradient-to-r from-purple-500 via-emerald-500 via-amber-500 via-blue-500 to-teal-500 opacity-40 rounded-full" />
 
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-10 lg:gap-12 2xl:gap-14">
             {steps.map((step, index) =>
             <motion.div
               key={step.id}
@@ -127,7 +127,7 @@ export function HowWeWorkSection() {
               
                 {/* Step Number Badge */}
                 <div
-                className={`absolute -top-4 -right-2 w-10 h-10 ${step.badgeColor} rounded-full flex items-center justify-center text-white font-bold font-heading z-20 shadow-lg border-2 border-navy transform group-hover:scale-110 transition-transform`}>
+                className={`absolute -top-4 -right-2 w-10 h-10 md:w-12 md:h-12 xl:w-14 xl:h-14 2xl:w-16 2xl:h-16 ${step.badgeColor} rounded-full flex items-center justify-center text-white font-bold font-heading z-20 shadow-lg border-2 border-navy transform group-hover:scale-110 transition-transform`}>
                 
                   {step.id}
                 </div>
@@ -137,16 +137,16 @@ export function HowWeWorkSection() {
                 className={`w-24 h-24 rounded-2xl bg-gradient-to-br ${step.color} p-0.5 mb-6 relative z-10 transform group-hover:-translate-y-2 transition-all duration-300 shadow-xl`}>
                 
                   <div className="w-full h-full bg-navy rounded-2xl flex items-center justify-center backdrop-blur-sm">
-                    <step.icon className="w-10 h-10 text-white drop-shadow-md" />
+                    <step.icon className="w-10 h-10 md:w-12 md:h-12 xl:w-14 xl:h-14 2xl:w-16 2xl:h-16 text-white drop-shadow-md" />
                   </div>
                 </div>
 
                 {/* Content */}
                 <div className="flex flex-col items-center justify-center bg-navy/60 backdrop-blur-md p-6 rounded-2xl border border-white/10 w-full h-full transform transition-all duration-300 group-hover:bg-navy/80 hover:border-white/20">
-                  <h3 className="text-xl font-heading font-bold text-white mb-3">
+                  <h3 className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-heading font-bold text-white mb-3">
                     {step.title}
                   </h3>
-                  <p className="text-gray-300 font-body text-sm leading-relaxed">
+                  <p className="text-gray-300 font-body text-sm md:text-base xl:text-lg 2xl:text-xl leading-relaxed">
                     {step.description}
                   </p>
                 </div>

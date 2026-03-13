@@ -102,7 +102,7 @@ export function AboutSection() {
             className="relative h-[400px] md:h-[500px] lg:h-[700px] w-full">
             
             {/* Main Large Image */}
-            <div className="absolute top-0 right-0 w-4/5 h-4/5 rounded-3xl overflow-hidden shadow-2xl border-4 border-white z-10">
+            <div className="absolute top-0 right-0 w-4/5 h-4/5 md:w-3/5 md:h-3/5 lg:w-4/5 lg:h-4/5 rounded-3xl overflow-hidden shadow-2xl border-4 border-white z-10">
               <Image
                 src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80"
                 alt="Business Meeting"
@@ -115,7 +115,7 @@ export function AboutSection() {
             </div>
 
             {/* Secondary Overlapping Image */}
-            <div className="absolute bottom-0 left-0 w-3/5 h-2/5 rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.3)] border-4 border-white z-20 transform -translate-y-10 translate-x-10">
+            <div className="absolute bottom-0 left-0 w-3/5 h-2/5 md:w-2/5 md:h-2/5 lg:w-3/5 lg:h-3/5 rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.3)] border-4 border-white z-20 transform -translate-y-10 translate-x-10">
               <Image
                 src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&q=80"
                 alt="Partnership Handshake"

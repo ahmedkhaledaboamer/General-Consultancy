@@ -47,19 +47,19 @@ export function HeroSection() {
             className={` text-center ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
             
             <div className="inline-block px-4 py-1.5 rounded-full bg-teal/20 border border-teal/30 text-tealLight mb-6 shadow-[0_0_15px_rgba(13,148,136,0.2)]">
-              <span className="text-teal-300 font-body font-medium">
+              <span className="text-teal-300 font-body font-medium text-sm md:text-base xl:text-lg 2xl:text-xl">
                 الريادة في الاستشارات والاستثمار
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white leading-tight mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl font-heading font-bold text-white leading-tight mb-6">
               منظومة استشارية متكاملة
-              <span className="block mt-2 text-gradient-gold drop-shadow-md">
+              <span className="block mt-2 text-gradient-gold drop-shadow-md text-sm md:text-base xl:text-lg 2xl:text-xl">
                 تدعم الاستثمار… وتبني النجاح المؤسسي.
               </span>
             </h1>
 
-            <p className="text-lg md:text-xl text-gray-300 font-body leading-relaxed mb-8">
+            <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-gray-300 font-body leading-relaxed mb-8">
               في بيئة أعمال تتسم بالتغير المستمر وتزايد المنافسة، تحتاج المؤسسات
               والمستثمرون إلى منظومة خدمات قادرة على توفير الرؤية الاستراتيجية
               والدعم التنفيذي في آنٍ واحد.
@@ -72,7 +72,7 @@ export function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4">
               <button
                 onClick={scrollToContact}
-                className="cursor-pointer flex items-center justify-center gap-2 bg-gradient-to-r from-gold to-yellow-500 hover:from-goldLight hover:to-gold text-navy font-bold py-4 px-8 rounded-lg transition-all transform hover:-translate-y-1 shadow-[0_0_20px_rgba(201,168,76,0.4)]">
+                className="cursor-pointer flex items-center justify-center gap-2 bg-gradient-to-r from-gold to-yellow-500 hover:from-goldLight hover:to-gold text-navy font-bold py-4 px-8 rounded-lg transition-all transform hover:-translate-y-1 shadow-[0_0_20px_rgba(201,168,76,0.4)] text-sm md:text-base xl:text-lg 2xl:text-xl">
                 
                 <span>ابدأ رحلة النجاح معنا</span>
                 {isRTL ? <ArrowLeftIcon className="w-5 h-5" /> : <ArrowRightIcon className="w-5 h-5" />}
@@ -83,7 +83,7 @@ export function HeroSection() {
                   behavior: 'smooth'
                 })
                 }
-                className="cursor-pointer flex items-center justify-center gap-2 bg-navyLight/50 backdrop-blur-sm border border-teal/30 hover:border-teal hover:bg-navyLight text-white font-bold py-4 px-8 rounded-lg transition-all shadow-lg">
+                className="cursor-pointer flex items-center justify-center gap-2 bg-navyLight/50 backdrop-blur-sm border border-teal/30 hover:border-teal hover:bg-navyLight text-white font-bold py-4 px-8 rounded-lg transition-all shadow-lg text-sm md:text-base xl:text-lg 2xl:text-xl">
                 
                 استكشف خدماتنا
               </button>
@@ -108,7 +108,7 @@ export function HeroSection() {
                 duration: 0.8,
                 delay: 0.2
               }}
-              className="absolute top-0 right-0 w-4/5 h-[500px] rounded-2xl overflow-hidden shadow-2xl shadow-navy/80 border border-gray-700/50 z-10">
+              className="absolute top-0 right-0 w-4/5 h-[500px]   md:h-[500px]   lg:h-[500px]   2xl:h-[500px] rounded-2xl overflow-hidden shadow-2xl shadow-navy/80 border border-gray-700/50 z-10">
               
               <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent mix-blend-overlay z-10" />
               <Image
@@ -135,7 +135,7 @@ export function HeroSection() {
                 duration: 0.8,
                 delay: 0.5
               }}
-              className="absolute bottom-10 left-0 w-2/3 h-[300px] rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border-4 border-navy z-20">
+              className="absolute bottom-10 left-0 w-2/3 h-[300px]  md:h-[300px]   lg:h-[300px]   2xl:h-[400px] rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border-4 border-navy z-20">
               
               <div className="absolute inset-0 bg-teal/10 mix-blend-overlay z-10" />
               <Image
@@ -162,13 +162,13 @@ export function HeroSection() {
               
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-gradient-to-br from-teal-400 to-emerald-600 rounded-full flex items-center justify-center shadow-lg">
-                  <TrendingUpIcon className="w-6 h-6 text-white" />
+                  <TrendingUpIcon className="w-6 h-6 md:w-8 md:h-8 xl:w-10 xl:h-10 2xl:w-12 2xl:h-12 text-white" />
                 </div>
                 <div>
-                  <p className="font-heading font-bold text-white text-lg">
+                  <p className="font-heading font-bold text-white text-lg md:text-xl xl:text-2xl 2xl:text-3xl">
                     نمو مستدام
                   </p>
-                  <p className="text-xs text-teal-200 font-body">
+                  <p className="text-xs md:text-sm xl:text-base 2xl:text-lg text-teal-200 font-body">
                     استراتيجيات فعالة
                   </p>
                 </div>
