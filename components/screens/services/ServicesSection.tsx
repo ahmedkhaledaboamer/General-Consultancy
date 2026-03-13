@@ -4,6 +4,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import * as Icons from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import { services } from '@/components/screens/services/services';
+import { useLocale } from 'next-intl';
+import Image from 'next/image';
 const IconComponent = ({
   name,
   className
@@ -101,15 +103,20 @@ export function ServicesSection() {
   const displayedCategories = activeCategory ?
   services.filter((cat) => cat.id === activeCategory) :
   services;
+  const locale = useLocale();
+  const isRTL = locale === 'ar';
   return (
     <section id="services" className="bg-gray-50 pb-24">
       {/* Hero Banner */}
       <div className="relative h-80 md:h-96 w-full mb-16 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400&q=80"
             alt="مكتب حديث"
-            className="w-full h-full object-cover" />
+            className="w-full h-full object-cover"
+            width={1400}
+            height={800}
+          />
           
           <div className="absolute inset-0 bg-gradient-to-b from-navy/90 via-navy/70 to-gray-50" />
         </div>
@@ -130,7 +137,7 @@ export function ServicesSection() {
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6 drop-shadow-lg">
               منظومة خدماتنا المتكاملة
             </h2>
-            <p className="text-lg md:text-xl text-gray-200 font-body leading-relaxed max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-gray-200 font-body leading-relaxed mx-auto">
               تعتمد خدماتنا على منهجية متكاملة تجمع بين الخبرة الاستشارية
               والرؤية الاستثمارية، مما يتيح للمؤسسات والمستثمرين الوصول إلى حلول
               عملية تدعم اتخاذ القرار وتحقق نتائج ملموسة.
@@ -139,13 +146,13 @@ export function ServicesSection() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 relative z-20">
+      <div className=" mx-auto px-[5%] -mt-10 relative z-20">
         {/* Filter Pills */}
         <div className="mb-16 overflow-x-auto hide-scrollbar pb-4">
           <div className="flex gap-3 min-w-max px-2">
             <button
               onClick={() => setActiveCategory(null)}
-              className={`px-6 py-3 rounded-full font-body font-medium transition-all shadow-sm ${activeCategory === null ? 'bg-navy text-white shadow-md shadow-navy/20' : 'bg-white text-gray-600 hover:bg-gray-100 border border-gray-200'}`}>
+              className={`cursor-pointer px-6 py-3 rounded-full font-body font-medium transition-all shadow-sm ${activeCategory === null ? 'bg-navy text-white shadow-md shadow-navy/20' : 'bg-white text-gray-600 hover:bg-gray-100 border border-gray-200'}`}>
               
               عرض الكل
             </button>
@@ -156,7 +163,7 @@ export function ServicesSection() {
                 <button
                   key={category.id}
                   onClick={() => setActiveCategory(category.id)}
-                  className={`flex items-center gap-2 px-6 py-3 rounded-full font-body font-medium transition-all shadow-sm ${isActive ? `bg-gradient-to-r ${colorTheme.gradient} text-white shadow-md` : 'bg-white text-gray-600 hover:bg-gray-50 border border-gray-200'}`}>
+                  className={`cursor-pointer flex items-center gap-2 px-6 py-3 rounded-full font-body font-medium transition-all shadow-sm ${isActive ? `bg-gradient-to-r ${colorTheme.gradient} text-white shadow-md` : 'bg-white text-gray-600 hover:bg-gray-50 border border-gray-200'}`}>
                   
                   <IconComponent
                     name={category.icon}
@@ -249,16 +256,19 @@ export function ServicesSection() {
                         
                           {/* Sub-service Image */}
                           <div className="relative h-40 overflow-hidden">
-                            <img
-                            src={sub.image}
-                            alt={sub.name}
-                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                            <Image
+                              src={sub.image}
+                              alt={sub.name}
+                              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                              width={400}
+                              height={400}
+                            />
                           
                             <div
                             className={`absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/30 to-transparent opacity-60 group-hover:opacity-40 transition-opacity`} />
                           
                             <div
-                            className={`absolute top-3 right-3 w-10 h-10 rounded-lg bg-gradient-to-br ${colorTheme.gradient} flex items-center justify-center text-white shadow-lg`}>
+                            className={`absolute top-3 ${!isRTL ? 'left-3' : 'right-3'} w-10 h-10 rounded-lg bg-gradient-to-br ${colorTheme.gradient} flex items-center justify-center text-white shadow-lg`}>
                             
                               <IconComponent
                               name={sub.icon}

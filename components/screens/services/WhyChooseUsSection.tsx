@@ -5,8 +5,11 @@ import {
   SettingsIcon,
   UsersIcon,
   LayersIcon,
-  ShieldIcon } from
+  ShieldIcon,
+  LightbulbIcon } from
 'lucide-react';
+import Image from 'next/image';
+import { useLocale } from 'next-intl';
 const reasons = [
 {
   title: 'خبرة متعددة القطاعات',
@@ -52,15 +55,26 @@ const reasons = [
   bgLight: 'bg-purple-50',
   border: 'border-purple-500',
   gradient: 'from-purple-400 to-purple-600'
+},
+{
+  title: 'الابتكار والتقنيات الحديثة',
+  description: 'نستخدم أحدث التقنيات والأدوات الرقمية لتطوير حلول مبتكرة تدعم نمو الأعمال.',
+  icon: LightbulbIcon,
+  color: 'text-cyan-500',
+  bgLight: 'bg-cyan-50',
+  border: 'border-cyan-500',
+  gradient: 'from-cyan-400 to-cyan-600'
 }];
 
 export function WhyChooseUsSection() {
+  const locale = useLocale();
+  const isRTL = locale === 'ar';
   return (
     <section
       id="why-us"
       className="py-24 bg-gradient-to-b from-white to-amber-50/30 overflow-hidden">
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto px-[5%]">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
           {/* Image Content (Left side visually in RTL) */}
           <motion.div
@@ -78,10 +92,13 @@ export function WhyChooseUsSection() {
             className="w-full lg:w-5/12 order-2 lg:order-1 relative">
             
             <div className="relative rounded-3xl overflow-hidden shadow-2xl h-[600px]">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80"
                 alt="Business Handshake"
-                className="w-full h-full object-cover" />
+                className="w-full h-full object-cover"
+                width={800}
+                height={800}
+              />
               
               <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent" />
 
@@ -117,12 +134,12 @@ export function WhyChooseUsSection() {
               viewport={{
                 once: true
               }}
-              className="mb-12">
+              className={`mb-12 text-center ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
               
               <h2 className="text-3xl md:text-5xl font-heading font-bold text-navy mb-6">
                 لماذا تختارنا
               </h2>
-              <p className="text-lg text-gray-600 font-body leading-relaxed max-w-2xl">
+              <p className="text-lg text-gray-600 font-body leading-relaxed">
                 اختيار الشريك الاستشاري المناسب يمثل خطوة حاسمة في نجاح أي
                 مشروع. نحن نتميز بمجموعة من العوامل التي تجعلنا الخيار الأمثل
                 لشركائنا.
@@ -148,7 +165,7 @@ export function WhyChooseUsSection() {
                 transition={{
                   delay: index * 0.1
                 }}
-                className={`relative p-6 rounded-2xl bg-white shadow-lg shadow-gray-200/50 hover:shadow-xl transition-all duration-300 group overflow-hidden ${index === reasons.length - 1 ? 'sm:col-span-2 lg:col-span-1' : ''}`}>
+                className={`flex flex-col items-center  md:items-start justify-center relative p-6 rounded-2xl bg-white shadow-lg shadow-gray-200/50 hover:shadow-xl transition-all duration-300 group overflow-hidden ${index === reasons.length - 1 ? 'sm:col-span-2 lg:col-span-1' : ''}`}>
                 
                   {/* Colored Left Border (RTL right side) */}
                   <div
@@ -163,7 +180,7 @@ export function WhyChooseUsSection() {
                   <h3 className="text-xl font-heading font-bold text-navy mb-3">
                     {reason.title}
                   </h3>
-                  <p className="text-gray-600 font-body text-sm leading-relaxed">
+                  <p className={`text-gray-600 font-body text-sm leading-relaxed text-center ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
                     {reason.description}
                   </p>
                 </motion.div>

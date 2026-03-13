@@ -149,14 +149,6 @@ export const services: ServiceCategory[] = [
     icon: 'LineChart',
     image:
     'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=80'
-  },
-  {
-    name: 'تقديم الحلول المالية المناسبة للمشاريع الاستثمارية',
-    description:
-    'تطوير حلول مالية متكاملة تلبي احتياجات المشاريع وتضمن استدامة النمو المالي.',
-    icon: 'Coins',
-    image:
-    'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&q=80'
   }]
 
 },
@@ -190,14 +182,6 @@ export const services: ServiceCategory[] = [
     icon: 'ShieldAlert',
     image:
     'https://images.unsplash.com/photo-1504439468489-c8920d796a29?w=400&q=80'
-  },
-  {
-    name: 'التدريب والاستشارات في مجال الصحة ونمط الحياة',
-    description:
-    'تطوير برامج تدريبية وخطط تحسين الصحة ونمط الحياة للمؤسسات والأفراد.',
-    icon: 'UserPlus',
-    image:
-    'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&q=80'
   }]
 
 },
@@ -255,14 +239,6 @@ export const services: ServiceCategory[] = [
     icon: 'FileText',
     image:
     'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&q=80'
-  },
-  {
-    name: 'الاستشارات والدراسات البرلمانية',
-    description:
-    'تقديم التحليل والدعم البحثي لمساعدة المؤسسات والهيئات على اتخاذ قرارات مبنية على بيانات دقيقة.',
-    icon: 'BookOpen',
-    image:
-    'https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=400&q=80'
   }]
 
 },
@@ -320,14 +296,6 @@ export const services: ServiceCategory[] = [
     icon: 'Ruler',
     image:
     'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&q=80'
-  },
-  {
-    name: 'استشارات الجودة والمعايير',
-    description:
-    'تقديم الخبرة الفنية في تطوير وتحسين نظم الجودة والالتزام بالمعايير الدولية.',
-    icon: 'Award',
-    image:
-    'https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=400&q=80'
   }]
 
 },
@@ -377,6 +345,14 @@ export const services: ServiceCategory[] = [
     icon: 'Ticket',
     image:
     'https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=400&q=80'
+  },
+  {
+    name: 'استشارات تطوير الوجهات السياحية',
+    description:
+    'تحليل وتطوير الوجهات السياحية من خلال وضع استراتيجيات متكاملة لزيادة الجاذبية السياحية وتحسين تجربة الزوار وتعظيم العائد الاقتصادي.',
+    icon: 'Compass',
+    image:
+    'https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=400&q=80'
   }]
 
 },
@@ -488,14 +464,6 @@ export const services: ServiceCategory[] = [
     icon: 'Globe',
     image:
     'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&q=80'
-  },
-  {
-    name: 'إدارة وكالات الإعلان',
-    description:
-    'تقديم الحلول الإدارية والإشرافية لإدارة وكالات الإعلان بكفاءة.',
-    icon: 'Briefcase',
-    image:
-    'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&q=80'
   }]
 
 },

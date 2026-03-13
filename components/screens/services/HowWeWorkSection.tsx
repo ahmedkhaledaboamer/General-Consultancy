@@ -7,6 +7,7 @@ import {
   RocketIcon,
   RefreshCwIcon } from
 'lucide-react';
+import Image from 'next/image';
 const steps = [
 {
   id: 1,
@@ -62,17 +63,20 @@ export function HowWeWorkSection() {
     <section id="how-we-work" className="py-24 relative overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1400&q=80"
           alt="Strategy Planning"
-          className="w-full h-full object-cover" />
+          className="w-full h-full object-cover"
+          width={1400}
+          height={800}
+        />
         
         <div className="absolute inset-0 bg-navy/90 mix-blend-multiply" />
         <div className="absolute inset-0 bg-gradient-to-b from-navy via-transparent to-navy opacity-80" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-20">
+      <div className=" mx-auto px-[5%] relative z-10">
+        <div className="text-center mx-auto mb-20">
           <motion.div
             initial={{
               opacity: 0,
@@ -138,7 +142,7 @@ export function HowWeWorkSection() {
                 </div>
 
                 {/* Content */}
-                <div className="bg-navy/60 backdrop-blur-md p-6 rounded-2xl border border-white/10 w-full h-full transform transition-all duration-300 group-hover:bg-navy/80 hover:border-white/20">
+                <div className="flex flex-col items-center justify-center bg-navy/60 backdrop-blur-md p-6 rounded-2xl border border-white/10 w-full h-full transform transition-all duration-300 group-hover:bg-navy/80 hover:border-white/20">
                   <h3 className="text-xl font-heading font-bold text-white mb-3">
                     {step.title}
                   </h3>
