@@ -1,7 +1,11 @@
 "use client";
 import { motion } from 'framer-motion';
-import { ArrowLeftIcon, TrendingUpIcon, UsersIcon } from 'lucide-react';
+import { ArrowLeftIcon, ArrowRightIcon, TrendingUpIcon } from 'lucide-react';
+import Image from 'next/image';
+import { useLocale } from 'next-intl';
 export function HeroSection() {
+  const locale = useLocale();
+  const isRTL = locale === 'ar';
   const scrollToContact = () => {
     document.querySelector('#contact')?.scrollIntoView({
       behavior: 'smooth'
@@ -25,7 +29,7 @@ export function HeroSection() {
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAzNHYtNGgtMnY0aC00djJoNHY0aDJ2LTRoNHYtMmgtNHptMC0zMFYwaC0ydjRoLTR2Mmg0djRoMnYtNGg0VjJoLTR6bS0yMCAwdjRoMnY0aDRWMmg0VjBoLTR2LTRoLTJ2NGgtNHYyaDR6bTIwIDMwdjRoMnY0aDR2LTRoNHYtMmgtNHYtNGgtMnY0aC00em0tMjAgMHY0aDJ2NGg0di00aDR2LTJoLTR2LTRoLTJ2NGgtNHoiIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvZz48L3N2Zz4=')] opacity-20" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20">
+      <div className=" mx-auto px-[5%] relative z-10 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <motion.div
@@ -40,7 +44,7 @@ export function HeroSection() {
             transition={{
               duration: 0.8
             }}
-            className="text-right">
+            className={` text-center ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
             
             <div className="inline-block px-4 py-1.5 rounded-full bg-teal/20 border border-teal/30 text-tealLight mb-6 shadow-[0_0_15px_rgba(13,148,136,0.2)]">
               <span className="text-teal-300 font-body font-medium">
@@ -55,7 +59,7 @@ export function HeroSection() {
               </span>
             </h1>
 
-            <p className="text-lg md:text-xl text-gray-300 font-body leading-relaxed mb-8 max-w-2xl">
+            <p className="text-lg md:text-xl text-gray-300 font-body leading-relaxed mb-8">
               في بيئة أعمال تتسم بالتغير المستمر وتزايد المنافسة، تحتاج المؤسسات
               والمستثمرون إلى منظومة خدمات قادرة على توفير الرؤية الاستراتيجية
               والدعم التنفيذي في آنٍ واحد.
@@ -68,10 +72,10 @@ export function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4">
               <button
                 onClick={scrollToContact}
-                className="flex items-center justify-center gap-2 bg-gradient-to-r from-gold to-yellow-500 hover:from-goldLight hover:to-gold text-navy font-bold py-4 px-8 rounded-lg transition-all transform hover:-translate-y-1 shadow-[0_0_20px_rgba(201,168,76,0.4)]">
+                className="cursor-pointer flex items-center justify-center gap-2 bg-gradient-to-r from-gold to-yellow-500 hover:from-goldLight hover:to-gold text-navy font-bold py-4 px-8 rounded-lg transition-all transform hover:-translate-y-1 shadow-[0_0_20px_rgba(201,168,76,0.4)]">
                 
                 <span>ابدأ رحلة النجاح معنا</span>
-                <ArrowLeftIcon className="w-5 h-5" />
+                {isRTL ? <ArrowLeftIcon className="w-5 h-5" /> : <ArrowRightIcon className="w-5 h-5" />}
               </button>
               <button
                 onClick={() =>
@@ -79,7 +83,7 @@ export function HeroSection() {
                   behavior: 'smooth'
                 })
                 }
-                className="flex items-center justify-center gap-2 bg-navyLight/50 backdrop-blur-sm border border-teal/30 hover:border-teal hover:bg-navyLight text-white font-bold py-4 px-8 rounded-lg transition-all shadow-lg">
+                className="cursor-pointer flex items-center justify-center gap-2 bg-navyLight/50 backdrop-blur-sm border border-teal/30 hover:border-teal hover:bg-navyLight text-white font-bold py-4 px-8 rounded-lg transition-all shadow-lg">
                 
                 استكشف خدماتنا
               </button>
@@ -107,10 +111,13 @@ export function HeroSection() {
               className="absolute top-0 right-0 w-4/5 h-[500px] rounded-2xl overflow-hidden shadow-2xl shadow-navy/80 border border-gray-700/50 z-10">
               
               <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent mix-blend-overlay z-10" />
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80"
                 alt="Business Consulting and Investment"
-                className="w-full h-full object-cover" />
+                className="w-full h-full object-cover"
+                width={800}
+                height={800}
+                />
               
             </motion.div>
 
@@ -131,10 +138,13 @@ export function HeroSection() {
               className="absolute bottom-10 left-0 w-2/3 h-[300px] rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border-4 border-navy z-20">
               
               <div className="absolute inset-0 bg-teal/10 mix-blend-overlay z-10" />
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80"
                 alt="Team Meeting"
-                className="w-full h-full object-cover" />
+                className="w-full h-full object-cover"
+                width={600}
+                height={600}
+                />
               
             </motion.div>
 

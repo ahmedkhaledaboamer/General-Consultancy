@@ -2,6 +2,8 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { PlusIcon, MinusIcon } from 'lucide-react';
+import Image from 'next/image';
+import { useLocale } from 'next-intl';
 const faqs = [
 {
   question: 'ما نوع الخدمات التي تقدمها الشركة؟',
@@ -26,9 +28,11 @@ const faqs = [
 
 export function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const locale = useLocale();
+  const isRTL = locale === 'ar';
   return (
     <section id="faq" className="py-24 bg-gray-50 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className=" mx-auto px-[5%]">
         <div className="flex flex-col lg:flex-row gap-12 items-start">
           {/* Decorative Image Column */}
           <motion.div
@@ -46,15 +50,18 @@ export function FAQSection() {
             className="w-full lg:w-5/12 relative hidden lg:block">
             
             <div className="relative rounded-3xl overflow-hidden shadow-2xl h-[600px]">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
                 alt="Data Analytics and Consulting"
-                className="w-full h-full object-cover" />
+                className="w-full h-full object-cover"
+                width={800}
+                height={800}
+              />
               
               <div className="absolute inset-0 bg-gradient-to-tr from-navy/80 via-teal/30 to-transparent mix-blend-multiply" />
 
               {/* Overlay Badge */}
-              <div className="absolute top-8 right-8 bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl shadow-xl">
+              <div className={`absolute top-8 ${isRTL ? 'right-8 mr-5' : 'left-8 ml-5'} bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl shadow-xl`}>
                 <h3 className="text-2xl font-heading font-bold text-white mb-2">
                   رؤية واضحة
                 </h3>
@@ -82,7 +89,9 @@ export function FAQSection() {
                 }}
                 viewport={{
                   once: true
-                }}>
+                }}
+                className={`text-center ${isRTL ? 'md:text-right' : 'md:text-left'}`}
+                >
                 
                 <div className="inline-block px-4 py-1.5 rounded-full bg-teal/10 border border-teal/20 text-teal mb-4">
                   <span className="font-body font-medium">مركز المعرفة</span>
@@ -119,7 +128,7 @@ export function FAQSection() {
                     transition={{
                       delay: index * 0.1
                     }}
-                    className={`bg-white rounded-2xl border transition-all duration-300 overflow-hidden shadow-sm relative ${isOpen ? 'border-teal/30 shadow-md' : 'border-gray-100 hover:border-gray-200'}`}>
+                    className={` bg-white rounded-2xl border transition-all duration-300 overflow-hidden shadow-sm relative ${isOpen ? 'border-teal/30 shadow-md' : 'border-gray-100 hover:border-gray-200'}`}>
                     
                     {/* Colored active border */}
                     {isOpen &&
@@ -128,7 +137,7 @@ export function FAQSection() {
 
                     <button
                       onClick={() => setOpenIndex(isOpen ? null : index)}
-                      className="w-full px-6 py-5 flex items-center justify-between text-right focus:outline-none">
+                      className="cursor-pointer w-full px-6 py-5 flex items-center justify-between text-right focus:outline-none">
                       
                       <span
                         className={`text-lg font-heading font-bold pr-4 transition-colors ${isOpen ? 'text-teal-700' : 'text-navy'}`}>

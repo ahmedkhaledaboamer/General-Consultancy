@@ -1,15 +1,22 @@
 "use client";
 import { motion } from 'framer-motion';
 import { PhoneIcon } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useLocale } from 'next-intl';
 export function CTASection() {
+  const locale = useLocale();
   return (
     <section id="contact" className="py-32 relative overflow-hidden">
       {/* Background Image & Overlays */}
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1400&q=80"
           alt="City Skyline"
-          className="w-full h-full object-cover" />
+          className="w-full h-full object-cover"
+          width={1400}
+          height={800}
+        />
         
         <div className="absolute inset-0 bg-gradient-to-br from-navy/95 via-navy/90 to-tealDark/90 mix-blend-multiply" />
       </div>
@@ -24,7 +31,7 @@ export function CTASection() {
       {/* Decorative Dots Pattern */}
       <div className="absolute inset-0 opacity-20 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmZmZmYiLz48L3N2Zz4=')] [mask-image:radial-gradient(ellipse_at_center,white,transparent_80%)] z-0" />
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
         <motion.div
           initial={{
             opacity: 0,
@@ -52,14 +59,14 @@ export function CTASection() {
             هل تبحث عن شريك استشاري يساعدك على تطوير أعمالك واستثماراتك؟
           </h2>
 
-          <p className="text-xl md:text-2xl text-gray-200 font-body mb-12 leading-relaxed max-w-2xl mx-auto drop-shadow-md">
+          <p className="text-xl md:text-2xl text-gray-200 font-body mb-12 leading-relaxed mx-auto drop-shadow-md">
             فريقنا مستعد لدراسة احتياجاتك وتقديم الحلول المناسبة لتحقيق أهدافك.
             دعنا نعمل معًا على بناء مشاريع ناجحة واستثمارات مستدامة.
           </p>
 
-          <button className="bg-gradient-to-r from-gold to-yellow-500 hover:from-goldLight hover:to-gold text-navy font-bold text-xl py-5 px-12 rounded-full transition-all transform hover:scale-105 shadow-[0_0_40px_rgba(201,168,76,0.6)] hover:shadow-[0_0_60px_rgba(201,168,76,0.8)]">
+          <Link href={`/${locale}/execution`} className="bg-gradient-to-r from-gold to-yellow-500 hover:from-goldLight hover:to-gold text-navy font-bold text-xl py-5 px-12 rounded-full transition-all transform hover:scale-105 shadow-[0_0_40px_rgba(201,168,76,0.6)] hover:shadow-[0_0_60px_rgba(201,168,76,0.8)]">
             تواصل معنا اليوم
-          </button>
+          </Link>
         </motion.div>
       </div>
     </section>);
