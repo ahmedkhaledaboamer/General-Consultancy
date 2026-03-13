@@ -1,14 +1,21 @@
 "use client";
 import { motion } from 'framer-motion';
+import { useLocale } from 'next-intl';
+import Image from 'next/image';
+import Link from 'next/link';
 export function CTASection() {
+  const locale = useLocale();
   return (
     <section id="contact" className=" p-[5%]  relative overflow-hidden">
       {/* Dramatic Sunset Background */}
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80"
           alt="Dramatic Sunset"
-          className="w-full h-full object-cover" />
+          className="w-full h-full object-cover"
+          width={1920}
+          height={1080}
+          />
         
         <div className="absolute inset-0 bg-gradient-to-t from-navy via-purple-deep/80 to-transparent mix-blend-multiply"></div>
       </div>
@@ -86,18 +93,18 @@ export function CTASection() {
             واستدامة.
           </p>
 
-          <motion.button
+          <motion.a
             whileHover={{
               scale: 1.05
             }}
             whileTap={{
               scale: 0.95
             }}
+            href={`/${locale}/execution`}
             className="relative overflow-hidden bg-gradient-to-r from-gold via-orange to-magenta text-white font-black text-2xl py-6 px-16 rounded-full shadow-[0_0_40px_rgba(249,115,22,0.5)] hover:shadow-[0_0_60px_rgba(236,72,153,0.6)] transition-all group">
             
             <span className="relative z-10">تواصل معنا</span>
-            <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:animate-shimmer"></div>
-          </motion.button>
+          </motion.a>
         </motion.div>
       </div>
     </section>);

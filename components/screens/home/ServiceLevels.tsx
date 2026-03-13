@@ -1,6 +1,7 @@
 "use client";
 import { motion } from 'framer-motion';
 import { CheckIcon } from 'lucide-react';
+import { useLocale } from 'next-intl';
 const levels = [
 {
   title: 'المستوى الاستشاري',
@@ -33,6 +34,8 @@ const levels = [
 }];
 
 export function ServiceLevels() {
+  const locale = useLocale();
+  const isRTL = locale === 'ar';
   return (
     <section className=" p-[5%]  relative overflow-hidden">
       {/* Background Image */}
@@ -107,7 +110,7 @@ export function ServiceLevels() {
             
               {/* Premium Animated Border */}
               {level.isPremium &&
-            <div className="absolute inset-0 rounded-3xl border-2 border-transparent bg-gradient-to-r from-gold via-amber to-orange [mask-composite:exclude] [mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] p-[2px] opacity-70 group-hover:opacity-100 transition-opacity"></div>
+            <div className="absolute inset-0 rounded-3xl border-2 border-transparent bg-gradient-to-r from-gold/80 via-amber/70 to-orange/60 [mask-composite:exclude] [mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] p-[2px] opacity-70 transition-opacity duration-500"></div>
             }
 
               {/* Accent Top Bar */}
@@ -116,7 +119,7 @@ export function ServiceLevels() {
             </div>
 
               {level.isPremium &&
-            <div className="absolute top-6 left-6 bg-gradient-to-r from-gold to-amber text-navy text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest shadow-lg">
+            <div className={`absolute top-6 ${isRTL ? 'right-6' : 'left-6'} bg-gradient-to-r from-gold to-amber text-navy text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest shadow-lg`}>
                   VIP
                 </div>
             }
@@ -138,7 +141,7 @@ export function ServiceLevels() {
                 className="flex items-center text-sm text-slate-200">
                 
                     <div
-                  className={`w-5 h-5 rounded-full bg-gradient-to-r ${level.color} flex items-center justify-center ml-3 flex-shrink-0`}>
+                  className={`w-5 h-5 rounded-full bg-gradient-to-r ${level.color} flex items-center justify-center ${isRTL ? 'ml-3' : 'mr-3'} flex-shrink-0`}>
                   
                       <CheckIcon className="w-3 h-3 text-white" />
                     </div>

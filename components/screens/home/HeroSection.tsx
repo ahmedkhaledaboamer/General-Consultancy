@@ -1,10 +1,11 @@
 "use client";
 import { motion } from 'framer-motion';
 import {
-   TrendingUpIcon,
+  TrendingUpIcon,
   BriefcaseIcon,
   AwardIcon } from
 'lucide-react';
+import Image from 'next/image';
 export function HeroSection() {
   return (
     <section
@@ -13,10 +14,13 @@ export function HeroSection() {
       
       {/* Background Image & Dramatic Overlay */}
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1920&q=80"
           alt="Dubai Skyline Night"
-          className="w-full h-full object-cover object-center" />
+          className="w-full h-full object-cover object-center" 
+          width={1920}
+          height={1080}
+          />
         
         <div className="absolute inset-0 bg-black/50"></div>
       </div>
@@ -68,7 +72,7 @@ export function HeroSection() {
           }}
           className=" ">
           
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-colored bg-white/5 border-white/10 mb-8">
+          <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full glass-colored bg-white/5 border-white/10 mb-8`}>
             <span className="w-2 h-2 rounded-full bg-emerald animate-pulse"></span>
             <span className="text-sm font-medium text-slate-200 tracking-wider">
               رؤية استراتيجية للمستقبل

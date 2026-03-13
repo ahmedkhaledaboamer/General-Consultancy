@@ -1,6 +1,10 @@
 "use client";
 import { motion } from 'framer-motion';
+import { useLocale } from 'next-intl';
+import Image from 'next/image';
 export function AboutSection() {
+  const locale = useLocale();
+  const isRTL = locale === 'ar';
   return (
     <section id="about" className="py-32 bg-slate-50 relative overflow-hidden">
       {/* Colorful Decorative Elements */}
@@ -29,7 +33,7 @@ export function AboutSection() {
             transition={{
               duration: 0.8
             }}
-            className="relative">
+            className={`relative text-center ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
             
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white shadow-sm border border-slate-100 mb-8">
               <span className="w-2 h-2 rounded-full bg-gradient-to-r from-gold to-orange"></span>
@@ -95,24 +99,30 @@ export function AboutSection() {
             transition={{
               duration: 0.8
             }}
-            className="relative h-[600px] lg:h-[700px] w-full">
+            className="relative h-[400px] md:h-[500px] lg:h-[700px] w-full">
             
             {/* Main Large Image */}
             <div className="absolute top-0 right-0 w-4/5 h-4/5 rounded-3xl overflow-hidden shadow-2xl border-4 border-white z-10">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80"
                 alt="Business Meeting"
-                className="w-full h-full object-cover" />
+                className="w-full h-full object-cover"
+                width={800}
+                height={800}
+                />
               
               <div className="absolute inset-0 bg-gradient-to-t from-navy/40 to-transparent mix-blend-multiply"></div>
             </div>
 
             {/* Secondary Overlapping Image */}
             <div className="absolute bottom-0 left-0 w-3/5 h-2/5 rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.3)] border-4 border-white z-20 transform -translate-y-10 translate-x-10">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&q=80"
                 alt="Partnership Handshake"
-                className="w-full h-full object-cover" />
+                className="w-full h-full object-cover"
+                width={600}
+                height={600}
+                />
               
               <div className="absolute inset-0 bg-gradient-to-tr from-gold/30 to-transparent mix-blend-overlay"></div>
             </div>
@@ -127,8 +137,8 @@ export function AboutSection() {
             </div>
 
             {/* Floating Badge */}
-            <div className="absolute top-1/2 -left-8 bg-white/90 backdrop-blur-md p-5 rounded-2xl shadow-2xl border border-white/50 z-30 animate-float">
-              <div className="flex items-center gap-4">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 lg:top-1/2 lg:-left-8 lg:translate-x-0 bg-white/90 backdrop-blur-md p-5 rounded-2xl shadow-2xl border border-white/50 z-30 animate-float">
+              <div className="flex items-center gap-4 justify-center lg:justify-start">
                 <div className="w-14 h-14 rounded-full bg-gradient-to-br from-emerald to-teal-500 flex items-center justify-center text-white shadow-inner">
                   <svg
                     className="w-7 h-7"
@@ -144,11 +154,11 @@ export function AboutSection() {
                     
                   </svg>
                 </div>
-                <div>
-                  <p className="text-xs text-slate-500 font-bold uppercase tracking-wider mb-1">
+                <div className={`${isRTL ? 'text-right' : 'text-left'}`}>
+                  <p className="text-[.7rem] md:text-lg text-slate-500 font-bold uppercase tracking-wider mb-1">
                     رؤية استراتيجية
                   </p>
-                  <p className="text-lg font-black text-navy">نمو مستدام</p>
+                  <p className="text-[.8rem] md:text-lg font-black text-navy">نمو مستدام</p>
                 </div>
               </div>
             </div>

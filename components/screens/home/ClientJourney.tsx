@@ -1,5 +1,7 @@
 "use client";
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { useLocale } from 'next-intl';
 const steps = [
 {
   title: 'فهم الاحتياجات',
@@ -46,14 +48,19 @@ const steps = [
 }];
 
 export function ClientJourney() {
+  const locale = useLocale();
+  const isRTL = locale === 'ar';
   return (
     <section className=" p-[5%]  relative overflow-hidden">
       {/* Background Image with Colorful Gradient Overlay */}
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80"
           alt="Modern Office"
-          className="w-full h-full object-cover" />
+          className="w-full h-full object-cover"
+          width={1920}
+          height={1080}
+          />
         
         <div className="absolute inset-0 bg-gradient-to-br from-navy/95 via-purple-deep/90 to-navy/95 mix-blend-multiply"></div>
       </div>
@@ -106,7 +113,7 @@ export function ClientJourney() {
             <motion.div
               className="absolute top-1/2 right-0 w-3 h-3 rounded-full bg-white shadow-[0_0_10px_#fff] -translate-y-1/2"
               animate={{
-                right: ['0%', '100%']
+                right: !isRTL ? ['100%', '0%'] : ['0%', '100%']
               }}
               transition={{
                 duration: 10,
@@ -146,10 +153,13 @@ export function ClientJourney() {
                   className={`absolute inset-0 rounded-full bg-gradient-to-br ${step.color} opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-500 -z-10`}>
                 </div>
                   <div className="w-full h-full rounded-full overflow-hidden relative">
-                    <img
+                  <Image
                     src={step.image}
                     alt={step.title}
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
+                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                    width={800}
+                    height={800}
+                    />
                   
                     <div
                     className={`absolute inset-0 bg-gradient-to-t ${step.color} mix-blend-multiply opacity-60 group-hover:opacity-20 transition-opacity duration-500`}>

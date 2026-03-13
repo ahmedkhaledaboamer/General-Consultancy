@@ -1,6 +1,8 @@
 "use client";
 import { motion } from 'framer-motion';
 import { CheckIcon } from 'lucide-react';
+import Image from 'next/image';
+import { useLocale } from 'next-intl';
 const promises = [
 {
   text: 'اتخاذ قرارات استثمارية مدروسة',
@@ -24,14 +26,19 @@ const promises = [
 }];
 
 export function OurPromise() {
+  const locale = useLocale();
+  const isRTL = locale === 'ar';
   return (
     <section className=" p-[5%]  relative overflow-hidden">
       {/* Dramatic Background Image */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="https://images.unsplash.com/photo-1464938050520-ef2571e0d6e0?w=1920&q=80"
+        <Image
+          src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1920&q=80"
           alt="Dramatic Architecture"
-          className="w-full h-full object-cover" />
+          className="w-full h-full object-cover"
+          width={1920}
+          height={1080}
+          />
         
         <div className="absolute inset-0 bg-gradient-to-r from-navy/95 via-navy/80 to-transparent"></div>
       </div>
@@ -50,7 +57,7 @@ export function OurPromise() {
             viewport={{
               once: true
             }}
-            className="relative">
+            className="relative h-full">
             
             {/* Glass Card with Glow */}
             <div className="absolute inset-0 bg-gradient-to-r from-gold via-orange to-magenta rounded-[3rem] blur-2xl opacity-20"></div>
@@ -59,10 +66,10 @@ export function OurPromise() {
               {/* Decorative Corner */}
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-gold/30 to-transparent rounded-bl-full"></div>
 
-              <h2 className="text-4xl md:text-5xl font-black text-white mb-6 drop-shadow-lg">
+              <h2 className={`text-center text-4xl md:text-5xl font-black text-white mb-6 drop-shadow-lg ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
                 وعدنا لك
               </h2>
-              <p className="text-xl text-slate-200 mb-10 leading-relaxed font-light">
+              <p className={`text-center  text-xl text-slate-200 mb-10 leading-relaxed font-light ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
                 نعد شركاءنا بتقديم خدمات استشارية واستثمارية تعتمد على الخبرة،
                 والتحليل الدقيق، والرؤية الواضحة. نلتزم بأن نكون الشريك الذي
                 يساعدك على:
@@ -89,7 +96,7 @@ export function OurPromise() {
                   className="flex items-center text-white group">
                   
                     <div
-                    className={`w-8 h-8 rounded-full bg-gradient-to-br ${promise.color} flex items-center justify-center ml-4 flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform`}>
+                    className={`w-8 h-8 rounded-full bg-gradient-to-br ${promise.color} flex items-center justify-center ${isRTL ? 'ml-4' : 'mr-4'} flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform`}>
                     
                       <CheckIcon className="w-5 h-5 text-white" />
                     </div>
@@ -99,14 +106,41 @@ export function OurPromise() {
               </ul>
 
               <div className="pt-8 border-t border-white/20">
-                <p className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-gold via-amber to-orange">
+                <p className={`text-center text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-gold via-amber to-orange ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
                   هدفنا أن نكون شريكًا يعتمد عليه في بناء المستقبل الاستثماري.
                 </p>
               </div>
             </div>
           </motion.div>
+          <motion.div
+            initial={{
+              opacity: 0,
+              x: -50
+            }}
+            whileInView={{
+              opacity: 1,
+              x: 0
+            }}
+            viewport={{
+              once: true
+            }}
+            transition={{
+              duration: 0.8
+            }}
+            className="relative h-[400px] md:h-[500px] lg:h-[700px] w-full hidden lg:block">
+            
+            <div className="absolute top-0 right-0 w-7/8 h-7/8 rounded-3xl overflow-hidden shadow-2xl border-4 border-white z-10">
+              <Image
+                src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80"
+                alt="Business Meeting"
+                className="w-full h-full object-cover"
+                width={800}
+                height={800}
+                />
+            </div>
+
+          </motion.div>
         </div>
       </div>
     </section>);
-
 }

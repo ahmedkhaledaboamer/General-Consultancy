@@ -1,13 +1,15 @@
  "use client";
 import React, { useState } from 'react';
+import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   TrendingUpIcon,
   LandmarkIcon,
   CompassIcon,
-  HeartPulseIcon,
-  ChevronDownIcon } from
+  HeartPulseIcon, } from
 'lucide-react';
+import { useLocale } from 'next-intl';
+import Image from 'next/image';
 const services = [
 {
   title: 'خدمات إدارة الاستثمار',
@@ -85,7 +87,12 @@ const services = [
 }];
 
 export function CoreServices() {
-  const [expandedIndex, setExpandedIndex] = useState<number | null>(0);
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+  const [isMounted] = useState(typeof window !== 'undefined');
+  const activeService = expandedIndex !== null ? services[expandedIndex] : null;
+  const ActiveIcon = activeService?.icon;
+  const locale = useLocale();
+  const isRTL = locale === 'ar';
   return (
     <section id="services" className=" p-[5%]  bg-slate-50 relative">
       {/* Background Decor */}
@@ -147,10 +154,13 @@ export function CoreServices() {
                 
                 {/* Header Image Area */}
                 <div className="relative h-48 overflow-hidden">
-                  <img
+                  <Image
                     src={service.image}
                     alt={service.title}
-                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" />
+                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                    width={800}
+                    height={800}
+                    />
                   
                   <div
                     className={`absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent`}>
@@ -158,7 +168,7 @@ export function CoreServices() {
 
                   {/* Icon floating on image */}
                   <div
-                    className={`absolute bottom-4 right-6 w-14 h-14 rounded-2xl bg-gradient-to-br ${service.gradient} flex items-center justify-center shadow-lg transform translate-y-1/2 group-hover:-translate-y-1 transition-transform duration-300`}>
+                    className={`absolute bottom-10 right-6 w-14 h-14 rounded-2xl bg-gradient-to-br ${service.gradient} flex items-center justify-center shadow-lg transform translate-y-1/2 group-hover:-translate-y-1 transition-transform duration-300`}>
                     
                     <service.icon className="w-7 h-7 text-white" />
                   </div>
@@ -178,62 +188,108 @@ export function CoreServices() {
                     {service.description}
                   </p>
 
-                  {/* Expandable List */}
-                  <div className="mt-auto">
+                  {/* Details Trigger */}
+                  <div className="mt-auto ">
                     <button
                       onClick={() =>
                       setExpandedIndex(isExpanded ? null : index)
                       }
-                      className="flex items-center justify-between w-full py-3 border-t border-slate-100 text-navy font-bold hover:text-sky transition-colors">
+                      className="cursor-pointer flex items-center justify-between w-full py-3 border-t border-slate-100 text-navy font-bold hover:text-sky transition-colors">
                       
                       <span>عرض التفاصيل</span>
-                      <ChevronDownIcon
-                        className={`w-5 h-5 transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`} />
-                      
                     </button>
-
-                    <AnimatePresence>
-                      {isExpanded &&
-                      <motion.div
-                        initial={{
-                          height: 0,
-                          opacity: 0
-                        }}
-                        animate={{
-                          height: 'auto',
-                          opacity: 1
-                        }}
-                        exit={{
-                          height: 0,
-                          opacity: 0
-                        }}
-                        transition={{
-                          duration: 0.3
-                        }}
-                        className="overflow-hidden">
-                        
-                          <ul className="pt-4 pb-2 space-y-3">
-                            {service.items.map((item, i) =>
-                          <li
-                            key={i}
-                            className="flex items-start text-base text-slate-700 bg-slate-50 p-3 rounded-lg border border-slate-100">
-                            
-                                <span
-                              className={`w-2 h-2 rounded-full bg-gradient-to-r ${service.gradient} mt-2 ml-3 flex-shrink-0 shadow-sm`}>
-                            </span>
-                                <span>{item}</span>
-                              </li>
-                          )}
-                          </ul>
-                        </motion.div>
-                      }
-                    </AnimatePresence>
                   </div>
                 </div>
               </motion.div>);
 
           })}
         </div>
+
+        {/* Overlay details panel rendered via portal so it always sits above all sections */}
+        {isMounted &&
+          createPortal(
+            <AnimatePresence>
+              {expandedIndex !== null && activeService && (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.2 }}
+                  className="fixed inset-0 z-[1000] flex items-center justify-center bg-black/40 backdrop-blur-sm"
+                  dir={isRTL ? 'rtl' : 'ltr'}
+                >
+                  <motion.div
+                    initial={{ y: 40, opacity: 0, scale: 0.98 }}
+                    animate={{ y: 0, opacity: 1, scale: 1 }}
+                    exit={{ y: 40, opacity: 0, scale: 0.98 }}
+                    transition={{ duration: 0.25 }}
+                    className="relative w-[90%] max-w-4xl max-h-[80vh] bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col"
+                  >
+                    {/* Close button */}
+                    <button
+                      onClick={() => setExpandedIndex(null)}
+                      className="cursor-pointer absolute top-4 left-4 z-10 rounded-full bg-white/80 px-3 py-1 text-sm font-medium text-slate-700 shadow hover:bg-white"
+                    >
+                      إغلاق
+                    </button>
+
+                    {/* Header image */}
+                    <div className="relative h-40 md:h-52 overflow-hidden">
+                      <Image
+                        src={activeService.image}
+                        alt={activeService.title}
+                        className="w-full h-full object-cover"
+                        width={800}
+                        height={800}
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent" />
+                      <div className={`absolute bottom-5 ${isRTL ? 'right-6' : 'left-6'} flex items-center gap-3 text-white`}>
+                        <div
+                          className={`w-12 h-12 rounded-2xl bg-gradient-to-br ${activeService.gradient} flex items-center justify-center shadow-lg`}
+                        >
+                          {ActiveIcon && (
+                            <ActiveIcon className="w-6 h-6 text-white" />
+                          )}
+                        </div>
+                        <div>
+                          <h3 className="text-xl md:text-2xl font-bold">
+                            {activeService.title}
+                          </h3>
+                          <p className="text-sm md:text-base text-slate-100/80">
+                            تفاصيل الخدمة
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Body */}
+                    <div className="p-6 md:p-8 flex-1 flex flex-col gap-4 overflow-hidden">
+                      <p className="text-slate-700 text-sm md:text-base leading-relaxed">
+                        {activeService.description}
+                      </p>
+
+                      <div className="mt-2 flex-1 overflow-auto pr-1">
+                        <ul className="space-y-3">
+                          {activeService.items.map((item, i) => (
+                            <li
+                              key={i}
+                              className="flex items-start text-sm md:text-base text-slate-800 bg-slate-50 p-3 rounded-lg border border-slate-100"
+                            >
+                              <span
+                                className={`w-2 h-2 rounded-full bg-gradient-to-r ${activeService.gradient} mt-2  ${isRTL ? 'ml-3' : 'mr-3'} flex-shrink-0 shadow-sm`}
+                              ></span>
+                              <span>{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  </motion.div>
+                </motion.div>
+              )}
+            </AnimatePresence>,
+            document.body
+          )}
       </div>
     </section>);
 

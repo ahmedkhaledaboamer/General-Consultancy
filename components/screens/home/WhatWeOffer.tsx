@@ -1,6 +1,8 @@
 "use client";
 import { motion } from 'framer-motion';
 import { CheckCircle2Icon, LayersIcon } from 'lucide-react';
+import Image from 'next/image';
+import { useLocale } from 'next-intl';
 const offerings = [
 {
   text: 'إدارة الاستثمارات وتطوير المحافظ',
@@ -36,6 +38,8 @@ const offerings = [
 }];
 
 export function WhatWeOffer() {
+  const locale = useLocale();
+  const isRTL = locale === 'ar';
   return (
     <section className=" p-[5%]  bg-white overflow-hidden relative">
       <div className="  ">
@@ -54,7 +58,8 @@ export function WhatWeOffer() {
             }}
             transition={{
               duration: 0.8
-            }}>
+            }}
+            className={`flex flex-col justify-center items-center text-center ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
             
             <div className="flex items-center gap-4 mb-6">
               <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-magenta to-orange flex items-center justify-center shadow-lg">
@@ -89,10 +94,10 @@ export function WhatWeOffer() {
                 transition={{
                   delay: index * 0.05
                 }}
-                className="flex items-center bg-slate-50 border border-slate-100 rounded-full py-2.5 px-5 shadow-sm hover:shadow-md transition-shadow group">
+                className="w-full md:w-fit flex items-center bg-slate-50 border border-slate-100 rounded-full py-2.5 px-5 shadow-sm hover:shadow-md transition-shadow group">
                 
                   <div
-                  className={`w-3 h-3 rounded-full bg-gradient-to-r ${offer.color} ml-3 group-hover:scale-150 transition-transform`}>
+                  className={`w-3 h-3 rounded-full bg-gradient-to-r ${offer.color} ${isRTL ? 'ml-3' : 'mr-3'} group-hover:scale-150 transition-transform`}>
                 </div>
                   <span className="text-sm md:text-base font-bold text-navy">
                     {offer.text}
@@ -134,10 +139,13 @@ export function WhatWeOffer() {
             }}
             className="relative h-[700px] rounded-[3rem] overflow-hidden shadow-2xl border-8 border-slate-50">
             
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80"
               alt="Consulting Services Work"
-              className="w-full h-full object-cover" />
+              className="w-full h-full object-cover"
+              width={800}
+              height={800}
+              />
             
             {/* Vibrant Overlay Gradients */}
             <div className="absolute inset-0 bg-gradient-to-tr from-magenta/40 via-transparent to-sky/40 mix-blend-overlay"></div>

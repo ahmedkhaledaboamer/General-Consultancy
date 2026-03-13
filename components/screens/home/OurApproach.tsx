@@ -7,6 +7,8 @@ import {
   PlayCircleIcon,
   RefreshCwIcon } from
 'lucide-react';
+import Image from 'next/image';
+import { useLocale } from 'next-intl';
 const approaches = [
 {
   text: 'التحليل العميق',
@@ -45,6 +47,8 @@ const approaches = [
 }];
 
 export function OurApproach() {
+  const locale = useLocale();
+  const isRTL = locale === 'ar';
   return (
     <section className=" p-[5%]  bg-slate-50 relative overflow-hidden">
       <div className=" relative z-10">
@@ -112,11 +116,14 @@ export function OurApproach() {
               className="relative flex flex-col items-center w-full lg:w-1/5 group">
               
                 {/* Image Card */}
-                <div className="w-40 h-40 rounded-3xl overflow-hidden shadow-xl mb-6 relative border-4 border-white transform group-hover:-translate-y-4 transition-transform duration-500">
-                  <img
+                <div className="w-full md:w-40 h-40 rounded-3xl overflow-hidden shadow-xl mb-6 relative border-4 border-white transform group-hover:-translate-y-4 transition-transform duration-500">
+                  <Image
                   src={item.image}
                   alt={item.text}
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  width={160}
+                  height={160}
+                  />
                 
                   <div
                   className={`absolute inset-0 bg-gradient-to-t ${item.color} mix-blend-multiply opacity-60 group-hover:opacity-20 transition-opacity duration-500`}>
@@ -124,7 +131,7 @@ export function OurApproach() {
 
                   {/* Floating Icon */}
                   <div
-                  className={`absolute -bottom-4 -right-4 w-12 h-12 rounded-xl bg-gradient-to-br ${item.color} flex items-center justify-center shadow-lg border-2 border-white`}>
+                  className={`absolute bottom-2 ${!isRTL ? 'left-2' : 'right-2'} w-12 h-12 rounded-xl bg-gradient-to-br ${item.color} flex items-center justify-center shadow-lg border-2 border-white`}>
                   
                     <item.icon className="w-6 h-6 text-white" />
                   </div>

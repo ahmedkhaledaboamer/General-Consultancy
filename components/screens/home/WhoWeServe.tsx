@@ -9,6 +9,8 @@ import {
   LandmarkIcon,
   MapIcon } from
 'lucide-react';
+import Image from 'next/image';
+import { useLocale } from 'next-intl';
 const clients = [
 {
   text: 'رجال الأعمال والمستثمرين',
@@ -47,14 +49,19 @@ const clients = [
 }];
 
 export function WhoWeServe() {
+  const locale = useLocale();
+  const isRTL = locale === 'ar';
   return (
     <section className="py-0 bg-white relative overflow-hidden flex flex-col lg:flex-row">
       {/* Left Side - Image (Full height on desktop) */}
       <div className="w-full lg:w-5/12 h-[400px] lg:h-auto relative">
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&q=80"
           alt="Professionals"
-          className="w-full h-full object-cover" />
+          className="w-full h-full object-cover"
+          width={800}
+          height={800}
+          />
         
         <div className="absolute inset-0 bg-gradient-to-r from-navy/80 to-transparent mix-blend-multiply"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-navy/90 via-transparent to-transparent lg:hidden"></div>
@@ -77,7 +84,7 @@ export function WhoWeServe() {
             viewport={{
               once: true
             }}
-            className="mb-12">
+            className={`mb-12 text-center ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
             
             <h2 className="text-4xl md:text-5xl font-black text-navy mb-6">
               من نخدم؟
@@ -86,7 +93,7 @@ export function WhoWeServe() {
               نقدم خدماتنا لشريحة واسعة من المستثمرين والمؤسسات التي تسعى إلى
               تحقيق النمو والتوسع.
             </p>
-            <div className="w-24 h-1.5 bg-gradient-to-r from-sky via-magenta to-gold rounded-full"></div>
+            <div className="mx-auto md:mx-0 w-24 h-1.5 bg-gradient-to-r from-sky via-magenta to-gold rounded-full"></div>
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -110,7 +117,7 @@ export function WhoWeServe() {
               className={`flex items-center p-5 rounded-2xl bg-white shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 group ${index === clients.length - 1 ? 'sm:col-span-2' : ''}`}>
               
                 <div
-                className={`w-12 h-12 rounded-xl bg-gradient-to-br ${client.color} flex items-center justify-center ml-4 flex-shrink-0 shadow-md transform group-hover:scale-110 group-hover:rotate-3 transition-transform`}>
+                className={`w-12 h-12 rounded-xl bg-gradient-to-br ${client.color} flex items-center justify-center ${isRTL ? 'ml-4' : 'mr-4'} flex-shrink-0 shadow-md transform group-hover:scale-110 group-hover:rotate-3 transition-transform`}>
                 
                   <client.icon className="w-6 h-6 text-white" />
                 </div>
