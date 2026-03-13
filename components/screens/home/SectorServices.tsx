@@ -11,6 +11,8 @@ import {
   ShoppingBagIcon,
   CpuIcon } from
 'lucide-react';
+import Image from 'next/image';
+import { useLocale } from 'next-intl';
 const sectors = [
 {
   title: 'القطاع الصناعي',
@@ -114,7 +116,7 @@ const sectors = [
   'الاستثمار في العلامات التجارية',
   'إدارة وتشغيل المراكز التجارية'],
 
-  colSpan: 'md:col-span-1 lg:col-span-1'
+  colSpan: 'md:col-span-1 lg:col-span-2'
 },
 {
   title: 'قطاع التكنولوجيا',
@@ -131,10 +133,12 @@ const sectors = [
 }];
 
 export function SectorServices() {
+  const locale = useLocale();
+  const isRTL = locale === 'ar';
   return (
     <section id="sectors" className=" p-[5%]  bg-navy relative overflow-hidden">
       {/* Background Decor */}
-      <div className="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80')] bg-cover bg-fixed mix-blend-screen"></div>
+      <div className="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80')] bg-cover bg-center mix-blend-screen"></div>
 
       <div className=" relative z-10">
         <div className="text-center   mb-20">
@@ -187,10 +191,13 @@ export function SectorServices() {
             className={`relative rounded-3xl overflow-hidden group shadow-2xl ${sector.colSpan}`}>
             
               {/* Background Image */}
-              <img
-              src={sector.image}
-              alt={sector.title}
-              className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
+              <Image
+                src={sector.image}
+                alt={sector.title}
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                width={800}
+                height={800}
+                />
             
 
               {/* Colored Gradient Overlay */}
@@ -208,17 +215,22 @@ export function SectorServices() {
                   {sector.title}
                 </h3>
 
-                <div className="overflow-hidden h-0 group-hover:h-auto transition-all duration-500 ease-in-out">
-                  <ul className="space-y-2 pt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
-                    {sector.items.map((item, i) =>
-                  <li
-                    key={i}
-                    className="flex items-start text-sm text-white/90 font-medium">
-                    
-                        <span className="w-1.5 h-1.5 rounded-full bg-white mt-1.5 ml-2 flex-shrink-0 shadow-[0_0_5px_rgba(255,255,255,0.8)]"></span>
+                {/* Mobile & Tablet: visible by default, Desktop (lg+): on hover */}
+                <div className="overflow-hidden h-auto lg:h-0 lg:group-hover:h-auto transition-all duration-500 ease-in-out mt-2">
+                  <ul className="space-y-2 pt-2 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                    {sector.items.map((item, i) => (
+                      <li
+                        key={i}
+                        className="flex items-start text-sm text-white/90 font-medium"
+                      >
+                        <span
+                          className={`w-1.5 h-1.5 rounded-full bg-white mt-1.5 ${
+                            isRTL ? 'ml-2' : 'mr-2'
+                          } flex-shrink-0 shadow-[0_0_5px_rgba(255,255,255,0.8)]`}
+                        ></span>
                         <span className="drop-shadow-sm">{item}</span>
                       </li>
-                  )}
+                    ))}
                   </ul>
                 </div>
               </div>

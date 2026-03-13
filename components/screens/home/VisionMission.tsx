@@ -1,15 +1,19 @@
 "use client";
 import { motion } from 'framer-motion';
 import { EyeIcon, TargetIcon } from 'lucide-react';
+import Image from 'next/image';
 export function VisionMission() {
   return (
     <section className=" p-[5%]  relative overflow-hidden">
       {/* Full-width Background Image with Colorful Gradient Overlay */}
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80"
           alt="Skyscraper Architecture"
-          className="w-full h-full object-cover" />
+          className="w-full h-full object-cover"
+          width={1920}
+          height={1080}
+          />
         
         <div className="absolute inset-0 bg-gradient-to-br from-purple-deep/90 via-navy/95 to-sky/80 mix-blend-multiply"></div>
       </div>
@@ -99,7 +103,7 @@ export function VisionMission() {
           </motion.div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 text-center">
           {/* Vision Card - Blue Tint */}
           <motion.div
             initial={{
@@ -119,7 +123,7 @@ export function VisionMission() {
             className="relative group">
             
             <div className="absolute inset-0 bg-gradient-to-br from-sky/40 to-blue-600/10 rounded-[2.5rem] blur-xl group-hover:blur-2xl transition-all duration-500 opacity-50"></div>
-            <div className="relative h-full glass-colored bg-navy/40 rounded-[2.5rem] p-10 md:p-14 border-t-4 border-t-sky hover:bg-navy/50 transition-all duration-500 overflow-hidden">
+            <div className="flex flex-col items-center justify-center relative h-full glass-colored bg-navy/40 rounded-[2.5rem] p-10 md:p-14 border-t-4 border-t-sky hover:bg-navy/50 transition-all duration-500 overflow-hidden">
               {/* Decorative corner shape */}
               <div className="absolute -top-20 -right-20 w-40 h-40 bg-sky/20 rounded-full blur-2xl"></div>
 
@@ -155,7 +159,7 @@ export function VisionMission() {
             className="relative group">
             
             <div className="absolute inset-0 bg-gradient-to-br from-magenta/40 to-purple-deep/20 rounded-[2.5rem] blur-xl group-hover:blur-2xl transition-all duration-500 opacity-50"></div>
-            <div className="relative h-full glass-colored bg-navy/40 rounded-[2.5rem] p-10 md:p-14 border-t-4 border-t-magenta hover:bg-navy/50 transition-all duration-500 overflow-hidden">
+            <div className="flex flex-col items-center justify-center relative h-full glass-colored bg-navy/40 rounded-[2.5rem] p-10 md:p-14 border-t-4 border-t-magenta hover:bg-navy/50 transition-all duration-500 overflow-hidden">
               {/* Decorative corner shape */}
               <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-magenta/20 rounded-full blur-2xl"></div>
 

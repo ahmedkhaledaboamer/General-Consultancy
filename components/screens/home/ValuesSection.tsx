@@ -146,7 +146,7 @@ export function ValuesSection() {
                 <h3 className="text-2xl font-bold text-white mb-3 drop-shadow-md">
                   {value.title}
                 </h3>
-                <p className="text-slate-200 text-base leading-relaxed font-light drop-shadow-sm opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                <p className="text-slate-200 text-base leading-relaxed font-light drop-shadow-sm opacity-100 translate-y-0 lg:opacity-0 lg:group-hover:opacity-100 lg:translate-y-4 lg:group-hover:translate-y-0 transition-all duration-300">
                   {value.description}
                 </p>
               </div>
