@@ -27,7 +27,7 @@ export function FinalCTA() {
         className="absolute top-10 start-10 w-48 h-48 rounded-3xl overflow-hidden shadow-2xl border-4 border-white/30 z-0 hidden lg:block">
         
         <Image
-          src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=300&q=80"
+          src="/imgs/A private wealth management of/image_3.webp"
           alt="Team"
           className="w-full h-full object-cover"
           width={300}
@@ -49,7 +49,7 @@ export function FinalCTA() {
         className="absolute bottom-10 end-10 w-64 h-64 rounded-full overflow-hidden shadow-2xl border-4 border-white/30 z-0 hidden lg:block">
         
         <Image
-          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=300&q=80"
+          src="/imgs/A professional corporate legal/image_62.webp"
           alt="Building"
           className="w-full h-full object-cover"
           width={300}
@@ -71,7 +71,7 @@ export function FinalCTA() {
         className="absolute top-20 end-1/4 w-32 h-32 rounded-3xl overflow-hidden shadow-2xl border-4 border-white/30 z-0 hidden lg:block">
         
         <Image
-          src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=300&q=80"
+          src="/imgs/A professional legal advisory/image_62.webp"
           alt="Collaboration"
           className="w-full h-full object-cover"
           width={300}

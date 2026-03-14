@@ -8,7 +8,7 @@ const pillars = [
   desc: 'تقديم أعلى مستويات الجودة والخبرة في كل خدمة.',
   icon: AwardIcon,
   image:
-  'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&q=80',
+  '/imgs/A stunning renewable energy en/image_12.webp',
   gradient: 'from-brand-purple-dark via-brand-purple to-transparent',
   delay: 0.1
 },
@@ -17,7 +17,7 @@ const pillars = [
   desc: 'تطوير حلول جديدة ومبتكرة لمواجهة تحديات السوق.',
   icon: LightbulbIcon,
   image:
-  'https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=800&q=80',
+  '/imgs/A stunning renewable energy la/image_41.webp',
   gradient: 'from-brand-rose via-brand-orange to-transparent',
   delay: 0.3
 },
@@ -26,7 +26,7 @@ const pillars = [
   desc: 'بناء علاقات متينة قائمة على الثقة، الشفافية، والدعم المستمر.',
   icon: UsersIcon,
   image:
-  'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80',
+  '/imgs/A stunning residential communi/image_26.webp',
   gradient: 'from-brand-blue-dark via-brand-teal to-transparent',
   delay: 0.5
 }];

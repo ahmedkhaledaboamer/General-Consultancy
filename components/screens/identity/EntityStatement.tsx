@@ -38,7 +38,7 @@ export function EntityStatement() {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 md:w-4/5 lg:w-5/6 xl:w-6/7 2xl:w-7/8 rounded-3xl overflow-hidden shadow-2xl border-4 border-white/10 z-10">
               <div className="absolute inset-0 bg-brand-indigo/20 mix-blend-overlay z-10" />
               <Image
-                src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800&q=80"
+                src="/imgs/A luxurious medical tourism fa/image_31.webp"
                 alt="Modern Architecture"
                 className="w-full h-full object-cover"
                 width={800}
@@ -60,7 +60,7 @@ export function EntityStatement() {
               }}>
               
               <Image
-                src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&q=80"
+                src="/imgs/A modern Islamic finance cente/image_66.webp"
                 alt="Leadership"
                 className="w-full h-full object-cover"
                 width={800}
@@ -83,7 +83,7 @@ export function EntityStatement() {
               }}>
               
               <Image
-                src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800&q=80"
+                src="/imgs/A modern manufacturing investm/image_32.webp"
                 alt="Partnership"
                 className="w-full h-full object-cover"
                 width={800}

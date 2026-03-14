@@ -8,7 +8,7 @@ export function FinalCTA() {
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat bg-fixed"
         style={{
           backgroundImage:
-          'url("https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80")'
+          'url("/imgs/A modern industrial park with/image_23.webp")'
         }}>
         
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/95 via-indigo-900/90 to-purple-900/95"></div>

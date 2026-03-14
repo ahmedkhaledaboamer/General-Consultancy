@@ -18,7 +18,7 @@ export function ExecutionUnits() {
     icon: <CompassIcon className="w-6 h-6 text-white" />,
     gradient: 'from-blue-600 to-blue-400',
     image:
-    'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80'
+    '/imgs/A dynamic logistics environmen/image_2.webp'
   },
   {
     title: 'وحدة العمليات والإدارة',
@@ -26,7 +26,7 @@ export function ExecutionUnits() {
     icon: <SettingsIcon className="w-6 h-6 text-white" />,
     gradient: 'from-indigo-600 to-indigo-400',
     image:
-    'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&q=80'
+    '/imgs/A dynamic logistics investment/image_9.webp'
   },
   {
     title: 'وحدة الجودة والتميز',
@@ -34,7 +34,7 @@ export function ExecutionUnits() {
     icon: <ShieldIcon className="w-6 h-6 text-white" />,
     gradient: 'from-emerald-600 to-emerald-400',
     image:
-    'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80'
+    '/imgs/A dynamic logistics project ma/image_47.webp'
   },
   {
     title: 'وحدة التواصل والمتابعة',
@@ -42,7 +42,7 @@ export function ExecutionUnits() {
     icon: <MessageSquareIcon className="w-6 h-6 text-white" />,
     gradient: 'from-amber-500 to-amber-400',
     image:
-    'https://images.unsplash.com/photo-1556761175-5973dc0f32d7?w=600&q=80'
+    '/imgs/A dynamic logistics services e/image_26.webp'
   },
   {
     title: 'وحدة التحليل والتقارير',
@@ -50,7 +50,7 @@ export function ExecutionUnits() {
     icon: <BarChart3Icon className="w-6 h-6 text-white" />,
     gradient: 'from-purple-600 to-purple-400',
     image:
-    'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80'
+    '/imgs/A dynamic real estate project/image_24.webp'
   },
   {
     title: 'وحدة الابتكار والتطوير',
@@ -58,7 +58,7 @@ export function ExecutionUnits() {
     icon: <LightbulbIcon className="w-6 h-6 text-white" />,
     gradient: 'from-rose-600 to-rose-400',
     image:
-    'https://images.unsplash.com/photo-1492724441997-5dc865305da7?w=600&q=80'
+    '/imgs/A dynamic sports project manag/image_3.webp'
   }];
 
   return (

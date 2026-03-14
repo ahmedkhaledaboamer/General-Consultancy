@@ -51,7 +51,7 @@ export function FAQSection() {
             
             <div className="relative rounded-3xl overflow-hidden shadow-2xl h-[600px] md:h-[700px] lg:h-[800px] 2xl:h-[900px]">
               <Image
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
+                src="/imgs/A creative real estate marketi/image_53.webp"
                 alt="Data Analytics and Consulting"
                 className="w-full h-full object-cover"
                 width={800}

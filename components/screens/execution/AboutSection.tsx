@@ -69,7 +69,7 @@ export function AboutSection() {
           <div className="relative rounded-3xl overflow-hidden shadow-2xl z-10">
             <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-transparent z-10 mix-blend-overlay"></div>
             <Image
-              src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
+              src="/imgs/22 A vast logistics center wit/image_7.webp"
               alt="فريق العمل"
               className="w-full h-auto md:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px] object-cover hover:scale-105 transition-transform duration-700" 
               width={800}

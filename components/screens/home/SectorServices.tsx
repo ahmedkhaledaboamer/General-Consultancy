@@ -18,7 +18,7 @@ const sectors = [
   title: 'القطاع الصناعي',
   icon: FactoryIcon,
   image:
-  'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&q=80',
+  '/imgs/A modern chemical industry fac/image_68.webp',
   overlay: 'from-blue-900/90 to-blue-600/80',
   items: [
   'الاستثمار في المشاريع الصناعية',
@@ -31,7 +31,7 @@ const sectors = [
   title: 'القطاع الزراعي',
   icon: SproutIcon,
   image:
-  'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&q=80',
+  '/imgs/A modern classroom with intera/image_14.webp',
   overlay: 'from-emerald-900/90 to-emerald-600/80',
   items: [
   'تطوير المشاريع الزراعية',
@@ -44,7 +44,7 @@ const sectors = [
   title: 'القطاع السياحي',
   icon: PlaneIcon,
   image:
-  'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&q=80',
+  '/imgs/A modern commercial real estat/image_35.webp',
   overlay: 'from-orange-900/90 to-orange-500/80',
   items: [
   'تطوير المشاريع السياحية',
@@ -57,7 +57,7 @@ const sectors = [
   title: 'قطاع الطاقة',
   icon: ZapIcon,
   image:
-  'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&q=80',
+  '/imgs/A modern digital media studio/image_58.webp',
   overlay: 'from-yellow-900/90 to-amber-500/80',
   items: [
   'الاستثمار في الطاقة التقليدية والمتجددة',
@@ -70,7 +70,7 @@ const sectors = [
   title: 'قطاع الصحة',
   icon: HeartIcon,
   image:
-  'https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=600&q=80',
+  '/imgs/A modern educational campus wi/image_22.webp',
   overlay: 'from-rose-900/90 to-rose-500/80',
   items: [
   'الاستثمار في المشاريع الصحية',
@@ -83,7 +83,7 @@ const sectors = [
   title: 'قطاع التعليم',
   icon: GraduationCapIcon,
   image:
-  'https://images.unsplash.com/photo-1523050854058-8df90110c476?w=600&q=80',
+  '/imgs/A modern educational consultin/image_29.webp',
   overlay: 'from-purple-900/90 to-purple-600/80',
   items: [
   'تطوير المشاريع التعليمية',
@@ -96,7 +96,7 @@ const sectors = [
   title: 'قطاع الرياضة',
   icon: TrophyIcon,
   image:
-  'https://images.unsplash.com/photo-1461896836934-bd45ba8fcf9b?w=600&q=80',
+  '/imgs/A modern engineering industry/image_13.webp',
   overlay: 'from-red-900/90 to-red-600/80',
   items: [
   'الاستثمار في الأندية والمنشآت',
@@ -109,7 +109,7 @@ const sectors = [
   title: 'قطاع التجارة والتجزئة',
   icon: ShoppingBagIcon,
   image:
-  'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&q=80',
+  '/imgs/A modern financial district sk/image_19.webp',
   overlay: 'from-teal-900/90 to-teal-500/80',
   items: [
   'تطوير مشاريع تجارة التجزئة',
@@ -122,7 +122,7 @@ const sectors = [
   title: 'قطاع التكنولوجيا',
   icon: CpuIcon,
   image:
-  'https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80',
+  '/imgs/A modern financial services en/image_77.webp',
   overlay: 'from-indigo-900/90 to-indigo-600/80',
   items: [
   'الاستثمار في الشركات التقنية',
@@ -138,7 +138,7 @@ export function SectorServices() {
   return (
     <section id="sectors" className=" p-[5%]  bg-navy relative overflow-hidden">
       {/* Background Decor */}
-      <div className="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80')] bg-cover bg-center mix-blend-screen"></div>
+      <div className="absolute inset-0 opacity-10 bg-[url('/imgs/A modern food industry environ/image_73.webp')] bg-cover bg-center mix-blend-screen"></div>
 
       <div className=" relative z-10">
         <div className="text-center   mb-20">

@@ -13,7 +13,7 @@ export function ProcessSection() {
       {/* Background Image and Vibrant Gradient */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&q=80"
+          src="/imgs/A strategic startup advisory r/image_56.webp"
           alt="Growth Charts"
           className="w-full h-full object-cover"
           width={1920}
@@ -91,7 +91,7 @@ export function ProcessSection() {
               
               <div className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 2xl:w-64 2xl:h-64 rounded-full border-4 border-purple-400 p-1 mb-8 shadow-[0_0_30px_rgba(168,85,247,0.5)] group-hover:scale-110 transition-transform duration-500 relative bg-slate-900">
                 <Image
-                  src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=200&q=80"
+                  src="/imgs/A strategic startup environmen/image_72.webp"
                   alt="التخطيط"
                   className="w-full h-full object-cover rounded-full opacity-70 group-hover:opacity-100 transition-opacity"
                   width={200}
@@ -138,7 +138,7 @@ export function ProcessSection() {
               
               <div className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 2xl:w-64 2xl:h-64 rounded-full border-4 border-blue-400 p-1 mb-8 shadow-[0_0_30px_rgba(59,130,246,0.5)] group-hover:scale-110 transition-transform duration-500 relative bg-slate-900">
                 <Image
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=200&q=80"
+                  src="/imgs/A vibrant startup incubator wi/image_29.webp"
                   alt="التنسيق"
                   className="w-full h-full object-cover rounded-full opacity-70 group-hover:opacity-100 transition-opacity"
                   width={200}
@@ -185,7 +185,7 @@ export function ProcessSection() {
               
               <div className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 2xl:w-64 2xl:h-64 rounded-full border-4 border-teal-400 p-1 mb-8 shadow-[0_0_30px_rgba(20,184,166,0.5)] group-hover:scale-110 transition-transform duration-500 relative bg-slate-900">
                 <Image
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&q=80"
+                  src="/imgs/A vibrant tech startup acceler/image_37.webp"
                   alt="الإشراف"
                   className="w-full h-full object-cover rounded-full opacity-70 group-hover:opacity-100 transition-opacity"
                   width={200}
@@ -231,7 +231,7 @@ export function ProcessSection() {
               
               <div className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 2xl:w-64 2xl:h-64 rounded-full border-4 border-pink-400 p-1 mb-8 shadow-[0_0_30px_rgba(244,114,182,0.5)] group-hover:scale-110 transition-transform duration-500 relative bg-slate-900">
                 <Image
-                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=200&q=80"
+                  src="/imgs/A vibrant tech startup develop/image_2.webp"
                   alt="التقييم"
                   className="w-full h-full object-cover rounded-full opacity-70 group-hover:opacity-100 transition-opacity"
                   width={200}

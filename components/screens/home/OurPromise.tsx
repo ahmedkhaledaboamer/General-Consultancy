@@ -33,7 +33,7 @@ export function OurPromise() {
       {/* Dramatic Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1920&q=80"
+          src="/imgs/A modern agricultural environm/image_26.webp"
           alt="Dramatic Architecture"
           className="w-full h-full object-cover"
           width={1920}
@@ -131,7 +131,7 @@ export function OurPromise() {
             
             <div className="absolute top-0 right-0 w-7/8 h-7/8 md:w-8/8 md:h-8/8 xl:w-9/9 xl:h-9/9 2xl:w-10/10 2xl:h-10/10 rounded-3xl overflow-hidden shadow-2xl border-4 border-white z-10">
               <Image
-                src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80"
+                src="/imgs/A modern banking environment w/image_31.webp"
                 alt="Business Meeting"
                 className="w-full h-full object-cover"
                 width={800}

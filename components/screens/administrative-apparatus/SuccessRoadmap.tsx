@@ -15,7 +15,7 @@ export function SuccessRoadmap() {
       {/* Blurred background image and gradient */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1920&q=80"
+          src="/imgs/A vibrant tech startup workspa/image_28.webp"
           alt="City at Night"
           className="w-full h-full object-cover blur-[2px] scale-105"
           width={1920}
@@ -86,7 +86,7 @@ export function SuccessRoadmap() {
                 <div className="bg-white/10 backdrop-blur-lg border border-white/20 p-5 sm:p-8 rounded-2xl md:rounded-3xl hover:bg-white/20 transition-colors shadow-2xl flex flex-col sm:flex-row-reverse gap-4 sm:gap-6 items-center">
                   <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 xl:w-36 xl:h-36 2xl:w-40 2xl:h-40 rounded-xl md:rounded-2xl overflow-hidden shrink-0 shadow-lg border-2 border-white/30">
                     <Image
-                      src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=200&q=80"
+                      src="/imgs/A warm family business office/image_5.webp"
                       alt="تحديد الأهداف"
                       className="w-full h-full object-cover"
                       width={96}
@@ -118,7 +118,7 @@ export function SuccessRoadmap() {
                 <div className="bg-white/10 backdrop-blur-lg border border-white/20 p-5 sm:p-8 rounded-2xl md:rounded-3xl hover:bg-white/20 transition-colors shadow-2xl flex flex-col sm:flex-row gap-4 sm:gap-6 items-center">
                   <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 xl:w-36 xl:h-36 2xl:w-40 2xl:h-40 rounded-xl md:rounded-2xl overflow-hidden shrink-0 shadow-lg border-2 border-white/30">
                     <Image
-                      src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=200&q=80"
+                      src="/imgs/A dramatic energy investment e/image_17.webp"
                       alt="تحليل الفرص"
                       className="w-full h-full object-cover"
                       width={96}
@@ -150,7 +150,7 @@ export function SuccessRoadmap() {
                 <div className="bg-white/10 backdrop-blur-lg border border-white/20 p-5 sm:p-8 rounded-2xl md:rounded-3xl hover:bg-white/20 transition-colors shadow-2xl flex flex-col sm:flex-row-reverse gap-4 sm:gap-6 items-center">
                   <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 xl:w-36 xl:h-36 2xl:w-40 2xl:h-40 rounded-xl md:rounded-2xl overflow-hidden shrink-0 shadow-lg border-2 border-white/30">
                     <Image
-                      src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=200&q=80"
+                      src="/imgs/27 A bustling construction sit/image_20.webp"
                       alt="تطوير الاستراتيجية"
                       className="w-full h-full object-cover"
                       width={96}
@@ -182,7 +182,7 @@ export function SuccessRoadmap() {
                 <div className="bg-white/10 backdrop-blur-lg border border-white/20 p-5 sm:p-8 rounded-2xl md:rounded-3xl hover:bg-white/20 transition-colors shadow-2xl flex flex-col sm:flex-row gap-4 sm:gap-6 items-center">
                   <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 xl:w-36 xl:h-36 2xl:w-40 2xl:h-40 rounded-xl md:rounded-2xl overflow-hidden shrink-0 shadow-lg border-2 border-white/30">
                     <Image
-                      src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&q=80"
+                      src="/imgs/A vibrant education environmen/image_21.webp"
                       alt="التنفيذ"
                       className="w-full h-full object-cover"
                       width={96}
@@ -214,7 +214,7 @@ export function SuccessRoadmap() {
                 <div className="bg-white/10 backdrop-blur-lg border border-white/20 p-5 sm:p-8 rounded-2xl md:rounded-3xl hover:bg-white/20 transition-colors shadow-2xl flex flex-col sm:flex-row-reverse gap-4 sm:gap-6 items-center">
                   <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 xl:w-36 xl:h-36 2xl:w-40 2xl:h-40 rounded-xl md:rounded-2xl overflow-hidden shrink-0 shadow-lg border-2 border-white/30">
                     <Image
-                      src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=200&q=80"
+                      src="/imgs/6 A bright hospital corridor w/image_22.webp"
                       alt="النمو المستدام"
                       className="w-full h-full object-cover"
                       width={96}

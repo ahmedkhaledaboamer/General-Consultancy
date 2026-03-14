@@ -9,7 +9,7 @@ const metrics = [
   desc: 'كل مشروع أو استشارة يتم تقييمه وفق مؤشرات أداء محددة.',
   icon: BarChart3Icon,
   image:
-  'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80',
+  '/imgs/A stunning sustainable farm wi/image_28.webp',
   gradient: 'from-brand-blue to-brand-cyan',
   border: 'border-b-brand-blue'
 },
@@ -18,7 +18,7 @@ const metrics = [
   desc: 'نحن نطبق أفضل الممارسات في كل المجالات.',
   icon: GlobeIcon,
   image:
-  'https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=600&q=80',
+  '/imgs/A stunning tourism destination/image_36.webp',
   gradient: 'from-brand-teal to-brand-emerald',
   border: 'border-b-brand-teal'
 },
@@ -27,7 +27,7 @@ const metrics = [
   desc: 'كل خطوة في المشروع يتم توضيحها للعميل، مع تقديم تقارير دورية.',
   icon: EyeIcon,
   image:
-  'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80',
+  '/imgs/A stunning tourism development/image_70.webp',
   gradient: 'from-brand-orange to-brand-amber',
   border: 'border-b-brand-orange'
 },
@@ -36,7 +36,7 @@ const metrics = [
   desc: 'لدينا تاريخ حافل بالمشاريع الناجحة والشراكات المؤثرة.',
   icon: TrophyIcon,
   image:
-  'https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80',
+  '/imgs/A stunning tourism environment/image_0.webp',
   gradient: 'from-brand-purple to-brand-pink',
   border: 'border-b-brand-purple'
 }];
@@ -92,7 +92,7 @@ export function ProvingValue() {
             }}>
             
             <Image
-              src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
+              src="/imgs/A stunning tourism investment/image_48.webp"
               alt="Celebration"
               className="w-full h-full object-cover"
               width={800}
@@ -177,7 +177,7 @@ export function ProvingValue() {
           }}>
           
           <Image
-            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=80"
+            src="/imgs/A dramatic mine entrance with/image_17.webp"
             alt="Success Growth"
             className="absolute inset-0 w-full h-full object-cover"
             width={1600}

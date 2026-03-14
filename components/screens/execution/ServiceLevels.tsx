@@ -79,7 +79,7 @@ export function ServiceLevels() {
         {/* Image Banner Header */}
         <div className="relative rounded-3xl overflow-hidden mb-16 h-56 md:h-72 lg:h-[500px] xl:h-[600px] 2xl:h-[700px]">
           <Image
-            src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=1200&q=80"
+            src="/imgs/A modern logistics real estate/image_41.webp"
             alt="مستويات الخدمة"
             className="w-full h-full object-cover"
             width={1200}

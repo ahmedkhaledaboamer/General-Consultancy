@@ -72,7 +72,7 @@ export function AboutSection() {
               </p>
 
               <div className="mt-10 p-6 bg-gradient-to-br from-navy to-purple-deep rounded-2xl shadow-xl border border-white/10 relative overflow-hidden group">
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80')] opacity-10 bg-cover bg-center mix-blend-overlay group-hover:scale-110 transition-transform duration-700"></div>
+                <div className="absolute inset-0 bg-[url('/imgs/1 A modern solar farm stretchi/image_0.webp')] opacity-10 bg-cover bg-center mix-blend-overlay group-hover:scale-110 transition-transform duration-700"></div>
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gold/20 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2"></div>
                 <p className="relative z-10 font-bold text-white text-xl md:text-2xl xl:text-3xl 2xl:text-4xl leading-relaxed">
                   نحن لا نعمل فقط على تقديم الحلول… بل نعمل على بناء منظومة
@@ -104,7 +104,7 @@ export function AboutSection() {
             {/* Main Large Image */}
             <div className="absolute top-0 right-0 w-4/5 h-4/5 md:w-3/5 md:h-3/5 lg:w-4/5 lg:h-4/5 rounded-3xl overflow-hidden shadow-2xl border-4 border-white z-10">
               <Image
-                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80"
+                src="/imgs/13 A modern campus with interc/image_4.webp"
                 alt="Business Meeting"
                 className="w-full h-full object-cover"
                 width={800}
@@ -117,7 +117,7 @@ export function AboutSection() {
             {/* Secondary Overlapping Image */}
             <div className="absolute bottom-0 left-0 w-3/5 h-2/5 md:w-2/5 md:h-2/5 lg:w-3/5 lg:h-3/5 rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.3)] border-4 border-white z-20 transform -translate-y-10 translate-x-10">
               <Image
-                src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&q=80"
+                src="/imgs/15 A stunning night view of a/image_25.webp"
                 alt="Partnership Handshake"
                 className="w-full h-full object-cover"
                 width={600}

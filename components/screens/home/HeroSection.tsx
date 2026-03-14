@@ -15,7 +15,7 @@ export function HeroSection() {
       {/* Background Image & Dramatic Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1920&q=80"
+          src="/imgs/A dynamic real estate environm/image_19.webp"
           alt="Dubai Skyline Night"
           className="w-full h-full object-cover object-center" 
           width={1920}

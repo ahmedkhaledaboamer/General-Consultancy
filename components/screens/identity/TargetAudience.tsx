@@ -8,7 +8,7 @@ const audiences = [
   desc: 'الذين يبحثون عن شريك موثوق وفعال.',
   icon: UsersIcon,
   image:
-  'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80',
+  '/imgs/3 A minimalist workspace featu/image_1.webp',
   gradient: 'from-brand-blue to-brand-teal',
   shadow: 'shadow-brand-blue/20'
 },
@@ -17,7 +17,7 @@ const audiences = [
   desc: 'الذي يحتاج إلى دليل واضح لتمثيل الشركة.',
   icon: BuildingIcon,
   image:
-  'https://images.unsplash.com/photo-1497215842964-222b430dc094?w=800&q=80',
+  '/imgs/A spectacular entertainment co/image_10.webp',
   gradient: 'from-brand-purple to-brand-pink',
   shadow: 'shadow-brand-purple/20'
 },
@@ -26,7 +26,7 @@ const audiences = [
   desc: 'الراغبون في رؤية مصداقية واستقرار الشركة.',
   icon: TrendingUpIcon,
   image:
-  'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80',
+  '/imgs/A minimalist map wall with glo/image_17.webp',
   gradient: 'from-brand-orange to-brand-amber',
   shadow: 'shadow-brand-orange/20'
 }];

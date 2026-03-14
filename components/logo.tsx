@@ -9,7 +9,7 @@ interface LogoProps {
 }
 export default function Logo({ className, href = "/", size = 100 }: LogoProps) {
   return (
-    <Link href={href} className={className}>
+    <Link href={href as any} className={className}>
       <Image
         src="/logo.webp"
         alt="Logo"

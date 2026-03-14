@@ -14,7 +14,7 @@ const values = [
   icon: AwardIcon,
   color: 'from-sky-500 to-blue-600',
   image:
-  'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&q=80'
+  '/imgs/A modern food industry investm/image_35.webp'
 },
 {
   title: 'الشفافية',
@@ -22,7 +22,7 @@ const values = [
   icon: EyeIcon,
   color: 'from-emerald-500 to-teal-600',
   image:
-  'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&q=80'
+  '/imgs/A modern food processing plant/image_29.webp'
 },
 {
   title: 'الالتزام',
@@ -30,7 +30,7 @@ const values = [
   icon: ShieldCheckIcon,
   color: 'from-violet-500 to-purple-600',
   image:
-  'https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&q=80'
+  '/imgs/A modern healthcare advisory e/image_23.webp'
 },
 {
   title: 'الابتكار',
@@ -38,7 +38,7 @@ const values = [
   icon: LightbulbIcon,
   color: 'from-magenta-500 to-pink-600',
   image:
-  'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&q=80'
+  '/imgs/A modern healthcare consulting/image_15.webp'
 },
 {
   title: 'الشراكة',
@@ -46,14 +46,14 @@ const values = [
   icon: HandshakeIcon,
   color: 'from-gold to-amber',
   image:
-  'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&q=80'
+  '/imgs/A modern healthcare developmen/image_61.webp'
 }];
 
 export function ValuesSection() {
   return (
     <section className=" p-[5%]  bg-navy relative overflow-hidden">
       {/* Background Decor */}
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=80')] opacity-5 bg-cover bg-center mix-blend-overlay"></div>
+      <div className="absolute inset-0 bg-[url('/imgs/A modern healthcare environmen/image_15.webp')] opacity-5 bg-cover bg-center mix-blend-overlay"></div>
 
       <div className=" relative z-10">
         <div className="text-center   mb-20">

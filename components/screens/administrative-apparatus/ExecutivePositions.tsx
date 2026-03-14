@@ -10,7 +10,7 @@ export function ExecutivePositions() {
       {/* Hero-style banner image for section */}
       <div className="absolute top-0 start-0 w-full h-[500px] z-0">
         <Image
-          src="https://images.unsplash.com/photo-1431540015159-0f6e5d5e1f2f?w=1920&q=80"
+          src="/imgs/A dynamic startup growth envir/image_49.webp"
           alt="Conference Room"
           className="w-full h-full object-cover"
           width={1920}
@@ -83,7 +83,7 @@ export function ExecutivePositions() {
             
             <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full border-4 border-white shadow-xl overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80"
+                src="/imgs/A family business environment/image_76.webp"
                 alt="رئيس مجلس الإدارة"
                 className="w-full h-full object-cover"
                 width={400}
@@ -120,7 +120,7 @@ export function ExecutivePositions() {
             
             <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full border-4 border-white shadow-xl overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80"
+                src="/imgs/A family business growth plann/image_4.webp"
                 alt="الرئيس التنفيذي"
                 className="w-full h-full object-cover"
                 width={400}
@@ -157,7 +157,7 @@ export function ExecutivePositions() {
             
             <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full border-4 border-white shadow-xl overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80"
+                src="/imgs/A family business planning roo/image_40.webp"
                 alt="مدير إدارة الاستثمارات"
                 className="w-full h-full object-cover"
                 width={400}
@@ -194,7 +194,7 @@ export function ExecutivePositions() {
             
             <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full border-4 border-white shadow-xl overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80"
+                src="/imgs/A global strategy office with/image_16.webp"
                 alt="مدير الاستشارات الاستراتيجية"
                 className="w-full h-full object-cover"
                 width={400}
@@ -233,7 +233,7 @@ export function ExecutivePositions() {
             
             <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full border-4 border-white shadow-xl overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80"
+                src="/imgs/A modern facility management h/image_61.webp"
                 alt="مدير تطوير المشاريع"
                 className="w-full h-full object-cover"
                 width={400}
@@ -270,7 +270,7 @@ export function ExecutivePositions() {
             
             <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full border-4 border-white shadow-xl overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80"
+                src="/imgs/A modern healthcare management/image_9.webp"
                 alt="مدير الاستشارات المالية والمصرفية"
                 className="w-full h-full object-cover"
                 width={400}
@@ -309,7 +309,7 @@ export function ExecutivePositions() {
             
             <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full border-4 border-white shadow-xl overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80"
+                src="/imgs/A modern industrial management/image_64.webp"
                 alt="مدير الاستشارات القطاعية"
                 className="w-full h-full object-cover"
                 width={400}
@@ -348,7 +348,7 @@ export function ExecutivePositions() {
             
             <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full border-4 border-white shadow-xl overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80"
+                src="/imgs/A modern insurance office with/image_4.webp"
                 alt="مدير العلاقات العامة والإعلام"
                 className="w-full h-full object-cover"
                 width={400}
@@ -387,7 +387,7 @@ export function ExecutivePositions() {
             
             <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full border-4 border-white shadow-xl overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80"
+                src="/imgs/A modern logistics management/image_55.webp"
                 alt="مدير التسويق والإعلام الرقمي"
                 className="w-full h-full object-cover"
                 width={400}

@@ -15,7 +15,7 @@ export function HeroSection() {
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-          'url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80")'
+          'url("/imgs/A modern logistics control cen/image_27.webp")'
         }}>
         
         <div className="absolute inset-0 bg-gradient-to-br from-[#1e3a5f]/95 via-[#2d5a87]/85 to-[#1a237e]/95 mix-blend-multiply"></div>

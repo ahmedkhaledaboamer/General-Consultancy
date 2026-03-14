@@ -41,7 +41,7 @@ export function ServiceLevels() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1497215842964-222b430dc094?w=1920&q=80"
+          src="/imgs/A modern food industry facilit/image_54.webp"
           alt="Luxury Office"
           className="w-full h-full object-cover" />
         

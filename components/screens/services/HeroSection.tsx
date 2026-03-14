@@ -112,7 +112,7 @@ export function HeroSection() {
               
               <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent mix-blend-overlay z-10" />
               <Image
-                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80"
+                src="/imgs/A cuttingedge biotechnology re/image_34.webp"
                 alt="Business Consulting and Investment"
                 className="w-full h-full object-cover"
                 width={800}
@@ -139,7 +139,7 @@ export function HeroSection() {
               
               <div className="absolute inset-0 bg-teal/10 mix-blend-overlay z-10" />
               <Image
-                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80"
+                src="/imgs/A cuttingedge financial innova/image_65.webp"
                 alt="Team Meeting"
                 className="w-full h-full object-cover"
                 width={600}
