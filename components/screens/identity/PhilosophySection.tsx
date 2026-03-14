@@ -33,11 +33,11 @@ const pillars = [
 
 export function PhilosophySection() {
   return (
-    <section className="py-24 bg-gray-50 relative overflow-hidden">
+    <section className="  bg-gray-50 relative overflow-hidden">
       {/* Decorative Background */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]" />
 
-      <div className="mx-auto px-[5%] relative z-10">
+      <div className="mx-auto p-[5%] relative z-10">
         <motion.div
           className="text-center mb-20 relative"
           initial={{
@@ -56,10 +56,10 @@ export function PhilosophySection() {
           }}>
           
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-24 bg-gradient-to-r from-brand-pink via-brand-purple to-brand-blue blur-3xl opacity-30 -z-10" />
-          <h2 className="text-4xl md:text-6xl font-cairo font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-6xl xl:text-7xl 2xl:text-8xl font-cairo font-bold text-gray-900 mb-6">
             فلسفتنا
           </h2>
-          <p className="text-2xl text-gray-600 mx-auto">
+          <p className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl text-gray-600 mx-auto">
             فلسفتنا تقوم على ثلاثة محاور رئيسية:
           </p>
         </motion.div>
@@ -68,7 +68,7 @@ export function PhilosophySection() {
           {pillars.map((pillar, index) =>
           <motion.div
             key={index}
-            className="flex flex-col items-center justify-center text-center group relative h-[450px] rounded-[2rem] overflow-hidden shadow-2xl"
+            className="flex flex-col items-center justify-center text-center group relative h-[450px] md:h-[500px] lg:h-[550px] xl:h-[600px] 2xl:h-[650px] rounded-[2rem] overflow-hidden shadow-2xl"
             initial={{
               opacity: 0,
               y: 50
@@ -103,13 +103,13 @@ export function PhilosophySection() {
 
               {/* Content positioned at bottom - desc visible by default on tablet/mobile, on hover on desktop */}
               <div className="flex flex-col items-center justify-center w-full p-8 text-white transform translate-y-0 lg:translate-y-4 lg:group-hover:translate-y-0 transition-transform duration-300">
-                <div className="w-16 h-16 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center mb-6 border border-white/30 shadow-lg">
+                <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-28 xl:h-28 2xl:w-32 2xl:h-32 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center mb-6 border border-white/30 shadow-lg">
                   <pillar.icon size={32} className="text-white" />
                 </div>
-                <h3 className="text-3xl font-cairo font-bold mb-4 drop-shadow-lg">
+                <h3 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-cairo font-bold mb-4 drop-shadow-lg">
                   {pillar.title}
                 </h3>
-                <p className="text-xl font-tajawal text-white/90 leading-relaxed drop-shadow-md opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300 lg:delay-100">
+                <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-tajawal text-white/90 leading-relaxed drop-shadow-md opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300 lg:delay-100">
                   {pillar.desc}
                 </p>
               </div>
@@ -137,7 +137,7 @@ export function PhilosophySection() {
           
           <div className="absolute inset-0 bg-gradient-to-r from-brand-teal via-brand-blue to-brand-purple rounded-3xl transform rotate-1 opacity-50 blur-sm" />
           <div className="relative bg-white/80 backdrop-blur-xl rounded-3xl p-10 text-center border border-white shadow-xl">
-            <p className="text-2xl font-tajawal text-gray-800 leading-relaxed">
+            <p className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-tajawal text-gray-800 leading-relaxed">
               <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-brand-purple to-brand-pink text-3xl block mb-4">
                 مثال تطبيقي
               </span>

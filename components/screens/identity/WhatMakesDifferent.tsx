@@ -52,11 +52,11 @@ const features = [
 
 export function WhatMakesDifferent() {
   return (
-    <section className="py-24 bg-mesh relative overflow-hidden">
-      <div className="mx-auto px-[5%] relative z-10">
+    <section className="  bg-mesh relative overflow-hidden">
+      <div className="mx-auto p-[5%] relative z-10">
         {/* Large Image Banner */}
         <motion.div
-          className="relative w-full h-80 rounded-[2.5rem] overflow-hidden shadow-2xl mb-20"
+          className="relative w-full h-80 md:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px] rounded-[2.5rem] overflow-hidden shadow-2xl mb-20"
           initial={{
             opacity: 0,
             y: 50
@@ -81,7 +81,7 @@ export function WhatMakesDifferent() {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-brand-indigo-dark/90 via-brand-purple/80 to-transparent" />
           <div className="absolute inset-0 flex items-center px-10 md:px-20">
-            <h2 className="mx-auto text-center text-4xl md:text-6xl font-cairo font-bold text-white drop-shadow-xl leading-tight">
+            <h2 className="mx-auto text-center text-4xl md:text-6xl xl:text-7xl 2xl:text-8xl font-cairo font-bold text-white drop-shadow-xl leading-tight">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow to-brand-orange">
                 ما الذي يجعلنا
               </span>{' '}
@@ -114,25 +114,25 @@ export function WhatMakesDifferent() {
             }}>
             
               <div
-              className={`h-2 w-full bg-gradient-to-r ${feature.gradient}`} />
+              className={`h-2 w-full md:w-1/2 lg:w-2/3 xl:w-3/4 2xl:w-full bg-gradient-to-r ${feature.gradient}`} />
             
-              <div className="p-8">
+              <div className="p-8 md:p-10 lg:p-12 xl:p-14 2xl:p-16">
                 <div className="flex justify-between items-start mb-6">
                   <div
-                  className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${feature.gradient} text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300`}>
+                  className={`w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-28 xl:h-28 2xl:w-32 2xl:h-32 rounded-2xl bg-gradient-to-br ${feature.gradient} text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300`}>
                   
                     <feature.icon size={32} />
                   </div>
                   <img
                   src={feature.thumb}
                   alt=""
-                  className="w-12 h-12 rounded-full object-cover border-2 border-gray-100 shadow-sm" />
+                  className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 xl:w-20 xl:h-20 2xl:w-24 2xl:h-24 rounded-full object-cover border-2 border-gray-100 shadow-sm" />
                 
                 </div>
-                <h3 className="text-2xl font-cairo font-bold text-gray-900 mb-3">
+                <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-cairo font-bold text-gray-900 mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-xl text-gray-600 font-tajawal">
+                <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-gray-600 font-tajawal">
                   {feature.desc}
                 </p>
               </div>
@@ -162,25 +162,25 @@ export function WhatMakesDifferent() {
             }}>
             
               <div
-              className={`h-2 w-full bg-gradient-to-r ${feature.gradient}`} />
+              className={`h-2 w-full md:w-1/2 lg:w-2/3 xl:w-3/4 2xl:w-full bg-gradient-to-r ${feature.gradient}`} />
             
-              <div className="p-8">
+              <div className="p-8 md:p-10 lg:p-12 xl:p-14 2xl:p-16">
                 <div className="flex justify-between items-start mb-6">
                   <div
-                  className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${feature.gradient} text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300`}>
+                  className={`w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-28 xl:h-28 2xl:w-32 2xl:h-32 rounded-2xl bg-gradient-to-br ${feature.gradient} text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300`}>
                   
                     <feature.icon size={32} />
                   </div>
                   <img
                   src={feature.thumb}
                   alt=""
-                  className="w-12 h-12 rounded-full object-cover border-2 border-gray-100 shadow-sm" />
+                  className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 xl:w-18 xl:h-18 2xl:w-20 2xl:h-20 rounded-full object-cover border-2 border-gray-100 shadow-sm" />
                 
                 </div>
-                <h3 className="text-2xl font-cairo font-bold text-gray-900 mb-3">
+                <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-cairo font-bold text-gray-900 mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-xl text-gray-600 font-tajawal">
+                <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-gray-600 font-tajawal">
                   {feature.desc}
                 </p>
               </div>
@@ -191,7 +191,7 @@ export function WhatMakesDifferent() {
 
         {/* Bottom Quote Card */}
         <motion.div
-          className="relative rounded-3xl overflow-hidden shadow-2xl max-w-4xl mx-auto"
+          className="relative rounded-3xl overflow-hidden shadow-2xl max-w-4xl md:max-w-5xl lg:max-w-6xl xl:max-w-7xl 2xl:max-w-8xl mx-auto"
           initial={{
             opacity: 0,
             scale: 0.95
@@ -215,7 +215,7 @@ export function WhatMakesDifferent() {
           
           <div className="absolute inset-0 bg-brand-indigo-dark/80 mix-blend-multiply" />
           <div className="relative p-12 md:p-16 text-center z-10">
-            <p className="text-2xl md:text-4xl font-cairo font-bold text-white leading-relaxed drop-shadow-lg">
+            <p className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-cairo font-bold text-white leading-relaxed drop-shadow-lg">
               &quot;في كل مشروع، ندمج بين التحليل الدقيق ورؤية واضحة لتحقيق أعلى قيمة
               ممكنة.&quot;
             </p>

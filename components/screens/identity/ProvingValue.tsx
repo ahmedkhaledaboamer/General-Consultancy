@@ -45,9 +45,9 @@ export function ProvingValue() {
   const locale = useLocale();
   const isRTL = locale === 'ar';
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
-      <div className="mx-auto px-[5%] relative z-10">
-        <div className="flex flex-col md:flex-row items-center justify-between mb-20 gap-10">
+    <section className="  bg-white relative overflow-hidden">
+      <div className="mx-auto p-[5%] relative z-10">
+        <div className="flex flex-col md:flex-row items-center justify-between mb-20 gap-10 md:gap-12 lg:gap-14 xl:gap-16 2xl:gap-18">
           <motion.div
             className="md:w-1/2"
             initial={{
@@ -65,7 +65,7 @@ export function ProvingValue() {
               duration: 0.7
             }}>
             
-            <h2 className={`text-center text-4xl md:text-6xl font-cairo font-bold text-gray-900 mb-6 leading-tight ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
+            <h2 className={`text-center text-4xl md:text-6xl xl:text-7xl 2xl:text-8xl font-cairo font-bold text-gray-900 mb-6 leading-tight ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
               كيف نثبت قيمتنا؟ <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-blue">
                 وكيف نُظهر مصداقيتنا؟
@@ -74,7 +74,7 @@ export function ProvingValue() {
           </motion.div>
 
           <motion.div
-            className="md:w-1/2 relative h-48 rounded-3xl overflow-hidden shadow-xl"
+            className="md:w-1/2 relative h-48 md:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px] rounded-3xl overflow-hidden shadow-xl"
             initial={{
               opacity: 0,
               x: -50
@@ -125,7 +125,7 @@ export function ProvingValue() {
             }}>
             
               {/* Image Thumbnail */}
-              <div className="h-40 w-full relative overflow-hidden">
+              <div className="h-40 md:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px] w-full relative overflow-hidden">
                 <Image
                 src={metric.image}
                 alt={metric.title}
@@ -142,15 +142,15 @@ export function ProvingValue() {
               <div className="p-8 relative">
                 {/* Floating Icon Badge */}
                 <div
-                className={`absolute -top-10 ${!isRTL ? 'left-8' : 'right-8'} w-20 h-20 rounded-2xl bg-gradient-to-br ${metric.gradient} text-white flex items-center justify-center shadow-lg border-4 border-white transform group-hover:-translate-y-2 transition-transform duration-300`}>
+                className={`absolute -top-10 ${!isRTL ? 'left-8' : 'right-8'} w-20 h-20    rounded-2xl bg-gradient-to-br ${metric.gradient} text-white flex items-center justify-center shadow-lg border-4 border-white transform group-hover:-translate-y-2 transition-transform duration-300`}>
                 
                   <metric.icon size={36} />
                 </div>
 
-                <h3 className="text-3xl font-cairo font-bold text-gray-900 mb-4 mt-6">
+                <h3 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-cairo font-bold text-gray-900 mb-4 mt-6">
                   {metric.title}
                 </h3>
-                <p className="text-xl text-gray-600 font-tajawal leading-relaxed">
+                <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-gray-600 font-tajawal leading-relaxed">
                   {metric.desc}
                 </p>
               </div>
@@ -160,7 +160,7 @@ export function ProvingValue() {
 
         {/* Success Story Callout */}
         <motion.div
-          className="relative rounded-[2.5rem] overflow-hidden shadow-2xl"
+          className="relative rounded-[2.5rem] md:rounded-[3rem] lg:rounded-[3.5rem] xl:rounded-[4rem] 2xl:rounded-[4.5rem] overflow-hidden shadow-2xl"
           initial={{
             opacity: 0,
             y: 50
@@ -187,7 +187,7 @@ export function ProvingValue() {
           <div className="absolute inset-0 bg-gradient-to-r from-brand-indigo-dark/95 via-brand-purple-dark/90 to-brand-pink/80" />
 
           <div className="relative z-10 p-12 md:p-20 flex flex-col md:flex-row items-center gap-12">
-            <div className="w-32 h-32 md:w-48 md:h-48 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center flex-shrink-0 shadow-[0_0_50px_rgba(255,255,255,0.1)]">
+            <div className="w-32 h-32 md:w-48 md:h-48 lg:w-56 lg:h-56 xl:w-64 xl:h-64 2xl:w-72 2xl:h-72 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center flex-shrink-0 shadow-[0_0_50px_rgba(255,255,255,0.1)]">
               <div className="text-center">
                 <div className="text-5xl md:text-7xl font-cairo font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-brand-pink-light">
                   40%
@@ -199,13 +199,13 @@ export function ProvingValue() {
             </div>
 
             <div className={`flex flex-col items-center justify-center text-center md:items-start ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-yellow/20 text-brand-yellow font-tajawal font-bold mb-6 border border-brand-yellow/30">
+              <div className="inline-flex items-center gap-2 px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 xl:px-10 xl:py-5 2xl:px-12 2xl:py-6 rounded-full bg-brand-yellow/20 text-brand-yellow font-tajawal font-bold mb-6 border border-brand-yellow/30">
                 <TrophyIcon size={20} />
                 قصة نجاح
               </div>
-              <p className="text-3xl md:text-5xl font-cairo font-bold text-white leading-tight drop-shadow-lg">
+              <p className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-cairo font-bold text-white leading-tight drop-shadow-lg">
                 &quot;أحد عملائنا تمكن من زيادة كفاءة أعماله بنسبة{' '}
-                <span className="text-brand-yellow">40%</span> بعد تطبيق
+                <span className="text-brand-yellow">40%</span> <br className="md:hidden lg:block xl:hidden 2xl:block" /> بعد تطبيق
                 استراتيجيتنا المتكاملة.&quot;
               </p>
             </div>

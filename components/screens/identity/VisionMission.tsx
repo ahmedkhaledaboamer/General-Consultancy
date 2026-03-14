@@ -7,8 +7,8 @@ export function VisionMission() {
   const locale = useLocale();
   const isRTL = locale === 'ar';
   return (
-    <section className="py-24 bg-white overflow-hidden">
-      <div className="mx-auto px-[5%]">
+    <section className="  bg-white overflow-hidden">
+      <div className="mx-auto p-[5%]">
         {/* Mission Section */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-32 relative">
           <motion.div
@@ -28,20 +28,20 @@ export function VisionMission() {
               duration: 0.8
             }}>
             
-            <div className="inline-block px-6 py-2 bg-gradient-to-r from-brand-pink to-brand-rose text-white rounded-full font-tajawal font-bold mb-6 shadow-lg shadow-brand-pink/30">
+            <div className="inline-block px-6 py-2 md:px-8 md:py-3 lg:px-10 lg:py-4 xl:px-12 xl:py-5 2xl:px-14 2xl:py-6 bg-gradient-to-r from-brand-pink to-brand-rose text-white rounded-full font-tajawal font-bold mb-6 shadow-lg shadow-brand-pink/30">
               الغاية والهدف
             </div>
-            <h2 className="text-5xl md:text-6xl font-cairo font-bold text-gray-900 mb-8">
+            <h2 className="text-5xl md:text-6xl xl:text-7xl 2xl:text-8xl font-cairo font-bold text-gray-900 mb-8">
               رسالتنا
             </h2>
-            <p className="text-2xl text-gray-600 leading-relaxed font-tajawal relative z-10">
+            <p className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl text-gray-600 leading-relaxed font-tajawal relative z-10">
               تقديم استشارات واستراتيجيات استثمارية متكاملة تمكن عملائنا من
               تحقيق أهدافهم ونمو مستدام، مع الالتزام بأعلى معايير الجودة،
               الشفافية، والمصداقية.
             </p>
 
             {/* Small decorative thumbnail */}
-            <div className="absolute -bottom-10 -right-10 w-32 h-32 rounded-2xl overflow-hidden border-4 border-white shadow-2xl z-20 hidden md:block">
+            <div className="absolute -bottom-10 -right-10 w-32 h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 xl:w-44 xl:h-44 2xl:w-48 2xl:h-48 rounded-2xl overflow-hidden border-4 border-white shadow-2xl z-20 hidden md:block">
               <Image
                 src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&q=80"
                 alt="Success"
@@ -72,7 +72,7 @@ export function VisionMission() {
             }}>
             
             <div className="absolute -inset-4 bg-gradient-to-tr from-brand-pink via-brand-purple to-brand-orange rounded-[2.5rem] opacity-50 blur-lg" />
-            <div className="relative h-80 lg:h-[500px] rounded-[2rem] overflow-hidden shadow-2xl border-8 border-white">
+            <div className="relative h-80 md:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px] rounded-[2rem] overflow-hidden shadow-2xl border-8 border-white">
               <div className="absolute inset-0 bg-brand-purple/10 mix-blend-overlay z-10" />
               <Image
                 src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80"
@@ -88,7 +88,7 @@ export function VisionMission() {
         {/* Decorative Divider */}
         <div className="flex justify-center items-center my-20 relative">
           <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent absolute" />
-          <div className="w-16 h-16 rounded-full bg-gradient-to-br from-brand-teal to-brand-blue flex items-center justify-center shadow-lg shadow-brand-teal/30 relative z-10 animate-pulse-slow">
+          <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-28 xl:h-28 2xl:w-32 2xl:h-32 rounded-full bg-gradient-to-br from-brand-teal to-brand-blue flex items-center justify-center shadow-lg shadow-brand-teal/30 relative z-10 animate-pulse-slow">
             <div className="w-8 h-8 rounded-full bg-white/20 backdrop-blur-sm" />
           </div>
         </div>
@@ -114,7 +114,7 @@ export function VisionMission() {
             }}>
             
             <div className="absolute -inset-4 bg-gradient-to-bl from-brand-teal via-brand-blue to-brand-indigo rounded-[2.5rem] opacity-50 blur-lg" />
-            <div className="relative h-80 lg:h-[500px] rounded-[2rem] overflow-hidden shadow-2xl border-8 border-white">
+            <div className="relative h-80 md:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px] rounded-[2rem] overflow-hidden shadow-2xl border-8 border-white">
               <div className="absolute inset-0 bg-brand-teal/10 mix-blend-overlay z-10" />
               <Image
                 src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80"
@@ -126,7 +126,7 @@ export function VisionMission() {
             </div>
 
             {/* Small decorative thumbnail */}
-            <div className="absolute -top-10 -left-10 w-32 h-32 rounded-2xl overflow-hidden border-4 border-white shadow-2xl z-20 hidden md:block">
+            <div className="absolute -top-10 -left-10 w-32 h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 xl:w-44 xl:h-44 2xl:w-48 2xl:h-48 rounded-2xl overflow-hidden border-4 border-white shadow-2xl z-20 hidden md:block">
               <Image
                 src="https://images.unsplash.com/photo-1557682250-33bd709cbe85?w=400&q=80"
                 alt="Abstract"
@@ -154,34 +154,34 @@ export function VisionMission() {
               duration: 0.8
             }}>
             
-            <div className="inline-block px-6 py-2 bg-gradient-to-r from-brand-teal to-brand-blue text-white rounded-full font-tajawal font-bold mb-6 shadow-lg shadow-brand-teal/30">
+            <div className="inline-block px-6 py-2 md:px-8 md:py-3 lg:px-10 lg:py-4 xl:px-12 xl:py-5 2xl:px-14 2xl:py-6 bg-gradient-to-r from-brand-teal to-brand-blue text-white rounded-full font-tajawal font-bold mb-6 shadow-lg shadow-brand-teal/30">
               المستقبل والطموح
             </div>
-            <h2 className="text-5xl md:text-6xl font-cairo font-bold text-gray-900 mb-8">
+            <h2 className="text-5xl md:text-6xl xl:text-7xl 2xl:text-8xl font-cairo font-bold text-gray-900 mb-8">
               رؤيتنا
             </h2>
-            <p className="text-2xl text-gray-600 leading-relaxed font-tajawal mb-10">
+            <p className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl text-gray-600 leading-relaxed font-tajawal mb-10">
               أن نصبح الشركة الرائدة والأكثر موثوقية في مجال الاستشارات العامة
               والاستثمارية، من خلال:
             </p>
-            <ul className="space-y-6 font-tajawal text-xl text-gray-700">
+            <ul className="space-y-6 font-tajawal text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-gray-700">
               <li className={`${isRTL ? 'text-right' : 'text-left'} flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow`}>
-                <div className="w-10 h-10 rounded-full bg-brand-emerald/10 flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 xl:w-16 xl:h-16 2xl:w-18 2xl:h-18 rounded-full bg-brand-emerald/10 flex items-center justify-center flex-shrink-0">
                   <CheckCircleIcon className="text-brand-emerald w-6 h-6" />
                 </div>
-                <span className="font-bold">قيادة مبتكرة ومؤثرة</span>
+                <span className="font-bold text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">قيادة مبتكرة ومؤثرة</span>
               </li>
               <li className={`${isRTL ? 'text-right' : 'text-left'} flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow`}>
                 <div className="w-10 h-10 rounded-full bg-brand-emerald/10 flex items-center justify-center flex-shrink-0">
                   <CheckCircleIcon className="text-brand-emerald w-6 h-6" />
                 </div>
-                <span className="font-bold">تطوير حلول مستدامة</span>
+                <span className="font-bold text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">تطوير حلول مستدامة</span>
               </li>
               <li className={`${isRTL ? 'text-right' : 'text-left'} flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow`}>
                 <div className="w-10 h-10 rounded-full bg-brand-emerald/10 flex items-center justify-center flex-shrink-0">
                   <CheckCircleIcon className="text-brand-emerald w-6 h-6" />
                 </div>
-                <span className="font-bold">
+                <span className="font-bold text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
                   تحقيق أثر إيجابي ملموس على شركائنا وعملائنا
                 </span>
               </li>

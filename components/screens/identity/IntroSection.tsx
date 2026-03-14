@@ -7,7 +7,7 @@ export function IntroSection() {
   const isRTL = locale === 'ar';
 
   return (
-    <section id="about" className="relative py-24 bg-mesh overflow-hidden">
+    <section id="about" className="relative   bg-mesh overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute top-20 right-10 w-32 h-32 bg-brand-purple/20 rounded-full blur-2xl animate-pulse-slow" />
       <div className="absolute bottom-20 left-10 w-48 h-48 bg-brand-pink/20 rounded-full blur-3xl animate-pulse-slow animation-delay-2000" />
@@ -69,7 +69,7 @@ export function IntroSection() {
         
       </motion.div>
 
-      <div className=" mx-auto px-[5%] md:px-[10%] relative z-20">
+      <div className=" mx-auto p-[5%] relative z-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Image Side */}
           <motion.div
@@ -94,7 +94,7 @@ export function IntroSection() {
               <Image
                 src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80"
                 alt="Team Collaboration"
-                className="w-full h-[500px] object-cover transform hover:scale-105 transition-transform duration-700"
+                className="w-full h-[500px] md:h-[600px] lg:h-[700px] xl:h-[800px] 2xl:h-[900px] object-cover transform hover:scale-105 transition-transform duration-700"
                 width={1200}
                 height={1200}
               />
@@ -123,18 +123,18 @@ export function IntroSection() {
             }}
             className={`order-1 lg:order-2 text-center flex flex-col items-center justify-center md:items-start ${isRTL ? 'md:text-right ' : 'md:text-left '}`}>
             
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-brand-purple/10 text-brand-purple font-tajawal font-bold mb-6 border border-brand-purple/20">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-brand-purple/10 text-brand-purple font-tajawal font-bold mb-6 border border-brand-purple/20 text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
               <span className={`w-2 h-2 rounded-full bg-brand-purple animate-pulse ${isRTL ? 'ml-2' : 'mr-2'}`} />
               من نحن
             </div>
 
-            <h2 className="text-4xl md:text-5xl font-cairo font-bold text-gray-900 mb-6 leading-tight">
+            <h2 className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-cairo font-bold text-gray-900 mb-6 leading-tight">
               مقدمة
             </h2>
 
-            <div className="h-1.5 w-24 bg-gradient-to-r from-brand-coral via-brand-pink to-brand-purple mb-8 rounded-full" />
+            <div className="h-1.5 w-24 bg-gradient-to-r from-brand-coral via-brand-pink to-brand-purple mb-8 rounded-full md:w-32 lg:w-40 xl:w-48 2xl:w-56" />
 
-            <p className="text-xl md:text-2xl text-gray-700 leading-relaxed font-tajawal">
+            <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-gray-700 leading-relaxed font-tajawal">
               الهوية المؤسسية تمثل روح الشركة وشخصيتها، وتجيب على أسئلة مثل: من
               نحن؟ ماذا نمثل؟ ولماذا نتميز؟ هي ليست مجرد عناصر بصرية، بل هي
               طريقة تفكيرنا، أسلوب عملنا، والتزامنا تجاه عملائنا وفريقنا. تجسد

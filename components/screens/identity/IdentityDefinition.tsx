@@ -46,8 +46,8 @@ const cards = [
 
 export function IdentityDefinition() {
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
-      <div className=" mx-auto px-[5%] relative z-10">
+    <section className="  bg-white relative overflow-hidden">
+      <div className=" mx-auto p-[5%] relative z-10">
         <motion.div
           className="text-center mb-20"
           initial={{
@@ -65,11 +65,11 @@ export function IdentityDefinition() {
             duration: 0.7
           }}>
           
-          <h2 className="text-4xl md:text-6xl font-cairo font-bold text-gray-900 mb-6 relative inline-block">
+          <h2 className="text-4xl md:text-6xl xl:text-7xl 2xl:text-8xl font-cairo font-bold text-gray-900 mb-6 relative inline-block">
             تعريف الهوية
-            <div className="absolute -bottom-4 left-0 w-full h-2 bg-gradient-to-r from-brand-purple via-brand-pink to-brand-orange rounded-full" />
+            <div className="absolute -bottom-4 left-0 w-full h-2 bg-gradient-to-r from-brand-purple via-brand-pink to-brand-orange rounded-full md:w-32 lg:w-40 xl:w-48 2xl:w-56" />
           </h2>
-          <p className="text-2xl text-gray-600 mx-auto font-tajawal mt-8">
+          <p className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl text-gray-600 mx-auto font-tajawal mt-8">
             الهوية المؤسسية هي مزيج من القيم، الثقافة، والوعود التي تقدمها
             الشركة للعالم. تشمل:
           </p>
@@ -79,7 +79,7 @@ export function IdentityDefinition() {
           {cards.map((card, index) =>
           <motion.div
             key={index}
-            className="group relative h-80 rounded-3xl overflow-hidden shadow-xl"
+            className="group relative h-80 md:h-96 lg:h-112 xl:h-128 2xl:h-144 rounded-3xl overflow-hidden shadow-xl"
             initial={{
               opacity: 0,
               y: 50
@@ -111,13 +111,13 @@ export function IdentityDefinition() {
 
               {/* Content */}
               <div className="absolute inset-0 p-8 flex flex-col justify-center items-center text-white z-10">
-                <div className="w-16 h-16 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center mb-6 border border-white/30 transform group-hover:-translate-y-2 transition-transform duration-300">
+                <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-28 xl:h-28 2xl:w-32 2xl:h-32 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center mb-6 border border-white/30 transform group-hover:-translate-y-2 transition-transform duration-300">
                   <card.icon size={32} className="text-white" />
                 </div>
-                <h3 className="text-3xl font-cairo font-bold mb-3 drop-shadow-lg transform group-hover:-translate-y-1 transition-transform duration-300">
+                <h3 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-cairo font-bold mb-3 drop-shadow-lg transform group-hover:-translate-y-1 transition-transform duration-300">
                   {card.title}
                 </h3>
-                <p className="text-xl font-tajawal text-white/90 leading-relaxed drop-shadow-md transform group-hover:-translate-y-1 transition-transform duration-300 delay-75">
+                <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-tajawal text-white/90 leading-relaxed drop-shadow-md transform group-hover:-translate-y-1 transition-transform duration-300 delay-75">
                   {card.desc}
                 </p>
               </div>
@@ -145,9 +145,9 @@ export function IdentityDefinition() {
           }}>
           
           <div className="bg-white rounded-[1.4rem] p-10 md:p-14 text-center relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-brand-purple/5 rounded-full blur-2xl" />
-            <div className="absolute bottom-0 left-0 w-32 h-32 bg-brand-teal/5 rounded-full blur-2xl" />
-            <p className="text-2xl md:text-4xl font-cairo font-bold text-transparent bg-clip-text bg-gradient-to-r from-brand-indigo-dark to-brand-purple-dark leading-relaxed relative z-10">
+            <div className="absolute top-0 right-0 w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 2xl:w-64 2xl:h-64 bg-brand-purple/5 rounded-full blur-2xl" />
+            <div className="absolute bottom-0 left-0 w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 2xl:w-64 2xl:h-64 bg-brand-teal/5 rounded-full blur-2xl" />
+            <p className="text-2xl md:text-4xl xl:text-5xl 2xl:text-6xl font-cairo font-bold text-transparent bg-clip-text bg-gradient-to-r from-brand-indigo-dark to-brand-purple-dark leading-relaxed relative z-10">
               &quot;لكل مشروع نشارك فيه، نضمن أن تكون النتائج انعكاسًا لقيمنا
               ورسالتنا.&quot;
             </p>

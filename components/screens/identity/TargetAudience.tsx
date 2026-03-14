@@ -33,8 +33,8 @@ const audiences = [
 
 export function TargetAudience() {
   return (
-    <section className="py-24  bg-mesh relative overflow-hidden">
-      <div className="mx-auto px-[5%] relative z-10">
+    <section className="  bg-mesh relative overflow-hidden">
+      <div className="mx-auto p-[5%] relative z-10">
         <motion.div
           className="text-center mb-20 relative"
           initial={{
@@ -53,7 +53,7 @@ export function TargetAudience() {
           }}>
           
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-16 bg-brand-yellow blur-3xl opacity-30 -z-10" />
-          <h2 className="text-4xl md:text-6xl font-cairo font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-6xl xl:text-7xl 2xl:text-8xl font-cairo font-bold text-gray-900 mb-6">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-purple to-brand-orange">
               لمن نكتب
             </span>{' '}
@@ -65,7 +65,7 @@ export function TargetAudience() {
           {audiences.map((audience, index) =>
           <motion.div
             key={index}
-            className={`bg-white rounded-[2rem] shadow-xl hover:shadow-2xl ${audience.shadow} overflow-hidden transition-all duration-300 group`}
+            className={`bg-white rounded-[2rem] md:rounded-[3rem] lg:rounded-[3.5rem] xl:rounded-[4rem] 2xl:rounded-[4.5rem] shadow-xl hover:shadow-2xl ${audience.shadow} overflow-hidden transition-all duration-300 group`}
             initial={{
               opacity: 0,
               y: 50
@@ -83,7 +83,7 @@ export function TargetAudience() {
             }}>
             
               {/* Prominent Image at Top */}
-              <div className="h-56 relative overflow-hidden">
+              <div className="h-56 md:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px] relative overflow-hidden">
                 <Image
                 src={audience.image}
                 alt={audience.title}
@@ -105,10 +105,10 @@ export function TargetAudience() {
                   <audience.icon size={40} />
                 </div>
 
-                <h3 className="text-3xl font-cairo font-bold text-gray-900 mb-4 mt-8">
+                <h3 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-cairo font-bold text-gray-900 mb-4 mt-8">
                   {audience.title}
                 </h3>
-                <p className="text-xl text-gray-600 font-tajawal leading-relaxed">
+                <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-gray-600 font-tajawal leading-relaxed">
                   {audience.desc}
                 </p>
               </div>
