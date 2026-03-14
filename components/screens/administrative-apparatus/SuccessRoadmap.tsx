@@ -11,7 +11,7 @@ import Image from 'next/image';
 
 export function SuccessRoadmap() {
   return (
-    <section className="py-16 md:py-32 relative overflow-hidden text-white">
+    <section className=" relative overflow-hidden text-white">
       {/* Blurred background image and gradient */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -24,7 +24,7 @@ export function SuccessRoadmap() {
         <div className="absolute inset-0 bg-gradient-to-b from-violet-900/95 via-blue-900/90 to-cyan-900/95 mix-blend-multiply" />
       </div>
 
-      <div className="mx-auto px-[5%] relative z-10">
+      <div className="mx-auto p-[5%] relative z-10">
         <div className="text-center mb-12 md:mb-24">
           <motion.h2
             initial={{
@@ -38,7 +38,7 @@ export function SuccessRoadmap() {
             viewport={{
               once: true
             }}
-            className="text-3xl md:text-5xl font-extrabold mb-4 md:mb-8 text-shadow-lg">
+            className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold mb-4 md:mb-8 text-shadow-lg">
             
             خارطة طريق النجاح
           </motion.h2>
@@ -57,7 +57,7 @@ export function SuccessRoadmap() {
             transition={{
               delay: 0.1
             }}
-            className="text-base md:text-xl text-white/90 leading-relaxed font-medium text-shadow-md mx-auto">
+            className="text-base md:text-xl xl:text-2xl 2xl:text-3xl text-white/90 leading-relaxed font-medium text-shadow-md mx-auto">
             
             نعتمد في عملنا على خارطة طريق واضحة تساعد شركاءنا على تحقيق النجاح
             في مشاريعهم واستثماراتهم.
@@ -84,7 +84,7 @@ export function SuccessRoadmap() {
               </div>
               <div className="w-full ms-0 md:w-1/2 md:pe-16 md:max-w-[calc(50%-3rem)] text-center md:text-end min-w-0">
                 <div className="bg-white/10 backdrop-blur-lg border border-white/20 p-5 sm:p-8 rounded-2xl md:rounded-3xl hover:bg-white/20 transition-colors shadow-2xl flex flex-col sm:flex-row-reverse gap-4 sm:gap-6 items-center">
-                  <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-xl md:rounded-2xl overflow-hidden shrink-0 shadow-lg border-2 border-white/30">
+                  <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 xl:w-36 xl:h-36 2xl:w-40 2xl:h-40 rounded-xl md:rounded-2xl overflow-hidden shrink-0 shadow-lg border-2 border-white/30">
                     <Image
                       src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=200&q=80"
                       alt="تحديد الأهداف"
@@ -94,9 +94,9 @@ export function SuccessRoadmap() {
                     />
                   </div>
                   <div className="min-w-0">
-                    <span className="text-purple-300 font-bold text-sm md:text-lg mb-1 md:mb-2 block">المرحلة الأولى</span>
-                    <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-3">تحديد الأهداف</h3>
-                    <p className="text-white/80 text-sm md:text-lg leading-relaxed break-words">
+                    <span className="text-purple-300 font-bold text-sm md:text-lg xl:text-xl 2xl:text-2xl mb-1 md:mb-2 block">المرحلة الأولى</span>
+                    <h3 className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-bold mb-2 md:mb-3">تحديد الأهداف</h3>
+                    <p className="text-white/80 text-sm md:text-lg xl:text-xl 2xl:text-2xl leading-relaxed break-words">
                       فهم رؤية العمل وتحديد الأهداف الاستراتيجية للمشروع.
                     </p>
                   </div>
@@ -116,7 +116,7 @@ export function SuccessRoadmap() {
               </div>
               <div className="w-full ms-0 md:w-1/2 md:ps-16 md:max-w-[calc(50%-3rem)] text-center md:text-start min-w-0">
                 <div className="bg-white/10 backdrop-blur-lg border border-white/20 p-5 sm:p-8 rounded-2xl md:rounded-3xl hover:bg-white/20 transition-colors shadow-2xl flex flex-col sm:flex-row gap-4 sm:gap-6 items-center">
-                  <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-xl md:rounded-2xl overflow-hidden shrink-0 shadow-lg border-2 border-white/30">
+                  <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 xl:w-36 xl:h-36 2xl:w-40 2xl:h-40 rounded-xl md:rounded-2xl overflow-hidden shrink-0 shadow-lg border-2 border-white/30">
                     <Image
                       src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=200&q=80"
                       alt="تحليل الفرص"
@@ -126,9 +126,9 @@ export function SuccessRoadmap() {
                     />
                   </div>
                   <div className="min-w-0">
-                    <span className="text-blue-300 font-bold text-sm md:text-lg mb-1 md:mb-2 block">المرحلة الثانية</span>
-                    <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-3">تحليل الفرص</h3>
-                    <p className="text-white/80 text-sm md:text-lg leading-relaxed break-words">
+                    <span className="text-blue-300 font-bold text-sm md:text-lg xl:text-xl 2xl:text-2xl mb-1 md:mb-2 block">المرحلة الثانية</span>
+                    <h3 className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-bold mb-2 md:mb-3">تحليل الفرص</h3>
+                    <p className="text-white/80 text-sm md:text-lg xl:text-xl 2xl:text-2xl leading-relaxed break-words">
                       دراسة السوق وتحديد الفرص الاستثمارية المتاحة.
                     </p>
                   </div>
@@ -148,7 +148,7 @@ export function SuccessRoadmap() {
               </div>
               <div className="w-full ms-0 md:w-1/2 md:pe-16 md:max-w-[calc(50%-3rem)] text-center md:text-end min-w-0">
                 <div className="bg-white/10 backdrop-blur-lg border border-white/20 p-5 sm:p-8 rounded-2xl md:rounded-3xl hover:bg-white/20 transition-colors shadow-2xl flex flex-col sm:flex-row-reverse gap-4 sm:gap-6 items-center">
-                  <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-xl md:rounded-2xl overflow-hidden shrink-0 shadow-lg border-2 border-white/30">
+                  <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 xl:w-36 xl:h-36 2xl:w-40 2xl:h-40 rounded-xl md:rounded-2xl overflow-hidden shrink-0 shadow-lg border-2 border-white/30">
                     <Image
                       src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=200&q=80"
                       alt="تطوير الاستراتيجية"
@@ -158,9 +158,9 @@ export function SuccessRoadmap() {
                     />
                   </div>
                   <div className="min-w-0">
-                    <span className="text-teal-300 font-bold text-sm md:text-lg mb-1 md:mb-2 block">المرحلة الثالثة</span>
-                    <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-3">تطوير الاستراتيجية</h3>
-                    <p className="text-white/80 text-sm md:text-lg leading-relaxed break-words">
+                    <span className="text-teal-300 font-bold text-sm md:text-lg xl:text-xl 2xl:text-2xl mb-1 md:mb-2 block">المرحلة الثالثة</span>
+                    <h3 className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-bold mb-2 md:mb-3">تطوير الاستراتيجية</h3>
+                    <p className="text-white/80 text-sm md:text-lg xl:text-xl 2xl:text-2xl leading-relaxed break-words">
                       بناء خطة عمل متكاملة لتطبيق الأهداف.
                     </p>
                   </div>
@@ -180,7 +180,7 @@ export function SuccessRoadmap() {
               </div>
               <div className="w-full ms-0 md:w-1/2 md:ps-16 md:max-w-[calc(50%-3rem)] text-center md:text-start min-w-0">
                 <div className="bg-white/10 backdrop-blur-lg border border-white/20 p-5 sm:p-8 rounded-2xl md:rounded-3xl hover:bg-white/20 transition-colors shadow-2xl flex flex-col sm:flex-row gap-4 sm:gap-6 items-center">
-                  <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-xl md:rounded-2xl overflow-hidden shrink-0 shadow-lg border-2 border-white/30">
+                  <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 xl:w-36 xl:h-36 2xl:w-40 2xl:h-40 rounded-xl md:rounded-2xl overflow-hidden shrink-0 shadow-lg border-2 border-white/30">
                     <Image
                       src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&q=80"
                       alt="التنفيذ"
@@ -190,9 +190,9 @@ export function SuccessRoadmap() {
                     />
                   </div>
                   <div className="min-w-0">
-                    <span className="text-pink-300 font-bold text-sm md:text-lg mb-1 md:mb-2 block">المرحلة الرابعة</span>
-                    <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-3">التنفيذ</h3>
-                    <p className="text-white/80 text-sm md:text-lg leading-relaxed break-words">
+                    <span className="text-pink-300 font-bold text-sm xl:text-xl 2xl:text-2xl mb-1 md:mb-2 block">المرحلة الرابعة</span>
+                    <h3 className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-bold mb-2 md:mb-3">التنفيذ</h3>
+                    <p className="text-white/80 text-sm md:text-lg xl:text-xl 2xl:text-2xl leading-relaxed break-words">
                       تطبيق الخطط والبرامج وفق أفضل الممارسات.
                     </p>
                   </div>
@@ -212,7 +212,7 @@ export function SuccessRoadmap() {
               </div>
               <div className="w-full ms-0 md:w-1/2 md:pe-16 md:max-w-[calc(50%-3rem)] text-center md:text-end min-w-0">
                 <div className="bg-white/10 backdrop-blur-lg border border-white/20 p-5 sm:p-8 rounded-2xl md:rounded-3xl hover:bg-white/20 transition-colors shadow-2xl flex flex-col sm:flex-row-reverse gap-4 sm:gap-6 items-center">
-                  <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-xl md:rounded-2xl overflow-hidden shrink-0 shadow-lg border-2 border-white/30">
+                  <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 xl:w-36 xl:h-36 2xl:w-40 2xl:h-40 rounded-xl md:rounded-2xl overflow-hidden shrink-0 shadow-lg border-2 border-white/30">
                     <Image
                       src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=200&q=80"
                       alt="النمو المستدام"
@@ -222,9 +222,9 @@ export function SuccessRoadmap() {
                     />
                   </div>
                   <div className="min-w-0">
-                    <span className="text-amber-300 font-bold text-sm md:text-lg mb-1 md:mb-2 block">المرحلة الخامسة</span>
-                    <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-3">النمو المستدام</h3>
-                    <p className="text-white/80 text-sm md:text-lg leading-relaxed break-words">
+                    <span className="text-amber-300 font-bold text-sm xl:text-xl 2xl:text-2xl mb-1 md:mb-2 block">المرحلة الخامسة</span>
+                    <h3 className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-bold mb-2 md:mb-3">النمو المستدام</h3>
+                    <p className="text-white/80 text-sm md:text-lg xl:text-xl 2xl:text-2xl leading-relaxed break-words">
                       دعم المشاريع في مواصلة التوسع والتطوير المستقبلي.
                     </p>
                   </div>

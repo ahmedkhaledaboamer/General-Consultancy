@@ -9,7 +9,7 @@ import {
 import Image from 'next/image';
 export function ProcessSection() {
   return (
-    <section id="process" className="py-22 relative overflow-hidden text-white">
+    <section id="process" className="  relative overflow-hidden text-white">
       {/* Background Image and Vibrant Gradient */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -23,7 +23,7 @@ export function ProcessSection() {
         <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/95 via-purple-800/90 to-fuchsia-900/95 mix-blend-multiply" />
       </div>
 
-      <div className=" mx-auto px-[5%] relative z-10">
+      <div className=" mx-auto p-[5%] relative z-10">
         <div className="text-center max-w-4xl mx-auto mb-24">
           <motion.h2
             initial={{
@@ -37,7 +37,7 @@ export function ProcessSection() {
             viewport={{
               once: true
             }}
-            className="text-4xl md:text-5xl font-extrabold mb-8 text-shadow-lg">
+            className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold mb-8 text-shadow-lg">
             
             كيف يعمل الجهاز الإداري؟
           </motion.h2>
@@ -56,7 +56,7 @@ export function ProcessSection() {
             transition={{
               delay: 0.1
             }}
-            className="text-xl text-white/90 leading-relaxed font-medium text-shadow-md">
+            className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-white/90 leading-relaxed font-medium text-shadow-md">
             
             يعتمد الجهاز الإداري في الشركة على منظومة عمل متكاملة تضمن التنسيق
             بين مختلف الإدارات لتحقيق أفضل النتائج. تمر عملية العمل عبر مجموعة
@@ -89,7 +89,7 @@ export function ProcessSection() {
               }}
               className="flex flex-col items-center text-center group">
               
-              <div className="w-32 h-32 rounded-full border-4 border-purple-400 p-1 mb-8 shadow-[0_0_30px_rgba(168,85,247,0.5)] group-hover:scale-110 transition-transform duration-500 relative bg-slate-900">
+              <div className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 2xl:w-64 2xl:h-64 rounded-full border-4 border-purple-400 p-1 mb-8 shadow-[0_0_30px_rgba(168,85,247,0.5)] group-hover:scale-110 transition-transform duration-500 relative bg-slate-900">
                 <Image
                   src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=200&q=80"
                   alt="التخطيط"
@@ -101,15 +101,15 @@ export function ProcessSection() {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <ClipboardListIcon className="w-10 h-10 text-white drop-shadow-lg" />
                 </div>
-                <span className="absolute -top-2 -end-2 w-10 h-10 rounded-full bg-purple-500 text-white flex items-center justify-center font-bold text-lg shadow-lg border-2 border-white">
+                <span className="absolute -top-2 -end-2 w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 xl:w-16 xl:h-16 2xl:w-18 2xl:h-18 rounded-full bg-purple-500 text-white flex items-center justify-center font-bold text-lg shadow-lg border-2 border-white">
                   1
                 </span>
               </div>
               <div className="bg-white/10 backdrop-blur-lg border border-white/20 p-6 rounded-3xl shadow-xl w-full">
-                <h3 className="text-2xl font-bold mb-3 text-purple-300">
+                <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-3 text-purple-300">
                   التخطيط الاستراتيجي
                 </h3>
-                <p className="text-white/80 text-lg leading-relaxed">
+                <p className="text-white/80 text-lg md:text-xl xl:text-2xl 2xl:text-3xl leading-relaxed">
                   وضع الخطط والرؤى التي توجه عمل الشركة على المدى القصير
                   والطويل.
                 </p>
@@ -136,7 +136,7 @@ export function ProcessSection() {
               }}
               className="flex flex-col items-center text-center group md:mt-16">
               
-              <div className="w-32 h-32 rounded-full border-4 border-blue-400 p-1 mb-8 shadow-[0_0_30px_rgba(59,130,246,0.5)] group-hover:scale-110 transition-transform duration-500 relative bg-slate-900">
+              <div className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 2xl:w-64 2xl:h-64 rounded-full border-4 border-blue-400 p-1 mb-8 shadow-[0_0_30px_rgba(59,130,246,0.5)] group-hover:scale-110 transition-transform duration-500 relative bg-slate-900">
                 <Image
                   src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=200&q=80"
                   alt="التنسيق"
@@ -148,15 +148,15 @@ export function ProcessSection() {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <LinkIcon className="w-10 h-10 text-white drop-shadow-lg" />
                 </div>
-                <span className="absolute -top-2 -end-2 w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center font-bold text-lg shadow-lg border-2 border-white">
+                <span className="absolute -top-2 -end-2 w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 xl:w-16 xl:h-16 2xl:w-18 2xl:h-18 rounded-full bg-blue-500 text-white flex items-center justify-center font-bold text-lg shadow-lg border-2 border-white">
                   2
                 </span>
               </div>
               <div className="bg-white/10 backdrop-blur-lg border border-white/20 p-6 rounded-3xl shadow-xl w-full">
-                <h3 className="text-2xl font-bold mb-3 text-blue-300">
+                <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-3 text-blue-300">
                   التنسيق المؤسسي
                 </h3>
-                <p className="text-white/80 text-lg leading-relaxed">
+                <p className="text-white/80 text-lg md:text-xl xl:text-2xl 2xl:text-3xl leading-relaxed">
                   التعاون بين الإدارات المختلفة لضمان تنفيذ المشاريع والخدمات
                   بكفاءة.
                 </p>
@@ -183,7 +183,7 @@ export function ProcessSection() {
               }}
               className="flex flex-col items-center text-center group">
               
-              <div className="w-32 h-32 rounded-full border-4 border-teal-400 p-1 mb-8 shadow-[0_0_30px_rgba(20,184,166,0.5)] group-hover:scale-110 transition-transform duration-500 relative bg-slate-900">
+              <div className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 2xl:w-64 2xl:h-64 rounded-full border-4 border-teal-400 p-1 mb-8 shadow-[0_0_30px_rgba(20,184,166,0.5)] group-hover:scale-110 transition-transform duration-500 relative bg-slate-900">
                 <Image
                   src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&q=80"
                   alt="الإشراف"
@@ -195,15 +195,15 @@ export function ProcessSection() {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <EyeIcon className="w-10 h-10 text-white drop-shadow-lg" />
                 </div>
-                <span className="absolute -top-2 -end-2 w-10 h-10 rounded-full bg-teal-500 text-white flex items-center justify-center font-bold text-lg shadow-lg border-2 border-white">
+                <span className="absolute -top-2 -end-2 w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 xl:w-16 xl:h-16 2xl:w-18 2xl:h-18 rounded-full bg-teal-500 text-white flex items-center justify-center font-bold text-lg shadow-lg border-2 border-white">
                   3
                 </span>
               </div>
               <div className="bg-white/10 backdrop-blur-lg border border-white/20 p-6 rounded-3xl shadow-xl w-full">
-                <h3 className="text-2xl font-bold mb-3 text-teal-300">
+                <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-3 text-teal-300">
                   الإشراف والمتابعة
                 </h3>
-                <p className="text-white/80 text-lg leading-relaxed">
+                <p className="text-white/80 text-lg md:text-xl xl:text-2xl 2xl:text-3xl leading-relaxed">
                   متابعة تنفيذ الخطط والبرامج لضمان تحقيق الأهداف المحددة.
                 </p>
               </div>
@@ -229,7 +229,7 @@ export function ProcessSection() {
               }}
               className="flex flex-col items-center text-center group md:mt-16">
               
-              <div className="w-32 h-32 rounded-full border-4 border-pink-400 p-1 mb-8 shadow-[0_0_30px_rgba(244,114,182,0.5)] group-hover:scale-110 transition-transform duration-500 relative bg-slate-900">
+              <div className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 2xl:w-64 2xl:h-64 rounded-full border-4 border-pink-400 p-1 mb-8 shadow-[0_0_30px_rgba(244,114,182,0.5)] group-hover:scale-110 transition-transform duration-500 relative bg-slate-900">
                 <Image
                   src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=200&q=80"
                   alt="التقييم"
@@ -241,15 +241,15 @@ export function ProcessSection() {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <TrendingUpIcon className="w-10 h-10 text-white drop-shadow-lg" />
                 </div>
-                <span className="absolute -top-2 -end-2 w-10 h-10 rounded-full bg-pink-500 text-white flex items-center justify-center font-bold text-lg shadow-lg border-2 border-white">
+                <span className="absolute -top-2 -end-2 w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 xl:w-16 xl:h-16 2xl:w-18 2xl:h-18 rounded-full bg-pink-500 text-white flex items-center justify-center font-bold text-lg shadow-lg border-2 border-white">
                   4
                 </span>
               </div>
               <div className="bg-white/10 backdrop-blur-lg border border-white/20 p-6 rounded-3xl shadow-xl w-full">
-                <h3 className="text-2xl font-bold mb-3 text-pink-300">
+                <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-3 text-pink-300">
                   التقييم والتطوير
                 </h3>
-                <p className="text-white/80 text-lg leading-relaxed">
+                <p className="text-white/80 text-lg md:text-xl xl:text-2xl 2xl:text-3xl leading-relaxed">
                   تقييم الأداء بشكل مستمر والعمل على تحسين العمليات والخدمات.
                 </p>
               </div>

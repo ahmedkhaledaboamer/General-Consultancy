@@ -6,7 +6,7 @@ export function LeadershipPhilosophy() {
   return (
     <section
       id="philosophy"
-      className="py-22 bg-gradient-to-b from-amber-50 via-rose-50 to-purple-50 relative overflow-hidden">
+      className=" bg-gradient-to-b from-amber-50 via-rose-50 to-purple-50 relative overflow-hidden">
       
       {/* Decorative background elements */}
       <div className="absolute top-0 start-0 w-full h-full overflow-hidden pointer-events-none">
@@ -14,7 +14,7 @@ export function LeadershipPhilosophy() {
         <div className="absolute top-1/2 -end-40 w-[500px] h-[500px] bg-purple-200/40 rounded-full blur-3xl"></div>
       </div>
 
-      <div className=" mx-auto px-[5%] relative z-10">
+      <div className=" mx-auto p-[5%] relative z-10">
         <div className="text-center max-w-5xl mx-auto mb-20">
           <motion.h2
             initial={{
@@ -29,7 +29,7 @@ export function LeadershipPhilosophy() {
               once: true,
               margin: '-100px'
             }}
-            className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8">
+            className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold text-slate-900 mb-8">
             
             فلسفة القيادة
           </motion.h2>
@@ -49,7 +49,7 @@ export function LeadershipPhilosophy() {
             transition={{
               delay: 0.1
             }}
-            className="text-xl text-slate-700 leading-relaxed font-medium">
+            className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-slate-700 leading-relaxed font-medium">
             
             نؤمن أن القيادة الحقيقية لا تقتصر على اتخاذ القرار، بل تشمل القدرة
             على بناء فرق عمل قوية، وتوجيه الموارد بفعالية، وتحقيق التوازن بين
@@ -79,7 +79,7 @@ export function LeadershipPhilosophy() {
             }}
             className="bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-[0_30px_60px_rgba(147,51,234,0.2)] hover:-translate-y-3 transition-all duration-500 group flex flex-col h-full">
             
-            <div className="relative h-64 overflow-hidden">
+            <div className="relative h-64 md:h-72 lg:h-80 2xl:h-96 overflow-hidden">
               <Image
                 src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&q=80"
                 alt="الرؤية الواضحة"
@@ -94,10 +94,10 @@ export function LeadershipPhilosophy() {
               </div>
             </div>
             <div className="p-8 flex-1 flex flex-col bg-gradient-to-b from-white to-purple-50/50">
-              <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-purple-700 transition-colors">
+              <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-slate-900 mb-4 group-hover:text-purple-700 transition-colors">
                 الرؤية الواضحة
               </h3>
-              <p className="text-lg text-slate-600 leading-relaxed flex-1">
+              <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-slate-600 leading-relaxed flex-1">
                 قيادة العمل برؤية استراتيجية تواكب التحولات الاقتصادية وتستشرف
                 فرص المستقبل.
               </p>
@@ -124,7 +124,7 @@ export function LeadershipPhilosophy() {
             }}
             className="bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-[0_30px_60px_rgba(14,165,233,0.2)] hover:-translate-y-3 transition-all duration-500 group flex flex-col h-full">
             
-            <div className="relative h-64 overflow-hidden">
+            <div className="relative h-64 md:h-72 lg:h-80 2xl:h-96 overflow-hidden">
               <Image
                 src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80"
                 alt="الإدارة الاحترافية"
@@ -139,10 +139,10 @@ export function LeadershipPhilosophy() {
               </div>
             </div>
             <div className="p-8 flex-1 flex flex-col bg-gradient-to-b from-white to-blue-50/50">
-              <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-blue-700 transition-colors">
+              <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-slate-900 mb-4 group-hover:text-blue-700 transition-colors">
                 الإدارة الاحترافية
               </h3>
-              <p className="text-lg text-slate-600 leading-relaxed flex-1">
+              <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-slate-600 leading-relaxed flex-1">
                 تطبيق أفضل الممارسات الإدارية لضمان كفاءة الأداء وتحقيق الأهداف
                 المؤسسية.
               </p>
@@ -169,7 +169,7 @@ export function LeadershipPhilosophy() {
             }}
             className="bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-[0_30px_60px_rgba(245,158,11,0.2)] hover:-translate-y-3 transition-all duration-500 group flex flex-col h-full">
             
-            <div className="relative h-64 overflow-hidden">
+            <div className="relative h-64 md:h-72 lg:h-80 2xl:h-96 overflow-hidden">
               <Image
                 src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80"
                 alt="العمل التكاملي"
@@ -184,10 +184,10 @@ export function LeadershipPhilosophy() {
               </div>
             </div>
             <div className="p-8 flex-1 flex flex-col bg-gradient-to-b from-white to-orange-50/50">
-              <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-orange-600 transition-colors">
+              <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-slate-900 mb-4 group-hover:text-orange-600 transition-colors">
                 العمل التكاملي
               </h3>
-              <p className="text-lg text-slate-600 leading-relaxed flex-1">
+              <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-slate-600 leading-relaxed flex-1">
                 تعزيز التعاون بين مختلف الإدارات لضمان تقديم خدمات متكاملة تحقق
                 أفضل النتائج.
               </p>

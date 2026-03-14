@@ -11,7 +11,7 @@ export function FinalCTA() {
       className="relative py-40 overflow-hidden bg-mesh-gradient animate-gradient-shift">
       
       {/* Dark Overlay for contrast */}
-      <div className="absolute inset-0 bg-slate-900/40 z-0" />
+      <div className="absolute inset-0 bg-[#372d6a] z-0" />
 
       {/* Floating Image Collage */}
       <motion.div

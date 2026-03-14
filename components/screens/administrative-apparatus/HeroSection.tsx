@@ -6,7 +6,7 @@ export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-mesh-gradient animate-gradient-shift">
       {/* Dark Overlay for better text readability */}
-      <div className="absolute inset-0 bg-slate-900/40 z-0" />
+      <div className="absolute inset-0 bg-black/60 z-0" />
 
       {/* Floating Geometric Shapes */}
       <motion.div
@@ -46,7 +46,7 @@ export function HeroSection() {
         className="absolute top-1/3 end-10 w-40 h-40 bg-amber-500/40 rounded-full blur-xl z-0" />
       
 
-        <div className="relative z-10 mx-auto px-[5%] w-full py-22">
+        <div className="relative z-10 mx-auto p-[5%] w-full  ">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           {/* Text Content (Right side in RTL) */}
           <div className="w-full lg:w-1/2 text-center lg:text-start">
@@ -64,7 +64,7 @@ export function HeroSection() {
                 delay: 0.2
               }}>
               
-              <span className="inline-block py-2 px-6 rounded-full bg-white/20 border border-white/30 text-white font-bold mb-8 backdrop-blur-md shadow-lg">
+              <span className="inline-block py-2 px-6 rounded-full bg-white/20 border border-white/30 text-white font-bold mb-8 backdrop-blur-md shadow-lg text-sm md:text-base xl:text-lg 2xl:text-xl">
                 الجهاز الإداري
               </span>
             </motion.div>
@@ -82,10 +82,10 @@ export function HeroSection() {
                 duration: 0.8,
                 delay: 0.4
               }}
-              className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-8 leading-tight text-shadow-lg">
+              className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-extrabold text-white mb-8 leading-tight text-shadow-lg">
               
               قيادة مؤسسية تصنع القرار… <br className="hidden md:block" />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-rose-300 to-purple-300 drop-shadow-md">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-rose-300 to-purple-300 drop-shadow-md text-sm md:text-base xl:text-xl 2xl:text-3xl">
                 وتوجّه مسارات النجاح.
               </span>
             </motion.h1>
@@ -103,7 +103,7 @@ export function HeroSection() {
                 duration: 0.8,
                 delay: 0.6
               }}
-              className="text-xl md:text-2xl text-white/95 mb-12 leading-relaxed text-shadow-md font-medium mx-auto lg:mx-0">
+              className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-white/95 mb-12 leading-relaxed text-shadow-md font-medium mx-auto lg:mx-0">
               
               يعتمد نجاح أي مؤسسة على قوة منظومتها القيادية وقدرتها على تحويل
               الرؤية إلى نتائج ملموسة. وفي شركة الشيخ عبد العزيز بن عبد الله
@@ -131,7 +131,7 @@ export function HeroSection() {
               
               <Link
                 href="#executives"
-                className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold rounded-full text-white bg-gradient-to-r from-rose-500 via-purple-500 to-blue-500 hover:from-rose-400 hover:via-purple-400 hover:to-blue-400 shadow-2xl hover:shadow-[0_20px_50px_rgba(225,29,72,0.5)] hover:-translate-y-2 transition-all duration-300 animate-gradient-shift">
+                className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold rounded-full text-white bg-gradient-to-r from-rose-500 via-purple-500 to-blue-500 hover:from-rose-400 hover:via-purple-400 hover:to-blue-400 shadow-2xl hover:shadow-[0_20px_50px_rgba(225,29,72,0.5)] hover:-translate-y-2 transition-all duration-300 animate-gradient-shift text-sm md:text-base xl:text-lg 2xl:text-xl">
                 
                 تعرف على فريقنا
               </Link>

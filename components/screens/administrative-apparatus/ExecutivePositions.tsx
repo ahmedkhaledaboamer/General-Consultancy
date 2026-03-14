@@ -5,7 +5,7 @@ export function ExecutivePositions() {
   return (
     <section
       id="executives"
-      className="pt-22 pb-33 bg-slate-100 relative overflow-hidden">
+      className="  bg-slate-100 relative overflow-hidden">
       
       {/* Hero-style banner image for section */}
       <div className="absolute top-0 start-0 w-full h-[500px] z-0">
@@ -20,7 +20,7 @@ export function ExecutivePositions() {
         <div className="absolute inset-0 bg-gradient-to-b from-slate-900/80 via-slate-900/60 to-slate-100"></div>
       </div>
 
-      <div className=" mx-auto px-[5%] relative z-10">
+      <div className=" mx-auto p-[5%] relative z-10">
         <div className="text-center max-w-4xl mx-auto mb-32 pt-10">
           <motion.h2
             initial={{
@@ -34,7 +34,7 @@ export function ExecutivePositions() {
             viewport={{
               once: true
             }}
-            className="text-4xl md:text-5xl font-extrabold text-white mb-8 text-shadow-lg">
+            className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold text-white mb-8 text-shadow-lg">
             
             المناصب التنفيذية
           </motion.h2>
@@ -53,7 +53,7 @@ export function ExecutivePositions() {
             transition={{
               delay: 0.1
             }}
-            className="text-xl text-white/90 leading-relaxed font-medium text-shadow-md">
+            className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-white/90 leading-relaxed font-medium text-shadow-md">
             
             يتكون الجهاز الإداري في الشركة من مجموعة من القيادات التنفيذية التي
             تشرف على مختلف مجالات العمل الاستشاري والاستثماري.
@@ -91,8 +91,8 @@ export function ExecutivePositions() {
               />
               
             </div>
-            <h3 className="text-2xl font-bold mb-4">رئيس مجلس الإدارة</h3>
-            <p className="text-white/90 leading-relaxed text-lg">
+            <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-4">رئيس مجلس الإدارة</h3>
+            <p className="text-white/90 leading-relaxed text-lg md:text-xl xl:text-2xl 2xl:text-3xl">
               يتولى الإشراف العام على التوجه الاستراتيجي للشركة، ووضع السياسات
               العليا التي تدعم تحقيق رؤيتها وتوسّعها في الأسواق.
             </p>
@@ -128,8 +128,8 @@ export function ExecutivePositions() {
               />
               
             </div>
-            <h3 className="text-2xl font-bold mb-4">الرئيس التنفيذي</h3>
-            <p className="text-white/90 leading-relaxed text-lg">
+            <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-4">الرئيس التنفيذي</h3>
+            <p className="text-white/90 leading-relaxed text-lg md:text-xl xl:text-2xl 2xl:text-3xl">
               يقود العمليات التشغيلية للشركة ويعمل على تنفيذ الاستراتيجيات
               العامة وتحقيق الأهداف المؤسسية.
             </p>
@@ -165,8 +165,8 @@ export function ExecutivePositions() {
               />
               
             </div>
-            <h3 className="text-2xl font-bold mb-4">مدير إدارة الاستثمارات</h3>
-            <p className="text-white/90 leading-relaxed text-lg">
+            <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-4">مدير إدارة الاستثمارات</h3>
+            <p className="text-white/90 leading-relaxed text-lg md:text-xl xl:text-2xl 2xl:text-3xl">
               يشرف على تطوير وإدارة الاستثمارات في مختلف القطاعات الاقتصادية،
               ويعمل على تحليل الفرص الاستثمارية وتطوير المحافظ الاستثمارية.
             </p>
@@ -202,10 +202,10 @@ export function ExecutivePositions() {
               />
               
             </div>
-            <h3 className="text-2xl font-bold mb-4">
+            <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-4">
               مدير الاستشارات الاستراتيجية
             </h3>
-            <p className="text-white/90 leading-relaxed text-lg">
+            <p className="text-white/90 leading-relaxed text-lg md:text-xl xl:text-2xl 2xl:text-3xl">
               يقود تقديم الخدمات الاستشارية المتعلقة بالتخطيط الاستراتيجي وتطوير
               نماذج الأعمال وتحليل الأسواق.
             </p>
@@ -241,8 +241,8 @@ export function ExecutivePositions() {
               />
               
             </div>
-            <h3 className="text-2xl font-bold mb-4">مدير تطوير المشاريع</h3>
-            <p className="text-white/90 leading-relaxed text-lg">
+            <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-4">مدير تطوير المشاريع</h3>
+            <p className="text-white/90 leading-relaxed text-lg md:text-xl xl:text-2xl 2xl:text-3xl">
               مسؤول عن دعم تطوير المشاريع الاستثمارية والإشراف على مراحل التخطيط
               والتنفيذ.
             </p>
@@ -278,10 +278,10 @@ export function ExecutivePositions() {
               />
               
             </div>
-            <h3 className="text-2xl font-bold mb-4">
+            <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-4">
               مدير الاستشارات المالية والمصرفية
             </h3>
-            <p className="text-white/90 leading-relaxed text-lg">
+            <p className="text-white/90 leading-relaxed text-lg md:text-xl xl:text-2xl 2xl:text-3xl">
               يشرف على تقديم الاستشارات المتعلقة بالتمويل، والاستراتيجيات
               المصرفية، والهياكل المالية للمشاريع.
             </p>
@@ -317,10 +317,10 @@ export function ExecutivePositions() {
               />
               
             </div>
-            <h3 className="text-2xl font-bold mb-4">
+            <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-4">
               مدير الاستشارات القطاعية
             </h3>
-            <p className="text-white/90 leading-relaxed text-lg">
+            <p className="text-white/90 leading-relaxed text-lg md:text-xl xl:text-2xl 2xl:text-3xl">
               يقود الخدمات الاستشارية المتخصصة في قطاعات متعددة مثل الصحة،
               والتعليم، والطاقة، والسياحة، والصناعة.
             </p>
@@ -356,10 +356,10 @@ export function ExecutivePositions() {
               />
               
             </div>
-            <h3 className="text-2xl font-bold mb-4">
+            <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-4">
               مدير العلاقات العامة والإعلام
             </h3>
-            <p className="text-white/90 leading-relaxed text-lg">
+            <p className="text-white/90 leading-relaxed text-lg md:text-xl xl:text-2xl 2xl:text-3xl">
               يشرف على إدارة العلاقات المؤسسية والإعلامية وتعزيز الحضور الإعلامي
               للشركة وشركائها.
             </p>
@@ -395,10 +395,10 @@ export function ExecutivePositions() {
               />
               
             </div>
-            <h3 className="text-2xl font-bold mb-4">
+            <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-4">
               مدير التسويق والإعلام الرقمي
             </h3>
-            <p className="text-white/90 leading-relaxed text-lg">
+            <p className="text-white/90 leading-relaxed text-lg md:text-xl xl:text-2xl 2xl:text-3xl">
               يقود استراتيجيات التسويق وإدارة الإعلام الرقمي والتواصل عبر
               المنصات المختلفة.
             </p>

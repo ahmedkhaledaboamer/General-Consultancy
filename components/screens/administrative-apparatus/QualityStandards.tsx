@@ -7,7 +7,7 @@ export function QualityStandards() {
   const locale = useLocale();
   const isRTL = locale === 'ar';
   return (
-    <section className="py-32 bg-gradient-to-br from-cyan-50 to-teal-50 relative overflow-hidden">
+    <section className="  bg-gradient-to-br from-cyan-50 to-teal-50 relative overflow-hidden">
       {/* Floating Decorative Dots */}
       <motion.div
         animate={{
@@ -40,7 +40,7 @@ export function QualityStandards() {
         className="absolute top-1/2 start-1/2 w-16 h-16 rounded-full bg-amber-400/30 blur-md" />
       
 
-      <div className="mx-auto px-[5%] relative z-10">
+      <div className="mx-auto p-[5%] relative z-10">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           {/* Large Image Side */}
           <div className="w-full lg:w-5/12">
@@ -108,7 +108,7 @@ export function QualityStandards() {
               transition={{
                 delay: 0.1
               }}
-              className="text-xl text-slate-700 leading-relaxed font-medium mb-12">
+              className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-slate-700 leading-relaxed font-medium mb-12">
               
               نحرص على تطبيق أعلى معايير الجودة في جميع خدماتنا وعملياتنا لضمان
               تحقيق أفضل النتائج لشركائنا. تعتمد منظومة الجودة لدينا على أسس
@@ -135,13 +135,13 @@ export function QualityStandards() {
                 }}
                 className="bg-white rounded-3xl p-8 shadow-xl border-s-8 border-purple-500 hover:-translate-y-2 transition-transform duration-300">
                 
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-400 to-indigo-600 flex items-center justify-center mb-6 shadow-lg">
+                <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-28 xl:h-28 2xl:w-32 2xl:h-32 rounded-2xl bg-gradient-to-br from-purple-400 to-indigo-600 flex items-center justify-center mb-6 shadow-lg">
                   <SearchIcon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-slate-900 mb-3">
+                <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-slate-900 mb-3">
                   التحليل الدقيق
                 </h3>
-                <p className="text-slate-600 text-lg leading-relaxed">
+                <p className="text-slate-600 text-lg md:text-xl xl:text-2xl 2xl:text-3xl leading-relaxed">
                   دراسة المشاريع والفرص الاستثمارية بشكل علمي ومنهجي.
                 </p>
               </motion.div>
@@ -165,13 +165,13 @@ export function QualityStandards() {
                 }}
                 className="bg-white rounded-3xl p-8 shadow-xl border-s-8 border-blue-500 hover:-translate-y-2 transition-transform duration-300 sm:mt-12">
                 
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-400 to-cyan-600 flex items-center justify-center mb-6 shadow-lg">
+                <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-28 xl:h-28 2xl:w-32 2xl:h-32 rounded-2xl bg-gradient-to-br from-blue-400 to-cyan-600 flex items-center justify-center mb-6 shadow-lg">
                   <MapIcon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-slate-900 mb-3">
+                <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-slate-900 mb-3">
                   التخطيط الفعّال
                 </h3>
-                <p className="text-slate-600 text-lg leading-relaxed">
+                <p className="text-slate-600 text-lg md:text-xl xl:text-2xl 2xl:text-3xl leading-relaxed">
                   وضع خطط عمل واضحة وقابلة للتنفيذ.
                 </p>
               </motion.div>
@@ -195,13 +195,13 @@ export function QualityStandards() {
                 }}
                 className="bg-white rounded-3xl p-8 shadow-xl border-s-8 border-teal-500 hover:-translate-y-2 transition-transform duration-300">
                 
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-teal-400 to-emerald-600 flex items-center justify-center mb-6 shadow-lg">
+                <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-28 xl:h-28 2xl:w-32 2xl:h-32 rounded-2xl bg-gradient-to-br from-teal-400 to-emerald-600 flex items-center justify-center mb-6 shadow-lg">
                   <AwardIcon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-slate-900 mb-3">
+                <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-slate-900 mb-3">
                   الالتزام بالمعايير المهنية
                 </h3>
-                <p className="text-slate-600 text-lg leading-relaxed">
+                <p className="text-slate-600 text-lg md:text-xl xl:text-2xl 2xl:text-3xl leading-relaxed">
                   تطبيق أفضل الممارسات العالمية في مجالات الاستشارات وإدارة
                   المشاريع.
                 </p>
@@ -226,13 +226,13 @@ export function QualityStandards() {
                 }}
                 className="bg-white rounded-3xl p-8 shadow-xl border-s-8 border-pink-500 hover:-translate-y-2 transition-transform duration-300 sm:mt-12">
                 
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-pink-400 to-rose-600 flex items-center justify-center mb-6 shadow-lg">
+                <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-28 xl:h-28 2xl:w-32 2xl:h-32 rounded-2xl bg-gradient-to-br from-pink-400 to-rose-600 flex items-center justify-center mb-6 shadow-lg">
                   <RefreshCwIcon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-slate-900 mb-3">
+                <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-slate-900 mb-3">
                   التحسين المستمر
                 </h3>
-                <p className="text-slate-600 text-lg leading-relaxed">
+                <p className="text-slate-600 text-lg md:text-xl xl:text-2xl 2xl:text-3xl leading-relaxed">
                   مراجعة الأداء بشكل دوري والعمل على تطوير العمليات والخدمات.
                 </p>
               </motion.div>
