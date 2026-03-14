@@ -4,7 +4,11 @@ import {
   ShieldCheckIcon,
   LayersIcon } from
 'lucide-react';
+import Image from 'next/image';
+import { useLocale } from 'next-intl';
 export function EntityDictionary() {
+  const locale = useLocale();
+  const isRTL = locale === 'ar';
   const dictionaryItems = [
   {
     title: 'الوحدة التنفيذية',
@@ -46,14 +50,17 @@ export function EntityDictionary() {
   return (
     <section className=" bg-gradient-to-b from-gray-50 to-white px-[5%] py-[2%]">
       <div className=" mx-auto">
-        <div className="relative rounded-3xl overflow-hidden mb-16 h-64 md:h-80">
-          <img
+        <div className="flex flex-col items-center justify-center relative rounded-3xl overflow-hidden mb-16 h-64 md:h-80">
+          <Image
             src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1200&q=80"
             alt="قاموس الكيان"
-            className="w-full h-full object-cover" />
+            className="w-full h-full object-cover"
+            width={1200}
+            height={1200}
+          />
           
           <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/40 to-transparent"></div>
-          <div className="absolute bottom-0 right-0 left-0 p-8 md:p-12 text-white">
+          <div className="absolute text-center p-8 md:p-12 text-white">
             <h2 className="text-3xl md:text-5xl font-bold mb-3">
               قاموس الكيان
             </h2>
@@ -70,16 +77,19 @@ export function EntityDictionary() {
             className={`bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border-t-4 ${item.borderColor} relative overflow-hidden group`}>
             
               <div className="h-40 overflow-hidden relative">
-                <img
+                <Image
                 src={item.image}
                 alt={item.title}
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                width={400}
+                height={400}
+              />
               
                 <div
                 className={`absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent`}>
               </div>
                 <div
-                className={`absolute top-4 right-4 w-12 h-12 rounded-xl ${item.bgColor} flex items-center justify-center shadow-md backdrop-blur-sm`}>
+                className={`absolute top-4 ${!isRTL ? 'left-4' : 'right-4'} w-12 h-12 rounded-xl ${item.bgColor} flex items-center justify-center shadow-md backdrop-blur-sm`}>
                 
                   {item.icon}
                 </div>

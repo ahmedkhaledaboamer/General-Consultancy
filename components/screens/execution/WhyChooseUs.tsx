@@ -6,7 +6,11 @@ import {
   PuzzleIcon,
   EyeIcon } from
 'lucide-react';
+import Image from 'next/image';
+import { useLocale } from 'next-intl';
 export function WhyChooseUs() {
+  const locale = useLocale();
+  const isRTL = locale === 'ar';
   const reasons = [
   {
     title: 'خبرة طويلة ومتنوعة',
@@ -40,13 +44,16 @@ export function WhyChooseUs() {
   }];
 
   return (
-    <section className="py-[2%] bg-gradient-to-br from-gray-900 to-blue-900 text-white relative overflow-hidden">
+    <section className=" bg-gradient-to-br from-gray-900 to-blue-900 text-white relative overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=80"
           alt="فريق العمل"
-          className="w-full h-full object-cover opacity-15" />
+          className="w-full h-full object-cover opacity-15"
+          width={1920}
+          height={1920}
+        />
         
       </div>
       {/* Decorative background pattern */}
@@ -59,15 +66,18 @@ export function WhyChooseUs() {
         }}>
       </div>
 
-      <div className=" mx-auto px-[5%] relative z-10">
+      <div className=" mx-auto p-[5%] relative z-10">
         <div className="flex flex-col lg:flex-row gap-12 items-center">
           {/* Image Side */}
           <div className="w-full lg:w-2/5 relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-2 border-white/10">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80"
                 alt="فريق العمل المحترف"
-                className="w-full h-[500px] object-cover" />
+                className="w-full h-[500px] object-cover"
+                width={800}
+                height={800}
+              />
               
               <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 to-transparent"></div>
               <div className="absolute bottom-6 right-6 left-6 text-white">
@@ -89,7 +99,7 @@ export function WhyChooseUs() {
 
           {/* Content Side */}
           <div className="w-full lg:w-3/5">
-            <div className="text-right mb-12">
+            <div className={`text-center ${!isRTL ? 'md:text-left' : 'md:text-right'} mb-12`}>
               <h2 className="text-3xl md:text-5xl font-bold mb-4">
                 لماذا تختارنا؟
               </h2>

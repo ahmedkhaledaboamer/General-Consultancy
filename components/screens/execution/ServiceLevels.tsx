@@ -6,7 +6,11 @@ import {
   DiamondIcon,
   CheckIcon } from
 'lucide-react';
+import { useLocale } from 'next-intl';
+import Image from 'next/image';
 export function ServiceLevels() {
+  const locale = useLocale();
+  const isRTL = locale === 'ar';
   const levels = [
   {
     title: 'الأساسي',
@@ -74,10 +78,13 @@ export function ServiceLevels() {
       <div className=" mx-auto">
         {/* Image Banner Header */}
         <div className="relative rounded-3xl overflow-hidden mb-16 h-56 md:h-72">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=1200&q=80"
             alt="مستويات الخدمة"
-            className="w-full h-full object-cover" />
+            className="w-full h-full object-cover"
+            width={1200}
+            height={1200}
+          />
           
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-indigo-900/80 to-purple-900/90"></div>
           <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4">
@@ -120,19 +127,13 @@ export function ServiceLevels() {
                   {level.features.map((feature, fIndex) =>
                 <li key={fIndex} className="flex items-start">
                       <CheckIcon
-                    className={`w-5 h-5 ml-3 flex-shrink-0 text-${level.color}-500`} />
+                    className={`w-5 h-5 ${!isRTL ? 'mr-3' : 'ml-3'} flex-shrink-0 text-${level.color}-500`} />
                   
                       <span className="text-gray-700 text-sm">{feature}</span>
                     </li>
                 )}
                 </ul>
               </div>
-
-              <button
-              className={`mt-8 w-full py-3 rounded-xl font-bold transition-colors duration-300 ${level.popular ? 'bg-amber-500 hover:bg-amber-600 text-white shadow-lg shadow-amber-500/30' : 'bg-gray-100 hover:bg-gray-200 text-gray-800'}`}>
-              
-                اختيار الباقة
-              </button>
             </div>
           )}
         </div>

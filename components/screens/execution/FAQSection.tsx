@@ -1,6 +1,7 @@
 "use client";
 import { useState } from 'react';
 import { ChevronDownIcon, ChevronUpIcon } from 'lucide-react';
+import Image from 'next/image';
 export function FAQSection() {
   const [activeIndex, setActiveIndex] = useState<number | null>(0);
   const faqs = [
@@ -50,10 +51,13 @@ export function FAQSection() {
           <div className="w-full lg:w-2/5 relative">
             <div className="sticky top-28">
               <div className="rounded-3xl overflow-hidden shadow-2xl relative">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=800&q=80"
                   alt="خدمة العملاء"
-                  className="w-full h-[400px] lg:h-[500px] object-cover" />
+                  className="w-full h-[400px] lg:h-[500px] object-cover"
+                  width={800}
+                  height={800}
+                />
                 
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/70 via-transparent to-transparent"></div>
                 <div className="absolute bottom-6 right-6 left-6 text-white">
@@ -65,10 +69,13 @@ export function FAQSection() {
               </div>
               {/* Decorative image below */}
               <div className="mt-6 rounded-2xl overflow-hidden shadow-lg hidden lg:block">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=600&q=80"
                   alt="فريق الدعم"
-                  className="w-full h-48 object-cover" />
+                  className="w-full h-48 object-cover"
+                  width={600}
+                  height={600}
+                />
                 
               </div>
             </div>
@@ -82,7 +89,7 @@ export function FAQSection() {
               className={`bg-white rounded-2xl border transition-all duration-300 overflow-hidden ${activeIndex === index ? 'border-blue-500 shadow-md' : 'border-gray-200 hover:border-blue-300'}`}>
               
                 <button
-                className="w-full px-6 py-5 flex items-center justify-between text-right focus:outline-none"
+                className="cursor-pointer w-full px-6 py-5 flex items-center justify-between text-right focus:outline-none"
                 onClick={() => toggleAccordion(index)}>
                 
                   <span

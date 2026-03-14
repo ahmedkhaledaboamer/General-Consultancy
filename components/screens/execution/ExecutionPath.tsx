@@ -6,7 +6,11 @@ import {
   RefreshCwIcon,
   CheckCircleIcon } from
 'lucide-react';
+import Image from 'next/image';
+import { useLocale } from 'next-intl';
 export function ExecutionPath() {
+  const locale = useLocale();
+  const isRTL = locale === 'ar';
   const steps = [
   {
     title: 'التحليل والتقييم',
@@ -57,10 +61,13 @@ export function ExecutionPath() {
       className="py-24 bg-gradient-to-br from-blue-50 via-white to-indigo-50 relative overflow-hidden">
       {/* Background decorative image */}
       <div className="absolute inset-0 z-0 opacity-5">
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&q=80"
           alt=""
-          className="w-full h-full object-cover" />
+          className="w-full h-full object-cover"
+          width={1920}
+          height={1920}
+        />
         
       </div>
 
@@ -80,20 +87,23 @@ export function ExecutionPath() {
           </div>
           <div className="lg:w-1/2">
             <div className="rounded-2xl overflow-hidden shadow-xl">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80"
                 alt="المسار التنفيذي"
-                className="w-full h-64 object-cover" />
+                className="w-full h-64 object-cover"
+                width={800}
+                height={800}
+              />
               
             </div>
           </div>
         </div>
 
-        <div className="relative max-w-5xl mx-auto">
+        <div className="relative mx-auto">
           {/* Central Line for Desktop */}
           <div className="hidden md:block absolute top-0 bottom-0 right-1/2 w-1 bg-gradient-to-b from-blue-200 via-purple-200 to-emerald-200 translate-x-1/2 rounded-full"></div>
 
-          <div className="space-y-12 md:space-y-0">
+          <div className="space-y-12 md:space-y-0" dir="rtl">
             {steps.map((step, index) => {
               const isEven = index % 2 === 0;
               return (
