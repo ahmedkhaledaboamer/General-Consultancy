@@ -38,10 +38,10 @@ export function FAQSection() {
     <section id="faq" className="py-[2%] bg-gray-50 px-[5%]">
       <div className=" mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-gray-900 mb-4">
             الأسئلة الشائعة
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-gray-600">
             إجابات وافية لأهم استفساراتكم حول خدماتنا
           </p>
         </div>
@@ -54,30 +54,20 @@ export function FAQSection() {
                 <Image
                   src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=800&q=80"
                   alt="خدمة العملاء"
-                  className="w-full h-[400px] lg:h-[500px] object-cover"
+                  className="w-full h-[400px] md:h-[600px] lg:h-[700px] xl:h-[800px] 2xl:h-[900px] object-cover"
                   width={800}
                   height={800}
                 />
                 
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/70 via-transparent to-transparent"></div>
                 <div className="absolute bottom-6 right-6 left-6 text-white">
-                  <h3 className="text-2xl font-bold mb-2">هل لديك سؤال؟</h3>
-                  <p className="text-blue-100 text-sm">
+                  <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-2">هل لديك سؤال؟</h3>
+                  <p className="text-blue-100 text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
                     فريقنا جاهز للإجابة على جميع استفساراتكم على مدار الساعة
                   </p>
                 </div>
               </div>
-              {/* Decorative image below */}
-              <div className="mt-6 rounded-2xl overflow-hidden shadow-lg hidden lg:block">
-                <Image
-                  src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=600&q=80"
-                  alt="فريق الدعم"
-                  className="w-full h-48 object-cover"
-                  width={600}
-                  height={600}
-                />
-                
-              </div>
+              
             </div>
           </div>
 
@@ -87,13 +77,13 @@ export function FAQSection() {
             <div
               key={index}
               className={`bg-white rounded-2xl border transition-all duration-300 overflow-hidden ${activeIndex === index ? 'border-blue-500 shadow-md' : 'border-gray-200 hover:border-blue-300'}`}>
-              
+                
                 <button
-                className="cursor-pointer w-full px-6 py-5 flex items-center justify-between text-right focus:outline-none"
+                className="cursor-pointer w-full px-6 py-5 md:px-8 md:py-6 lg:px-10 lg:py-7 xl:px-12 xl:py-8 2xl:px-14 2xl:py-9 flex items-center justify-between text-right focus:outline-none"
                 onClick={() => toggleAccordion(index)}>
                 
                   <span
-                  className={`text-lg font-bold ${activeIndex === index ? 'text-blue-600' : 'text-gray-900'}`}>
+                  className={`text-lg md:text-xl xl:text-2xl 2xl:text-3xl font-bold ${activeIndex === index ? 'text-blue-600' : 'text-gray-900'}`}>
                   
                     {faq.question}
                   </span>
@@ -111,7 +101,7 @@ export function FAQSection() {
                 <div
                 className={`px-6 overflow-hidden transition-all duration-300 ease-in-out ${activeIndex === index ? 'max-h-96 pb-6 opacity-100' : 'max-h-0 opacity-0'}`}>
                 
-                  <p className="text-gray-600 leading-relaxed pt-2 border-t border-gray-100">
+                  <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-gray-600 leading-relaxed pt-2 border-t border-gray-100">
                     {faq.answer}
                   </p>
                 </div>

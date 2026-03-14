@@ -38,10 +38,10 @@ export function CommitmentsSection() {
     <section className="p-[5%] bg-gray-50">
       <div className=" mx-auto">
         <div className="text-center mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-gray-900 mb-4">
             التزاماتنا بالاستجابة
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-gray-600">
             نحن نلتزم بتقديم أفضل تجربة لعملائنا من خلال تواصل فعال ومستمر
           </p>
         </div>
@@ -53,7 +53,7 @@ export function CommitmentsSection() {
             className="bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 group overflow-hidden">
             
               {/* Card Image */}
-              <div className="h-40 overflow-hidden relative">
+              <div className="h-40 md:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px] overflow-hidden relative">
                 <Image
                 src={item.image}
                 alt={item.title}
@@ -63,15 +63,15 @@ export function CommitmentsSection() {
               />
               
                 <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent"></div>
-                <div className={`absolute top-3 ${isRTL ? 'right-3' : 'left-3'} w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center shadow-md`}>
+                <div className={`absolute top-3 ${isRTL ? 'right-3' : 'left-3'} w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 xl:w-18 xl:h-18 2xl:w-20 2xl:h-20 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center shadow-md`}>
                   {item.icon}
                 </div>
               </div>
               <div className="p-6 text-center">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-bold text-gray-900 mb-3">
                   {item.title}
                 </h3>
-                <p className="text-gray-600">{item.description}</p>
+                <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-gray-600">{item.description}</p>
               </div>
             </div>
           )}

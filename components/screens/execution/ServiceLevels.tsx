@@ -77,7 +77,7 @@ export function ServiceLevels() {
     <section id="service-levels" className=" bg-gray-50 px-[5%] py-[2%]">
       <div className=" mx-auto">
         {/* Image Banner Header */}
-        <div className="relative rounded-3xl overflow-hidden mb-16 h-56 md:h-72">
+        <div className="relative rounded-3xl overflow-hidden mb-16 h-56 md:h-72 lg:h-[500px] xl:h-[600px] 2xl:h-[700px]">
           <Image
             src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=1200&q=80"
             alt="مستويات الخدمة"
@@ -88,10 +88,10 @@ export function ServiceLevels() {
           
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-indigo-900/80 to-purple-900/90"></div>
           <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">
+            <h2 className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-bold mb-4">
               مستويات الخدمة
             </h2>
-            <p className="text-xl text-blue-100">
+            <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-blue-100">
               نقدم حلولًا مرنة وفق احتياجات كل عميل
             </p>
           </div>
@@ -104,21 +104,21 @@ export function ServiceLevels() {
             className={getColorClasses(level.color, level.popular)}>
             
               {level.popular &&
-            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-amber-400 to-amber-600 text-white px-4 py-1 rounded-full text-sm font-bold shadow-md whitespace-nowrap">
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-amber-400 to-amber-600 text-white px-4 py-1 rounded-full text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold shadow-md whitespace-nowrap">
                   الأكثر طلباً
                 </div>
             }
 
               <div className="mb-6 flex justify-center">
-                <div className={`p-4 rounded-2xl bg-${level.color}-50`}>
+                <div className={`p-4 rounded-2xl md:rounded-3xl lg:rounded-4xl xl:rounded-5xl 2xl:rounded-6xl bg-${level.color}-50`}>
                   {level.icon}
                 </div>
               </div>
 
-              <h3 className="text-2xl font-bold text-center text-gray-900 mb-4">
+              <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-center text-gray-900 mb-4">
                 {level.title}
               </h3>
-              <p className="text-gray-600 text-center mb-8 min-h-[80px]">
+              <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-gray-600 text-center mb-8 min-h-[80px]">
                 {level.description}
               </p>
 
@@ -129,7 +129,7 @@ export function ServiceLevels() {
                       <CheckIcon
                     className={`w-5 h-5 ${!isRTL ? 'mr-3' : 'ml-3'} flex-shrink-0 text-${level.color}-500`} />
                   
-                      <span className="text-gray-700 text-sm">{feature}</span>
+                      <span className="text-gray-700 text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">{feature}</span>
                     </li>
                 )}
                 </ul>

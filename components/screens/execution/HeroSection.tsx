@@ -26,19 +26,19 @@ export function HeroSection() {
       <div className="absolute bottom-1/4 left-10 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl z-0"></div>
 
       <div className="container mx-auto px-4 z-10 text-center text-white">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-8 animate-fade-in-up">
             <TargetIcon className={`w-5 h-5 ${isRTL ? 'ml-2' : 'mr-2'} text-amber-400`} />
-            <span className="text-sm font-medium tracking-wider">
+            <span className="text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-medium tracking-wider">
               التميز في التنفيذ المؤسسي
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-100 to-white drop-shadow-sm">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold leading-tight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-100 to-white drop-shadow-sm">
             حوّل رؤيتك إلى واقع ملموس مع خبراء التنفيذ المؤسسي
           </h1>
 
-          <p className="text-lg md:text-xl text-blue-50 leading-relaxed mb-10 mx-auto opacity-90">
+          <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-blue-50 leading-relaxed mb-10 mx-auto opacity-90">
             في شركة الشيخ عبد العزيز بن عبد الله المعلا للاستشارات العامة، لا
             نكتفي بوضع الخطط، بل نعمل على تحويلها إلى إنجازات ملموسة داخل
             مؤسستك. نحن نرتكز على منهجية شاملة تدمج بين التخطيط الاستراتيجي،
@@ -49,17 +49,17 @@ export function HeroSection() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="#contact"
-              className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-bold text-lg overflow-hidden shadow-[0_0_40px_rgba(37,99,235,0.4)] hover:shadow-[0_0_60px_rgba(37,99,235,0.6)] transition-all duration-300 w-full sm:w-auto">
+              className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-bold text-lg md:text-xl xl:text-2xl 2xl:text-3xl overflow-hidden shadow-[0_0_40px_rgba(37,99,235,0.4)] hover:shadow-[0_0_60px_rgba(37,99,235,0.6)] transition-all duration-300 w-full sm:w-auto">
               
               <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out"></div>
-              <span className="relative flex items-center justify-center">
+              <span className="relative flex items-center justify-center text-lg md:text-xl xl:text-2xl 2xl:text-3xl">
                 ابدأ رحلتك معنا اليوم
                 <RocketIcon className={`w-5 h-5 ${!isRTL ? 'ml-2' : 'mr-2'} animate-bounce`} />
               </span>
             </Link>
             <Link
               href="#about"
-              className="px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white rounded-full font-bold text-lg transition-all duration-300 w-full sm:w-auto">
+              className="px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white rounded-full font-bold text-lg md:text-xl xl:text-2xl 2xl:text-3xl transition-all duration-300 w-full sm:w-auto">
               
               اكتشف المزيد
             </Link>

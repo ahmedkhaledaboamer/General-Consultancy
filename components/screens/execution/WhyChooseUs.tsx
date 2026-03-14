@@ -74,7 +74,7 @@ export function WhyChooseUs() {
               <Image
                 src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80"
                 alt="فريق العمل المحترف"
-                className="w-full h-[500px] object-cover"
+                className="w-full h-[500px] md:h-[600px] lg:h-[700px] xl:h-[800px] 2xl:h-[900px] object-cover"
                 width={800}
                 height={800}
               />
@@ -83,12 +83,12 @@ export function WhyChooseUs() {
               <div className="absolute bottom-6 right-6 left-6 text-white">
                 <div className="flex items-center gap-4">
                   <div className="bg-white/20 backdrop-blur-md rounded-2xl p-4 text-center flex-1">
-                    <div className="text-3xl font-bold">+15</div>
-                    <div className="text-sm opacity-80">سنة خبرة</div>
+                    <div className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold">+15</div>
+                    <div className="text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl opacity-80">سنة خبرة</div>
                   </div>
                   <div className="bg-white/20 backdrop-blur-md rounded-2xl p-4 text-center flex-1">
-                    <div className="text-3xl font-bold">+200</div>
-                    <div className="text-sm opacity-80">مشروع</div>
+                    <div className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold">+200</div>
+                    <div className="text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl opacity-80">مشروع</div>
                   </div>
                 </div>
               </div>
@@ -100,10 +100,10 @@ export function WhyChooseUs() {
           {/* Content Side */}
           <div className="w-full lg:w-3/5">
             <div className={`text-center ${!isRTL ? 'md:text-left' : 'md:text-right'} mb-12`}>
-              <h2 className="text-3xl md:text-5xl font-bold mb-4">
+              <h2 className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-bold mb-4">
                 لماذا تختارنا؟
               </h2>
-              <p className="text-xl text-blue-200">
+              <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-blue-200">
                 نحن نقدم قيمة حقيقية ونتائج ملموسة لمؤسستك
               </p>
             </div>
@@ -115,12 +115,12 @@ export function WhyChooseUs() {
                 className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-5 hover:bg-white/20 transition-all duration-300 group flex items-center gap-5">
                 
                   <div
-                  className={`${reason.bgColor} w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}>
+                  className={`${reason.bgColor} w-14 h-14 md:w-16 md:h-16 lg:w-18 lg:h-18 xl:w-20 xl:h-20 2xl:w-22 2xl:h-22 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}>
                   
                     {reason.icon}
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-1 text-white">
+                    <h3 className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-bold mb-1 text-white">
                       {reason.title}
                     </h3>
                     <p className="text-blue-100">{reason.description}</p>

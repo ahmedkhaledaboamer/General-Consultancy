@@ -22,20 +22,20 @@ export function AboutSection() {
   }];
 
   return (
-    <section id="about" className="bg-white relative overflow-hidden px-[5%] py-[2%]">
+    <section id="about" className="bg-white relative overflow-hidden p-[5%]">
       <div className="flex flex-col lg:flex-row items-center gap-16">
         {/* Text Content */}
         <div className={`w-full lg:w-1/2 space-y-8 text-center ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
-          <div className="inline-block px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-600 font-semibold text-sm mb-2">
+          <div className="inline-block px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-600 font-semibold text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl mb-2">
             من نحن
           </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-gray-900 leading-tight">
             شريكك الموثوق لتحقيق{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
               التميز والابتكار
             </span>
           </h2>
-          <p className="text-lg text-gray-600 leading-relaxed">
+          <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-gray-600 leading-relaxed">
             نحن فريق استشاري وتنفيذي متخصص يجمع بين الخبرة العملية
             والاستراتيجية العميقة، قادر على إدارة المشاريع الكبيرة والمعقدة،
             وضمان تحويل الأفكار إلى خطوات تنفيذية واضحة. تجربتنا تشمل قطاعات
@@ -50,13 +50,13 @@ export function AboutSection() {
               key={index}
               className="bg-gray-50 rounded-2xl p-6 text-center border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
               
-                <div className="flex justify-center mb-4 bg-white w-16 h-16 mx-auto rounded-full items-center shadow-sm">
+                <div className="flex justify-center mb-4 bg-white w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-28 xl:h-28 2xl:w-32 2xl:h-32 mx-auto rounded-full items-center shadow-sm">
                   {stat.icon}
                 </div>
-                <div className="text-3xl font-bold text-gray-900 mb-1">
+                <div className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-gray-900 mb-1">
                   {stat.value}
                 </div>
-                <div className="text-sm font-medium text-gray-500">
+                <div className="text-sm md:text-base xl:text-lg 2xl:text-xl font-medium text-gray-500">
                   {stat.label}
                 </div>
               </div>
@@ -71,7 +71,7 @@ export function AboutSection() {
             <Image
               src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
               alt="فريق العمل"
-              className="w-full h-auto object-cover hover:scale-105 transition-transform duration-700" 
+              className="w-full h-auto md:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px] object-cover hover:scale-105 transition-transform duration-700" 
               width={800}
               height={800}
           />

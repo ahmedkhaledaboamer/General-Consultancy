@@ -48,9 +48,9 @@ export function EntityDictionary() {
   }];
 
   return (
-    <section className=" bg-gradient-to-b from-gray-50 to-white px-[5%] py-[2%]">
+    <section className=" bg-gradient-to-b from-gray-50 to-white p-[5%]">
       <div className=" mx-auto">
-        <div className="flex flex-col items-center justify-center relative rounded-3xl overflow-hidden mb-16 h-64 md:h-80">
+        <div className="flex flex-col items-center justify-center relative rounded-3xl overflow-hidden mb-16 h-64 md:h-80 lg:h-[500px] xl:h-[600px] 2xl:h-[700px]">
           <Image
             src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1200&q=80"
             alt="قاموس الكيان"
@@ -61,10 +61,10 @@ export function EntityDictionary() {
           
           <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/40 to-transparent"></div>
           <div className="absolute text-center p-8 md:p-12 text-white">
-            <h2 className="text-3xl md:text-5xl font-bold mb-3">
+            <h2 className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-bold mb-3">
               قاموس الكيان
             </h2>
-            <p className="text-lg text-gray-200">
+            <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-gray-200">
               لتسهيل التواصل وضمان فهم موحد لكل عناصر العمل
             </p>
           </div>
@@ -74,9 +74,9 @@ export function EntityDictionary() {
           {dictionaryItems.map((item, index) =>
           <div
             key={index}
-            className={`bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border-t-4 ${item.borderColor} relative overflow-hidden group`}>
+            className={`bg-white rounded-2xl md:rounded-3xl lg:rounded-4xl xl:rounded-5xl 2xl:rounded-6xl shadow-md hover:shadow-xl transition-all duration-300 border-t-4 ${item.borderColor} relative overflow-hidden group`}>
             
-              <div className="h-40 overflow-hidden relative">
+              <div className="h-40 md:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px] overflow-hidden relative">
                 <Image
                 src={item.image}
                 alt={item.title}
@@ -89,16 +89,16 @@ export function EntityDictionary() {
                 className={`absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent`}>
               </div>
                 <div
-                className={`absolute top-4 ${!isRTL ? 'left-4' : 'right-4'} w-12 h-12 rounded-xl ${item.bgColor} flex items-center justify-center shadow-md backdrop-blur-sm`}>
+                className={`absolute top-4 ${!isRTL ? 'left-4' : 'right-4'} w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 xl:w-18 xl:h-18 2xl:w-20 2xl:h-20 rounded-xl ${item.bgColor} flex items-center justify-center shadow-md backdrop-blur-sm`}>
                 
                   {item.icon}
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-bold text-gray-900 mb-3">
                   {item.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-gray-600 leading-relaxed">
                   {item.description}
                 </p>
               </div>

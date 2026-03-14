@@ -50,7 +50,7 @@ export function FileJourney() {
   }];
 
   return (
-    <section className="py-22 relative overflow-hidden">
+    <section className=" relative overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -63,12 +63,12 @@ export function FileJourney() {
         
       </div>
 
-      <div className=" mx-auto px-[5%] relative z-10">
+      <div className=" mx-auto p-[5%] relative z-10">
         <div className="text-center mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-gray-900 mb-4">
             كيف يتحرك الملف داخل المؤسسة؟
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-gray-600">
             نضمن وضوح المسار لجميع الأطراف
           </p>
         </div>
@@ -84,7 +84,7 @@ export function FileJourney() {
               className="flex flex-col items-center text-center group">
               
                 {/* Phase Image */}
-                <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-white shadow-xl mb-4 group-hover:scale-110 transition-transform duration-300 relative">
+                <div className="w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 xl:w-36 xl:h-36 2xl:w-40 2xl:h-40 rounded-full overflow-hidden border-4 border-white shadow-xl mb-4 group-hover:scale-110 transition-transform duration-300 relative">
                   <Image
                   src={phase.image}
                   alt={phase.title}
@@ -99,7 +99,7 @@ export function FileJourney() {
                 </div>
 
                 <div
-                className={`w-12 h-12 rounded-xl ${phase.color} text-white flex items-center justify-center shadow-lg mb-4 transform transition-transform duration-300 group-hover:rotate-6 relative`}>
+                className={`w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 xl:w-18 xl:h-18 2xl:w-20 2xl:h-20 rounded-xl ${phase.color} text-white flex items-center justify-center shadow-lg mb-4 transform transition-transform duration-300 group-hover:rotate-6 relative`}>
                 
                   {phase.icon}
                   {/* Mobile connecting line */}
@@ -107,10 +107,10 @@ export function FileJourney() {
                 <div className="lg:hidden absolute top-full right-1/2 w-0.5 h-8 bg-gray-200 translate-x-1/2"></div>
                 }
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
+                <h3 className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl font-bold text-gray-900 mb-2">
                   {phase.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-600 text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl leading-relaxed">
                   {phase.description}
                 </p>
               </div>

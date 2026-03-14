@@ -58,7 +58,7 @@ export function ExecutionPath() {
   return (
     <section
       id="execution-path"
-      className="py-24 bg-gradient-to-br from-blue-50 via-white to-indigo-50 relative overflow-hidden">
+      className=" bg-gradient-to-br from-blue-50 via-white to-indigo-50 relative overflow-hidden">
       {/* Background decorative image */}
       <div className="absolute inset-0 z-0 opacity-5">
         <Image
@@ -71,17 +71,17 @@ export function ExecutionPath() {
         
       </div>
 
-      <div className=" mx-auto px-[5%] relative z-10">
+      <div className=" mx-auto p-[5%] relative z-10">
         {/* Section Header with Image */}
         <div className="flex flex-col lg:flex-row items-center gap-10 mb-20">
-          <div className="lg:w-1/2 text-center lg:text-right">
-            <div className="inline-block px-4 py-1.5 rounded-full bg-white border border-blue-100 text-blue-600 font-semibold text-sm mb-4 shadow-sm">
+          <div className="lg:w-1/2 text-center md:text-left lg:text-right xl:text-center 2xl:text-left">
+            <div className="inline-block px-4 py-1.5 rounded-full bg-white border border-blue-100 text-blue-600 font-semibold text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl mb-4 shadow-sm">
               منهجيتنا
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-gray-900 mb-6">
               المسار التنفيذي
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-5xl text-gray-600">
               تحويل الأفكار إلى واقع يتطلب خطة دقيقة وواضحة
             </p>
           </div>
@@ -90,7 +90,7 @@ export function ExecutionPath() {
               <Image
                 src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80"
                 alt="المسار التنفيذي"
-                className="w-full h-64 object-cover"
+                className="w-full h-64 md:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px] object-cover"
                 width={800}
                 height={800}
               />
@@ -116,7 +116,7 @@ export function ExecutionPath() {
                     className={`absolute right-4 md:right-1/2 md:translate-x-1/2 w-16 h-16 rounded-full bg-gradient-to-br ${step.color} border-4 border-white shadow-lg ${step.shadowColor} flex items-center justify-center z-20 transition-transform duration-300 group-hover:scale-110`}>
                     
                     {step.icon}
-                    <div className="absolute -top-2 -right-2 w-6 h-6 bg-white rounded-full text-gray-900 font-bold text-sm flex items-center justify-center shadow-sm border border-gray-100">
+                    <div className="absolute -top-2 -right-2 w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 xl:w-12 xl:h-12 2xl:w-14 2xl:h-14 bg-white rounded-full text-gray-900 font-bold text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl flex items-center justify-center shadow-sm border border-gray-100">
                       {index + 1}
                     </div>
                   </div>
