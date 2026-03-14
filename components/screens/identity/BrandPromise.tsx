@@ -1,15 +1,18 @@
 "use client";
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 export function BrandPromise() {
   return (
     <section className="relative py-32 md:py-48 overflow-hidden">
       {/* Full Background Image with Multi-color Gradient Overlay */}
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1557682250-33bd709cbe85?w=1920&q=80"
           alt="Abstract Colorful"
-          className="w-full h-full object-cover" />
-        
+          className="w-full h-full object-cover"
+        width={1920}
+        height={1080}
+      />
         <div className="absolute inset-0 bg-gradient-to-br from-brand-purple/95 via-brand-rose/85 to-brand-orange/90" />
         {/* Geometric pattern overlay */}
         <div className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.15)_2px,transparent_2px)] [background-size:30px_30px]" />
@@ -39,10 +42,13 @@ export function BrandPromise() {
           once: true
         }}>
         
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=400&q=80"
           alt="Handshake"
-          className="w-full h-full object-cover" />
+          className="w-full h-full object-cover"
+          width={400}
+          height={400}
+        />
         
       </motion.div>
 
@@ -63,10 +69,13 @@ export function BrandPromise() {
           delay: 0.2
         }}>
         
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=400&q=80"
           alt="Trust"
-          className="w-full h-full object-cover" />
+          className="w-full h-full object-cover"
+          width={400}
+          height={400}
+        />
         
       </motion.div>
 
@@ -87,10 +96,13 @@ export function BrandPromise() {
           delay: 0.4
         }}>
         
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&q=80"
           alt="Leadership"
-          className="w-full h-full object-cover" />
+          className="w-full h-full object-cover"
+          width={400}
+          height={400}
+        />
         
       </motion.div>
 

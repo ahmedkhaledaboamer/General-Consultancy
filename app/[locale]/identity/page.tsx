@@ -9,12 +9,14 @@ import { ProvingValue } from "@/components/screens/identity/ProvingValue"
 import { BrandPromise } from "@/components/screens/identity/BrandPromise"
 import { TargetAudience } from "@/components/screens/identity/TargetAudience"
 import { FinalCTA } from "@/components/screens/identity/FinalCTA"
+import { useLocale } from 'next-intl';
 const IdentityPage = () => {
+  const locale = useLocale();
+  const isRTL = locale === 'ar';
   return (
     <div
-      dir="rtl"
-      className="font-tajawal text-gray-800 bg-mesh overflow-x-hidden min-h-screen">
-      
+      dir={isRTL ? 'rtl' : 'ltr'}
+      className="text-gray-800 bg-mesh overflow-x-hidden min-h-screen">
       <HeroSection />
       <IntroSection />
       <IdentityDefinition />

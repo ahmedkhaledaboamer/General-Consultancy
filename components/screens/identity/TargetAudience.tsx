@@ -1,6 +1,7 @@
 "use client";
 import { motion } from 'framer-motion';
 import { UsersIcon, BuildingIcon, TrendingUpIcon } from 'lucide-react';
+import Image from 'next/image';
 const audiences = [
 {
   title: 'الشركاء والعملاء',
@@ -32,8 +33,8 @@ const audiences = [
 
 export function TargetAudience() {
   return (
-    <section className="py-24 md:py-32 bg-mesh relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section className="py-24  bg-mesh relative overflow-hidden">
+      <div className="mx-auto px-[5%] relative z-10">
         <motion.div
           className="text-center mb-20 relative"
           initial={{
@@ -83,10 +84,13 @@ export function TargetAudience() {
             
               {/* Prominent Image at Top */}
               <div className="h-56 relative overflow-hidden">
-                <img
+                <Image
                 src={audience.image}
                 alt={audience.title}
-                className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" />
+                className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                width={800}
+                height={800}
+              />
               
                 <div
                 className={`absolute inset-0 bg-gradient-to-t ${audience.gradient} opacity-40 mix-blend-multiply`} />
@@ -111,37 +115,6 @@ export function TargetAudience() {
             </motion.div>
           )}
         </div>
-
-        {/* Colorful Note Box */}
-        <motion.div
-          className="relative rounded-3xl p-1 bg-gradient-to-r from-brand-pink via-brand-purple to-brand-blue max-w-4xl mx-auto shadow-2xl"
-          initial={{
-            opacity: 0,
-            scale: 0.95
-          }}
-          whileInView={{
-            opacity: 1,
-            scale: 1
-          }}
-          viewport={{
-            once: true
-          }}
-          transition={{
-            duration: 0.6,
-            delay: 0.6
-          }}>
-          
-          <div className="bg-white rounded-[1.4rem] p-8 md:p-10 text-center relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-brand-pink/10 rounded-full blur-2xl" />
-            <p className="text-2xl font-tajawal text-gray-700 leading-relaxed relative z-10">
-              <span className="inline-block px-4 py-1 bg-brand-blue/10 text-brand-blue rounded-full font-bold ml-2 mb-2 md:mb-0">
-                إضافة:
-              </span>
-              يمكن استخدام هذه الهوية أيضًا في حملات التسويق، عروض المشاريع،
-              والتواصل مع وسائل الإعلام لإظهار قوة الشركة ومصداقيتها.
-            </p>
-          </div>
-        </motion.div>
       </div>
     </section>);
 

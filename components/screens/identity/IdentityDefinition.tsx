@@ -46,8 +46,8 @@ const cards = [
 
 export function IdentityDefinition() {
   return (
-    <section className="py-24 md:py-32 bg-white relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section className="py-24 bg-white relative overflow-hidden">
+      <div className=" mx-auto px-[5%] relative z-10">
         <motion.div
           className="text-center mb-20"
           initial={{
@@ -69,7 +69,7 @@ export function IdentityDefinition() {
             تعريف الهوية
             <div className="absolute -bottom-4 left-0 w-full h-2 bg-gradient-to-r from-brand-purple via-brand-pink to-brand-orange rounded-full" />
           </h2>
-          <p className="text-2xl text-gray-600 max-w-3xl mx-auto font-tajawal mt-8">
+          <p className="text-2xl text-gray-600 mx-auto font-tajawal mt-8">
             الهوية المؤسسية هي مزيج من القيم، الثقافة، والوعود التي تقدمها
             الشركة للعالم. تشمل:
           </p>
@@ -110,7 +110,7 @@ export function IdentityDefinition() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 
               {/* Content */}
-              <div className="absolute inset-0 p-8 flex flex-col justify-end text-white z-10">
+              <div className="absolute inset-0 p-8 flex flex-col justify-center items-center text-white z-10">
                 <div className="w-16 h-16 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center mb-6 border border-white/30 transform group-hover:-translate-y-2 transition-transform duration-300">
                   <card.icon size={32} className="text-white" />
                 </div>

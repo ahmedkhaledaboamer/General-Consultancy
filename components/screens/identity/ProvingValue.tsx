@@ -1,6 +1,8 @@
 "use client";
 import { motion } from 'framer-motion';
 import { BarChart3Icon, GlobeIcon, EyeIcon, TrophyIcon } from 'lucide-react';
+import Image from 'next/image';
+import { useLocale } from 'next-intl';
 const metrics = [
 {
   title: 'نتائج قابلة للقياس',
@@ -40,9 +42,11 @@ const metrics = [
 }];
 
 export function ProvingValue() {
+  const locale = useLocale();
+  const isRTL = locale === 'ar';
   return (
-    <section className="py-24 md:py-32 bg-white relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section className="py-24 bg-white relative overflow-hidden">
+      <div className="mx-auto px-[5%] relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-between mb-20 gap-10">
           <motion.div
             className="md:w-1/2"
@@ -61,7 +65,7 @@ export function ProvingValue() {
               duration: 0.7
             }}>
             
-            <h2 className="text-4xl md:text-6xl font-cairo font-bold text-gray-900 mb-6 leading-tight">
+            <h2 className={`text-center text-4xl md:text-6xl font-cairo font-bold text-gray-900 mb-6 leading-tight ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
               كيف نثبت قيمتنا؟ <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-blue">
                 وكيف نُظهر مصداقيتنا؟
@@ -87,10 +91,13 @@ export function ProvingValue() {
               delay: 0.2
             }}>
             
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
               alt="Celebration"
-              className="w-full h-full object-cover" />
+              className="w-full h-full object-cover"
+              width={800}
+              height={800}
+            />
             
             <div className="absolute inset-0 bg-gradient-to-r from-brand-purple/60 to-transparent" />
           </motion.div>
@@ -119,10 +126,13 @@ export function ProvingValue() {
             
               {/* Image Thumbnail */}
               <div className="h-40 w-full relative overflow-hidden">
-                <img
+                <Image
                 src={metric.image}
                 alt={metric.title}
-                className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" />
+                className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                width={600}
+                height={600}
+              />
               
                 <div
                 className={`absolute inset-0 bg-gradient-to-t ${metric.gradient} opacity-40 mix-blend-multiply`} />
@@ -132,7 +142,7 @@ export function ProvingValue() {
               <div className="p-8 relative">
                 {/* Floating Icon Badge */}
                 <div
-                className={`absolute -top-10 right-8 w-20 h-20 rounded-2xl bg-gradient-to-br ${metric.gradient} text-white flex items-center justify-center shadow-lg border-4 border-white transform group-hover:-translate-y-2 transition-transform duration-300`}>
+                className={`absolute -top-10 ${!isRTL ? 'left-8' : 'right-8'} w-20 h-20 rounded-2xl bg-gradient-to-br ${metric.gradient} text-white flex items-center justify-center shadow-lg border-4 border-white transform group-hover:-translate-y-2 transition-transform duration-300`}>
                 
                   <metric.icon size={36} />
                 </div>
@@ -166,10 +176,13 @@ export function ProvingValue() {
             duration: 0.8
           }}>
           
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=80"
             alt="Success Growth"
-            className="absolute inset-0 w-full h-full object-cover" />
+            className="absolute inset-0 w-full h-full object-cover"
+            width={1600}
+            height={1080}
+          />
           
           <div className="absolute inset-0 bg-gradient-to-r from-brand-indigo-dark/95 via-brand-purple-dark/90 to-brand-pink/80" />
 
@@ -185,7 +198,7 @@ export function ProvingValue() {
               </div>
             </div>
 
-            <div>
+            <div className={`flex flex-col items-center justify-center text-center md:items-start ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-yellow/20 text-brand-yellow font-tajawal font-bold mb-6 border border-brand-yellow/30">
                 <TrophyIcon size={20} />
                 قصة نجاح

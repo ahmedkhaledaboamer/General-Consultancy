@@ -1,6 +1,7 @@
 "use client";
 import { motion } from 'framer-motion';
 import { AwardIcon, LightbulbIcon, UsersIcon } from 'lucide-react';
+import Image from 'next/image';
 const pillars = [
 {
   title: 'الاحترافية المطلقة',
@@ -32,11 +33,11 @@ const pillars = [
 
 export function PhilosophySection() {
   return (
-    <section className="py-24 md:py-32 bg-gray-50 relative overflow-hidden">
+    <section className="py-24 bg-gray-50 relative overflow-hidden">
       {/* Decorative Background */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="mx-auto px-[5%] relative z-10">
         <motion.div
           className="text-center mb-20 relative"
           initial={{
@@ -58,7 +59,7 @@ export function PhilosophySection() {
           <h2 className="text-4xl md:text-6xl font-cairo font-bold text-gray-900 mb-6">
             فلسفتنا
           </h2>
-          <p className="text-2xl text-gray-600 max-w-3xl mx-auto font-tajawal">
+          <p className="text-2xl text-gray-600 mx-auto">
             فلسفتنا تقوم على ثلاثة محاور رئيسية:
           </p>
         </motion.div>
@@ -67,7 +68,7 @@ export function PhilosophySection() {
           {pillars.map((pillar, index) =>
           <motion.div
             key={index}
-            className="group relative h-[450px] rounded-[2rem] overflow-hidden shadow-2xl"
+            className="flex flex-col items-center justify-center text-center group relative h-[450px] rounded-[2rem] overflow-hidden shadow-2xl"
             initial={{
               opacity: 0,
               y: 50
@@ -85,10 +86,13 @@ export function PhilosophySection() {
             }}>
             
               {/* Background Image */}
-              <img
+              <Image
               src={pillar.image}
               alt={pillar.title}
-              className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" />
+              className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+              width={800}
+              height={800}
+              />
             
 
               {/* Gradient Overlay */}
@@ -97,15 +101,15 @@ export function PhilosophySection() {
             
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors duration-300" />
 
-              {/* Content positioned at bottom */}
-              <div className="absolute bottom-0 left-0 w-full p-8 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+              {/* Content positioned at bottom - desc visible by default on tablet/mobile, on hover on desktop */}
+              <div className="flex flex-col items-center justify-center w-full p-8 text-white transform translate-y-0 lg:translate-y-4 lg:group-hover:translate-y-0 transition-transform duration-300">
                 <div className="w-16 h-16 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center mb-6 border border-white/30 shadow-lg">
                   <pillar.icon size={32} className="text-white" />
                 </div>
                 <h3 className="text-3xl font-cairo font-bold mb-4 drop-shadow-lg">
                   {pillar.title}
                 </h3>
-                <p className="text-xl font-tajawal text-white/90 leading-relaxed drop-shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
+                <p className="text-xl font-tajawal text-white/90 leading-relaxed drop-shadow-md opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300 lg:delay-100">
                   {pillar.desc}
                 </p>
               </div>
