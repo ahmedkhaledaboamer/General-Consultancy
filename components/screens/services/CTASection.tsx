@@ -55,16 +55,16 @@ export function CTASection() {
             <PhoneIcon className="w-10 h-10 text-navy" />
           </div>
 
-          <h2 className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6 leading-tight drop-shadow-lg">
+          <h2 className="text-lg md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6 leading-tight drop-shadow-lg">
             هل تبحث عن شريك استشاري يساعدك على تطوير أعمالك واستثماراتك؟
           </h2>
 
-          <p className="text-xl md:text-2xl text-gray-200 font-body mb-12 leading-relaxed mx-auto drop-shadow-md">
+          <p className="text-lg md:text-2xl text-gray-200 font-body mb-12 leading-relaxed mx-auto drop-shadow-md">
             فريقنا مستعد لدراسة احتياجاتك وتقديم الحلول المناسبة لتحقيق أهدافك.
             دعنا نعمل معًا على بناء مشاريع ناجحة واستثمارات مستدامة.
           </p>
 
-          <Link href={`/${locale}/execution`} className="bg-gradient-to-r from-gold to-yellow-500 hover:from-goldLight hover:to-gold text-navy font-bold text-xl py-5 px-12 rounded-full transition-all transform hover:scale-105 shadow-[0_0_40px_rgba(201,168,76,0.6)] hover:shadow-[0_0_60px_rgba(201,168,76,0.8)]">
+          <Link href={`/${locale}/execution`} className="bg-gradient-to-r from-gold to-yellow-500 hover:from-goldLight hover:to-gold text-navy font-bold text-lg md:text-xl py-5 px-12 rounded-full transition-all transform hover:scale-105 shadow-[0_0_40px_rgba(201,168,76,0.6)] hover:shadow-[0_0_60px_rgba(201,168,76,0.8)]">
             تواصل معنا اليوم
           </Link>
         </motion.div>

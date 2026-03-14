@@ -65,7 +65,7 @@ export function OurApproach() {
             viewport={{
               once: true
             }}
-            className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-black text-navy mb-6">
+            className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-black text-navy mb-6">
             
             نهجنا في العمل
           </motion.h2>
@@ -84,7 +84,7 @@ export function OurApproach() {
             transition={{
               delay: 0.1
             }}
-            className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-slate-600 font-light">
+            className="text-xl xl:text-2xl 2xl:text-3xl text-slate-600 font-light">
             
             نعتمد منهجية متكاملة تقوم على:
           </motion.p>
@@ -137,7 +137,7 @@ export function OurApproach() {
                   </div>
                 </div>
 
-                <span className="font-bold text-navy text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-center mt-2">
+                <span className="font-bold text-navy text-lg xl:text-xl 2xl:text-2xl text-center mt-2">
                   {item.text}
                 </span>
               </motion.div>

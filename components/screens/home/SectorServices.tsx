@@ -155,13 +155,13 @@ export function SectorServices() {
               once: true
             }}>
             
-            <h2 className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-black text-white mb-6">
+            <h2 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-black text-white mb-6">
               الاستثمار وتطوير المشاريع{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald to-sky">
                 القطاعية
               </span>
             </h2>
-            <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-slate-300 font-light">
+            <p className="text-xl xl:text-2xl 2xl:text-3xl text-slate-300 font-light">
               نساهم في تطوير وإدارة الاستثمارات في قطاعات اقتصادية متعددة من
               خلال دراسات متخصصة وخطط تشغيلية واضحة.
             </p>
@@ -211,7 +211,7 @@ export function SectorServices() {
                   <sector.icon className="w-7 h-7 text-white" />
                 </div>
 
-                <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-white mb-4 drop-shadow-md">
+                <h3 className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-bold text-white mb-4 drop-shadow-md">
                   {sector.title}
                 </h3>
 

@@ -52,7 +52,7 @@ export function HeroSection() {
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl font-heading font-bold text-white leading-tight mb-6">
+            <h1 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-heading font-bold text-white leading-tight mb-6">
               منظومة استشارية متكاملة
               <span className="block mt-2 text-gradient-gold drop-shadow-md text-sm md:text-base xl:text-lg 2xl:text-xl">
                 تدعم الاستثمار… وتبني النجاح المؤسسي.

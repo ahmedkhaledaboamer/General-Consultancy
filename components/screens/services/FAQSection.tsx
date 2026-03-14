@@ -96,9 +96,9 @@ export function FAQSection() {
                 <div className="inline-block px-4 py-1.5 rounded-full bg-teal/10 border border-teal/20 text-teal mb-4 text-sm md:text-base xl:text-lg 2xl:text-xl">
                   <span className="font-body font-medium text-sm md:text-base xl:text-lg 2xl:text-xl">مركز المعرفة</span>
                 </div>
-                <h2 className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-heading font-bold text-navy mb-4">
+                <h2 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-heading font-bold text-navy mb-4">
                   الأسئلة{' '}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal to-emerald-500 text-sm md:text-base xl:text-lg 2xl:text-xl">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal to-emerald-500 text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl">
                     الشائعة
                   </span>
                 </h2>
@@ -140,7 +140,7 @@ export function FAQSection() {
                       className="cursor-pointer w-full px-6 py-5 md:px-8 md:py-6 xl:px-10 xl:py-7 2xl:px-12 2xl:py-8 flex items-center justify-between text-right focus:outline-none">
                       
                       <span
-                        className={`text-lg md:text-xl xl:text-2xl 2xl:text-3xl font-heading font-bold pr-4 transition-colors ${isOpen ? 'text-teal-700' : 'text-navy'}`}>
+                        className={`text-sm md:text-xl xl:text-2xl 2xl:text-3xl font-heading font-bold pr-4 transition-colors ${isOpen ? 'text-teal-700' : 'text-navy'}`}>
                         
                         {faq.question}
                       </span>

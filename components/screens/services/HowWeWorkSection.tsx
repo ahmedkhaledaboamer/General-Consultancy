@@ -143,7 +143,7 @@ export function HowWeWorkSection() {
 
                 {/* Content */}
                 <div className="flex flex-col items-center justify-center bg-navy/60 backdrop-blur-md p-6 rounded-2xl border border-white/10 w-full h-full transform transition-all duration-300 group-hover:bg-navy/80 hover:border-white/20">
-                  <h3 className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-heading font-bold text-white mb-3">
+                  <h3 className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl font-heading font-bold text-white mb-3">
                     {step.title}
                   </h3>
                   <p className="text-gray-300 font-body text-sm md:text-base xl:text-lg 2xl:text-xl leading-relaxed">

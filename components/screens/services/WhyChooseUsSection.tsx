@@ -72,7 +72,7 @@ export function WhyChooseUsSection() {
   return (
     <section
       id="why-us"
-      className="  bg-gradient-to-b from-white to-amber-50/30 overflow-hidden">
+      className="bg-gradient-to-b from-white to-amber-50/30 overflow-hidden">
       
       <div className="mx-auto p-[5%]">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
@@ -136,7 +136,7 @@ export function WhyChooseUsSection() {
               }}
               className={`mb-12 text-center ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
               
-              <h2 className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-heading font-bold text-navy mb-6">
+              <h2 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-heading font-bold text-navy mb-6">
                 لماذا تختارنا
               </h2>
               <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-gray-600 font-body leading-relaxed">
@@ -169,7 +169,7 @@ export function WhyChooseUsSection() {
                 
                   {/* Colored Left Border (RTL right side) */}
                   <div
-                  className={`absolute top-0 right-0 w-1.5 h-full md:w-2 lg:w-3 2xl:w-4 bg-gradient-to-b ${reason.gradient} opacity-70 group-hover:opacity-100 transition-opacity`} />
+                  className={`absolute top-0 right-0 w-1.5 h-full md:w-2  bg-gradient-to-b ${reason.gradient} opacity-70 group-hover:opacity-100 transition-opacity`} />
                 
 
                   <div
@@ -177,10 +177,10 @@ export function WhyChooseUsSection() {
                   
                     <reason.icon className={`w-7 h-7 md:w-8 md:h-8 xl:w-9 xl:h-9 2xl:w-10 2xl:h-10 ${reason.color}`} />
                   </div>
-                  <h3 className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-heading font-bold text-navy mb-3">
+                  <h3 className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl font-heading font-bold text-navy mb-3">
                     {reason.title}
                   </h3>
-                  <p className={`text-gray-600 font-body text-sm md:text-base xl:text-lg 2xl:text-xl leading-relaxed text-center ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
+                  <p className={`text-gray-600 font-body text-sm xl:text-base 2xl:text-lg leading-relaxed text-center ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
                     {reason.description}
                   </p>
                 </motion.div>

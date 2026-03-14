@@ -7,6 +7,7 @@ import {
   LightbulbIcon,
   HandshakeIcon } from
 'lucide-react';
+import Image from 'next/image';
 const values = [
 {
   title: 'الاحترافية',
@@ -69,7 +70,7 @@ export function ValuesSection() {
             viewport={{
               once: true
             }}
-            className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-black text-white mb-6">
+            className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-black text-white mb-6">
             
             قيمنا ومبادئنا
           </motion.h2>
@@ -88,7 +89,7 @@ export function ValuesSection() {
             transition={{
               delay: 0.1
             }}
-            className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-slate-300 font-light">
+            className="text-xl xl:text-2xl 2xl:text-3xl text-slate-300 font-light">
             
             نؤمن بأن نجاح أي مشروع يعتمد على منظومة قيم واضحة تحكم طريقة العمل
             واتخاذ القرار.
@@ -117,10 +118,13 @@ export function ValuesSection() {
             className="relative rounded-3xl overflow-hidden shadow-2xl w-full md:w-[calc(50%-16px)] lg:w-[calc(33.333%-22px)] group h-80 md:h-96 xl:h-120 2xl:h-144">
             
               {/* Background Image */}
-              <img
+              <Image
               src={value.image}
               alt={value.title}
-              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              width={1200}
+              height={1200}
+              />
             
 
               {/* Colored Overlay */}
@@ -143,7 +147,7 @@ export function ValuesSection() {
                   </div>
                 </div>
 
-                <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-white mb-3 drop-shadow-md">
+                <h3 className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-bold text-white mb-3 drop-shadow-md">
                   {value.title}
                 </h3>
                 <p className="text-slate-200 text-base md:text-lg xl:text-xl 2xl:text-2xl leading-relaxed font-light drop-shadow-sm opacity-100 translate-y-0 lg:opacity-0 lg:group-hover:opacity-100 lg:translate-y-4 lg:group-hover:translate-y-0 transition-all duration-300">

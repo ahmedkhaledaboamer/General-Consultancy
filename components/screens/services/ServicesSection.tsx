@@ -134,10 +134,10 @@ export function ServicesSection() {
               once: true
             }}>
             
-            <h2 className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-heading font-bold text-white mb-6 drop-shadow-lg">
+            <h2 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-heading font-bold text-white mb-6 drop-shadow-lg">
               منظومة خدماتنا المتكاملة
             </h2>
-            <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-gray-200 font-body leading-relaxed mx-auto">
+            <p className="text-lg xl:text-xl 2xl:text-3xl text-gray-200 font-body leading-relaxed mx-auto">
               تعتمد خدماتنا على منهجية متكاملة تجمع بين الخبرة الاستشارية
               والرؤية الاستثمارية، مما يتيح للمؤسسات والمستثمرين الوصول إلى حلول
               عملية تدعم اتخاذ القرار وتحقق نتائج ملموسة.
@@ -211,10 +211,13 @@ export function ServicesSection() {
                   
                   {/* Category Header with Image */}
                   <div className="relative h-48 md:h-56 lg:h-64 2xl:h-72 overflow-hidden">
-                    <img
+                    <Image
                       src={category.image}
                       alt={category.name}
-                      className="w-full h-full object-cover" />
+                      className="w-full h-full object-cover"
+                      width={400}
+                      height={400}
+                    />
                     
                     <div
                       className={`absolute inset-0 bg-gradient-to-t from-navy/95 via-navy/60 to-transparent`} />
@@ -233,7 +236,7 @@ export function ServicesSection() {
                         
                       </div>
                       <div>
-                        <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-heading font-bold text-white drop-shadow-md">
+                        <h3 className="text-sm md:text-3xl xl:text-4xl 2xl:text-5xl font-heading font-bold text-white drop-shadow-md">
                           {category.name}
                         </h3>
                         <p className="text-gray-300 font-body text-sm md:text-base xl:text-lg 2xl:text-xl mt-1">

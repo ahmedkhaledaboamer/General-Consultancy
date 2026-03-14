@@ -65,12 +65,12 @@ export function WhatWeOffer() {
               <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-magenta to-orange flex items-center justify-center shadow-lg">
                 <LayersIcon className="w-8 h-8 text-white" />
               </div>
-              <h2 className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-black text-navy">
+              <h2 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-black text-navy">
                 ماذا نقدّم؟
               </h2>
             </div>
 
-            <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-slate-600 mb-10 font-light leading-relaxed">
+            <p className="text-xl xl:text-2xl 2xl:text-3xl text-slate-600 mb-10 font-light leading-relaxed">
               نقدّم منظومة متكاملة من الحلول التي تساعد شركاءنا على تحويل الرؤية
               إلى واقع، والطموح إلى مشاريع ناجحة. تشمل خدماتنا:
             </p>
@@ -114,7 +114,7 @@ export function WhatWeOffer() {
                   8
                 </div>
                 <div className="w-1 h-16 bg-white/20 rounded-full"></div>
-                <p className="font-medium text-xl md:text-2xl xl:text-3xl 2xl:text-4xl leading-relaxed">
+                <p className="font-medium text-base md:text-xl xl:text-2xl 2xl:text-3xl leading-relaxed">
                   خدمات رئيسية متكاملة ترتكز على التحليل العميق والخبرة المتخصصة
                   لبناء حلول عملية قابلة للتنفيذ.
                 </p>

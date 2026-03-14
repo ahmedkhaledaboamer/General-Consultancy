@@ -79,7 +79,7 @@ export function ClientJourney() {
             viewport={{
               once: true
             }}
-            className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-black text-white mb-6">
+            className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-black text-white mb-6">
             
             رحلة العميل معنا
           </motion.h2>
@@ -98,7 +98,7 @@ export function ClientJourney() {
             transition={{
               delay: 0.1
             }}
-            className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-slate-300 font-light">
+            className="text-xl xl:text-2xl 2xl:text-3xl text-slate-300 font-light">
             
             رحلة العمل معنا ليست مجرد خدمة استشارية، بل هي مسار متكامل يبدأ
             بالفهم وينتهي بتحقيق النتائج.
@@ -145,7 +145,7 @@ export function ClientJourney() {
                 duration: 0.6,
                 delay: index * 0.15
               }}
-              className="relative flex flex-col items-center text-center group">
+              className="h-full relative flex flex-col items-center text-center group">
               
                 {/* Image Circle */}
                 <div className="w-48 h-48 md:w-52 md:h-52 xl:w-60 xl:h-60 2xl:w-72 2xl:h-72 rounded-full p-2 bg-white/5 backdrop-blur-sm border border-white/10 mb-8 relative z-10 group-hover:scale-105 transition-transform duration-500">
@@ -176,8 +176,8 @@ export function ClientJourney() {
                   </div>
                 </div>
 
-                <div className="glass-colored bg-navy/40 p-6 rounded-2xl w-full border-t-4 border-transparent group-hover:border-white/50 transition-all duration-300">
-                  <h3 className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-bold text-white mb-3">
+                <div className="h-full glass-colored bg-navy/40 p-6 rounded-2xl w-full border-t-4 border-transparent group-hover:border-white/50 transition-all duration-300">
+                  <h3 className="text-sm md:text-lg xl:text-xl 2xl:text-2xl font-bold text-white mb-3">
                     {step.title}
                   </h3>
                   <p className="text-sm md:text-base xl:text-lg 2xl:text-xl text-slate-300 leading-relaxed font-light">
