@@ -42,7 +42,7 @@ export function AboutSection() {
               </span>
             </div>
 
-            <h2 className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-black text-navy mb-8 leading-[1.2]">
+            <h2 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-black text-navy mb-8 leading-[1.2]">
               نبني منظومة متكاملة تساعد شركاءنا على{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky via-violet to-magenta">
                 النمو بثقة وثبات
@@ -53,7 +53,7 @@ export function AboutSection() {
               {/* Decorative line behind text */}
               <div className="absolute right-0 top-2 bottom-2 w-1 bg-gradient-to-b from-slate-200 to-transparent rounded-full -mr-6 hidden md:block"></div>
 
-              <p className="font-medium text-navy text-xl md:text-2xl xl:text-3xl 2xl:text-5xl">
+              <p className="font-medium text-navy text-xl xl:text-2xl 2xl:text-4xl">
                 نحن كيان استشاري واستثماري يعمل على دعم المؤسسات والمستثمرين عبر
                 منظومة متكاملة من الخبرات المتخصصة في مجالات الاستثمار وإدارة
                 المشاريع والاستشارات الاستراتيجية.
@@ -74,7 +74,7 @@ export function AboutSection() {
               <div className="mt-10 p-6 bg-gradient-to-br from-navy to-purple-deep rounded-2xl shadow-xl border border-white/10 relative overflow-hidden group">
                 <div className="absolute inset-0 bg-[url('/imgs/1 A modern solar farm stretchi/image_0.webp')] opacity-10 bg-cover bg-center mix-blend-overlay group-hover:scale-110 transition-transform duration-700"></div>
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gold/20 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2"></div>
-                <p className="relative z-10 font-bold text-white text-xl md:text-2xl xl:text-3xl 2xl:text-4xl leading-relaxed">
+                <p className="relative z-10 font-bold text-white text-xl xl:text-2xl 2xl:text-3xl leading-relaxed">
                   نحن لا نعمل فقط على تقديم الحلول… بل نعمل على بناء منظومة
                   متكاملة تساعد شركاءنا على النمو بثقة وثبات.
                 </p>

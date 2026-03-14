@@ -181,7 +181,7 @@ export function CoreServices() {
                     className={`absolute top-0 bottom-0 left-0 w-1.5 bg-gradient-to-b ${service.gradient}`}>
                   </div>
 
-                  <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-navy mb-4">
+                  <h3 className="text-xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-navy mb-4">
                     {service.title}
                   </h3>
                   <p className="text-slate-600 mb-6 text-lg md:text-xl xl:text-2xl 2xl:text-3xl leading-relaxed">

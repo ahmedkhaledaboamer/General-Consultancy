@@ -1,10 +1,5 @@
 "use client";
 import { motion } from 'framer-motion';
-import {
-  TrendingUpIcon,
-  BriefcaseIcon,
-  AwardIcon } from
-'lucide-react';
 import Image from 'next/image';
 export function HeroSection() {
   return (
@@ -79,7 +74,7 @@ export function HeroSection() {
             </span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl xl:text-8xl 2xl:text-9xl font-black text-white leading-[1.1] mb-8 drop-shadow-2xl">
+          <h1 className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-black text-white leading-[1.1] mb-8 drop-shadow-2xl">
             نصوغ مسارات الاستثمار… <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold via-amber to-orange drop-shadow-none">
               ونبني قراراتٍ تصنع المستقبل.
@@ -99,7 +94,7 @@ export function HeroSection() {
               delay: 0.4,
               duration: 0.8
             }}
-            className="text-xl md:text-2xl xl:text-3xl 2xl:text-5xl text-slate-200 mb-6 leading-relaxed   font-light">
+            className="text-xl xl:text-2xl 2xl:text-4xl text-slate-200 mb-6 leading-relaxed   font-light">
             
             في عالم اقتصادي تتغير فيه المعادلات بسرعة، وتتصاعد فيه التحديات أمام
             المستثمرين وصناع القرار، يصبح امتلاك الرؤية الواضحة والمنهجية
@@ -119,7 +114,7 @@ export function HeroSection() {
               delay: 0.6,
               duration: 0.8
             }}
-            className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-slate-400 mb-12 leading-relaxed hidden md:block ">
+            className="text-lg md:text-xl 2xl:text-2xl text-slate-400 mb-12 leading-relaxed hidden md:block ">
             
             تعمل شركة الشيخ عبد العزيز بن عبد الله المعلا للاستشارات العامة على
             بناء منظومة متكاملة من الاستشارات الاستراتيجية وإدارة الاستثمارات
@@ -145,34 +140,18 @@ export function HeroSection() {
             
             <a
               href="#services"
-              className="w-full sm:w-auto px-10 py-4 bg-gradient-to-r from-gold via-orange to-amber text-navy font-bold text-xl md:text-2xl xl:text-3xl 2xl:text-5xl rounded-full hover:shadow-[0_0_30px_rgba(249,115,22,0.5)] transition-all transform hover:-translate-y-1 relative overflow-hidden group">
+              className="w-full sm:w-auto px-10 py-4 bg-gradient-to-r from-gold via-orange to-amber text-navy font-bold text-xl 2xl:text-3xl rounded-full hover:shadow-[0_0_30px_rgba(249,115,22,0.5)] transition-all transform hover:-translate-y-1 relative overflow-hidden group">
               
               <span className="relative z-10">استكشف خدماتنا</span>
               <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:animate-shimmer"></div>
             </a>
             <a
               href="#about"
-              className="w-full sm:w-auto px-10 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold text-xl md:text-2xl xl:text-3xl 2xl:text-5xl rounded-full hover:bg-white/20 transition-all transform hover:-translate-y-1">
+              className="w-full sm:w-auto px-10 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold text-xl 2xl:text-3xl rounded-full hover:bg-white/20 transition-all transform hover:-translate-y-1">
               
               تعرف علينا
             </a>
           </motion.div>
-
-          <motion.p
-            initial={{
-              opacity: 0
-            }}
-            animate={{
-              opacity: 1
-            }}
-            transition={{
-              delay: 1
-            }}
-            className="text-white/60 font-medium mt-8 text-lg md:text-xl xl:text-2xl 2xl:text-3xl">
-            
-            نحن لا نقدّم استشارة فحسب… نحن نصنع مسارًا واضحًا للنمو، ونبني
-            شراكات تُثمر نتائج حقيقية.
-          </motion.p>
         </motion.div>
       </div>
 

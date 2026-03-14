@@ -130,5 +130,4 @@ export function WhoWeServe() {
         </div>
       </div>
     </section>);
-
 }

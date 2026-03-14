@@ -66,10 +66,10 @@ export function OurPromise() {
               {/* Decorative Corner */}
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-gold/30 to-transparent rounded-bl-full"></div>
 
-              <h2 className={`text-center text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-black text-white mb-6 drop-shadow-lg ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
+              <h2 className={`text-center text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-black text-white mb-6 drop-shadow-lg ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
                 وعدنا لك
               </h2>
-              <p className={`text-center  text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-slate-200 mb-10 leading-relaxed font-light ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
+              <p className={`text-center  text-xl xl:text-2xl 2xl:text-3xl text-slate-200 mb-10 leading-relaxed font-light ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
                 نعد شركاءنا بتقديم خدمات استشارية واستثمارية تعتمد على الخبرة،
                 والتحليل الدقيق، والرؤية الواضحة. نلتزم بأن نكون الشريك الذي
                 يساعدك على:
@@ -100,13 +100,13 @@ export function OurPromise() {
                     
                       <CheckIcon className="w-5 h-5 md:w-6 md:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8 text-white" />
                     </div>
-                    <span className="font-bold text-xl md:text-2xl xl:text-3xl 2xl:text-4xl">{promise.text}</span>
+                    <span className="font-bold text-lg xl:text-xl 2xl:text-2xl">{promise.text}</span>
                   </motion.li>
                 )}
               </ul>
 
               <div className="pt-8 border-t border-white/20">
-                <p className={`text-center text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-gold via-amber to-orange ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
+                <p className={`text-center text-xl xl:text-2xl 2xl:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-gold via-amber to-orange ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
                   هدفنا أن نكون شريكًا يعتمد عليه في بناء المستقبل الاستثماري.
                 </p>
               </div>

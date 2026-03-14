@@ -2,7 +2,6 @@
 import { motion } from 'framer-motion';
 import { useLocale } from 'next-intl';
 import Image from 'next/image';
-import Link from 'next/link';
 export function CTASection() {
   const locale = useLocale();
   return (
