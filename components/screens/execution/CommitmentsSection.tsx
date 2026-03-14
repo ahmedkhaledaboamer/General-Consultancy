@@ -1,5 +1,9 @@
 import { ClockIcon, ActivityIcon, WrenchIcon, FileTextIcon } from 'lucide-react';
+import Image from 'next/image';
+import { useLocale } from 'next-intl';
 export function CommitmentsSection() {
+  const locale = useLocale();
+  const isRTL = locale === 'ar';
   const commitments = [
   {
     title: 'استجابة سريعة',
@@ -31,7 +35,7 @@ export function CommitmentsSection() {
   }];
 
   return (
-    <section className="py-[2%] bg-gray-50 px-[5%]">
+    <section className="p-[5%] bg-gray-50">
       <div className=" mx-auto">
         <div className="text-center mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -50,13 +54,16 @@ export function CommitmentsSection() {
             
               {/* Card Image */}
               <div className="h-40 overflow-hidden relative">
-                <img
+                <Image
                 src={item.image}
                 alt={item.title}
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                width={400}
+                height={400}
+              />
               
                 <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent"></div>
-                <div className="absolute top-3 right-3 w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center shadow-md">
+                <div className={`absolute top-3 ${isRTL ? 'right-3' : 'left-3'} w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center shadow-md`}>
                   {item.icon}
                 </div>
               </div>

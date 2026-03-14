@@ -11,12 +11,15 @@ import { CommitmentsSection } from "@/components/screens/execution/CommitmentsSe
 import { QualityStandards } from "@/components/screens/execution/QualityStandards"
 import { FAQSection } from "@/components/screens/execution/FAQSection"
 import { FinalCTA } from "@/components/screens/execution/FinalCTA"
+import { useLocale } from "next-intl"
 
 const ExecutionPage = () => {
+  const locale = useLocale();
+  const isRTL = locale === 'ar';
   return (
     <main
-      dir="rtl"
-      className="min-h-screen bg-white text-right font-sans text-gray-900 selection:bg-blue-500 selection:text-white"
+      dir={isRTL ? 'rtl' : 'ltr'}
+      className="min-h-screen bg-white text-gray-900 selection:bg-blue-500 selection:text-white"
     >
       <HeroSection />
       <AboutSection />

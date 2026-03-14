@@ -1,6 +1,10 @@
 import React from 'react';
 import { RocketIcon, TargetIcon } from 'lucide-react';
+import { useLocale } from 'next-intl';
+import Link from 'next/link';
 export function HeroSection() {
+  const locale = useLocale();
+  const isRTL = locale === 'ar';
   return (
     <section
       id="hero"
@@ -24,7 +28,7 @@ export function HeroSection() {
       <div className="container mx-auto px-4 z-10 text-center text-white">
         <div className="max-w-4xl mx-auto">
           <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-8 animate-fade-in-up">
-            <TargetIcon className="w-5 h-5 ml-2 text-amber-400" />
+            <TargetIcon className={`w-5 h-5 ${isRTL ? 'ml-2' : 'mr-2'} text-amber-400`} />
             <span className="text-sm font-medium tracking-wider">
               التميز في التنفيذ المؤسسي
             </span>
@@ -43,22 +47,22 @@ export function HeroSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
+            <Link
               href="#contact"
               className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-bold text-lg overflow-hidden shadow-[0_0_40px_rgba(37,99,235,0.4)] hover:shadow-[0_0_60px_rgba(37,99,235,0.6)] transition-all duration-300 w-full sm:w-auto">
               
               <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out"></div>
               <span className="relative flex items-center justify-center">
                 ابدأ رحلتك معنا اليوم
-                <RocketIcon className="w-5 h-5 mr-2 animate-bounce" />
+                <RocketIcon className={`w-5 h-5 ${!isRTL ? 'ml-2' : 'mr-2'} animate-bounce`} />
               </span>
-            </a>
-            <a
+            </Link>
+            <Link
               href="#about"
               className="px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white rounded-full font-bold text-lg transition-all duration-300 w-full sm:w-auto">
               
               اكتشف المزيد
-            </a>
+            </Link>
           </div>
         </div>
       </div>

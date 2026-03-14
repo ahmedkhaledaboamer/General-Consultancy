@@ -1,5 +1,9 @@
 import { UsersIcon, BriefcaseIcon, AwardIcon } from 'lucide-react';
+import { useLocale } from 'next-intl';
+import Image from 'next/image';
 export function AboutSection() {
+  const locale = useLocale();
+  const isRTL = locale === 'ar';
   const stats = [
   {
     icon: <BriefcaseIcon className="w-8 h-8 text-blue-600" />,
@@ -21,7 +25,7 @@ export function AboutSection() {
     <section id="about" className="bg-white relative overflow-hidden px-[5%] py-[2%]">
       <div className="flex flex-col lg:flex-row items-center gap-16">
         {/* Text Content */}
-        <div className="w-full lg:w-1/2 space-y-8">
+        <div className={`w-full lg:w-1/2 space-y-8 text-center ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
           <div className="inline-block px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-600 font-semibold text-sm mb-2">
             من نحن
           </div>
@@ -64,11 +68,13 @@ export function AboutSection() {
         <div className="w-full lg:w-1/2 relative">
           <div className="relative rounded-3xl overflow-hidden shadow-2xl z-10">
             <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-transparent z-10 mix-blend-overlay"></div>
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
               alt="فريق العمل"
-              className="w-full h-auto object-cover hover:scale-105 transition-transform duration-700" />
-            
+              className="w-full h-auto object-cover hover:scale-105 transition-transform duration-700" 
+              width={800}
+              height={800}
+          />
           </div>
           {/* Decorative Background Elements */}
           <div className="absolute -bottom-6 -right-6 w-full h-full border-4 border-blue-600/20 rounded-3xl z-0"></div>

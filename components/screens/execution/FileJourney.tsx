@@ -5,6 +5,7 @@ import {
   RefreshCcwIcon,
   FlagIcon } from
 'lucide-react';
+import Image from 'next/image';
 export function FileJourney() {
   const phases = [
   {
@@ -49,13 +50,16 @@ export function FileJourney() {
   }];
 
   return (
-    <section className="py-[2%] relative overflow-hidden">
+    <section className="py-22 relative overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1497215842964-222b430dc094?w=1920&q=80"
           alt="مكتب حديث"
-          className="w-full h-full object-cover opacity-5" />
+          className="w-full h-full object-cover opacity-5"
+          width={1920}
+          height={1920}
+        />
         
       </div>
 
@@ -81,10 +85,13 @@ export function FileJourney() {
               
                 {/* Phase Image */}
                 <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-white shadow-xl mb-4 group-hover:scale-110 transition-transform duration-300 relative">
-                  <img
+                  <Image
                   src={phase.image}
                   alt={phase.title}
-                  className="w-full h-full object-cover" />
+                  className="w-full h-full object-cover"
+                  width={300}
+                  height={300}
+                />
                 
                   <div
                   className={`absolute inset-0 ${phase.color} opacity-30`}>

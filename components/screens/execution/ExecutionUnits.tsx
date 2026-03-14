@@ -3,9 +3,14 @@ import {
   SettingsIcon,
   ShieldIcon,
   MessageSquareIcon,
-  BarChart3Icon } from
+  BarChart3Icon,
+  LightbulbIcon } from
 'lucide-react';
+import { useLocale } from 'next-intl';
+import Image from 'next/image';
 export function ExecutionUnits() {
+  const locale = useLocale();
+  const isRTL = locale === 'ar';
   const units = [
   {
     title: 'وحدة الاستراتيجية والتخطيط',
@@ -46,6 +51,14 @@ export function ExecutionUnits() {
     gradient: 'from-purple-600 to-purple-400',
     image:
     'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80'
+  },
+  {
+    title: 'وحدة الابتكار والتطوير',
+    description: 'تطوير حلول جديدة وتحسين المنهجيات باستخدام أحدث التقنيات وأفضل الممارسات.',
+    icon: <LightbulbIcon className="w-6 h-6 text-white" />,
+    gradient: 'from-rose-600 to-rose-400',
+    image:
+    'https://images.unsplash.com/photo-1492724441997-5dc865305da7?w=600&q=80'
   }];
 
   return (
@@ -68,10 +81,13 @@ export function ExecutionUnits() {
             
               {/* Image Header with Gradient Overlay */}
               <div className="h-48 relative overflow-hidden">
-                <img
+                <Image
                 src={unit.image}
                 alt={unit.title}
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                width={600}
+                height={600}
+              />
               
                 <div
                 className={`absolute inset-0 bg-gradient-to-t ${unit.gradient} opacity-60 mix-blend-multiply`}>
@@ -80,7 +96,7 @@ export function ExecutionUnits() {
 
                 {/* Icon Badge */}
                 <div
-                className={`absolute bottom-4 right-4 w-12 h-12 rounded-xl bg-gradient-to-br ${unit.gradient} flex items-center justify-center shadow-lg border-2 border-white/30`}>
+                className={`absolute bottom-4 ${isRTL ? 'right-4' : 'left-4'} w-12 h-12 rounded-xl bg-gradient-to-br ${unit.gradient} flex items-center justify-center shadow-lg border-2 border-white/30`}>
                 
                   {unit.icon}
                 </div>

@@ -5,7 +5,11 @@ import {
   TrendingUpIcon,
   BarChartIcon } from
 'lucide-react';
+import Image from 'next/image';
+import { useLocale } from 'next-intl';
 export function QualityStandards() {
+  const locale = useLocale();
+  const isRTL = locale === 'ar';
   const standards = [
   {
     title: 'المعايير الدولية',
@@ -33,10 +37,10 @@ export function QualityStandards() {
   }];
 
   return (
-    <section className="py-[2%] bg-white px-[5%]">
+    <section className="p-[5%] bg-white">
       <div className=" mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-12">
-          <div className="w-full lg:w-1/2">
+          <div className={`w-full lg:w-1/2 text-center ${!isRTL ? 'md:text-left' : 'md:text-right'}`}>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
               معايير الجودة والتميز
             </h2>
@@ -52,11 +56,11 @@ export function QualityStandards() {
                 className="flex items-start p-4 rounded-xl hover:bg-gray-50 transition-colors duration-300 border border-transparent hover:border-gray-100">
                 
                   <div
-                  className={`flex-shrink-0 w-12 h-12 rounded-lg ${standard.color} flex items-center justify-center shadow-md ml-4`}>
+                  className={`flex-shrink-0 w-12 h-12 rounded-lg ${standard.color} flex items-center justify-center shadow-md ${isRTL ? 'ml-4' : 'mr-4'}`}>
                   
                     {standard.icon}
                   </div>
-                  <div>
+                  <div className={`${!isRTL ? 'text-left!' : 'text-right!'}`}>
                     <h3 className="text-xl font-bold text-gray-900 mb-1">
                       {standard.title}
                     </h3>
@@ -70,10 +74,13 @@ export function QualityStandards() {
           <div className="w-full lg:w-1/2 relative">
             {/* Main Image */}
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80"
                 alt="معايير الجودة"
-                className="w-full h-[480px] object-cover" />
+                className="w-full h-[480px] object-cover"
+                width={800}
+                height={800}
+              />
               
               <div className="absolute inset-0 bg-gradient-to-t from-blue-900/70 via-transparent to-transparent"></div>
             </div>
