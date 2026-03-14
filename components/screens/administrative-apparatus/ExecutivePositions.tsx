@@ -1,22 +1,26 @@
 "use client";
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 export function ExecutivePositions() {
   return (
     <section
       id="executives"
-      className="py-32 bg-slate-100 relative overflow-hidden">
+      className="pt-22 pb-33 bg-slate-100 relative overflow-hidden">
       
       {/* Hero-style banner image for section */}
       <div className="absolute top-0 start-0 w-full h-[500px] z-0">
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1431540015159-0f6e5d5e1f2f?w=1920&q=80"
           alt="Conference Room"
-          className="w-full h-full object-cover" />
+          className="w-full h-full object-cover"
+          width={1920}
+          height={1080}
+        />
         
         <div className="absolute inset-0 bg-gradient-to-b from-slate-900/80 via-slate-900/60 to-slate-100"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className=" mx-auto px-[5%] relative z-10">
         <div className="text-center max-w-4xl mx-auto mb-32 pt-10">
           <motion.h2
             initial={{
@@ -78,10 +82,13 @@ export function ExecutivePositions() {
             className="bg-gradient-to-br from-purple-500 to-indigo-600 rounded-3xl p-8 pt-20 shadow-2xl hover:shadow-[0_20px_50px_rgba(79,70,229,0.4)] hover:-translate-y-2 transition-all duration-300 relative text-white text-center">
             
             <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full border-4 border-white shadow-xl overflow-hidden">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80"
                 alt="رئيس مجلس الإدارة"
-                className="w-full h-full object-cover" />
+                className="w-full h-full object-cover"
+                width={400}
+                height={400}
+              />
               
             </div>
             <h3 className="text-2xl font-bold mb-4">رئيس مجلس الإدارة</h3>
@@ -112,10 +119,13 @@ export function ExecutivePositions() {
             className="bg-gradient-to-br from-blue-500 to-cyan-600 rounded-3xl p-8 pt-20 shadow-2xl hover:shadow-[0_20px_50px_rgba(6,182,212,0.4)] hover:-translate-y-2 transition-all duration-300 relative text-white text-center lg:translate-y-12">
             
             <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full border-4 border-white shadow-xl overflow-hidden">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80"
                 alt="الرئيس التنفيذي"
-                className="w-full h-full object-cover" />
+                className="w-full h-full object-cover"
+                width={400}
+                height={400}
+              />
               
             </div>
             <h3 className="text-2xl font-bold mb-4">الرئيس التنفيذي</h3>
@@ -146,10 +156,13 @@ export function ExecutivePositions() {
             className="bg-gradient-to-br from-teal-500 to-emerald-600 rounded-3xl p-8 pt-20 shadow-2xl hover:shadow-[0_20px_50px_rgba(16,185,129,0.4)] hover:-translate-y-2 transition-all duration-300 relative text-white text-center">
             
             <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full border-4 border-white shadow-xl overflow-hidden">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80"
                 alt="مدير إدارة الاستثمارات"
-                className="w-full h-full object-cover" />
+                className="w-full h-full object-cover"
+                width={400}
+                height={400}
+              />
               
             </div>
             <h3 className="text-2xl font-bold mb-4">مدير إدارة الاستثمارات</h3>
@@ -180,10 +193,13 @@ export function ExecutivePositions() {
             className="bg-gradient-to-br from-rose-500 to-pink-600 rounded-3xl p-8 pt-20 shadow-2xl hover:shadow-[0_20px_50px_rgba(225,29,72,0.4)] hover:-translate-y-2 transition-all duration-300 relative text-white text-center">
             
             <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full border-4 border-white shadow-xl overflow-hidden">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80"
                 alt="مدير الاستشارات الاستراتيجية"
-                className="w-full h-full object-cover" />
+                className="w-full h-full object-cover"
+                width={400}
+                height={400}
+              />
               
             </div>
             <h3 className="text-2xl font-bold mb-4">
@@ -216,10 +232,13 @@ export function ExecutivePositions() {
             className="bg-gradient-to-br from-amber-500 to-orange-600 rounded-3xl p-8 pt-20 shadow-2xl hover:shadow-[0_20px_50px_rgba(245,158,11,0.4)] hover:-translate-y-2 transition-all duration-300 relative text-white text-center lg:translate-y-12">
             
             <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full border-4 border-white shadow-xl overflow-hidden">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80"
                 alt="مدير تطوير المشاريع"
-                className="w-full h-full object-cover" />
+                className="w-full h-full object-cover"
+                width={400}
+                height={400}
+              />
               
             </div>
             <h3 className="text-2xl font-bold mb-4">مدير تطوير المشاريع</h3>
@@ -250,10 +269,13 @@ export function ExecutivePositions() {
             className="bg-gradient-to-br from-violet-500 to-purple-600 rounded-3xl p-8 pt-20 shadow-2xl hover:shadow-[0_20px_50px_rgba(139,92,246,0.4)] hover:-translate-y-2 transition-all duration-300 relative text-white text-center">
             
             <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full border-4 border-white shadow-xl overflow-hidden">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80"
                 alt="مدير الاستشارات المالية والمصرفية"
-                className="w-full h-full object-cover" />
+                className="w-full h-full object-cover"
+                width={400}
+                height={400}
+              />
               
             </div>
             <h3 className="text-2xl font-bold mb-4">
@@ -286,10 +308,13 @@ export function ExecutivePositions() {
             className="bg-gradient-to-br from-sky-500 to-blue-600 rounded-3xl p-8 pt-20 shadow-2xl hover:shadow-[0_20px_50px_rgba(14,165,233,0.4)] hover:-translate-y-2 transition-all duration-300 relative text-white text-center">
             
             <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full border-4 border-white shadow-xl overflow-hidden">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80"
                 alt="مدير الاستشارات القطاعية"
-                className="w-full h-full object-cover" />
+                className="w-full h-full object-cover"
+                width={400}
+                height={400}
+              />
               
             </div>
             <h3 className="text-2xl font-bold mb-4">
@@ -322,10 +347,13 @@ export function ExecutivePositions() {
             className="bg-gradient-to-br from-fuchsia-500 to-pink-600 rounded-3xl p-8 pt-20 shadow-2xl hover:shadow-[0_20px_50px_rgba(217,70,239,0.4)] hover:-translate-y-2 transition-all duration-300 relative text-white text-center lg:translate-y-12">
             
             <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full border-4 border-white shadow-xl overflow-hidden">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80"
                 alt="مدير العلاقات العامة والإعلام"
-                className="w-full h-full object-cover" />
+                className="w-full h-full object-cover"
+                width={400}
+                height={400}
+              />
               
             </div>
             <h3 className="text-2xl font-bold mb-4">
@@ -358,10 +386,13 @@ export function ExecutivePositions() {
             className="bg-gradient-to-br from-lime-500 to-green-600 rounded-3xl p-8 pt-20 shadow-2xl hover:shadow-[0_20px_50px_rgba(132,204,22,0.4)] hover:-translate-y-2 transition-all duration-300 relative text-white text-center">
             
             <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full border-4 border-white shadow-xl overflow-hidden">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80"
                 alt="مدير التسويق والإعلام الرقمي"
-                className="w-full h-full object-cover" />
+                className="w-full h-full object-cover"
+                width={400}
+                height={400}
+              />
               
             </div>
             <h3 className="text-2xl font-bold mb-4">
@@ -373,39 +404,6 @@ export function ExecutivePositions() {
             </p>
           </motion.div>
 
-          {/* Card 10 */}
-          <motion.div
-            initial={{
-              opacity: 0,
-              y: 50
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0
-            }}
-            viewport={{
-              once: true,
-              margin: '-50px'
-            }}
-            transition={{
-              duration: 0.5,
-              delay: 0.1
-            }}
-            className="bg-gradient-to-br from-red-500 to-rose-600 rounded-3xl p-8 pt-20 shadow-2xl hover:shadow-[0_20px_50px_rgba(239,68,68,0.4)] hover:-translate-y-2 transition-all duration-300 relative text-white text-center lg:col-start-2 lg:-mt-12">
-            
-            <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full border-4 border-white shadow-xl overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80"
-                alt="مدير الجودة والحوكمة"
-                className="w-full h-full object-cover" />
-              
-            </div>
-            <h3 className="text-2xl font-bold mb-4">مدير الجودة والحوكمة</h3>
-            <p className="text-white/90 leading-relaxed text-lg">
-              يشرف على تطبيق معايير الجودة والحوكمة المؤسسية وضمان الالتزام
-              بأفضل الممارسات المهنية.
-            </p>
-          </motion.div>
         </div>
       </div>
     </section>);

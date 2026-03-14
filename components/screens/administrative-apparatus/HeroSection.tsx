@@ -1,5 +1,7 @@
 "use client";
 import { motion } from 'framer-motion';
+import Link from 'next/link';
+import Image from 'next/image';
 export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-mesh-gradient animate-gradient-shift">
@@ -44,7 +46,7 @@ export function HeroSection() {
         className="absolute top-1/3 end-10 w-40 h-40 bg-amber-500/40 rounded-full blur-xl z-0" />
       
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-24 pb-12">
+        <div className="relative z-10 mx-auto px-[5%] w-full py-22">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           {/* Text Content (Right side in RTL) */}
           <div className="w-full lg:w-1/2 text-center lg:text-start">
@@ -101,7 +103,7 @@ export function HeroSection() {
                 duration: 0.8,
                 delay: 0.6
               }}
-              className="text-xl md:text-2xl text-white/95 mb-12 leading-relaxed text-shadow-md font-medium max-w-2xl mx-auto lg:mx-0">
+              className="text-xl md:text-2xl text-white/95 mb-12 leading-relaxed text-shadow-md font-medium mx-auto lg:mx-0">
               
               يعتمد نجاح أي مؤسسة على قوة منظومتها القيادية وقدرتها على تحويل
               الرؤية إلى نتائج ملموسة. وفي شركة الشيخ عبد العزيز بن عبد الله
@@ -127,12 +129,12 @@ export function HeroSection() {
                 delay: 0.8
               }}>
               
-              <a
+              <Link
                 href="#executives"
                 className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold rounded-full text-white bg-gradient-to-r from-rose-500 via-purple-500 to-blue-500 hover:from-rose-400 hover:via-purple-400 hover:to-blue-400 shadow-2xl hover:shadow-[0_20px_50px_rgba(225,29,72,0.5)] hover:-translate-y-2 transition-all duration-300 animate-gradient-shift">
                 
                 تعرف على فريقنا
-              </a>
+              </Link>
             </motion.div>
           </div>
 
@@ -158,10 +160,13 @@ export function HeroSection() {
                 animation: 'parallax-float 6s ease-in-out infinite'
               }}>
               
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80"
                 alt="Corporate Building"
-                className="w-full h-full object-cover" />
+                className="w-full h-full object-cover"
+                width={800}
+                height={800}
+              />
               
               <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/40 to-transparent mix-blend-overlay"></div>
             </motion.div>
@@ -186,10 +191,13 @@ export function HeroSection() {
                 animation: 'parallax-float 8s ease-in-out infinite reverse'
               }}>
               
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
                 alt="Business Meeting"
-                className="w-full h-full object-cover" />
+                className="w-full h-full object-cover"
+                width={800}
+                height={800}
+              />
               
               <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/40 to-transparent mix-blend-overlay"></div>
             </motion.div>
@@ -214,10 +222,13 @@ export function HeroSection() {
                 animation: 'parallax-float 7s ease-in-out infinite 1s'
               }}>
               
-              <img
+              <Image 
                 src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80"
                 alt="Modern Office"
-                className="w-full h-full object-cover" />
+                className="w-full h-full object-cover"
+                width={800}
+                height={800}
+              />
               
               <div className="absolute inset-0 bg-gradient-to-tr from-rose-500/40 to-transparent mix-blend-overlay"></div>
             </motion.div>

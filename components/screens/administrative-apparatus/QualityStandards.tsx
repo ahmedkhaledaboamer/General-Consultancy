@@ -1,7 +1,11 @@
 "use client";
 import { motion } from 'framer-motion';
 import { SearchIcon, MapIcon, AwardIcon, RefreshCwIcon } from 'lucide-react';
+import { useLocale } from 'next-intl';
+import Image from 'next/image';
 export function QualityStandards() {
+  const locale = useLocale();
+  const isRTL = locale === 'ar';
   return (
     <section className="py-32 bg-gradient-to-br from-cyan-50 to-teal-50 relative overflow-hidden">
       {/* Floating Decorative Dots */}
@@ -36,7 +40,7 @@ export function QualityStandards() {
         className="absolute top-1/2 start-1/2 w-16 h-16 rounded-full bg-amber-400/30 blur-md" />
       
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="mx-auto px-[5%] relative z-10">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           {/* Large Image Side */}
           <div className="w-full lg:w-5/12">
@@ -60,16 +64,19 @@ export function QualityStandards() {
               className="relative rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white">
               
               <div className="absolute inset-0 bg-gradient-to-tr from-teal-500/30 to-purple-500/30 mix-blend-overlay z-10"></div>
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
                 alt="Data Analytics"
-                className="w-full h-full object-cover" />
+                className="w-full h-full object-cover" 
+                width={800}
+                height={800}
+                />
               
             </motion.div>
           </div>
 
           {/* Content Side */}
-          <div className="w-full lg:w-7/12">
+          <div className={`w-full lg:w-7/12 text-center ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
             <motion.h2
               initial={{
                 opacity: 0,
