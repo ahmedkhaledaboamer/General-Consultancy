@@ -161,7 +161,7 @@ export function HeroSection() {
               }}>
               
               <Image
-                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80"
+                src="/imgs/A professional legal environme/image_20.webp"
                 alt="Corporate Building"
                 className="w-full h-full object-cover"
                 width={800}
@@ -192,7 +192,7 @@ export function HeroSection() {
               }}>
               
               <Image
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
+                src="/imgs/A professional legal investmen/image_44.webp"
                 alt="Business Meeting"
                 className="w-full h-full object-cover"
                 width={800}
@@ -223,7 +223,7 @@ export function HeroSection() {
               }}>
               
               <Image 
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80"
+                src="/imgs/A professional legal startup a/image_16.webp"
                 alt="Modern Office"
                 className="w-full h-full object-cover"
                 width={800}

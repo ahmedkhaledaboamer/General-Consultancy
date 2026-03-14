@@ -10,7 +10,7 @@ export function HeroSection() {
           className="absolute inset-0 bg-cover bg-center opacity-40 mix-blend-luminosity"
           style={{
             backgroundImage:
-            'url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80")'
+            'url("/imgs/A stunning clean energy landsc/image_61.webp")'
           }} />
         
         <div className="absolute inset-0 bg-gradient-to-br from-brand-indigo-dark via-brand-purple/80 to-brand-rose/70 opacity-90" />
@@ -36,7 +36,7 @@ export function HeroSection() {
         }}>
         
         <Image
-          src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80"
+          src="/imgs/A stunning clean technology fa/image_10.webp"
           alt="Business Meeting"
           className="w-full h-full object-cover"
           width={800}
@@ -65,7 +65,7 @@ export function HeroSection() {
         }}>
         
         <Image
-          src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80"
+          src="/imgs/A stunning coastal resort deve/image_42.webp"
           alt="Corporate Office"
           className="w-full h-full object-cover"
           width={800}

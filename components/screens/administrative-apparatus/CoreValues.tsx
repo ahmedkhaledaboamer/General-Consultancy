@@ -77,7 +77,7 @@ export function CoreValues() {
             className="relative h-80 md:h-96 lg:h-108 xl:h-120 2xl:h-132 rounded-3xl overflow-hidden shadow-2xl group hover:-translate-y-2 transition-all duration-500">
             
             <Image
-              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80"
+              src="/imgs/21 A modern office with floort/image_17.webp"
               alt="الاحترافية"
               className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               width={600}
@@ -117,7 +117,7 @@ export function CoreValues() {
             className="relative h-80 md:h-96 lg:h-108 xl:h-120 2xl:h-132 rounded-3xl overflow-hidden shadow-2xl group hover:-translate-y-2 transition-all duration-500">
             
             <Image
-              src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&q=80"
+              src="/imgs/24 A cozy startup office with/image_28.webp"
               alt="النزاهة"
               className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               width={600}
@@ -157,7 +157,7 @@ export function CoreValues() {
             className="relative h-80 md:h-96 lg:h-108 xl:h-120 2xl:h-132 rounded-3xl overflow-hidden shadow-2xl group hover:-translate-y-2 transition-all duration-500">
             
             <Image
-              src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&q=80"
+              src="/imgs/8 An elegant boardroom with a/image_3.webp"
               alt="الابتكار"
               className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               width={600}
@@ -197,7 +197,7 @@ export function CoreValues() {
             className="relative h-80 md:h-96 lg:h-108 xl:h-120 2xl:h-132 rounded-3xl overflow-hidden shadow-2xl group hover:-translate-y-2 transition-all duration-500">
             
             <Image
-              src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80"
+              src="/imgs/A corporate restructuring offi/image_6.webp"
               alt="المسؤولية"
               className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               width={600}
@@ -237,7 +237,7 @@ export function CoreValues() {
             className="relative h-80 md:h-96 lg:h-108 xl:h-120 2xl:h-132 rounded-3xl overflow-hidden shadow-2xl group hover:-translate-y-2 transition-all duration-500">
             
             <Image
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80"
+              src="/imgs/A corporate transformation cen/image_60.webp"
               alt="الشراكة"
               className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               width={600}
@@ -278,7 +278,7 @@ export function CoreValues() {
             className="relative h-80 md:h-96 lg:h-108 xl:h-120 2xl:h-132 rounded-3xl overflow-hidden shadow-2xl group hover:-translate-y-2 transition-all duration-500">
             
             <Image
-              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80"
+              src="/imgs/A dynamic startup environment/image_14.webp"
               alt="التميّز"
               className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               width={600}

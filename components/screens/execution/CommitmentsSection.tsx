@@ -10,28 +10,28 @@ export function CommitmentsSection() {
     description: 'الرد على جميع استفسارات العملاء خلال 24 ساعة.',
     icon: <ClockIcon className="w-8 h-8 text-blue-500" />,
     image:
-    'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=400&q=80'
+    '/imgs/A bustling small industrial zo/image_24.webp'
   },
   {
     title: 'متابعة مستمرة',
     description: 'متابعة دقيقة ومستمرة لجميع المشاريع.',
     icon: <ActivityIcon className="w-8 h-8 text-purple-500" />,
     image:
-    'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&q=80'
+    '/imgs/A busy customs facility with s/image_9.webp'
   },
   {
     title: 'حلول فورية',
     description: 'تقديم حلول فورية لأي تحديات أو عراقيل في التنفيذ.',
     icon: <WrenchIcon className="w-8 h-8 text-emerald-500" />,
     image:
-    'https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=400&q=80'
+    '/imgs/A clean industrial facility wi/image_34.webp'
   },
   {
     title: 'شفافية ومصداقية',
     description: 'تقارير دورية لضمان الشفافية والمصداقية.',
     icon: <FileTextIcon className="w-8 h-8 text-amber-500" />,
     image:
-    'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&q=80'
+    '/imgs/A cuttingedge industrial devel/image_43.webp'
   }];
 
   return (

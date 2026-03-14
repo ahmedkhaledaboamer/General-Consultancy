@@ -15,35 +15,35 @@ const approaches = [
   icon: SearchIcon,
   color: 'from-sky-400 to-blue-600',
   image:
-  'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&q=80'
+  '/imgs/A dynamic real estate investme/image_45.webp'
 },
 {
   text: 'التخطيط الاستراتيجي',
   icon: MapIcon,
   color: 'from-emerald-400 to-teal-600',
   image:
-  'https://images.unsplash.com/photo-1552664730-d307ca884978?w=300&q=80'
+  '/imgs/A dynamic real estate manageme/image_31.webp'
 },
 {
   text: 'تصميم الحلول',
   icon: PenToolIcon,
   color: 'from-violet-400 to-purple-600',
   image:
-  'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=300&q=80'
+  '/imgs/A dynamic regional expansion p/image_37.webp'
 },
 {
   text: 'التنفيذ والمتابعة',
   icon: PlayCircleIcon,
   color: 'from-magenta-400 to-pink-600',
   image:
-  'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=300&q=80'
+  '/imgs/A dynamic tech development stu/image_1.webp'
 },
 {
   text: 'التطوير المستمر',
   icon: RefreshCwIcon,
   color: 'from-gold to-amber',
   image:
-  'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=300&q=80'
+  '/imgs/A modern agricultural developm/image_33.webp'
 }];
 
 export function OurApproach() {

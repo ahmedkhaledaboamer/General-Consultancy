@@ -62,7 +62,7 @@ export function ExecutionPath() {
       {/* Background decorative image */}
       <div className="absolute inset-0 z-0 opacity-5">
         <Image
-          src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&q=80"
+          src="/imgs/A dynamic industrial project m/image_34.webp"
           alt=""
           className="w-full h-full object-cover"
           width={1920}
@@ -88,7 +88,7 @@ export function ExecutionPath() {
           <div className="lg:w-1/2">
             <div className="rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80"
+                src="/imgs/A dynamic investment project r/image_25.webp"
                 alt="المسار التنفيذي"
                 className="w-full h-64 md:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px] object-cover"
                 width={800}

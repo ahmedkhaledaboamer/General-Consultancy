@@ -10,7 +10,7 @@ export function FinalCTA() {
       {/* Background Image Collage Grid */}
       <div className="absolute inset-0 z-0 grid grid-cols-2 md:grid-cols-4 grid-rows-2 gap-1 opacity-40 mix-blend-luminosity">
         <Image
-          src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80"
+          src="/imgs/A modern mediumscale industria/image_58.webp"
           alt="Office"
           className="w-full h-full object-cover"
           width={600}
@@ -18,7 +18,7 @@ export function FinalCTA() {
         />
         
         <Image
-          src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80"
+          src="/imgs/A modern pharmaceutical invest/image_21.webp"
           alt="Success"
           className="w-full h-full object-cover"
           width={600}
@@ -26,7 +26,7 @@ export function FinalCTA() {
         />
         
         <Image
-          src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80"
+          src="/imgs/A modern pharmaceutical manufa/image_2.webp"
           alt="Team"
           className="w-full h-full object-cover"
           width={600}
@@ -34,7 +34,7 @@ export function FinalCTA() {
         />
         
         <Image
-          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80"
+          src="/imgs/A modern plastics manufacturin/image_32.webp"
           alt="City"
           className="w-full h-full object-cover"
           width={600}
@@ -42,7 +42,7 @@ export function FinalCTA() {
         />
         
         <Image
-          src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=600&q=80"
+          src="/imgs/A modern postal sorting facili/image_27.webp"
           alt="Trust"
           className="w-full h-full object-cover"
           width={600}
@@ -50,7 +50,7 @@ export function FinalCTA() {
         />
         
         <Image
-          src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80"
+          src="/imgs/A modern residential real esta/image_27.webp"
           alt="Growth"
           className="w-full h-full object-cover"
           width={600}
@@ -58,7 +58,7 @@ export function FinalCTA() {
         />
         
         <Image
-          src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&q=80"
+          src="/imgs/A modern veterinary hospital w/image_47.webp"
           alt="Leadership"
           className="w-full h-full object-cover"
           width={600}
@@ -66,7 +66,7 @@ export function FinalCTA() {
         />
         
         <Image
-          src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80"
+          src="/imgs/A stunning beachfront resort w/image_14.webp"
           alt="Strategy"
           className="w-full h-full object-cover"
           width={600}

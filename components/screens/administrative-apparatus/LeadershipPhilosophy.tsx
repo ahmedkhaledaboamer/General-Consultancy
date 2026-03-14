@@ -81,7 +81,7 @@ export function LeadershipPhilosophy() {
             
             <div className="relative h-64 md:h-72 lg:h-80 2xl:h-96 overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&q=80"
+                src="/imgs/A sophisticated corporate fina/image_18.webp"
                 alt="الرؤية الواضحة"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 width={600}
@@ -126,7 +126,7 @@ export function LeadershipPhilosophy() {
             
             <div className="relative h-64 md:h-72 lg:h-80 2xl:h-96 overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80"
+                src="/imgs/A sophisticated corporate real/image_30.webp"
                 alt="الإدارة الاحترافية"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 width={600}
@@ -171,7 +171,7 @@ export function LeadershipPhilosophy() {
             
             <div className="relative h-64 md:h-72 lg:h-80 2xl:h-96 overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80"
+                src="/imgs/A strategic corporate advisory/image_47.webp"
                 alt="العمل التكاملي"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 width={600}

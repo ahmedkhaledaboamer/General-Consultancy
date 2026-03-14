@@ -32,7 +32,7 @@ export function IntroSection() {
         }}>
         
         <Image
-          src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=80"
+          src="/imgs/A stunning ecolodge in pristin/image_52.webp"
           alt="Data"
           className="w-full h-full object-cover"
           width={400}
@@ -60,7 +60,7 @@ export function IntroSection() {
         }}>
         
         <Image
-          src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&q=80"
+          src="/imgs/A stunning green cityscape wit/image_7.webp"
           alt="Strategy"
           className="w-full h-full object-cover"
           width={400}
@@ -92,7 +92,7 @@ export function IntroSection() {
             <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-white">
               <div className="absolute inset-0 bg-gradient-to-tr from-brand-purple/40 to-transparent mix-blend-overlay z-10" />
               <Image
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80"
+                src="/imgs/A stunning modern university c/image_63.webp"
                 alt="Team Collaboration"
                 className="w-full h-[500px] md:h-[600px] lg:h-[700px] xl:h-[800px] 2xl:h-[900px] object-cover transform hover:scale-105 transition-transform duration-700"
                 width={1200}

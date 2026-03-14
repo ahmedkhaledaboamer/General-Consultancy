@@ -15,7 +15,7 @@ const features = [
   icon: BriefcaseIcon,
   gradient: 'from-brand-purple to-brand-pink',
   thumb:
-  'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=100&q=80'
+  '/imgs/A sophisticated investment off/image_4.webp'
 },
 {
   title: 'منهجية عمل متكاملة',
@@ -23,7 +23,7 @@ const features = [
   icon: SettingsIcon,
   gradient: 'from-brand-blue to-brand-cyan',
   thumb:
-  'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=100&q=80'
+  '/imgs/A futuristic fintech environme/image_19.webp'
 },
 {
   title: 'التزام بالمصداقية والشفافية',
@@ -31,7 +31,7 @@ const features = [
   icon: ShieldCheckIcon,
   gradient: 'from-brand-teal to-brand-emerald',
   thumb:
-  'https://images.unsplash.com/photo-1556761175-4b46a572b786?w=100&q=80'
+  '/imgs/A sophisticated tax planning o/image_53.webp'
 },
 {
   title: 'حلول مرنة ومبتكرة',
@@ -39,7 +39,7 @@ const features = [
   icon: SparklesIcon,
   gradient: 'from-brand-orange to-brand-amber',
   thumb:
-  'https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=100&q=80'
+  '/imgs/25 A serene environmental rese/image_19.webp'
 },
 {
   title: 'تواصل مستمر ومؤثر',
@@ -47,7 +47,7 @@ const features = [
   icon: MessageCircleIcon,
   gradient: 'from-brand-rose to-brand-pink',
   thumb:
-  'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=100&q=80'
+  '/imgs/A dramatic urban development p/image_41.webp'
 }];
 
 export function WhatMakesDifferent() {
@@ -73,7 +73,7 @@ export function WhatMakesDifferent() {
           }}>
           
           <Image
-            src="https://images.unsplash.com/photo-1497215842964-222b430dc094?w=1920&q=80"
+            src="/imgs/A strategic government advisor/image_39.webp"
             alt="Modern Workspace"
             className="absolute inset-0 w-full h-full object-cover"
             width={1920}
@@ -209,7 +209,7 @@ export function WhatMakesDifferent() {
           }}>
           
           <img
-            src="https://images.unsplash.com/photo-1557682250-33bd709cbe85?w=1200&q=80"
+            src="/imgs/A futuristic digital health en/image_30.webp"
             alt="Abstract Colorful"
             className="absolute inset-0 w-full h-full object-cover" />
           

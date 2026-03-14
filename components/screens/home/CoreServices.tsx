@@ -17,7 +17,7 @@ const services = [
   'نقدم منظومة متكاملة لإدارة الاستثمارات وتطوير المحافظ الاستثمارية بما يحقق عوائد مستدامة ويعزز القيمة الاقتصادية للمشاريع.',
   icon: TrendingUpIcon,
   image:
-  'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&q=80',
+  '/imgs/A dynamic Gulf region expansio/image_7.webp',
   color: 'sky',
   gradient: 'from-sky-500 to-blue-600',
   items: [
@@ -37,7 +37,7 @@ const services = [
   'نقدم خدمات استشارية متخصصة في المجال المالي والمصرفي تساعد المؤسسات والمستثمرين على بناء هياكل مالية قوية.',
   icon: LandmarkIcon,
   image:
-  'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80',
+  '/imgs/A dynamic international expans/image_58.webp',
   color: 'emerald',
   gradient: 'from-emerald-400 to-teal-600',
   items: [
@@ -55,7 +55,7 @@ const services = [
   'نساعد المؤسسات على تطوير استراتيجيات فعالة تحقق النمو والاستدامة في الأسواق التنافسية.',
   icon: CompassIcon,
   image:
-  'https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80',
+  '/imgs/A dynamic manufacturing enviro/image_5.webp',
   color: 'violet',
   gradient: 'from-violet-500 to-purple-700',
   items: [
@@ -73,7 +73,7 @@ const services = [
   'نقدم خدمات استشارية متقدمة في القطاع الصحي لدعم المؤسسات الصحية في تطوير خدماتها وتحسين كفاءتها التشغيلية.',
   icon: HeartPulseIcon,
   image:
-  'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&q=80',
+  '/imgs/A dynamic market entry environ/image_10.webp',
   color: 'rose',
   gradient: 'from-rose-400 to-pink-600',
   items: [

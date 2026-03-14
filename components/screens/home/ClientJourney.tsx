@@ -10,7 +10,7 @@ const steps = [
   number: '01',
   color: 'from-sky-400 to-blue-600',
   image:
-  'https://images.unsplash.com/photo-1573164713988-8665fc963095?w=200&q=80'
+  '/imgs/18 A vibrant African marketpla/image_5.webp'
 },
 {
   title: 'التحليل والتقييم',
@@ -18,7 +18,7 @@ const steps = [
   number: '02',
   color: 'from-emerald-400 to-teal-600',
   image:
-  'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&q=80'
+  '/imgs/29 A dynamic trading floor wit/image_29.webp'
 },
 {
   title: 'بناء المسار الاستراتيجي',
@@ -27,7 +27,7 @@ const steps = [
   number: '03',
   color: 'from-violet-400 to-purple-600',
   image:
-  'https://images.unsplash.com/photo-1552664730-d307ca884978?w=200&q=80'
+  '/imgs/A dynamic educational environm/image_75.webp'
 },
 {
   title: 'التنفيذ والمتابعة',
@@ -35,7 +35,7 @@ const steps = [
   number: '04',
   color: 'from-magenta-400 to-pink-600',
   image:
-  'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=200&q=80'
+  '/imgs/A dynamic esports arena with m/image_56.webp'
 },
 {
   title: 'التطوير والنمو',
@@ -44,7 +44,7 @@ const steps = [
   number: '05',
   color: 'from-gold to-amber',
   image:
-  'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=200&q=80'
+  '/imgs/A dynamic financial environmen/image_4.webp'
 }];
 
 export function ClientJourney() {
@@ -55,7 +55,7 @@ export function ClientJourney() {
       {/* Background Image with Colorful Gradient Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80"
+          src="/imgs/A dynamic financial services e/image_42.webp"
           alt="Modern Office"
           className="w-full h-full object-cover"
           width={1920}

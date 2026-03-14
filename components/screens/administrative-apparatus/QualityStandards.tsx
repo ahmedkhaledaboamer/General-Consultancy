@@ -65,7 +65,7 @@ export function QualityStandards() {
               
               <div className="absolute inset-0 bg-gradient-to-tr from-teal-500/30 to-purple-500/30 mix-blend-overlay z-10"></div>
               <Image
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
+                src="/imgs/A vibrant tech startup managem/image_46.webp"
                 alt="Data Analytics"
                 className="w-full h-full object-cover" 
                 width={800}

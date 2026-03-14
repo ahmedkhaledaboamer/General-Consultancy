@@ -12,7 +12,7 @@ const cards = [
   desc: 'التي توجه كل سلوك وقرار.',
   icon: CompassIcon,
   image:
-  'https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=800&q=80',
+  '/imgs/A stunning contemporary art mu/image_23.webp',
   gradient: 'from-brand-purple/90 to-brand-pink/90',
   delay: 0.1
 },
@@ -21,7 +21,7 @@ const cards = [
   desc: 'التي تضمن الحلول الفعالة والمستدامة.',
   icon: RocketIcon,
   image:
-  'https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=800&q=80',
+  '/imgs/A stunning cultural tourism de/image_25.webp',
   gradient: 'from-brand-blue/90 to-brand-cyan/90',
   delay: 0.2
 },
@@ -30,7 +30,7 @@ const cards = [
   desc: 'بتقديم الأفضل دائمًا.',
   icon: HandshakeIcon,
   image:
-  'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80',
+  '/imgs/A stunning desert camp with lu/image_45.webp',
   gradient: 'from-brand-orange/90 to-brand-amber/90',
   delay: 0.3
 },
@@ -39,7 +39,7 @@ const cards = [
   desc: 'الطريقة التي نثبت بها مصداقيتنا من خلال الأداء والنتائج الملموسة.',
   icon: BarChart3Icon,
   image:
-  'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80',
+  '/imgs/A stunning desert tourism camp/image_8.webp',
   gradient: 'from-brand-teal/90 to-brand-emerald/90',
   delay: 0.4
 }];

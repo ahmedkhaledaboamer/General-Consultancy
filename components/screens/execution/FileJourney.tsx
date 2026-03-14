@@ -14,7 +14,7 @@ export function FileJourney() {
     icon: <InboxIcon className="w-6 h-6" />,
     color: 'bg-blue-500',
     image:
-    'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=300&q=80'
+    '/imgs/A dynamic tourism project mana/image_38.webp'
   },
   {
     title: 'مرحلة التخطيط',
@@ -22,7 +22,7 @@ export function FileJourney() {
     icon: <MapPinIcon className="w-6 h-6" />,
     color: 'bg-indigo-500',
     image:
-    'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=300&q=80'
+    '/imgs/A dynamic tourism project offi/image_55.webp'
   },
   {
     title: 'مرحلة التنفيذ',
@@ -30,7 +30,7 @@ export function FileJourney() {
     icon: <PlayCircleIcon className="w-6 h-6" />,
     color: 'bg-purple-500',
     image:
-    'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=300&q=80'
+    '/imgs/A futuristic industrial transf/image_1.webp'
   },
   {
     title: 'مرحلة المراجعة والتحسين',
@@ -38,7 +38,7 @@ export function FileJourney() {
     icon: <RefreshCcwIcon className="w-6 h-6" />,
     color: 'bg-pink-500',
     image:
-    'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=300&q=80'
+    '/imgs/A futuristic logistics command/image_65.webp'
   },
   {
     title: 'مرحلة التسليم النهائي',
@@ -46,7 +46,7 @@ export function FileJourney() {
     icon: <FlagIcon className="w-6 h-6" />,
     color: 'bg-emerald-500',
     image:
-    'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=300&q=80'
+    '/imgs/A modern healthcare project de/image_71.webp'
   }];
 
   return (
@@ -54,7 +54,7 @@ export function FileJourney() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1497215842964-222b430dc094?w=1920&q=80"
+          src="/imgs/A modern industrial environmen/image_11.webp"
           alt="مكتب حديث"
           className="w-full h-full object-cover opacity-5"
           width={1920}

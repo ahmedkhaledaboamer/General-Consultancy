@@ -7,7 +7,7 @@ export function BrandPromise() {
       {/* Full Background Image with Multi-color Gradient Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1557682250-33bd709cbe85?w=1920&q=80"
+          src="/imgs/17 A grand government building/image_26.webp"
           alt="Abstract Colorful"
           className="w-full h-full object-cover"
         width={1920}
@@ -43,7 +43,7 @@ export function BrandPromise() {
         }}>
         
         <Image
-          src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=400&q=80"
+          src="/imgs/26 A luxurious hotel lobby wit/image_8.webp"
           alt="Handshake"
           className="w-full h-full object-cover"
           width={400}
@@ -70,7 +70,7 @@ export function BrandPromise() {
         }}>
         
         <Image
-          src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=400&q=80"
+          src="/imgs/A grand municipal building wit/image_0.webp"
           alt="Trust"
           className="w-full h-full object-cover"
           width={400}
@@ -97,7 +97,7 @@ export function BrandPromise() {
         }}>
         
         <Image
-          src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&q=80"
+          src="/imgs/A luxurious hotel suite with s/image_18.webp"
           alt="Leadership"
           className="w-full h-full object-cover"
           width={400}

@@ -17,7 +17,7 @@ export function EntityDictionary() {
     borderColor: 'border-blue-500',
     bgColor: 'bg-blue-50',
     image:
-    'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&q=80'
+    '/imgs/A dynamic commercial project d/image_8.webp'
   },
   {
     title: 'المسار التنفيذي',
@@ -26,7 +26,7 @@ export function EntityDictionary() {
     borderColor: 'border-purple-500',
     bgColor: 'bg-purple-50',
     image:
-    'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&q=80'
+    '/imgs/A dynamic commercial project m/image_59.webp'
   },
   {
     title: 'معايير الجودة',
@@ -35,7 +35,7 @@ export function EntityDictionary() {
     borderColor: 'border-emerald-500',
     bgColor: 'bg-emerald-50',
     image:
-    'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&q=80'
+    '/imgs/A dynamic educational project/image_6.webp'
   },
   {
     title: 'مستويات الخدمة',
@@ -44,7 +44,7 @@ export function EntityDictionary() {
     borderColor: 'border-amber-500',
     bgColor: 'bg-amber-50',
     image:
-    'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&q=80'
+    '/imgs/A dynamic healthcare project m/image_39.webp'
   }];
 
   return (
@@ -52,7 +52,7 @@ export function EntityDictionary() {
       <div className=" mx-auto">
         <div className="flex flex-col items-center justify-center relative rounded-3xl overflow-hidden mb-16 h-64 md:h-80 lg:h-[500px] xl:h-[600px] 2xl:h-[700px]">
           <Image
-            src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1200&q=80"
+            src="/imgs/A dynamic industrial developme/image_5.webp"
             alt="قاموس الكيان"
             className="w-full h-full object-cover"
             width={1200}
