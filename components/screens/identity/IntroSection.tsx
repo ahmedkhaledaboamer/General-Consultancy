@@ -1,8 +1,13 @@
 "use client";
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { useLocale } from 'next-intl';
 export function IntroSection() {
+  const locale = useLocale();
+  const isRTL = locale === 'ar';
+
   return (
-    <section className="relative py-24 md:py-32 bg-mesh overflow-hidden">
+    <section id="about" className="relative py-24 bg-mesh overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute top-20 right-10 w-32 h-32 bg-brand-purple/20 rounded-full blur-2xl animate-pulse-slow" />
       <div className="absolute bottom-20 left-10 w-48 h-48 bg-brand-pink/20 rounded-full blur-3xl animate-pulse-slow animation-delay-2000" />
@@ -26,10 +31,13 @@ export function IntroSection() {
           delay: 0.4
         }}>
         
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=80"
           alt="Data"
-          className="w-full h-full object-cover" />
+          className="w-full h-full object-cover"
+          width={400}
+          height={400}
+        />
         
       </motion.div>
 
@@ -51,14 +59,17 @@ export function IntroSection() {
           delay: 0.6
         }}>
         
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&q=80"
           alt="Strategy"
-          className="w-full h-full object-cover" />
+          className="w-full h-full object-cover"
+          width={400}
+          height={400}
+        />
         
       </motion.div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+      <div className=" mx-auto px-[5%] md:px-[10%] relative z-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Image Side */}
           <motion.div
@@ -80,10 +91,13 @@ export function IntroSection() {
             
             <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-white">
               <div className="absolute inset-0 bg-gradient-to-tr from-brand-purple/40 to-transparent mix-blend-overlay z-10" />
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80"
                 alt="Team Collaboration"
-                className="w-full h-[500px] object-cover transform hover:scale-105 transition-transform duration-700" />
+                className="w-full h-[500px] object-cover transform hover:scale-105 transition-transform duration-700"
+                width={1200}
+                height={1200}
+              />
               
             </div>
             {/* Decorative dots pattern behind image */}
@@ -92,7 +106,6 @@ export function IntroSection() {
 
           {/* Text Side */}
           <motion.div
-            className="order-1 lg:order-2"
             initial={{
               opacity: 0,
               x: -50
@@ -107,10 +120,11 @@ export function IntroSection() {
             transition={{
               duration: 0.8,
               delay: 0.2
-            }}>
+            }}
+            className={`order-1 lg:order-2 text-center flex flex-col items-center justify-center md:items-start ${isRTL ? 'md:text-right ' : 'md:text-left '}`}>
             
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-brand-purple/10 text-brand-purple font-tajawal font-bold mb-6 border border-brand-purple/20">
-              <span className="w-2 h-2 rounded-full bg-brand-purple mr-2 animate-pulse" />
+              <span className={`w-2 h-2 rounded-full bg-brand-purple animate-pulse ${isRTL ? 'ml-2' : 'mr-2'}`} />
               من نحن
             </div>
 

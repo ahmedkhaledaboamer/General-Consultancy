@@ -1,14 +1,18 @@
 "use client";
 import { motion } from 'framer-motion';
 import { CheckCircleIcon } from 'lucide-react';
+import { useLocale } from 'next-intl';
+import Image from 'next/image';
 export function VisionMission() {
+  const locale = useLocale();
+  const isRTL = locale === 'ar';
   return (
-    <section className="py-24 md:py-32 bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-24 bg-white overflow-hidden">
+      <div className="mx-auto px-[5%]">
         {/* Mission Section */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-32 relative">
           <motion.div
-            className="lg:col-span-5"
+            className={`lg:col-span-5 flex flex-col items-center justify-center text-center md:items-start ${isRTL ? 'md:text-right ' : 'md:text-left '}`}
             initial={{
               opacity: 0,
               x: 50
@@ -38,10 +42,13 @@ export function VisionMission() {
 
             {/* Small decorative thumbnail */}
             <div className="absolute -bottom-10 -right-10 w-32 h-32 rounded-2xl overflow-hidden border-4 border-white shadow-2xl z-20 hidden md:block">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&q=80"
                 alt="Success"
-                className="w-full h-full object-cover" />
+                className="w-full h-full object-cover"
+                width={400}
+                height={400}
+              />
               
             </div>
           </motion.div>
@@ -67,11 +74,13 @@ export function VisionMission() {
             <div className="absolute -inset-4 bg-gradient-to-tr from-brand-pink via-brand-purple to-brand-orange rounded-[2.5rem] opacity-50 blur-lg" />
             <div className="relative h-80 lg:h-[500px] rounded-[2rem] overflow-hidden shadow-2xl border-8 border-white">
               <div className="absolute inset-0 bg-brand-purple/10 mix-blend-overlay z-10" />
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80"
                 alt="Strategy Planning"
-                className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700" />
-              
+                className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700" 
+                width={1200}
+                height={1200}
+              />
             </div>
           </motion.div>
         </div>
@@ -107,25 +116,29 @@ export function VisionMission() {
             <div className="absolute -inset-4 bg-gradient-to-bl from-brand-teal via-brand-blue to-brand-indigo rounded-[2.5rem] opacity-50 blur-lg" />
             <div className="relative h-80 lg:h-[500px] rounded-[2rem] overflow-hidden shadow-2xl border-8 border-white">
               <div className="absolute inset-0 bg-brand-teal/10 mix-blend-overlay z-10" />
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80"
                 alt="Growth Chart"
-                className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700" />
-              
+                className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700" 
+                width={1200}
+                height={1200}
+              />
             </div>
 
             {/* Small decorative thumbnail */}
             <div className="absolute -top-10 -left-10 w-32 h-32 rounded-2xl overflow-hidden border-4 border-white shadow-2xl z-20 hidden md:block">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1557682250-33bd709cbe85?w=400&q=80"
                 alt="Abstract"
-                className="w-full h-full object-cover" />
-              
+                className="w-full h-full object-cover"
+                width={400}
+                height={400}
+              />
             </div>
           </motion.div>
 
           <motion.div
-            className="lg:col-span-5 order-1 lg:order-2"
+            className={`lg:col-span-5 order-1 lg:order-2 flex flex-col items-center justify-center text-center md:items-start ${isRTL ? 'md:text-right ' : 'md:text-left'}`}
             initial={{
               opacity: 0,
               x: -50
@@ -152,19 +165,19 @@ export function VisionMission() {
               والاستثمارية، من خلال:
             </p>
             <ul className="space-y-6 font-tajawal text-xl text-gray-700">
-              <li className="flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+              <li className={`${isRTL ? 'text-right' : 'text-left'} flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow`}>
                 <div className="w-10 h-10 rounded-full bg-brand-emerald/10 flex items-center justify-center flex-shrink-0">
                   <CheckCircleIcon className="text-brand-emerald w-6 h-6" />
                 </div>
                 <span className="font-bold">قيادة مبتكرة ومؤثرة</span>
               </li>
-              <li className="flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+              <li className={`${isRTL ? 'text-right' : 'text-left'} flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow`}>
                 <div className="w-10 h-10 rounded-full bg-brand-emerald/10 flex items-center justify-center flex-shrink-0">
                   <CheckCircleIcon className="text-brand-emerald w-6 h-6" />
                 </div>
                 <span className="font-bold">تطوير حلول مستدامة</span>
               </li>
-              <li className="flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+              <li className={`${isRTL ? 'text-right' : 'text-left'} flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow`}>
                 <div className="w-10 h-10 rounded-full bg-brand-emerald/10 flex items-center justify-center flex-shrink-0">
                   <CheckCircleIcon className="text-brand-emerald w-6 h-6" />
                 </div>

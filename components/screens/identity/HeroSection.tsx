@@ -1,5 +1,6 @@
 "use client";
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-brand-indigo-dark pt-20 pb-32 px-4 sm:px-6 lg:px-8">
@@ -34,10 +35,13 @@ export function HeroSection() {
           transform: 'rotate(6deg)'
         }}>
         
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80"
           alt="Business Meeting"
-          className="w-full h-full object-cover" />
+          className="w-full h-full object-cover"
+          width={800}
+          height={800}
+        />
         
         <div className="absolute inset-0 bg-brand-purple/20 mix-blend-overlay" />
       </motion.div>
@@ -60,10 +64,13 @@ export function HeroSection() {
           transform: 'rotate(-8deg)'
         }}>
         
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80"
           alt="Corporate Office"
-          className="w-full h-full object-cover" />
+          className="w-full h-full object-cover"
+          width={800}
+          height={800}
+        />
         
         <div className="absolute inset-0 bg-brand-orange/20 mix-blend-overlay" />
       </motion.div>
@@ -152,7 +159,14 @@ export function HeroSection() {
             delay: 0.6
           }}>
           
-          <button className="group relative inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-white transition-all duration-300 bg-gradient-to-r from-brand-coral to-brand-orange font-cairo rounded-full hover:scale-105 hover:shadow-[0_0_40px_rgba(249,115,22,0.5)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-orange overflow-hidden">
+          <button className="cursor-pointer group relative inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-white transition-all duration-300 bg-gradient-to-r from-brand-coral to-brand-orange font-cairo rounded-full hover:scale-105 hover:shadow-[0_0_40px_rgba(249,115,22,0.5)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-orange overflow-hidden"
+            onClick={() => {
+              window.scrollTo({
+                top: document.getElementById('about')?.offsetTop,
+                behavior: 'smooth'
+              });
+            }}
+          >
             <span className="relative z-10">
               اكتشف هويتنا المؤسسية وتأثيرها على شركائنا
             </span>
@@ -169,12 +183,31 @@ export function HeroSection() {
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
-          preserveAspectRatio="none">
-          
+          preserveAspectRatio="none"
+        >
+          <defs>
+            <linearGradient
+              id="waveGradient"
+              x1="0%"
+              y1="0%"
+              x2="100%"
+              y2="80%"
+              gradientUnits="objectBoundingBox"
+            >
+              <stop offset="0%" stopColor="#ffb87a" stopOpacity="0.15" />
+              <stop offset="15%" stopColor="#ffdbde" stopOpacity="0.15" />
+              <stop offset="30%" stopColor="#ff85ad" stopOpacity="0.15" />
+              <stop offset="45%" stopColor="#1fddff" stopOpacity="0.15" />
+              <stop offset="60%" stopColor="#6b66ff" stopOpacity="0.15" />
+              <stop offset="80%" stopColor="#ffb58a" stopOpacity="0.15" />
+              <stop offset="100%" stopColor="#ff85a7" stopOpacity="0.15" />
+            </linearGradient>
+          </defs>
+
           <path
             d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.08,130.83,119.2,192.39,101.3Z"
-            className="fill-gray-50">
-          </path>
+            fill="url(#waveGradient)"
+          />
         </svg>
       </div>
     </section>);

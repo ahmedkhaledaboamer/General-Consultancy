@@ -1,15 +1,20 @@
 "use client";
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { useLocale } from 'next-intl';
 export function EntityStatement() {
+  const locale = useLocale();
+  const isRTL = locale === 'ar';
+
   return (
-    <section className="relative py-24 md:py-32 bg-gradient-to-br from-brand-indigo-dark via-brand-purple-dark to-brand-indigo overflow-hidden">
+    <section className="relative py-24 bg-gradient-to-br from-brand-indigo-dark via-brand-purple-dark to-brand-indigo overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute top-0 right-0 w-full h-full overflow-hidden opacity-30 pointer-events-none">
         <div className="absolute -top-24 -right-24 w-[500px] h-[500px] bg-brand-pink rounded-full blur-[100px] animate-pulse-slow" />
         <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-brand-blue rounded-full blur-[120px] animate-pulse-slow animation-delay-2000" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="mx-auto px-[5%] relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Creative Image Collage */}
           <motion.div
@@ -32,10 +37,13 @@ export function EntityStatement() {
             {/* Main large image */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 rounded-3xl overflow-hidden shadow-2xl border-4 border-white/10 z-10">
               <div className="absolute inset-0 bg-brand-indigo/20 mix-blend-overlay z-10" />
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800&q=80"
                 alt="Modern Architecture"
-                className="w-full h-full object-cover" />
+                className="w-full h-full object-cover"
+                width={800}
+                height={800}
+              />
               
             </div>
 
@@ -51,10 +59,13 @@ export function EntityStatement() {
                 ease: 'easeInOut'
               }}>
               
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&q=80"
                 alt="Leadership"
-                className="w-full h-full object-cover" />
+                className="w-full h-full object-cover"
+                width={800}
+                height={800}
+              />
               
             </motion.div>
 
@@ -71,10 +82,13 @@ export function EntityStatement() {
                 delay: 1
               }}>
               
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800&q=80"
                 alt="Partnership"
-                className="w-full h-full object-cover" />
+                className="w-full h-full object-cover"
+                width={800}
+                height={800}
+              />
               
             </motion.div>
           </motion.div>
@@ -95,7 +109,9 @@ export function EntityStatement() {
             transition={{
               duration: 0.8,
               delay: 0.2
-            }}>
+            }}
+            
+            className={`text-center ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
             
             <h2 className="text-4xl md:text-6xl font-cairo font-bold text-white mb-8 drop-shadow-lg">
               بيان الكيان

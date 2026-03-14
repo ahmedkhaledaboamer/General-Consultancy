@@ -7,6 +7,7 @@ import {
   SparklesIcon,
   MessageCircleIcon } from
 'lucide-react';
+import Image from 'next/image';
 const features = [
 {
   title: 'خبرة متخصصة وعميقة',
@@ -51,8 +52,8 @@ const features = [
 
 export function WhatMakesDifferent() {
   return (
-    <section className="py-24 md:py-32 bg-mesh relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section className="py-24 bg-mesh relative overflow-hidden">
+      <div className="mx-auto px-[5%] relative z-10">
         {/* Large Image Banner */}
         <motion.div
           className="relative w-full h-80 rounded-[2.5rem] overflow-hidden shadow-2xl mb-20"
@@ -71,14 +72,16 @@ export function WhatMakesDifferent() {
             duration: 0.8
           }}>
           
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1497215842964-222b430dc094?w=1920&q=80"
             alt="Modern Workspace"
-            className="absolute inset-0 w-full h-full object-cover" />
-          
+            className="absolute inset-0 w-full h-full object-cover"
+            width={1920}
+            height={1080}
+          />
           <div className="absolute inset-0 bg-gradient-to-r from-brand-indigo-dark/90 via-brand-purple/80 to-transparent" />
           <div className="absolute inset-0 flex items-center px-10 md:px-20">
-            <h2 className="text-4xl md:text-6xl font-cairo font-bold text-white drop-shadow-xl max-w-2xl leading-tight">
+            <h2 className="mx-auto text-center text-4xl md:text-6xl font-cairo font-bold text-white drop-shadow-xl leading-tight">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow to-brand-orange">
                 ما الذي يجعلنا
               </span>{' '}

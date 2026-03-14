@@ -1,49 +1,77 @@
 "use client";
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useLocale } from 'next-intl';
 export function FinalCTA() {
+  const locale = useLocale();
   return (
     <section className="relative py-32 md:py-48 overflow-hidden">
       {/* Background Image Collage Grid */}
       <div className="absolute inset-0 z-0 grid grid-cols-2 md:grid-cols-4 grid-rows-2 gap-1 opacity-40 mix-blend-luminosity">
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80"
           alt="Office"
-          className="w-full h-full object-cover" />
+          className="w-full h-full object-cover"
+          width={600}
+          height={600}
+        />
         
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80"
           alt="Success"
-          className="w-full h-full object-cover" />
+          className="w-full h-full object-cover"
+          width={600}
+          height={600}
+        />
         
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80"
           alt="Team"
-          className="w-full h-full object-cover" />
+          className="w-full h-full object-cover"
+          width={600}
+          height={600}
+        />
         
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80"
           alt="City"
-          className="w-full h-full object-cover" />
+          className="w-full h-full object-cover"
+          width={600}
+          height={600}
+        />
         
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=600&q=80"
           alt="Trust"
-          className="w-full h-full object-cover" />
+          className="w-full h-full object-cover"
+          width={600}
+          height={600}
+        />
         
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80"
           alt="Growth"
-          className="w-full h-full object-cover" />
+          className="w-full h-full object-cover"
+          width={600}
+          height={600}
+        />
         
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&q=80"
           alt="Leadership"
-          className="w-full h-full object-cover" />
+          className="w-full h-full object-cover"
+          width={600}
+          height={600}
+        />
         
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80"
           alt="Strategy"
-          className="w-full h-full object-cover" />
+          className="w-full h-full object-cover"
+          width={600}
+          height={600}
+        />
         
       </div>
 
@@ -63,7 +91,7 @@ export function FinalCTA() {
         <div className="absolute bottom-1/3 left-1/3 w-3 h-3 bg-brand-pink rounded-full animate-float-reverse animation-delay-3000" />
       </div>
 
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <div className="mx-auto px-[5%] relative z-10 text-center">
         <motion.div
           initial={{
             opacity: 0,
@@ -90,13 +118,13 @@ export function FinalCTA() {
             دعنا نرتقي معًا بهويتك ومشاريعك إلى آفاق جديدة.
           </p>
 
-          <button className="group relative inline-flex items-center justify-center px-16 py-8 text-3xl font-bold text-white transition-all duration-300 bg-gradient-to-r from-brand-coral via-brand-orange to-brand-pink font-cairo rounded-full hover:scale-105 hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] focus:outline-none overflow-hidden">
+          <Link href={`/${locale}/execution`} className="group relative inline-flex items-center justify-center px-16 py-8 text-3xl font-bold text-white transition-all duration-300 bg-gradient-to-r from-brand-coral via-brand-orange to-brand-pink font-cairo rounded-full hover:scale-105 hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] focus:outline-none overflow-hidden">
             <span className="relative z-10 drop-shadow-md">
               تواصل معنا الآن
             </span>
             {/* Shimmer effect */}
             <div className="absolute inset-0 w-[200%] h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full animate-shimmer" />
-          </button>
+          </Link>
         </motion.div>
       </div>
     </section>);
