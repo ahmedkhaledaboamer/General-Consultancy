@@ -6,20 +6,24 @@ import {
   EyeIcon,
   TrendingUpIcon } from
 'lucide-react';
+import Image from 'next/image';
 export function ProcessSection() {
   return (
-    <section id="process" className="py-32 relative overflow-hidden text-white">
+    <section id="process" className="py-22 relative overflow-hidden text-white">
       {/* Background Image and Vibrant Gradient */}
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&q=80"
           alt="Growth Charts"
-          className="w-full h-full object-cover" />
+          className="w-full h-full object-cover"
+          width={1920}
+          height={1080}
+        />
         
         <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/95 via-purple-800/90 to-fuchsia-900/95 mix-blend-multiply" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className=" mx-auto px-[5%] relative z-10">
         <div className="text-center max-w-4xl mx-auto mb-24">
           <motion.h2
             initial={{
@@ -86,10 +90,13 @@ export function ProcessSection() {
               className="flex flex-col items-center text-center group">
               
               <div className="w-32 h-32 rounded-full border-4 border-purple-400 p-1 mb-8 shadow-[0_0_30px_rgba(168,85,247,0.5)] group-hover:scale-110 transition-transform duration-500 relative bg-slate-900">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=200&q=80"
                   alt="التخطيط"
-                  className="w-full h-full object-cover rounded-full opacity-70 group-hover:opacity-100 transition-opacity" />
+                  className="w-full h-full object-cover rounded-full opacity-70 group-hover:opacity-100 transition-opacity"
+                  width={200}
+                  height={200}
+                />
                 
                 <div className="absolute inset-0 flex items-center justify-center">
                   <ClipboardListIcon className="w-10 h-10 text-white drop-shadow-lg" />
@@ -130,10 +137,13 @@ export function ProcessSection() {
               className="flex flex-col items-center text-center group md:mt-16">
               
               <div className="w-32 h-32 rounded-full border-4 border-blue-400 p-1 mb-8 shadow-[0_0_30px_rgba(59,130,246,0.5)] group-hover:scale-110 transition-transform duration-500 relative bg-slate-900">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=200&q=80"
                   alt="التنسيق"
-                  className="w-full h-full object-cover rounded-full opacity-70 group-hover:opacity-100 transition-opacity" />
+                  className="w-full h-full object-cover rounded-full opacity-70 group-hover:opacity-100 transition-opacity"
+                  width={200}
+                  height={200}
+                />
                 
                 <div className="absolute inset-0 flex items-center justify-center">
                   <LinkIcon className="w-10 h-10 text-white drop-shadow-lg" />
@@ -174,10 +184,13 @@ export function ProcessSection() {
               className="flex flex-col items-center text-center group">
               
               <div className="w-32 h-32 rounded-full border-4 border-teal-400 p-1 mb-8 shadow-[0_0_30px_rgba(20,184,166,0.5)] group-hover:scale-110 transition-transform duration-500 relative bg-slate-900">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&q=80"
                   alt="الإشراف"
-                  className="w-full h-full object-cover rounded-full opacity-70 group-hover:opacity-100 transition-opacity" />
+                  className="w-full h-full object-cover rounded-full opacity-70 group-hover:opacity-100 transition-opacity"
+                  width={200}
+                  height={200}
+                />
                 
                 <div className="absolute inset-0 flex items-center justify-center">
                   <EyeIcon className="w-10 h-10 text-white drop-shadow-lg" />
@@ -217,10 +230,13 @@ export function ProcessSection() {
               className="flex flex-col items-center text-center group md:mt-16">
               
               <div className="w-32 h-32 rounded-full border-4 border-pink-400 p-1 mb-8 shadow-[0_0_30px_rgba(244,114,182,0.5)] group-hover:scale-110 transition-transform duration-500 relative bg-slate-900">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=200&q=80"
                   alt="التقييم"
-                  className="w-full h-full object-cover rounded-full opacity-70 group-hover:opacity-100 transition-opacity" />
+                  className="w-full h-full object-cover rounded-full opacity-70 group-hover:opacity-100 transition-opacity"
+                  width={200}
+                  height={200}
+                />
                 
                 <div className="absolute inset-0 flex items-center justify-center">
                   <TrendingUpIcon className="w-10 h-10 text-white drop-shadow-lg" />

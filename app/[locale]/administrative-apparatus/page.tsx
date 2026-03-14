@@ -6,10 +6,13 @@ import { ProcessSection } from "@/components/screens/administrative-apparatus/Pr
 import { QualityStandards } from "@/components/screens/administrative-apparatus/QualityStandards";
 import { SuccessRoadmap } from "@/components/screens/administrative-apparatus/SuccessRoadmap";
 import { FinalCTA } from "@/components/screens/administrative-apparatus/FinalCTA";
+import { useLocale } from 'next-intl';
 const AdministrativeApparatusPage = () => {
+  const locale = useLocale();
+  const isRTL = locale === 'ar';
   return (
     <main
-      dir="rtl"
+      dir={isRTL ? 'rtl' : 'ltr'}
       className="font-cairo min-h-screen bg-slate-50 overflow-x-hidden selection:bg-purple-500 selection:text-white">
       <HeroSection />
       <LeadershipPhilosophy />

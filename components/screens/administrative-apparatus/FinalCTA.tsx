@@ -1,6 +1,10 @@
 "use client";
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useLocale } from 'next-intl';
 export function FinalCTA() {
+  const locale = useLocale();
   return (
     <section
       id="contact"
@@ -22,10 +26,13 @@ export function FinalCTA() {
         }}
         className="absolute top-10 start-10 w-48 h-48 rounded-3xl overflow-hidden shadow-2xl border-4 border-white/30 z-0 hidden lg:block">
         
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=300&q=80"
           alt="Team"
-          className="w-full h-full object-cover" />
+          className="w-full h-full object-cover"
+          width={300}
+          height={300}
+        />
         
       </motion.div>
 
@@ -41,10 +48,13 @@ export function FinalCTA() {
         }}
         className="absolute bottom-10 end-10 w-64 h-64 rounded-full overflow-hidden shadow-2xl border-4 border-white/30 z-0 hidden lg:block">
         
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=300&q=80"
           alt="Building"
-          className="w-full h-full object-cover" />
+          className="w-full h-full object-cover"
+          width={300}
+          height={300}
+        />
         
       </motion.div>
 
@@ -60,10 +70,13 @@ export function FinalCTA() {
         }}
         className="absolute top-20 end-1/4 w-32 h-32 rounded-3xl overflow-hidden shadow-2xl border-4 border-white/30 z-0 hidden lg:block">
         
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=300&q=80"
           alt="Collaboration"
-          className="w-full h-full object-cover" />
+          className="w-full h-full object-cover"
+          width={300}
+          height={300}
+        />
         
       </motion.div>
 
@@ -148,11 +161,11 @@ export function FinalCTA() {
             delay: 0.2
           }}>
           
-          <button className="relative group px-12 py-6 bg-white text-slate-900 font-extrabold text-2xl rounded-full shadow-2xl hover:scale-105 transition-all duration-300 overflow-hidden">
+          <Link href={`/${locale}/execution`} className="relative group px-12 py-6 bg-white text-slate-900 font-extrabold text-2xl rounded-full shadow-2xl hover:scale-105 transition-all duration-300 overflow-hidden">
             <span className="relative z-10">تواصل معنا اليوم</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-rose-500 via-purple-500 to-blue-500 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
             <div className="absolute inset-0 rounded-full border-4 border-transparent bg-gradient-to-r from-rose-500 via-purple-500 to-blue-500 [mask-image:linear-gradient(white,white)] [mask-clip:padding-box,border-box] [-webkit-mask-composite:destination-out] [mask-composite:exclude]"></div>
-          </button>
+            <div className="rounded-full absolute inset-0 bg-gradient-to-r from-rose-500 via-purple-500 to-blue-500 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+          </Link>
         </motion.div>
       </div>
     </section>);
