@@ -25,7 +25,7 @@ export function FinalCTA() {
           </p>
           <div className="mt-16 pt-10 border-t border-white/20 flex flex-col sm:flex-row items-center justify-center gap-8 text-blue-100">
             <Link href="tel:+971521068882" className="flex items-center">
-              <PhoneIcon className="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 xl:w-12 xl:h-12 2xl:w-14 2xl:h-14 ml-3 text-amber-400" />
+              <PhoneIcon className="w-6 h-6 ml-3 text-amber-400" />
               <span className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl dir-ltr">521068882 971+</span>
             </Link>
             <Link href="mailto:info@shazmlc.com" className="flex items-center">

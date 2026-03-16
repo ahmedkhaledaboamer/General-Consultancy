@@ -5,6 +5,16 @@ import { WhyChooseUsSection } from "@/components/screens/services/WhyChooseUsSec
 import { FAQSection } from "@/components/screens/services/FAQSection";
 import { CTASection } from "@/components/screens/services/CTASection";
 import { useLocale } from "next-intl";
+import { getTranslations } from "next-intl/server";
+
+export async function generateMetadata() {
+  const t = await getTranslations("meta.services");
+
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 import Image from "next/image";
 const  ServicesPage = () => {
   const locale = useLocale();

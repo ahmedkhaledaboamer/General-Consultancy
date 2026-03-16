@@ -8,7 +8,7 @@ export function FinalCTA() {
   return (
     <section
       id="contact"
-      className="relative py-40 overflow-hidden bg-mesh-gradient animate-gradient-shift">
+      className="relative p-[5%] overflow-hidden bg-mesh-gradient animate-gradient-shift">
       
       {/* Dark Overlay for contrast */}
       <div className="absolute inset-0 bg-[#372d6a] z-0" />
@@ -102,7 +102,7 @@ export function FinalCTA() {
         className="absolute bottom-1/4 start-1/3 w-32 h-32 rounded-full bg-cyan-500/50 blur-xl z-0" />
       
 
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center bg-white/10 backdrop-blur-md p-12 md:p-20 rounded-[3rem] border border-white/20 shadow-2xl">
+      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center bg-white/10 backdrop-blur-md p-12 md:p-20 rounded-[3rem] border border-white/20 shadow-2xl">
         <motion.h2
           initial={{
             opacity: 0,
@@ -115,7 +115,7 @@ export function FinalCTA() {
           viewport={{
             once: true
           }}
-          className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-8 leading-tight text-shadow-lg">
+          className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-white mb-8 leading-tight text-shadow-lg">
           
           إذا كنت تبحث عن شريك يمتلك الخبرة القيادية والقدرة التنفيذية لدعم
           مشاريعك واستثماراتك…
@@ -161,7 +161,7 @@ export function FinalCTA() {
             delay: 0.2
           }}>
           
-          <Link href={`/${locale}/execution`} className="relative group px-12 py-6 bg-white text-slate-900 font-extrabold text-2xl rounded-full shadow-2xl hover:scale-105 transition-all duration-300 overflow-hidden">
+          <Link href={`/${locale}/execution`} className="relative group px-8 py-4 bg-white text-slate-900 font-extrabold text-xl rounded-full shadow-2xl hover:scale-105 transition-all duration-300 overflow-hidden">
             <span className="relative z-10">تواصل معنا اليوم</span>
             <div className="absolute inset-0 rounded-full border-4 border-transparent bg-gradient-to-r from-rose-500 via-purple-500 to-blue-500 [mask-image:linear-gradient(white,white)] [mask-clip:padding-box,border-box] [-webkit-mask-composite:destination-out] [mask-composite:exclude]"></div>
             <div className="rounded-full absolute inset-0 bg-gradient-to-r from-rose-500 via-purple-500 to-blue-500 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>

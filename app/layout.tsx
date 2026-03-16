@@ -1,6 +1,5 @@
 import { Cairo } from "next/font/google";
 import "./globals.css";
-
 const cairo = Cairo({
   variable: "--font-cairo",
   subsets: ["latin"],
@@ -14,7 +13,9 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <body className={`${cairo.className} antialiased`}>{children}</body>
+      <body className={`${cairo.className} antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }

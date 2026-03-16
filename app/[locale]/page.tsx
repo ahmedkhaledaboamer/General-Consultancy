@@ -13,6 +13,15 @@ import { OurPromise } from "@/components/screens/home/OurPromise";
 import { OurApproach } from "@/components/screens/home/OurApproach";
 import { CTASection } from "@/components/screens/home/CTASection";
 
+export async function generateMetadata() {
+  const t = await getTranslations("meta.home");
+
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
+
 export default async function Page() {
   const t = await getTranslations("page");
   const locale = await getLocale();

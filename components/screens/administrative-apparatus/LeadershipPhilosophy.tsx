@@ -2,12 +2,121 @@
 import { motion } from 'framer-motion';
 import { CompassIcon, BriefcaseIcon, UsersIcon } from 'lucide-react';
 import Image from 'next/image';
+
+type LeadershipPillarCardProps = {
+  title: string;
+  description: string;
+  imageSrc: string;
+  imageAlt: string;
+  gradientOverlayClass: string;
+  cardShadowClass: string;
+  contentBgClass: string;
+  delay: number;
+  Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+};
+
+function LeadershipPillarCard({
+  title,
+  description,
+  imageSrc,
+  imageAlt,
+  gradientOverlayClass,
+  cardShadowClass,
+  contentBgClass,
+  delay,
+  Icon
+}: LeadershipPillarCardProps) {
+  return (
+    <motion.div
+      initial={{
+        opacity: 0,
+        y: 40
+      }}
+      whileInView={{
+        opacity: 1,
+        y: 0
+      }}
+      viewport={{
+        once: true,
+        margin: '-50px'
+      }}
+      transition={{
+        duration: 0.6,
+        delay
+      }}
+      className={`bg-white rounded-3xl overflow-hidden shadow-2xl ${cardShadowClass} hover:-translate-y-3 transition-all duration-500 group flex flex-col h-full`}>
+      <div className="relative h-64 md:h-72 lg:h-80 2xl:h-96 overflow-hidden">
+        <Image
+          src={imageSrc}
+          alt={imageAlt}
+          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+          width={600}
+          height={600}
+        />
+        <div className={`absolute inset-0 ${gradientOverlayClass}`}></div>
+        <div className="absolute bottom-4 start-4 w-14 h-14 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center border border-white/30">
+          <Icon className="w-8 h-8 text-white" />
+        </div>
+      </div>
+      <div className={`p-8 flex-1 flex flex-col ${contentBgClass}`}>
+        <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-slate-900 mb-4 group-hover:text-purple-700 transition-colors">
+          {title}
+        </h3>
+        <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-slate-600 leading-relaxed flex-1">
+          {description}
+        </p>
+      </div>
+    </motion.div>
+  );
+}
+
+const leadershipPillars: LeadershipPillarCardProps[] = [
+  {
+    title: 'الرؤية الواضحة',
+    description:
+      'قيادة العمل برؤية استراتيجية تواكب التحولات الاقتصادية وتستشرف فرص المستقبل.',
+    imageSrc: '/imgs/A sophisticated corporate fina/image_18.webp',
+    imageAlt: 'الرؤية الواضحة',
+    gradientOverlayClass:
+      'bg-gradient-to-t from-purple-900/90 via-purple-600/50 to-pink-500/30 mix-blend-multiply',
+    cardShadowClass: 'hover:shadow-[0_30px_60px_rgba(147,51,234,0.2)]',
+    contentBgClass: 'bg-gradient-to-b from-white to-purple-50/50',
+    delay: 0.1,
+    Icon: CompassIcon
+  },
+  {
+    title: 'الإدارة الاحترافية',
+    description:
+      'تطبيق أفضل الممارسات الإدارية لضمان كفاءة الأداء وتحقيق الأهداف المؤسسية.',
+    imageSrc: '/imgs/A sophisticated corporate real/image_30.webp',
+    imageAlt: 'الإدارة الاحترافية',
+    gradientOverlayClass:
+      'bg-gradient-to-t from-blue-900/90 via-blue-600/50 to-cyan-500/30 mix-blend-multiply',
+    cardShadowClass: 'hover:shadow-[0_30px_60px_rgba(14,165,233,0.2)]',
+    contentBgClass: 'bg-gradient-to-b from-white to-blue-50/50',
+    delay: 0.2,
+    Icon: BriefcaseIcon
+  },
+  {
+    title: 'العمل التكاملي',
+    description:
+      'تعزيز التعاون بين مختلف الإدارات لضمان تقديم خدمات متكاملة تحقق أفضل النتائج.',
+    imageSrc: '/imgs/A strategic corporate advisory/image_47.webp',
+    imageAlt: 'العمل التكاملي',
+    gradientOverlayClass:
+      'bg-gradient-to-t from-orange-900/90 via-orange-600/50 to-yellow-500/30 mix-blend-multiply',
+    cardShadowClass: 'hover:shadow-[0_30px_60px_rgba(245,158,11,0.2)]',
+    contentBgClass: 'bg-gradient-to-b from-white to-orange-50/50',
+    delay: 0.3,
+    Icon: UsersIcon
+  }
+];
+
 export function LeadershipPhilosophy() {
   return (
     <section
       id="philosophy"
       className=" bg-gradient-to-b from-amber-50 via-rose-50 to-purple-50 relative overflow-hidden">
-      
       {/* Decorative background elements */}
       <div className="absolute top-0 start-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="absolute -top-40 -start-40 w-96 h-96 bg-rose-200/40 rounded-full blur-3xl"></div>
@@ -30,7 +139,6 @@ export function LeadershipPhilosophy() {
               margin: '-100px'
             }}
             className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold text-slate-900 mb-8">
-            
             فلسفة القيادة
           </motion.h2>
           <motion.p
@@ -50,7 +158,6 @@ export function LeadershipPhilosophy() {
               delay: 0.1
             }}
             className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-slate-700 leading-relaxed font-medium">
-            
             نؤمن أن القيادة الحقيقية لا تقتصر على اتخاذ القرار، بل تشمل القدرة
             على بناء فرق عمل قوية، وتوجيه الموارد بفعالية، وتحقيق التوازن بين
             الرؤية الاستراتيجية والتنفيذ العملي. تعتمد فلسفة القيادة في شركتنا
@@ -59,142 +166,11 @@ export function LeadershipPhilosophy() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
-          {/* Pillar 1 */}
-          <motion.div
-            initial={{
-              opacity: 0,
-              y: 40
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0
-            }}
-            viewport={{
-              once: true,
-              margin: '-50px'
-            }}
-            transition={{
-              duration: 0.6,
-              delay: 0.1
-            }}
-            className="bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-[0_30px_60px_rgba(147,51,234,0.2)] hover:-translate-y-3 transition-all duration-500 group flex flex-col h-full">
-            
-            <div className="relative h-64 md:h-72 lg:h-80 2xl:h-96 overflow-hidden">
-              <Image
-                src="/imgs/A sophisticated corporate fina/image_18.webp"
-                alt="الرؤية الواضحة"
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                width={600}
-                height={600}
-              />
-              
-              <div className="absolute inset-0 bg-gradient-to-t from-purple-900/90 via-purple-600/50 to-pink-500/30 mix-blend-multiply"></div>
-              <div className="absolute bottom-4 start-4 w-14 h-14 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center border border-white/30">
-                <CompassIcon className="w-8 h-8 text-white" />
-              </div>
-            </div>
-            <div className="p-8 flex-1 flex flex-col bg-gradient-to-b from-white to-purple-50/50">
-              <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-slate-900 mb-4 group-hover:text-purple-700 transition-colors">
-                الرؤية الواضحة
-              </h3>
-              <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-slate-600 leading-relaxed flex-1">
-                قيادة العمل برؤية استراتيجية تواكب التحولات الاقتصادية وتستشرف
-                فرص المستقبل.
-              </p>
-            </div>
-          </motion.div>
-
-          {/* Pillar 2 */}
-          <motion.div
-            initial={{
-              opacity: 0,
-              y: 40
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0
-            }}
-            viewport={{
-              once: true,
-              margin: '-50px'
-            }}
-            transition={{
-              duration: 0.6,
-              delay: 0.2
-            }}
-            className="bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-[0_30px_60px_rgba(14,165,233,0.2)] hover:-translate-y-3 transition-all duration-500 group flex flex-col h-full">
-            
-            <div className="relative h-64 md:h-72 lg:h-80 2xl:h-96 overflow-hidden">
-              <Image
-                src="/imgs/A sophisticated corporate real/image_30.webp"
-                alt="الإدارة الاحترافية"
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                width={600}
-                height={600}
-              />
-              
-              <div className="absolute inset-0 bg-gradient-to-t from-blue-900/90 via-blue-600/50 to-cyan-500/30 mix-blend-multiply"></div>
-              <div className="absolute bottom-4 start-4 w-14 h-14 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center border border-white/30">
-                <BriefcaseIcon className="w-8 h-8 text-white" />
-              </div>
-            </div>
-            <div className="p-8 flex-1 flex flex-col bg-gradient-to-b from-white to-blue-50/50">
-              <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-slate-900 mb-4 group-hover:text-blue-700 transition-colors">
-                الإدارة الاحترافية
-              </h3>
-              <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-slate-600 leading-relaxed flex-1">
-                تطبيق أفضل الممارسات الإدارية لضمان كفاءة الأداء وتحقيق الأهداف
-                المؤسسية.
-              </p>
-            </div>
-          </motion.div>
-
-          {/* Pillar 3 */}
-          <motion.div
-            initial={{
-              opacity: 0,
-              y: 40
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0
-            }}
-            viewport={{
-              once: true,
-              margin: '-50px'
-            }}
-            transition={{
-              duration: 0.6,
-              delay: 0.3
-            }}
-            className="bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-[0_30px_60px_rgba(245,158,11,0.2)] hover:-translate-y-3 transition-all duration-500 group flex flex-col h-full">
-            
-            <div className="relative h-64 md:h-72 lg:h-80 2xl:h-96 overflow-hidden">
-              <Image
-                src="/imgs/A strategic corporate advisory/image_47.webp"
-                alt="العمل التكاملي"
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                width={600}
-                height={600}
-              />
-              
-              <div className="absolute inset-0 bg-gradient-to-t from-orange-900/90 via-orange-600/50 to-yellow-500/30 mix-blend-multiply"></div>
-              <div className="absolute bottom-4 start-4 w-14 h-14 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center border border-white/30">
-                <UsersIcon className="w-8 h-8 text-white" />
-              </div>
-            </div>
-            <div className="p-8 flex-1 flex flex-col bg-gradient-to-b from-white to-orange-50/50">
-              <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-slate-900 mb-4 group-hover:text-orange-600 transition-colors">
-                العمل التكاملي
-              </h3>
-              <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-slate-600 leading-relaxed flex-1">
-                تعزيز التعاون بين مختلف الإدارات لضمان تقديم خدمات متكاملة تحقق
-                أفضل النتائج.
-              </p>
-            </div>
-          </motion.div>
+          {leadershipPillars.map((pillar) => (
+            <LeadershipPillarCard key={pillar.title} {...pillar} />
+          ))}
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 }

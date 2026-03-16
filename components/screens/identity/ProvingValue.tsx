@@ -150,7 +150,7 @@ export function ProvingValue() {
                 <h3 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-cairo font-bold text-gray-900 mb-4 mt-6">
                   {metric.title}
                 </h3>
-                <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-gray-600 font-tajawal leading-relaxed">
+                <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-gray-600 leading-relaxed">
                   {metric.desc}
                 </p>
               </div>
@@ -192,18 +192,18 @@ export function ProvingValue() {
                 <div className="text-5xl md:text-7xl font-cairo font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-brand-pink-light">
                   40%
                 </div>
-                <div className="text-white/80 font-tajawal font-bold mt-2">
+                <div className="text-white/80 font-bold mt-2">
                   زيادة كفاءة
                 </div>
               </div>
             </div>
 
             <div className={`flex flex-col items-center justify-center text-center md:items-start ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
-              <div className="inline-flex items-center gap-2 px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 xl:px-10 xl:py-5 2xl:px-12 2xl:py-6 rounded-full bg-brand-yellow/20 text-brand-yellow font-tajawal font-bold mb-6 border border-brand-yellow/30">
+              <div className="inline-flex items-center gap-2 px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 xl:px-10 xl:py-5 2xl:px-12 2xl:py-6 rounded-full bg-brand-yellow/20 text-brand-yellow font-bold mb-6 border border-brand-yellow/30">
                 <TrophyIcon size={20} />
                 قصة نجاح
               </div>
-              <p className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-cairo font-bold text-white leading-tight drop-shadow-lg">
+              <p className="text-2xl md:text-4xl xl:text-6xl 2xl:text-7xl font-cairo font-bold text-white leading-tight drop-shadow-lg">
                 &quot;أحد عملائنا تمكن من زيادة كفاءة أعماله بنسبة{' '}
                 <span className="text-brand-yellow">40%</span> <br className="md:hidden lg:block xl:hidden 2xl:block" /> بعد تطبيق
                 استراتيجيتنا المتكاملة.&quot;

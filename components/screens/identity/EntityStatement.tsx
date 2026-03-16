@@ -113,55 +113,27 @@ export function EntityStatement() {
             
             className={`text-center ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
             
-            <h2 className="text-4xl md:text-6xl xl:text-7xl 2xl:text-8xl font-cairo font-bold text-white mb-8 drop-shadow-lg">
+            <h2 className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-cairo font-bold text-white mb-8 drop-shadow-lg">
               بيان الكيان
             </h2>
-            <p className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl text-white/90 leading-relaxed font-tajawal mb-12">
+            <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-white/90 leading-relaxed mb-12">
               نحن كيان مؤسسي رائد في مجال الاستشارات العامة والاستثمارية،
               ملتزمون بتحويل الرؤية إلى واقع ملموس. نقدم حلولًا متكاملة، تجمع
               بين{' '}
-              <span className="font-bold text-brand-yellow px-2 py-1 md:px-3 md:py-2 lg:px-4 lg:py-3 xl:px-5 xl:py-4 2xl:px-6 2xl:py-5 bg-brand-yellow/20 rounded-lg">
+              <span className="font-bold text-brand-yellow px-2 py-1 md:px-3 md:py-2  bg-brand-yellow/20 rounded-lg">
                 التحليل الاستراتيجي
               </span>
               ،{' '}
-              <span className="font-bold text-brand-coral px-2 py-1 md:px-3 md:py-2 lg:px-4 lg:py-3 xl:px-5 xl:py-4 2xl:px-6 2xl:py-5 bg-brand-coral/20 rounded-lg">
+              <span className="font-bold text-brand-coral px-2 py-1 md:px-3 md:py-2  bg-brand-coral/20 rounded-lg">
                 التنفيذ المتميز
               </span>
               ، و
-              <span className="font-bold text-brand-teal px-2 py-1 md:px-3 md:py-2 lg:px-4 lg:py-3 xl:px-5 xl:py-4 2xl:px-6 2xl:py-5 bg-brand-teal/20 rounded-lg">
+              <span className="font-bold text-brand-teal px-2 py-1 md:px-3 md:py-2  bg-brand-teal/20 rounded-lg">
                 إدارة المخاطر
               </span>
               ، لنضمن نتائج قابلة للقياس وموثوقة. نحن أكثر من مجرد شركة
               استشارات؛ نحن شريك نجاح طويل الأمد لكل عميل.
             </p>
-
-            {/* Stats Row */}
-            <div className="grid grid-cols-3 gap-4">
-              <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md rounded-2xl p-4 border border-white/10 text-center">
-                <div className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-cairo font-bold text-brand-yellow mb-1">
-                  +500
-                </div>
-                <div className="text-white/80 font-tajawal text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
-                  مشروع ناجح
-                </div>
-              </div>
-              <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md rounded-2xl p-4 border border-white/10 text-center">
-                <div className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-cairo font-bold text-brand-coral mb-1">
-                  +200
-                </div>
-                <div className="text-white/80 font-tajawal text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
-                  شريك استراتيجي
-                </div>
-              </div>
-              <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md rounded-2xl p-4 border border-white/10 text-center">
-                <div className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-cairo font-bold text-brand-teal mb-1">
-                  +15
-                </div>
-                <div className="text-white/80 font-tajawal text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
-                  سنة خبرة
-                </div>
-              </div>
-            </div>
           </motion.div>
         </div>
       </div>

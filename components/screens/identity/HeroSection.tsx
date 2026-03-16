@@ -95,15 +95,15 @@ export function HeroSection() {
           }}
           className="inline-block mb-8">
           
-          <div className="px-6 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-lg">
-            <span className="text-white/90 font-tajawal font-bold tracking-wide">
+          <div className="px-2 md:px-6 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-lg">
+            <span className="text-white/90 font-bold tracking-wide">
               الشيخ عبد العزيز بن عبد الله المعلا للاستشارات العامة
             </span>
           </div>
         </motion.div>
 
         <motion.h1
-          className="text-5xl md:text-7xl lg:text-8xl font-cairo font-bold mb-8 leading-tight drop-shadow-2xl"
+          className="text-3xl md:text-5xl lg:text-7xl font-cairo font-bold mb-8 leading-tight drop-shadow-2xl"
           initial={{
             opacity: 0,
             y: 40
@@ -125,7 +125,7 @@ export function HeroSection() {
         </motion.h1>
 
         <motion.p
-          className="text-xl md:text-3xl text-white/90 mb-12 max-w-4xl mx-auto font-tajawal leading-relaxed drop-shadow-md"
+          className="text-xl md:text-3xl text-white/90 mb-12 max-w-5xl mx-auto leading-relaxed drop-shadow-lg"
           initial={{
             opacity: 0,
             y: 40
@@ -159,7 +159,7 @@ export function HeroSection() {
             delay: 0.6
           }}>
           
-          <button className="cursor-pointer group relative inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-white transition-all duration-300 bg-gradient-to-r from-brand-coral to-brand-orange font-cairo rounded-full hover:scale-105 hover:shadow-[0_0_40px_rgba(249,115,22,0.5)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-orange overflow-hidden"
+          <button className="cursor-pointer group relative inline-flex items-center justify-center px-10 py-5 text-sm md:text-xl font-bold text-white transition-all duration-300 bg-gradient-to-r from-brand-coral to-brand-orange font-cairo rounded-full hover:scale-105 hover:shadow-[0_0_40px_rgba(249,115,22,0.5)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-orange overflow-hidden"
             onClick={() => {
               window.scrollTo({
                 top: document.getElementById('about')?.offsetTop,

@@ -67,11 +67,11 @@ export function ServicesSection() {
                 className={`flex flex-col items-center justify-center md:items-start bg-white rounded-2xl p-6 shadow-md border border-gray-100 hover:shadow-xl hover:border-${service.color}-300 transition-all duration-300 group`}>
                 
                   <div
-                  className={`w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-28 xl:h-28 2xl:w-32 2xl:h-32 rounded-xl bg-${service.color}-50 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-${service.color}-100 transition-all duration-300`}>
+                  className={`w-16 h-16 md:w-20 md:h-20 rounded-xl bg-${service.color}-50 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-${service.color}-100 transition-all duration-300`}>
                   
                     {service.icon}
                   </div>
-                  <h3 className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
                     {service.title}
                   </h3>
                 </div>

@@ -2,6 +2,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
  import Navbar from "@/components/navbar/navbar";
 import { Footer } from '@/components/footer';
+import ScrollToTop from '@/components/scroll-to-top';
 
 export default async function LocaleLayout({
   children,
@@ -21,6 +22,7 @@ export default async function LocaleLayout({
       <Navbar />
       <section className="min-h-svh">{children}</section>
       <Footer />
+      <ScrollToTop />
     </NextIntlClientProvider>
   );
 }
