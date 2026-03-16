@@ -1,11 +1,12 @@
 "use client";
 import { motion } from 'framer-motion';
 import { CheckCircleIcon } from 'lucide-react';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import Image from 'next/image';
 export function VisionMission() {
   const locale = useLocale();
   const isRTL = locale === 'ar';
+  const t = useTranslations('identity.visionMission');
   return (
     <section className="  bg-white overflow-hidden">
       <div className="mx-auto p-[5%]">
@@ -27,17 +28,15 @@ export function VisionMission() {
             transition={{
               duration: 0.8
             }}>
-            
+
             <div className="inline-block px-6 py-2 md:px-8 md:py-3 lg:px-10 lg:py-4 xl:px-12 xl:py-5 2xl:px-14 2xl:py-6 bg-gradient-to-r from-brand-pink to-brand-rose text-white rounded-full font-bold mb-6 shadow-lg shadow-brand-pink/30">
-              الغاية والهدف
+              {t('missionBadge')}
             </div>
             <h2 className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-cairo font-bold text-gray-900 mb-8">
-              رسالتنا
+              {t('missionTitle')}
             </h2>
             <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-gray-600 leading-relaxed relative z-10">
-              تقديم استشارات واستراتيجيات استثمارية متكاملة تمكن عملائنا من
-              تحقيق أهدافهم ونمو مستدام، مع الالتزام بأعلى معايير الجودة،
-              الشفافية، والمصداقية.
+              {t('missionBody')}
             </p>
 
             {/* Small decorative thumbnail */}
@@ -153,36 +152,35 @@ export function VisionMission() {
             transition={{
               duration: 0.8
             }}>
-            
+
             <div className="inline-block px-6 py-2 md:px-8 md:py-3 lg:px-10 lg:py-4 xl:px-12 xl:py-5 2xl:px-14 2xl:py-6 bg-gradient-to-r from-brand-teal to-brand-blue text-white rounded-full font-bold mb-6 shadow-lg shadow-brand-teal/30">
-              المستقبل والطموح
+              {t('visionBadge')}
             </div>
             <h2 className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-cairo font-bold text-gray-900 mb-8">
-              رؤيتنا
+              {t('visionTitle')}
             </h2>
             <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-gray-600 leading-relaxed mb-10">
-              أن نصبح الشركة الرائدة والأكثر موثوقية في مجال الاستشارات العامة
-              والاستثمارية، من خلال:
+              {t('visionLead')}
             </p>
             <ul className="space-y-6 text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-gray-700">
               <li className={`${isRTL ? 'text-right' : 'text-left'} flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow`}>
                 <div className="w-10 h-10 rounded-full bg-brand-emerald/10 flex items-center justify-center flex-shrink-0">
                   <CheckCircleIcon className="text-brand-emerald w-6 h-6" />
                 </div>
-                <span className="font-bold text-base md:text-lg lg:text-xl xl:text-2xl ">قيادة مبتكرة ومؤثرة</span>
+                <span className="font-bold text-base md:text-lg lg:text-xl xl:text-2xl ">{t('bullets.0')}</span>
               </li>
               <li className={`${isRTL ? 'text-right' : 'text-left'} flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow`}>
                 <div className="w-10 h-10 rounded-full bg-brand-emerald/10 flex items-center justify-center flex-shrink-0">
                   <CheckCircleIcon className="text-brand-emerald w-6 h-6" />
                 </div>
-                <span className="font-bold text-base md:text-lg lg:text-xl xl:text-2xl">تطوير حلول مستدامة</span>
+                <span className="font-bold text-base md:text-lg lg:text-xl xl:text-2xl">{t('bullets.1')}</span>
               </li>
               <li className={`${isRTL ? 'text-right' : 'text-left'} flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow`}>
                 <div className="w-10 h-10 rounded-full bg-brand-emerald/10 flex items-center justify-center flex-shrink-0">
                   <CheckCircleIcon className="text-brand-emerald w-6 h-6" />
                 </div>
                 <span className="font-bold text-base md:text-lg lg:text-xl xl:text-2xl">
-                  تحقيق أثر إيجابي  على شركائنا وعملائنا
+                  {t('bullets.2')}
                 </span>
               </li>
             </ul>

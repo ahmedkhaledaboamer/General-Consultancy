@@ -1,67 +1,47 @@
-import React from 'react';
+"use client";
 import {
   StarIcon,
   ZapIcon,
   CrownIcon,
   DiamondIcon,
-  CheckIcon } from
-'lucide-react';
-import { useLocale } from 'next-intl';
+  CheckIcon
+} from 'lucide-react';
+import { useLocale, useTranslations } from 'next-intl';
 import Image from 'next/image';
 export function ServiceLevels() {
   const locale = useLocale();
   const isRTL = locale === 'ar';
+  const t = useTranslations('execution.serviceLevels');
   const levels = [
   {
-    title: 'الأساسي',
-    description: 'دعم محدود للعمليات مع متابعة دورية.',
+    key: 'basic',
     icon: <StarIcon className="w-8 h-8 text-orange-500" />,
     color: 'orange',
     popular: false,
-    features: ['دعم محدود للعمليات', 'متابعة دورية', 'تقارير شهرية']
+    featureCount: 3
   },
   {
-    title: 'المتقدم',
-    description: 'إشراف مستمر وتخصيص الموارد لضمان الأداء الأمثل.',
+    key: 'advanced',
     icon: <ZapIcon className="w-8 h-8 text-slate-500" />,
     color: 'slate',
     popular: false,
-    features: [
-    'إشراف مستمر',
-    'تخصيص الموارد',
-    'تقارير أسبوعية',
-    'مدير حساب مخصص']
+    featureCount: 4
 
   },
   {
-    title: 'المتكامل',
-    description:
-    'إدارة شاملة للمشروع، مع متابعة دقيقة لكل مرحلة، وتحليل النتائج بشكل دوري.',
+    key: 'full',
     icon: <CrownIcon className="w-8 h-8 text-amber-500" />,
     color: 'amber',
     popular: true,
-    features: [
-    'إدارة شاملة للمشروع',
-    'متابعة دقيقة لكل مرحلة',
-    'تحليل النتائج دورياً',
-    'فريق دعم متكامل',
-    'استشارات استراتيجية']
+    featureCount: 5
 
   },
   {
-    title: 'خدمة VIP',
-    description:
-    'دعم شخصي مباشر من فريق الإدارة العليا مع تقارير مخصصة وتحليل متقدم.',
+    key: 'vip',
     icon: <DiamondIcon className="w-8 h-8 text-purple-500" />,
     color: 'purple',
     popular: false,
-    features: [
-    'دعم شخصي مباشر',
-    'تدخل الإدارة العليا',
-    'تقارير مخصصة',
-    'تحليل متقدم',
-    'أولوية قصوى',
-    'تغطية 24/7']
+    featureCount: 6
 
   }];
 
@@ -80,7 +60,7 @@ export function ServiceLevels() {
         <div className="relative rounded-3xl overflow-hidden mb-16 h-56 md:h-72 lg:h-[500px] xl:h-[600px] 2xl:h-[700px]">
           <Image
             src="/imgs/A professional office setup wi/image_6.webp"
-            alt="مستويات الخدمة"
+            alt={t('title')}
             className="w-full h-full object-cover"
             width={1200}
             height={1200}
@@ -89,10 +69,10 @@ export function ServiceLevels() {
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-indigo-900/80 to-purple-900/90"></div>
           <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4">
             <h2 className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-bold mb-4">
-              مستويات الخدمة
+              {t('title')}
             </h2>
             <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-blue-100">
-              نقدم حلولًا مرنة وفق احتياجات كل عميل
+              {t('subtitle')}
             </p>
           </div>
         </div>
@@ -105,7 +85,7 @@ export function ServiceLevels() {
             
               {level.popular &&
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-amber-400 to-amber-600 text-white px-4 py-1 rounded-full text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold shadow-md whitespace-nowrap">
-                  الأكثر طلباً
+                  {t('popularBadge')}
                 </div>
             }
 
@@ -116,20 +96,22 @@ export function ServiceLevels() {
               </div>
 
               <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-center text-gray-900 mb-4">
-                {level.title}
+                {t(`levels.${level.key}.title`)}
               </h3>
               <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-gray-600 text-center mb-8 min-h-[80px]">
-                {level.description}
+                {t(`levels.${level.key}.description`)}
               </p>
 
               <div className="flex-grow">
                 <ul className="space-y-4">
-                  {level.features.map((feature, fIndex) =>
+                  {Array.from({ length: level.featureCount }).map((_, fIndex) =>
                 <li key={fIndex} className="flex items-start">
                       <CheckIcon
                     className={`w-5 h-5 ${!isRTL ? 'mr-3' : 'ml-3'} flex-shrink-0 text-${level.color}-500`} />
                   
-                      <span className="text-gray-700 text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">{feature}</span>
+                      <span className="text-gray-700 text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+                        {t(`levels.${level.key}.features.${fIndex}`)}
+                      </span>
                     </li>
                 )}
                 </ul>

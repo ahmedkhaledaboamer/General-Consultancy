@@ -1,7 +1,7 @@
 "use client";
 import { motion } from 'framer-motion';
 import { SearchIcon, MapIcon, AwardIcon, RefreshCwIcon } from 'lucide-react';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import Image from 'next/image';
 
 type QualityStandardCardProps = {
@@ -55,10 +55,9 @@ function QualityStandardCard({
   );
 }
 
-const qualityStandards: QualityStandardCardProps[] = [
+const qualityStandards = [
   {
-    title: 'التحليل الدقيق',
-    description: 'دراسة المشاريع والفرص الاستثمارية بشكل علمي ومنهجي.',
+    key: '0',
     borderColorClass: 'border-purple-500',
     iconBgClass: 'bg-gradient-to-br from-purple-400 to-indigo-600',
     delay: 0.2,
@@ -66,8 +65,7 @@ const qualityStandards: QualityStandardCardProps[] = [
     Icon: SearchIcon
   },
   {
-    title: 'التخطيط الفعّال',
-    description: 'وضع خطط عمل واضحة وقابلة للتنفيذ.',
+    key: '1',
     borderColorClass: 'border-blue-500',
     iconBgClass: 'bg-gradient-to-br from-blue-400 to-cyan-600',
     delay: 0.3,
@@ -75,9 +73,7 @@ const qualityStandards: QualityStandardCardProps[] = [
     Icon: MapIcon
   },
   {
-    title: 'الالتزام بالمعايير المهنية',
-    description:
-      'تطبيق أفضل الممارسات العالمية في مجالات الاستشارات وإدارة المشاريع.',
+    key: '2',
     borderColorClass: 'border-teal-500',
     iconBgClass: 'bg-gradient-to-br from-teal-400 to-emerald-600',
     delay: 0.4,
@@ -85,9 +81,7 @@ const qualityStandards: QualityStandardCardProps[] = [
     Icon: AwardIcon
   },
   {
-    title: 'التحسين المستمر',
-    description:
-      'مراجعة الأداء بشكل دوري والعمل على تطوير العمليات والخدمات.',
+    key: '3',
     borderColorClass: 'border-pink-500',
     iconBgClass: 'bg-gradient-to-br from-pink-400 to-rose-600',
     delay: 0.5,
@@ -99,6 +93,7 @@ const qualityStandards: QualityStandardCardProps[] = [
 export function QualityStandards() {
   const locale = useLocale();
   const isRTL = locale === 'ar';
+  const t = useTranslations('administrativeApparatus.qualityStandards');
   return (
     <section className="  bg-gradient-to-br from-cyan-50 to-teal-50 relative overflow-hidden">
       {/* Floating Decorative Dots */}
@@ -160,7 +155,7 @@ export function QualityStandards() {
               <div className="absolute inset-0 bg-gradient-to-tr from-teal-500/30 to-purple-500/30 mix-blend-overlay z-10"></div>
               <Image
                 src="/imgs/A futuristic corporate environ/image_15.webp"
-                alt="Data Analytics"
+                alt={t('imageAlt')}
                 className="w-full h-full object-cover"
                 width={800}
                 height={800}
@@ -184,7 +179,7 @@ export function QualityStandards() {
                 once: true
               }}
               className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6">
-              معايير الجودة
+              {t('title')}
             </motion.h2>
             <motion.p
               initial={{
@@ -202,14 +197,21 @@ export function QualityStandards() {
                 delay: 0.1
               }}
               className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-slate-700 leading-relaxed font-medium mb-12">
-              نحرص على تطبيق أعلى معايير الجودة في جميع خدماتنا وعملياتنا لضمان
-              تحقيق أفضل النتائج لشركائنا. تعتمد منظومة الجودة لدينا على أسس
-              متينة.
+              {t('intro')}
             </motion.p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
               {qualityStandards.map((standard) => (
-                <QualityStandardCard key={standard.title} {...standard} />
+                <QualityStandardCard
+                  key={standard.key}
+                  title={t(`standards.${standard.key}.title`)}
+                  description={t(`standards.${standard.key}.description`)}
+                  borderColorClass={standard.borderColorClass}
+                  iconBgClass={standard.iconBgClass}
+                  delay={standard.delay}
+                  containerClassName={standard.containerClassName}
+                  Icon={standard.Icon}
+                />
               ))}
             </div>
           </div>

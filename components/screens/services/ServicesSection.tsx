@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import * as Icons from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import { services } from '@/components/screens/services/services';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import Image from 'next/image';
 const IconComponent = ({
   name,
@@ -105,6 +105,7 @@ export function ServicesSection() {
   services;
   const locale = useLocale();
   const isRTL = locale === 'ar';
+  const t = useTranslations('services');
   return (
     <section id="services" className="bg-gray-50 pb-24">
       {/* Hero Banner */}
@@ -135,12 +136,10 @@ export function ServicesSection() {
             }}>
             
             <h2 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-heading font-bold text-white mb-6 drop-shadow-lg">
-              منظومة خدماتنا المتكاملة
+              {t('sections.services.heroTitle')}
             </h2>
             <p className="text-lg xl:text-xl 2xl:text-3xl text-gray-200 font-body leading-relaxed mx-auto">
-              تعتمد خدماتنا على منهجية متكاملة تجمع بين الخبرة الاستشارية
-              والرؤية الاستثمارية، مما يتيح للمؤسسات والمستثمرين الوصول إلى حلول
-              عملية تدعم اتخاذ القرار وتحقق نتائج ملموسة.
+              {t('sections.services.heroDescription')}
             </p>
           </motion.div>
         </div>
@@ -153,8 +152,7 @@ export function ServicesSection() {
             <button
               onClick={() => setActiveCategory(null)}
               className={`cursor-pointer px-6 py-3 rounded-full font-body font-medium transition-all shadow-sm text-sm md:text-base xl:text-lg 2xl:text-xl ${activeCategory === null ? 'bg-navy text-white shadow-md shadow-navy/20' : 'bg-white text-gray-600 hover:bg-gray-100 border border-gray-200'}`}>
-              
-              عرض الكل
+              {t('sections.services.filterAll')}
             </button>
             {services.map((category, index) => {
               const colorTheme = categoryColors[index % categoryColors.length];
@@ -168,8 +166,7 @@ export function ServicesSection() {
                   <IconComponent
                     name={category.icon}
                     className={`w-4 h-4 md:w-6 md:h-6 xl:w-8 xl:h-8 2xl:w-10 2xl:h-10 ${isActive ? 'text-white' : colorTheme.text}`} />
-                  
-                  {category.name}
+                  {t(category.nameKey)}
                 </button>);
 
             })}
@@ -213,7 +210,7 @@ export function ServicesSection() {
                   <div className="relative h-48 md:h-56 lg:h-64 2xl:h-72 overflow-hidden">
                     <Image
                       src={category.image}
-                      alt={category.name}
+                      alt={t(category.nameKey)}
                       className="w-full h-full object-cover"
                       width={400}
                       height={400}
@@ -237,10 +234,11 @@ export function ServicesSection() {
                       </div>
                       <div>
                         <h3 className="text-sm md:text-3xl xl:text-4xl 2xl:text-5xl font-heading font-bold text-white drop-shadow-md">
-                          {category.name}
+                          {t(category.nameKey)}
                         </h3>
                         <p className="text-gray-300 font-body text-sm md:text-base xl:text-lg 2xl:text-xl mt-1">
-                          {category.subServices.length} خدمة متخصصة
+                          {category.subServices.length}{' '}
+                          {t('sections.services.categoryServicesSuffix')}
                         </p>
                       </div>
                     </div>
@@ -261,7 +259,7 @@ export function ServicesSection() {
                           <div className="relative h-40 md:h-48 lg:h-72 2xl:h-120 overflow-hidden">
                             <Image
                               src={sub.image}
-                              alt={sub.name}
+                              alt={t(sub.nameKey)}
                               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                               width={400}
                               height={400}
@@ -291,10 +289,10 @@ export function ServicesSection() {
                             className={`w-full h-0.5 bg-gradient-to-r ${colorTheme.gradient} mb-4 rounded-full opacity-40 group-hover:opacity-100 transition-opacity`} />
                           
                             <h4 className="text-base md:text-lg xl:text-xl 2xl:text-2xl font-heading font-bold text-navy mb-2 leading-snug">
-                              {sub.name}
+                              {t(sub.nameKey)}
                             </h4>
                             <p className="text-gray-500 font-body text-sm md:text-base xl:text-lg 2xl:text-xl leading-relaxed line-clamp-3">
-                              {sub.description}
+                              {t(sub.descriptionKey)}
                             </p>
                           </div>
                         </motion.div>

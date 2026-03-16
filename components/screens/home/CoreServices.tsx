@@ -6,93 +6,51 @@ import {
   TrendingUpIcon,
   LandmarkIcon,
   CompassIcon,
-  HeartPulseIcon, } from
-'lucide-react';
-import { useLocale } from 'next-intl';
+  HeartPulseIcon,
+} from 'lucide-react';
+import { useLocale, useTranslations } from 'next-intl';
 import Image from 'next/image';
-const services = [
-{
-  title: 'خدمات إدارة الاستثمار',
-  description:
-  'نقدم منظومة متكاملة لإدارة الاستثمارات وتطوير المحافظ الاستثمارية بما يحقق عوائد مستدامة ويعزز القيمة الاقتصادية للمشاريع.',
-  icon: TrendingUpIcon,
-  image:
-  '/imgs/A dynamic industry ecosystem s/image_5.webp',
-  color: 'sky',
-  gradient: 'from-sky-500 to-blue-600',
-  items: [
-  'إدارة المحافظ الاستثمارية',
-  'إدارة الاستثمارات الخاصة',
-  'إنشاء وإدارة أندية الاستثمار',
-  'دعم شركات رأس المال الاستثماري',
-  'تطوير استراتيجيات الاستثمار طويلة المدى',
-  'تحليل المخاطر الاستثمارية',
-  'إعادة هيكلة المحافظ الاستثمارية',
-  'تقييم الفرص الاستثمارية الجديدة']
 
-},
-{
-  title: 'الاستشارات المالية والمصرفية',
-  description:
-  'نقدم خدمات استشارية متخصصة في المجال المالي والمصرفي تساعد المؤسسات والمستثمرين على بناء هياكل مالية قوية.',
-  icon: LandmarkIcon,
-  image:
-  '/imgs/A multidisciplinary industry l/image_17.webp',
-  color: 'emerald',
-  gradient: 'from-emerald-400 to-teal-600',
-  items: [
-  'الاستشارات المصرفية',
-  'هيكلة التمويل',
-  'إعداد الخطط المالية',
-  'تقييم الاستثمارات',
-  'الاستشارات المتعلقة بالرهن العقاري',
-  'إعداد نماذج التمويل والاستثمار']
-
-},
-{
-  title: 'الاستشارات الاستراتيجية والإدارية',
-  description:
-  'نساعد المؤسسات على تطوير استراتيجيات فعالة تحقق النمو والاستدامة في الأسواق التنافسية.',
-  icon: CompassIcon,
-  image:
-  '/imgs/An industrial investment conce/image_10.webp',
-  color: 'violet',
-  gradient: 'from-violet-500 to-purple-700',
-  items: [
-  'إعداد الخطط الاستراتيجية',
-  'تطوير نماذج الأعمال',
-  'إعادة الهيكلة الإدارية',
-  'دراسات السوق',
-  'تطوير استراتيجيات التوسع',
-  'إعداد الدراسات والتحليلات الإدارية']
-
-},
-{
-  title: 'الاستشارات الصحية المتخصصة',
-  description:
-  'نقدم خدمات استشارية متقدمة في القطاع الصحي لدعم المؤسسات الصحية في تطوير خدماتها وتحسين كفاءتها التشغيلية.',
-  icon: HeartPulseIcon,
-  image:
-  '/imgs/A strong modern corporate work/image_2.webp',
-  color: 'rose',
-  gradient: 'from-rose-400 to-pink-600',
-  items: [
-  'استشارات إدارة المنشآت الصحية',
-  'التخطيط الصحي',
-  'تطوير الخدمات الصحية',
-  'استشارات السلامة والصحة المهنية',
-  'استشارات الصحة ونمط الحياة',
-  'تطوير برامج الصحة المؤسسية']
-
-}];
+const serviceIcons = [TrendingUpIcon, LandmarkIcon, CompassIcon, HeartPulseIcon];
 
 export function CoreServices() {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
   const [isMounted] = useState(typeof window !== 'undefined');
-  const activeService = expandedIndex !== null ? services[expandedIndex] : null;
-  const ActiveIcon = activeService?.icon;
   const locale = useLocale();
   const isRTL = locale === 'ar';
+  const t = useTranslations('home.coreServices');
+
+  const services = t.raw('services') as {
+    title: string;
+    description: string;
+    items: string[];
+  }[];
+
+  const servicesWithMeta = services.map((service, index) => ({
+    ...service,
+    icon: serviceIcons[index],
+    image:
+      index === 0
+        ? '/imgs/A dynamic industry ecosystem s/image_5.webp'
+        : index === 1
+        ? '/imgs/A multidisciplinary industry l/image_17.webp'
+        : index === 2
+        ? '/imgs/An industrial investment conce/image_10.webp'
+        : '/imgs/A strong modern corporate work/image_2.webp',
+    gradient:
+      index === 0
+        ? 'from-sky-500 to-blue-600'
+        : index === 1
+        ? 'from-emerald-400 to-teal-600'
+        : index === 2
+        ? 'from-violet-500 to-purple-700'
+        : 'from-rose-400 to-pink-600',
+  }));
+
+  const activeService =
+    expandedIndex !== null ? servicesWithMeta[expandedIndex] : null;
+  const ActiveIcon = activeService?.icon;
+
   return (
     <section id="services" className=" p-[5%]  bg-slate-50 relative">
       {/* Background Decor */}
@@ -115,26 +73,25 @@ export function CoreServices() {
             viewport={{
               once: true
             }}>
-            
             <h2 className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-black text-navy mb-6">
-              خدماتنا{' '}
+              {t('sectionTitlePart1')}{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky to-violet">
-                الأساسية
+                {t('sectionTitlePart2')}
               </span>
             </h2>
             <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-slate-600 font-light">
-              نعمل عبر مجموعة واسعة من المجالات الاستشارية والاستثمارية التي
-              تمكّن المؤسسات من تحقيق أهدافها وتعزيز قدرتها التنافسية.
+              {t('sectionDescription')}
             </p>
           </motion.div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-          {services.map((service, index) => {
+          {servicesWithMeta.map((service, index) => {
             const isExpanded = expandedIndex === index;
+            const Icon = service.icon;
             return (
               <motion.div
-                key={index}
+                key={service.title}
                 initial={{
                   opacity: 0,
                   y: 30
@@ -151,7 +108,6 @@ export function CoreServices() {
                   delay: index * 0.1
                 }}
                 className="bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden flex flex-col group border border-slate-100">
-                
                 {/* Header Image Area */}
                 <div className="relative h-48 md:h-52 xl:h-60 2xl:h-120 overflow-hidden">
                   <Image
@@ -162,15 +118,12 @@ export function CoreServices() {
                     height={800}
                     />
                   
-                  <div
-                    className={`absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent`}>
-                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent"></div>
 
                   {/* Icon floating on image */}
                   <div
                     className={`absolute bottom-10 right-6 w-14 h-14 rounded-2xl bg-gradient-to-br ${service.gradient} flex items-center justify-center shadow-lg transform translate-y-1/2 group-hover:-translate-y-1 transition-transform duration-300`}>
-                    
-                    <service.icon className="w-7 h-7 text-white" />
+                    <Icon className="w-7 h-7 text-white" />
                   </div>
                 </div>
 
@@ -192,11 +145,10 @@ export function CoreServices() {
                   <div className="mt-auto ">
                     <button
                       onClick={() =>
-                      setExpandedIndex(isExpanded ? null : index)
+                        setExpandedIndex(isExpanded ? null : index)
                       }
                       className="cursor-pointer flex items-center justify-between w-full py-3 border-t border-slate-100 text-navy font-bold hover:text-sky transition-colors">
-                      
-                      <span>عرض التفاصيل</span>
+                      <span>{t('detailsLabel')}</span>
                     </button>
                   </div>
                 </div>
@@ -230,7 +182,7 @@ export function CoreServices() {
                       onClick={() => setExpandedIndex(null)}
                       className="cursor-pointer absolute top-4 left-4 z-10 rounded-full bg-white/80 px-3 py-1 text-sm md:text-base xl:text-lg 2xl:text-2xl font-medium text-slate-700 shadow hover:bg-white"
                     >
-                      إغلاق
+                      {t('modalClose')}
                     </button>
 
                     {/* Header image */}
@@ -256,7 +208,7 @@ export function CoreServices() {
                             {activeService.title}
                           </h3>
                           <p className="text-sm md:text-base xl:text-lg 2xl:text-xl text-slate-100/80">
-                            تفاصيل الخدمة
+                            {t('modalDetailsSubtitle')}
                           </p>
                         </div>
                       </div>
@@ -270,9 +222,9 @@ export function CoreServices() {
 
                       <div className="mt-2 flex-1 overflow-auto pr-1">
                         <ul className="space-y-3">
-                          {activeService.items.map((item, i) => (
+                          {activeService.items.map((item) => (
                             <li
-                              key={i}
+                              key={item}
                               className="flex items-start text-sm md:text-base xl:text-lg 2xl:text-xl text-slate-800 bg-slate-50 p-3 rounded-lg border border-slate-100"
                             >
                               <span

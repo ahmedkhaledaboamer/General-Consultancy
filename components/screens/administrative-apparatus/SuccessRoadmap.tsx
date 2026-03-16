@@ -8,6 +8,7 @@ import {
   CompassIcon
 } from 'lucide-react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 type SuccessStepCardProps = {
   title: string;
@@ -82,13 +83,11 @@ function SuccessStepCard({
   );
 }
 
-const successSteps: SuccessStepCardProps[] = [
+const successSteps = [
   {
-    title: 'تحديد الأهداف',
-    description: 'فهم رؤية العمل وتحديد الأهداف الاستراتيجية للمشروع.',
+    key: '0',
     imageSrc: '/imgs/A futuristic renewable energy/image_13.webp',
     imageAlt: 'تحديد الأهداف',
-    phaseLabel: 'المرحلة الأولى',
     phaseColorClass: 'text-purple-300',
     isRightAligned: false,
     iconGradientClass: 'bg-gradient-to-br from-purple-400 to-indigo-600',
@@ -96,11 +95,9 @@ const successSteps: SuccessStepCardProps[] = [
     Icon: TargetIcon
   },
   {
-    title: 'تحليل الفرص',
-    description: 'دراسة السوق وتحديد الفرص الاستثمارية المتاحة.',
+    key: '1',
     imageSrc: '/imgs/A futuristic office scene with/image_12.webp',
     imageAlt: 'تحليل الفرص',
-    phaseLabel: 'المرحلة الثانية',
     phaseColorClass: 'text-blue-300',
     isRightAligned: true,
     iconGradientClass: 'bg-gradient-to-br from-blue-400 to-cyan-600',
@@ -108,11 +105,9 @@ const successSteps: SuccessStepCardProps[] = [
     Icon: BarChartIcon
   },
   {
-    title: 'تطوير الاستراتيجية',
-    description: 'بناء خطة عمل متكاملة لتطبيق الأهداف.',
+    key: '2',
     imageSrc: '/imgs/A longterm business relationsh/image_36.webp',
     imageAlt: 'تطوير الاستراتيجية',
-    phaseLabel: 'المرحلة الثالثة',
     phaseColorClass: 'text-teal-300',
     isRightAligned: false,
     iconGradientClass: 'bg-gradient-to-br from-teal-400 to-emerald-600',
@@ -120,11 +115,9 @@ const successSteps: SuccessStepCardProps[] = [
     Icon: MessageCircleIcon
   },
   {
-    title: 'التنفيذ',
-    description: 'تطبيق الخطط والبرامج وفق أفضل الممارسات.',
+    key: '3',
     imageSrc: '/imgs/A luminous conceptual office s/image_1.webp',
     imageAlt: 'التنفيذ',
-    phaseLabel: 'المرحلة الرابعة',
     phaseColorClass: 'text-pink-300',
     isRightAligned: true,
     iconGradientClass: 'bg-gradient-to-br from-rose-400 to-pink-600',
@@ -132,11 +125,9 @@ const successSteps: SuccessStepCardProps[] = [
     Icon: RocketIcon
   },
   {
-    title: 'النمو المستدام',
-    description: 'دعم المشاريع في مواصلة التوسع والتطوير المستقبلي.',
+    key: '4',
     imageSrc: '/imgs/A luminous editorial workspace/image_16.webp',
     imageAlt: 'النمو المستدام',
-    phaseLabel: 'المرحلة الخامسة',
     phaseColorClass: 'text-amber-300',
     isRightAligned: false,
     iconGradientClass: 'bg-gradient-to-br from-amber-400 to-orange-600',
@@ -146,6 +137,8 @@ const successSteps: SuccessStepCardProps[] = [
 ];
 
 export function SuccessRoadmap() {
+  const t = useTranslations('administrativeApparatus.successRoadmap');
+
   return (
     <section className=" relative overflow-hidden text-white">
       {/* Blurred background image and gradient */}
@@ -175,7 +168,7 @@ export function SuccessRoadmap() {
               once: true
             }}
             className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold mb-4 md:mb-8 text-shadow-lg">
-            خارطة طريق النجاح
+            {t('title')}
           </motion.h2>
           <motion.p
             initial={{
@@ -193,8 +186,7 @@ export function SuccessRoadmap() {
               delay: 0.1
             }}
             className="text-base md:text-xl xl:text-2xl 2xl:text-3xl text-white/90 leading-relaxed font-medium text-shadow-md mx-auto">
-            نعتمد في عملنا على خارطة طريق واضحة تساعد شركاءنا على تحقيق النجاح في
-            مشاريعهم واستثماراتهم.
+            {t('intro')}
           </motion.p>
         </div>
 
@@ -207,7 +199,19 @@ export function SuccessRoadmap() {
 
           <div className="space-y-10 md:space-y-16">
             {successSteps.map((step) => (
-              <SuccessStepCard key={step.title} {...step} />
+              <SuccessStepCard
+                key={step.key}
+                title={t(`steps.${step.key}.title`)}
+                description={t(`steps.${step.key}.description`)}
+                imageSrc={step.imageSrc}
+                imageAlt={t(`steps.${step.key}.imageAlt`)}
+                phaseLabel={t(`steps.${step.key}.phaseLabel`)}
+                phaseColorClass={step.phaseColorClass}
+                isRightAligned={step.isRightAligned}
+                iconGradientClass={step.iconGradientClass}
+                iconShadowClass={step.iconShadowClass}
+                Icon={step.Icon}
+              />
             ))}
           </div>
         </div>

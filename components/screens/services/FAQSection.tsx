@@ -3,33 +3,15 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { PlusIcon, MinusIcon } from 'lucide-react';
 import Image from 'next/image';
-import { useLocale } from 'next-intl';
-const faqs = [
-{
-  question: 'ما نوع الخدمات التي تقدمها الشركة؟',
-  answer:
-  'نقدم مجموعة واسعة من الخدمات الاستشارية والاستثمارية التي تشمل إدارة الاستثمارات، الاستشارات الاستراتيجية، تطوير المشاريع، دراسات الجدوى، والاستشارات المتخصصة في قطاعات متعددة.'
-},
-{
-  question: 'هل تقدمون خدمات للمستثمرين الأفراد؟',
-  answer:
-  'نعم، نقدم خدماتنا للمستثمرين الأفراد، إضافة إلى الشركات والمؤسسات والجهات الحكومية.'
-},
-{
-  question: 'هل يمكنكم دعم المشاريع الجديدة؟',
-  answer:
-  'نعم، نقدم خدمات متكاملة لدعم المشاريع الجديدة تشمل دراسات الجدوى، التخطيط الاستراتيجي، وتطوير المشروع حتى مرحلة التنفيذ.'
-},
-{
-  question: 'هل تعمل الشركة في قطاعات محددة فقط؟',
-  answer:
-  'لا، نقدم خدماتنا في مجموعة واسعة من القطاعات مثل الصناعة، الطاقة، الصحة، التعليم، السياحة، التكنولوجيا، والتجارة وغيرها.'
-}];
+import { useLocale, useTranslations } from 'next-intl';
+
+const faqs = [0, 1, 2, 3];
 
 export function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
   const locale = useLocale();
   const isRTL = locale === 'ar';
+  const t = useTranslations('services');
   return (
     <section id="faq" className="  bg-gray-50 overflow-hidden">
       <div className=" mx-auto p-[5%]">
@@ -63,10 +45,10 @@ export function FAQSection() {
               {/* Overlay Badge */}
               <div className={`absolute top-8 ${isRTL ? 'right-8 mr-5' : 'left-8 ml-5'} bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl shadow-xl`}>
                 <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-heading font-bold text-white mb-2">
-                  رؤية واضحة
+                  {t('sections.faq.overlayTitle')}
                 </h3>
                 <p className="text-teal-100 font-body text-sm md:text-base xl:text-lg 2xl:text-xl">
-                  إجابات شفافة لكل استفساراتك
+                  {t('sections.faq.overlayDescription')}
                 </p>
               </div>
             </div>
@@ -94,22 +76,24 @@ export function FAQSection() {
                 >
                 
                 <div className="inline-block px-4 py-1.5 rounded-full bg-teal/10 border border-teal/20 text-teal mb-4 text-sm md:text-base xl:text-lg 2xl:text-xl">
-                  <span className="font-body font-medium text-sm md:text-base xl:text-lg 2xl:text-xl">مركز المعرفة</span>
+                  <span className="font-body font-medium text-sm md:text-base xl:text-lg 2xl:text-xl">
+                    {t('sections.faq.badge')}
+                  </span>
                 </div>
                 <h2 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-heading font-bold text-navy mb-4">
-                  الأسئلة{' '}
+                  {t('sections.faq.titleMain')}{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal to-emerald-500 text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl">
-                    الشائعة
+                    {t('sections.faq.titleHighlight')}
                   </span>
                 </h2>
                 <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-gray-600 font-body">
-                  إجابات على أبرز الاستفسارات حول خدماتنا ومنهجية عملنا.
+                  {t('sections.faq.description')}
                 </p>
               </motion.div>
             </div>
 
             <div className="space-y-4">
-              {faqs.map((faq, index) => {
+              {faqs.map((idx, index) => {
                 const isOpen = openIndex === index;
                 return (
                   <motion.div
@@ -141,8 +125,7 @@ export function FAQSection() {
                       
                       <span
                         className={`text-sm md:text-xl xl:text-2xl 2xl:text-3xl font-heading font-bold pr-4 transition-colors ${isOpen ? 'text-teal-700' : 'text-navy'}`}>
-                        
-                        {faq.question}
+                        {t(`sections.faq.items.${idx}.question`)}
                       </span>
                       <div
                         className={`flex-shrink-0 w-10 h-10 md:w-12 md:h-12 xl:w-14 xl:h-14 2xl:w-16 2xl:h-16 rounded-full flex items-center justify-center transition-all duration-300 ${isOpen ? 'bg-gradient-to-br from-teal-400 to-emerald-500 text-white shadow-md transform rotate-180' : 'bg-gray-50 text-gray-500 hover:bg-gray-100'}`}>
@@ -175,7 +158,7 @@ export function FAQSection() {
                         }}>
                         
                           <div className="px-6 pb-6 pt-2 text-gray-600 font-body leading-relaxed border-t border-gray-50 mx-6">
-                            {faq.answer}
+                            {t(`sections.faq.items.${idx}.answer`)}
                           </div>
                         </motion.div>
                       }

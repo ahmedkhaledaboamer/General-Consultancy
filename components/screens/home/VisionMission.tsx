@@ -2,7 +2,11 @@
 import { motion } from 'framer-motion';
 import { EyeIcon, TargetIcon } from 'lucide-react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
+
 export function VisionMission() {
+  const t = useTranslations('home.visionMission');
+
   return (
     <section className=" p-[5%]  relative overflow-hidden">
       {/* Full-width Background Image with Colorful Gradient Overlay */}
@@ -61,7 +65,7 @@ export function VisionMission() {
             
             <span className="w-2 h-2 rounded-full bg-sky animate-pulse"></span>
             <span className="text-sm md:text-base xl:text-lg 2xl:text-2xl font-bold text-white tracking-widest uppercase">
-              الأساس الاستراتيجي
+              {t('badge')}
             </span>
           </motion.div>
 
@@ -81,8 +85,7 @@ export function VisionMission() {
               delay: 0.1
             }}
             className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-black text-white mb-6 drop-shadow-lg">
-            
-            رسالتنا ورؤيتنا
+            {t('title')}
           </motion.h2>
           <motion.div
             initial={{
@@ -130,11 +133,11 @@ export function VisionMission() {
               <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-sky to-blue-600 flex items-center justify-center mb-8 shadow-lg transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
                 <EyeIcon className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-black text-white mb-6">رؤيتنا</h3>
+              <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-black text-white mb-6">
+                {t('visionTitle')}
+              </h3>
               <p className="text-slate-200 text-xl md:text-2xl xl:text-3xl 2xl:text-4xl leading-relaxed font-light">
-                أن نكون من الجهات الرائدة في تقديم الاستشارات الاستراتيجية
-                وإدارة الاستثمارات في المنطقة، وأن نساهم في دعم المشاريع النوعية
-                التي تسهم في تنمية الاقتصاد وتعزيز الابتكار والاستدامة.
+                {t('visionDescription')}
               </p>
             </div>
           </motion.div>
@@ -166,12 +169,11 @@ export function VisionMission() {
               <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-magenta to-purple-600 flex items-center justify-center mb-8 shadow-lg transform group-hover:scale-110 group-hover:-rotate-3 transition-all duration-300">
                 <TargetIcon className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-black text-white mb-6">رسالتنا</h3>
+              <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-black text-white mb-6">
+                {t('missionTitle')}
+              </h3>
               <p className="text-slate-200 text-xl xl:text-2xl 2xl:text-3xl leading-relaxed font-light">
-                تقديم منظومة متكاملة من الخدمات الاستشارية والاستثمارية التي
-                تمكّن المؤسسات والمستثمرين من اتخاذ قرارات دقيقة، وتطوير مشاريع
-                ناجحة، وبناء نماذج أعمال قادرة على تحقيق النمو والتوسع في
-                الأسواق المحلية والدولية.
+                {t('missionDescription')}
               </p>
             </div>
           </motion.div>

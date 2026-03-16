@@ -1,34 +1,28 @@
+"use client";
 import { ClockIcon, ActivityIcon, WrenchIcon, FileTextIcon } from 'lucide-react';
 import Image from 'next/image';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 export function CommitmentsSection() {
   const locale = useLocale();
   const isRTL = locale === 'ar';
+  const t = useTranslations('execution.commitments');
   const commitments = [
   {
-    title: 'استجابة سريعة',
-    description: 'الرد على جميع استفسارات العملاء خلال 24 ساعة.',
     icon: <ClockIcon className="w-8 h-8 text-blue-500" />,
     image:
     '/imgs/A collaborative conceptual wor/image_27.webp'
   },
   {
-    title: 'متابعة مستمرة',
-    description: 'متابعة دقيقة ومستمرة لجميع المشاريع.',
     icon: <ActivityIcon className="w-8 h-8 text-purple-500" />,
     image:
     '/imgs/A collaborative task distribut/image_7.webp'
   },
   {
-    title: 'حلول فورية',
-    description: 'تقديم حلول فورية لأي تحديات أو عراقيل في التنفيذ.',
     icon: <WrenchIcon className="w-8 h-8 text-emerald-500" />,
     image:
     '/imgs/A conceptual collaboration eco/image_18.webp'
   },
   {
-    title: 'شفافية ومصداقية',
-    description: 'تقارير دورية لضمان الشفافية والمصداقية.',
     icon: <FileTextIcon className="w-8 h-8 text-amber-500" />,
     image:
     '/imgs/A longterm growth support scen/image_31.webp'
@@ -39,10 +33,10 @@ export function CommitmentsSection() {
       <div className=" mx-auto">
         <div className="text-center mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-gray-900 mb-4">
-            التزاماتنا بالاستجابة
+            {t('title')}
           </h2>
           <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-gray-600">
-            نحن نلتزم بتقديم أفضل تجربة لعملائنا من خلال تواصل فعال ومستمر
+            {t('subtitle')}
           </p>
         </div>
 
@@ -56,7 +50,7 @@ export function CommitmentsSection() {
               <div className="h-40 md:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px] overflow-hidden relative">
                 <Image
                 src={item.image}
-                alt={item.title}
+                alt={t(`items.${index}.title`)}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 width={400}
                 height={400}
@@ -69,9 +63,11 @@ export function CommitmentsSection() {
               </div>
               <div className="p-6 text-center">
                 <h3 className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-bold text-gray-900 mb-3">
-                  {item.title}
+                  {t(`items.${index}.title`)}
                 </h3>
-                <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-gray-600">{item.description}</p>
+                <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-gray-600">
+                  {t(`items.${index}.description`)}
+                </p>
               </div>
             </div>
           )}

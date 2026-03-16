@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion';
 import { AwardIcon, LightbulbIcon, UsersIcon, type LucideIcon } from 'lucide-react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 type PillarConfig = {
   title: string;
@@ -13,35 +14,33 @@ type PillarConfig = {
 };
 
 const pillars: PillarConfig[] = [
-{
-  title: 'الاحترافية المطلقة',
-  desc: 'تقديم أعلى مستويات الجودة والخبرة في كل خدمة.',
-  icon: AwardIcon,
-  image:
-  '/imgs/A transparent strategy environ/image_19.webp',
-  gradient: 'from-brand-purple-dark via-brand-purple to-transparent',
-  delay: 0.1
-},
-{
-  title: 'الابتكار المستمر',
-  desc: 'تطوير حلول جديدة ومبتكرة لمواجهة تحديات السوق.',
-  icon: LightbulbIcon,
-  image:
-  '/imgs/A visionary roadmap scene feat/image_22.webp',
-  gradient: 'from-brand-rose via-brand-orange to-transparent',
-  delay: 0.3
-},
-{
-  title: 'الشراكة الحقيقية',
-  desc: 'بناء علاقات متينة قائمة على الثقة، الشفافية، والدعم المستمر.',
-  icon: UsersIcon,
-  image:
-  '/imgs/A longterm support environment/image_30.webp',
-  gradient: 'from-brand-blue-dark via-brand-teal to-transparent',
-  delay: 0.5
-}];
+  {
+    title: 'pillars.0.title',
+    desc: 'pillars.0.desc',
+    icon: AwardIcon,
+    image: '/imgs/A transparent strategy environ/image_19.webp',
+    gradient: 'from-brand-purple-dark via-brand-purple to-transparent',
+    delay: 0.1
+  },
+  {
+    title: 'pillars.1.title',
+    desc: 'pillars.1.desc',
+    icon: LightbulbIcon,
+    image: '/imgs/A visionary roadmap scene feat/image_22.webp',
+    gradient: 'from-brand-rose via-brand-orange to-transparent',
+    delay: 0.3
+  },
+  {
+    title: 'pillars.2.title',
+    desc: 'pillars.2.desc',
+    icon: UsersIcon,
+    image: '/imgs/A longterm support environment/image_30.webp',
+    gradient: 'from-brand-blue-dark via-brand-teal to-transparent',
+    delay: 0.5
+  }];
 
 function PhilosophyCard({ title, desc, icon: Icon, image, gradient, delay }: PillarConfig) {
+  const t = useTranslations('identity.philosophy');
   return (
     <motion.div
       className="flex flex-col items-center justify-center text-center group relative h-[450px] md:h-[500px] lg:h-[550px] xl:h-[600px] 2xl:h-[650px] rounded-[2rem] overflow-hidden shadow-2xl"
@@ -83,10 +82,10 @@ function PhilosophyCard({ title, desc, icon: Icon, image, gradient, delay }: Pil
           <Icon size={32} className="text-white" />
         </div>
         <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-cairo font-bold mb-4 drop-shadow-lg">
-          {title}
+          {t(title)}
         </h3>
         <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-white/90 leading-relaxed drop-shadow-md opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300 lg:delay-100">
-          {desc}
+          {t(desc)}
         </p>
       </div>
     </motion.div>
@@ -94,6 +93,7 @@ function PhilosophyCard({ title, desc, icon: Icon, image, gradient, delay }: Pil
 }
 
 export function PhilosophySection() {
+  const t = useTranslations('identity.philosophy');
   return (
     <section className="  bg-gray-50 relative overflow-hidden">
       {/* Decorative Background */}
@@ -116,13 +116,13 @@ export function PhilosophySection() {
           transition={{
             duration: 0.7
           }}>
-          
+
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-24 bg-gradient-to-r from-brand-pink via-brand-purple to-brand-blue blur-3xl opacity-30 -z-10" />
           <h2 className="text-4xl md:text-6xl xl:text-7xl 2xl:text-8xl font-cairo font-bold text-gray-900 mb-6">
-            فلسفتنا
+            {t('title')}
           </h2>
           <p className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl text-gray-600 mx-auto">
-            فلسفتنا تقوم على ثلاثة محاور رئيسية:
+            {t('subtitle')}
           </p>
         </motion.div>
 
@@ -149,15 +149,14 @@ export function PhilosophySection() {
             duration: 0.6,
             delay: 0.7
           }}>
-          
+
           <div className="absolute inset-0 bg-gradient-to-r from-brand-teal via-brand-blue to-brand-purple rounded-3xl transform rotate-1 opacity-50 blur-sm" />
           <div className="relative bg-white/80 backdrop-blur-xl rounded-3xl p-10 text-center border border-white shadow-xl">
             <p className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl text-gray-800 leading-relaxed">
               <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-brand-purple to-brand-pink text-3xl block mb-4">
-                مثال تطبيقي
+                {t('exampleTitle')}
               </span>
-              نبدأ كل مشروع بتقييم الوضع الحالي، نضع خطة واضحة، ثم نتابع التنفيذ
-              لضمان تحقيق النتائج المرجوة.
+              {t('exampleBody')}
             </p>
           </div>
         </motion.div>

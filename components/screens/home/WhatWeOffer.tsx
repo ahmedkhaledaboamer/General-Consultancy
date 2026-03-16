@@ -1,45 +1,30 @@
-"use client";
+ "use client";
 import { motion } from 'framer-motion';
 import { CheckCircle2Icon, LayersIcon } from 'lucide-react';
 import Image from 'next/image';
-import { useLocale } from 'next-intl';
-const offerings = [
-{
-  text: 'إدارة الاستثمارات وتطوير المحافظ',
-  color: 'from-sky-400 to-blue-600'
-},
-{
-  text: 'إعداد الدراسات الاقتصادية والجدوى',
-  color: 'from-emerald-400 to-teal-600'
-},
-{
-  text: 'تطوير المشاريع وإدارة التنفيذ',
-  color: 'from-violet-400 to-purple-600'
-},
-{
-  text: 'الاستشارات الاستراتيجية والإدارية',
-  color: 'from-magenta-400 to-pink-600'
-},
-{
-  text: 'الاستشارات المصرفية والمالية',
-  color: 'from-orange-400 to-red-500'
-},
-{
-  text: 'تطوير الأعمال وبناء نماذج النمو',
-  color: 'from-gold to-amber'
-},
-{
-  text: 'الاستشارات القطاعية المتخصصة',
-  color: 'from-cyan-400 to-blue-500'
-},
-{
-  text: 'دعم التوسع في الأسواق المحلية والدولية',
-  color: 'from-rose-400 to-red-600'
-}];
+import { useLocale, useTranslations } from 'next-intl';
+
+const offeringColors = [
+  'from-sky-400 to-blue-600',
+  'from-emerald-400 to-teal-600',
+  'from-violet-400 to-purple-600',
+  'from-magenta-400 to-pink-600',
+  'from-orange-400 to-red-500',
+  'from-gold to-amber',
+  'from-cyan-400 to-blue-500',
+  'from-rose-400 to-red-600',
+];
 
 export function WhatWeOffer() {
   const locale = useLocale();
   const isRTL = locale === 'ar';
+  const t = useTranslations('home.whatWeOffer');
+
+  const offerings = (t.raw('offerings') as string[]).map((text, index) => ({
+    text,
+    color: offeringColors[index],
+  }));
+
   return (
     <section className=" p-[5%]  bg-white overflow-hidden relative">
       <div className="  ">
@@ -66,13 +51,12 @@ export function WhatWeOffer() {
                 <LayersIcon className="w-8 h-8 text-white" />
               </div>
               <h2 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-black text-navy">
-                ماذا نقدّم؟
+                {t('title')}
               </h2>
             </div>
 
             <p className="text-xl xl:text-2xl 2xl:text-3xl text-slate-600 mb-10 font-light leading-relaxed">
-              نقدّم منظومة متكاملة من الحلول التي تساعد شركاءنا على تحويل الرؤية
-              إلى واقع، والطموح إلى مشاريع ناجحة. تشمل خدماتنا:
+              {t('description')}
             </p>
 
             {/* Colorful Pills/Tags Layout */}
@@ -111,12 +95,11 @@ export function WhatWeOffer() {
 
               <div className="flex items-center gap-6 relative z-10">
                 <div className="text-7xl md:text-8xl xl:text-9xl 2xl:text-10xl font-black text-transparent bg-clip-text bg-gradient-to-b from-gold to-amber opacity-90">
-                  8
+                  {t('highlightCount')}
                 </div>
                 <div className="w-1 h-16 bg-white/20 rounded-full"></div>
                 <p className="font-medium text-base md:text-xl xl:text-2xl 2xl:text-3xl leading-relaxed">
-                  خدمات رئيسية متكاملة ترتكز على التحليل العميق والخبرة المتخصصة
-                  لبناء حلول عملية قابلة للتنفيذ.
+                  {t('highlightText')}
                 </p>
               </div>
             </div>
@@ -158,7 +141,7 @@ export function WhatWeOffer() {
                   <CheckCircle2Icon className="w-6 h-6 text-white" />
                 </div>
                 <p className="text-white font-bold text-lg md:text-xl xl:text-2xl 2xl:text-3xl">
-                  نحول الرؤية إلى واقع ملموس
+                  {t('badgeIconLabel')}
                 </p>
               </div>
             </div>

@@ -8,6 +8,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 type IdentityCardConfig = {
   title: string;
@@ -19,44 +20,42 @@ type IdentityCardConfig = {
 };
 
 const cards: IdentityCardConfig[] = [
-{
-  title: 'قيمنا الجوهرية',
-  desc: 'التي توجه كل سلوك وقرار.',
-  icon: CompassIcon,
-  image:
-  '/imgs/A strategic services ecosystem/image_12.webp',
-  gradient: 'from-brand-purple/90 to-brand-pink/90',
-  delay: 0.1
-},
-{
-  title: 'فلسفتنا في العمل والاستثمار',
-  desc: 'التي تضمن الحلول الفعالة والمستدامة.',
-  icon: RocketIcon,
-  image:
-  '/imgs/A strategic workflow environme/image_4.webp',
-  gradient: 'from-brand-blue/90 to-brand-cyan/90',
-  delay: 0.2
-},
-{
-  title: 'وعدنا للعملاء والشركاء',
-  desc: 'بتقديم الأفضل دائمًا.',
-  icon: HandshakeIcon,
-  image:
-  '/imgs/A structured planning workspac/image_26.webp',
-  gradient: 'from-brand-orange/90 to-brand-amber/90',
-  delay: 0.3
-},
-{
-  title: 'المصداقية والنتائج الملموسة',
-  desc: 'الطريقة التي نثبت بها مصداقيتنا من خلال الأداء والنتائج الملموسة.',
-  icon: BarChart3Icon,
-  image:
-  '/imgs/A structured planning workspac/image_6.webp',
-  gradient: "from-brand-teal/90 to-brand-emerald/90",
-  delay: 0.4,
-}];
+  {
+    title: "cards.0.title",
+    desc: "cards.0.desc",
+    icon: CompassIcon,
+    image: "/imgs/A strategic services ecosystem/image_12.webp",
+    gradient: "from-brand-purple/90 to-brand-pink/90",
+    delay: 0.1,
+  },
+  {
+    title: "cards.1.title",
+    desc: "cards.1.desc",
+    icon: RocketIcon,
+    image: "/imgs/A strategic workflow environme/image_4.webp",
+    gradient: "from-brand-blue/90 to-brand-cyan/90",
+    delay: 0.2,
+  },
+  {
+    title: "cards.2.title",
+    desc: "cards.2.desc",
+    icon: HandshakeIcon,
+    image: "/imgs/A structured planning workspac/image_26.webp",
+    gradient: "from-brand-orange/90 to-brand-amber/90",
+    delay: 0.3,
+  },
+  {
+    title: "cards.3.title",
+    desc: "cards.3.desc",
+    icon: BarChart3Icon,
+    image: "/imgs/A structured planning workspac/image_6.webp",
+    gradient: "from-brand-teal/90 to-brand-emerald/90",
+    delay: 0.4,
+  },
+];
 
 function IdentityCard({ title, desc, icon: Icon, image, gradient, delay }: IdentityCardConfig) {
+  const t = useTranslations("identity.definition");
   return (
     <motion.div
       className="group relative h-80 md:h-96 lg:h-112 xl:h-128 2xl:h-144 rounded-3xl overflow-hidden shadow-xl"
@@ -98,10 +97,10 @@ function IdentityCard({ title, desc, icon: Icon, image, gradient, delay }: Ident
           <Icon size={32} className="text-white" />
         </div>
         <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-cairo font-bold mb-3 drop-shadow-lg transform group-hover:-translate-y-1 transition-transform duration-300">
-          {title}
+          {t(title)}
         </h3>
         <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-white/90 leading-relaxed drop-shadow-md transform group-hover:-translate-y-1 transition-transform duration-300 delay-75">
-          {desc}
+          {t(desc)}
         </p>
       </div>
     </motion.div>
@@ -109,6 +108,7 @@ function IdentityCard({ title, desc, icon: Icon, image, gradient, delay }: Ident
 }
 
 export function IdentityDefinition() {
+  const t = useTranslations("identity.definition");
   return (
     <section className="  bg-white relative overflow-hidden">
       <div className=" mx-auto p-[5%] relative z-10">
@@ -128,14 +128,13 @@ export function IdentityDefinition() {
           transition={{
             duration: 0.7
           }}>
-          
+
           <h2 className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-cairo font-bold text-gray-900 mb-6 relative inline-block">
-            تعريف الهوية
+            {t("title")}
             <div className="absolute -bottom-4 left-0 w-full h-2 bg-gradient-to-r from-brand-purple via-brand-pink to-brand-orange rounded-full md:w-32 lg:w-40 xl:w-48 2xl:w-56" />
           </h2>
           <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-gray-600 mx-auto mt-8">
-            الهوية المؤسسية هي مزيج من القيم، الثقافة، والوعود التي تقدمها
-            الشركة للعالم. تشمل:
+            {t("description")}
           </p>
         </motion.div>
 
@@ -163,13 +162,12 @@ export function IdentityDefinition() {
             duration: 0.6,
             delay: 0.5
           }}>
-          
+
           <div className="bg-white rounded-[1.4rem] p-10 md:p-14 text-center relative overflow-hidden">
             <div className="absolute top-0 right-0 w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 2xl:w-64 2xl:h-64 bg-brand-purple rounded-full blur-2xl opacity-10" />
             <div className="absolute bottom-0 left-0 w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 2xl:w-64 2xl:h-64 bg-brand-teal rounded-full blur-2xl opacity-10" />
             <p className="text-lg md:text-4xl xl:text-5xl 2xl:text-6xl font-cairo font-bold text-transparent bg-clip-text bg-gradient-to-r from-brand-indigo-dark to-brand-purple-dark leading-relaxed relative z-10">
-              &quot;لكل مشروع نشارك فيه، نضمن أن تكون النتائج انعكاسًا لقيمنا
-              ورسالتنا.&quot;
+              &quot;{t("quote")}&quot;
             </p>
           </div>
         </motion.div>

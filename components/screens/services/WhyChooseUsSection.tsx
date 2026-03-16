@@ -6,14 +6,12 @@ import {
   UsersIcon,
   LayersIcon,
   ShieldIcon,
-  LightbulbIcon } from
-'lucide-react';
+  LightbulbIcon
+} from 'lucide-react';
 import Image from 'next/image';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 const reasons = [
 {
-  title: 'خبرة متعددة القطاعات',
-  description: 'نمتلك خبرات متنوعة تغطي مجالات اقتصادية واستثمارية متعددة.',
   icon: GlobeIcon,
   color: 'text-emerald-500',
   bgLight: 'bg-emerald-50',
@@ -21,8 +19,6 @@ const reasons = [
   gradient: 'from-emerald-400 to-emerald-600'
 },
 {
-  title: 'منهجية عمل احترافية',
-  description: 'نعتمد على التحليل العلمي والخبرة العملية في تقديم حلولنا.',
   icon: SettingsIcon,
   color: 'text-blue-500',
   bgLight: 'bg-blue-50',
@@ -30,8 +26,6 @@ const reasons = [
   gradient: 'from-blue-400 to-blue-600'
 },
 {
-  title: 'شبكة علاقات واسعة',
-  description: 'نمتلك علاقات مهنية واسعة تدعم نجاح المشاريع وتطويرها.',
   icon: UsersIcon,
   color: 'text-amber-500',
   bgLight: 'bg-amber-50',
@@ -39,8 +33,6 @@ const reasons = [
   gradient: 'from-amber-400 to-amber-600'
 },
 {
-  title: 'حلول متكاملة',
-  description: 'نقدم منظومة خدمات شاملة بدلاً من حلول جزئية.',
   icon: LayersIcon,
   color: 'text-rose-500',
   bgLight: 'bg-rose-50',
@@ -48,8 +40,6 @@ const reasons = [
   gradient: 'from-rose-400 to-rose-600'
 },
 {
-  title: 'التزام طويل المدى',
-  description: 'نؤمن ببناء شراكات مستدامة تقوم على الثقة والنتائج.',
   icon: ShieldIcon,
   color: 'text-purple-500',
   bgLight: 'bg-purple-50',
@@ -57,8 +47,6 @@ const reasons = [
   gradient: 'from-purple-400 to-purple-600'
 },
 {
-  title: 'الابتكار والتقنيات الحديثة',
-  description: 'نستخدم أحدث التقنيات والأدوات الرقمية لتطوير حلول مبتكرة تدعم نمو الأعمال.',
   icon: LightbulbIcon,
   color: 'text-cyan-500',
   bgLight: 'bg-cyan-50',
@@ -69,6 +57,7 @@ const reasons = [
 export function WhyChooseUsSection() {
   const locale = useLocale();
   const isRTL = locale === 'ar';
+  const t = useTranslations('services');
   return (
     <section
       id="why-us"
@@ -106,11 +95,10 @@ export function WhyChooseUsSection() {
               <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                 <div className="w-16 h-1 bg-gold mb-6 rounded-full" />
                 <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-heading font-bold mb-3">
-                  شراكات استراتيجية
+                  {t('sections.whyChooseUs.overlayTitle')}
                 </h3>
                 <p className="font-body text-gray-200 text-sm md:text-base xl:text-lg 2xl:text-xl">
-                  نبني علاقات طويلة الأمد قائمة على الثقة والشفافية والنجاح
-                  المشترك.
+                  {t('sections.whyChooseUs.overlayDescription')}
                 </p>
               </div>
             </div>
@@ -137,12 +125,10 @@ export function WhyChooseUsSection() {
               className={`mb-12 text-center ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
               
               <h2 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-heading font-bold text-navy mb-6">
-                لماذا تختارنا
+                {t('sections.whyChooseUs.title')}
               </h2>
               <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-gray-600 font-body leading-relaxed">
-                اختيار الشريك الاستشاري المناسب يمثل خطوة حاسمة في نجاح أي
-                مشروع. نحن نتميز بمجموعة من العوامل التي تجعلنا الخيار الأمثل
-                لشركائنا.
+                {t('sections.whyChooseUs.description')}
               </p>
             </motion.div>
 
@@ -178,10 +164,10 @@ export function WhyChooseUsSection() {
                     <reason.icon className={`w-7 h-7 md:w-8 md:h-8 xl:w-9 xl:h-9 2xl:w-10 2xl:h-10 ${reason.color}`} />
                   </div>
                   <h3 className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl font-heading font-bold text-navy mb-3">
-                    {reason.title}
+                    {t(`sections.whyChooseUs.reasons.${index}.title`)}
                   </h3>
                   <p className={`text-gray-600 font-body text-sm xl:text-base 2xl:text-lg leading-relaxed text-center ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
-                    {reason.description}
+                    {t(`sections.whyChooseUs.reasons.${index}.description`)}
                   </p>
                 </motion.div>
               )}

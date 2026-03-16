@@ -1,9 +1,10 @@
-"use client";
+ "use client";
 import { motion } from 'framer-motion';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import Image from 'next/image';
 export function CTASection() {
   const locale = useLocale();
+  const t = useTranslations('home.cta');
   return (
     <section id="contact" className=" p-[5%]  relative overflow-hidden">
       {/* Dramatic Sunset Background */}
@@ -75,21 +76,18 @@ export function CTASection() {
             duration: 0.8
           }}
           className="glass-colored bg-navy/40 p-12 md:p-16 rounded-[3rem] border border-white/20 shadow-2xl">
-          
           <h2 className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-black text-white mb-6 leading-tight drop-shadow-lg">
-            ابدأ اليوم خطوة جديدة نحو <br className="hidden md:block" />
+            {t('titleLine1')} <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold via-orange to-magenta">
-              تطوير أعمالك واستثماراتك.
+              {t('titleLine2')}
             </span>
           </h2>
 
           <p className="text-xl md:text-2xl text-slate-200 mb-4 leading-relaxed font-light">
-            فريقنا مستعد لدراسة احتياجاتك وتقديم الحلول التي تساعدك على تحقيق
-            أهدافك بثقة ووضوح.
+            {t('descriptionMain')}
           </p>
           <p className="text-lg text-slate-300 mb-12 font-light">
-            تواصل معنا الآن ودعنا نعمل معًا لبناء مسار استثماري أكثر قوة
-            واستدامة.
+            {t('descriptionSecondary')}
           </p>
 
           <motion.a
@@ -101,8 +99,7 @@ export function CTASection() {
             }}
             href={`/${locale}/execution`}
             className="relative overflow-hidden bg-gradient-to-r from-gold via-orange to-magenta text-white font-black text-sm md:text-base xl:text-lg 2xl:text-xl py-6 px-16 rounded-full shadow-[0_0_40px_rgba(249,115,22,0.5)] hover:shadow-[0_0_60px_rgba(236,72,153,0.6)] transition-all group">
-            
-            <span className="relative z-10">تواصل معنا</span>
+            <span className="relative z-10">{t('button')}</span>
           </motion.a>
         </motion.div>
       </div>

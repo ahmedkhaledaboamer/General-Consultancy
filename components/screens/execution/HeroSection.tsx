@@ -1,10 +1,12 @@
+"use client";
 import React from 'react';
 import { RocketIcon, TargetIcon } from 'lucide-react';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
 export function HeroSection() {
   const locale = useLocale();
   const isRTL = locale === 'ar';
+  const t = useTranslations("execution.hero");
   return (
     <section
       id="hero"
@@ -30,20 +32,16 @@ export function HeroSection() {
           <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-8 animate-fade-in-up">
             <TargetIcon className={`w-5 h-5 ${isRTL ? 'ml-2' : 'mr-2'} text-amber-400`} />
             <span className="text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-medium tracking-wider">
-              التميز في التنفيذ المؤسسي
+              {t("badge")}
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold leading-tight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-100 to-white drop-shadow-sm">
-            حوّل رؤيتك إلى واقع ملموس مع خبراء التنفيذ المؤسسي
+          <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold leading-tight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-100 to-white drop-shadow-sm">
+            {t("title")}
           </h1>
 
           <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-blue-50 leading-relaxed mb-10 mx-auto opacity-90">
-            في شركة الشيخ عبد العزيز بن عبد الله المعلا للاستشارات العامة، لا
-            نكتفي بوضع الخطط، بل نعمل على تحويلها إلى إنجازات ملموسة داخل
-            مؤسستك. نحن نرتكز على منهجية شاملة تدمج بين التخطيط الاستراتيجي،
-            إدارة العمليات، مراقبة الجودة، والتواصل المستمر مع العميل لضمان
-            نتائج دقيقة وفعّالة.
+            {t("description")}
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -53,7 +51,7 @@ export function HeroSection() {
               
               <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out"></div>
               <span className="relative flex items-center justify-center text-lg md:text-xl xl:text-2xl 2xl:text-3xl">
-                ابدأ رحلتك معنا اليوم
+                {t("primaryCta")}
                 <RocketIcon className={`w-5 h-5 ${!isRTL ? 'ml-2' : 'mr-2'} animate-bounce`} />
               </span>
             </Link>
@@ -61,7 +59,7 @@ export function HeroSection() {
               href="#about"
               className="px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white rounded-full font-bold text-lg md:text-xl xl:text-2xl 2xl:text-3xl transition-all duration-300 w-full sm:w-auto">
               
-              اكتشف المزيد
+              {t("secondaryCta")}
             </Link>
           </div>
         </div>

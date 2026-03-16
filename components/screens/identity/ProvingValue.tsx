@@ -2,11 +2,11 @@
 import { motion } from 'framer-motion';
 import { BarChart3Icon, GlobeIcon, EyeIcon, TrophyIcon } from 'lucide-react';
 import Image from 'next/image';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 const metrics = [
 {
-  title: 'نتائج قابلة للقياس',
-  desc: 'كل مشروع أو استشارة يتم تقييمه وفق مؤشرات أداء محددة.',
+  title: 'metrics.0.title',
+  desc: 'metrics.0.desc',
   icon: BarChart3Icon,
   image:
   '/imgs/A minimalist corporate support/image_35.webp',
@@ -14,8 +14,8 @@ const metrics = [
   border: 'border-b-brand-blue'
 },
 {
-  title: 'أفضل المعايير العالمية',
-  desc: 'نحن نطبق أفضل الممارسات في كل المجالات.',
+  title: 'metrics.1.title',
+  desc: 'metrics.1.desc',
   icon: GlobeIcon,
   image:
   '/imgs/A partnership concept visualiz/image_14.webp',
@@ -23,8 +23,8 @@ const metrics = [
   border: 'border-b-brand-teal'
 },
 {
-  title: 'الشفافية والتواصل',
-  desc: 'كل خطوة في المشروع يتم توضيحها للعميل، مع تقديم تقارير دورية.',
+  title: 'metrics.2.title',
+  desc: 'metrics.2.desc',
   icon: EyeIcon,
   image:
   '/imgs/A partnership success concept/image_48.webp',
@@ -32,8 +32,8 @@ const metrics = [
   border: 'border-b-brand-orange'
 },
 {
-  title: 'سجل نجاح موثوق',
-  desc: 'لدينا تاريخ حافل بالمشاريع الناجحة والشراكات المؤثرة.',
+  title: 'metrics.3.title',
+  desc: 'metrics.3.desc',
   icon: TrophyIcon,
   image:
   '/imgs/A refined corporate collaborat/image_24.webp',
@@ -44,6 +44,7 @@ const metrics = [
 export function ProvingValue() {
   const locale = useLocale();
   const isRTL = locale === 'ar';
+  const t = useTranslations('identity.provingValue');
   return (
     <section className="  bg-white relative overflow-hidden">
       <div className="mx-auto p-[5%] relative z-10">
@@ -64,11 +65,11 @@ export function ProvingValue() {
             transition={{
               duration: 0.7
             }}>
-            
+
             <h2 className={`text-center text-4xl md:text-6xl xl:text-7xl 2xl:text-8xl font-cairo font-bold text-gray-900 mb-6 leading-tight ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
-              كيف نثبت قيمتنا؟ <br />
+              {t('titleLine1')} <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-blue">
-                وكيف نُظهر مصداقيتنا؟
+                {t('titleLine2')}
               </span>
             </h2>
           </motion.div>
@@ -128,7 +129,7 @@ export function ProvingValue() {
               <div className="h-40 md:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px] w-full relative overflow-hidden">
                 <Image
                 src={metric.image}
-                alt={metric.title}
+                alt={t(metric.title)}
                 className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                 width={600}
                 height={600}
@@ -148,10 +149,10 @@ export function ProvingValue() {
                 </div>
 
                 <h3 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-cairo font-bold text-gray-900 mb-4 mt-6">
-                  {metric.title}
+                  {t(metric.title)}
                 </h3>
                 <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-gray-600 leading-relaxed">
-                  {metric.desc}
+                  {t(metric.desc)}
                 </p>
               </div>
             </motion.div>
@@ -175,7 +176,7 @@ export function ProvingValue() {
           transition={{
             duration: 0.8
           }}>
-          
+
           <Image
             src="/imgs/A global investment community/image_20.webp"
             alt="Success Growth"
@@ -190,10 +191,10 @@ export function ProvingValue() {
             <div className="w-32 h-32 md:w-48 md:h-48 lg:w-56 lg:h-56 xl:w-64 xl:h-64 2xl:w-72 2xl:h-72 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center flex-shrink-0 shadow-[0_0_50px_rgba(255,255,255,0.1)]">
               <div className="text-center">
                 <div className="text-5xl md:text-7xl font-cairo font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-brand-pink-light">
-                  40%
+                  {t('successHighlight')}
                 </div>
                 <div className="text-white/80 font-bold mt-2">
-                  زيادة كفاءة
+                  {t('successLabel')}
                 </div>
               </div>
             </div>
@@ -201,12 +202,10 @@ export function ProvingValue() {
             <div className={`flex flex-col items-center justify-center text-center md:items-start ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
               <div className="inline-flex items-center gap-2 px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 xl:px-10 xl:py-5 2xl:px-12 2xl:py-6 rounded-full bg-brand-yellow/20 text-brand-yellow font-bold mb-6 border border-brand-yellow/30">
                 <TrophyIcon size={20} />
-                قصة نجاح
+                {t('successBadge')}
               </div>
               <p className="text-2xl md:text-4xl xl:text-6xl 2xl:text-7xl font-cairo font-bold text-white leading-tight drop-shadow-lg">
-                &quot;أحد عملائنا تمكن من زيادة كفاءة أعماله بنسبة{' '}
-                <span className="text-brand-yellow">40%</span> <br className="md:hidden lg:block xl:hidden 2xl:block" /> بعد تطبيق
-                استراتيجيتنا المتكاملة.&quot;
+                &quot;{t('successQuote')}&quot;
               </p>
             </div>
           </div>

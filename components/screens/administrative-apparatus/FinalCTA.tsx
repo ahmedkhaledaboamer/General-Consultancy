@@ -2,9 +2,11 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
+
 export function FinalCTA() {
   const locale = useLocale();
+  const t = useTranslations('administrativeApparatus.finalCta');
   return (
     <section
       id="contact"
@@ -28,7 +30,7 @@ export function FinalCTA() {
         
         <Image
           src="/imgs/A conceptual office with layer/image_10.webp"
-          alt="Team"
+          alt={t('imageAltTeam')}
           className="w-full h-full object-cover"
           width={300}
           height={300}
@@ -50,7 +52,7 @@ export function FinalCTA() {
         
         <Image
           src="/imgs/A corporate communication hub/image_12.webp"
-          alt="Building"
+          alt={t('imageAltBuilding')}
           className="w-full h-full object-cover"
           width={300}
           height={300}
@@ -72,7 +74,7 @@ export function FinalCTA() {
         
         <Image
           src="/imgs/A corporate coordination ecosy/image_6.webp"
-          alt="Collaboration"
+          alt={t('imageAltCollaboration')}
           className="w-full h-full object-cover"
           width={300}
           height={300}
@@ -116,9 +118,7 @@ export function FinalCTA() {
             once: true
           }}
           className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-white mb-8 leading-tight text-shadow-lg">
-          
-          إذا كنت تبحث عن شريك يمتلك الخبرة القيادية والقدرة التنفيذية لدعم
-          مشاريعك واستثماراتك…
+          {t('headline')}
         </motion.h2>
 
         <motion.p
@@ -137,11 +137,10 @@ export function FinalCTA() {
             delay: 0.1
           }}
           className="text-2xl text-white/95 mb-12 font-medium text-shadow-md">
-          
-          فإن فريقنا الإداري مستعد للعمل معك لتحقيق أهدافك.
+          {t('paragraphMain')}
           <br className="hidden md:block" />
           <span className="mt-4 block text-amber-300 font-bold">
-            ودعنا نبدأ معًا رحلة بناء نجاح مستدام.
+            {t('paragraphHighlight')}
           </span>
         </motion.p>
 
@@ -162,7 +161,7 @@ export function FinalCTA() {
           }}>
           
           <Link href={`/${locale}/execution`} className="relative group px-8 py-4 bg-white text-slate-900 font-extrabold text-xl rounded-full shadow-2xl hover:scale-105 transition-all duration-300 overflow-hidden">
-            <span className="relative z-10">تواصل معنا اليوم</span>
+            <span className="relative z-10">{t('buttonLabel')}</span>
             <div className="absolute inset-0 rounded-full border-4 border-transparent bg-gradient-to-r from-rose-500 via-purple-500 to-blue-500 [mask-image:linear-gradient(white,white)] [mask-clip:padding-box,border-box] [-webkit-mask-composite:destination-out] [mask-composite:exclude]"></div>
             <div className="rounded-full absolute inset-0 bg-gradient-to-r from-rose-500 via-purple-500 to-blue-500 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
           </Link>

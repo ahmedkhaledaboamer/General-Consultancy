@@ -1,36 +1,30 @@
+"use client";
 import {
   GlobeIcon,
   SearchIcon,
   TrendingUpIcon,
-  BarChartIcon } from
-'lucide-react';
+  BarChartIcon
+} from 'lucide-react';
 import Image from 'next/image';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 export function QualityStandards() {
   const locale = useLocale();
   const isRTL = locale === 'ar';
+  const t = useTranslations('execution.qualityStandards');
   const standards = [
   {
-    title: 'المعايير الدولية',
-    description: 'الالتزام بالمعايير الدولية في جميع مراحل المشروع.',
     icon: <GlobeIcon className="w-6 h-6 text-white" />,
     color: 'bg-blue-600'
   },
   {
-    title: 'مراجعة دورية',
-    description: 'مراجعة دورية لكل مرحلة لضمان الجودة والكفاءة.',
     icon: <SearchIcon className="w-6 h-6 text-white" />,
     color: 'bg-indigo-600'
   },
   {
-    title: 'تحسين مستمر',
-    description: 'تحسين مستمر للعمليات والإجراءات لضمان نتائج أفضل.',
     icon: <TrendingUpIcon className="w-6 h-6 text-white" />,
     color: 'bg-purple-600'
   },
   {
-    title: 'قياس الأداء',
-    description: 'اعتماد أساليب قياس الأداء الموضوعية والشفافة.',
     icon: <BarChartIcon className="w-6 h-6 text-white" />,
     color: 'bg-emerald-600'
   }];
@@ -41,11 +35,10 @@ export function QualityStandards() {
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className={`w-full lg:w-1/2 text-center ${!isRTL ? 'md:text-left' : 'md:text-right'}`}>
             <h2 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-gray-900 mb-6">
-              معايير الجودة والتميز
+              {t('title')}
             </h2>
             <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-gray-600 mb-8 leading-relaxed">
-              الجودة ليست مجرد هدف، بل هي الأساس الذي نبني عليه جميع عملياتنا.
-              نحن نضمن تطبيق أعلى معايير الجودة في كل خطوة من خطوات التنفيذ.
+              {t('description')}
             </p>
 
             <div className="space-y-6">
@@ -61,9 +54,11 @@ export function QualityStandards() {
                   </div>
                   <div className={`${!isRTL ? 'text-left!' : 'text-right!'}`}>
                     <h3 className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-bold text-gray-900 mb-1">
-                      {standard.title}
+                      {t(`standards.${index}.title`)}
                     </h3>
-                    <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-gray-600">{standard.description}</p>
+                    <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-gray-600">
+                      {t(`standards.${index}.description`)}
+                    </p>
                   </div>
                 </div>
               )}
@@ -75,7 +70,7 @@ export function QualityStandards() {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <Image
                 src="/imgs/A professional office setup wi/image_5.webp"
-                alt="معايير الجودة"
+                alt={t('title')}
                 className="w-full h-[480px] md:h-[600px] lg:h-[700px] xl:h-[800px] 2xl:h-[900px] object-cover"
                 width={800}
                 height={800}
@@ -86,26 +81,36 @@ export function QualityStandards() {
 
             {/* Floating Stat Badges */}
             <div className="absolute -top-4 -right-4 bg-white p-4 rounded-2xl shadow-xl border border-gray-100 z-10">
-              <div className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-blue-600">100%</div>
+              <div className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-blue-600">
+                {t('stats.commitmentPercentLabel')}
+              </div>
               <div className="text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl font-medium text-gray-500">
-                التزام بالمعايير
+                {t('stats.commitmentText')}
               </div>
             </div>
             <div className="absolute top-1/3 -left-4 bg-white p-4 rounded-2xl shadow-xl border border-gray-100 z-10">
-              <div className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-purple-600">24/7</div>
+              <div className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-purple-600">
+                {t('stats.monitoringLabel')}
+              </div>
               <div className="text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl font-medium text-gray-500">
-                مراقبة الجودة
+                {t('stats.monitoringText')}
               </div>
             </div>
             <div className="absolute -bottom-4 right-1/4 bg-white p-4 rounded-2xl shadow-xl border border-gray-100 z-10">
-              <div className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-emerald-600">ISO</div>
+              <div className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-emerald-600">
+                {t('stats.isoLabel')}
+              </div>
               <div className="text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl font-medium text-gray-500">
-                معايير عالمية
+                {t('stats.isoText')}
               </div>
             </div>
             <div className="absolute bottom-1/4 -right-4 bg-white p-4 rounded-2xl shadow-xl border border-gray-100 z-10">
-              <div className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-amber-600">+50</div>
-              <div className="text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl font-medium text-gray-500">مؤشر أداء</div>
+              <div className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-amber-600">
+                {t('stats.kpiLabel')}
+              </div>
+              <div className="text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl font-medium text-gray-500">
+                {t('stats.kpiText')}
+              </div>
             </div>
 
             {/* Decorative blobs */}

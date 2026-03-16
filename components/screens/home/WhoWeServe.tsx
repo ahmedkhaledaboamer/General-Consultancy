@@ -1,4 +1,4 @@
-"use client";
+ "use client";
 import { motion } from 'framer-motion';
 import {
   UsersIcon,
@@ -7,43 +7,37 @@ import {
   GlobeIcon,
   BriefcaseIcon,
   LandmarkIcon,
-  MapIcon } from
-'lucide-react';
+  MapIcon,
+} from 'lucide-react';
 import Image from 'next/image';
-import { useLocale } from 'next-intl';
-const clients = [
+import { useLocale, useTranslations } from 'next-intl';
+
+const clientMeta = [
 {
-  text: 'رجال الأعمال والمستثمرين',
   icon: UsersIcon,
   color: 'from-sky-400 to-blue-600'
 },
 {
-  text: 'الشركات العائلية',
   icon: BuildingIcon,
   color: 'from-emerald-400 to-teal-600'
 },
 {
-  text: 'الشركات الناشئة',
   icon: RocketIcon,
   color: 'from-violet-400 to-purple-600'
 },
 {
-  text: 'الشركات المحلية والدولية',
   icon: GlobeIcon,
   color: 'from-magenta-400 to-pink-600'
 },
 {
-  text: 'المستثمرين الأجانب',
   icon: BriefcaseIcon,
   color: 'from-orange-400 to-red-500'
 },
 {
-  text: 'المؤسسات الحكومية وشبه الحكومية',
   icon: LandmarkIcon,
   color: 'from-cyan-400 to-blue-500'
 },
 {
-  text: 'الجهات التي تسعى لتطوير مشاريع جديدة أو توسيع استثماراتها',
   icon: MapIcon,
   color: 'from-gold to-amber'
 }];
@@ -51,6 +45,14 @@ const clients = [
 export function WhoWeServe() {
   const locale = useLocale();
   const isRTL = locale === 'ar';
+  const t = useTranslations('home.whoWeServe');
+
+  const clients = (t.raw('clients') as string[]).map((text, index) => ({
+    text,
+    icon: clientMeta[index].icon,
+    color: clientMeta[index].color,
+  }));
+
   return (
     <section className="py-0 bg-white relative overflow-hidden flex flex-col lg:flex-row">
       {/* Left Side - Image (Full height on desktop) */}
@@ -85,13 +87,11 @@ export function WhoWeServe() {
               once: true
             }}
             className={`mb-12 text-center ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
-            
             <h2 className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-black text-navy mb-6">
-              من نخدم؟
+              {t('title')}
             </h2>
             <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-slate-600 mb-8 font-light leading-relaxed">
-              نقدم خدماتنا لشريحة واسعة من المستثمرين والمؤسسات التي تسعى إلى
-              تحقيق النمو والتوسع.
+              {t('description')}
             </p>
             <div className="mx-auto md:mx-0 w-24 h-1.5 md:w-28 md:h-1.5 xl:w-32 xl:h-1.5 2xl:w-36 2xl:h-1.5 bg-gradient-to-r from-sky via-magenta to-gold rounded-full"></div>
           </motion.div>

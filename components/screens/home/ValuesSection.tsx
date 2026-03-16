@@ -1,56 +1,56 @@
-"use client";
+ "use client";
 import { motion } from 'framer-motion';
 import {
   AwardIcon,
   EyeIcon,
   ShieldCheckIcon,
   LightbulbIcon,
-  HandshakeIcon } from
-'lucide-react';
+  HandshakeIcon,
+} from 'lucide-react';
 import Image from 'next/image';
-const values = [
-{
-  title: 'الاحترافية',
-  description: 'نلتزم بأعلى المعايير المهنية في كل ما نقدمه من خدمات.',
-  icon: AwardIcon,
-  color: 'from-sky-500 to-blue-600',
-  image:
-  '/imgs/A refined corporate strategy s/image_0.webp'
-},
-{
-  title: 'الشفافية',
-  description: 'نؤمن بالوضوح الكامل في التحليل والتوصيات والنتائج.',
-  icon: EyeIcon,
-  color: 'from-emerald-500 to-teal-600',
-  image:
-  '/imgs/A refined strategic boardroom/image_3.webp'
-},
-{
-  title: 'الالتزام',
-  description: 'نعتبر نجاح شركائنا جزءًا من مسؤوليتنا المهنية.',
-  icon: ShieldCheckIcon,
-  color: 'from-violet-500 to-purple-600',
-  image:
-  '/imgs/A research and analysis enviro/image_20.webp'
-},
-{
-  title: 'الابتكار',
-  description: 'نسعى دائمًا لتطوير حلول جديدة تدعم النمو المستدام.',
-  icon: LightbulbIcon,
-  color: 'from-magenta-500 to-pink-600',
-  image:
-  '/imgs/A strategic analysis environme/image_16.webp'
-},
-{
-  title: 'الشراكة',
-  description: 'نبني علاقات طويلة المدى تقوم على الثقة والتعاون.',
-  icon: HandshakeIcon,
-  color: 'from-gold to-amber',
-  image:
-  '/imgs/A strategic consulting collabo/image_29.webp'
-}];
+import { useTranslations } from 'next-intl';
+
+const valueMeta = [
+  {
+    icon: AwardIcon,
+    color: 'from-sky-500 to-blue-600',
+    image: '/imgs/A refined corporate strategy s/image_0.webp',
+  },
+  {
+    icon: EyeIcon,
+    color: 'from-emerald-500 to-teal-600',
+    image: '/imgs/A refined strategic boardroom/image_3.webp',
+  },
+  {
+    icon: ShieldCheckIcon,
+    color: 'from-violet-500 to-purple-600',
+    image: '/imgs/A research and analysis enviro/image_20.webp',
+  },
+  {
+    icon: LightbulbIcon,
+    color: 'from-magenta-500 to-pink-600',
+    image: '/imgs/A strategic analysis environme/image_16.webp',
+  },
+  {
+    icon: HandshakeIcon,
+    color: 'from-gold to-amber',
+    image: '/imgs/A strategic consulting collabo/image_29.webp',
+  },
+];
 
 export function ValuesSection() {
+  const t = useTranslations('home.valuesSection');
+
+  const values = (t.raw('values') as {
+    title: string;
+    description: string;
+  }[]).map((value, index) => ({
+    ...value,
+    icon: valueMeta[index].icon,
+    color: valueMeta[index].color,
+    image: valueMeta[index].image,
+  }));
+
   return (
     <section className=" p-[5%]  bg-navy relative overflow-hidden">
       {/* Background Decor */}
@@ -71,8 +71,7 @@ export function ValuesSection() {
               once: true
             }}
             className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-black text-white mb-6">
-            
-            قيمنا ومبادئنا
+            {t('title')}
           </motion.h2>
           <motion.p
             initial={{
@@ -90,9 +89,7 @@ export function ValuesSection() {
               delay: 0.1
             }}
             className="text-xl xl:text-2xl 2xl:text-3xl text-slate-300 font-light">
-            
-            نؤمن بأن نجاح أي مشروع يعتمد على منظومة قيم واضحة تحكم طريقة العمل
-            واتخاذ القرار.
+            {t('description')}
           </motion.p>
         </div>
 

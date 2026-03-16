@@ -1,10 +1,13 @@
 "use client";
 import { motion } from 'framer-motion';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import Image from 'next/image';
+
 export function AboutSection() {
   const locale = useLocale();
   const isRTL = locale === 'ar';
+  const t = useTranslations('home.about');
+
   return (
     <section id="about" className="py-32 bg-slate-50 relative overflow-hidden">
       {/* Colorful Decorative Elements */}
@@ -38,14 +41,14 @@ export function AboutSection() {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white shadow-sm border border-slate-100 mb-8">
               <span className="w-2 h-2 rounded-full bg-gradient-to-r from-gold to-orange"></span>
               <span className="text-sm md:text-base xl:text-lg 2xl:text-2xl font-bold text-navy tracking-wide">
-                من نحن؟
+                {t('badge')}
               </span>
             </div>
 
             <h2 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-black text-navy mb-8 leading-[1.2]">
-              نبني منظومة متكاملة تساعد شركاءنا على{' '}
+              {t('titlePrefix')}{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky via-violet to-magenta">
-                النمو بثقة وثبات
+                {t('titleHighlight')}
               </span>
             </h2>
 
@@ -54,29 +57,20 @@ export function AboutSection() {
               <div className="absolute right-0 top-2 bottom-2 w-1 bg-gradient-to-b from-slate-200 to-transparent rounded-full -mr-6 hidden md:block"></div>
 
               <p className="font-medium text-navy text-xl xl:text-2xl 2xl:text-4xl">
-                نحن كيان استشاري واستثماري يعمل على دعم المؤسسات والمستثمرين عبر
-                منظومة متكاملة من الخبرات المتخصصة في مجالات الاستثمار وإدارة
-                المشاريع والاستشارات الاستراتيجية.
+                {t('paragraph1')}
               </p>
               <p className="font-medium text-navy text-sm md:text-lg xl:text-xl 2xl:text-2xl">
-                انطلقت شركة الشيخ عبد العزيز بن عبد الله المعلا للاستشارات
-                العامة برؤية واضحة تهدف إلى تمكين المستثمرين والجهات المؤسسية من
-                تحويل الفرص إلى مشاريع ناجحة، وبناء هياكل تشغيلية قوية، وتطوير
-                استثمارات قادرة على تحقيق قيمة مستدامة في السوق.
+                {t('paragraph2')}
               </p>
               <p className="font-medium text-navy text-sm md:text-lg xl:text-xl 2xl:text-2xl">
-                نعمل عبر شبكة من الخبرات متعددة التخصصات، تجمع بين التحليل
-                الاقتصادي، والإدارة الاستراتيجية، وتطوير الأعمال، والاستشارات
-                المتخصصة في قطاعات متنوعة تشمل الصناعة، والطاقة، والصحة،
-                والتعليم، والسياحة، والتكنولوجيا، وغيرها من المجالات الحيوية.
+                {t('paragraph3')}
               </p>
 
               <div className="mt-10 p-6 bg-gradient-to-br from-navy to-purple-deep rounded-2xl shadow-xl border border-white/10 relative overflow-hidden group">
                 <div className="absolute inset-0 bg-[url('/imgs/A professional workspace with/image_0.webp')] opacity-10 bg-cover bg-center mix-blend-overlay group-hover:scale-110 transition-transform duration-700"></div>
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gold/20 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2"></div>
                 <p className="relative z-10 font-bold text-white text-xl xl:text-2xl 2xl:text-3xl leading-relaxed">
-                  نحن لا نعمل فقط على تقديم الحلول… بل نعمل على بناء منظومة
-                  متكاملة تساعد شركاءنا على النمو بثقة وثبات.
+                  {t('highlight')}
                 </p>
               </div>
             </div>
@@ -156,9 +150,11 @@ export function AboutSection() {
                 </div>
                 <div className={`${isRTL ? 'text-right' : 'text-left'}`}>
                   <p className="text-[.7rem] md:text-lg xl:text-xl 2xl:text-2xl text-slate-500 font-bold uppercase tracking-wider mb-1">
-                    رؤية استراتيجية
+                    {t('badgeVision')}
                   </p>
-                  <p className="text-[.8rem] md:text-lg xl:text-xl 2xl:text-2xl font-black text-navy">نمو مستدام</p>
+                  <p className="text-[.8rem] md:text-lg xl:text-xl 2xl:text-2xl font-black text-navy">
+                    {t('badgeGrowth')}
+                  </p>
                 </div>
               </div>
             </div>

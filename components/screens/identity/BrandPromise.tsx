@@ -2,9 +2,10 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 export function BrandPromise() {
   const locale = useLocale();
+  const t = useTranslations('identity.brandPromise');
   return (
     <section className="relative py-32 md:py-48 overflow-hidden">
       {/* Full Background Image with Multi-color Gradient Overlay */}
@@ -125,24 +126,22 @@ export function BrandPromise() {
           transition={{
             duration: 0.8
           }}>
-          
+
           <div className="inline-block px-6 py-2 bg-white/10 backdrop-blur-md text-white rounded-full font-bold mb-8 border border-white/20 shadow-lg">
-            التزامنا تجاهك
+            {t('badge')}
           </div>
 
           <h2 className="text-4xl md:text-6xl lg:text-8xl font-cairo font-bold text-white mb-10 drop-shadow-[0_10px_10px_rgba(0,0,0,0.3)]">
-            وعد العلامة التجارية
+            {t('title')}
           </h2>
 
           <p className="text-2xl md:text-4xl text-white/95 leading-relaxed mb-16 drop-shadow-md max-w-4xl mx-auto font-medium">
-            نعد عملائنا بأن كل تعامل معنا هو استثمار في الثقة، الاحترافية،
-            والنتائج. نحن لا نعد بالكلام، بل نثبت القيمة من خلال الأداء الملموس،
-            النتائج القابلة للقياس، والشراكات طويلة الأمد.
+            {t('body')}
           </p>
 
           <Link href={`/${locale}/execution`} className="group relative inline-flex items-center justify-center px-12 py-6 text-2xl font-bold transition-all duration-300 bg-white text-brand-purple font-cairo rounded-full hover:scale-105 hover:shadow-[0_0_40px_rgba(255,255,255,0.4)] focus:outline-none overflow-hidden">
             <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-brand-purple to-brand-rose">
-              تواصل معنا الآن
+              {t('ctaLabel')}
             </span>
             <div className="absolute inset-0 w-[200%] h-full bg-gradient-to-r from-transparent via-brand-purple/10 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
           </Link>

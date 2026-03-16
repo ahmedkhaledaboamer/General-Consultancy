@@ -1,42 +1,43 @@
-"use client";
+ "use client";
 import { motion } from 'framer-motion';
 import { CheckIcon } from 'lucide-react';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import Image from 'next/image';
-const levels = [
-{
-  title: 'المستوى الاستشاري',
-  description: 'تقديم الدراسات والتحليلات والتوصيات الاستراتيجية.',
-  isPremium: false,
-  color: 'from-sky-400 to-blue-600',
-  features: ['تحليل السوق', 'دراسات الجدوى', 'توصيات استراتيجية']
-},
-{
-  title: 'المستوى التنفيذي',
-  description: 'دعم تنفيذ المشاريع وإدارة العمليات المرتبطة بها.',
-  isPremium: false,
-  color: 'from-emerald-400 to-teal-600',
-  features: ['إدارة المشاريع', 'الإشراف التنفيذي', 'تحسين العمليات']
-},
-{
-  title: 'المستوى الاستراتيجي المتقدم',
-  description: 'تقديم حلول متكاملة تشمل التخطيط والتنفيذ والمتابعة.',
-  isPremium: false,
-  color: 'from-violet-400 to-purple-600',
-  features: ['تخطيط شامل', 'تنفيذ متكامل', 'متابعة وتقييم']
-},
-{
-  title: 'المستوى الخاص',
-  description:
-  'خدمات استشارية مصممة خصيصًا للمستثمرين والمؤسسات ذات المشاريع الكبرى.',
-  isPremium: true,
-  color: 'from-gold to-amber',
-  features: ['حلول مخصصة', 'أولوية التنفيذ', 'استشارات مستمرة']
-}];
+
+const levelMeta = [
+  {
+    isPremium: false,
+    color: 'from-sky-400 to-blue-600',
+  },
+  {
+    isPremium: false,
+    color: 'from-emerald-400 to-teal-600',
+  },
+  {
+    isPremium: false,
+    color: 'from-violet-400 to-purple-600',
+  },
+  {
+    isPremium: true,
+    color: 'from-gold to-amber',
+  },
+];
 
 export function ServiceLevels() {
   const locale = useLocale();
   const isRTL = locale === 'ar';
+  const t = useTranslations('home.serviceLevels');
+
+  const levels = (t.raw('levels') as {
+    title: string;
+    description: string;
+    features: string[];
+  }[]).map((level, index) => ({
+    ...level,
+    isPremium: levelMeta[index].isPremium,
+    color: levelMeta[index].color,
+  }));
+
   return (
     <section className=" p-[5%]  relative overflow-hidden">
       {/* Background Image */}
@@ -67,8 +68,7 @@ export function ServiceLevels() {
               once: true
             }}
             className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-black text-white mb-6">
-            
-            مستويات الخدمة
+            {t('title')}
           </motion.h2>
           <motion.p
             initial={{
@@ -86,8 +86,7 @@ export function ServiceLevels() {
               delay: 0.1
             }}
             className="text-xl xl:text-2xl 2xl:text-3xl text-slate-300 font-light">
-            
-            نقدم خدماتنا عبر مستويات متعددة تلبي احتياجات مختلف الشركاء.
+            {t('description')}
           </motion.p>
         </div>
 
@@ -123,10 +122,10 @@ export function ServiceLevels() {
             </div>
 
               {level.isPremium &&
-            <div className={`absolute top-6 ${isRTL ? 'right-6' : 'left-6'} bg-gradient-to-r from-gold to-amber text-navy text-xs md:text-sm xl:text-base 2xl:text-lg font-bold px-4 py-1.5 rounded-full uppercase tracking-widest shadow-lg`}>
-                  VIP
+                <div className={`absolute top-6 ${!isRTL ? 'right-6' : 'left-6'} bg-gradient-to-r from-gold to-amber text-navy text-xs md:text-sm xl:text-base 2xl:text-lg font-bold px-4 py-1.5 rounded-full uppercase tracking-widest shadow-lg`}>
+                  {t('vipBadge')}
                 </div>
-            }
+              }
 
               <h3
               className={`text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-black mb-4 mt-4 ${level.isPremium ? 'text-transparent bg-clip-text bg-gradient-to-r from-gold to-amber' : 'text-white'}`}>

@@ -2,10 +2,11 @@
 import { motion } from 'framer-motion';
 import { UsersIcon, BuildingIcon, TrendingUpIcon } from 'lucide-react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 const audiences = [
 {
-  title: 'الشركاء والعملاء',
-  desc: 'الذين يبحثون عن شريك موثوق وفعال.',
+  title: 'audiences.0.title',
+  desc: 'audiences.0.desc',
   icon: UsersIcon,
   image:
   '/imgs/A project operations managemen/image_18.webp',
@@ -13,8 +14,8 @@ const audiences = [
   shadow: 'shadow-brand-blue/20'
 },
 {
-  title: 'الفريق الداخلي',
-  desc: 'الذي يحتاج إلى دليل واضح لتمثيل الشركة.',
+  title: 'audiences.1.title',
+  desc: 'audiences.1.desc',
   icon: BuildingIcon,
   image:
   '/imgs/A quality management consultin/image_18.webp',
@@ -22,8 +23,8 @@ const audiences = [
   shadow: 'shadow-brand-purple/20'
 },
 {
-  title: 'المستثمرون',
-  desc: 'الراغبون في رؤية مصداقية واستقرار الشركة.',
+  title: 'audiences.2.title',
+  desc: 'audiences.2.desc',
   icon: TrendingUpIcon,
   image:
   '/imgs/A realtime execution monitorin/image_15.webp',
@@ -32,6 +33,7 @@ const audiences = [
 }];
 
 export function TargetAudience() {
+  const t = useTranslations('identity.targetAudience');
   return (
     <section className="  bg-mesh relative overflow-hidden">
       <div className="mx-auto p-[5%] relative z-10">
@@ -51,13 +53,13 @@ export function TargetAudience() {
           transition={{
             duration: 0.7
           }}>
-          
+
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-16 bg-brand-yellow blur-3xl opacity-30 -z-10" />
           <h2 className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-cairo font-bold text-gray-900 mb-6">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-purple to-brand-orange">
-              لمن نكتب
+              {t('headingPart1')}
             </span>{' '}
-            هذه الهوية؟
+            {t('headingPart2')}
           </h2>
         </motion.div>
 
@@ -86,7 +88,7 @@ export function TargetAudience() {
               <div className="h-56 md:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px] relative overflow-hidden">
                 <Image
                 src={audience.image}
-                alt={audience.title}
+                alt={t(audience.title)}
                 className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                 width={800}
                 height={800}
@@ -106,10 +108,10 @@ export function TargetAudience() {
                 </div>
 
                 <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-cairo font-bold text-gray-900 mb-4 mt-8">
-                  {audience.title}
+                  {t(audience.title)}
                 </h3>
                 <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-gray-600 leading-relaxed">
-                  {audience.desc}
+                  {t(audience.desc)}
                 </p>
               </div>
             </motion.div>

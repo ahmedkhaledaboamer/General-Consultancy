@@ -1,33 +1,37 @@
-"use client";
+ "use client";
 import { motion } from 'framer-motion';
 import { CheckIcon } from 'lucide-react';
 import Image from 'next/image';
-import { useLocale } from 'next-intl';
-const promises = [
-{
-  text: 'اتخاذ قرارات استثمارية مدروسة',
-  color: 'from-sky-400 to-blue-600'
-},
-{
-  text: 'تطوير مشاريع ناجحة ومستدامة',
-  color: 'from-emerald-400 to-teal-600'
-},
-{
-  text: 'بناء هياكل تشغيلية قوية',
-  color: 'from-violet-400 to-purple-600'
-},
-{
-  text: 'اكتشاف الفرص الجديدة في الأسواق',
-  color: 'from-magenta-400 to-pink-600'
-},
-{
-  text: 'تحقيق النمو بثقة واستقرار',
-  color: 'from-gold to-amber'
-}];
+import { useLocale, useTranslations } from 'next-intl';
+
+const promiseMeta = [
+  {
+    color: 'from-sky-400 to-blue-600',
+  },
+  {
+    color: 'from-emerald-400 to-teal-600',
+  },
+  {
+    color: 'from-violet-400 to-purple-600',
+  },
+  {
+    color: 'from-magenta-400 to-pink-600',
+  },
+  {
+    color: 'from-gold to-amber',
+  },
+];
 
 export function OurPromise() {
   const locale = useLocale();
   const isRTL = locale === 'ar';
+  const t = useTranslations('home.ourPromise');
+
+  const promises = (t.raw('promises') as string[]).map((text, index) => ({
+    text,
+    color: promiseMeta[index].color,
+  }));
+
   return (
     <section className=" p-[5%]  relative overflow-hidden">
       {/* Dramatic Background Image */}
@@ -67,12 +71,10 @@ export function OurPromise() {
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-gold/30 to-transparent rounded-bl-full"></div>
 
               <h2 className={`text-center text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-black text-white mb-6 drop-shadow-lg ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
-                وعدنا لك
+                {t('title')}
               </h2>
               <p className={`text-center  text-xl xl:text-2xl 2xl:text-3xl text-slate-200 mb-10 leading-relaxed font-light ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
-                نعد شركاءنا بتقديم خدمات استشارية واستثمارية تعتمد على الخبرة،
-                والتحليل الدقيق، والرؤية الواضحة. نلتزم بأن نكون الشريك الذي
-                يساعدك على:
+                {t('description')}
               </p>
 
               <ul className="space-y-6 mb-12">
@@ -107,7 +109,7 @@ export function OurPromise() {
 
               <div className="pt-8 border-t border-white/20">
                 <p className={`text-center text-xl xl:text-2xl 2xl:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-gold via-amber to-orange ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
-                  هدفنا أن نكون شريكًا يعتمد عليه في بناء المستقبل الاستثماري.
+                  {t('closing')}
                 </p>
               </div>
             </div>

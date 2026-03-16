@@ -1,48 +1,41 @@
+"use client";
 import {
   InboxIcon,
   MapPinIcon,
   PlayCircleIcon,
   RefreshCcwIcon,
-  FlagIcon } from
-'lucide-react';
+  FlagIcon
+} from 'lucide-react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 export function FileJourney() {
+  const t = useTranslations('execution.fileJourney');
   const phases = [
   {
-    title: 'مرحلة الاستلام',
-    description: 'تسجيل الطلب وفهم احتياجات العميل بدقة.',
     icon: <InboxIcon className="w-6 h-6" />,
     color: 'bg-blue-500',
     image:
     '/imgs/A modern corporate operations/image_3.webp'
   },
   {
-    title: 'مرحلة التخطيط',
-    description: 'وضع خطة تنفيذية واضحة مع تحديد الموارد والمهام.',
     icon: <MapPinIcon className="w-6 h-6" />,
     color: 'bg-indigo-500',
     image:
     '/imgs/A modern editorial office envi/image_29.webp'
   },
   {
-    title: 'مرحلة التنفيذ',
-    description: 'توزيع المهام ومتابعة الأداء بالوقت الفعلي.',
     icon: <PlayCircleIcon className="w-6 h-6" />,
     color: 'bg-purple-500',
     image:
     '/imgs/A modern editorial workspace w/image_2.webp'
   },
   {
-    title: 'مرحلة المراجعة',
-    description: 'تقييم الأداء وتحسين العمليات.',
     icon: <RefreshCcwIcon className="w-6 h-6" />,
     color: 'bg-pink-500',
     image:
     '/imgs/A modern editorialstyle office/image_14.webp'
   },
   {
-    title: 'مرحلة التسليم النهائي',
-    description: 'تقديم النتائج مع تحليل كامل وموثق.',
     icon: <FlagIcon className="w-6 h-6" />,
     color: 'bg-emerald-500',
     image:
@@ -55,7 +48,7 @@ export function FileJourney() {
       <div className="absolute inset-0 z-0">
         <Image
           src="/imgs/A polished editorial office wi/image_9.webp"
-          alt="مكتب حديث"
+          alt={t('title')}
           className="w-full h-full object-cover opacity-5"
           width={1920}
           height={1920}
@@ -66,10 +59,10 @@ export function FileJourney() {
       <div className=" mx-auto p-[5%] relative z-10">
         <div className="text-center mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-gray-900 mb-4">
-            كيف يتحرك الملف داخل المؤسسة؟
+            {t('title')}
           </h2>
           <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-gray-600">
-            نضمن وضوح المسار لجميع الأطراف
+            {t('subtitle')}
           </p>
         </div>
 
@@ -87,7 +80,7 @@ export function FileJourney() {
                 <div className="w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 xl:w-36 xl:h-36 2xl:w-40 2xl:h-40 rounded-full overflow-hidden border-4 border-white shadow-xl mb-4 group-hover:scale-110 transition-transform duration-300 relative">
                   <Image
                   src={phase.image}
-                  alt={phase.title}
+                  alt={t(`phases.${index}.title`)}
                   className="w-full h-full object-cover"
                   width={300}
                   height={300}
@@ -108,10 +101,10 @@ export function FileJourney() {
                 }
                 </div>
                 <h3 className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl font-bold text-gray-900 mb-2">
-                  {phase.title}
+                  {t(`phases.${index}.title`)}
                 </h3>
                 <p className="text-gray-600 text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl leading-relaxed">
-                  {phase.description}
+                  {t(`phases.${index}.description`)}
                 </p>
               </div>
             )}

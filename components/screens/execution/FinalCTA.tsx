@@ -1,6 +1,9 @@
+"use client";
 import { PhoneIcon, MailIcon } from 'lucide-react';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 export function FinalCTA() {
+  const t = useTranslations('execution.finalCta');
   return (
     <section id="contact" className="relative py-24 overflow-hidden">
       {/* Background Image with Overlay */}
@@ -17,11 +20,10 @@ export function FinalCTA() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-5xl mx-auto text-center text-white">
           <h2 className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-bold mb-6 leading-tight">
-            هل أنت مستعد لنقل خططك من مرحلة التفكير إلى مرحلة الإنجاز الفعلي؟
+            {t('title')}
           </h2>
           <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-blue-100 mb-12 leading-relaxed opacity-90">
-            تواصل معنا الآن وابدأ رحلتك مع فريق محترف يضمن لك التنفيذ المثالي
-            وتحقيق الأهداف.
+            {t('description')}
           </p>
           <div className="mt-16 pt-10 border-t border-white/20 flex flex-col sm:flex-row items-center justify-center gap-8 text-blue-100">
             <Link href="tel:+971521068882" className="flex items-center">

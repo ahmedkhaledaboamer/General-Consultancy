@@ -9,6 +9,7 @@ import {
   type LucideIcon,
 } from 'lucide-react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 type FeatureConfig = {
   title: string;
@@ -19,46 +20,46 @@ type FeatureConfig = {
 };
 
 const features: FeatureConfig[] = [
-{
-  title: 'خبرة متخصصة وعميقة',
-  desc: 'في إدارة المشاريع والاستثمارات.',
-  icon: BriefcaseIcon,
-  gradient: 'from-brand-purple to-brand-pink',
-  thumb:
-  '/imgs/A market opportunity evaluatio/image_44.webp'
-},
-{
-  title: 'منهجية عمل متكاملة',
-  desc: 'تربط بين الاستراتيجية والتنفيذ العملي.',
-  icon: SettingsIcon,
-  gradient: 'from-brand-blue to-brand-cyan',
-  thumb:
-  '/imgs/A modern banking advisory scen/image_15.webp'
-},
-{
-  title: 'التزام بالمصداقية والشفافية',
-  desc: 'في كل تعامل.',
-  icon: ShieldCheckIcon,
-  gradient: 'from-brand-teal to-brand-emerald',
-  thumb:
-  '/imgs/A modern banking strategy envi/image_23.webp'
-},
-{
-  title: 'حلول مرنة ومبتكرة',
-  desc: 'تناسب احتياجات كل عميل بشكل شخصي.',
-  icon: SparklesIcon,
-  gradient: 'from-brand-orange to-brand-amber',
-  thumb:
-  '/imgs/A modern investment portfolio/image_25.webp'
-},
-{
-  title: 'تواصل مستمر ومؤثر',
-  desc: 'يبني الثقة والعلاقات طويلة الأمد.',
-  icon: MessageCircleIcon,
-  gradient: 'from-brand-rose to-brand-pink',
-  thumb:
-  '/imgs/A modern investment strategy s/image_6.webp'
-}];
+  {
+    title: 'features.0.title',
+    desc: 'features.0.desc',
+    icon: BriefcaseIcon,
+    gradient: 'from-brand-purple to-brand-pink',
+    thumb:
+    '/imgs/A market opportunity evaluatio/image_44.webp'
+  },
+  {
+    title: 'features.1.title',
+    desc: 'features.1.desc',
+    icon: SettingsIcon,
+    gradient: 'from-brand-blue to-brand-cyan',
+    thumb:
+    '/imgs/A modern banking advisory scen/image_15.webp'
+  },
+  {
+    title: 'features.2.title',
+    desc: 'features.2.desc',
+    icon: ShieldCheckIcon,
+    gradient: 'from-brand-teal to-brand-emerald',
+    thumb:
+    '/imgs/A modern banking strategy envi/image_23.webp'
+  },
+  {
+    title: 'features.3.title',
+    desc: 'features.3.desc',
+    icon: SparklesIcon,
+    gradient: 'from-brand-orange to-brand-amber',
+    thumb:
+    '/imgs/A modern investment portfolio/image_25.webp'
+  },
+  {
+    title: 'features.4.title',
+    desc: 'features.4.desc',
+    icon: MessageCircleIcon,
+    gradient: 'from-brand-rose to-brand-pink',
+    thumb:
+    '/imgs/A modern investment strategy s/image_6.webp'
+  }];
 
 type FeatureCardProps = FeatureConfig & {
   index: number;
@@ -66,6 +67,7 @@ type FeatureCardProps = FeatureConfig & {
 };
 
 function FeatureCard({ title, desc, icon: Icon, gradient, thumb, index, spanClass }: FeatureCardProps) {
+  const t = useTranslations('identity.whatMakesDifferent');
   return (
     <motion.div
       className={`${spanClass} group bg-white rounded-3xl shadow-xl overflow-hidden hover:-translate-y-2 transition-transform duration-300 border border-gray-100 relative`}
@@ -97,16 +99,16 @@ function FeatureCard({ title, desc, icon: Icon, gradient, thumb, index, spanClas
           </div>
           <Image
             src={thumb}
-            alt={title}
+            alt={t(title)}
             width={1200}
             height={1200}
             className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 xl:w-20 xl:h-20 2xl:w-24 2xl:h-24 rounded-full object-cover border-2 border-gray-100 shadow-sm" />
         </div>
         <h3 className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-cairo font-bold text-gray-900 mb-3">
-          {title}
+          {t(title)}
         </h3>
         <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-gray-600">
-          {desc}
+          {t(desc)}
         </p>
       </div>
     </motion.div>
@@ -114,6 +116,7 @@ function FeatureCard({ title, desc, icon: Icon, gradient, thumb, index, spanClas
 }
 
 export function WhatMakesDifferent() {
+  const t = useTranslations('identity.whatMakesDifferent');
   return (
     <section className="  bg-mesh relative overflow-hidden">
       <div className="mx-auto p-[5%] relative z-10">
@@ -134,7 +137,7 @@ export function WhatMakesDifferent() {
           transition={{
             duration: 0.8
           }}>
-          
+
           <Image
             src="/imgs/A modern retail investment env/image_0.webp"
             alt="Modern Workspace"
@@ -146,9 +149,9 @@ export function WhatMakesDifferent() {
           <div className="absolute inset-0 flex items-center px-10 md:px-20">
             <h2 className="mx-auto text-center text-4xl md:text-6xl xl:text-7xl 2xl:text-8xl font-cairo font-bold text-white drop-shadow-xl leading-tight">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow to-brand-orange">
-                ما الذي يجعلنا
+                {t('bannerPart1')}
               </span>{' '}
-              مختلفين؟
+              {t('bannerPart2')}
             </h2>
           </div>
         </motion.div>
@@ -196,7 +199,7 @@ export function WhatMakesDifferent() {
             duration: 0.6,
             delay: 0.5
           }}>
-          
+
           <Image
             src="/imgs/A modern strategic investment/image_0.webp"
             alt="Abstract Colorful"
@@ -208,8 +211,7 @@ export function WhatMakesDifferent() {
           <div className="absolute inset-0 bg-brand-indigo-dark/80 mix-blend-multiply" />
           <div className="relative p-12 md:p-16 text-center z-10">
             <p className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-cairo font-bold text-white leading-relaxed drop-shadow-lg">
-              &quot;في كل مشروع، ندمج بين التحليل الدقيق ورؤية واضحة لتحقيق أعلى قيمة
-              ممكنة.&quot;
+              &quot;{t('quote')}&quot;
             </p>
           </div>
         </motion.div>

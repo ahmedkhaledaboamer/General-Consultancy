@@ -1,13 +1,14 @@
 export interface SubService {
-  name: string;
-  description: string;
+  id: string;
+  nameKey: string;
+  descriptionKey: string;
   icon: string;
   image: string;
 }
 
 export interface ServiceCategory {
   id: string;
-  name: string;
+  nameKey: string;
   icon: string;
   image: string;
   subServices: SubService[];
@@ -16,103 +17,103 @@ export interface ServiceCategory {
 export const services: ServiceCategory[] = [
 {
   id: 'investment',
-  name: 'خدمات الاستثمار وإدارة الاستثمارات',
+  nameKey: 'categories.investment.title',
   icon: 'TrendingUp',
   image:
   '/imgs/A professional project deliver/image_9.webp',
   subServices: [
   {
-    name: 'أنشطة الاستثمار بالحساب الخاص',
-    description:
-    'تصميم وتنفيذ فرص استثمارية خاصة تناسب المستثمرين الفرديين والمؤسسات، مع تحقيق التوازن بين العائد والمخاطر.',
+    id: 'privateInvestment',
+    nameKey: 'categories.investment.subservices.privateInvestment.name',
+    descriptionKey: 'categories.investment.subservices.privateInvestment.description',
     icon: 'Briefcase',
     image:
     '/imgs/A professional information cen/image_18.webp'
   },
   {
-    name: 'إدارة الاستثمارات وتطوير المحافظ الاستثمارية',
-    description:
-    'تنظيم وتطوير المحافظ الاستثمارية لضمان تحقيق أهداف النمو المالي المستدام والتحكم بالمخاطر.',
+    id: 'portfolioManagement',
+    nameKey: 'categories.investment.subservices.portfolioManagement.name',
+    descriptionKey: 'categories.investment.subservices.portfolioManagement.description',
     icon: 'PieChart',
     image:
     '/imgs/A professional consulting stud/image_5.webp'
   },
   {
-    name: 'إدارة وتشغيل الاستثمارات العامة',
-    description:
-    'تقديم خدمات تشغيلية واستراتيجية لإدارة الاستثمارات الحكومية والخاصة لتحقيق الاستفادة القصوى من الموارد.',
+    id: 'publicInvestments',
+    nameKey: 'categories.investment.subservices.publicInvestments.name',
+    descriptionKey: 'categories.investment.subservices.publicInvestments.description',
     icon: 'Landmark',
     image:
     '/imgs/A professional consulting fram/image_12.webp'
   },
   {
-    name: 'الاستثمار في المشاريع الصناعية وإدارتها',
-    description:
-    'تطوير وإدارة مشاريع صناعية بهدف تحسين الإنتاجية وتعظيم العوائد المالية للمستثمرين.',
+    id: 'industrialProjects',
+    nameKey: 'categories.investment.subservices.industrialProjects.name',
+    descriptionKey: 'categories.investment.subservices.industrialProjects.description',
     icon: 'Factory',
     image:
     '/imgs/A professional consulting envi/image_4.webp'
   },
   {
-    name: 'الاستثمار في المشاريع الزراعية وإدارتها',
-    description:
-    'تقديم حلول استثمارية متكاملة للمشاريع الزراعية، مع تحسين الإنتاجية والاستدامة البيئية.',
+    id: 'agriculturalProjects',
+    nameKey: 'categories.investment.subservices.agriculturalProjects.name',
+    descriptionKey: 'categories.investment.subservices.agriculturalProjects.description',
     icon: 'Tractor',
     image:
     '/imgs/A professional consulting envi/image_1.webp'
   },
   {
-    name: 'الاستثمار في المشاريع السياحية وإدارتها',
-    description:
-    'تطوير وتشغيل المشاريع السياحية لتعزيز القطاع وجذب الاستثمارات المحلية والدولية.',
+    id: 'tourismProjects',
+    nameKey: 'categories.investment.subservices.tourismProjects.name',
+    descriptionKey: 'categories.investment.subservices.tourismProjects.description',
     icon: 'Palmtree',
     image:
     '/imgs/A policy and legislative resea/image_28.webp'
   },
   {
-    name: 'الاستثمار في مشاريع الطاقة وإدارتها',
-    description:
-    'تقديم حلول استثمارية متخصصة في الطاقة التقليدية والمتجددة لضمان كفاءة التشغيل والعائد المالي.',
+    id: 'energyProjects',
+    nameKey: 'categories.investment.subservices.energyProjects.name',
+    descriptionKey: 'categories.investment.subservices.energyProjects.description',
     icon: 'Zap',
     image:
     '/imgs/A modern project development e/image_16.webp'
   },
   {
-    name: 'الاستثمار في مشاريع الصحة والتنمية',
-    description:
-    'دعم الاستثمار في القطاع الصحي لتعزيز جودة الخدمات وتحقيق نمو اقتصادي مستدام.',
+    id: 'healthProjects',
+    nameKey: 'categories.investment.subservices.healthProjects.name',
+    descriptionKey: 'categories.investment.subservices.healthProjects.description',
     icon: 'HeartPulse',
     image:
     '/imgs/A modern professional environm/image_10.webp'
   },
   {
-    name: 'الاستثمار في المشاريع التعليمية وإدارتها',
-    description:
-    'تطوير مؤسسات تعليمية ومشاريع تدريبية مبتكرة تلبي احتياجات السوق ومتطلبات التنمية.',
+    id: 'educationProjects',
+    nameKey: 'categories.investment.subservices.educationProjects.name',
+    descriptionKey: 'categories.investment.subservices.educationProjects.description',
     icon: 'GraduationCap',
     image:
     '/imgs/A modern operational control c/image_8.webp'
   },
   {
-    name: 'الاستثمار في المشاريع الرياضية وإدارتها',
-    description:
-    'تقديم استشارات استثمارية متخصصة لتعزيز القطاع الرياضي وإدارة الفعاليات والمرافق.',
+    id: 'sportsProjects',
+    nameKey: 'categories.investment.subservices.sportsProjects.name',
+    descriptionKey: 'categories.investment.subservices.sportsProjects.description',
     icon: 'Trophy',
     image:
     '/imgs/A modern operational command c/image_4.webp'
   },
   {
-    name: 'الاستثمار في مشاريع تجارة التجزئة وإدارتها',
-    description:
-    'دعم مشاريع البيع بالتجزئة عبر إدارة العمليات وتحسين الأداء التجاري وزيادة الربحية.',
+    id: 'retailProjects',
+    nameKey: 'categories.investment.subservices.retailProjects.name',
+    descriptionKey: 'categories.investment.subservices.retailProjects.description',
     icon: 'ShoppingCart',
     image:
     '/imgs/A modern media and communicati/image_0.webp'
   },
   {
-    name: 'الاستثمار في المشاريع التكنولوجية وإدارتها',
-    description:
-    'تطوير وإدارة مشاريع تقنية مبتكرة لتحقيق النمو التكنولوجي وتحسين الكفاءة التشغيلية.',
+    id: 'technologyProjects',
+    nameKey: 'categories.investment.subservices.technologyProjects.name',
+    descriptionKey: 'categories.investment.subservices.technologyProjects.description',
     icon: 'Cpu',
     image:
     '/imgs/A modern intake process enviro/image_25.webp'
@@ -121,31 +122,31 @@ export const services: ServiceCategory[] = [
 },
 {
   id: 'financial',
-  name: 'الاستشارات المالية والمصرفية',
+  nameKey: 'categories.financial.title',
   icon: 'Landmark',
   image:
   '/imgs/A modern conceptual scene illu/image_11.webp',
   subServices: [
   {
-    name: 'استشارات الرهن العقاري',
-    description:
-    'تقديم المشورة المالية للمستثمرين والشركات للحصول على أفضل الحلول في الرهون العقارية وتمويل المشاريع.',
+    id: 'mortgageConsulting',
+    nameKey: 'categories.financial.subservices.mortgageConsulting.name',
+    descriptionKey: 'categories.financial.subservices.mortgageConsulting.description',
     icon: 'Home',
     image:
     '/imgs/A luminous conceptual workspac/image_13.webp'
   },
   {
-    name: 'الاستشارات المصرفية',
-    description:
-    'تقديم حلول متخصصة لإدارة العلاقات المصرفية والعمليات المالية بما يعزز الكفاءة التشغيلية.',
+    id: 'bankingConsulting',
+    nameKey: 'categories.financial.subservices.bankingConsulting.name',
+    descriptionKey: 'categories.financial.subservices.bankingConsulting.description',
     icon: 'Building',
     image:
     '/imgs/A luminous conceptual scene wi/image_23.webp'
   },
   {
-    name: 'الاستشارات المتعلقة بالتمويل والاستثمار',
-    description:
-    'تحليل الخيارات التمويلية ووضع استراتيجيات استثمارية لتحقيق عوائد مالية مستقرة.',
+    id: 'financeInvestmentConsulting',
+    nameKey: 'categories.financial.subservices.financeInvestmentConsulting.name',
+    descriptionKey: 'categories.financial.subservices.financeInvestmentConsulting.description',
     icon: 'LineChart',
     image:
     '/imgs/A goalsetting concept scene wi/image_23.webp'
@@ -154,31 +155,31 @@ export const services: ServiceCategory[] = [
 },
 {
   id: 'health',
-  name: 'الاستشارات الصحية وإدارة القطاع الصحي',
+  nameKey: 'categories.health.title',
   icon: 'Heart',
   image:
   '/imgs/A futuristic professional envi/image_21.webp',
   subServices: [
   {
-    name: 'خدمات استشارات إدارة المؤسسات الصحية',
-    description:
-    'تقديم استشارات لتحسين إدارة المستشفيات والمراكز الصحية وزيادة كفاءة العمليات.',
+    id: 'healthInstitutionsManagement',
+    nameKey: 'categories.health.subservices.healthInstitutionsManagement.name',
+    descriptionKey: 'categories.health.subservices.healthInstitutionsManagement.description',
     icon: 'Hospital',
     image:
     '/imgs/A diverse sector consulting sc/image_13.webp'
   },
   {
-    name: 'الاستشارات الصحية والتخطيط الصحي',
-    description:
-    'وضع استراتيجيات وخطط تشغيلية لتعزيز جودة الخدمات الصحية وتوسيع نطاق الوصول إليها.',
+    id: 'healthPlanning',
+    nameKey: 'categories.health.subservices.healthPlanning.name',
+    descriptionKey: 'categories.health.subservices.healthPlanning.description',
     icon: 'Activity',
     image:
     '/imgs/A continuous improvement syste/image_27.webp'
   },
   {
-    name: 'استشارات السلامة والصحة المهنية',
-    description:
-    'تقديم حلول لضمان بيئة عمل آمنة وتقليل المخاطر الصحية للعاملين.',
+    id: 'occupationalSafety',
+    nameKey: 'categories.health.subservices.occupationalSafety.name',
+    descriptionKey: 'categories.health.subservices.occupationalSafety.description',
     icon: 'ShieldAlert',
     image:
     '/imgs/A continuous improvement conce/image_21.webp'
@@ -187,55 +188,55 @@ export const services: ServiceCategory[] = [
 },
 {
   id: 'strategic',
-  name: 'الاستشارات الاستراتيجية والإدارية',
+  nameKey: 'categories.strategic.title',
   icon: 'Target',
   image:
   '/imgs/A consulting services overview/image_14.webp',
   subServices: [
   {
-    name: 'الخدمات الاستشارية الاستراتيجية',
-    description:
-    'تصميم خطط استراتيجية تساعد المؤسسات على تحقيق أهدافها طويلة المدى وتحقيق ميزة تنافسية.',
+    id: 'strategicConsulting',
+    nameKey: 'categories.strategic.subservices.strategicConsulting.name',
+    descriptionKey: 'categories.strategic.subservices.strategicConsulting.description',
     icon: 'Compass',
     image:
     '/imgs/A consulting service tier visu/image_17.webp'
   },
   {
-    name: 'الاستشارات الإدارية والدراسات التنظيمية',
-    description:
-    'تحليل الهياكل التنظيمية وتحسين العمليات الداخلية لزيادة كفاءة الأداء الإداري.',
+    id: 'managementConsulting',
+    nameKey: 'categories.strategic.subservices.managementConsulting.name',
+    descriptionKey: 'categories.strategic.subservices.managementConsulting.description',
     icon: 'Network',
     image:
     '/imgs/A conceptual transformation sc/image_6.webp'
   },
   {
-    name: 'خدمات إدارة المشاريع',
-    description:
-    'إدارة وتنفيذ المشاريع بمهنية عالية لضمان تحقيق الأهداف ضمن الجدول الزمني والميزانية.',
+    id: 'projectManagement',
+    nameKey: 'categories.strategic.subservices.projectManagement.name',
+    descriptionKey: 'categories.strategic.subservices.projectManagement.description',
     icon: 'KanbanSquare',
     image:
     '/imgs/A conceptual operational flow/image_32.webp'
   },
   {
-    name: 'استشارات تطوير المشاريع',
-    description:
-    'تقديم المشورة لتطوير الأفكار والمبادرات إلى مشاريع قابلة للتنفيذ وناجحة.',
+    id: 'projectDevelopment',
+    nameKey: 'categories.strategic.subservices.projectDevelopment.name',
+    descriptionKey: 'categories.strategic.subservices.projectDevelopment.description',
     icon: 'Lightbulb',
     image:
     '/imgs/A comprehensive consulting ser/image_42.webp'
   },
   {
-    name: 'خدمات حاضنات الأعمال ودعم المشاريع الناشئة',
-    description:
-    'دعم رواد الأعمال والمشاريع الناشئة عبر توفير التدريب والإرشاد والاستشارات العملية.',
+    id: 'incubators',
+    nameKey: 'categories.strategic.subservices.incubators.name',
+    descriptionKey: 'categories.strategic.subservices.incubators.description',
     icon: 'Rocket',
     image:
     '/imgs/A sports research consulting e/image_19.webp'
   },
   {
-    name: 'إعداد دراسات الجدوى الاقتصادية',
-    description:
-    'تحليل المشاريع لتقييم جدواها الاقتصادية وتحديد فرص النجاح والمخاطر.',
+    id: 'feasibilityStudies',
+    nameKey: 'categories.strategic.subservices.feasibilityStudies.name',
+    descriptionKey: 'categories.strategic.subservices.feasibilityStudies.description',
     icon: 'FileText',
     image:
     '/imgs/A project evaluation environme/image_5.webp'
@@ -244,55 +245,55 @@ export const services: ServiceCategory[] = [
 },
 {
   id: 'logistics',
-  name: 'الاستشارات اللوجستية والتقنية',
+  nameKey: 'categories.logistics.title',
   icon: 'Truck',
   image:
   '/imgs/A professional standards visua/image_34.webp',
   subServices: [
   {
-    name: 'الاستشارات اللوجستية',
-    description:
-    'تحسين سلسلة الإمداد والتوزيع لضمان كفاءة العمليات وتقليل التكاليف.',
+    id: 'logisticsConsulting',
+    nameKey: 'categories.logistics.subservices.logisticsConsulting.name',
+    descriptionKey: 'categories.logistics.subservices.logisticsConsulting.description',
     icon: 'Package',
     image:
     '/imgs/A professional excellence conc/image_10.webp'
   },
   {
-    name: 'استشارات شحن البضائع',
-    description:
-    'تقديم حلول متخصصة لنقل البضائع بأمان وفعالية داخل وخارج الأسواق المحلية والدولية.',
+    id: 'freightConsulting',
+    nameKey: 'categories.logistics.subservices.freightConsulting.name',
+    descriptionKey: 'categories.logistics.subservices.freightConsulting.description',
     icon: 'Ship',
     image:
     '/imgs/A performance evaluation envir/image_26.webp'
   },
   {
-    name: 'استشارات الجمارك',
-    description:
-    'مساعدة الشركات على الامتثال للوائح الجمارك وتسهيل الإجراءات لتسريع حركة البضائع.',
+    id: 'customsConsulting',
+    nameKey: 'categories.logistics.subservices.customsConsulting.name',
+    descriptionKey: 'categories.logistics.subservices.customsConsulting.description',
     icon: 'ClipboardCheck',
     image:
     '/imgs/A global consulting standards/image_21.webp'
   },
   {
-    name: 'استشارات المعدات الفنية والتقنية',
-    description:
-    'تقديم توصيات لاختيار المعدات المناسبة وتحسين كفاءتها التشغيلية.',
+    id: 'equipmentConsulting',
+    nameKey: 'categories.logistics.subservices.equipmentConsulting.name',
+    descriptionKey: 'categories.logistics.subservices.equipmentConsulting.description',
     icon: 'Wrench',
     image:
     '/imgs/A modern agricultural investme/image_12.webp'
   },
   {
-    name: 'استشارات التجهيزات الفنية والتقنية',
-    description:
-    'تصميم وتنفيذ الحلول التقنية والتجهيزات لتلبية احتياجات العمليات المؤسسية.',
+    id: 'technicalSetupConsulting',
+    nameKey: 'categories.logistics.subservices.technicalSetupConsulting.name',
+    descriptionKey: 'categories.logistics.subservices.technicalSetupConsulting.description',
     icon: 'Settings',
     image:
     '/imgs/An elite executive support env/image_36.webp'
   },
   {
-    name: 'استشارات الجودة وتوحيد المعايير والقياس',
-    description:
-    'وضع أنظمة لضمان الجودة وتوحيد المعايير وتحسين الأداء المؤسسي.',
+    id: 'qualityConsulting',
+    nameKey: 'categories.logistics.subservices.qualityConsulting.name',
+    descriptionKey: 'categories.logistics.subservices.qualityConsulting.description',
     icon: 'Ruler',
     image:
     '/imgs/A conceptual evaluation and im/image_8.webp'
@@ -301,55 +302,55 @@ export const services: ServiceCategory[] = [
 },
 {
   id: 'tourism',
-  name: 'الاستشارات السياحية والضيافة والرياضة',
+  nameKey: 'categories.tourism.title',
   icon: 'Plane',
   image:
   '/imgs/A transparency and integrity c/image_11.webp',
   subServices: [
   {
-    name: 'استشارات إدارة الضيافة',
-    description:
-    'تقديم حلول لتحسين جودة الخدمات الفندقية والضيافة وزيادة رضا العملاء.',
+    id: 'hospitalityManagement',
+    nameKey: 'categories.tourism.subservices.hospitalityManagement.name',
+    descriptionKey: 'categories.tourism.subservices.hospitalityManagement.description',
     icon: 'Coffee',
     image:
     '/imgs/A symbolic institutional value/image_9.webp'
   },
   {
-    name: 'الاستشارات الفندقية',
-    description:
-    'تطوير استراتيجيات تشغيل الفنادق وتحسين الأداء المالي والتشغيلي.',
+    id: 'hotelConsulting',
+    nameKey: 'categories.tourism.subservices.hotelConsulting.name',
+    descriptionKey: 'categories.tourism.subservices.hotelConsulting.description',
     icon: 'BedDouble',
     image:
     '/imgs/A service framework scene with/image_23.webp'
   },
   {
-    name: 'استشارات السياحة والترفيه',
-    description:
-    'تصميم برامج سياحية وترفيهية مبتكرة لجذب الزوار وزيادة العوائد.',
+    id: 'tourismConsulting',
+    nameKey: 'categories.tourism.subservices.tourismConsulting.name',
+    descriptionKey: 'categories.tourism.subservices.tourismConsulting.description',
     icon: 'Map',
     image:
     '/imgs/A responsibilitydriven busines/image_13.webp'
   },
   {
-    name: 'الاستشارات والدراسات الرياضية',
-    description:
-    'تقديم التحليل والتخطيط لتعزيز الأداء الرياضي وتطوير البنية التحتية للرياضة.',
+    id: 'sportsStudies',
+    nameKey: 'categories.tourism.subservices.sportsStudies.name',
+    descriptionKey: 'categories.tourism.subservices.sportsStudies.description',
     icon: 'Dumbbell',
     image:
     '/imgs/A quality standards consulting/image_31.webp'
   },
   {
-    name: 'تسويق الفعاليات الرياضية',
-    description:
-    'تطوير استراتيجيات تسويقية لجذب الجمهور والرعاة للفعاليات الرياضية.',
+    id: 'sportsMarketing',
+    nameKey: 'categories.tourism.subservices.sportsMarketing.name',
+    descriptionKey: 'categories.tourism.subservices.sportsMarketing.description',
     icon: 'Ticket',
     image:
     '/imgs/A quality excellence concept w/image_39.webp'
   },
   {
-    name: 'استشارات تطوير الوجهات السياحية',
-    description:
-    'تحليل وتطوير الوجهات السياحية من خلال وضع استراتيجيات متكاملة لزيادة الجاذبية السياحية وتحسين تجربة الزوار وتعظيم العائد الاقتصادي.',
+    id: 'destinationDevelopment',
+    nameKey: 'categories.tourism.subservices.destinationDevelopment.name',
+    descriptionKey: 'categories.tourism.subservices.destinationDevelopment.description',
     icon: 'Compass',
     image:
     '/imgs/A quality assurance system sce/image_19.webp'
@@ -358,31 +359,31 @@ export const services: ServiceCategory[] = [
 },
 {
   id: 'cultural',
-  name: 'الاستشارات الثقافية والفنية',
+  nameKey: 'categories.cultural.title',
   icon: 'Palette',
   image:
   '/imgs/A project implementation monit/image_45.webp',
   subServices: [
   {
-    name: 'الاستشارات الثقافية',
-    description:
-    'دعم المؤسسات والمبادرات في التخطيط وتنفيذ المشاريع الثقافية بفعالية.',
+    id: 'culturalConsulting',
+    nameKey: 'categories.cultural.subservices.culturalConsulting.name',
+    descriptionKey: 'categories.cultural.subservices.culturalConsulting.description',
     icon: 'Library',
     image:
     '/imgs/A professional quality assuran/image_22.webp'
   },
   {
-    name: 'استشارات الفنون الجميلة',
-    description:
-    'تقديم الخبرة الفنية لتطوير معارض ومشاريع فنية وتحسين تجربة الجمهور.',
+    id: 'fineArtsConsulting',
+    nameKey: 'categories.cultural.subservices.fineArtsConsulting.name',
+    descriptionKey: 'categories.cultural.subservices.fineArtsConsulting.description',
     icon: 'Image',
     image:
     '/imgs/A professional environment wit/image_1.webp'
   },
   {
-    name: 'الاستشارات التراثية',
-    description:
-    'حماية وتعزيز التراث الثقافي من خلال مشاريع صيانة وتطوير مستدامة.',
+    id: 'heritageConsulting',
+    nameKey: 'categories.cultural.subservices.heritageConsulting.name',
+    descriptionKey: 'categories.cultural.subservices.heritageConsulting.description',
     icon: 'Castle',
     image:
     '/imgs/A professional editorial works/image_6.webp'
@@ -391,76 +392,79 @@ export const services: ServiceCategory[] = [
 },
 {
   id: 'pr',
-  name: 'خدمات العلاقات العامة والإعلان',
+  nameKey: 'categories.pr.title',
   icon: 'Megaphone',
   image:
   '/imgs/A startup incubation ecosystem/image_27.webp',
   subServices: [
   {
-    name: 'خدمات العلاقات العامة',
-    description:
-    'بناء صورة إيجابية للمؤسسة وتعزيز التفاعل مع الجمهور والشركاء.',
+    id: 'prServices',
+    nameKey: 'categories.pr.subservices.prServices.name',
+    descriptionKey: 'categories.pr.subservices.prServices.description',
     icon: 'Users',
     image:
     '/imgs/A professional editorial works/image_19.webp'
   },
   {
-    name: 'إدارة العلاقات العامة',
-    description: 'تنظيم الحملات والمبادرات لتعزيز حضور المؤسسة وسمعتها.',
+    id: 'prManagement',
+    nameKey: 'categories.pr.subservices.prManagement.name',
+    descriptionKey: 'categories.pr.subservices.prManagement.description',
     icon: 'MessageSquare',
     image:
     '/imgs/A modern monitoring and perfor/image_7.webp'
   },
   {
-    name: 'استشارات العلاقات العامة',
-    description:
-    'تقديم النصائح الاستراتيجية لتحسين التواصل المؤسسي وبناء الثقة.',
+    id: 'prConsulting',
+    nameKey: 'categories.pr.subservices.prConsulting.name',
+    descriptionKey: 'categories.pr.subservices.prConsulting.description',
     icon: 'Handshake',
     image:
     '/imgs/A modern editorialstyle worksp/image_22.webp'
   },
   {
-    name: 'خدمات الإعلان',
-    description:
-    'تصميم وتنفيذ حملات إعلانية مبتكرة للوصول إلى الجمهور المستهدف.',
+    id: 'advertisingServices',
+    nameKey: 'categories.pr.subservices.advertisingServices.name',
+    descriptionKey: 'categories.pr.subservices.advertisingServices.description',
     icon: 'MonitorPlay',
     image:
     '/imgs/A modern conceptual scene with/image_26.webp'
   },
   {
-    name: 'إعداد ونشر الكتيبات والنشرات',
-    description: 'إنشاء محتوى مطبوع ومرئي يعكس هوية المؤسسة ورسالتها.',
+    id: 'brochures',
+    nameKey: 'categories.pr.subservices.brochures.name',
+    descriptionKey: 'categories.pr.subservices.brochures.description',
     icon: 'BookOpen',
     image:
     '/imgs/A luminous editorialstyle work/image_28.webp'
   },
   {
-    name: 'التسويق المباشر',
-    description:
-    'استراتيجيات للوصول المباشر للعملاء المحتملين وزيادة المبيعات.',
+    id: 'directMarketing',
+    nameKey: 'categories.pr.subservices.directMarketing.name',
+    descriptionKey: 'categories.pr.subservices.directMarketing.description',
     icon: 'Mail',
     image:
     '/imgs/A live project monitoring envi/image_29.webp'
   },
   {
-    name: 'ترويج المبيعات',
-    description: 'تصميم حملات لتشجيع المبيعات وزيادة حصة السوق.',
+    id: 'salesPromotion',
+    nameKey: 'categories.pr.subservices.salesPromotion.name',
+    descriptionKey: 'categories.pr.subservices.salesPromotion.description',
     icon: 'Percent',
     image:
     '/imgs/A final delivery scene with or/image_38.webp'
   },
   {
-    name: 'الإعلان عبر الإنترنت',
-    description:
-    'إدارة حملات رقمية عبر الشبكة للوصول إلى جمهور أوسع وتحقيق نتائج ملموسة.',
+    id: 'onlineAdvertising',
+    nameKey: 'categories.pr.subservices.onlineAdvertising.name',
+    descriptionKey: 'categories.pr.subservices.onlineAdvertising.description',
     icon: 'MousePointerClick',
     image:
     '/imgs/A corporate quality framework/image_2.webp'
   },
   {
-    name: 'الخدمات الإعلانية عبر المواقع الإلكترونية',
-    description:
-    'تحسين التواجد الرقمي للمؤسسة من خلال الإعلانات المستهدفة على المواقع الإلكترونية.',
+    id: 'webAdvertising',
+    nameKey: 'categories.pr.subservices.webAdvertising.name',
+    descriptionKey: 'categories.pr.subservices.webAdvertising.description',
     icon: 'Globe',
     image:
     '/imgs/A continuous monitoring ecosys/image_40.webp'
@@ -469,55 +473,55 @@ export const services: ServiceCategory[] = [
 },
 {
   id: 'digital',
-  name: 'خدمات الإعلام الرقمي والتسويق',
+  nameKey: 'categories.digital.title',
   icon: 'Share2',
   image:
   '/imgs/A conceptual scene with abstra/image_25.webp',
   subServices: [
   {
-    name: 'خدمات الإعلام الاجتماعي',
-    description:
-    'إدارة حسابات وسائل التواصل الاجتماعي لبناء حضور رقمي مؤثر.',
+    id: 'socialMedia',
+    nameKey: 'categories.digital.subservices.socialMedia.name',
+    descriptionKey: 'categories.digital.subservices.socialMedia.description',
     icon: 'Smartphone',
     image:
     '/imgs/An advanced operational manage/image_13.webp'
   },
   {
-    name: 'إدارة الإعلام الرقمي',
-    description:
-    'تصميم استراتيجيات رقمية متكاملة لتعزيز الوعي بالعلامة التجارية وزيادة التفاعل.',
+    id: 'digitalMediaManagement',
+    nameKey: 'categories.digital.subservices.digitalMediaManagement.name',
+    descriptionKey: 'categories.digital.subservices.digitalMediaManagement.description',
     icon: 'Laptop',
     image:
     '/imgs/A conceptual quality framework/image_16.webp'
   },
   {
-    name: 'استشارات وسائل التواصل الاجتماعي',
-    description:
-    'تقديم توصيات لتحسين الأداء الرقمي وزيادة تأثير المحتوى على الجمهور.',
+    id: 'socialMediaConsulting',
+    nameKey: 'categories.digital.subservices.socialMediaConsulting.name',
+    descriptionKey: 'categories.digital.subservices.socialMediaConsulting.description',
     icon: 'ThumbsUp',
     image:
     '/imgs/A bright editorialstyle worksp/image_11.webp'
   },
   {
-    name: 'الاستشارات والدراسات الإعلامية',
-    description:
-    'تحليل البيئة الإعلامية وتقديم حلول لتعزيز الاستراتيجية الإعلامية للمؤسسة.',
+    id: 'mediaStudies',
+    nameKey: 'categories.digital.subservices.mediaStudies.name',
+    descriptionKey: 'categories.digital.subservices.mediaStudies.description',
     icon: 'BarChart2',
     image:
     '/imgs/A transparent project manageme/image_17.webp'
   },
   {
-    name: 'الاستشارات والدراسات الإعلانية',
-    description:
-    'تطوير خطط إعلانية مبتكرة تضمن وصول الرسائل التسويقية بفعالية.',
+    id: 'advertisingStudies',
+    nameKey: 'categories.digital.subservices.advertisingStudies.name',
+    descriptionKey: 'categories.digital.subservices.advertisingStudies.description',
     icon: 'PenTool',
     image:
     '/imgs/A symbolic executive leadershi/image_14.webp'
   },
   {
-    name: 'إدارة عمليات التسويق',
-    description:
-    'تنفيذ ومتابعة جميع العمليات التسويقية لتحقيق أهداف النمو والتوسع.',
+    id: 'marketingOperations',
+    nameKey: 'categories.digital.subservices.marketingOperations.name',
+    descriptionKey: 'categories.digital.subservices.marketingOperations.description',
     icon: 'TrendingUp',
     image:
     '/imgs/A strategic management workspa/image_15.webp'
@@ -526,23 +530,23 @@ export const services: ServiceCategory[] = [
 },
 {
   id: 'talent',
-  name: 'إدارة المواهب والوكالات الفنية',
+  nameKey: 'categories.talent.title',
   icon: 'Star',
   image:
   '/imgs/A sophisticated executive work/image_2.webp',
   subServices: [
   {
-    name: 'إدارة وتشغيل وكالات اختيار الممثلين',
-    description:
-    'تقديم خدمات إدارة واختيار المواهب التمثيلية للمشاريع الفنية والإنتاج الإعلامي.',
+    id: 'castingAgencies',
+    nameKey: 'categories.talent.subservices.castingAgencies.name',
+    descriptionKey: 'categories.talent.subservices.castingAgencies.description',
     icon: 'Film',
     image:
     '/imgs/A refined project execution sc/image_0.webp'
   },
   {
-    name: 'إدارة المواهب',
-    description:
-    'تطوير ورعاية المواهب الفنية، بما يشمل التدريب، التوجيه، وإدارة العقود والفرص المهنية.',
+    id: 'talentManagement',
+    nameKey: 'categories.talent.subservices.talentManagement.name',
+    descriptionKey: 'categories.talent.subservices.talentManagement.description',
     icon: 'Sparkles',
     image:
     '/imgs/An economic research environme/image_40.webp'

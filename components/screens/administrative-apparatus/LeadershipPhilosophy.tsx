@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion';
 import { CompassIcon, BriefcaseIcon, UsersIcon } from 'lucide-react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 type LeadershipPillarCardProps = {
   title: string;
@@ -70,13 +71,10 @@ function LeadershipPillarCard({
   );
 }
 
-const leadershipPillars: LeadershipPillarCardProps[] = [
+const leadershipPillars = [
   {
-    title: 'الرؤية الواضحة',
-    description:
-      'قيادة العمل برؤية استراتيجية تواكب التحولات الاقتصادية وتستشرف فرص المستقبل.',
+    key: '0',
     imageSrc: '/imgs/A corporate organizational con/image_17.webp',
-    imageAlt: 'الرؤية الواضحة',
     gradientOverlayClass:
       'bg-gradient-to-t from-purple-900/90 via-purple-600/50 to-pink-500/30 mix-blend-multiply',
     cardShadowClass: 'hover:shadow-[0_30px_60px_rgba(147,51,234,0.2)]',
@@ -85,11 +83,8 @@ const leadershipPillars: LeadershipPillarCardProps[] = [
     Icon: CompassIcon
   },
   {
-    title: 'الإدارة الاحترافية',
-    description:
-      'تطبيق أفضل الممارسات الإدارية لضمان كفاءة الأداء وتحقيق الأهداف المؤسسية.',
+    key: '1',
     imageSrc: '/imgs/A dynamic corporate workspace/image_17.webp',
-    imageAlt: 'الإدارة الاحترافية',
     gradientOverlayClass:
       'bg-gradient-to-t from-blue-900/90 via-blue-600/50 to-cyan-500/30 mix-blend-multiply',
     cardShadowClass: 'hover:shadow-[0_30px_60px_rgba(14,165,233,0.2)]',
@@ -98,11 +93,8 @@ const leadershipPillars: LeadershipPillarCardProps[] = [
     Icon: BriefcaseIcon
   },
   {
-    title: 'العمل التكاملي',
-    description:
-      'تعزيز التعاون بين مختلف الإدارات لضمان تقديم خدمات متكاملة تحقق أفضل النتائج.',
+    key: '2',
     imageSrc: '/imgs/A futuristic business environm/image_1.webp',
-    imageAlt: 'العمل التكاملي',
     gradientOverlayClass:
       'bg-gradient-to-t from-orange-900/90 via-orange-600/50 to-yellow-500/30 mix-blend-multiply',
     cardShadowClass: 'hover:shadow-[0_30px_60px_rgba(245,158,11,0.2)]',
@@ -113,6 +105,8 @@ const leadershipPillars: LeadershipPillarCardProps[] = [
 ];
 
 export function LeadershipPhilosophy() {
+  const t = useTranslations('administrativeApparatus.leadershipPhilosophy');
+
   return (
     <section
       id="philosophy"
@@ -139,7 +133,7 @@ export function LeadershipPhilosophy() {
               margin: '-100px'
             }}
             className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold text-slate-900 mb-8">
-            فلسفة القيادة
+            {t('title')}
           </motion.h2>
           <motion.p
             initial={{
@@ -158,16 +152,24 @@ export function LeadershipPhilosophy() {
               delay: 0.1
             }}
             className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-slate-700 leading-relaxed font-medium">
-            نؤمن أن القيادة الحقيقية لا تقتصر على اتخاذ القرار، بل تشمل القدرة
-            على بناء فرق عمل قوية، وتوجيه الموارد بفعالية، وتحقيق التوازن بين
-            الرؤية الاستراتيجية والتنفيذ العملي. تعتمد فلسفة القيادة في شركتنا
-            على ثلاثة محاور رئيسية:
+            {t('intro')}
           </motion.p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
           {leadershipPillars.map((pillar) => (
-            <LeadershipPillarCard key={pillar.title} {...pillar} />
+            <LeadershipPillarCard
+              key={pillar.key}
+              title={t(`pillars.${pillar.key}.title`)}
+              description={t(`pillars.${pillar.key}.description`)}
+              imageSrc={pillar.imageSrc}
+              imageAlt={t(`pillars.${pillar.key}.imageAlt`)}
+              gradientOverlayClass={pillar.gradientOverlayClass}
+              cardShadowClass={pillar.cardShadowClass}
+              contentBgClass={pillar.contentBgClass}
+              delay={pillar.delay}
+              Icon={pillar.Icon}
+            />
           ))}
         </div>
       </div>
