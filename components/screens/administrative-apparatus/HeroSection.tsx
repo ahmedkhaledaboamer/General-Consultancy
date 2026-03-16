@@ -2,7 +2,11 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
+
 export function HeroSection() {
+  const t = useTranslations('administrativeApparatus.hero');
+
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-mesh-gradient animate-gradient-shift">
       {/* Dark Overlay for better text readability */}
@@ -65,7 +69,7 @@ export function HeroSection() {
               }}>
               
               <span className="inline-block py-2 px-6 rounded-full bg-white/20 border border-white/30 text-white font-bold mb-8 backdrop-blur-md shadow-lg text-sm md:text-base xl:text-lg 2xl:text-xl">
-                الجهاز الإداري
+                {t('badge')}
               </span>
             </motion.div>
 
@@ -83,10 +87,10 @@ export function HeroSection() {
                 delay: 0.4
               }}
               className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold text-white mb-8 leading-tight text-shadow-lg">
-              
-              قيادة مؤسسية تصنع القرار… <br className="hidden md:block" />
+              {t('titleLine1')}
+              <br className="hidden md:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-rose-300 to-purple-300 drop-shadow-md text-sm md:text-base xl:text-xl 2xl:text-3xl">
-                وتوجّه مسارات النجاح.
+                {t('titleLine2')}
               </span>
             </motion.h1>
 
@@ -104,15 +108,10 @@ export function HeroSection() {
                 delay: 0.6
               }}
               className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-white/95 mb-12 leading-relaxed text-shadow-md font-medium mx-auto lg:mx-0">
-              
-              يعتمد نجاح أي مؤسسة على قوة منظومتها القيادية وقدرتها على تحويل
-              الرؤية إلى نتائج ملموسة. وفي شركة الشيخ عبد العزيز بن عبد الله
-              المعلا للاستشارات العامة يقوم الجهاز الإداري على نخبة من القيادات
-              والخبرات المتخصصة التي تعمل بتناغم لتحقيق أهداف الشركة وشركائها.
+              {t('paragraph1')}
               <br />
               <br />
-              نحن لا ندير الأعمال فحسب… بل نقود منظومة متكاملة تدعم الاستثمار،
-              وتطوّر المشاريع، وتحقق النمو المستدام.
+              {t('paragraph2')}
             </motion.p>
 
             <motion.div
@@ -132,8 +131,7 @@ export function HeroSection() {
               <Link
                 href="#executives"
                 className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold rounded-full text-white bg-gradient-to-r from-rose-500 via-purple-500 to-blue-500 hover:from-rose-400 hover:via-purple-400 hover:to-blue-400 shadow-2xl hover:shadow-[0_20px_50px_rgba(225,29,72,0.5)] hover:-translate-y-2 transition-all duration-300 animate-gradient-shift text-sm md:text-base xl:text-lg 2xl:text-xl">
-                
-                تعرف على فريقنا
+                {t('ctaLabel')}
               </Link>
             </motion.div>
           </div>
@@ -162,7 +160,7 @@ export function HeroSection() {
               
               <Image
                 src="/imgs/A conceptual economic operatio/image_11.webp"
-                alt="Corporate Building"
+                alt={t('imageAltBuilding')}
                 className="w-full h-full object-cover"
                 width={800}
                 height={800}
@@ -193,7 +191,7 @@ export function HeroSection() {
               
               <Image
                 src="/imgs/A conceptual financial landsca/image_5.webp"
-                alt="Business Meeting"
+                alt={t('imageAltMeeting')}
                 className="w-full h-full object-cover"
                 width={800}
                 height={800}
@@ -224,7 +222,7 @@ export function HeroSection() {
               
               <Image 
                 src="/imgs/A conceptual financial plannin/image_22.webp"
-                alt="Modern Office"
+                alt={t('imageAltOffice')}
                 className="w-full h-full object-cover"
                 width={800}
                 height={800}

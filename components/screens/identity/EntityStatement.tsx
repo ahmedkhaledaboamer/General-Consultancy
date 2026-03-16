@@ -1,10 +1,11 @@
 "use client";
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 export function EntityStatement() {
   const locale = useLocale();
   const isRTL = locale === 'ar';
+  const t = useTranslations('identity.entityStatement');
 
   return (
     <section className="relative   bg-gradient-to-br from-brand-indigo-dark via-brand-purple-dark to-brand-indigo overflow-hidden">
@@ -112,27 +113,24 @@ export function EntityStatement() {
             }}
             
             className={`text-center ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
-            
+
             <h2 className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-cairo font-bold text-white mb-8 drop-shadow-lg">
-              بيان الكيان
+              {t('title')}
             </h2>
             <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-white/90 leading-relaxed mb-12">
-              نحن كيان مؤسسي رائد في مجال الاستشارات العامة والاستثمارية،
-              ملتزمون بتحويل الرؤية إلى واقع ملموس. نقدم حلولًا متكاملة، تجمع
-              بين{' '}
+              {t('bodyPart1')}{' '}
               <span className="font-bold text-brand-yellow px-2 py-1 md:px-3 md:py-2  bg-brand-yellow/20 rounded-lg">
-                التحليل الاستراتيجي
+                {t('highlightAnalysis')}
               </span>
               ،{' '}
               <span className="font-bold text-brand-coral px-2 py-1 md:px-3 md:py-2  bg-brand-coral/20 rounded-lg">
-                التنفيذ المتميز
+                {t('highlightExecution')}
               </span>
               ، و
               <span className="font-bold text-brand-teal px-2 py-1 md:px-3 md:py-2  bg-brand-teal/20 rounded-lg">
-                إدارة المخاطر
+                {t('highlightRisk')}
               </span>
-              ، لنضمن نتائج قابلة للقياس وموثوقة. نحن أكثر من مجرد شركة
-              استشارات؛ نحن شريك نجاح طويل الأمد لكل عميل.
+              {t('bodyPart2')}
             </p>
           </motion.div>
         </div>

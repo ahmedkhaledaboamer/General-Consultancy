@@ -1,7 +1,11 @@
 "use client";
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
+
 export function HeroSection() {
+  const t = useTranslations('home.hero');
+
   return (
     <section
       id="home"
@@ -10,14 +14,14 @@ export function HeroSection() {
       {/* Background Image & Dramatic Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/imgs/Dubai/Dubai.webp"
+          src="/imgs/dubai_downtown/dubai_downtown.webp"
           alt="Dubai Skyline Night"
           className="w-full h-full object-cover object-center" 
           width={1920}
           height={1080}
           />
         
-        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 bg-black/60"></div>
       </div>
 
       {/* Floating Decorative Shapes */}
@@ -67,17 +71,17 @@ export function HeroSection() {
           }}
           className=" ">
           
-          <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full glass-colored bg-white/5 border-white/10 mb-8`}>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-colored bg-white/5 border-white/10 mb-8">
             <span className="w-2 h-2 rounded-full bg-emerald animate-pulse"></span>
             <span className="text-sm md:text-base xl:text-lg 2xl:text-2xl font-medium text-slate-200 tracking-wider">
-              رؤية استراتيجية للمستقبل
+              {t('badge')}
             </span>
           </div>
 
           <h1 className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-black text-white leading-[1.1] mb-8 drop-shadow-2xl">
-            نصوغ مسارات الاستثمار… <br className="hidden md:block" />
+            {t('titleLine1')} <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold via-amber to-orange drop-shadow-none">
-              ونبني قراراتٍ تصنع المستقبل.
+              {t('titleLine2')}
             </span>
           </h1>
 
@@ -94,11 +98,8 @@ export function HeroSection() {
               delay: 0.4,
               duration: 0.8
             }}
-            className="text-xl xl:text-2xl 2xl:text-4xl text-slate-200 mb-6 leading-relaxed   font-light">
-            
-            في عالم اقتصادي تتغير فيه المعادلات بسرعة، وتتصاعد فيه التحديات أمام
-            المستثمرين وصناع القرار، يصبح امتلاك الرؤية الواضحة والمنهجية
-            الدقيقة أمرًا لا يمكن الاستغناء عنه.
+            className="text-xl xl:text-2xl 2xl:text-4xl text-slate-200 mb-6 leading-relaxed font-light">
+            {t('descriptionMain')}
           </motion.p>
 
           <motion.p
@@ -114,13 +115,8 @@ export function HeroSection() {
               delay: 0.6,
               duration: 0.8
             }}
-            className="text-lg md:text-xl 2xl:text-2xl text-slate-400 mb-12 leading-relaxed hidden md:block ">
-            
-            تعمل شركة الشيخ عبد العزيز بن عبد الله المعلا للاستشارات العامة على
-            بناء منظومة متكاملة من الاستشارات الاستراتيجية وإدارة الاستثمارات
-            وتطوير المشاريع، لنمنح المؤسسات والمستثمرين القدرة على اتخاذ قرارات
-            واثقة، وإدارة مشاريعهم بكفاءة، وفتح آفاق نمو مستدام في مختلف
-            القطاعات الاقتصادية.
+            className="text-lg md:text-xl 2xl:text-2xl text-slate-300 mb-12 leading-relaxed hidden md:block">
+            {t('descriptionSecondary')}
           </motion.p>
 
           <motion.div
@@ -142,14 +138,13 @@ export function HeroSection() {
               href="#services"
               className="w-full sm:w-auto px-10 py-4 bg-gradient-to-r from-gold via-orange to-amber text-navy font-bold text-xl 2xl:text-3xl rounded-full hover:shadow-[0_0_30px_rgba(249,115,22,0.5)] transition-all transform hover:-translate-y-1 relative overflow-hidden group">
               
-              <span className="relative z-10">استكشف خدماتنا</span>
+              <span className="relative z-10">{t('ctaExploreServices')}</span>
               <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:animate-shimmer"></div>
             </a>
             <a
               href="#about"
               className="w-full sm:w-auto px-10 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold text-xl 2xl:text-3xl rounded-full hover:bg-white/20 transition-all transform hover:-translate-y-1">
-              
-              تعرف علينا
+              {t('ctaLearnMore')}
             </a>
           </motion.div>
         </motion.div>

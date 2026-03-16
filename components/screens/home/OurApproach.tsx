@@ -1,54 +1,55 @@
-"use client";
+ "use client";
 import { motion } from 'framer-motion';
 import {
   SearchIcon,
   MapIcon,
   PenToolIcon,
   PlayCircleIcon,
-  RefreshCwIcon } from
-'lucide-react';
+  RefreshCwIcon,
+} from 'lucide-react';
 import Image from 'next/image';
-import { useLocale } from 'next-intl';
-const approaches = [
-{
-  text: 'التحليل العميق',
-  icon: SearchIcon,
-  color: 'from-sky-400 to-blue-600',
-  image:
-  '/imgs/A welcoming corporate gateway/image_19.webp'
-},
-{
-  text: 'التخطيط الاستراتيجي',
-  icon: MapIcon,
-  color: 'from-emerald-400 to-teal-600',
-  image:
-  '/imgs/A welcoming corporate gateway/image_2.webp'
-},
-{
-  text: 'تصميم الحلول',
-  icon: PenToolIcon,
-  color: 'from-violet-400 to-purple-600',
-  image:
-  '/imgs/An elegant corporate setting w/image_3.webp'
-},
-{
-  text: 'التنفيذ والمتابعة',
-  icon: PlayCircleIcon,
-  color: 'from-magenta-400 to-pink-600',
-  image:
-  '/imgs/An innovative office scene wit/image_19.webp'
-},
-{
-  text: 'التطوير المستمر',
-  icon: RefreshCwIcon,
-  color: 'from-gold to-amber',
-  image:
-  '/imgs/A sustainable growth concept w/image_30.webp'
-}];
+import { useLocale, useTranslations } from 'next-intl';
+
+const approachMeta = [
+  {
+    icon: SearchIcon,
+    color: 'from-sky-400 to-blue-600',
+    image: '/imgs/A welcoming corporate gateway/image_19.webp',
+  },
+  {
+    icon: MapIcon,
+    color: 'from-emerald-400 to-teal-600',
+    image: '/imgs/A welcoming corporate gateway/image_2.webp',
+  },
+  {
+    icon: PenToolIcon,
+    color: 'from-violet-400 to-purple-600',
+    image: '/imgs/An elegant corporate setting w/image_3.webp',
+  },
+  {
+    icon: PlayCircleIcon,
+    color: 'from-magenta-400 to-pink-600',
+    image: '/imgs/An innovative office scene wit/image_19.webp',
+  },
+  {
+    icon: RefreshCwIcon,
+    color: 'from-gold to-amber',
+    image: '/imgs/A sustainable growth concept w/image_30.webp',
+  },
+];
 
 export function OurApproach() {
   const locale = useLocale();
   const isRTL = locale === 'ar';
+  const t = useTranslations('home.ourApproach');
+
+  const items = (t.raw('items') as string[]).map((text, index) => ({
+    text,
+    icon: approachMeta[index].icon,
+    color: approachMeta[index].color,
+    image: approachMeta[index].image,
+  }));
+
   return (
     <section className=" p-[5%]  bg-slate-50 relative overflow-hidden">
       <div className=" relative z-10">
@@ -66,8 +67,7 @@ export function OurApproach() {
               once: true
             }}
             className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-black text-navy mb-6">
-            
-            نهجنا في العمل
+            {t('title')}
           </motion.h2>
           <motion.p
             initial={{
@@ -85,8 +85,7 @@ export function OurApproach() {
               delay: 0.1
             }}
             className="text-xl xl:text-2xl 2xl:text-3xl text-slate-600 font-light">
-            
-            نعتمد منهجية متكاملة تقوم على:
+            {t('description')}
           </motion.p>
         </div>
 
@@ -95,7 +94,7 @@ export function OurApproach() {
           <div className="hidden lg:block absolute top-1/2 left-10 right-10 h-2 bg-gradient-to-l from-sky via-magenta to-gold rounded-full -translate-y-1/2 z-0 opacity-30"></div>
 
           <div className="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-4 relative z-10">
-            {approaches.map((item, index) =>
+            {items.map((item, index) =>
             <motion.div
               key={index}
               initial={{

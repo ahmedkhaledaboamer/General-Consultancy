@@ -4,7 +4,7 @@ import { HowWeWorkSection } from "@/components/screens/services/HowWeWorkSection
 import { WhyChooseUsSection } from "@/components/screens/services/WhyChooseUsSection";
 import { FAQSection } from "@/components/screens/services/FAQSection";
 import { CTASection } from "@/components/screens/services/CTASection";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 
 export async function generateMetadata() {
@@ -16,9 +16,10 @@ export async function generateMetadata() {
   };
 }
 import Image from "next/image";
-const  ServicesPage = () => {
+const ServicesPage = () => {
   const locale = useLocale();
-  const isRTL = locale === 'ar';
+  const isRTL = locale === "ar";
+  const t = useTranslations("services");
   return (
     <main
     dir={isRTL ? 'rtl' : 'ltr'}
@@ -45,8 +46,7 @@ const  ServicesPage = () => {
         </div>
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-4xl font-heading font-bold text-white leading-relaxed drop-shadow-lg">
-            &quot;نحن لا نقدّم حلولًا منفصلة… بل نبني منظومة خدمات مترابطة تساعد
-            شركاءنا على تحقيق النمو والاستدامة.&quot;
+            {t("dividerQuote.main")}
           </h2>
           <div className="w-24 h-1 bg-gold mx-auto mt-8 rounded-full shadow-[0_0_15px_rgba(201,168,76,0.6)]" />
         </div>

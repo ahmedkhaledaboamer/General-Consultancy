@@ -1,7 +1,10 @@
 "use client";
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
+
 export function HeroSection() {
+  const t = useTranslations('identity.hero');
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-brand-indigo-dark pt-20 pb-32 px-4 sm:px-6 lg:px-8">
       {/* Background Collage */}
@@ -97,7 +100,7 @@ export function HeroSection() {
           
           <div className="px-2 md:px-6 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-lg">
             <span className="text-white/90 font-bold tracking-wide">
-              الشيخ عبد العزيز بن عبد الله المعلا للاستشارات العامة
+              {t('badge')}
             </span>
           </div>
         </motion.div>
@@ -118,10 +121,10 @@ export function HeroSection() {
           }}>
           
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-brand-pink-light to-brand-orange-light">
-            هوية مؤسسية متينة…
+            {t('titleLine1')}
           </span>
           <br className="hidden md:block" />
-          <span className="text-white">تصنع الفرق في كل خطوة</span>
+          <span className="text-white">{t('titleLine2')}</span>
         </motion.h1>
 
         <motion.p
@@ -138,11 +141,7 @@ export function HeroSection() {
             duration: 0.8,
             delay: 0.4
           }}>
-          
-          في عالم سريع التغير، تبقى الهوية المؤسسية هي البوصلة التي توجه
-          أعمالنا. لا نرى الهوية مجرد شعار أو تصميم، بل هي قيمنا، وعدنا، ونهجنا
-          في العمل. نعمل على بناء ثقة متينة مع عملائنا وشركائنا من خلال
-          الشفافية، الاحترافية، والنتائج الملموسة.
+          {t('description')}
         </motion.p>
 
         <motion.div
@@ -168,7 +167,7 @@ export function HeroSection() {
             }}
           >
             <span className="relative z-10">
-              اكتشف هويتنا المؤسسية وتأثيرها على شركائنا
+              {t('ctaLabel')}
             </span>
             <div className="absolute inset-0 bg-gradient-to-r from-brand-orange to-brand-coral opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             <div className="absolute inset-0 w-[200%] h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />

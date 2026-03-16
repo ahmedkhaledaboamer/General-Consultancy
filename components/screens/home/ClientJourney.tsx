@@ -1,55 +1,50 @@
-"use client";
+ "use client";
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { useLocale } from 'next-intl';
-const steps = [
-{
-  title: 'فهم الاحتياجات',
-  description:
-  'نبدأ بتحليل أهداف العميل وتحدياته الحالية لفهم الصورة الكاملة.',
-  number: '01',
-  color: 'from-sky-400 to-blue-600',
-  image:
-  '/imgs/An educational infrastructure/image_14.webp'
-},
-{
-  title: 'التحليل والتقييم',
-  description: 'نقوم بدراسة السوق والفرص المتاحة وتقييم الخيارات الممكنة.',
-  number: '02',
-  color: 'from-emerald-400 to-teal-600',
-  image:
-  '/imgs/A sleek corporate service expl/image_4.webp'
-},
-{
-  title: 'بناء المسار الاستراتيجي',
-  description:
-  'نصمم خطة عمل واضحة تعتمد على أفضل الممارسات والخبرات المتخصصة.',
-  number: '03',
-  color: 'from-violet-400 to-purple-600',
-  image:
-  '/imgs/A sleek corporate workspace wi/image_7.webp'
-},
-{
-  title: 'التنفيذ والمتابعة',
-  description: 'نرافق شركاءنا في مراحل التنفيذ لضمان تحقيق النتائج المطلوبة.',
-  number: '04',
-  color: 'from-magenta-400 to-pink-600',
-  image:
-  '/imgs/A sleek modern office with glo/image_17.webp'
-},
-{
-  title: 'التطوير والنمو',
-  description:
-  'نستمر في دعم شركائنا لتطوير أعمالهم وتعزيز قدرتهم على التوسع المستقبلي.',
-  number: '05',
-  color: 'from-gold to-amber',
-  image:
-  '/imgs/A sleek professional office sc/image_12.webp'
-}];
+import { useLocale, useTranslations } from 'next-intl';
+
+const stepMeta = [
+  {
+    number: '01',
+    color: 'from-sky-400 to-blue-600',
+    image: '/imgs/An educational infrastructure/image_14.webp',
+  },
+  {
+    number: '02',
+    color: 'from-emerald-400 to-teal-600',
+    image: '/imgs/A sleek corporate service expl/image.webp',
+  },
+  {
+    number: '03',
+    color: 'from-violet-400 to-purple-600',
+    image: '/imgs/A sleek corporate workspace wi/image_7.webp',
+  },
+  {
+    number: '04',
+    color: 'from-magenta-400 to-pink-600',
+    image: '/imgs/A sleek modern office with glo/image_17.webp',
+  },
+  {
+    number: '05',
+    color: 'from-gold to-amber',
+    image: '/imgs/A sleek professional office sc/image_12.webp',
+  },
+];
 
 export function ClientJourney() {
   const locale = useLocale();
   const isRTL = locale === 'ar';
+  const t = useTranslations('home.clientJourney');
+
+  const steps = (t.raw('steps') as { title: string; description: string }[]).map(
+    (step, index) => ({
+      ...step,
+      number: stepMeta[index].number,
+      color: stepMeta[index].color,
+      image: stepMeta[index].image,
+    })
+  );
+
   return (
     <section className=" p-[5%]  relative overflow-hidden">
       {/* Background Image with Colorful Gradient Overlay */}
@@ -80,8 +75,7 @@ export function ClientJourney() {
               once: true
             }}
             className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-black text-white mb-6">
-            
-            رحلة العميل معنا
+            {t('title')}
           </motion.h2>
           <motion.p
             initial={{
@@ -99,9 +93,7 @@ export function ClientJourney() {
               delay: 0.1
             }}
             className="text-xl xl:text-2xl 2xl:text-3xl text-slate-300 font-light">
-            
-            رحلة العمل معنا ليست مجرد خدمة استشارية، بل هي مسار متكامل يبدأ
-            بالفهم وينتهي بتحقيق النتائج.
+            {t('description')}
           </motion.p>
         </div>
 

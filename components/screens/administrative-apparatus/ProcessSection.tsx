@@ -7,6 +7,7 @@ import {
   TrendingUpIcon
 } from 'lucide-react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 type ProcessStepCardProps = {
   title: string;
@@ -86,13 +87,10 @@ function ProcessStepCard({
   );
 }
 
-const processSteps: ProcessStepCardProps[] = [
+const processSteps = [
   {
-    title: 'التخطيط الاستراتيجي',
-    description:
-      'وضع الخطط والرؤى التي توجه عمل الشركة على المدى القصير والطويل.',
+    key: '0',
     imageSrc: '/imgs/A data intelligence environmen/image_34.webp',
-    imageAlt: 'التخطيط',
     borderColorClass: 'border-purple-400',
     shadowColorClass: 'shadow-[0_0_30px_rgba(168,85,247,0.5)]',
     badgeBgClass: 'bg-purple-500',
@@ -103,11 +101,8 @@ const processSteps: ProcessStepCardProps[] = [
     Icon: ClipboardListIcon
   },
   {
-    title: 'التنسيق المؤسسي',
-    description:
-      'التعاون بين الإدارات المختلفة لضمان تنفيذ المشاريع والخدمات بكفاءة.',
+    key: '1',
     imageSrc: '/imgs/A futuristic digital marketing/image_1.webp',
-    imageAlt: 'التنسيق',
     borderColorClass: 'border-blue-400',
     shadowColorClass: 'shadow-[0_0_30px_rgba(59,130,246,0.5)]',
     badgeBgClass: 'bg-blue-500',
@@ -118,11 +113,8 @@ const processSteps: ProcessStepCardProps[] = [
     Icon: LinkIcon
   },
   {
-    title: 'الإشراف والمتابعة',
-    description:
-      'متابعة تنفيذ الخطط والبرامج لضمان تحقيق الأهداف المحددة.',
+    key: '2',
     imageSrc: '/imgs/A technical consulting environ/image_30.webp',
-    imageAlt: 'الإشراف',
     borderColorClass: 'border-teal-400',
     shadowColorClass: 'shadow-[0_0_30px_rgba(20,184,166,0.5)]',
     badgeBgClass: 'bg-teal-500',
@@ -133,11 +125,8 @@ const processSteps: ProcessStepCardProps[] = [
     Icon: EyeIcon
   },
   {
-    title: 'التقييم والتطوير',
-    description:
-      'تقييم الأداء بشكل مستمر والعمل على تحسين العمليات والخدمات.',
+    key: '3',
     imageSrc: '/imgs/A technology infrastructure co/image_10.webp',
-    imageAlt: 'التقييم',
     borderColorClass: 'border-pink-400',
     shadowColorClass: 'shadow-[0_0_30px_rgba(244,114,182,0.5)]',
     badgeBgClass: 'bg-pink-500',
@@ -150,6 +139,8 @@ const processSteps: ProcessStepCardProps[] = [
 ];
 
 export function ProcessSection() {
+  const t = useTranslations('administrativeApparatus.process');
+
   return (
     <section id="process" className="  relative overflow-hidden text-white">
       {/* Background Image and Vibrant Gradient */}
@@ -180,7 +171,7 @@ export function ProcessSection() {
               once: true
             }}
             className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-extrabold mb-8 text-shadow-lg">
-            كيف يعمل الجهاز الإداري؟
+            {t('title')}
           </motion.h2>
           <motion.p
             initial={{
@@ -198,9 +189,7 @@ export function ProcessSection() {
               delay: 0.1
             }}
             className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-white/90 leading-relaxed font-medium text-shadow-md">
-            يعتمد الجهاز الإداري في الشركة على منظومة عمل متكاملة تضمن التنسيق
-            بين مختلف الإدارات لتحقيق أفضل النتائج. تمر عملية العمل عبر مجموعة
-            من المراحل الأساسية:
+            {t('intro')}
           </motion.p>
         </div>
 
@@ -210,7 +199,21 @@ export function ProcessSection() {
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
             {processSteps.map((step) => (
-              <ProcessStepCard key={step.badgeNumber} {...step} />
+              <ProcessStepCard
+                key={step.badgeNumber}
+                title={t(`steps.${step.key}.title`)}
+                description={t(`steps.${step.key}.description`)}
+                imageSrc={step.imageSrc}
+                imageAlt={t(`steps.${step.key}.imageAlt`)}
+                borderColorClass={step.borderColorClass}
+                shadowColorClass={step.shadowColorClass}
+                badgeBgClass={step.badgeBgClass}
+                badgeNumber={step.badgeNumber}
+                titleColorClass={step.titleColorClass}
+                delay={step.delay}
+                containerClassName={step.containerClassName}
+                Icon={step.Icon}
+              />
             ))}
           </div>
         </div>

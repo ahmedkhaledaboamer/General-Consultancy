@@ -9,6 +9,7 @@ import {
   Gem
 } from 'lucide-react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 type CoreValueCardProps = {
   title: string;
@@ -71,64 +72,50 @@ function CoreValueCard({
   );
 }
 
-const coreValues: CoreValueCardProps[] = [
+const coreValues = [
   {
-    title: 'الاحترافية',
-    description: 'نلتزم بأعلى مستويات المهنية في جميع أعمالنا وخدماتنا.',
+    key: '0',
     imageSrc: '/imgs/A real estate finance environm/image_1.webp',
-    imageAlt: 'الاحترافية',
     gradientClassName:
       'bg-gradient-to-t from-purple-900 via-purple-800/80 to-purple-500/40 mix-blend-multiply',
     delay: 0.1,
     Icon: StarIcon
   },
   {
-    title: 'النزاهة',
-    description: 'نؤمن بالشفافية والوضوح في جميع تعاملاتنا.',
+    key: '1',
     imageSrc: '/imgs/A bright conceptual office wit/image_3.webp',
-    imageAlt: 'النزاهة',
     gradientClassName:
       'bg-gradient-to-t from-blue-900 via-blue-800/80 to-cyan-500/40 mix-blend-multiply',
     delay: 0.2,
     Icon: ShieldCheckIcon
   },
   {
-    title: 'الابتكار',
-    description: 'نسعى دائمًا إلى تطوير حلول جديدة تدعم النمو والتقدم.',
+    key: '2',
     imageSrc: '/imgs/A bright corporate workspace w/image_8.webp',
-    imageAlt: 'الابتكار',
     gradientClassName:
       'bg-gradient-to-t from-pink-900 via-rose-800/80 to-pink-500/40 mix-blend-multiply',
     delay: 0.3,
     Icon: LightbulbIcon
   },
   {
-    title: 'المسؤولية',
-    description: 'نعتبر نجاح شركائنا جزءًا من مسؤوليتنا المهنية.',
+    key: '3',
     imageSrc: '/imgs/A bright modern office with ab/image_20.webp',
-    imageAlt: 'المسؤولية',
     gradientClassName:
       'bg-gradient-to-t from-teal-900 via-teal-800/80 to-emerald-500/40 mix-blend-multiply',
     delay: 0.4,
     Icon: HeartIcon
   },
   {
-    title: 'الشراكة',
-    description:
-      'نؤمن بأن النجاح الحقيقي يتحقق عبر التعاون وبناء علاقات طويلة الأمد.',
+    key: '4',
     imageSrc: '/imgs/A bright polished office envir/image_11.webp',
-    imageAlt: 'الشراكة',
     gradientClassName:
       'bg-gradient-to-t from-orange-900 via-orange-800/80 to-amber-500/40 mix-blend-multiply',
     delay: 0.5,
     Icon: HandshakeIcon
   },
   {
-    title: 'التميّز',
-    description:
-      'نسعى لتحقيق أعلى معايير الجودة والتميّز في كل ما نقدمه من خدمات وحلول استشارية.',
+    key: '5',
     imageSrc: '/imgs/A bright polished workspace wi/image_15.webp',
-    imageAlt: 'التميّز',
     gradientClassName:
       'bg-gradient-to-t from-orange-900 via-orange-800/80 to-amber-500/40 mix-blend-multiply',
     delay: 0.5,
@@ -137,6 +124,8 @@ const coreValues: CoreValueCardProps[] = [
 ];
 
 export function CoreValues() {
+  const t = useTranslations('administrativeApparatus.coreValues');
+
   return (
     <section
       id="values"
@@ -156,7 +145,7 @@ export function CoreValues() {
               once: true
             }}
             className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold text-slate-900 mb-8">
-            قيمنا الجوهرية
+            {t('title')}
           </motion.h2>
           <motion.p
             initial={{
@@ -174,14 +163,22 @@ export function CoreValues() {
               delay: 0.1
             }}
             className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-slate-700 leading-relaxed font-medium">
-            تستند منظومة العمل في الشركة إلى مجموعة من القيم التي توجه قراراتنا
-            وتعكس هويتنا المؤسسية.
+            {t('intro')}
           </motion.p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
           {coreValues.map((value) => (
-            <CoreValueCard key={value.title} {...value} />
+            <CoreValueCard
+              key={value.key}
+              title={t(`values.${value.key}.title`)}
+              description={t(`values.${value.key}.description`)}
+              imageSrc={value.imageSrc}
+              imageAlt={t(`values.${value.key}.imageAlt`)}
+              gradientClassName={value.gradientClassName}
+              delay={value.delay}
+              Icon={value.Icon}
+            />
           ))}
         </div>
       </div>

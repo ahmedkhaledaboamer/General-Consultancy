@@ -1,4 +1,4 @@
-"use client";
+ "use client";
 import { motion } from 'framer-motion';
 import {
   FactoryIcon,
@@ -9,132 +9,82 @@ import {
   GraduationCapIcon,
   TrophyIcon,
   ShoppingBagIcon,
-  CpuIcon } from
-'lucide-react';
+  CpuIcon,
+} from 'lucide-react';
 import Image from 'next/image';
-import { useLocale } from 'next-intl';
-const sectors = [
-{
-  title: 'القطاع الصناعي',
-  icon: FactoryIcon,
-  image:
-  '/imgs/A business development strateg/image_41.webp',
-  overlay: 'from-blue-900/90 to-blue-600/80',
-  items: [
-  'الاستثمار في المشاريع الصناعية',
-  'تطوير المصانع والمنشآت الإنتاجية',
-  'تحسين الكفاءة التشغيلية'],
+import { useLocale, useTranslations } from 'next-intl';
 
-  colSpan: 'md:col-span-2 lg:col-span-2'
-},
-{
-  title: 'القطاع الزراعي',
-  icon: SproutIcon,
-  image:
-  '/imgs/A conceptual strategic plannin/image_5.webp',
-  overlay: 'from-emerald-900/90 to-emerald-600/80',
-  items: [
-  'تطوير المشاريع الزراعية',
-  'الاستثمار في الأمن الغذائي',
-  'إدارة المشاريع الزراعية الحديثة'],
-
-  colSpan: 'md:col-span-1 lg:col-span-1'
-},
-{
-  title: 'القطاع السياحي',
-  icon: PlaneIcon,
-  image:
-  '/imgs/A corporate analytics environm/image_38.webp',
-  overlay: 'from-orange-900/90 to-orange-500/80',
-  items: [
-  'تطوير المشاريع السياحية',
-  'الاستثمار في المنتجعات والمنشآت',
-  'تطوير الوجهات السياحية'],
-
-  colSpan: 'md:col-span-1 lg:col-span-1'
-},
-{
-  title: 'قطاع الطاقة',
-  icon: ZapIcon,
-  image:
-  '/imgs/A flexible strategy adaptation/image_41.webp',
-  overlay: 'from-yellow-900/90 to-amber-500/80',
-  items: [
-  'الاستثمار في الطاقة التقليدية والمتجددة',
-  'تطوير مشاريع الطاقة النظيفة',
-  'إدارة البنية التحتية للطاقة'],
-
-  colSpan: 'md:col-span-2 lg:col-span-1'
-},
-{
-  title: 'قطاع الصحة',
-  icon: HeartIcon,
-  image:
-  '/imgs/A futuristic strategic outlook/image_2.webp',
-  overlay: 'from-rose-900/90 to-rose-500/80',
-  items: [
-  'الاستثمار في المشاريع الصحية',
-  'تطوير المراكز الطبية والمستشفيات',
-  'التخطيط الصحي'],
-
-  colSpan: 'md:col-span-1 lg:col-span-1'
-},
-{
-  title: 'قطاع التعليم',
-  icon: GraduationCapIcon,
-  image:
-  '/imgs/A modern advisory strategy des/image_11.webp',
-  overlay: 'from-purple-900/90 to-purple-600/80',
-  items: [
-  'تطوير المشاريع التعليمية',
-  'الاستثمار في المدارس والجامعات',
-  'إدارة المؤسسات التعليمية'],
-
-  colSpan: 'md:col-span-2 lg:col-span-2'
-},
-{
-  title: 'قطاع الرياضة',
-  icon: TrophyIcon,
-  image:
-  '/imgs/A modern operational strategy/image_4.webp',
-  overlay: 'from-red-900/90 to-red-600/80',
-  items: [
-  'الاستثمار في الأندية والمنشآت',
-  'تطوير المشاريع الرياضية',
-  'إدارة المنشآت الرياضية'],
-
-  colSpan: 'md:col-span-1 lg:col-span-1'
-},
-{
-  title: 'قطاع التجارة والتجزئة',
-  icon: ShoppingBagIcon,
-  image:
-  '/imgs/A modern strategic planning en/image_9.webp',
-  overlay: 'from-teal-900/90 to-teal-500/80',
-  items: [
-  'تطوير مشاريع تجارة التجزئة',
-  'الاستثمار في العلامات التجارية',
-  'إدارة وتشغيل المراكز التجارية'],
-
-  colSpan: 'md:col-span-1 lg:col-span-2'
-},
-{
-  title: 'قطاع التكنولوجيا',
-  icon: CpuIcon,
-  image:
-  '/imgs/A multidisciplinary strategic/image_7.webp',
-  overlay: 'from-indigo-900/90 to-indigo-600/80',
-  items: [
-  'الاستثمار في الشركات التقنية',
-  'دعم الشركات الناشئة',
-  'تطوير الحلول الرقمية والابتكارية'],
-
-  colSpan: 'md:col-span-1 lg:col-span-1'
-}];
+const sectorIcons = [
+  FactoryIcon,
+  SproutIcon,
+  PlaneIcon,
+  ZapIcon,
+  HeartIcon,
+  GraduationCapIcon,
+  TrophyIcon,
+  ShoppingBagIcon,
+  CpuIcon,
+];
 
 export function SectorServices() {
   const locale = useLocale();
   const isRTL = locale === 'ar';
+  const t = useTranslations('home.sectorServices');
+
+  const sectorsData = t.raw('sectors') as {
+    title: string;
+    items: string[];
+  }[];
+
+  const sectors = sectorsData.map((sector, index) => ({
+    ...sector,
+    icon: sectorIcons[index],
+    image:
+      index === 0
+        ? '/imgs/A business development strateg/image_41.webp'
+        : index === 1
+        ? '/imgs/A conceptual strategic plannin/image_5.webp'
+        : index === 2
+        ? '/imgs/A corporate analytics environm/image_38.webp'
+        : index === 3
+        ? '/imgs/A flexible strategy adaptation/image_41.webp'
+        : index === 4
+        ? '/imgs/A futuristic strategic outlook/image_2.webp'
+        : index === 5
+        ? '/imgs/A modern advisory strategy des/image_11.webp'
+        : index === 6
+        ? '/imgs/A modern operational strategy/image_4.webp'
+        : index === 7
+        ? '/imgs/A modern strategic planning en/image_9.webp'
+        : '/imgs/A multidisciplinary strategic/image_7.webp',
+    overlay:
+      index === 0
+        ? 'from-blue-900/90 to-blue-600/80'
+        : index === 1
+        ? 'from-emerald-900/90 to-emerald-600/80'
+        : index === 2
+        ? 'from-orange-900/90 to-orange-500/80'
+        : index === 3
+        ? 'from-yellow-900/90 to-amber-500/80'
+        : index === 4
+        ? 'from-rose-900/90 to-rose-500/80'
+        : index === 5
+        ? 'from-purple-900/90 to-purple-600/80'
+        : index === 6
+        ? 'from-red-900/90 to-red-600/80'
+        : index === 7
+        ? 'from-teal-900/90 to-teal-500/80'
+        : 'from-indigo-900/90 to-indigo-600/80',
+    colSpan:
+      index === 0 || index === 5
+        ? 'md:col-span-2 lg:col-span-2'
+        : index === 3 || index === 7
+        ? 'md:col-span-2 lg:col-span-1'
+        : index === 6
+        ? 'md:col-span-1 lg:col-span-1'
+        : 'md:col-span-1 lg:col-span-1',
+  }));
+
   return (
     <section id="sectors" className=" p-[5%]  bg-navy relative overflow-hidden">
       {/* Background Decor */}
@@ -154,16 +104,14 @@ export function SectorServices() {
             viewport={{
               once: true
             }}>
-            
             <h2 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-black text-white mb-6">
-              الاستثمار وتطوير المشاريع{' '}
+              {t('titlePrefix')}{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald to-sky">
-                القطاعية
+                {t('titleHighlight')}
               </span>
             </h2>
             <p className="text-xl xl:text-2xl 2xl:text-3xl text-slate-300 font-light">
-              نساهم في تطوير وإدارة الاستثمارات في قطاعات اقتصادية متعددة من
-              خلال دراسات متخصصة وخطط تشغيلية واضحة.
+              {t('description')}
             </p>
           </motion.div>
         </div>

@@ -1,10 +1,11 @@
 "use client";
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 export function IntroSection() {
   const locale = useLocale();
   const isRTL = locale === 'ar';
+  const t = useTranslations('identity.intro');
 
   return (
     <section id="about" className="relative   bg-mesh overflow-hidden">
@@ -125,21 +126,17 @@ export function IntroSection() {
             
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-brand-purple/10 text-brand-purple font-bold mb-6 border border-brand-purple/20 text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
               <span className={`w-2 h-2 rounded-full bg-brand-purple animate-pulse ${isRTL ? 'ml-2' : 'mr-2'}`} />
-              من نحن
+              {t('badge')}
             </div>
 
             <h2 className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-cairo font-bold text-gray-900 mb-6 leading-tight">
-              مقدمة
+              {t('title')}
             </h2>
 
             <div className="h-1.5 w-24 bg-gradient-to-r from-brand-coral via-brand-pink to-brand-purple mb-8 rounded-full md:w-32 lg:w-40 xl:w-48 2xl:w-56" />
 
             <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-gray-700 leading-relaxed font-tajawal">
-              الهوية المؤسسية تمثل روح الشركة وشخصيتها، وتجيب على أسئلة مثل: من
-              نحن؟ ماذا نمثل؟ ولماذا نتميز؟ هي ليست مجرد عناصر بصرية، بل هي
-              طريقة تفكيرنا، أسلوب عملنا، والتزامنا تجاه عملائنا وفريقنا. تجسد
-              هويتنا كل ما نفعله، وكل قرار نتخذه، سواء داخليًا أو خارجيًا، لتكون
-              الشركة دائمًا مرآة لقيمها ومبادئها.
+              {t('body')}
             </p>
           </motion.div>
         </div>

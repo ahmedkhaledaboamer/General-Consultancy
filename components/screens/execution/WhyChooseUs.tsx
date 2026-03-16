@@ -1,44 +1,35 @@
-import React from 'react';
+"use client";
 import {
   TrendingUpIcon,
   AwardIcon,
   ClipboardCheckIcon,
   PuzzleIcon,
-  EyeIcon } from
-'lucide-react';
+  EyeIcon
+} from 'lucide-react';
 import Image from 'next/image';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 export function WhyChooseUs() {
   const locale = useLocale();
   const isRTL = locale === 'ar';
+  const t = useTranslations('execution.whyChooseUs');
   const reasons = [
   {
-    title: 'خبرة طويلة ومتنوعة',
-    description: 'في الاستشارات والتنفيذ المؤسسي.',
     icon: <AwardIcon className="w-8 h-8 text-blue-600" />,
     bgColor: 'bg-blue-100'
   },
   {
-    title: 'التزام كامل بالجودة',
-    description: 'والمعايير الدولية في كافة العمليات.',
     icon: <ClipboardCheckIcon className="w-8 h-8 text-emerald-600" />,
     bgColor: 'bg-emerald-100'
   },
   {
-    title: 'إدارة دقيقة للمشاريع',
-    description: 'تضمن تحقيق النتائج بكفاءة وشفافية.',
     icon: <TrendingUpIcon className="w-8 h-8 text-purple-600" />,
     bgColor: 'bg-purple-100'
   },
   {
-    title: 'حلول مخصصة',
-    description: 'تتماشى مع طبيعة كل مؤسسة وأهدافها.',
     icon: <PuzzleIcon className="w-8 h-8 text-amber-600" />,
     bgColor: 'bg-amber-100'
   },
   {
-    title: 'متابعة مستمرة',
-    description: 'لكل مرحلة من مراحل التنفيذ لضمان نجاح المشروع.',
     icon: <EyeIcon className="w-8 h-8 text-rose-600" />,
     bgColor: 'bg-rose-100'
   }];
@@ -49,7 +40,7 @@ export function WhyChooseUs() {
       <div className="absolute inset-0 z-0">
         <Image
           src="/imgs/A conceptual execution roadmap/image_4.webp"
-          alt="فريق العمل"
+          alt={t('title')}
           className="w-full h-full object-cover opacity-15"
           width={1920}
           height={1920}
@@ -73,7 +64,7 @@ export function WhyChooseUs() {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-2 border-white/10">
               <Image
                 src="/imgs/A conceptual governance and co/image_3.webp"
-                alt="فريق العمل المحترف"
+                alt={t('title')}
                 className="w-full h-[500px] md:h-[600px] lg:h-[700px] xl:h-[800px] 2xl:h-[900px] object-cover"
                 width={800}
                 height={800}
@@ -89,10 +80,10 @@ export function WhyChooseUs() {
           <div className="w-full lg:w-3/5">
             <div className={`text-center ${!isRTL ? 'md:text-left' : 'md:text-right'} mb-12`}>
               <h2 className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-bold mb-4">
-                لماذا تختارنا؟
+                {t('title')}
               </h2>
               <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-blue-200">
-                نحن نقدم قيمة حقيقية ونتائج ملموسة لمؤسستك
+                {t('subtitle')}
               </p>
             </div>
 
@@ -109,9 +100,11 @@ export function WhyChooseUs() {
                   </div>
                   <div>
                     <h3 className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-bold mb-1 text-white">
-                      {reason.title}
+                      {t(`reasons.${index}.title`)}
                     </h3>
-                    <p className="text-blue-100">{reason.description}</p>
+                    <p className="text-blue-100">
+                      {t(`reasons.${index}.description`)}
+                    </p>
                   </div>
                 </div>
               )}

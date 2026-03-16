@@ -2,10 +2,12 @@
 import { motion } from 'framer-motion';
 import { ArrowLeftIcon, ArrowRightIcon, TrendingUpIcon } from 'lucide-react';
 import Image from 'next/image';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
+
 export function HeroSection() {
   const locale = useLocale();
   const isRTL = locale === 'ar';
+  const t = useTranslations('services');
   const scrollToContact = () => {
     document.querySelector('#contact')?.scrollIntoView({
       behavior: 'smooth'
@@ -48,25 +50,22 @@ export function HeroSection() {
             
             <div className="inline-block px-4 py-1.5 rounded-full bg-teal/20 border border-teal/30 text-tealLight mb-6 shadow-[0_0_15px_rgba(13,148,136,0.2)]">
               <span className="text-teal-300 font-body font-medium text-sm md:text-base xl:text-lg 2xl:text-xl">
-                الريادة في الاستشارات والاستثمار
+                {t('hero.badge')}
               </span>
             </div>
 
             <h1 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-heading font-bold text-white leading-tight mb-6">
-              منظومة استشارية متكاملة
+              {t('hero.titleMain')}
               <span className="block mt-2 text-gradient-gold drop-shadow-md text-sm md:text-base xl:text-lg 2xl:text-xl">
-                تدعم الاستثمار… وتبني النجاح المؤسسي.
+                {t('hero.titleHighlight')}
               </span>
             </h1>
 
             <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-gray-300 font-body leading-relaxed mb-8">
-              في بيئة أعمال تتسم بالتغير المستمر وتزايد المنافسة، تحتاج المؤسسات
-              والمستثمرون إلى منظومة خدمات قادرة على توفير الرؤية الاستراتيجية
-              والدعم التنفيذي في آنٍ واحد.
+              {t('hero.descriptionMain')}
               <br />
               <br />
-              نحن لا نقدّم حلولًا منفصلة… بل نبني منظومة خدمات مترابطة تساعد
-              شركاءنا على تحقيق النمو والاستدامة.
+              {t('hero.descriptionSecondary')}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -74,7 +73,7 @@ export function HeroSection() {
                 onClick={scrollToContact}
                 className="cursor-pointer flex items-center justify-center gap-2 bg-gradient-to-r from-gold to-yellow-500 hover:from-goldLight hover:to-gold text-navy font-bold py-4 px-8 rounded-lg transition-all transform hover:-translate-y-1 shadow-[0_0_20px_rgba(201,168,76,0.4)] text-sm md:text-base xl:text-lg 2xl:text-xl">
                 
-                <span>ابدأ رحلة النجاح معنا</span>
+                <span>{t('hero.ctaPrimary')}</span>
                 {isRTL ? <ArrowLeftIcon className="w-5 h-5" /> : <ArrowRightIcon className="w-5 h-5" />}
               </button>
               <button
@@ -84,8 +83,7 @@ export function HeroSection() {
                 })
                 }
                 className="cursor-pointer flex items-center justify-center gap-2 bg-navyLight/50 backdrop-blur-sm border border-teal/30 hover:border-teal hover:bg-navyLight text-white font-bold py-4 px-8 rounded-lg transition-all shadow-lg text-sm md:text-base xl:text-lg 2xl:text-xl">
-                
-                استكشف خدماتنا
+                {t('hero.ctaSecondary')}
               </button>
             </div>
           </motion.div>
@@ -166,10 +164,10 @@ export function HeroSection() {
                 </div>
                 <div>
                   <p className="font-heading font-bold text-white text-lg md:text-xl xl:text-2xl 2xl:text-3xl">
-                    نمو مستدام
+                    {t('hero.floatingBadge1Title')}
                   </p>
                   <p className="text-xs md:text-sm xl:text-base 2xl:text-lg text-teal-200 font-body">
-                    استراتيجيات فعالة
+                    {t('hero.floatingBadge1Subtitle')}
                   </p>
                 </div>
               </div>
@@ -190,12 +188,16 @@ export function HeroSection() {
               
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-gradient-to-br from-gold to-yellow-500 rounded-full flex items-center justify-center shadow-lg">
-                  <span className="text-navy font-bold text-xl">+20</span>
+                  <span className="text-navy font-bold text-xl">
+                    {t('hero.floatingBadge2Years')}
+                  </span>
                 </div>
                 <div>
-                  <p className="font-heading font-bold text-navy">سنوات خبرة</p>
+                  <p className="font-heading font-bold text-navy">
+                    {t('hero.floatingBadge2Title')}
+                  </p>
                   <p className="text-xs text-gray-500 font-body">
-                    في السوق المحلي والدولي
+                    {t('hero.floatingBadge2Subtitle')}
                   </p>
                 </div>
               </div>
