@@ -75,7 +75,7 @@ const leadershipPillars: LeadershipPillarCardProps[] = [
     title: 'الرؤية الواضحة',
     description:
       'قيادة العمل برؤية استراتيجية تواكب التحولات الاقتصادية وتستشرف فرص المستقبل.',
-    imageSrc: '/imgs/A sophisticated corporate fina/image_18.webp',
+    imageSrc: '/imgs/A corporate organizational con/image_17.webp',
     imageAlt: 'الرؤية الواضحة',
     gradientOverlayClass:
       'bg-gradient-to-t from-purple-900/90 via-purple-600/50 to-pink-500/30 mix-blend-multiply',
@@ -88,7 +88,7 @@ const leadershipPillars: LeadershipPillarCardProps[] = [
     title: 'الإدارة الاحترافية',
     description:
       'تطبيق أفضل الممارسات الإدارية لضمان كفاءة الأداء وتحقيق الأهداف المؤسسية.',
-    imageSrc: '/imgs/A sophisticated corporate real/image_30.webp',
+    imageSrc: '/imgs/A dynamic corporate workspace/image_17.webp',
     imageAlt: 'الإدارة الاحترافية',
     gradientOverlayClass:
       'bg-gradient-to-t from-blue-900/90 via-blue-600/50 to-cyan-500/30 mix-blend-multiply',
@@ -101,7 +101,7 @@ const leadershipPillars: LeadershipPillarCardProps[] = [
     title: 'العمل التكاملي',
     description:
       'تعزيز التعاون بين مختلف الإدارات لضمان تقديم خدمات متكاملة تحقق أفضل النتائج.',
-    imageSrc: '/imgs/A strategic corporate advisory/image_47.webp',
+    imageSrc: '/imgs/A futuristic business environm/image_1.webp',
     imageAlt: 'العمل التكاملي',
     gradientOverlayClass:
       'bg-gradient-to-t from-orange-900/90 via-orange-600/50 to-yellow-500/30 mix-blend-multiply',

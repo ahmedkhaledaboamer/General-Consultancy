@@ -93,7 +93,7 @@ export function WhyChooseUsSection() {
             
             <div className="relative rounded-3xl overflow-hidden shadow-2xl h-[600px] md:h-[700px] lg:h-[800px] 2xl:h-[900px]">
               <Image
-                src="/imgs/A cuttingedge technology devel/image_8.webp"
+                src="/imgs/A visionary economic landscape/image_6.webp"
                 alt="Business Handshake"
                 className="w-full h-full object-cover"
                 width={800}

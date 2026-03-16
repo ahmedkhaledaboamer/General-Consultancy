@@ -10,7 +10,7 @@ const steps = [
   number: '01',
   color: 'from-sky-400 to-blue-600',
   image:
-  '/imgs/18 A vibrant African marketpla/image_5.webp'
+  '/imgs/An educational infrastructure/image_14.webp'
 },
 {
   title: 'التحليل والتقييم',
@@ -18,7 +18,7 @@ const steps = [
   number: '02',
   color: 'from-emerald-400 to-teal-600',
   image:
-  '/imgs/29 A dynamic trading floor wit/image_29.webp'
+  '/imgs/A sleek corporate service expl/image_4.webp'
 },
 {
   title: 'بناء المسار الاستراتيجي',
@@ -27,7 +27,7 @@ const steps = [
   number: '03',
   color: 'from-violet-400 to-purple-600',
   image:
-  '/imgs/A dynamic educational environm/image_75.webp'
+  '/imgs/A sleek corporate workspace wi/image_7.webp'
 },
 {
   title: 'التنفيذ والمتابعة',
@@ -35,7 +35,7 @@ const steps = [
   number: '04',
   color: 'from-magenta-400 to-pink-600',
   image:
-  '/imgs/A dynamic esports arena with m/image_56.webp'
+  '/imgs/A sleek modern office with glo/image_17.webp'
 },
 {
   title: 'التطوير والنمو',
@@ -44,7 +44,7 @@ const steps = [
   number: '05',
   color: 'from-gold to-amber',
   image:
-  '/imgs/A dynamic financial environmen/image_4.webp'
+  '/imgs/A sleek professional office sc/image_12.webp'
 }];
 
 export function ClientJourney() {
@@ -55,7 +55,7 @@ export function ClientJourney() {
       {/* Background Image with Colorful Gradient Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/imgs/A dynamic financial services e/image_42.webp"
+          src="/imgs/A sleek workspace with symboli/image_4.webp"
           alt="Modern Office"
           className="w-full h-full object-cover"
           width={1920}

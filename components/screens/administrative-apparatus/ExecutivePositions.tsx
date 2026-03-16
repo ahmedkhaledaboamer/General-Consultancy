@@ -62,7 +62,7 @@ const executiveCards: ExecutiveCardProps[] = [
     title: 'رئيس مجلس الإدارة',
     description:
       'يتولى الإشراف العام على التوجه الاستراتيجي للشركة، ووضع السياسات العليا التي تدعم تحقيق رؤيتها وتوسّعها في الأسواق.',
-    imageSrc: '/imgs/A family business environment/image_76.webp',
+    imageSrc: '/imgs/A hotel consulting environment/image_12.webp',
     imageAlt: 'رئيس مجلس الإدارة',
     cardClassName:
       'bg-gradient-to-br from-purple-500 to-indigo-600 rounded-3xl p-8 pt-20 shadow-2xl hover:shadow-[0_20px_50px_rgba(79,70,229,0.4)] hover:-translate-y-2 transition-all duration-300 relative text-white text-center',
@@ -72,7 +72,7 @@ const executiveCards: ExecutiveCardProps[] = [
     title: 'الرئيس التنفيذي',
     description:
       'يقود العمليات التشغيلية للشركة ويعمل على تنفيذ الاستراتيجيات العامة وتحقيق الأهداف المؤسسية.',
-    imageSrc: '/imgs/A family business growth plann/image_4.webp',
+    imageSrc: '/imgs/A tourism and entertainment co/image_33.webp',
     imageAlt: 'الرئيس التنفيذي',
     cardClassName:
       'bg-gradient-to-br from-blue-500 to-cyan-600 rounded-3xl p-8 pt-20 shadow-2xl hover:shadow-[0_20px_50px_rgba(6,182,212,0.4)] hover:-translate-y-2 transition-all duration-300 relative text-white text-center lg:translate-y-12',
@@ -82,7 +82,7 @@ const executiveCards: ExecutiveCardProps[] = [
     title: 'مدير إدارة الاستثمارات',
     description:
       'يشرف على تطوير وإدارة الاستثمارات في مختلف القطاعات الاقتصادية، ويعمل على تحليل الفرص الاستثمارية وتطوير المحافظ الاستثمارية.',
-    imageSrc: '/imgs/A family business planning roo/image_40.webp',
+    imageSrc: '/imgs/A tourism consulting environme/image_11.webp',
     imageAlt: 'مدير إدارة الاستثمارات',
     cardClassName:
       'bg-gradient-to-br from-teal-500 to-emerald-600 rounded-3xl p-8 pt-20 shadow-2xl hover:shadow-[0_20px_50px_rgba(16,185,129,0.4)] hover:-translate-y-2 transition-all duration-300 relative text-white text-center',
@@ -92,7 +92,7 @@ const executiveCards: ExecutiveCardProps[] = [
     title: 'مدير الاستشارات الاستراتيجية',
     description:
       'يقود تقديم الخدمات الاستشارية المتعلقة بالتخطيط الاستراتيجي وتطوير نماذج الأعمال وتحليل الأسواق.',
-    imageSrc: '/imgs/A global strategy office with/image_16.webp',
+    imageSrc: '/imgs/A tourism development concept/image_7.webp',
     imageAlt: 'مدير الاستشارات الاستراتيجية',
     cardClassName:
       'bg-gradient-to-br from-rose-500 to-pink-600 rounded-3xl p-8 pt-20 shadow-2xl hover:shadow-[0_20px_50px_rgba(225,29,72,0.4)] hover:-translate-y-2 transition-all duration-300 relative text-white text-center',
@@ -102,7 +102,7 @@ const executiveCards: ExecutiveCardProps[] = [
     title: 'مدير تطوير المشاريع',
     description:
       'مسؤول عن دعم تطوير المشاريع الاستثمارية والإشراف على مراحل التخطيط والتنفيذ.',
-    imageSrc: '/imgs/A modern facility management h/image_61.webp',
+    imageSrc: '/imgs/A bright workspace with floati/image_24.webp',
     imageAlt: 'مدير تطوير المشاريع',
     cardClassName:
       'bg-gradient-to-br from-amber-500 to-orange-600 rounded-3xl p-8 pt-20 shadow-2xl hover:shadow-[0_20px_50px_rgba(245,158,11,0.4)] hover:-translate-y-2 transition-all duration-300 relative text-white text-center lg:translate-y-12',
@@ -112,7 +112,7 @@ const executiveCards: ExecutiveCardProps[] = [
     title: 'مدير الاستشارات المالية والمصرفية',
     description:
       'يشرف على تقديم الاستشارات المتعلقة بالتمويل، والاستراتيجيات المصرفية، والهياكل المالية للمشاريع.',
-    imageSrc: '/imgs/A modern healthcare management/image_9.webp',
+    imageSrc: '/imgs/A conceptual corporate environ/image_8.webp',
     imageAlt: 'مدير الاستشارات المالية والمصرفية',
     cardClassName:
       'bg-gradient-to-br from-violet-500 to-purple-600 rounded-3xl p-8 pt-20 shadow-2xl hover:shadow-[0_20px_50px_rgba(139,92,246,0.4)] hover:-translate-y-2 transition-all duration-300 relative text-white text-center',
@@ -122,7 +122,7 @@ const executiveCards: ExecutiveCardProps[] = [
     title: 'مدير الاستشارات القطاعية',
     description:
       'يقود الخدمات الاستشارية المتخصصة في قطاعات متعددة مثل الصحة، والتعليم، والطاقة، والسياحة، والصناعة.',
-    imageSrc: '/imgs/A modern industrial management/image_64.webp',
+    imageSrc: '/imgs/A conceptual corporate knowled/image_6.webp',
     imageAlt: 'مدير الاستشارات القطاعية',
     cardClassName:
       'bg-gradient-to-br from-sky-500 to-blue-600 rounded-3xl p-8 pt-20 shadow-2xl hover:shadow-[0_20px_50px_rgba(14,165,233,0.4)] hover:-translate-y-2 transition-all duration-300 relative text-white text-center',
@@ -132,7 +132,7 @@ const executiveCards: ExecutiveCardProps[] = [
     title: 'مدير العلاقات العامة والإعلام',
     description:
       'يشرف على إدارة العلاقات المؤسسية والإعلامية وتعزيز الحضور الإعلامي للشركة وشركائها.',
-    imageSrc: '/imgs/A modern insurance office with/image_4.webp',
+    imageSrc: '/imgs/A conceptual corporate workflo/image_14.webp',
     imageAlt: 'مدير العلاقات العامة والإعلام',
     cardClassName:
       'bg-gradient-to-br from-fuchsia-500 to-pink-600 rounded-3xl p-8 pt-20 shadow-2xl hover:shadow-[0_20px_50px_rgba(217,70,239,0.4)] hover:-translate-y-2 transition-all duration-300 relative text-white text-center lg:translate-y-12',
@@ -142,7 +142,7 @@ const executiveCards: ExecutiveCardProps[] = [
     title: 'مدير التسويق والإعلام الرقمي',
     description:
       'يقود استراتيجيات التسويق وإدارة الإعلام الرقمي والتواصل عبر المنصات المختلفة.',
-    imageSrc: '/imgs/A modern logistics management/image_55.webp',
+    imageSrc: '/imgs/A conceptual modern office wit/image_18.webp',
     imageAlt: 'مدير التسويق والإعلام الرقمي',
     cardClassName:
       'bg-gradient-to-br from-lime-500 to-green-600 rounded-3xl p-8 pt-20 shadow-2xl hover:shadow-[0_20px_50px_rgba(132,204,22,0.4)] hover:-translate-y-2 transition-all duration-300 relative text-white text-center',
@@ -158,7 +158,7 @@ export function ExecutivePositions() {
       {/* Hero-style banner image for section */}
       <div className="absolute top-0 start-0 w-full h-[500px] z-0">
         <Image
-          src="/imgs/A dynamic startup growth envir/image_49.webp"
+          src="/imgs/A conceptual office compositio/image_0.webp"
           alt="Conference Room"
           className="w-full h-full object-cover"
           width={1920}

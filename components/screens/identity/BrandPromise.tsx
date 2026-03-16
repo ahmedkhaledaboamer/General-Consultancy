@@ -10,7 +10,7 @@ export function BrandPromise() {
       {/* Full Background Image with Multi-color Gradient Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/imgs/17 A grand government building/image_26.webp"
+          src="/imgs/A conceptual investment manage/image_15.webp"
           alt="Abstract Colorful"
           className="w-full h-full object-cover"
         width={1920}
@@ -46,7 +46,7 @@ export function BrandPromise() {
         }}>
         
         <Image
-          src="/imgs/26 A luxurious hotel lobby wit/image_8.webp"
+          src="/imgs/A confident investment future/image_37.webp"
           alt="Handshake"
           className="w-full h-full object-cover"
           width={400}
@@ -73,7 +73,7 @@ export function BrandPromise() {
         }}>
         
         <Image
-          src="/imgs/A grand municipal building wit/image_0.webp"
+          src="/imgs/A diverse investor ecosystem s/image_49.webp"
           alt="Trust"
           className="w-full h-full object-cover"
           width={400}
@@ -100,7 +100,7 @@ export function BrandPromise() {
         }}>
         
         <Image
-          src="/imgs/A luxurious hotel suite with s/image_18.webp"
+          src="/imgs/A financial consulting environ/image_27.webp"
           alt="Leadership"
           className="w-full h-full object-cover"
           width={400}

@@ -140,7 +140,7 @@ export function WhatWeOffer() {
             className="relative h-[700px] md:h-[800px] xl:h-[900px] 2xl:h-[1000px] rounded-[3rem] overflow-hidden shadow-2xl border-8 border-slate-50">
             
             <Image
-              src="/imgs/A modern hospital interior wit/image_12.webp"
+              src="/imgs/A strategic development enviro/image_29.webp"
               alt="Consulting Services Work"
               className="w-full h-full object-cover"
               width={800}

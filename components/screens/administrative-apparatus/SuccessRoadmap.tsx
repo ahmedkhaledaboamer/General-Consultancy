@@ -86,7 +86,7 @@ const successSteps: SuccessStepCardProps[] = [
   {
     title: 'تحديد الأهداف',
     description: 'فهم رؤية العمل وتحديد الأهداف الاستراتيجية للمشروع.',
-    imageSrc: '/imgs/A warm family business office/image_5.webp',
+    imageSrc: '/imgs/A futuristic renewable energy/image_13.webp',
     imageAlt: 'تحديد الأهداف',
     phaseLabel: 'المرحلة الأولى',
     phaseColorClass: 'text-purple-300',
@@ -98,7 +98,7 @@ const successSteps: SuccessStepCardProps[] = [
   {
     title: 'تحليل الفرص',
     description: 'دراسة السوق وتحديد الفرص الاستثمارية المتاحة.',
-    imageSrc: '/imgs/A dramatic energy investment e/image_17.webp',
+    imageSrc: '/imgs/A futuristic office scene with/image_12.webp',
     imageAlt: 'تحليل الفرص',
     phaseLabel: 'المرحلة الثانية',
     phaseColorClass: 'text-blue-300',
@@ -110,7 +110,7 @@ const successSteps: SuccessStepCardProps[] = [
   {
     title: 'تطوير الاستراتيجية',
     description: 'بناء خطة عمل متكاملة لتطبيق الأهداف.',
-    imageSrc: '/imgs/27 A bustling construction sit/image_20.webp',
+    imageSrc: '/imgs/A longterm business relationsh/image_36.webp',
     imageAlt: 'تطوير الاستراتيجية',
     phaseLabel: 'المرحلة الثالثة',
     phaseColorClass: 'text-teal-300',
@@ -122,7 +122,7 @@ const successSteps: SuccessStepCardProps[] = [
   {
     title: 'التنفيذ',
     description: 'تطبيق الخطط والبرامج وفق أفضل الممارسات.',
-    imageSrc: '/imgs/A vibrant education environmen/image_21.webp',
+    imageSrc: '/imgs/A luminous conceptual office s/image_1.webp',
     imageAlt: 'التنفيذ',
     phaseLabel: 'المرحلة الرابعة',
     phaseColorClass: 'text-pink-300',
@@ -134,7 +134,7 @@ const successSteps: SuccessStepCardProps[] = [
   {
     title: 'النمو المستدام',
     description: 'دعم المشاريع في مواصلة التوسع والتطوير المستقبلي.',
-    imageSrc: '/imgs/6 A bright hospital corridor w/image_22.webp',
+    imageSrc: '/imgs/A luminous editorial workspace/image_16.webp',
     imageAlt: 'النمو المستدام',
     phaseLabel: 'المرحلة الخامسة',
     phaseColorClass: 'text-amber-300',
@@ -151,7 +151,7 @@ export function SuccessRoadmap() {
       {/* Blurred background image and gradient */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/imgs/A vibrant tech startup workspa/image_28.webp"
+          src="/imgs/A luminous modern office with/image_5.webp"
           alt="City at Night"
           className="w-full h-full object-cover blur-[2px] scale-105"
           width={1920}

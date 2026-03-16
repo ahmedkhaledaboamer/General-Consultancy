@@ -24,7 +24,7 @@ const cards: IdentityCardConfig[] = [
   desc: 'التي توجه كل سلوك وقرار.',
   icon: CompassIcon,
   image:
-  '/imgs/A stunning contemporary art mu/image_23.webp',
+  '/imgs/A strategic services ecosystem/image_12.webp',
   gradient: 'from-brand-purple/90 to-brand-pink/90',
   delay: 0.1
 },
@@ -33,7 +33,7 @@ const cards: IdentityCardConfig[] = [
   desc: 'التي تضمن الحلول الفعالة والمستدامة.',
   icon: RocketIcon,
   image:
-  '/imgs/A stunning cultural tourism de/image_25.webp',
+  '/imgs/A strategic workflow environme/image_4.webp',
   gradient: 'from-brand-blue/90 to-brand-cyan/90',
   delay: 0.2
 },
@@ -42,7 +42,7 @@ const cards: IdentityCardConfig[] = [
   desc: 'بتقديم الأفضل دائمًا.',
   icon: HandshakeIcon,
   image:
-  '/imgs/A stunning desert camp with lu/image_45.webp',
+  '/imgs/A structured planning workspac/image_26.webp',
   gradient: 'from-brand-orange/90 to-brand-amber/90',
   delay: 0.3
 },
@@ -51,7 +51,7 @@ const cards: IdentityCardConfig[] = [
   desc: 'الطريقة التي نثبت بها مصداقيتنا من خلال الأداء والنتائج الملموسة.',
   icon: BarChart3Icon,
   image:
-  '/imgs/A stunning desert tourism camp/image_8.webp',
+  '/imgs/A structured planning workspac/image_6.webp',
   gradient: "from-brand-teal/90 to-brand-emerald/90",
   delay: 0.4,
 }];

@@ -49,7 +49,7 @@ export function ServicesSection() {
             </p>
             <div className="rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="/imgs/A modern packaging facility wi/image_44.webp"
+                src="/imgs/A conceptual corporate executi/image_28.webp"
                 alt="خدمات استشارية"
                 className="w-full h-64 md:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px] object-cover"
                 width={800}

@@ -74,7 +74,7 @@ export function QualityStandards() {
             {/* Main Image */}
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="/imgs/A modern logistics park with w/image_67.webp"
+                src="/imgs/A professional office setup wi/image_5.webp"
                 alt="معايير الجودة"
                 className="w-full h-[480px] md:h-[600px] lg:h-[700px] xl:h-[800px] 2xl:h-[900px] object-cover"
                 width={800}

@@ -8,7 +8,7 @@ export function VisionMission() {
       {/* Full-width Background Image with Colorful Gradient Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/imgs/A modern highspeed train stati/image_6.webp"
+          src="/imgs/A strategic consulting environ/image_5.webp"
           alt="Skyscraper Architecture"
           className="w-full h-full object-cover"
           width={1920}

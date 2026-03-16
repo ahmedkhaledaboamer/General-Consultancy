@@ -91,7 +91,7 @@ const processSteps: ProcessStepCardProps[] = [
     title: 'التخطيط الاستراتيجي',
     description:
       'وضع الخطط والرؤى التي توجه عمل الشركة على المدى القصير والطويل.',
-    imageSrc: '/imgs/A strategic startup environmen/image_72.webp',
+    imageSrc: '/imgs/A data intelligence environmen/image_34.webp',
     imageAlt: 'التخطيط',
     borderColorClass: 'border-purple-400',
     shadowColorClass: 'shadow-[0_0_30px_rgba(168,85,247,0.5)]',
@@ -106,7 +106,7 @@ const processSteps: ProcessStepCardProps[] = [
     title: 'التنسيق المؤسسي',
     description:
       'التعاون بين الإدارات المختلفة لضمان تنفيذ المشاريع والخدمات بكفاءة.',
-    imageSrc: '/imgs/A vibrant startup incubator wi/image_29.webp',
+    imageSrc: '/imgs/A futuristic digital marketing/image_1.webp',
     imageAlt: 'التنسيق',
     borderColorClass: 'border-blue-400',
     shadowColorClass: 'shadow-[0_0_30px_rgba(59,130,246,0.5)]',
@@ -121,7 +121,7 @@ const processSteps: ProcessStepCardProps[] = [
     title: 'الإشراف والمتابعة',
     description:
       'متابعة تنفيذ الخطط والبرامج لضمان تحقيق الأهداف المحددة.',
-    imageSrc: '/imgs/A vibrant tech startup acceler/image_37.webp',
+    imageSrc: '/imgs/A technical consulting environ/image_30.webp',
     imageAlt: 'الإشراف',
     borderColorClass: 'border-teal-400',
     shadowColorClass: 'shadow-[0_0_30px_rgba(20,184,166,0.5)]',
@@ -136,7 +136,7 @@ const processSteps: ProcessStepCardProps[] = [
     title: 'التقييم والتطوير',
     description:
       'تقييم الأداء بشكل مستمر والعمل على تحسين العمليات والخدمات.',
-    imageSrc: '/imgs/A vibrant tech startup develop/image_2.webp',
+    imageSrc: '/imgs/A technology infrastructure co/image_10.webp',
     imageAlt: 'التقييم',
     borderColorClass: 'border-pink-400',
     shadowColorClass: 'shadow-[0_0_30px_rgba(244,114,182,0.5)]',
@@ -155,7 +155,7 @@ export function ProcessSection() {
       {/* Background Image and Vibrant Gradient */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/imgs/A strategic startup advisory r/image_56.webp"
+          src="/imgs/A technology investment concep/image_21.webp"
           alt="Growth Charts"
           className="w-full h-full object-cover"
           width={1920}

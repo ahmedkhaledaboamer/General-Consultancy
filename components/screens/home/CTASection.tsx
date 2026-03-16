@@ -9,7 +9,7 @@ export function CTASection() {
       {/* Dramatic Sunset Background */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/imgs/A dynamic mining environment w/image_17.webp"
+          src="/imgs/A sustainable corporate concep/image_9.webp"
           alt="Dramatic Sunset"
           className="w-full h-full object-cover"
           width={1920}

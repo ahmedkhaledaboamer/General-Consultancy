@@ -75,7 +75,7 @@ const coreValues: CoreValueCardProps[] = [
   {
     title: 'الاحترافية',
     description: 'نلتزم بأعلى مستويات المهنية في جميع أعمالنا وخدماتنا.',
-    imageSrc: '/imgs/21 A modern office with floort/image_17.webp',
+    imageSrc: '/imgs/A real estate finance environm/image_1.webp',
     imageAlt: 'الاحترافية',
     gradientClassName:
       'bg-gradient-to-t from-purple-900 via-purple-800/80 to-purple-500/40 mix-blend-multiply',
@@ -85,7 +85,7 @@ const coreValues: CoreValueCardProps[] = [
   {
     title: 'النزاهة',
     description: 'نؤمن بالشفافية والوضوح في جميع تعاملاتنا.',
-    imageSrc: '/imgs/24 A cozy startup office with/image_28.webp',
+    imageSrc: '/imgs/A bright conceptual office wit/image_3.webp',
     imageAlt: 'النزاهة',
     gradientClassName:
       'bg-gradient-to-t from-blue-900 via-blue-800/80 to-cyan-500/40 mix-blend-multiply',
@@ -95,7 +95,7 @@ const coreValues: CoreValueCardProps[] = [
   {
     title: 'الابتكار',
     description: 'نسعى دائمًا إلى تطوير حلول جديدة تدعم النمو والتقدم.',
-    imageSrc: '/imgs/8 An elegant boardroom with a/image_3.webp',
+    imageSrc: '/imgs/A bright corporate workspace w/image_8.webp',
     imageAlt: 'الابتكار',
     gradientClassName:
       'bg-gradient-to-t from-pink-900 via-rose-800/80 to-pink-500/40 mix-blend-multiply',
@@ -105,7 +105,7 @@ const coreValues: CoreValueCardProps[] = [
   {
     title: 'المسؤولية',
     description: 'نعتبر نجاح شركائنا جزءًا من مسؤوليتنا المهنية.',
-    imageSrc: '/imgs/A corporate restructuring offi/image_6.webp',
+    imageSrc: '/imgs/A bright modern office with ab/image_20.webp',
     imageAlt: 'المسؤولية',
     gradientClassName:
       'bg-gradient-to-t from-teal-900 via-teal-800/80 to-emerald-500/40 mix-blend-multiply',
@@ -116,7 +116,7 @@ const coreValues: CoreValueCardProps[] = [
     title: 'الشراكة',
     description:
       'نؤمن بأن النجاح الحقيقي يتحقق عبر التعاون وبناء علاقات طويلة الأمد.',
-    imageSrc: '/imgs/A corporate transformation cen/image_60.webp',
+    imageSrc: '/imgs/A bright polished office envir/image_11.webp',
     imageAlt: 'الشراكة',
     gradientClassName:
       'bg-gradient-to-t from-orange-900 via-orange-800/80 to-amber-500/40 mix-blend-multiply',
@@ -127,7 +127,7 @@ const coreValues: CoreValueCardProps[] = [
     title: 'التميّز',
     description:
       'نسعى لتحقيق أعلى معايير الجودة والتميّز في كل ما نقدمه من خدمات وحلول استشارية.',
-    imageSrc: '/imgs/A dynamic startup environment/image_14.webp',
+    imageSrc: '/imgs/A bright polished workspace wi/image_15.webp',
     imageAlt: 'التميّز',
     gradientClassName:
       'bg-gradient-to-t from-orange-900 via-orange-800/80 to-amber-500/40 mix-blend-multiply',

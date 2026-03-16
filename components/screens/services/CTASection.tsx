@@ -11,7 +11,7 @@ export function CTASection() {
       {/* Background Image & Overlays */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/imgs/9 A futuristic tech lab with f/image_23.webp"
+          src="/imgs/A professional financial consu/image_14.webp"
           alt="City Skyline"
           className="w-full h-full object-cover"
           width={1400}

@@ -15,7 +15,7 @@ export function HeroSection() {
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-          'url("/imgs/A modern logistics control cen/image_27.webp")'
+          'url("/imgs/A professional office scene wi/image_8.webp")'
         }}>
         
         <div className="absolute inset-0 bg-gradient-to-br from-[#1e3a5f]/95 via-[#2d5a87]/85 to-[#1a237e]/95 mix-blend-multiply"></div>

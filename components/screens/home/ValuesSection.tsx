@@ -15,7 +15,7 @@ const values = [
   icon: AwardIcon,
   color: 'from-sky-500 to-blue-600',
   image:
-  '/imgs/A modern food industry investm/image_35.webp'
+  '/imgs/A refined corporate strategy s/image_0.webp'
 },
 {
   title: 'الشفافية',
@@ -23,7 +23,7 @@ const values = [
   icon: EyeIcon,
   color: 'from-emerald-500 to-teal-600',
   image:
-  '/imgs/A modern food processing plant/image_29.webp'
+  '/imgs/A refined strategic boardroom/image_3.webp'
 },
 {
   title: 'الالتزام',
@@ -31,7 +31,7 @@ const values = [
   icon: ShieldCheckIcon,
   color: 'from-violet-500 to-purple-600',
   image:
-  '/imgs/A modern healthcare advisory e/image_23.webp'
+  '/imgs/A research and analysis enviro/image_20.webp'
 },
 {
   title: 'الابتكار',
@@ -39,7 +39,7 @@ const values = [
   icon: LightbulbIcon,
   color: 'from-magenta-500 to-pink-600',
   image:
-  '/imgs/A modern healthcare consulting/image_15.webp'
+  '/imgs/A strategic analysis environme/image_16.webp'
 },
 {
   title: 'الشراكة',
@@ -47,14 +47,14 @@ const values = [
   icon: HandshakeIcon,
   color: 'from-gold to-amber',
   image:
-  '/imgs/A modern healthcare developmen/image_61.webp'
+  '/imgs/A strategic consulting collabo/image_29.webp'
 }];
 
 export function ValuesSection() {
   return (
     <section className=" p-[5%]  bg-navy relative overflow-hidden">
       {/* Background Decor */}
-      <div className="absolute inset-0 bg-[url('/imgs/A modern healthcare environmen/image_15.webp')] opacity-5 bg-cover bg-center mix-blend-overlay"></div>
+      <div className="absolute inset-0 bg-[url('/imgs/A strategic consulting environ/image_25.webp')] opacity-5 bg-cover bg-center mix-blend-overlay"></div>
 
       <div className=" relative z-10">
         <div className="text-center   mb-20">

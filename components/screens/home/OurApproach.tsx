@@ -15,35 +15,35 @@ const approaches = [
   icon: SearchIcon,
   color: 'from-sky-400 to-blue-600',
   image:
-  '/imgs/A dynamic real estate investme/image_45.webp'
+  '/imgs/A welcoming corporate gateway/image_19.webp'
 },
 {
   text: 'التخطيط الاستراتيجي',
   icon: MapIcon,
   color: 'from-emerald-400 to-teal-600',
   image:
-  '/imgs/A dynamic real estate manageme/image_31.webp'
+  '/imgs/A welcoming corporate gateway/image_2.webp'
 },
 {
   text: 'تصميم الحلول',
   icon: PenToolIcon,
   color: 'from-violet-400 to-purple-600',
   image:
-  '/imgs/A dynamic regional expansion p/image_37.webp'
+  '/imgs/An elegant corporate setting w/image_3.webp'
 },
 {
   text: 'التنفيذ والمتابعة',
   icon: PlayCircleIcon,
   color: 'from-magenta-400 to-pink-600',
   image:
-  '/imgs/A dynamic tech development stu/image_1.webp'
+  '/imgs/An innovative office scene wit/image_19.webp'
 },
 {
   text: 'التطوير المستمر',
   icon: RefreshCwIcon,
   color: 'from-gold to-amber',
   image:
-  '/imgs/A modern agricultural developm/image_33.webp'
+  '/imgs/A sustainable growth concept w/image_30.webp'
 }];
 
 export function OurApproach() {

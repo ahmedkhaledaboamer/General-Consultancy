@@ -19,7 +19,7 @@ export const services: ServiceCategory[] = [
   name: 'خدمات الاستثمار وإدارة الاستثمارات',
   icon: 'TrendingUp',
   image:
-  'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80',
+  '/imgs/A professional project deliver/image_9.webp',
   subServices: [
   {
     name: 'أنشطة الاستثمار بالحساب الخاص',
@@ -27,7 +27,7 @@ export const services: ServiceCategory[] = [
     'تصميم وتنفيذ فرص استثمارية خاصة تناسب المستثمرين الفرديين والمؤسسات، مع تحقيق التوازن بين العائد والمخاطر.',
     icon: 'Briefcase',
     image:
-    'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400&q=80'
+    '/imgs/A professional information cen/image_18.webp'
   },
   {
     name: 'إدارة الاستثمارات وتطوير المحافظ الاستثمارية',
@@ -35,7 +35,7 @@ export const services: ServiceCategory[] = [
     'تنظيم وتطوير المحافظ الاستثمارية لضمان تحقيق أهداف النمو المالي المستدام والتحكم بالمخاطر.',
     icon: 'PieChart',
     image:
-    'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=80'
+    '/imgs/A professional consulting stud/image_5.webp'
   },
   {
     name: 'إدارة وتشغيل الاستثمارات العامة',
@@ -43,7 +43,7 @@ export const services: ServiceCategory[] = [
     'تقديم خدمات تشغيلية واستراتيجية لإدارة الاستثمارات الحكومية والخاصة لتحقيق الاستفادة القصوى من الموارد.',
     icon: 'Landmark',
     image:
-    'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&q=80'
+    '/imgs/A professional consulting fram/image_12.webp'
   },
   {
     name: 'الاستثمار في المشاريع الصناعية وإدارتها',
@@ -51,7 +51,7 @@ export const services: ServiceCategory[] = [
     'تطوير وإدارة مشاريع صناعية بهدف تحسين الإنتاجية وتعظيم العوائد المالية للمستثمرين.',
     icon: 'Factory',
     image:
-    'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&q=80'
+    '/imgs/A professional consulting envi/image_4.webp'
   },
   {
     name: 'الاستثمار في المشاريع الزراعية وإدارتها',
@@ -59,7 +59,7 @@ export const services: ServiceCategory[] = [
     'تقديم حلول استثمارية متكاملة للمشاريع الزراعية، مع تحسين الإنتاجية والاستدامة البيئية.',
     icon: 'Tractor',
     image:
-    'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&q=80'
+    '/imgs/A professional consulting envi/image_1.webp'
   },
   {
     name: 'الاستثمار في المشاريع السياحية وإدارتها',
@@ -67,7 +67,7 @@ export const services: ServiceCategory[] = [
     'تطوير وتشغيل المشاريع السياحية لتعزيز القطاع وجذب الاستثمارات المحلية والدولية.',
     icon: 'Palmtree',
     image:
-    'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=400&q=80'
+    '/imgs/A policy and legislative resea/image_28.webp'
   },
   {
     name: 'الاستثمار في مشاريع الطاقة وإدارتها',
@@ -75,7 +75,7 @@ export const services: ServiceCategory[] = [
     'تقديم حلول استثمارية متخصصة في الطاقة التقليدية والمتجددة لضمان كفاءة التشغيل والعائد المالي.',
     icon: 'Zap',
     image:
-    'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=400&q=80'
+    '/imgs/A modern project development e/image_16.webp'
   },
   {
     name: 'الاستثمار في مشاريع الصحة والتنمية',
@@ -83,7 +83,7 @@ export const services: ServiceCategory[] = [
     'دعم الاستثمار في القطاع الصحي لتعزيز جودة الخدمات وتحقيق نمو اقتصادي مستدام.',
     icon: 'HeartPulse',
     image:
-    'https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=400&q=80'
+    '/imgs/A modern professional environm/image_10.webp'
   },
   {
     name: 'الاستثمار في المشاريع التعليمية وإدارتها',
@@ -91,7 +91,7 @@ export const services: ServiceCategory[] = [
     'تطوير مؤسسات تعليمية ومشاريع تدريبية مبتكرة تلبي احتياجات السوق ومتطلبات التنمية.',
     icon: 'GraduationCap',
     image:
-    'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&q=80'
+    '/imgs/A modern operational control c/image_8.webp'
   },
   {
     name: 'الاستثمار في المشاريع الرياضية وإدارتها',
@@ -99,7 +99,7 @@ export const services: ServiceCategory[] = [
     'تقديم استشارات استثمارية متخصصة لتعزيز القطاع الرياضي وإدارة الفعاليات والمرافق.',
     icon: 'Trophy',
     image:
-    'https://images.unsplash.com/photo-1461896836934-bd45ba8a0bca?w=400&q=80'
+    '/imgs/A modern operational command c/image_4.webp'
   },
   {
     name: 'الاستثمار في مشاريع تجارة التجزئة وإدارتها',
@@ -107,7 +107,7 @@ export const services: ServiceCategory[] = [
     'دعم مشاريع البيع بالتجزئة عبر إدارة العمليات وتحسين الأداء التجاري وزيادة الربحية.',
     icon: 'ShoppingCart',
     image:
-    'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&q=80'
+    '/imgs/A modern media and communicati/image_0.webp'
   },
   {
     name: 'الاستثمار في المشاريع التكنولوجية وإدارتها',
@@ -115,7 +115,7 @@ export const services: ServiceCategory[] = [
     'تطوير وإدارة مشاريع تقنية مبتكرة لتحقيق النمو التكنولوجي وتحسين الكفاءة التشغيلية.',
     icon: 'Cpu',
     image:
-    'https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&q=80'
+    '/imgs/A modern intake process enviro/image_25.webp'
   }]
 
 },
@@ -124,7 +124,7 @@ export const services: ServiceCategory[] = [
   name: 'الاستشارات المالية والمصرفية',
   icon: 'Landmark',
   image:
-  'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80',
+  '/imgs/A modern conceptual scene illu/image_11.webp',
   subServices: [
   {
     name: 'استشارات الرهن العقاري',
@@ -132,7 +132,7 @@ export const services: ServiceCategory[] = [
     'تقديم المشورة المالية للمستثمرين والشركات للحصول على أفضل الحلول في الرهون العقارية وتمويل المشاريع.',
     icon: 'Home',
     image:
-    'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&q=80'
+    '/imgs/A luminous conceptual workspac/image_13.webp'
   },
   {
     name: 'الاستشارات المصرفية',
@@ -140,7 +140,7 @@ export const services: ServiceCategory[] = [
     'تقديم حلول متخصصة لإدارة العلاقات المصرفية والعمليات المالية بما يعزز الكفاءة التشغيلية.',
     icon: 'Building',
     image:
-    'https://images.unsplash.com/photo-1501167786227-4cba60f6d58f?w=400&q=80'
+    '/imgs/A luminous conceptual scene wi/image_23.webp'
   },
   {
     name: 'الاستشارات المتعلقة بالتمويل والاستثمار',
@@ -148,7 +148,7 @@ export const services: ServiceCategory[] = [
     'تحليل الخيارات التمويلية ووضع استراتيجيات استثمارية لتحقيق عوائد مالية مستقرة.',
     icon: 'LineChart',
     image:
-    'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=80'
+    '/imgs/A goalsetting concept scene wi/image_23.webp'
   }]
 
 },
@@ -157,7 +157,7 @@ export const services: ServiceCategory[] = [
   name: 'الاستشارات الصحية وإدارة القطاع الصحي',
   icon: 'Heart',
   image:
-  'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80',
+  '/imgs/A futuristic professional envi/image_21.webp',
   subServices: [
   {
     name: 'خدمات استشارات إدارة المؤسسات الصحية',
@@ -165,7 +165,7 @@ export const services: ServiceCategory[] = [
     'تقديم استشارات لتحسين إدارة المستشفيات والمراكز الصحية وزيادة كفاءة العمليات.',
     icon: 'Hospital',
     image:
-    'https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=400&q=80'
+    '/imgs/A diverse sector consulting sc/image_13.webp'
   },
   {
     name: 'الاستشارات الصحية والتخطيط الصحي',
@@ -173,7 +173,7 @@ export const services: ServiceCategory[] = [
     'وضع استراتيجيات وخطط تشغيلية لتعزيز جودة الخدمات الصحية وتوسيع نطاق الوصول إليها.',
     icon: 'Activity',
     image:
-    'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&q=80'
+    '/imgs/A continuous improvement syste/image_27.webp'
   },
   {
     name: 'استشارات السلامة والصحة المهنية',
@@ -181,7 +181,7 @@ export const services: ServiceCategory[] = [
     'تقديم حلول لضمان بيئة عمل آمنة وتقليل المخاطر الصحية للعاملين.',
     icon: 'ShieldAlert',
     image:
-    'https://images.unsplash.com/photo-1504439468489-c8920d796a29?w=400&q=80'
+    '/imgs/A continuous improvement conce/image_21.webp'
   }]
 
 },
@@ -190,7 +190,7 @@ export const services: ServiceCategory[] = [
   name: 'الاستشارات الاستراتيجية والإدارية',
   icon: 'Target',
   image:
-  'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80',
+  '/imgs/A consulting services overview/image_14.webp',
   subServices: [
   {
     name: 'الخدمات الاستشارية الاستراتيجية',
@@ -198,7 +198,7 @@ export const services: ServiceCategory[] = [
     'تصميم خطط استراتيجية تساعد المؤسسات على تحقيق أهدافها طويلة المدى وتحقيق ميزة تنافسية.',
     icon: 'Compass',
     image:
-    'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&q=80'
+    '/imgs/A consulting service tier visu/image_17.webp'
   },
   {
     name: 'الاستشارات الإدارية والدراسات التنظيمية',
@@ -206,7 +206,7 @@ export const services: ServiceCategory[] = [
     'تحليل الهياكل التنظيمية وتحسين العمليات الداخلية لزيادة كفاءة الأداء الإداري.',
     icon: 'Network',
     image:
-    'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&q=80'
+    '/imgs/A conceptual transformation sc/image_6.webp'
   },
   {
     name: 'خدمات إدارة المشاريع',
@@ -214,7 +214,7 @@ export const services: ServiceCategory[] = [
     'إدارة وتنفيذ المشاريع بمهنية عالية لضمان تحقيق الأهداف ضمن الجدول الزمني والميزانية.',
     icon: 'KanbanSquare',
     image:
-    'https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=400&q=80'
+    '/imgs/A conceptual operational flow/image_32.webp'
   },
   {
     name: 'استشارات تطوير المشاريع',
@@ -222,7 +222,7 @@ export const services: ServiceCategory[] = [
     'تقديم المشورة لتطوير الأفكار والمبادرات إلى مشاريع قابلة للتنفيذ وناجحة.',
     icon: 'Lightbulb',
     image:
-    'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&q=80'
+    '/imgs/A comprehensive consulting ser/image_42.webp'
   },
   {
     name: 'خدمات حاضنات الأعمال ودعم المشاريع الناشئة',
@@ -230,7 +230,7 @@ export const services: ServiceCategory[] = [
     'دعم رواد الأعمال والمشاريع الناشئة عبر توفير التدريب والإرشاد والاستشارات العملية.',
     icon: 'Rocket',
     image:
-    'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&q=80'
+    '/imgs/A sports research consulting e/image_19.webp'
   },
   {
     name: 'إعداد دراسات الجدوى الاقتصادية',
@@ -238,7 +238,7 @@ export const services: ServiceCategory[] = [
     'تحليل المشاريع لتقييم جدواها الاقتصادية وتحديد فرص النجاح والمخاطر.',
     icon: 'FileText',
     image:
-    'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&q=80'
+    '/imgs/A project evaluation environme/image_5.webp'
   }]
 
 },
@@ -247,7 +247,7 @@ export const services: ServiceCategory[] = [
   name: 'الاستشارات اللوجستية والتقنية',
   icon: 'Truck',
   image:
-  'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80',
+  '/imgs/A professional standards visua/image_34.webp',
   subServices: [
   {
     name: 'الاستشارات اللوجستية',
@@ -255,7 +255,7 @@ export const services: ServiceCategory[] = [
     'تحسين سلسلة الإمداد والتوزيع لضمان كفاءة العمليات وتقليل التكاليف.',
     icon: 'Package',
     image:
-    'https://images.unsplash.com/photo-1553413077-190dd305871c?w=400&q=80'
+    '/imgs/A professional excellence conc/image_10.webp'
   },
   {
     name: 'استشارات شحن البضائع',
@@ -263,7 +263,7 @@ export const services: ServiceCategory[] = [
     'تقديم حلول متخصصة لنقل البضائع بأمان وفعالية داخل وخارج الأسواق المحلية والدولية.',
     icon: 'Ship',
     image:
-    'https://images.unsplash.com/photo-1494412574643-ff11b0a5eb19?w=400&q=80'
+    '/imgs/A performance evaluation envir/image_26.webp'
   },
   {
     name: 'استشارات الجمارك',
@@ -271,7 +271,7 @@ export const services: ServiceCategory[] = [
     'مساعدة الشركات على الامتثال للوائح الجمارك وتسهيل الإجراءات لتسريع حركة البضائع.',
     icon: 'ClipboardCheck',
     image:
-    'https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=400&q=80'
+    '/imgs/A global consulting standards/image_21.webp'
   },
   {
     name: 'استشارات المعدات الفنية والتقنية',
@@ -279,7 +279,7 @@ export const services: ServiceCategory[] = [
     'تقديم توصيات لاختيار المعدات المناسبة وتحسين كفاءتها التشغيلية.',
     icon: 'Wrench',
     image:
-    'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=400&q=80'
+    '/imgs/A modern agricultural investme/image_12.webp'
   },
   {
     name: 'استشارات التجهيزات الفنية والتقنية',
@@ -287,7 +287,7 @@ export const services: ServiceCategory[] = [
     'تصميم وتنفيذ الحلول التقنية والتجهيزات لتلبية احتياجات العمليات المؤسسية.',
     icon: 'Settings',
     image:
-    'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&q=80'
+    '/imgs/An elite executive support env/image_36.webp'
   },
   {
     name: 'استشارات الجودة وتوحيد المعايير والقياس',
@@ -295,7 +295,7 @@ export const services: ServiceCategory[] = [
     'وضع أنظمة لضمان الجودة وتوحيد المعايير وتحسين الأداء المؤسسي.',
     icon: 'Ruler',
     image:
-    'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&q=80'
+    '/imgs/A conceptual evaluation and im/image_8.webp'
   }]
 
 },
@@ -304,7 +304,7 @@ export const services: ServiceCategory[] = [
   name: 'الاستشارات السياحية والضيافة والرياضة',
   icon: 'Plane',
   image:
-  'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80',
+  '/imgs/A transparency and integrity c/image_11.webp',
   subServices: [
   {
     name: 'استشارات إدارة الضيافة',
@@ -312,7 +312,7 @@ export const services: ServiceCategory[] = [
     'تقديم حلول لتحسين جودة الخدمات الفندقية والضيافة وزيادة رضا العملاء.',
     icon: 'Coffee',
     image:
-    'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=400&q=80'
+    '/imgs/A symbolic institutional value/image_9.webp'
   },
   {
     name: 'الاستشارات الفندقية',
@@ -320,7 +320,7 @@ export const services: ServiceCategory[] = [
     'تطوير استراتيجيات تشغيل الفنادق وتحسين الأداء المالي والتشغيلي.',
     icon: 'BedDouble',
     image:
-    'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=400&q=80'
+    '/imgs/A service framework scene with/image_23.webp'
   },
   {
     name: 'استشارات السياحة والترفيه',
@@ -328,7 +328,7 @@ export const services: ServiceCategory[] = [
     'تصميم برامج سياحية وترفيهية مبتكرة لجذب الزوار وزيادة العوائد.',
     icon: 'Map',
     image:
-    'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400&q=80'
+    '/imgs/A responsibilitydriven busines/image_13.webp'
   },
   {
     name: 'الاستشارات والدراسات الرياضية',
@@ -336,7 +336,7 @@ export const services: ServiceCategory[] = [
     'تقديم التحليل والتخطيط لتعزيز الأداء الرياضي وتطوير البنية التحتية للرياضة.',
     icon: 'Dumbbell',
     image:
-    'https://images.unsplash.com/photo-1461896836934-bd45ba8a0bca?w=400&q=80'
+    '/imgs/A quality standards consulting/image_31.webp'
   },
   {
     name: 'تسويق الفعاليات الرياضية',
@@ -344,7 +344,7 @@ export const services: ServiceCategory[] = [
     'تطوير استراتيجيات تسويقية لجذب الجمهور والرعاة للفعاليات الرياضية.',
     icon: 'Ticket',
     image:
-    'https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=400&q=80'
+    '/imgs/A quality excellence concept w/image_39.webp'
   },
   {
     name: 'استشارات تطوير الوجهات السياحية',
@@ -352,7 +352,7 @@ export const services: ServiceCategory[] = [
     'تحليل وتطوير الوجهات السياحية من خلال وضع استراتيجيات متكاملة لزيادة الجاذبية السياحية وتحسين تجربة الزوار وتعظيم العائد الاقتصادي.',
     icon: 'Compass',
     image:
-    'https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=400&q=80'
+    '/imgs/A quality assurance system sce/image_19.webp'
   }]
 
 },
@@ -361,7 +361,7 @@ export const services: ServiceCategory[] = [
   name: 'الاستشارات الثقافية والفنية',
   icon: 'Palette',
   image:
-  'https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800&q=80',
+  '/imgs/A project implementation monit/image_45.webp',
   subServices: [
   {
     name: 'الاستشارات الثقافية',
@@ -369,7 +369,7 @@ export const services: ServiceCategory[] = [
     'دعم المؤسسات والمبادرات في التخطيط وتنفيذ المشاريع الثقافية بفعالية.',
     icon: 'Library',
     image:
-    'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80'
+    '/imgs/A professional quality assuran/image_22.webp'
   },
   {
     name: 'استشارات الفنون الجميلة',
@@ -377,7 +377,7 @@ export const services: ServiceCategory[] = [
     'تقديم الخبرة الفنية لتطوير معارض ومشاريع فنية وتحسين تجربة الجمهور.',
     icon: 'Image',
     image:
-    'https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=400&q=80'
+    '/imgs/A professional environment wit/image_1.webp'
   },
   {
     name: 'الاستشارات التراثية',
@@ -385,7 +385,7 @@ export const services: ServiceCategory[] = [
     'حماية وتعزيز التراث الثقافي من خلال مشاريع صيانة وتطوير مستدامة.',
     icon: 'Castle',
     image:
-    'https://images.unsplash.com/photo-1539650116574-8efeb43e2750?w=400&q=80'
+    '/imgs/A professional editorial works/image_6.webp'
   }]
 
 },
@@ -394,7 +394,7 @@ export const services: ServiceCategory[] = [
   name: 'خدمات العلاقات العامة والإعلان',
   icon: 'Megaphone',
   image:
-  'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=80',
+  '/imgs/A startup incubation ecosystem/image_27.webp',
   subServices: [
   {
     name: 'خدمات العلاقات العامة',
@@ -402,14 +402,14 @@ export const services: ServiceCategory[] = [
     'بناء صورة إيجابية للمؤسسة وتعزيز التفاعل مع الجمهور والشركاء.',
     icon: 'Users',
     image:
-    'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&q=80'
+    '/imgs/A professional editorial works/image_19.webp'
   },
   {
     name: 'إدارة العلاقات العامة',
     description: 'تنظيم الحملات والمبادرات لتعزيز حضور المؤسسة وسمعتها.',
     icon: 'MessageSquare',
     image:
-    'https://images.unsplash.com/photo-1552581234-26160f608093?w=400&q=80'
+    '/imgs/A modern monitoring and perfor/image_7.webp'
   },
   {
     name: 'استشارات العلاقات العامة',
@@ -417,7 +417,7 @@ export const services: ServiceCategory[] = [
     'تقديم النصائح الاستراتيجية لتحسين التواصل المؤسسي وبناء الثقة.',
     icon: 'Handshake',
     image:
-    'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=400&q=80'
+    '/imgs/A modern editorialstyle worksp/image_22.webp'
   },
   {
     name: 'خدمات الإعلان',
@@ -425,14 +425,14 @@ export const services: ServiceCategory[] = [
     'تصميم وتنفيذ حملات إعلانية مبتكرة للوصول إلى الجمهور المستهدف.',
     icon: 'MonitorPlay',
     image:
-    'https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=400&q=80'
+    '/imgs/A modern conceptual scene with/image_26.webp'
   },
   {
     name: 'إعداد ونشر الكتيبات والنشرات',
     description: 'إنشاء محتوى مطبوع ومرئي يعكس هوية المؤسسة ورسالتها.',
     icon: 'BookOpen',
     image:
-    'https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=400&q=80'
+    '/imgs/A luminous editorialstyle work/image_28.webp'
   },
   {
     name: 'التسويق المباشر',
@@ -440,14 +440,14 @@ export const services: ServiceCategory[] = [
     'استراتيجيات للوصول المباشر للعملاء المحتملين وزيادة المبيعات.',
     icon: 'Mail',
     image:
-    'https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=400&q=80'
+    '/imgs/A live project monitoring envi/image_29.webp'
   },
   {
     name: 'ترويج المبيعات',
     description: 'تصميم حملات لتشجيع المبيعات وزيادة حصة السوق.',
     icon: 'Percent',
     image:
-    'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&q=80'
+    '/imgs/A final delivery scene with or/image_38.webp'
   },
   {
     name: 'الإعلان عبر الإنترنت',
@@ -455,7 +455,7 @@ export const services: ServiceCategory[] = [
     'إدارة حملات رقمية عبر الشبكة للوصول إلى جمهور أوسع وتحقيق نتائج ملموسة.',
     icon: 'MousePointerClick',
     image:
-    'https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=400&q=80'
+    '/imgs/A corporate quality framework/image_2.webp'
   },
   {
     name: 'الخدمات الإعلانية عبر المواقع الإلكترونية',
@@ -463,7 +463,7 @@ export const services: ServiceCategory[] = [
     'تحسين التواجد الرقمي للمؤسسة من خلال الإعلانات المستهدفة على المواقع الإلكترونية.',
     icon: 'Globe',
     image:
-    'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&q=80'
+    '/imgs/A continuous monitoring ecosys/image_40.webp'
   }]
 
 },
@@ -472,7 +472,7 @@ export const services: ServiceCategory[] = [
   name: 'خدمات الإعلام الرقمي والتسويق',
   icon: 'Share2',
   image:
-  'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80',
+  '/imgs/A conceptual scene with abstra/image_25.webp',
   subServices: [
   {
     name: 'خدمات الإعلام الاجتماعي',
@@ -480,7 +480,7 @@ export const services: ServiceCategory[] = [
     'إدارة حسابات وسائل التواصل الاجتماعي لبناء حضور رقمي مؤثر.',
     icon: 'Smartphone',
     image:
-    'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&q=80'
+    '/imgs/An advanced operational manage/image_13.webp'
   },
   {
     name: 'إدارة الإعلام الرقمي',
@@ -488,7 +488,7 @@ export const services: ServiceCategory[] = [
     'تصميم استراتيجيات رقمية متكاملة لتعزيز الوعي بالعلامة التجارية وزيادة التفاعل.',
     icon: 'Laptop',
     image:
-    'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=400&q=80'
+    '/imgs/A conceptual quality framework/image_16.webp'
   },
   {
     name: 'استشارات وسائل التواصل الاجتماعي',
@@ -496,7 +496,7 @@ export const services: ServiceCategory[] = [
     'تقديم توصيات لتحسين الأداء الرقمي وزيادة تأثير المحتوى على الجمهور.',
     icon: 'ThumbsUp',
     image:
-    'https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=400&q=80'
+    '/imgs/A bright editorialstyle worksp/image_11.webp'
   },
   {
     name: 'الاستشارات والدراسات الإعلامية',
@@ -504,7 +504,7 @@ export const services: ServiceCategory[] = [
     'تحليل البيئة الإعلامية وتقديم حلول لتعزيز الاستراتيجية الإعلامية للمؤسسة.',
     icon: 'BarChart2',
     image:
-    'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=80'
+    '/imgs/A transparent project manageme/image_17.webp'
   },
   {
     name: 'الاستشارات والدراسات الإعلانية',
@@ -512,7 +512,7 @@ export const services: ServiceCategory[] = [
     'تطوير خطط إعلانية مبتكرة تضمن وصول الرسائل التسويقية بفعالية.',
     icon: 'PenTool',
     image:
-    'https://images.unsplash.com/photo-1542744094-3a31f272c490?w=400&q=80'
+    '/imgs/A symbolic executive leadershi/image_14.webp'
   },
   {
     name: 'إدارة عمليات التسويق',
@@ -520,7 +520,7 @@ export const services: ServiceCategory[] = [
     'تنفيذ ومتابعة جميع العمليات التسويقية لتحقيق أهداف النمو والتوسع.',
     icon: 'TrendingUp',
     image:
-    'https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=400&q=80'
+    '/imgs/A strategic management workspa/image_15.webp'
   }]
 
 },
@@ -529,7 +529,7 @@ export const services: ServiceCategory[] = [
   name: 'إدارة المواهب والوكالات الفنية',
   icon: 'Star',
   image:
-  'https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&q=80',
+  '/imgs/A sophisticated executive work/image_2.webp',
   subServices: [
   {
     name: 'إدارة وتشغيل وكالات اختيار الممثلين',
@@ -537,7 +537,7 @@ export const services: ServiceCategory[] = [
     'تقديم خدمات إدارة واختيار المواهب التمثيلية للمشاريع الفنية والإنتاج الإعلامي.',
     icon: 'Film',
     image:
-    'https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=400&q=80'
+    '/imgs/A refined project execution sc/image_0.webp'
   },
   {
     name: 'إدارة المواهب',
@@ -545,7 +545,7 @@ export const services: ServiceCategory[] = [
     'تطوير ورعاية المواهب الفنية، بما يشمل التدريب، التوجيه، وإدارة العقود والفرص المهنية.',
     icon: 'Sparkles',
     image:
-    'https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=400&q=80'
+    '/imgs/An economic research environme/image_40.webp'
   }]
 
 }];

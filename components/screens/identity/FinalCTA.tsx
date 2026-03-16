@@ -10,7 +10,7 @@ export function FinalCTA() {
       {/* Background Image Collage Grid */}
       <div className="absolute inset-0 z-0 grid grid-cols-2 md:grid-cols-4 grid-rows-2 gap-1 opacity-40 mix-blend-luminosity">
         <Image
-          src="/imgs/A modern mediumscale industria/image_58.webp"
+          src="/imgs/A conceptual leadership enviro/image_10.webp"
           alt="Office"
           className="w-full h-full object-cover"
           width={600}
@@ -18,7 +18,7 @@ export function FinalCTA() {
         />
         
         <Image
-          src="/imgs/A modern pharmaceutical invest/image_21.webp"
+          src="/imgs/A coordinated project manageme/image_10.webp"
           alt="Success"
           className="w-full h-full object-cover"
           width={600}
@@ -26,7 +26,7 @@ export function FinalCTA() {
         />
         
         <Image
-          src="/imgs/A modern pharmaceutical manufa/image_2.webp"
+          src="/imgs/A corporate leadership archite/image_13.webp"
           alt="Team"
           className="w-full h-full object-cover"
           width={600}
@@ -34,7 +34,7 @@ export function FinalCTA() {
         />
         
         <Image
-          src="/imgs/A modern plastics manufacturin/image_32.webp"
+          src="/imgs/A corporate quality management/image_15.webp"
           alt="City"
           className="w-full h-full object-cover"
           width={600}
@@ -42,7 +42,7 @@ export function FinalCTA() {
         />
         
         <Image
-          src="/imgs/A modern postal sorting facili/image_27.webp"
+          src="/imgs/A dynamic operations managemen/image_11.webp"
           alt="Trust"
           className="w-full h-full object-cover"
           width={600}
@@ -50,7 +50,7 @@ export function FinalCTA() {
         />
         
         <Image
-          src="/imgs/A modern residential real esta/image_27.webp"
+          src="/imgs/A modern execution unit enviro/image_0.webp"
           alt="Growth"
           className="w-full h-full object-cover"
           width={600}
@@ -58,7 +58,7 @@ export function FinalCTA() {
         />
         
         <Image
-          src="/imgs/A modern veterinary hospital w/image_47.webp"
+          src="/imgs/A modern executive workspace o/image_7.webp"
           alt="Leadership"
           className="w-full h-full object-cover"
           width={600}
@@ -66,7 +66,7 @@ export function FinalCTA() {
         />
         
         <Image
-          src="/imgs/A stunning beachfront resort w/image_14.webp"
+          src="/imgs/A professional management envi/image_12.webp"
           alt="Strategy"
           className="w-full h-full object-cover"
           width={600}
