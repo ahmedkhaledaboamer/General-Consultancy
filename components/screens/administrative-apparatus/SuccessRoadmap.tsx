@@ -5,9 +5,145 @@ import {
   BarChartIcon,
   MessageCircleIcon,
   RocketIcon,
-  CompassIcon,
+  CompassIcon
 } from 'lucide-react';
 import Image from 'next/image';
+
+type SuccessStepCardProps = {
+  title: string;
+  description: string;
+  imageSrc: string;
+  imageAlt: string;
+  phaseLabel: string;
+  phaseColorClass: string;
+  isRightAligned: boolean;
+  iconGradientClass: string;
+  iconShadowClass: string;
+  Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+};
+
+function SuccessStepCard({
+  title,
+  description,
+  imageSrc,
+  imageAlt,
+  phaseLabel,
+  phaseColorClass,
+  isRightAligned,
+  iconGradientClass,
+  iconShadowClass,
+  Icon
+}: SuccessStepCardProps) {
+  const containerAlignmentClass = isRightAligned
+    ? 'md:justify-end md:ps-16 md:text-start'
+    : 'md:justify-start md:pe-16 md:text-end';
+
+  const contentLayoutClass = isRightAligned
+    ? 'flex flex-col sm:flex-row'
+    : 'flex flex-col sm:flex-row-reverse';
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: '-50px' }}
+      className={`relative flex flex-col md:flex-row items-start md:items-center group min-h-[4rem] md:min-h-0 ${containerAlignmentClass}`}>
+      <div
+        className={`absolute -start-5 md:start-6 w-14 h-14 md:w-16 md:h-16 -translate-x-1/2 md:left-1/2 md:start-auto md:-translate-x-1/2 ${iconGradientClass} rounded-full flex items-center justify-center z-10 ${iconShadowClass} border-4 border-white group-hover:scale-110 transition-transform top-3 md:top-0`}>
+        <Icon className="w-6 h-6 md:w-7 md:h-7 text-white" />
+      </div>
+      <div className="w-full ms-0 md:w-1/2 md:max-w-[calc(50%-3rem)] text-center min-w-0">
+        <div
+          className={`bg-white/10 backdrop-blur-lg border border-white/20 p-5 sm:p-8 rounded-2xl md:rounded-3xl hover:bg-white/20 transition-colors shadow-2xl ${contentLayoutClass} gap-4 sm:gap-6 items-center`}>
+          <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 xl:w-36 xl:h-36 2xl:w-40 2xl:h-40 rounded-xl md:rounded-2xl overflow-hidden shrink-0 shadow-lg border-2 border-white/30">
+            <Image
+              src={imageSrc}
+              alt={imageAlt}
+              className="w-full h-full object-cover"
+              width={96}
+              height={96}
+            />
+          </div>
+          <div className="min-w-0">
+            <span
+              className={`${phaseColorClass} font-bold text-sm md:text-lg xl:text-xl 2xl:text-2xl mb-1 md:mb-2 block`}>
+              {phaseLabel}
+            </span>
+            <h3 className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-bold mb-2 md:mb-3">
+              {title}
+            </h3>
+            <p className="text-white/80 text-sm md:text-lg xl:text-xl 2xl:text-2xl leading-relaxed break-words">
+              {description}
+            </p>
+          </div>
+        </div>
+      </div>
+    </motion.div>
+  );
+}
+
+const successSteps: SuccessStepCardProps[] = [
+  {
+    title: 'تحديد الأهداف',
+    description: 'فهم رؤية العمل وتحديد الأهداف الاستراتيجية للمشروع.',
+    imageSrc: '/imgs/A warm family business office/image_5.webp',
+    imageAlt: 'تحديد الأهداف',
+    phaseLabel: 'المرحلة الأولى',
+    phaseColorClass: 'text-purple-300',
+    isRightAligned: false,
+    iconGradientClass: 'bg-gradient-to-br from-purple-400 to-indigo-600',
+    iconShadowClass: 'shadow-[0_0_20px_rgba(168,85,247,0.6)]',
+    Icon: TargetIcon
+  },
+  {
+    title: 'تحليل الفرص',
+    description: 'دراسة السوق وتحديد الفرص الاستثمارية المتاحة.',
+    imageSrc: '/imgs/A dramatic energy investment e/image_17.webp',
+    imageAlt: 'تحليل الفرص',
+    phaseLabel: 'المرحلة الثانية',
+    phaseColorClass: 'text-blue-300',
+    isRightAligned: true,
+    iconGradientClass: 'bg-gradient-to-br from-blue-400 to-cyan-600',
+    iconShadowClass: 'shadow-[0_0_20px_rgba(59,130,246,0.6)]',
+    Icon: BarChartIcon
+  },
+  {
+    title: 'تطوير الاستراتيجية',
+    description: 'بناء خطة عمل متكاملة لتطبيق الأهداف.',
+    imageSrc: '/imgs/27 A bustling construction sit/image_20.webp',
+    imageAlt: 'تطوير الاستراتيجية',
+    phaseLabel: 'المرحلة الثالثة',
+    phaseColorClass: 'text-teal-300',
+    isRightAligned: false,
+    iconGradientClass: 'bg-gradient-to-br from-teal-400 to-emerald-600',
+    iconShadowClass: 'shadow-[0_0_20px_rgba(20,184,166,0.6)]',
+    Icon: MessageCircleIcon
+  },
+  {
+    title: 'التنفيذ',
+    description: 'تطبيق الخطط والبرامج وفق أفضل الممارسات.',
+    imageSrc: '/imgs/A vibrant education environmen/image_21.webp',
+    imageAlt: 'التنفيذ',
+    phaseLabel: 'المرحلة الرابعة',
+    phaseColorClass: 'text-pink-300',
+    isRightAligned: true,
+    iconGradientClass: 'bg-gradient-to-br from-rose-400 to-pink-600',
+    iconShadowClass: 'shadow-[0_0_20px_rgba(244,114,182,0.6)]',
+    Icon: RocketIcon
+  },
+  {
+    title: 'النمو المستدام',
+    description: 'دعم المشاريع في مواصلة التوسع والتطوير المستقبلي.',
+    imageSrc: '/imgs/6 A bright hospital corridor w/image_22.webp',
+    imageAlt: 'النمو المستدام',
+    phaseLabel: 'المرحلة الخامسة',
+    phaseColorClass: 'text-amber-300',
+    isRightAligned: false,
+    iconGradientClass: 'bg-gradient-to-br from-amber-400 to-orange-600',
+    iconShadowClass: 'shadow-[0_0_20px_rgba(245,158,11,0.6)]',
+    Icon: CompassIcon
+  }
+];
 
 export function SuccessRoadmap() {
   return (
@@ -39,7 +175,6 @@ export function SuccessRoadmap() {
               once: true
             }}
             className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold mb-4 md:mb-8 text-shadow-lg">
-            
             خارطة طريق النجاح
           </motion.h2>
           <motion.p
@@ -58,9 +193,8 @@ export function SuccessRoadmap() {
               delay: 0.1
             }}
             className="text-base md:text-xl xl:text-2xl 2xl:text-3xl text-white/90 leading-relaxed font-medium text-shadow-md mx-auto">
-            
-            نعتمد في عملنا على خارطة طريق واضحة تساعد شركاءنا على تحقيق النجاح
-            في مشاريعهم واستثماراتهم.
+            نعتمد في عملنا على خارطة طريق واضحة تساعد شركاءنا على تحقيق النجاح في
+            مشاريعهم واستثماراتهم.
           </motion.p>
         </div>
 
@@ -72,169 +206,12 @@ export function SuccessRoadmap() {
           />
 
           <div className="space-y-10 md:space-y-16">
-            {/* Step 1 */}
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-50px' }}
-              className="relative flex flex-col md:flex-row md:justify-start items-start md:items-center group min-h-[4rem] md:min-h-0"
-            >
-              <div className="absolute -start-5 md:start-6 w-14 h-14 md:w-16 md:h-16 -translate-x-1/2 md:left-1/2 md:start-auto md:-translate-x-1/2 bg-gradient-to-br from-purple-400 to-indigo-600 rounded-full flex items-center justify-center z-10 shadow-[0_0_20px_rgba(168,85,247,0.6)] border-4 border-white group-hover:scale-110 transition-transform top-3 md:top-0">
-                <TargetIcon className="w-6 h-6 md:w-7 md:h-7 text-white" />
-              </div>
-              <div className="w-full ms-0 md:w-1/2 md:pe-16 md:max-w-[calc(50%-3rem)] text-center md:text-end min-w-0">
-                <div className="bg-white/10 backdrop-blur-lg border border-white/20 p-5 sm:p-8 rounded-2xl md:rounded-3xl hover:bg-white/20 transition-colors shadow-2xl flex flex-col sm:flex-row-reverse gap-4 sm:gap-6 items-center">
-                  <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 xl:w-36 xl:h-36 2xl:w-40 2xl:h-40 rounded-xl md:rounded-2xl overflow-hidden shrink-0 shadow-lg border-2 border-white/30">
-                    <Image
-                      src="/imgs/A warm family business office/image_5.webp"
-                      alt="تحديد الأهداف"
-                      className="w-full h-full object-cover"
-                      width={96}
-                      height={96}
-                    />
-                  </div>
-                  <div className="min-w-0">
-                    <span className="text-purple-300 font-bold text-sm md:text-lg xl:text-xl 2xl:text-2xl mb-1 md:mb-2 block">المرحلة الأولى</span>
-                    <h3 className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-bold mb-2 md:mb-3">تحديد الأهداف</h3>
-                    <p className="text-white/80 text-sm md:text-lg xl:text-xl 2xl:text-2xl leading-relaxed break-words">
-                      فهم رؤية العمل وتحديد الأهداف الاستراتيجية للمشروع.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Step 2 */}
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-50px' }}
-              className="relative flex flex-col md:flex-row md:justify-end items-start md:items-center group min-h-[4rem] md:min-h-0"
-            >
-              <div className="absolute -start-5 md:start-6 w-14 h-14 md:w-16 md:h-16 -translate-x-1/2 md:left-1/2 md:start-auto md:-translate-x-1/2 bg-gradient-to-br from-blue-400 to-cyan-600 rounded-full flex items-center justify-center z-10 shadow-[0_0_20px_rgba(59,130,246,0.6)] border-4 border-white group-hover:scale-110 transition-transform top-3 md:top-0">
-                <BarChartIcon className="w-6 h-6 md:w-7 md:h-7 text-white" />
-              </div>
-              <div className="w-full ms-0 md:w-1/2 md:ps-16 md:max-w-[calc(50%-3rem)] text-center md:text-start min-w-0">
-                <div className="bg-white/10 backdrop-blur-lg border border-white/20 p-5 sm:p-8 rounded-2xl md:rounded-3xl hover:bg-white/20 transition-colors shadow-2xl flex flex-col sm:flex-row gap-4 sm:gap-6 items-center">
-                  <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 xl:w-36 xl:h-36 2xl:w-40 2xl:h-40 rounded-xl md:rounded-2xl overflow-hidden shrink-0 shadow-lg border-2 border-white/30">
-                    <Image
-                      src="/imgs/A dramatic energy investment e/image_17.webp"
-                      alt="تحليل الفرص"
-                      className="w-full h-full object-cover"
-                      width={96}
-                      height={96}
-                    />
-                  </div>
-                  <div className="min-w-0">
-                    <span className="text-blue-300 font-bold text-sm md:text-lg xl:text-xl 2xl:text-2xl mb-1 md:mb-2 block">المرحلة الثانية</span>
-                    <h3 className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-bold mb-2 md:mb-3">تحليل الفرص</h3>
-                    <p className="text-white/80 text-sm md:text-lg xl:text-xl 2xl:text-2xl leading-relaxed break-words">
-                      دراسة السوق وتحديد الفرص الاستثمارية المتاحة.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Step 3 */}
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-50px' }}
-              className="relative flex flex-col md:flex-row md:justify-start items-start md:items-center group min-h-[4rem] md:min-h-0"
-            >
-              <div className="absolute -start-5 md:start-6 w-14 h-14 md:w-16 md:h-16 -translate-x-1/2 md:left-1/2 md:start-auto md:-translate-x-1/2 bg-gradient-to-br from-teal-400 to-emerald-600 rounded-full flex items-center justify-center z-10 shadow-[0_0_20px_rgba(20,184,166,0.6)] border-4 border-white group-hover:scale-110 transition-transform top-3 md:top-0">
-                <MessageCircleIcon className="w-6 h-6 md:w-7 md:h-7 text-white" />
-              </div>
-              <div className="w-full ms-0 md:w-1/2 md:pe-16 md:max-w-[calc(50%-3rem)] text-center md:text-end min-w-0">
-                <div className="bg-white/10 backdrop-blur-lg border border-white/20 p-5 sm:p-8 rounded-2xl md:rounded-3xl hover:bg-white/20 transition-colors shadow-2xl flex flex-col sm:flex-row-reverse gap-4 sm:gap-6 items-center">
-                  <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 xl:w-36 xl:h-36 2xl:w-40 2xl:h-40 rounded-xl md:rounded-2xl overflow-hidden shrink-0 shadow-lg border-2 border-white/30">
-                    <Image
-                      src="/imgs/27 A bustling construction sit/image_20.webp"
-                      alt="تطوير الاستراتيجية"
-                      className="w-full h-full object-cover"
-                      width={96}
-                      height={96}
-                    />
-                  </div>
-                  <div className="min-w-0">
-                    <span className="text-teal-300 font-bold text-sm md:text-lg xl:text-xl 2xl:text-2xl mb-1 md:mb-2 block">المرحلة الثالثة</span>
-                    <h3 className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-bold mb-2 md:mb-3">تطوير الاستراتيجية</h3>
-                    <p className="text-white/80 text-sm md:text-lg xl:text-xl 2xl:text-2xl leading-relaxed break-words">
-                      بناء خطة عمل متكاملة لتطبيق الأهداف.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Step 4 */}
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-50px' }}
-              className="relative flex flex-col md:flex-row md:justify-end items-start md:items-center group min-h-[4rem] md:min-h-0"
-            >
-              <div className="absolute -start-5 md:start-6 w-14 h-14 md:w-16 md:h-16 -translate-x-1/2 md:left-1/2 md:start-auto md:-translate-x-1/2 bg-gradient-to-br from-rose-400 to-pink-600 rounded-full flex items-center justify-center z-10 shadow-[0_0_20px_rgba(244,114,182,0.6)] border-4 border-white group-hover:scale-110 transition-transform top-3 md:top-0">
-                <RocketIcon className="w-6 h-6 md:w-7 md:h-7 text-white" />
-              </div>
-              <div className="w-full ms-0 md:w-1/2 md:ps-16 md:max-w-[calc(50%-3rem)] text-center md:text-start min-w-0">
-                <div className="bg-white/10 backdrop-blur-lg border border-white/20 p-5 sm:p-8 rounded-2xl md:rounded-3xl hover:bg-white/20 transition-colors shadow-2xl flex flex-col sm:flex-row gap-4 sm:gap-6 items-center">
-                  <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 xl:w-36 xl:h-36 2xl:w-40 2xl:h-40 rounded-xl md:rounded-2xl overflow-hidden shrink-0 shadow-lg border-2 border-white/30">
-                    <Image
-                      src="/imgs/A vibrant education environmen/image_21.webp"
-                      alt="التنفيذ"
-                      className="w-full h-full object-cover"
-                      width={96}
-                      height={96}
-                    />
-                  </div>
-                  <div className="min-w-0">
-                    <span className="text-pink-300 font-bold text-sm xl:text-xl 2xl:text-2xl mb-1 md:mb-2 block">المرحلة الرابعة</span>
-                    <h3 className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-bold mb-2 md:mb-3">التنفيذ</h3>
-                    <p className="text-white/80 text-sm md:text-lg xl:text-xl 2xl:text-2xl leading-relaxed break-words">
-                      تطبيق الخطط والبرامج وفق أفضل الممارسات.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Step 5 */}
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-50px' }}
-              className="relative flex flex-col md:flex-row md:justify-start items-start md:items-center group min-h-[4rem] md:min-h-0"
-            >
-              <div className="absolute -start-5 md:start-6 w-14 h-14 md:w-16 md:h-16 -translate-x-1/2 md:left-1/2 md:start-auto md:-translate-x-1/2 bg-gradient-to-br from-amber-400 to-orange-600 rounded-full flex items-center justify-center z-10 shadow-[0_0_20px_rgba(245,158,11,0.6)] border-4 border-white group-hover:scale-110 transition-transform top-3 md:top-0">
-                <CompassIcon className="w-6 h-6 md:w-7 md:h-7 text-white" />
-              </div>
-              <div className="w-full ms-0 md:w-1/2 md:pe-16 md:max-w-[calc(50%-3rem)] text-center md:text-end min-w-0">
-                <div className="bg-white/10 backdrop-blur-lg border border-white/20 p-5 sm:p-8 rounded-2xl md:rounded-3xl hover:bg-white/20 transition-colors shadow-2xl flex flex-col sm:flex-row-reverse gap-4 sm:gap-6 items-center">
-                  <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 xl:w-36 xl:h-36 2xl:w-40 2xl:h-40 rounded-xl md:rounded-2xl overflow-hidden shrink-0 shadow-lg border-2 border-white/30">
-                    <Image
-                      src="/imgs/6 A bright hospital corridor w/image_22.webp"
-                      alt="النمو المستدام"
-                      className="w-full h-full object-cover"
-                      width={96}
-                      height={96}
-                    />
-                  </div>
-                  <div className="min-w-0">
-                    <span className="text-amber-300 font-bold text-sm xl:text-xl 2xl:text-2xl mb-1 md:mb-2 block">المرحلة الخامسة</span>
-                    <h3 className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-bold mb-2 md:mb-3">النمو المستدام</h3>
-                    <p className="text-white/80 text-sm md:text-lg xl:text-xl 2xl:text-2xl leading-relaxed break-words">
-                      دعم المشاريع في مواصلة التوسع والتطوير المستقبلي.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
+            {successSteps.map((step) => (
+              <SuccessStepCard key={step.title} {...step} />
+            ))}
           </div>
         </div>
       </div>
     </section>
   );
-
 }

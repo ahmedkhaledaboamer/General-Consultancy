@@ -7,6 +7,16 @@ import { QualityStandards } from "@/components/screens/administrative-apparatus/
 import { SuccessRoadmap } from "@/components/screens/administrative-apparatus/SuccessRoadmap";
 import { FinalCTA } from "@/components/screens/administrative-apparatus/FinalCTA";
 import { useLocale } from 'next-intl';
+import { getTranslations } from "next-intl/server";
+
+export async function generateMetadata() {
+  const t = await getTranslations("meta.administrativeApparatus");
+
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 const AdministrativeApparatusPage = () => {
   const locale = useLocale();
   const isRTL = locale === 'ar';

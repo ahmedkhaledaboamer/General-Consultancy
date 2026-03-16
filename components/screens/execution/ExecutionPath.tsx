@@ -7,10 +7,7 @@ import {
   CheckCircleIcon } from
 'lucide-react';
 import Image from 'next/image';
-import { useLocale } from 'next-intl';
 export function ExecutionPath() {
-  const locale = useLocale();
-  const isRTL = locale === 'ar';
   const steps = [
   {
     title: 'التحليل والتقييم',
@@ -116,9 +113,6 @@ export function ExecutionPath() {
                     className={`absolute right-4 md:right-1/2 md:translate-x-1/2 w-16 h-16 rounded-full bg-gradient-to-br ${step.color} border-4 border-white shadow-lg ${step.shadowColor} flex items-center justify-center z-20 transition-transform duration-300 group-hover:scale-110`}>
                     
                     {step.icon}
-                    <div className="absolute -top-2 -right-2 w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 xl:w-12 xl:h-12 2xl:w-14 2xl:h-14 bg-white rounded-full text-gray-900 font-bold text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl flex items-center justify-center shadow-sm border border-gray-100">
-                      {index + 1}
-                    </div>
                   </div>
 
                   {/* Content Card */}

@@ -12,6 +12,16 @@ import { QualityStandards } from "@/components/screens/execution/QualityStandard
 import { FAQSection } from "@/components/screens/execution/FAQSection"
 import { FinalCTA } from "@/components/screens/execution/FinalCTA"
 import { useLocale } from "next-intl"
+import { getTranslations } from "next-intl/server";
+
+export async function generateMetadata() {
+  const t = await getTranslations("meta.execution");
+
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 
 const ExecutionPage = () => {
   const locale = useLocale();

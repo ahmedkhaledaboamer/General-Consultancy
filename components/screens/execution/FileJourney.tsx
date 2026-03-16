@@ -33,7 +33,7 @@ export function FileJourney() {
     '/imgs/A futuristic industrial transf/image_1.webp'
   },
   {
-    title: 'مرحلة المراجعة والتحسين',
+    title: 'مرحلة المراجعة',
     description: 'تقييم الأداء وتحسين العمليات.',
     icon: <RefreshCcwIcon className="w-6 h-6" />,
     color: 'bg-pink-500',

@@ -10,6 +10,16 @@ import { BrandPromise } from "@/components/screens/identity/BrandPromise"
 import { TargetAudience } from "@/components/screens/identity/TargetAudience"
 import { FinalCTA } from "@/components/screens/identity/FinalCTA"
 import { useLocale } from 'next-intl';
+import { getTranslations } from "next-intl/server";
+
+export async function generateMetadata() {
+  const t = await getTranslations("meta.identity");
+
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 const IdentityPage = () => {
   const locale = useLocale();
   const isRTL = locale === 'ar';

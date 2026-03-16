@@ -1,4 +1,4 @@
- import {
+import {
   FacebookIcon,
   TwitterIcon,
   LinkedinIcon,
@@ -7,166 +7,162 @@
   MapPinIcon,
   PhoneIcon,
 } from 'lucide-react'
+import {useLocale, useTranslations} from 'next-intl'
+import {Link} from '@/i18n/routing'
+import Logo from './logo'
 export function Footer() {
+  const locale = useLocale()
+  const t = useTranslations('footer')
+  const isArabic = locale === 'ar'
+
+  const quickLinksRaw = t.raw('quickLinks.links')
+  const quickLinks =
+    Array.isArray(quickLinksRaw) &&
+    quickLinksRaw
+      .map((link: unknown) => {
+        const l = link as {label?: unknown; href?: unknown}
+        const href = String(l.href || '')
+        const label = String(l.label || '')
+        return {href, label}
+      })
+      .filter(link => link.href && link.href !== '[object Object]')
+
+  const servicesRaw = t.raw('services.items')
+  const services =
+    Array.isArray(servicesRaw) &&
+    servicesRaw
+      .map(item => String(item))
+      .filter(item => item && item !== '[object Object]')
+
   return (
-    <footer className="bg-[#071226] text-white pt-20 pb-10 border-t-4 border-gold">
-      <div className="px-[5%]">
+    <footer
+      dir={isArabic ? 'rtl' : 'ltr'}
+      className="bg-[#071226] text-white pt-20 pb-10 border-t-4 border-gold"
+    >
+      <div
+        className={`px-[5%] text-center ${isArabic ? 'md:text-right' : 'md:text-left'}`}
+      >
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-lg bg-gold flex items-center justify-center text-navy-900 font-bold text-xl">
-                ع
+            <div className="flex items-center justify-center md:justify-start flex-col md:flex-row gap-3 mb-6">
+              <div className="w-12 h-12 rounded-lg overflow-hidden bg-transparent flex items-center justify-center">
+                <Logo className="w-full h-full" size={50} />
               </div>
               <div className="flex flex-col">
                 <span className="text-white font-bold text-lg md:text-xl xl:text-2xl 2xl:text-3xl leading-tight">
-                  الشيخ عبد العزيز بن عبد الله المعلا
+                  {t('company.name')}
                 </span>
                 <span className="text-gold text-xs md:text-sm xl:text-base 2xl:text-lg font-medium">
-                  للاستشارات العامة
+                  {t('company.tagline')}
                 </span>
               </div>
             </div>
             <p className="text-white/60 text-sm md:text-base xl:text-lg 2xl:text-xl leading-relaxed mb-6">
-              نحن كيان استشاري واستثماري يعمل على دعم المؤسسات والمستثمرين عبر
-              منظومة متكاملة من الخبرات المتخصصة في مجالات الاستثمار وإدارة
-              المشاريع والاستشارات الاستراتيجية.
+              {t('company.description')}
             </p>
-            <div className="flex items-center gap-4">
-              <a
+            <div className="flex items-center justify-center gap-4">
+              <Link
                 href="#"
-                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-gold hover:text-navy-900 transition-colors"
+                className="p-3 w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-gold hover:text-navy-900 transition-colors"
               >
                 <LinkedinIcon className="w-5 h-5 md:w-6 md:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
-                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-gold hover:text-navy-900 transition-colors"
+                className="p-3 w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-gold hover:text-navy-900 transition-colors"
               >
                 <TwitterIcon className="w-5 h-5 md:w-6 md:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
-                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-gold hover:text-navy-900 transition-colors"
+                className="p-3 w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-gold hover:text-navy-900 transition-colors"
               >
                 <FacebookIcon className="w-5 h-5 md:w-6 md:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
-                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-gold hover:text-navy-900 transition-colors"
+                className="p-3 w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-gold hover:text-navy-900 transition-colors"
               >
                 <InstagramIcon className="w-5 h-5 md:w-6 md:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8" />
-              </a>
+              </Link>
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
             <h4 className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl font-bold text-white mb-6 border-b border-white/10 pb-4 inline-block">
-              روابط سريعة
+              {t('quickLinks.title')}
             </h4>
             <ul className="space-y-3">
-              <li>
-                <a
-                  href="#hero"
-                  className="text-white/60 hover:text-gold transition-colors"
-                >
-                  الرئيسية
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#about"
-                  className="text-white/60 hover:text-gold transition-colors"
-                >
-                  من نحن
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#services"
-                  className="text-white/60 hover:text-gold transition-colors"
-                >
-                  خدماتنا الأساسية
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#sectors"
-                  className="text-white/60 hover:text-gold transition-colors"
-                >
-                  القطاعات
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  className="text-white/60 hover:text-gold transition-colors"
-                >
-                  تواصل معنا
-                </a>
-              </li>
+              {quickLinks &&
+                quickLinks.map(link => (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className="text-white/60 hover:text-gold transition-colors"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
             </ul>
           </div>
 
           {/* Services */}
           <div>
             <h4 className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl font-bold text-white mb-6 border-b border-white/10 pb-4 inline-block">
-              خدماتنا
+              {t('services.title')}
             </h4>
             <ul className="space-y-3">
-              <li className="text-white/60">إدارة الاستثمارات</li>
-              <li className="text-white/60">الاستشارات الاستراتيجية</li>
-              <li className="text-white/60">تطوير المشاريع</li>
-              <li className="text-white/60">الاستشارات المالية</li>
-              <li className="text-white/60">تطوير الأعمال</li>
+              {services &&
+                services.map(service => (
+                  <li key={service} className="text-white/60">
+                    {service}
+                  </li>
+                ))}
             </ul>
           </div>
 
           {/* Contact */}
           <div>
             <h4 className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl font-bold text-white mb-6 border-b border-white/10 pb-4 inline-block">
-              معلومات التواصل
+              {t('contact.title')}
             </h4>
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
+            <ul className="space-y-4 flex flex-col items-center justify-center md:items-start md:justify-start">
+              <li className="flex items-center gap-3">
                 <MapPinIcon className="w-5 h-5 md:w-6 md:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8 text-gold shrink-0 mt-1" />
                 <span className="text-white/60 text-sm leading-relaxed">
-                  الإمارات العربية المتحدة
+                  {t('contact.location')}
                   <br />
-                  دبي، شارع الشيخ زايد
                 </span>
               </li>
-              <li className="flex items-center gap-3">
-                <PhoneIcon className="w-5 h-5 md:w-6 md:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8 text-gold shrink-0" />
-                <span className="text-white/60 text-sm" dir="ltr">
-                  +971 50 000 0000
-                </span>
-              </li>
-              <li className="flex items-center gap-3">
-                <MailIcon className="w-5 h-5 md:w-6 md:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8 text-gold shrink-0" />
-                <span className="text-white/60 text-sm">
-                  info@almuallaconsulting.com
-                </span>
-              </li>
+              <Link href="tel:+971521068882">
+                <li className="flex items-center gap-3">
+                  <PhoneIcon className="w-5 h-5 md:w-6 md:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8 text-gold shrink-0" />
+                  <span className="text-white/60 text-sm" dir="ltr">
+                    {t('contact.phone')}
+                  </span>
+                </li>
+              </Link>
+              <Link href="mailto:info@shazmlc.com">
+                <li className="flex items-center gap-3">
+                  <MailIcon className="w-5 h-5 md:w-6 md:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8 text-gold shrink-0" />
+                  <span className="text-white/60 text-sm">
+                    {t('contact.email')}
+                  </span>
+                </li>
+              </Link>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-white/40 text-sm md:text-base xl:text-lg 2xl:text-xl text-center md:text-start">
-            جميع الحقوق محفوظة © {new Date().getFullYear()} شركة الشيخ عبد
-            العزيز بن عبد الله المعلا للاستشارات العامة
+        <div
+          className={`border-t border-white/10 pt-8 flex flex-col text-center`}
+        >
+          <p className="text-white/40 text-sm md:text-base xl:text-lg 2xl:text-xl">
+            {t('copyright')}
           </p>
-          <div className="flex items-center gap-4 text-sm md:text-base xl:text-lg 2xl:text-xl text-white/40">
-            <a href="#" className="hover:text-gold transition-colors text-sm md:text-base xl:text-lg 2xl:text-xl">
-              الشروط والأحكام
-            </a>
-            <span>|</span>
-            <a href="#" className="hover:text-gold transition-colors text-sm md:text-base xl:text-lg 2xl:text-xl">
-              سياسة الخصوصية
-            </a>
-          </div>
         </div>
       </div>
     </footer>

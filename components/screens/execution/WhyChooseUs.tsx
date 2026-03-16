@@ -80,18 +80,6 @@ export function WhyChooseUs() {
               />
               
               <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 to-transparent"></div>
-              <div className="absolute bottom-6 right-6 left-6 text-white">
-                <div className="flex items-center gap-4">
-                  <div className="bg-white/20 backdrop-blur-md rounded-2xl p-4 text-center flex-1">
-                    <div className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold">+15</div>
-                    <div className="text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl opacity-80">سنة خبرة</div>
-                  </div>
-                  <div className="bg-white/20 backdrop-blur-md rounded-2xl p-4 text-center flex-1">
-                    <div className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold">+200</div>
-                    <div className="text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl opacity-80">مشروع</div>
-                  </div>
-                </div>
-              </div>
             </div>
             {/* Decorative blob */}
             <div className="absolute -bottom-8 -left-8 w-40 h-40 bg-amber-500/20 rounded-full blur-3xl"></div>

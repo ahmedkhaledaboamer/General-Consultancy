@@ -53,7 +53,7 @@ export function TargetAudience() {
           }}>
           
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-16 bg-brand-yellow blur-3xl opacity-30 -z-10" />
-          <h2 className="text-4xl md:text-6xl xl:text-7xl 2xl:text-8xl font-cairo font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-cairo font-bold text-gray-900 mb-6">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-purple to-brand-orange">
               لمن نكتب
             </span>{' '}
@@ -105,10 +105,10 @@ export function TargetAudience() {
                   <audience.icon size={40} />
                 </div>
 
-                <h3 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-cairo font-bold text-gray-900 mb-4 mt-8">
+                <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-cairo font-bold text-gray-900 mb-4 mt-8">
                   {audience.title}
                 </h3>
-                <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-gray-600 font-tajawal leading-relaxed">
+                <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-gray-600 leading-relaxed">
                   {audience.desc}
                 </p>
               </div>

@@ -123,7 +123,7 @@ export function IntroSection() {
             }}
             className={`order-1 lg:order-2 text-center flex flex-col items-center justify-center md:items-start ${isRTL ? 'md:text-right ' : 'md:text-left '}`}>
             
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-brand-purple/10 text-brand-purple font-tajawal font-bold mb-6 border border-brand-purple/20 text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-brand-purple/10 text-brand-purple font-bold mb-6 border border-brand-purple/20 text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
               <span className={`w-2 h-2 rounded-full bg-brand-purple animate-pulse ${isRTL ? 'ml-2' : 'mr-2'}`} />
               من نحن
             </div>

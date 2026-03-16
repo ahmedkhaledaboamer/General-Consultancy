@@ -177,7 +177,7 @@ export default function MobileNavbar() {
 
                   <div className={cn("px-6 py-4 border-t border-white/10 shrink-0", isRTL ? "text-right" : "text-left")}>
                     <Link
-                      href="/implementation-mechanism"
+                      href={ `${locale}/execution` }
                       onClick={closeMenu}
                       className="block bg-gold text-navy-dark font-cairo font-bold px-6 py-3 rounded-full text-center w-full hover:bg-gold-light transition-colors focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-navy-dark"
                       aria-label={t("cta")}

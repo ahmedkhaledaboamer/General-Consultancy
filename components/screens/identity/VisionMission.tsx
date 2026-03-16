@@ -28,20 +28,20 @@ export function VisionMission() {
               duration: 0.8
             }}>
             
-            <div className="inline-block px-6 py-2 md:px-8 md:py-3 lg:px-10 lg:py-4 xl:px-12 xl:py-5 2xl:px-14 2xl:py-6 bg-gradient-to-r from-brand-pink to-brand-rose text-white rounded-full font-tajawal font-bold mb-6 shadow-lg shadow-brand-pink/30">
+            <div className="inline-block px-6 py-2 md:px-8 md:py-3 lg:px-10 lg:py-4 xl:px-12 xl:py-5 2xl:px-14 2xl:py-6 bg-gradient-to-r from-brand-pink to-brand-rose text-white rounded-full font-bold mb-6 shadow-lg shadow-brand-pink/30">
               الغاية والهدف
             </div>
-            <h2 className="text-5xl md:text-6xl xl:text-7xl 2xl:text-8xl font-cairo font-bold text-gray-900 mb-8">
+            <h2 className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-cairo font-bold text-gray-900 mb-8">
               رسالتنا
             </h2>
-            <p className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl text-gray-600 leading-relaxed font-tajawal relative z-10">
+            <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-gray-600 leading-relaxed relative z-10">
               تقديم استشارات واستراتيجيات استثمارية متكاملة تمكن عملائنا من
               تحقيق أهدافهم ونمو مستدام، مع الالتزام بأعلى معايير الجودة،
               الشفافية، والمصداقية.
             </p>
 
             {/* Small decorative thumbnail */}
-            <div className="absolute -bottom-10 -right-10 w-32 h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 xl:w-44 xl:h-44 2xl:w-48 2xl:h-48 rounded-2xl overflow-hidden border-4 border-white shadow-2xl z-20 hidden md:block">
+            <div className="absolute -bottom-10 -left-10 w-32 h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 xl:w-44 xl:h-44 2xl:w-48 2xl:h-48 rounded-2xl overflow-hidden border-4 border-white shadow-2xl z-20 hidden md:block">
               <Image
                 src="/imgs/A spectacular sports complex w/image_51.webp"
                 alt="Success"
@@ -154,35 +154,35 @@ export function VisionMission() {
               duration: 0.8
             }}>
             
-            <div className="inline-block px-6 py-2 md:px-8 md:py-3 lg:px-10 lg:py-4 xl:px-12 xl:py-5 2xl:px-14 2xl:py-6 bg-gradient-to-r from-brand-teal to-brand-blue text-white rounded-full font-tajawal font-bold mb-6 shadow-lg shadow-brand-teal/30">
+            <div className="inline-block px-6 py-2 md:px-8 md:py-3 lg:px-10 lg:py-4 xl:px-12 xl:py-5 2xl:px-14 2xl:py-6 bg-gradient-to-r from-brand-teal to-brand-blue text-white rounded-full font-bold mb-6 shadow-lg shadow-brand-teal/30">
               المستقبل والطموح
             </div>
-            <h2 className="text-5xl md:text-6xl xl:text-7xl 2xl:text-8xl font-cairo font-bold text-gray-900 mb-8">
+            <h2 className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-cairo font-bold text-gray-900 mb-8">
               رؤيتنا
             </h2>
-            <p className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl text-gray-600 leading-relaxed font-tajawal mb-10">
+            <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-gray-600 leading-relaxed mb-10">
               أن نصبح الشركة الرائدة والأكثر موثوقية في مجال الاستشارات العامة
               والاستثمارية، من خلال:
             </p>
-            <ul className="space-y-6 font-tajawal text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-gray-700">
+            <ul className="space-y-6 text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-gray-700">
               <li className={`${isRTL ? 'text-right' : 'text-left'} flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow`}>
-                <div className="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 xl:w-16 xl:h-16 2xl:w-18 2xl:h-18 rounded-full bg-brand-emerald/10 flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 rounded-full bg-brand-emerald/10 flex items-center justify-center flex-shrink-0">
                   <CheckCircleIcon className="text-brand-emerald w-6 h-6" />
                 </div>
-                <span className="font-bold text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">قيادة مبتكرة ومؤثرة</span>
+                <span className="font-bold text-base md:text-lg lg:text-xl xl:text-2xl ">قيادة مبتكرة ومؤثرة</span>
               </li>
               <li className={`${isRTL ? 'text-right' : 'text-left'} flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow`}>
                 <div className="w-10 h-10 rounded-full bg-brand-emerald/10 flex items-center justify-center flex-shrink-0">
                   <CheckCircleIcon className="text-brand-emerald w-6 h-6" />
                 </div>
-                <span className="font-bold text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">تطوير حلول مستدامة</span>
+                <span className="font-bold text-base md:text-lg lg:text-xl xl:text-2xl">تطوير حلول مستدامة</span>
               </li>
               <li className={`${isRTL ? 'text-right' : 'text-left'} flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow`}>
                 <div className="w-10 h-10 rounded-full bg-brand-emerald/10 flex items-center justify-center flex-shrink-0">
                   <CheckCircleIcon className="text-brand-emerald w-6 h-6" />
                 </div>
-                <span className="font-bold text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
-                  تحقيق أثر إيجابي ملموس على شركائنا وعملائنا
+                <span className="font-bold text-base md:text-lg lg:text-xl xl:text-2xl">
+                  تحقيق أثر إيجابي  على شركائنا وعملائنا
                 </span>
               </li>
             </ul>

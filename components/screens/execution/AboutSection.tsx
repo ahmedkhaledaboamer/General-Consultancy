@@ -4,22 +4,7 @@ import Image from 'next/image';
 export function AboutSection() {
   const locale = useLocale();
   const isRTL = locale === 'ar';
-  const stats = [
-  {
-    icon: <BriefcaseIcon className="w-8 h-8 text-blue-600" />,
-    value: '+15',
-    label: 'سنوات من الخبرة'
-  },
-  {
-    icon: <AwardIcon className="w-8 h-8 text-purple-600" />,
-    value: '+200',
-    label: 'مشروع ناجح'
-  },
-  {
-    icon: <UsersIcon className="w-8 h-8 text-emerald-600" />,
-    value: '+150',
-    label: 'عميل راضٍ'
-  }];
+
 
   return (
     <section id="about" className="bg-white relative overflow-hidden p-[5%]">
@@ -42,26 +27,6 @@ export function AboutSection() {
             متعددة، مما يجعلنا شريكًا موثوقًا لكل مؤسسة تسعى لتحقيق التميز
             والابتكار.
           </p>
-
-          {/* Stats Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6">
-            {stats.map((stat, index) =>
-            <div
-              key={index}
-              className="bg-gray-50 rounded-2xl p-6 text-center border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-              
-                <div className="flex justify-center mb-4 bg-white w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-28 xl:h-28 2xl:w-32 2xl:h-32 mx-auto rounded-full items-center shadow-sm">
-                  {stat.icon}
-                </div>
-                <div className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-gray-900 mb-1">
-                  {stat.value}
-                </div>
-                <div className="text-sm md:text-base xl:text-lg 2xl:text-xl font-medium text-gray-500">
-                  {stat.label}
-                </div>
-              </div>
-            )}
-          </div>
         </div>
 
         {/* Image Content */}

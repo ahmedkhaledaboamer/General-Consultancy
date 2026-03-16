@@ -82,7 +82,7 @@ export function HeroSection() {
                 duration: 0.8,
                 delay: 0.4
               }}
-              className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-extrabold text-white mb-8 leading-tight text-shadow-lg">
+              className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold text-white mb-8 leading-tight text-shadow-lg">
               
               قيادة مؤسسية تصنع القرار… <br className="hidden md:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-rose-300 to-purple-300 drop-shadow-md text-sm md:text-base xl:text-xl 2xl:text-3xl">
@@ -103,7 +103,7 @@ export function HeroSection() {
                 duration: 0.8,
                 delay: 0.6
               }}
-              className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-white/95 mb-12 leading-relaxed text-shadow-md font-medium mx-auto lg:mx-0">
+              className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-white/95 mb-12 leading-relaxed text-shadow-md font-medium mx-auto lg:mx-0">
               
               يعتمد نجاح أي مؤسسة على قوة منظومتها القيادية وقدرتها على تحويل
               الرؤية إلى نتائج ملموسة. وفي شركة الشيخ عبد العزيز بن عبد الله

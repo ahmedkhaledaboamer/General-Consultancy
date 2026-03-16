@@ -5,10 +5,20 @@ import {
   SettingsIcon,
   ShieldCheckIcon,
   SparklesIcon,
-  MessageCircleIcon } from
-'lucide-react';
+  MessageCircleIcon,
+  type LucideIcon,
+} from 'lucide-react';
 import Image from 'next/image';
-const features = [
+
+type FeatureConfig = {
+  title: string;
+  desc: string;
+  icon: LucideIcon;
+  gradient: string;
+  thumb: string;
+};
+
+const features: FeatureConfig[] = [
 {
   title: 'خبرة متخصصة وعميقة',
   desc: 'في إدارة المشاريع والاستثمارات.',
@@ -49,6 +59,59 @@ const features = [
   thumb:
   '/imgs/A dramatic urban development p/image_41.webp'
 }];
+
+type FeatureCardProps = FeatureConfig & {
+  index: number;
+  spanClass: string;
+};
+
+function FeatureCard({ title, desc, icon: Icon, gradient, thumb, index, spanClass }: FeatureCardProps) {
+  return (
+    <motion.div
+      className={`${spanClass} group bg-white rounded-3xl shadow-xl overflow-hidden hover:-translate-y-2 transition-transform duration-300 border border-gray-100 relative`}
+      initial={{
+        opacity: 0,
+        y: 50
+      }}
+      whileInView={{
+        opacity: 1,
+        y: 0
+      }}
+      viewport={{
+        once: true
+      }}
+      transition={{
+        duration: 0.5,
+        delay: index * 0.1
+      }}>
+      
+      <div
+        className={`mx-auto h-2 w-full md:w-1/2 lg:w-2/3 xl:w-3/4 2xl:w-full bg-gradient-to-r ${gradient}`}
+      />
+
+      <div className="p-8 md:p-10 lg:p-12 xl:p-14 2xl:p-16">
+        <div className="flex justify-between items-start mb-6">
+          <div
+            className={`w-16 h-16 md:w-20 md:h-20  rounded-2xl bg-gradient-to-br ${gradient} text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300`}>
+            <Icon size={32} />
+          </div>
+          <Image
+            src={thumb}
+            alt={title}
+            width={1200}
+            height={1200}
+            className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 xl:w-20 xl:h-20 2xl:w-24 2xl:h-24 rounded-full object-cover border-2 border-gray-100 shadow-sm" />
+        </div>
+        <h3 className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-cairo font-bold text-gray-900 mb-3">
+          {title}
+        </h3>
+        <p className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl text-gray-600">
+          {desc}
+        </p>
+      </div>
+    </motion.div>
+  );
+}
 
 export function WhatMakesDifferent() {
   return (
@@ -93,99 +156,25 @@ export function WhatMakesDifferent() {
         {/* Masonry-style Grid */}
         <div className="grid grid-cols-1 md:grid-cols-6 gap-8 mb-20">
           {/* Top Row: 3 cards */}
-          {features.slice(0, 3).map((feature, index) =>
-          <motion.div
-            key={index}
-            className="md:col-span-2 group bg-white rounded-3xl shadow-xl overflow-hidden hover:-translate-y-2 transition-transform duration-300 border border-gray-100 relative"
-            initial={{
-              opacity: 0,
-              y: 50
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0
-            }}
-            viewport={{
-              once: true
-            }}
-            transition={{
-              duration: 0.5,
-              delay: index * 0.1
-            }}>
-            
-              <div
-              className={`h-2 w-full md:w-1/2 lg:w-2/3 xl:w-3/4 2xl:w-full bg-gradient-to-r ${feature.gradient}`} />
-            
-              <div className="p-8 md:p-10 lg:p-12 xl:p-14 2xl:p-16">
-                <div className="flex justify-between items-start mb-6">
-                  <div
-                  className={`w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-28 xl:h-28 2xl:w-32 2xl:h-32 rounded-2xl bg-gradient-to-br ${feature.gradient} text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300`}>
-                  
-                    <feature.icon size={32} />
-                  </div>
-                  <img
-                  src={feature.thumb}
-                  alt=""
-                  className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 xl:w-20 xl:h-20 2xl:w-24 2xl:h-24 rounded-full object-cover border-2 border-gray-100 shadow-sm" />
-                
-                </div>
-                <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-cairo font-bold text-gray-900 mb-3">
-                  {feature.title}
-                </h3>
-                <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-gray-600 font-tajawal">
-                  {feature.desc}
-                </p>
-              </div>
-            </motion.div>
-          )}
+          {features.slice(0, 3).map((feature, index) => (
+            <FeatureCard
+              key={feature.title}
+              {...feature}
+              index={index}
+              spanClass="md:col-span-2"
+            />
+          ))}
 
           {/* Bottom Row: 2 cards centered */}
           <div className="md:col-span-1 hidden md:block"></div>
-          {features.slice(3, 5).map((feature, index) =>
-          <motion.div
-            key={index + 3}
-            className="md:col-span-2 group bg-white rounded-3xl shadow-xl overflow-hidden hover:-translate-y-2 transition-transform duration-300 border border-gray-100 relative"
-            initial={{
-              opacity: 0,
-              y: 50
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0
-            }}
-            viewport={{
-              once: true
-            }}
-            transition={{
-              duration: 0.5,
-              delay: (index + 3) * 0.1
-            }}>
-            
-              <div
-              className={`h-2 w-full md:w-1/2 lg:w-2/3 xl:w-3/4 2xl:w-full bg-gradient-to-r ${feature.gradient}`} />
-            
-              <div className="p-8 md:p-10 lg:p-12 xl:p-14 2xl:p-16">
-                <div className="flex justify-between items-start mb-6">
-                  <div
-                  className={`w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-28 xl:h-28 2xl:w-32 2xl:h-32 rounded-2xl bg-gradient-to-br ${feature.gradient} text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300`}>
-                  
-                    <feature.icon size={32} />
-                  </div>
-                  <img
-                  src={feature.thumb}
-                  alt=""
-                  className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 xl:w-18 xl:h-18 2xl:w-20 2xl:h-20 rounded-full object-cover border-2 border-gray-100 shadow-sm" />
-                
-                </div>
-                <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-cairo font-bold text-gray-900 mb-3">
-                  {feature.title}
-                </h3>
-                <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-gray-600 font-tajawal">
-                  {feature.desc}
-                </p>
-              </div>
-            </motion.div>
-          )}
+          {features.slice(3, 5).map((feature, index) => (
+            <FeatureCard
+              key={feature.title}
+              {...feature}
+              index={index + 3}
+              spanClass="md:col-span-2"
+            />
+          ))}
           <div className="md:col-span-1 hidden md:block"></div>
         </div>
 
@@ -208,10 +197,13 @@ export function WhatMakesDifferent() {
             delay: 0.5
           }}>
           
-          <img
+          <Image
             src="/imgs/A futuristic digital health en/image_30.webp"
             alt="Abstract Colorful"
-            className="absolute inset-0 w-full h-full object-cover" />
+            className="absolute inset-0 w-full h-full object-cover"
+            width={1200}
+            height={1200}
+          />
           
           <div className="absolute inset-0 bg-brand-indigo-dark/80 mix-blend-multiply" />
           <div className="relative p-12 md:p-16 text-center z-10">
