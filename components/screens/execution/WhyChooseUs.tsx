@@ -48,7 +48,7 @@ export function WhyChooseUs() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/imgs/A sophisticated industrial des/image_9.webp"
+          src="/imgs/A conceptual execution roadmap/image_4.webp"
           alt="فريق العمل"
           className="w-full h-full object-cover opacity-15"
           width={1920}
@@ -72,7 +72,7 @@ export function WhyChooseUs() {
           <div className="w-full lg:w-2/5 relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-2 border-white/10">
               <Image
-                src="/imgs/A dramatic mining environment/image_29.webp"
+                src="/imgs/A conceptual governance and co/image_3.webp"
                 alt="فريق العمل المحترف"
                 className="w-full h-[500px] md:h-[600px] lg:h-[700px] xl:h-[800px] 2xl:h-[900px] object-cover"
                 width={800}

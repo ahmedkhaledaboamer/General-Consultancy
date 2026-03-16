@@ -112,7 +112,7 @@ export function HeroSection() {
               
               <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent mix-blend-overlay z-10" />
               <Image
-                src="/imgs/A cuttingedge biotechnology re/image_34.webp"
+                src="/imgs/A refined financial planning w/image_9.webp"
                 alt="Business Consulting and Investment"
                 className="w-full h-full object-cover"
                 width={800}
@@ -139,7 +139,7 @@ export function HeroSection() {
               
               <div className="absolute inset-0 bg-teal/10 mix-blend-overlay z-10" />
               <Image
-                src="/imgs/A cuttingedge financial innova/image_65.webp"
+                src="/imgs/A sports event marketing conce/image_46.webp"
                 alt="Team Meeting"
                 className="w-full h-full object-cover"
                 width={600}

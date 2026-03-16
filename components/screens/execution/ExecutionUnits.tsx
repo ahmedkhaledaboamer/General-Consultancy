@@ -18,7 +18,7 @@ export function ExecutionUnits() {
     icon: <CompassIcon className="w-6 h-6 text-white" />,
     gradient: 'from-blue-600 to-blue-400',
     image:
-    '/imgs/A dynamic logistics environmen/image_2.webp'
+    '/imgs/A customs consulting scene wit/image_9.webp'
   },
   {
     title: 'وحدة العمليات والإدارة',
@@ -26,7 +26,7 @@ export function ExecutionUnits() {
     icon: <SettingsIcon className="w-6 h-6 text-white" />,
     gradient: 'from-indigo-600 to-indigo-400',
     image:
-    '/imgs/A dynamic logistics investment/image_9.webp'
+    '/imgs/A logistics consulting landsca/image_8.webp'
   },
   {
     title: 'وحدة الجودة والتميز',
@@ -34,7 +34,7 @@ export function ExecutionUnits() {
     icon: <ShieldIcon className="w-6 h-6 text-white" />,
     gradient: 'from-emerald-600 to-emerald-400',
     image:
-    '/imgs/A dynamic logistics project ma/image_47.webp'
+    '/imgs/A supply chain consulting envi/image_29.webp'
   },
   {
     title: 'وحدة التواصل والمتابعة',
@@ -42,7 +42,7 @@ export function ExecutionUnits() {
     icon: <MessageSquareIcon className="w-6 h-6 text-white" />,
     gradient: 'from-amber-500 to-amber-400',
     image:
-    '/imgs/A dynamic logistics services e/image_26.webp'
+    '/imgs/A luminous office space with r/image_13.webp'
   },
   {
     title: 'وحدة التحليل والتقارير',
@@ -50,7 +50,7 @@ export function ExecutionUnits() {
     icon: <BarChart3Icon className="w-6 h-6 text-white" />,
     gradient: 'from-purple-600 to-purple-400',
     image:
-    '/imgs/A dynamic real estate project/image_24.webp'
+    '/imgs/A modern airy workspace with f/image_14.webp'
   },
   {
     title: 'وحدة الابتكار والتطوير',
@@ -58,7 +58,7 @@ export function ExecutionUnits() {
     icon: <LightbulbIcon className="w-6 h-6 text-white" />,
     gradient: 'from-rose-600 to-rose-400',
     image:
-    '/imgs/A dynamic sports project manag/image_3.webp'
+    '/imgs/A modern conceptual office wit/image_7.webp'
   }];
 
   return (

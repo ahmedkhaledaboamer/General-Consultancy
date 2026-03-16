@@ -52,7 +52,7 @@ export function FAQSection() {
             <div className="sticky top-28">
               <div className="rounded-3xl overflow-hidden shadow-2xl relative">
                 <Image
-                  src="/imgs/A dynamic tourism project deve/image_67.webp"
+                  src="/imgs/A modern corporate ecosystem s/image_0.webp"
                   alt="خدمة العملاء"
                   className="w-full h-[400px] md:h-[600px] lg:h-[700px] xl:h-[800px] 2xl:h-[900px] object-cover"
                   width={800}

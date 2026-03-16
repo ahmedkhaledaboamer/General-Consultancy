@@ -159,7 +159,7 @@ export function QualityStandards() {
               className="relative rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white">
               <div className="absolute inset-0 bg-gradient-to-tr from-teal-500/30 to-purple-500/30 mix-blend-overlay z-10"></div>
               <Image
-                src="/imgs/A vibrant tech startup managem/image_46.webp"
+                src="/imgs/A futuristic corporate environ/image_15.webp"
                 alt="Data Analytics"
                 className="w-full h-full object-cover"
                 width={800}

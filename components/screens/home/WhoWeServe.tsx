@@ -56,7 +56,7 @@ export function WhoWeServe() {
       {/* Left Side - Image (Full height on desktop) */}
       <div className="w-full lg:w-5/12 h-[400px] lg:h-auto relative">
         <Image
-          src="/imgs/A modern Islamic bank with ele/image_1.webp"
+          src="/imgs/A conceptual investment decisi/image_10.webp"
           alt="Professionals"
           className="w-full h-full object-cover"
           width={800}

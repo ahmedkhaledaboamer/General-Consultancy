@@ -32,7 +32,7 @@ const  ServicesPage = () => {
       <section className="relative h-64 md:h-80 w-full overflow-hidden flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/imgs/11 A luxurious real estate dev/image_24.webp"
+            src="/imgs/An economic feasibility study/image_7.webp"
             alt="Business strategy and growth"
             className="w-full h-full object-cover object-center"
             width={1400}

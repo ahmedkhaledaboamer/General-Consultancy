@@ -161,7 +161,7 @@ export function HeroSection() {
               }}>
               
               <Image
-                src="/imgs/A professional legal environme/image_20.webp"
+                src="/imgs/A conceptual economic operatio/image_11.webp"
                 alt="Corporate Building"
                 className="w-full h-full object-cover"
                 width={800}
@@ -192,7 +192,7 @@ export function HeroSection() {
               }}>
               
               <Image
-                src="/imgs/A professional legal investmen/image_44.webp"
+                src="/imgs/A conceptual financial landsca/image_5.webp"
                 alt="Business Meeting"
                 className="w-full h-full object-cover"
                 width={800}
@@ -223,7 +223,7 @@ export function HeroSection() {
               }}>
               
               <Image 
-                src="/imgs/A professional legal startup a/image_16.webp"
+                src="/imgs/A conceptual financial plannin/image_22.webp"
                 alt="Modern Office"
                 className="w-full h-full object-cover"
                 width={800}

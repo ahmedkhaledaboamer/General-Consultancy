@@ -64,7 +64,7 @@ export function HowWeWorkSection() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/imgs/A cuttingedge fintech developm/image_30.webp"
+          src="/imgs/A sports infrastructure invest/image_20.webp"
           alt="Strategy Planning"
           className="w-full h-full object-cover"
           width={1400}

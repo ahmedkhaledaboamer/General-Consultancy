@@ -17,7 +17,7 @@ export function EntityDictionary() {
     borderColor: 'border-blue-500',
     bgColor: 'bg-blue-50',
     image:
-    '/imgs/A dynamic commercial project d/image_8.webp'
+    '/imgs/A healthcare consulting enviro/image_23.webp'
   },
   {
     title: 'المسار التنفيذي',
@@ -26,7 +26,7 @@ export function EntityDictionary() {
     borderColor: 'border-purple-500',
     bgColor: 'bg-purple-50',
     image:
-    '/imgs/A dynamic commercial project m/image_59.webp'
+    '/imgs/A healthcare planning environm/image_24.webp'
   },
   {
     title: 'معايير الجودة',
@@ -35,7 +35,7 @@ export function EntityDictionary() {
     borderColor: 'border-emerald-500',
     bgColor: 'bg-emerald-50',
     image:
-    '/imgs/A dynamic educational project/image_6.webp'
+    '/imgs/A hospital management consulti/image_3.webp'
   },
   {
     title: 'مستويات الخدمة',
@@ -44,7 +44,7 @@ export function EntityDictionary() {
     borderColor: 'border-amber-500',
     bgColor: 'bg-amber-50',
     image:
-    '/imgs/A dynamic healthcare project m/image_39.webp'
+    '/imgs/A hospitality management consu/image_32.webp'
   }];
 
   return (
@@ -52,7 +52,7 @@ export function EntityDictionary() {
       <div className=" mx-auto">
         <div className="flex flex-col items-center justify-center relative rounded-3xl overflow-hidden mb-16 h-64 md:h-80 lg:h-[500px] xl:h-[600px] 2xl:h-[700px]">
           <Image
-            src="/imgs/A dynamic industrial developme/image_5.webp"
+            src="/imgs/A modern healthcare developmen/image_8.webp"
             alt="قاموس الكيان"
             className="w-full h-full object-cover"
             width={1200}

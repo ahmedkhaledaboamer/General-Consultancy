@@ -14,7 +14,7 @@ export function FileJourney() {
     icon: <InboxIcon className="w-6 h-6" />,
     color: 'bg-blue-500',
     image:
-    '/imgs/A dynamic tourism project mana/image_38.webp'
+    '/imgs/A modern corporate operations/image_3.webp'
   },
   {
     title: 'مرحلة التخطيط',
@@ -22,7 +22,7 @@ export function FileJourney() {
     icon: <MapPinIcon className="w-6 h-6" />,
     color: 'bg-indigo-500',
     image:
-    '/imgs/A dynamic tourism project offi/image_55.webp'
+    '/imgs/A modern editorial office envi/image_29.webp'
   },
   {
     title: 'مرحلة التنفيذ',
@@ -30,7 +30,7 @@ export function FileJourney() {
     icon: <PlayCircleIcon className="w-6 h-6" />,
     color: 'bg-purple-500',
     image:
-    '/imgs/A futuristic industrial transf/image_1.webp'
+    '/imgs/A modern editorial workspace w/image_2.webp'
   },
   {
     title: 'مرحلة المراجعة',
@@ -38,7 +38,7 @@ export function FileJourney() {
     icon: <RefreshCcwIcon className="w-6 h-6" />,
     color: 'bg-pink-500',
     image:
-    '/imgs/A futuristic logistics command/image_65.webp'
+    '/imgs/A modern editorialstyle office/image_14.webp'
   },
   {
     title: 'مرحلة التسليم النهائي',
@@ -46,7 +46,7 @@ export function FileJourney() {
     icon: <FlagIcon className="w-6 h-6" />,
     color: 'bg-emerald-500',
     image:
-    '/imgs/A modern healthcare project de/image_71.webp'
+    '/imgs/A modern office with layered g/image_16.webp'
   }];
 
   return (
@@ -54,7 +54,7 @@ export function FileJourney() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/imgs/A modern industrial environmen/image_11.webp"
+          src="/imgs/A polished editorial office wi/image_9.webp"
           alt="مكتب حديث"
           className="w-full h-full object-cover opacity-5"
           width={1920}

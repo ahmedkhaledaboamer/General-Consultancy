@@ -18,7 +18,7 @@ const sectors = [
   title: 'القطاع الصناعي',
   icon: FactoryIcon,
   image:
-  '/imgs/A modern chemical industry fac/image_68.webp',
+  '/imgs/A business development strateg/image_41.webp',
   overlay: 'from-blue-900/90 to-blue-600/80',
   items: [
   'الاستثمار في المشاريع الصناعية',
@@ -31,7 +31,7 @@ const sectors = [
   title: 'القطاع الزراعي',
   icon: SproutIcon,
   image:
-  '/imgs/A modern classroom with intera/image_14.webp',
+  '/imgs/A conceptual strategic plannin/image_5.webp',
   overlay: 'from-emerald-900/90 to-emerald-600/80',
   items: [
   'تطوير المشاريع الزراعية',
@@ -44,7 +44,7 @@ const sectors = [
   title: 'القطاع السياحي',
   icon: PlaneIcon,
   image:
-  '/imgs/A modern commercial real estat/image_35.webp',
+  '/imgs/A corporate analytics environm/image_38.webp',
   overlay: 'from-orange-900/90 to-orange-500/80',
   items: [
   'تطوير المشاريع السياحية',
@@ -57,7 +57,7 @@ const sectors = [
   title: 'قطاع الطاقة',
   icon: ZapIcon,
   image:
-  '/imgs/A modern digital media studio/image_58.webp',
+  '/imgs/A flexible strategy adaptation/image_41.webp',
   overlay: 'from-yellow-900/90 to-amber-500/80',
   items: [
   'الاستثمار في الطاقة التقليدية والمتجددة',
@@ -70,7 +70,7 @@ const sectors = [
   title: 'قطاع الصحة',
   icon: HeartIcon,
   image:
-  '/imgs/A modern educational campus wi/image_22.webp',
+  '/imgs/A futuristic strategic outlook/image_2.webp',
   overlay: 'from-rose-900/90 to-rose-500/80',
   items: [
   'الاستثمار في المشاريع الصحية',
@@ -83,7 +83,7 @@ const sectors = [
   title: 'قطاع التعليم',
   icon: GraduationCapIcon,
   image:
-  '/imgs/A modern educational consultin/image_29.webp',
+  '/imgs/A modern advisory strategy des/image_11.webp',
   overlay: 'from-purple-900/90 to-purple-600/80',
   items: [
   'تطوير المشاريع التعليمية',
@@ -96,7 +96,7 @@ const sectors = [
   title: 'قطاع الرياضة',
   icon: TrophyIcon,
   image:
-  '/imgs/A modern engineering industry/image_13.webp',
+  '/imgs/A modern operational strategy/image_4.webp',
   overlay: 'from-red-900/90 to-red-600/80',
   items: [
   'الاستثمار في الأندية والمنشآت',
@@ -109,7 +109,7 @@ const sectors = [
   title: 'قطاع التجارة والتجزئة',
   icon: ShoppingBagIcon,
   image:
-  '/imgs/A modern financial district sk/image_19.webp',
+  '/imgs/A modern strategic planning en/image_9.webp',
   overlay: 'from-teal-900/90 to-teal-500/80',
   items: [
   'تطوير مشاريع تجارة التجزئة',
@@ -122,7 +122,7 @@ const sectors = [
   title: 'قطاع التكنولوجيا',
   icon: CpuIcon,
   image:
-  '/imgs/A modern financial services en/image_77.webp',
+  '/imgs/A multidisciplinary strategic/image_7.webp',
   overlay: 'from-indigo-900/90 to-indigo-600/80',
   items: [
   'الاستثمار في الشركات التقنية',
@@ -138,7 +138,7 @@ export function SectorServices() {
   return (
     <section id="sectors" className=" p-[5%]  bg-navy relative overflow-hidden">
       {/* Background Decor */}
-      <div className="absolute inset-0 opacity-10 bg-[url('/imgs/A modern food industry environ/image_73.webp')] bg-cover bg-center mix-blend-screen"></div>
+      <div className="absolute inset-0 opacity-10 bg-[url('/imgs/A planning phase environment w/image_37.webp')] bg-cover bg-center mix-blend-screen"></div>
 
       <div className=" relative z-10">
         <div className="text-center   mb-20">

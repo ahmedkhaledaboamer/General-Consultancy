@@ -18,7 +18,7 @@ const pillars: PillarConfig[] = [
   desc: 'تقديم أعلى مستويات الجودة والخبرة في كل خدمة.',
   icon: AwardIcon,
   image:
-  '/imgs/A stunning renewable energy en/image_12.webp',
+  '/imgs/A transparent strategy environ/image_19.webp',
   gradient: 'from-brand-purple-dark via-brand-purple to-transparent',
   delay: 0.1
 },
@@ -27,7 +27,7 @@ const pillars: PillarConfig[] = [
   desc: 'تطوير حلول جديدة ومبتكرة لمواجهة تحديات السوق.',
   icon: LightbulbIcon,
   image:
-  '/imgs/A stunning renewable energy la/image_41.webp',
+  '/imgs/A visionary roadmap scene feat/image_22.webp',
   gradient: 'from-brand-rose via-brand-orange to-transparent',
   delay: 0.3
 },
@@ -36,7 +36,7 @@ const pillars: PillarConfig[] = [
   desc: 'بناء علاقات متينة قائمة على الثقة، الشفافية، والدعم المستمر.',
   icon: UsersIcon,
   image:
-  '/imgs/A stunning residential communi/image_26.webp',
+  '/imgs/A longterm support environment/image_30.webp',
   gradient: 'from-brand-blue-dark via-brand-teal to-transparent',
   delay: 0.5
 }];

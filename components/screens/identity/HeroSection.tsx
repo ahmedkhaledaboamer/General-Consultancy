@@ -10,7 +10,7 @@ export function HeroSection() {
           className="absolute inset-0 bg-cover bg-center opacity-40 mix-blend-luminosity"
           style={{
             backgroundImage:
-            'url("/imgs/A stunning clean energy landsc/image_61.webp")'
+            'url("/imgs/A strategic planning studio wi/image_8.webp")'
           }} />
         
         <div className="absolute inset-0 bg-gradient-to-br from-brand-indigo-dark via-brand-purple/80 to-brand-rose/70 opacity-90" />
@@ -36,7 +36,7 @@ export function HeroSection() {
         }}>
         
         <Image
-          src="/imgs/A stunning clean technology fa/image_10.webp"
+          src="/imgs/A strategic planning workspace/image_5.webp"
           alt="Business Meeting"
           className="w-full h-full object-cover"
           width={800}
@@ -65,7 +65,7 @@ export function HeroSection() {
         }}>
         
         <Image
-          src="/imgs/A stunning coastal resort deve/image_42.webp"
+          src="/imgs/A strategic research environme/image_32.webp"
           alt="Corporate Office"
           className="w-full h-full object-cover"
           width={800}

@@ -43,7 +43,7 @@ export function VisionMission() {
             {/* Small decorative thumbnail */}
             <div className="absolute -bottom-10 -left-10 w-32 h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 xl:w-44 xl:h-44 2xl:w-48 2xl:h-48 rounded-2xl overflow-hidden border-4 border-white shadow-2xl z-20 hidden md:block">
               <Image
-                src="/imgs/A spectacular sports complex w/image_51.webp"
+                src="/imgs/A global market expansion conc/image_42.webp"
                 alt="Success"
                 className="w-full h-full object-cover"
                 width={400}
@@ -75,7 +75,7 @@ export function VisionMission() {
             <div className="relative h-80 md:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px] rounded-[2rem] overflow-hidden shadow-2xl border-8 border-white">
               <div className="absolute inset-0 bg-brand-purple/10 mix-blend-overlay z-10" />
               <Image
-                src="/imgs/A vibrant professional service/image_33.webp"
+                src="/imgs/A highlevel investor consultin/image_33.webp"
                 alt="Strategy Planning"
                 className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700" 
                 width={1200}
@@ -117,7 +117,7 @@ export function VisionMission() {
             <div className="relative h-80 md:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px] rounded-[2rem] overflow-hidden shadow-2xl border-8 border-white">
               <div className="absolute inset-0 bg-brand-teal/10 mix-blend-overlay z-10" />
               <Image
-                src="/imgs/A cuttingedge technology inves/image_38.webp"
+                src="/imgs/A longterm investment strategy/image_21.webp"
                 alt="Growth Chart"
                 className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700" 
                 width={1200}
@@ -128,7 +128,7 @@ export function VisionMission() {
             {/* Small decorative thumbnail */}
             <div className="absolute -top-10 -left-10 w-32 h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 xl:w-44 xl:h-44 2xl:w-48 2xl:h-48 rounded-2xl overflow-hidden border-4 border-white shadow-2xl z-20 hidden md:block">
               <Image
-                src="/imgs/A sophisticated urban developm/image_31.webp"
+                src="/imgs/A market opportunity analysis/image_17.webp"
                 alt="Abstract"
                 className="w-full h-full object-cover"
                 width={400}

@@ -111,7 +111,7 @@ export function ServicesSection() {
       <div className="relative h-80 md:h-96 w-full mb-16 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/imgs/A cuttingedge technology consu/image_42.webp"
+            src="/imgs/A symbolic ecosystem of invest/image_1.webp"
             alt="مكتب حديث"
             className="w-full h-full object-cover"
             width={1400}

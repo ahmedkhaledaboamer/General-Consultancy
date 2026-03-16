@@ -25,7 +25,7 @@ const features: FeatureConfig[] = [
   icon: BriefcaseIcon,
   gradient: 'from-brand-purple to-brand-pink',
   thumb:
-  '/imgs/A sophisticated investment off/image_4.webp'
+  '/imgs/A market opportunity evaluatio/image_44.webp'
 },
 {
   title: 'منهجية عمل متكاملة',
@@ -33,7 +33,7 @@ const features: FeatureConfig[] = [
   icon: SettingsIcon,
   gradient: 'from-brand-blue to-brand-cyan',
   thumb:
-  '/imgs/A futuristic fintech environme/image_19.webp'
+  '/imgs/A modern banking advisory scen/image_15.webp'
 },
 {
   title: 'التزام بالمصداقية والشفافية',
@@ -41,7 +41,7 @@ const features: FeatureConfig[] = [
   icon: ShieldCheckIcon,
   gradient: 'from-brand-teal to-brand-emerald',
   thumb:
-  '/imgs/A sophisticated tax planning o/image_53.webp'
+  '/imgs/A modern banking strategy envi/image_23.webp'
 },
 {
   title: 'حلول مرنة ومبتكرة',
@@ -49,7 +49,7 @@ const features: FeatureConfig[] = [
   icon: SparklesIcon,
   gradient: 'from-brand-orange to-brand-amber',
   thumb:
-  '/imgs/25 A serene environmental rese/image_19.webp'
+  '/imgs/A modern investment portfolio/image_25.webp'
 },
 {
   title: 'تواصل مستمر ومؤثر',
@@ -57,7 +57,7 @@ const features: FeatureConfig[] = [
   icon: MessageCircleIcon,
   gradient: 'from-brand-rose to-brand-pink',
   thumb:
-  '/imgs/A dramatic urban development p/image_41.webp'
+  '/imgs/A modern investment strategy s/image_6.webp'
 }];
 
 type FeatureCardProps = FeatureConfig & {
@@ -136,7 +136,7 @@ export function WhatMakesDifferent() {
           }}>
           
           <Image
-            src="/imgs/A strategic government advisor/image_39.webp"
+            src="/imgs/A modern retail investment env/image_0.webp"
             alt="Modern Workspace"
             className="absolute inset-0 w-full h-full object-cover"
             width={1920}
@@ -198,7 +198,7 @@ export function WhatMakesDifferent() {
           }}>
           
           <Image
-            src="/imgs/A futuristic digital health en/image_30.webp"
+            src="/imgs/A modern strategic investment/image_0.webp"
             alt="Abstract Colorful"
             className="absolute inset-0 w-full h-full object-cover"
             width={1200}

@@ -32,7 +32,7 @@ export function IntroSection() {
         }}>
         
         <Image
-          src="/imgs/A stunning ecolodge in pristin/image_52.webp"
+          src="/imgs/A project execution environmen/image_18.webp"
           alt="Data"
           className="w-full h-full object-cover"
           width={400}
@@ -60,7 +60,7 @@ export function IntroSection() {
         }}>
         
         <Image
-          src="/imgs/A stunning green cityscape wit/image_7.webp"
+          src="/imgs/A project execution planning s/image_26.webp"
           alt="Strategy"
           className="w-full h-full object-cover"
           width={400}
@@ -92,7 +92,7 @@ export function IntroSection() {
             <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-white">
               <div className="absolute inset-0 bg-gradient-to-tr from-brand-purple/40 to-transparent mix-blend-overlay z-10" />
               <Image
-                src="/imgs/A stunning modern university c/image_63.webp"
+                src="/imgs/A project management environme/image_26.webp"
                 alt="Team Collaboration"
                 className="w-full h-[500px] md:h-[600px] lg:h-[700px] xl:h-[800px] 2xl:h-[900px] object-cover transform hover:scale-105 transition-transform duration-700"
                 width={1200}
