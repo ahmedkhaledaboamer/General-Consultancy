@@ -1,0 +1,1531 @@
+{
+  "page": {
+    "title": "Startseite"
+  },
+  "navbar": {
+    "cta": "Beratung buchen",
+    "navMenu": "Navigationsmenü",
+    "openMenu": "Navigationsmenü öffnen",
+    "closeMenu": "Navigationsmenü schließen",
+    "routes": [
+      {
+        "label": "Startseite",
+        "href": "/"
+      },
+      {
+        "label": "Dienstleistungen",
+        "href": "/services"
+      },
+      {
+        "label": "Verwaltungsapparat",
+        "href": "/administrative-apparatus"
+      },
+      {
+        "label": "Identität",
+        "href": "/identity"
+      },
+      {
+        "label": "Ausführung",
+        "href": "/execution"
+      }
+    ]
+  },
+  "content": {
+    "title": "Komponente",
+    "description": "Komponentenbeschreibung"
+  },
+  "header": {
+    "title": "Ausgezeichneter Rechtsberater",
+    "subtitle": "Zuverlässige Rechtskompetenz mit goldenen Standards",
+    "cta": {
+      "bookConsultation": "Beratung buchen",
+      "exploreServices": "Unsere Dienstleistungen entdecken"
+    }
+  },
+  "footer": {
+    "company": {
+      "name": "Sheikh Abdulaziz bin Abdullah Al Mualla",
+      "tagline": "Allgemeine Beratungen",
+      "description": "Wir sind eine Beratungs- und Investmentgesellschaft, die Institutionen und Investoren durch ein integriertes System spezialisierter Expertise in den Bereichen Investition, Projektmanagement und strategische Beratung unterstützt."
+    },
+    "contact": {
+      "title": "Kontaktieren Sie uns",
+      "phone": "+971 521068882",
+      "email": "info@shazmlc.com",
+      "location": "Vereinigte Arabische Emirate"
+    },
+    "quickLinks": {
+      "title": "Schnelllinks",
+      "links": [
+        {
+          "label": "Startseite",
+          "href": "/"
+        },
+        {
+          "label": "Dienstleistungen",
+          "href": "/services"
+        },
+        {
+          "label": "Verwaltungsapparat",
+          "href": "/administrative-apparatus"
+        },
+        {
+          "label": "Identität",
+          "href": "/identity"
+        },
+        {
+          "label": "Ausführung",
+          "href": "/execution"
+        }
+      ]
+    },
+    "services": {
+      "title": "Unsere Dienstleistungen",
+      "items": [
+        "Investment-Management",
+        "Strategische Beratung",
+        "Projektentwicklung",
+        "Finanzberatung",
+        "Geschäftsentwicklung"
+      ]
+    },
+    "description": "Rechtliche Exzellenz mit goldenen Standards in den Vereinigten Arabischen Emiraten – mit unerschütterlichem Engagement für den Erfolg unserer Kunden.",
+    "copyright": "© 2026 Sheikh Abdul Aziz Bin Abdulla Al Mualla General Consultancy FZC LLC — Alle Rechte vorbehalten.",
+    "socialMedia": {
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter",
+      "instagram": "Instagram",
+      "facebook": "Facebook"
+    }
+  },
+  "meta": {
+    "home": {
+      "title": "Startseite | Sheikh Abdulaziz bin Abdullah Al Mualla Allgemeine Beratungen",
+      "description": "Eine integrierte Beratungs- und Investmentplattform unter der Leitung von Sheikh Abdulaziz bin Abdullah Al Mualla, über die wir spezialisierte strategische und rechtliche Lösungen anbieten, um Institutionen und Investoren bei nachhaltigem Wachstum und stabilen, hochwertigen Entscheidungen zu unterstützen."
+    },
+    "services": {
+      "title": "Dienstleistungen | Sheikh Abdulaziz bin Abdullah Al Mualla Allgemeine Beratungen",
+      "description": "Ein breites Spektrum an Beratungs- und Investmentdienstleistungen, die auf die Bedürfnisse unserer Partner abgestimmt sind – darunter Investment-Management, Projektentwicklung, strategische und rechtliche Beratung sowie der Aufbau anpassungsfähiger und wachstumsstarker Institutionen."
+    },
+    "administrativeApparatus": {
+      "title": "Verwaltungsapparat | Sheikh Abdulaziz bin Abdullah Al Mualla Allgemeine Beratungen",
+      "description": "Ein professioneller Verwaltungsapparat, der auf Effizienz, Governance und Transparenz basiert, strategische Entscheidungen unterstützt und die Umsetzung von Initiativen und Projekten nach höchsten Qualitäts- und Disziplinstandards gewährleistet."
+    },
+    "identity": {
+      "title": "Identität | Sheikh Abdulaziz bin Abdullah Al Mualla Allgemeine Beratungen",
+      "description": "Eine starke institutionelle Identität, die Authentizität und zukunftsorientierte Vision vereint und eine Arbeitsphilosophie widerspiegelt, die auf Partnerschaft, Vertrauen, Service-Exzellenz und dem Aufbau realen, nachhaltigen Werts für unsere Kunden basiert."
+    },
+    "execution": {
+      "title": "Ausführung | Sheikh Abdulaziz bin Abdullah Al Mualla Allgemeine Beratungen",
+      "description": "Ein professionelles Ausführungssystem, das Strategien und Pläne in greifbare Realität umsetzt – durch spezialisierte Teams, klare Prozesse und präzise Qualitätsstandards, die Projekte und Initiativen effizient und wirksam vor Ort abschließen."
+    },
+    "notFound": {
+      "title": "404 Fehler | Seite nicht gefunden",
+      "description": "Die von Ihnen gesuchte Seite ist derzeit nicht verfügbar. Sie wurde möglicherweise verschoben, gelöscht oder der Link ist falsch. Sie können zur Startseite zurückkehren und weiterstöbern."
+    }
+  },
+  "backToTop": {
+    "title": "Nach oben"
+  },
+  "notFound": {
+    "badge": "Seite nicht gefunden",
+    "title": "Wir konnten diese Seite nicht finden",
+    "description": "Die gesuchte Seite wurde möglicherweise verschoben, gelöscht oder existierte nie. Bitte prüfen Sie den Link oder kehren Sie zur Startseite zurück.",
+    "cta": "Zur Startseite",
+    "statusLabel": "404 Fehler · Seite nicht gefunden"
+  },
+  "home": {
+    "hero": {
+      "badge": "Strategische Vision für die Zukunft",
+      "titleLine1": "Wir gestalten Investitionswege…",
+      "titleLine2": "und treffen Entscheidungen, die die Zukunft schaffen.",
+      "descriptionMain": "In einer Wirtschaftswelt, in der sich Gleichungen rasch ändern und Herausforderungen für Investoren und Entscheidungsträger zunehmen, wird eine klare Vision und präzise Methodik unverzichtbar.",
+      "descriptionSecondary": "Die Sheikh Abdulaziz bin Abdullah Al Mualla General Consultations Company arbeitet am Aufbau eines integrierten Systems aus strategischer Beratung, Investment-Management und Projektentwicklung, das Institutionen und Investoren befähigt, fundierte Entscheidungen zu treffen, Projekte effizient zu managen und Horizonte für nachhaltiges Wachstum in verschiedenen Wirtschaftssektoren zu öffnen.",
+      "ctaExploreServices": "Unsere Dienstleistungen entdecken",
+      "ctaLearnMore": "Über uns erfahren"
+    },
+    "about": {
+      "badge": "Wer sind wir?",
+      "titlePrefix": "Wir bauen ein integriertes System auf, das unseren Partnern hilft,",
+      "titleHighlight": "Wachstum mit Vertrauen und Stabilität zu erreichen",
+      "paragraph1": "Wir sind eine Beratungs- und Investmentgesellschaft, die Institutionen und Investoren durch ein integriertes System spezialisierter Expertise in den Bereichen Investition, Projektmanagement und strategische Beratung unterstützt.",
+      "paragraph2": "Die Sheikh Abdulaziz bin Abdullah Al Mualla General Consultations Company wurde mit einer klaren Vision gegründet, um Investoren und institutionelle Einheiten zu befähigen, Chancen in erfolgreiche Projekte umzuwandeln, starke operative Strukturen aufzubauen und Investitionen zu entwickeln, die nachhaltigen Marktwert schaffen.",
+      "paragraph3": "Wir arbeiten mit einem Netzwerk multidisziplinärer Expertise, das Wirtschaftsanalyse, strategisches Management, Geschäftsentwicklung und spezialisierte Beratung in Sektoren wie Industrie, Energie, Gesundheit, Bildung, Tourismus, Technologie und weiteren vitalen Bereichen kombiniert.",
+      "highlight": "Wir liefern nicht nur Lösungen… sondern bauen ein integriertes System auf, das unseren Partnern hilft, mit Vertrauen und Stabilität zu wachsen.",
+      "badgeVision": "Strategische Vision",
+      "badgeGrowth": "Nachhaltiges Wachstum"
+    },
+    "visionMission": {
+      "badge": "Strategische Grundlage",
+      "title": "Unsere Mission und Vision",
+      "visionTitle": "Unsere Vision",
+      "visionDescription": "Zu den führenden Anbietern strategischer Beratung und Investment-Management in der Region zu gehören und hochwertige Projekte zu unterstützen, die zur Wirtschaftsentwicklung, Innovation und Nachhaltigkeit beitragen.",
+      "missionTitle": "Unsere Mission",
+      "missionDescription": "Ein integriertes System aus Beratungs- und Investmentdienstleistungen bereitzustellen, das Institutionen und Investoren präzise Entscheidungen, erfolgreiche Projekte und wachstumsfähige Geschäftsmodelle in lokalen und internationalen Märkten ermöglicht."
+    },
+    "coreServices": {
+      "sectionTitlePart1": "Unsere",
+      "sectionTitlePart2": "Kern-Dienstleistungen",
+      "sectionDescription": "Wir sind in einem breiten Spektrum von Beratungs- und Investmentfeldern tätig, die Institutionen helfen, ihre Ziele zu erreichen und ihre Wettbewerbsfähigkeit zu stärken.",
+      "detailsLabel": "Details ansehen",
+      "modalClose": "Schließen",
+      "modalDetailsSubtitle": "Dienstleistungsdetails",
+      "services": [
+        {
+          "title": "Investment-Management-Dienstleistungen",
+          "description": "Wir bieten ein integriertes System zur Verwaltung von Investitionen und zur Entwicklung von Portfolios, um nachhaltige Renditen und wirtschaftlichen Mehrwert für Projekte zu erzielen.",
+          "items": [
+            "Portfolio-Management",
+            "Private Investment-Management",
+            "Gründung und Management von Investment-Clubs",
+            "Unterstützung für Venture-Capital-Gesellschaften",
+            "Entwicklung langfristiger Investmentstrategien",
+            "Investment-Risikoanalyse",
+            "Portfolio-Restrukturierung",
+            "Bewertung neuer Investmentchancen"
+          ]
+        },
+        {
+          "title": "Finanz- und Bankberatung",
+          "description": "Wir bieten spezialisierte Beratung im Finanz- und Bankwesen, um Institutionen und Investoren starke finanzielle Strukturen aufzubauen.",
+          "items": [
+            "Bankberatung",
+            "Finanzierungsstrukturierung",
+            "Erstellung finanzieller Pläne",
+            "Investmentbewertung",
+            "Hypothekenbezogene Beratung",
+            "Erstellung von Finanzierungs- und Investmentmodellen"
+          ]
+        },
+        {
+          "title": "Strategische und administrative Beratung",
+          "description": "Wir helfen Institutionen, wirksame Strategien zu entwickeln, die Wachstum und Nachhaltigkeit in wettbewerbsintensiven Märkten ermöglichen.",
+          "items": [
+            "Erstellung strategischer Pläne",
+            "Entwicklung von Geschäftsmodellen",
+            "Administrative Restrukturierung",
+            "Marktstudien",
+            "Entwicklung von Expansionsstrategien",
+            "Erstellung administrativer Studien und Analysen"
+          ]
+        },
+        {
+          "title": "Spezialisierte Gesundheitsberatung",
+          "description": "Wir bieten fortschrittliche Beratung im Gesundheitssektor, um Gesundheitseinrichtungen bei der Weiterentwicklung ihrer Dienstleistungen und der Steigerung der operativen Effizienz zu unterstützen.",
+          "items": [
+            "Managementberatung für Gesundheitseinrichtungen",
+            "Gesundheitsplanung",
+            "Entwicklung von Gesundheitsdienstleistungen",
+            "Beratung zu Arbeitssicherheit und Gesundheit",
+            "Gesundheits- und Lebensstilberatung",
+            "Entwicklung institutioneller Gesundheitsprogramme"
+          ]
+        }
+      ]
+    },
+    "sectorServices": {
+      "titlePrefix": "Sektoral",
+      "titleHighlight": "Investment und Projektentwicklung",
+      "description": "Wir tragen zur Entwicklung und Verwaltung von Investitionen in mehreren Wirtschaftssektoren bei – durch spezialisierte Studien und klare operative Pläne.",
+      "sectors": [
+        {
+          "title": "Industriesektor",
+          "items": [
+            "Investition in Industrieprojekte",
+            "Entwicklung von Fabriken und Produktionsanlagen",
+            "Verbesserung der operativen Effizienz"
+          ]
+        },
+        {
+          "title": "Landwirtschaftssektor",
+          "items": [
+            "Entwicklung landwirtschaftlicher Projekte",
+            "Investition in Ernährungssicherheit",
+            "Management moderner landwirtschaftlicher Projekte"
+          ]
+        },
+        {
+          "title": "Tourismussektor",
+          "items": [
+            "Entwicklung touristischer Projekte",
+            "Investition in Resorts und Anlagen",
+            "Entwicklung touristischer Destinationen"
+          ]
+        },
+        {
+          "title": "Energiesektor",
+          "items": [
+            "Investition in traditionelle und erneuerbare Energien",
+            "Entwicklung sauberer Energieprojekte",
+            "Management von Energieinfrastruktur"
+          ]
+        },
+        {
+          "title": "Gesundheitssektor",
+          "items": [
+            "Investition in Gesundheitsprojekte",
+            "Entwicklung medizinischer Zentren und Krankenhäuser",
+            "Gesundheitsplanung"
+          ]
+        },
+        {
+          "title": "Bildungssektor",
+          "items": [
+            "Entwicklung von Bildungsprojekten",
+            "Investition in Schulen und Universitäten",
+            "Management von Bildungseinrichtungen"
+          ]
+        },
+        {
+          "title": "Sportsektor",
+          "items": [
+            "Investition in Vereine und Anlagen",
+            "Entwicklung von Sportprojekten",
+            "Management von Sportanlagen"
+          ]
+        },
+        {
+          "title": "Handels- und Einzelhandelssektor",
+          "items": [
+            "Entwicklung von Einzelhandelsprojekten",
+            "Investition in Marken",
+            "Management und Betrieb von Einkaufszentren"
+          ]
+        },
+        {
+          "title": "Technologiesektor",
+          "items": [
+            "Investition in Technologieunternehmen",
+            "Unterstützung für Startups",
+            "Entwicklung digitaler und innovativer Lösungen"
+          ]
+        }
+      ]
+    },
+    "whatWeOffer": {
+      "title": "Was bieten wir?",
+      "description": "Wir stellen ein integriertes System von Lösungen bereit, das unseren Partnern hilft, Vision in Realität und Ambition in erfolgreiche Projekte umzuwandeln. Unsere Dienstleistungen umfassen:",
+      "offerings": [
+        "Investment-Management und Portfolio-Entwicklung",
+        "Erstellung wirtschaftlicher und Machbarkeitsstudien",
+        "Projektentwicklung und Ausführungsmanagement",
+        "Strategische und administrative Beratung",
+        "Bank- und Finanzberatung",
+        "Geschäftsentwicklung und Aufbau von Wachstumsmodellen",
+        "Spezialisierte sektorale Beratung",
+        "Unterstützung bei Expansion in lokalen und internationalen Märkten"
+      ],
+      "highlightCount": "8",
+      "highlightText": "Integrierte Kern-Dienstleistungen basierend auf tiefgehender Analyse und spezialisierter Expertise zur Entwicklung praktischer und umsetzbarer Lösungen.",
+      "badgeIconLabel": "Mehrere Dienstleistungen"
+    },
+    "clientJourney": {
+      "title": "Die Reise mit uns",
+      "description": "Die Zusammenarbeit mit uns ist nicht nur eine Beratung, sondern ein integrierter Weg, der mit Verständnis beginnt und mit Ergebnissen endet.",
+      "steps": [
+        {
+          "title": "Bedürfnisanalyse",
+          "description": "Wir beginnen mit der Analyse der Ziele und aktuellen Herausforderungen des Kunden, um das Gesamtbild zu verstehen."
+        },
+        {
+          "title": "Analyse und Bewertung",
+          "description": "Wir führen Marktstudien durch, bewerten Chancen und prüfen mögliche Optionen."
+        },
+        {
+          "title": "Strategischer Weg",
+          "description": "Wir entwickeln einen klaren Aktionsplan basierend auf Best Practices und spezialisierter Expertise."
+        },
+        {
+          "title": "Ausführung und Begleitung",
+          "description": "Wir begleiten unsere Partner durch alle Umsetzungsphasen, um die gewünschten Ergebnisse sicherzustellen."
+        },
+        {
+          "title": "Entwicklung und Wachstum",
+          "description": "Wir unterstützen unsere Partner kontinuierlich bei der Weiterentwicklung ihrer Geschäfte und der Vorbereitung auf zukünftige Expansion."
+        }
+      ]
+    },
+    "serviceLevels": {
+      "title": "Service-Level",
+      "description": "Wir bieten unsere Dienstleistungen auf mehreren Ebenen an, um den Bedürfnissen unterschiedlicher Partner gerecht zu werden.",
+      "vipBadge": "VIP",
+      "levels": [
+        {
+          "title": "Beratungsebene",
+          "description": "Bereitstellung von Studien, Analysen und strategischen Empfehlungen.",
+          "features": [
+            "Marktanalyse",
+            "Machbarkeitsstudien",
+            "Strategische Empfehlungen"
+          ]
+        },
+        {
+          "title": "Ausführungsebene",
+          "description": "Unterstützung bei der Projektumsetzung und operativen Steuerung.",
+          "features": [
+            "Projektmanagement",
+            "Ausführungsüberwachung",
+            "Prozessoptimierung"
+          ]
+        },
+        {
+          "title": "Erweiterte strategische Ebene",
+          "description": "Integrierte Lösungen inklusive Planung, Ausführung und Nachverfolgung.",
+          "features": [
+            "Umfassende Planung",
+            "Integrierte Umsetzung",
+            "Nachverfolgung und Bewertung"
+          ]
+        },
+        {
+          "title": "Private Ebene",
+          "description": "Individuell zugeschnittene Beratung für Investoren und Institutionen mit großen Projekten.",
+          "features": [
+            "Maßgeschneiderte Lösungen",
+            "Ausführungspriorität",
+            "Laufende Beratung"
+          ]
+        }
+      ]
+    },
+    "valuesSection": {
+      "title": "Unsere Werte und Prinzipien",
+      "description": "Wir glauben, dass der Erfolg jedes Projekts von einem klaren Wertesystem abhängt, das unsere Arbeitsweise und Entscheidungen bestimmt.",
+      "values": [
+        {
+          "title": "Professionalität",
+          "description": "Wir verpflichten uns zu den höchsten professionellen Standards in allem, was wir anbieten."
+        },
+        {
+          "title": "Transparenz",
+          "description": "Wir stehen für vollständige Klarheit in Analyse, Empfehlungen und Ergebnissen."
+        },
+        {
+          "title": "Verpflichtung",
+          "description": "Der Erfolg unserer Partner ist Teil unserer professionellen Verantwortung."
+        },
+        {
+          "title": "Innovation",
+          "description": "Wir entwickeln stets neue Lösungen, die nachhaltiges Wachstum fördern."
+        },
+        {
+          "title": "Partnerschaft",
+          "description": "Wir bauen langfristige Beziehungen auf Vertrauen und Zusammenarbeit auf."
+        }
+      ]
+    },
+    "whoWeServe": {
+      "title": "Für wen sind wir da?",
+      "description": "Wir bieten unsere Dienstleistungen einer breiten Palette von Investoren und Institutionen an, die Wachstum und Expansion anstreben.",
+      "clients": [
+        "Unternehmer und Investoren",
+        "Familienunternehmen",
+        "Startups",
+        "Lokale und internationale Unternehmen",
+        "Ausländische Investoren",
+        "Staatliche und halbstaatliche Institutionen",
+        "Einrichtungen, die neue Projekte entwickeln oder Investitionen ausbauen möchten"
+      ]
+    },
+    "ourPromise": {
+      "title": "Unser Versprechen an Sie",
+      "description": "Wir versprechen unseren Partnern Beratungs- und Investmentdienstleistungen auf Basis von Expertise, präziser Analyse und klarer Vision. Wir verpflichten uns, der Partner zu sein, der Ihnen hilft:",
+      "promises": [
+        "Fundierte Investmententscheidungen zu treffen",
+        "Erfolgreiche und nachhaltige Projekte zu entwickeln",
+        "Starke operative Strukturen aufzubauen",
+        "Neue Marktchancen zu entdecken",
+        "Wachstum mit Vertrauen und Stabilität zu erreichen"
+      ],
+      "closing": "Unser Ziel ist es, ein verlässlicher Partner beim Aufbau Ihrer Investmentzukunft zu sein."
+    },
+    "ourApproach": {
+      "title": "Unser Arbeitsansatz",
+      "description": "Wir stützen uns auf eine integrierte Methodik basierend auf:",
+      "items": [
+        "Tiefgehender Analyse",
+        "Strategischer Planung",
+        "Lösungsdesign",
+        "Ausführung und Nachverfolgung",
+        "Kontinuierlicher Weiterentwicklung"
+      ]
+    },
+    "cta": {
+      "titleLine1": "Machen Sie heute den nächsten Schritt hin zur",
+      "titleLine2": "Entwicklung Ihres Geschäfts und Ihrer Investitionen.",
+      "descriptionMain": "Unser Team ist bereit, Ihre Bedürfnisse zu analysieren und Lösungen zu liefern, die Ihnen helfen, Ihre Ziele mit Vertrauen und Klarheit zu erreichen.",
+      "descriptionSecondary": "Kontaktieren Sie uns jetzt – lassen Sie uns gemeinsam einen stärkeren und nachhaltigeren Investmentweg aufbauen.",
+      "button": "Kontaktieren Sie uns"
+    }
+  },
+  "services": {
+    "hero": {
+      "badge": "Führerschaft in Beratung und Investment",
+      "titleMain": "Integriertes Beratungssystem",
+      "titleHighlight": "Unterstützt Investitionen… und schafft institutionellen Erfolg.",
+      "descriptionMain": "In einem Geschäftsumfeld ständigen Wandels und wachsender Konkurrenz benötigen Institutionen und Investoren ein Dienstleistungssystem, das gleichzeitig strategische Vision und operative Unterstützung bietet.",
+      "descriptionSecondary": "Wir liefern keine isolierten Lösungen… sondern bauen ein vernetztes System von Dienstleistungen auf, das unseren Partnern Wachstum und Nachhaltigkeit ermöglicht.",
+      "ctaPrimary": "Starten Sie Ihre Erfolgsreise mit uns",
+      "ctaSecondary": "Unsere Dienstleistungen entdecken",
+      "floatingBadge1Title": "Nachhaltiges Wachstum",
+      "floatingBadge1Subtitle": "Effektive Strategien",
+      "floatingBadge2Years": "+20",
+      "floatingBadge2Title": "Jahre Erfahrung",
+      "floatingBadge2Subtitle": "in lokalen und internationalen Märkten"
+    },
+    "dividerQuote": {
+      "main": "Wir liefern keine isolierten Lösungen… sondern bauen ein vernetztes System von Dienstleistungen auf, das unseren Partnern Wachstum und Nachhaltigkeit ermöglicht."
+    },
+    "sections": {
+      "services": {
+        "heroTitle": "Unser integriertes Dienstleistungssystem",
+        "heroDescription": "Unsere Dienstleistungen basieren auf einer integrierten Methodik, die Beratungsexpertise und Investmentvision verbindet – für praktische Lösungen, die Entscheidungsfindung unterstützen und messbare Ergebnisse liefern.",
+        "filterAll": "Alle anzeigen",
+        "categoryServicesSuffix": "Spezialisierte Dienstleistung"
+      },
+      "howWeWork": {
+        "title": "So arbeiten wir",
+        "description": "Unsere Arbeitsmethodik beruht auf tiefem Verständnis der Partnerbedürfnisse, präziser Analyse von Chancen und Herausforderungen sowie der Entwicklung praktischer, umsetzbarer Lösungen. Der Prozess durchläuft klare Phasen:",
+        "steps": [
+          {
+            "id": 1,
+            "title": "Bedürfnisanalyse",
+            "description": "Wir analysieren die Ziele des Kunden und identifizieren Herausforderungen und Chancen."
+          },
+          {
+            "id": 2,
+            "title": "Studie und Analyse",
+            "description": "Wir führen die erforderlichen Studien durch und analysieren Markt und Investmentumfeld."
+          },
+          {
+            "id": 3,
+            "title": "Strategische Planung",
+            "description": "Wir erstellen einen klaren Aktionsplan mit den besten Lösungen."
+          },
+          {
+            "id": 4,
+            "title": "Ausführung und Nachverfolgung",
+            "description": "Wir begleiten unsere Partner durch die Umsetzungsphasen, um die gewünschten Ergebnisse zu sichern."
+          },
+          {
+            "id": 5,
+            "title": "Kontinuierliche Weiterentwicklung",
+            "description": "Wir unterstützen unsere Partner langfristig bei der Weiterentwicklung ihrer Projekte und Wachstumspotenziale."
+          }
+        ]
+      },
+      "whyChooseUs": {
+        "title": "Warum wir?",
+        "description": "Die Wahl des richtigen Beratungspartners ist entscheidend für den Projekterfolg. Wir heben uns durch Faktoren ab, die uns zur idealen Wahl machen.",
+        "overlayTitle": "Strategische Partnerschaften",
+        "overlayDescription": "Wir bauen langfristige Beziehungen auf Vertrauen, Transparenz und gemeinsamem Erfolg auf.",
+        "reasons": [
+          {
+            "title": "Branchenübergreifende Expertise",
+            "description": "Wir verfügen über vielfältige Kenntnisse in zahlreichen Wirtschafts- und Investmentbereichen."
+          },
+          {
+            "title": "Professionelle Arbeitsmethodik",
+            "description": "Wir setzen auf wissenschaftliche Analyse und praktische Erfahrung."
+          },
+          {
+            "title": "Umfangreiches Netzwerk",
+            "description": "Wir besitzen weitreichende berufliche Kontakte, die den Projekterfolg unterstützen."
+          },
+          {
+            "title": "Integrierte Lösungen",
+            "description": "Wir bieten ein ganzheitliches Dienstleistungssystem statt fragmentierter Lösungen."
+          },
+          {
+            "title": "Langfristiges Engagement",
+            "description": "Wir glauben an nachhaltige Partnerschaften auf Basis von Vertrauen und Ergebnissen."
+          },
+          {
+            "title": "Innovation und moderne Technologien",
+            "description": "Wir nutzen die neuesten Technologien und digitalen Tools für innovative Wachstumslösungen."
+          }
+        ]
+      },
+      "faq": {
+        "badge": "Wissenszentrum",
+        "titleMain": "Häufig gestellte",
+        "titleHighlight": "Fragen",
+        "description": "Antworten auf die wichtigsten Fragen zu unseren Dienstleistungen und unserer Arbeitsweise.",
+        "overlayTitle": "Klare Sicht",
+        "overlayDescription": "Transparente Antworten auf alle Ihre Fragen",
+        "items": [
+          {
+            "question": "Welche Arten von Dienstleistungen bietet das Unternehmen an?",
+            "answer": "Wir bieten ein breites Spektrum an Beratungs- und Investmentdienstleistungen, darunter Investment-Management, strategische Beratung, Projektentwicklung, Machbarkeitsstudien und spezialisierte Beratung in zahlreichen Branchen."
+          },
+          {
+            "question": "Bieten Sie Dienstleistungen für Einzelinvestoren an?",
+            "answer": "Ja, wir betreuen sowohl Einzelinvestoren als auch Unternehmen, Institutionen und staatliche Einrichtungen."
+          },
+          {
+            "question": "Können Sie neue Projekte unterstützen?",
+            "answer": "Ja, wir bieten integrierte Dienstleistungen von Machbarkeitsstudien über strategische Planung bis hin zur vollständigen Umsetzung."
+          },
+          {
+            "question": "Arbeitet das Unternehmen nur in bestimmten Branchen?",
+            "answer": "Nein, wir sind branchenübergreifend tätig – Industrie, Energie, Gesundheit, Bildung, Tourismus, Technologie, Handel und viele weitere."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Suchen Sie einen Beratungspartner, der Ihr Geschäft und Ihre Investitionen voranbringt?",
+        "description": "Unser Team analysiert Ihre Bedürfnisse und liefert passgenaue Lösungen für Ihre Ziele. Lassen Sie uns gemeinsam erfolgreiche Projekte und nachhaltige Investitionen aufbauen.",
+        "button": "Jetzt kontaktieren"
+      }
+    },
+    "categories": {
+      "investment": {
+        "title": "Investment-Dienstleistungen und Investment-Management",
+        "subservices": {
+          "privateInvestment": {
+            "name": "Private Account Investment Activities",
+            "description": "Design und Umsetzung maßgeschneiderter privater Investmentchancen für Einzelinvestoren und Institutionen mit ausgewogenem Rendite-Risiko-Verhältnis."
+          },
+          "portfolioManagement": {
+            "name": "Investment-Management und Portfolio-Entwicklung",
+            "description": "Organisation und Weiterentwicklung von Investmentportfolios zur Sicherstellung nachhaltigen finanziellen Wachstums und Risikokontrolle."
+          },
+          "publicInvestments": {
+            "name": "Management und Betrieb öffentlicher Investitionen",
+            "description": "Operative und strategische Dienstleistungen für die Verwaltung staatlicher und privater Investitionen zur maximalen Ressourcennutzung."
+          },
+          "industrialProjects": {
+            "name": "Investition in Industrieprojekte und deren Management",
+            "description": "Entwicklung und Management industrieller Projekte zur Steigerung der Produktivität und Maximierung finanzieller Renditen."
+          },
+          "agriculturalProjects": {
+            "name": "Investition in landwirtschaftliche Projekte und deren Management",
+            "description": "Integrierte Investmentlösungen für landwirtschaftliche Projekte mit verbesserter Produktivität und Umweltnachhaltigkeit."
+          },
+          "tourismProjects": {
+            "name": "Investition in Tourismusprojekte und deren Management",
+            "description": "Entwicklung und Betrieb touristischer Projekte zur Stärkung des Sektors und Anziehung lokaler und internationaler Investitionen."
+          },
+          "energyProjects": {
+            "name": "Investition in Energieprojekte und deren Management",
+            "description": "Spezialisierte Investmentlösungen für traditionelle und erneuerbare Energien mit hoher operativer Effizienz und Rendite."
+          },
+          "healthProjects": {
+            "name": "Investition in Gesundheits- und Entwicklungsprojekte",
+            "description": "Unterstützung von Investitionen im Gesundheitssektor zur Verbesserung der Servicequalität und nachhaltigem Wirtschaftswachstum."
+          },
+          "educationProjects": {
+            "name": "Investition in Bildungsprojekte und deren Management",
+            "description": "Entwicklung von Bildungseinrichtungen und innovativen Trainingsprojekten, die Marktbedürfnisse und Entwicklungsanforderungen erfüllen."
+          },
+          "sportsProjects": {
+            "name": "Investition in Sportprojekte und deren Management",
+            "description": "Spezialisierte Investmentberatung zur Stärkung des Sportsektors und Management von Veranstaltungen und Anlagen."
+          },
+          "retailProjects": {
+            "name": "Investition in Einzelhandelsprojekte und deren Management",
+            "description": "Unterstützung von Retail-Projekten durch Betriebsmanagement, Verbesserung der kommerziellen Performance und Steigerung der Rentabilität."
+          },
+          "technologyProjects": {
+            "name": "Investition in Technologieprojekte und deren Management",
+            "description": "Entwicklung und Management innovativer Technologieprojekte für technologisches Wachstum und operative Effizienz."
+          }
+        }
+      },
+      "financial": {
+        "title": "Finanz- und Bankberatung",
+        "subservices": {
+          "mortgageConsulting": {
+            "name": "Hypothekenberatung",
+            "description": "Finanzberatung für Investoren und Unternehmen zur optimalen Lösung bei Hypotheken und Projektfinanzierung."
+          },
+          "bankingConsulting": {
+            "name": "Bankberatung",
+            "description": "Spezialisierte Lösungen für das Management von Bankbeziehungen und Finanzoperationen zur Steigerung der operativen Effizienz."
+          },
+          "financeInvestmentConsulting": {
+            "name": "Beratung zu Finanzierung und Investment",
+            "description": "Analyse von Finanzierungsoptionen und Entwicklung von Investmentstrategien für stabile finanzielle Renditen."
+          }
+        }
+      },
+      "health": {
+        "title": "Gesundheitsberatung und Management des Gesundheitssektors",
+        "subservices": {
+          "healthInstitutionsManagement": {
+            "name": "Beratung für das Management von Gesundheitseinrichtungen",
+            "description": "Beratung zur Verbesserung des Managements von Krankenhäusern und Gesundheitszentren sowie Steigerung der operativen Effizienz."
+          },
+          "healthPlanning": {
+            "name": "Gesundheitsberatung und -planung",
+            "description": "Entwicklung von Strategien und operativen Plänen zur Steigerung der Gesundheitsqualität und Erweiterung des Zugangs."
+          },
+          "occupationalSafety": {
+            "name": "Beratung zu Arbeitssicherheit und Gesundheit",
+            "description": "Lösungen für ein sicheres Arbeitsumfeld und Reduzierung gesundheitlicher Risiken."
+          }
+        }
+      },
+      "strategic": {
+        "title": "Strategische und administrative Beratung",
+        "subservices": {
+          "strategicConsulting": {
+            "name": "Strategische Beratung",
+            "description": "Erstellung strategischer Pläne für langfristige Ziele und Wettbewerbsvorteile."
+          },
+          "managementConsulting": {
+            "name": "Administrative Beratung und Organisationsstudien",
+            "description": "Analyse von Organisationsstrukturen und Optimierung interner Prozesse."
+          },
+          "projectManagement": {
+            "name": "Projektmanagement-Dienstleistungen",
+            "description": "Professionelle Steuerung und Umsetzung von Projekten innerhalb von Zeit- und Budgetvorgaben."
+          },
+          "projectDevelopment": {
+            "name": "Projektentwicklungsberatung",
+            "description": "Beratung zur Umwandlung von Ideen in erfolgreiche, umsetzbare Projekte."
+          },
+          "incubators": {
+            "name": "Business-Inkubatoren und Startup-Unterstützung",
+            "description": "Unterstützung von Gründern und Startups durch Training, Mentoring und praktische Beratung."
+          },
+          "feasibilityStudies": {
+            "name": "Erstellung wirtschaftlicher Machbarkeitsstudien",
+            "description": "Analyse von Projekten hinsichtlich wirtschaftlicher Machbarkeit, Chancen und Risiken."
+          }
+        }
+      },
+      "logistics": {
+        "title": "Logistik- und technische Beratung",
+        "subservices": {
+          "logisticsConsulting": {
+            "name": "Logistikberatung",
+            "description": "Optimierung von Liefer- und Verteilungsketten zur Kostensenkung und Effizienzsteigerung."
+          },
+          "freightConsulting": {
+            "name": "Frachtberatung",
+            "description": "Spezialisierte Lösungen für sicheren und effizienten Warentransport national und international."
+          },
+          "customsConsulting": {
+            "name": "Zollberatung",
+            "description": "Unterstützung bei der Einhaltung von Zollvorschriften und Beschleunigung von Verfahren."
+          },
+          "equipmentConsulting": {
+            "name": "Technische und technologische Ausstattungsberatung",
+            "description": "Empfehlungen zur Auswahl und Optimierung von Geräten und Anlagen."
+          },
+          "technicalSetupConsulting": {
+            "name": "Technische und technologische Einrichtungsberatung",
+            "description": "Design und Implementierung technologischer Lösungen für institutionelle Anforderungen."
+          },
+          "qualityConsulting": {
+            "name": "Qualitätsberatung und Normung",
+            "description": "Aufbau von Systemen zur Qualitätssicherung, Normung und Leistungsverbesserung."
+          }
+        }
+      },
+      "tourism": {
+        "title": "Tourismus-, Hospitality- und Sportberatung",
+        "subservices": {
+          "hospitalityManagement": {
+            "name": "Hospitality-Management-Beratung",
+            "description": "Lösungen zur Steigerung der Servicequalität und Kundenzufriedenheit in Hotels und Gastgewerbe."
+          },
+          "hotelConsulting": {
+            "name": "Hotelberatung",
+            "description": "Strategien zur Optimierung von Hotelbetrieb, Finanzen und operativer Performance."
+          },
+          "tourismConsulting": {
+            "name": "Tourismus- und Entertainment-Beratung",
+            "description": "Innovative Programme zur Besucheranziehung und Umsatzsteigerung."
+          },
+          "sportsStudies": {
+            "name": "Sportberatung und -studien",
+            "description": "Analyse und Planung zur Leistungssteigerung und Infrastrukturentwicklung im Sport."
+          },
+          "sportsMarketing": {
+            "name": "Marketing von Sportveranstaltungen",
+            "description": "Strategien zur Gewinnung von Zuschauern und Sponsoren."
+          },
+          "destinationDevelopment": {
+            "name": "Entwicklungsberatung touristischer Destinationen",
+            "description": "Analyse und Entwicklung von Destinationen zur Steigerung der Attraktivität, Verbesserung der Besuchererfahrung und Maximierung wirtschaftlicher Erträge."
+          }
+        }
+      },
+      "cultural": {
+        "title": "Kultur- und Kunstberatung",
+        "subservices": {
+          "culturalConsulting": {
+            "name": "Kulturberatung",
+            "description": "Unterstützung bei Planung und Umsetzung kultureller Projekte."
+          },
+          "fineArtsConsulting": {
+            "name": "Beratung zu bildender Kunst",
+            "description": "Künstlerische Expertise für Ausstellungen und Kunstprojekte."
+          },
+          "heritageConsulting": {
+            "name": "Kulturerbe-Beratung",
+            "description": "Schutz und nachhaltige Entwicklung des kulturellen Erbes."
+          }
+        }
+      },
+      "pr": {
+        "title": "Public Relations und Werbedienstleistungen",
+        "subservices": {
+          "prServices": {
+            "name": "Public-Relations-Dienstleistungen",
+            "description": "Aufbau eines positiven Institutionen-Images und Stärkung der Öffentlichkeitsarbeit."
+          },
+          "prManagement": {
+            "name": "Public-Relations-Management",
+            "description": "Organisation von Kampagnen zur Steigerung von Präsenz und Reputation."
+          },
+          "prConsulting": {
+            "name": "Public-Relations-Beratung",
+            "description": "Strategische Beratung zur Verbesserung der Kommunikation und Vertrauensbildung."
+          },
+          "advertisingServices": {
+            "name": "Werbedienstleistungen",
+            "description": "Entwicklung innovativer Werbekampagnen für die Zielgruppe."
+          },
+          "brochures": {
+            "name": "Erstellung und Veröffentlichung von Broschüren und Flyern",
+            "description": "Erstellung von Print- und Visuallayouts, die die Identität der Institution widerspiegeln."
+          },
+          "directMarketing": {
+            "name": "Direktmarketing",
+            "description": "Strategien zur direkten Ansprache potenzieller Kunden und Umsatzsteigerung."
+          },
+          "salesPromotion": {
+            "name": "Verkaufsförderung",
+            "description": "Kampagnen zur Umsatzsteigerung und Marktanteilsgewinn."
+          },
+          "onlineAdvertising": {
+            "name": "Online-Werbung",
+            "description": "Management digitaler Kampagnen für breitere Reichweite und messbare Ergebnisse."
+          },
+          "webAdvertising": {
+            "name": "Werbung über Websites",
+            "description": "Optimierung der digitalen Präsenz durch zielgerichtete Werbung."
+          }
+        }
+      },
+      "digital": {
+        "title": "Digitale Medien und Marketing-Dienstleistungen",
+        "subservices": {
+          "socialMedia": {
+            "name": "Social-Media-Dienstleistungen",
+            "description": "Management von Social-Media-Kanälen für eine einflussreiche digitale Präsenz."
+          },
+          "digitalMediaManagement": {
+            "name": "Digital-Media-Management",
+            "description": "Entwicklung integrierter digitaler Strategien zur Markenbekanntheit und Interaktion."
+          },
+          "socialMediaConsulting": {
+            "name": "Social-Media-Beratung",
+            "description": "Empfehlungen zur Optimierung digitaler Performance und Content-Wirkung."
+          },
+          "mediaStudies": {
+            "name": "Medienberatung und -studien",
+            "description": "Analyse des Medienumfelds und Lösungen für die Medienstrategie."
+          },
+          "advertisingStudies": {
+            "name": "Werbestudien und -beratung",
+            "description": "Entwicklung innovativer Werbepläne für effektive Botschaftsvermittlung."
+          },
+          "marketingOperations": {
+            "name": "Marketing-Operations-Management",
+            "description": "Durchführung und Nachverfolgung aller Marketingaktivitäten zur Erreichung von Wachstumszielen."
+          }
+        }
+      },
+      "talent": {
+        "title": "Talent-Management und Künstleragenturen",
+        "subservices": {
+          "castingAgencies": {
+            "name": "Management und Betrieb von Casting-Agenturen",
+            "description": "Auswahl und Management von Schauspieltalenten für künstlerische und Medienprojekte."
+          },
+          "talentManagement": {
+            "name": "Talent-Management",
+            "description": "Förderung künstlerischer Talente durch Training, Mentoring, Vertragsmanagement und berufliche Chancen."
+          }
+        }
+      }
+    }
+  },
+  "execution": {
+    "hero": {
+      "badge": "Exzellenz in der institutionellen Ausführung",
+      "title": "Verwandeln Sie Ihre Vision in greifbare Realität – mit Experten für institutionelle Ausführung",
+      "description": "Bei der Sheikh Abdulaziz bin Abdullah Al Mualla General Consultations Company bleiben wir nicht bei Plänen stehen – wir setzen sie in messbare Ergebnisse um. Wir arbeiten mit einer umfassenden Methodik, die strategische Planung, Operations-Management, Qualitätskontrolle und kontinuierliche Kundenkommunikation verbindet.",
+      "primaryCta": "Starten Sie heute Ihre Reise mit uns",
+      "secondaryCta": "Mehr erfahren"
+    },
+    "about": {
+      "badge": "Wer wir sind",
+      "titlePrefix": "Ihr verlässlicher Partner für",
+      "titleHighlight": "Exzellenz und Innovation",
+      "body": "Wir sind ein spezialisiertes Beratungs- und Ausführungsteam, das praktische Erfahrung mit tiefgehender Strategie verbindet und große, komplexe Projekte managt. Unsere Expertise erstreckt sich über viele Branchen – wir sind der verlässliche Partner für jede Institution, die Exzellenz und Innovation sucht.",
+      "imageAlt": "Arbeitsteam"
+    },
+    "entityDictionary": {
+      "title": "Begriffslexikon",
+      "subtitle": "Für klare Kommunikation und einheitliches Verständnis aller Arbeitselemente",
+      "items": [
+        {
+          "title": "Ausführungseinheit",
+          "description": "Das Team, das die Strategie tatsächlich umsetzt."
+        },
+        {
+          "title": "Ausführungspfad",
+          "description": "Die praktischen Schritte, die Ideen in Ergebnisse verwandeln."
+        },
+        {
+          "title": "Qualitätsstandards",
+          "description": "Regeln und Verfahren, die Präzision und Effizienz der Ausführung sicherstellen."
+        },
+        {
+          "title": "Service-Level",
+          "description": "Die Klassifizierung, die Ressourcen und Unterstützung pro Projekt festlegt."
+        }
+      ]
+    },
+    "executionPath": {
+      "badge": "Unsere Methodik",
+      "title": "Ausführungspfad",
+      "subtitle": "Ideen in Realität umzuwandeln erfordert einen präzisen und klaren Plan",
+      "steps": [
+        {
+          "title": "Analyse und Bewertung",
+          "description": "Detaillierte Projektstudie und Zieldefinition."
+        },
+        {
+          "title": "Ausführungsplan-Design",
+          "description": "Definition von Aufgaben, Ressourcen und Zeitplänen."
+        },
+        {
+          "title": "Verteilung von Verantwortlichkeiten",
+          "description": "Jede Ausführungseinheit erhält klare Aufgaben und Kennzahlen."
+        },
+        {
+          "title": "Betriebsausführung",
+          "description": "Präzise Überwachung zur Einhaltung von Qualität und Standards."
+        },
+        {
+          "title": "Überprüfung und kontinuierliche Verbesserung",
+          "description": "Ergebnisbewertung und Prozessoptimierung."
+        },
+        {
+          "title": "Abschließende Übergabe an den Kunden",
+          "description": "Mit detaillierten Berichten und Performance-Analyse."
+        }
+      ]
+    },
+    "executionUnits": {
+      "title": "Ausführungseinheiten",
+      "subtitle": "Unser Team ist mehrstufig aufgebaut, um reibungslosen Projektfortschritt zu gewährleisten",
+      "units": [
+        {
+          "title": "Strategie- und Planungseinheit",
+          "description": "Integrierte Planung gemäß Kundenanforderungen."
+        },
+        {
+          "title": "Operations- und Managementeinheit",
+          "description": "Umsetzung des Plans und Überwachung des Fortschritts."
+        },
+        {
+          "title": "Qualitäts- und Exzellenzeinheit",
+          "description": "Sicherstellung internationaler Qualitätsstandards."
+        },
+        {
+          "title": "Kommunikations- und Nachverfolgungseinheit",
+          "description": "Verbindung zum Kunden für Transparenz und Glaubwürdigkeit."
+        },
+        {
+          "title": "Analyse- und Berichtseinheit",
+          "description": "Präzise Daten für Performance-Monitoring und Entscheidungen."
+        },
+        {
+          "title": "Innovations- und Entwicklungseinheit",
+          "description": "Neue Lösungen und Methodenverbesserung mit modernsten Technologien."
+        }
+      ]
+    },
+    "serviceLevels": {
+      "title": "Service-Level",
+      "subtitle": "Flexible Lösungen je nach Kundenbedarf",
+      "popularBadge": "Am meisten nachgefragt",
+      "levels": {
+        "basic": {
+          "title": "Basis",
+          "description": "Begrenzte operative Unterstützung mit periodischer Nachverfolgung.",
+          "features": [
+            "Begrenzte operative Unterstützung",
+            "Periodische Nachverfolgung",
+            "Monatliche Berichte"
+          ]
+        },
+        "advanced": {
+          "title": "Erweitert",
+          "description": "Kontinuierliche Überwachung und Ressourcenzuweisung für optimale Performance.",
+          "features": [
+            "Kontinuierliche Überwachung",
+            "Ressourcenzuweisung",
+            "Wöchentliche Berichte",
+            "Dedizierter Account Manager"
+          ]
+        },
+        "full": {
+          "title": "Integriert",
+          "description": "Umfassendes Projektmanagement mit präziser Nachverfolgung jeder Phase und periodischer Ergebnisanalyse.",
+          "features": [
+            "Umfassendes Projektmanagement",
+            "Präzise Nachverfolgung jeder Phase",
+            "Periodische Ergebnisanalyse",
+            "Integriertes Support-Team",
+            "Strategische Beratung"
+          ]
+        },
+        "vip": {
+          "title": "VIP-Service",
+          "description": "Persönliche Direktunterstützung durch die Geschäftsleitung mit maßgeschneiderten Berichten und erweiterter Analyse.",
+          "features": [
+            "Persönliche Direktunterstützung",
+            "Eingriff der Geschäftsleitung",
+            "Maßgeschneiderte Berichte",
+            "Erweiterte Analyse",
+            "Höchste Priorität",
+            "24/7-Abdeckung"
+          ]
+        }
+      }
+    },
+    "fileJourney": {
+      "title": "Wie bewegt sich die Akte innerhalb der Institution?",
+      "subtitle": "Wir sorgen für Transparenz des Weges für alle Beteiligten",
+      "phases": [
+        {
+          "title": "Empfangsphase",
+          "description": "Registrierung der Anfrage und präzise Erfassung der Kundenbedürfnisse."
+        },
+        {
+          "title": "Planungsphase",
+          "description": "Erstellung eines klaren Ausführungsplans mit definierten Ressourcen und Aufgaben."
+        },
+        {
+          "title": "Ausführungsphase",
+          "description": "Aufgabenverteilung und Echtzeit-Performance-Monitoring."
+        },
+        {
+          "title": "Überprüfungsphase",
+          "description": "Leistungsbewertung und Prozessoptimierung."
+        },
+        {
+          "title": "Abschließende Übergabephase",
+          "description": "Ergebnisübergabe mit vollständiger und dokumentierter Analyse."
+        }
+      ]
+    },
+    "whyChooseUs": {
+      "title": "Warum wir?",
+      "subtitle": "Wir liefern echten Mehrwert und greifbare Ergebnisse für Ihre Institution",
+      "reasons": [
+        {
+          "title": "Lange und vielfältige Erfahrung",
+          "description": "in Beratung und institutioneller Ausführung."
+        },
+        {
+          "title": "Vollständiges Qualitätsengagement",
+          "description": "und internationale Standards in allen Prozessen."
+        },
+        {
+          "title": "Präzises Projektmanagement",
+          "description": "das Ergebnisse effizient und transparent sicherstellt."
+        },
+        {
+          "title": "Maßgeschneiderte Lösungen",
+          "description": "die zur Natur und den Zielen jeder Institution passen."
+        },
+        {
+          "title": "Kontinuierliche Nachverfolgung",
+          "description": "jeder Ausführungsphase für den Projekterfolg."
+        }
+      ]
+    },
+    "services": {
+      "titleMain": "Unsere",
+      "titleHighlight": "Umfassenden Dienstleistungen",
+      "description": "Wir bieten alle Beratungs- und Ausführungsdienstleistungen des Unternehmens in einem klaren, praktischen Rahmen, der Ihre Ziele mit höchster Qualität und Effizienz erreicht.",
+      "imageAlt": "Beratungsdienstleistungen",
+      "items": [
+        {
+          "title": "Strategische Planung"
+        },
+        {
+          "title": "Entwicklung von Operationen und Verfahren"
+        },
+        {
+          "title": "Projekt- und Institutionsmanagement"
+        },
+        {
+          "title": "Verbesserung der institutionellen Performance"
+        }
+      ]
+    },
+    "commitments": {
+      "title": "Unsere Reaktionsverpflichtungen",
+      "subtitle": "Wir verpflichten uns zu einer optimalen Kundenerfahrung durch effektive und kontinuierliche Kommunikation",
+      "items": [
+        {
+          "title": "Schnelle Reaktion",
+          "description": "Antwort auf alle Kundenanfragen innerhalb von 24 Stunden."
+        },
+        {
+          "title": "Kontinuierliche Nachverfolgung",
+          "description": "Präzise und laufende Begleitung aller Projekte."
+        },
+        {
+          "title": "Sofortlösungen",
+          "description": "Sofortige Lösungen bei Herausforderungen oder Hindernissen."
+        },
+        {
+          "title": "Transparenz und Glaubwürdigkeit",
+          "description": "Regelmäßige Berichte zur Sicherstellung von Transparenz und Vertrauen."
+        }
+      ]
+    },
+    "qualityStandards": {
+      "title": "Qualitäts- und Exzellenzstandards",
+      "description": "Qualität ist nicht nur ein Ziel – sie ist die Grundlage all unserer Operationen. Wir wenden höchste Qualitätsstandards in jedem Ausführungsschritt an.",
+      "standards": [
+        {
+          "title": "Internationale Standards",
+          "description": "Einhaltung internationaler Normen in allen Projektphasen."
+        },
+        {
+          "title": "Periodische Überprüfung",
+          "description": "Regelmäßige Prüfung jeder Phase zur Sicherstellung von Qualität und Effizienz."
+        },
+        {
+          "title": "Kontinuierliche Verbesserung",
+          "description": "Ständige Optimierung von Prozessen für bessere Ergebnisse."
+        },
+        {
+          "title": "Performance-Messung",
+          "description": "Objektive und transparente Methoden zur Leistungsmessung."
+        }
+      ],
+      "stats": {
+        "commitmentPercentLabel": "100%",
+        "commitmentText": "Verpflichtung zu Standards",
+        "monitoringLabel": "24/7",
+        "monitoringText": "Qualitätsmonitoring",
+        "isoLabel": "ISO",
+        "isoText": "Globale Standards",
+        "kpiLabel": "+50",
+        "kpiText": "Performance-Indikatoren"
+      }
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "subtitle": "Umfassende Antworten auf Ihre wichtigsten Fragen zu unseren Dienstleistungen",
+      "sideTitle": "Haben Sie eine Frage?",
+      "sideDescription": "Unser Team steht Ihnen rund um die Uhr zur Verfügung",
+      "items": [
+        {
+          "question": "Wie wird das passende Service-Level für meine Institution bestimmt?",
+          "answer": "In einer ersten Beratungssitzung analysieren wir Ihre Bedürfnisse, das Betriebsvolumen und die Ziele. Auf dieser Basis schlagen wir das optimale Service-Level vor, das den besten Return on Investment und effiziente Zielerreichung garantiert."
+        },
+        {
+          "question": "Welche Mechanismen gibt es zur direkten Projektüberwachung?",
+          "answer": "Wir stellen ein individuelles digitales Dashboard bereit, das Echtzeit-Überwachung ermöglicht, ergänzt durch regelmäßige Berichte und geplante Meetings mit dem dedizierten Projektmanager."
+        },
+        {
+          "question": "Kann der Ausführungsplan während der Umsetzung geändert werden?",
+          "answer": "Ja, unsere flexible Methodik erlaubt Anpassungen an neue Entwicklungen, ohne Qualität oder Hauptziele zu beeinträchtigen."
+        },
+        {
+          "question": "Welche Qualitätssicherungsstandards und Berichtskriterien gelten?",
+          "answer": "Wir wenden globale ISO-Standards an und liefern detaillierte Berichte mit KPIs, Risikoanalysen und Fortschrittsvergleichen zum Zeitplan."
+        },
+        {
+          "question": "Welche Unterstützung gibt es nach Projektabschluss?",
+          "answer": "Wir bieten eine Nachbetreuungsphase zur Sicherstellung operativer Stabilität sowie optionale Wartung und Updates entsprechend dem gewählten Service-Level."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Sind Sie bereit, Ihre Pläne von der Denk- in die Umsetzungsphase zu bringen?",
+      "description": "Kontaktieren Sie uns jetzt und starten Sie mit einem professionellen Team, das ideale Ausführung und Zielerreichung garantiert."
+    }
+  },
+  "administrativeApparatus": {
+    "hero": {
+      "badge": "Verwaltungsapparat",
+      "titleLine1": "Institutionelle Führung, die Entscheidungen trifft…",
+      "titleLine2": "und Wege zum Erfolg lenkt.",
+      "paragraph1": "Der Erfolg jeder Institution hängt von der Stärke ihres Führungssystems und der Fähigkeit ab, Vision in greifbare Ergebnisse zu verwandeln. Bei der Sheikh Abdulaziz bin Abdullah Al Mualla General Consultations Company basiert der Verwaltungsapparat auf einer Elite aus Führungskräften und spezialisierter Expertise, die harmonisch zusammenarbeiten.",
+      "paragraph2": "Wir managen nicht nur Geschäfte… wir führen ein integriertes System, das Investitionen unterstützt, Projekte entwickelt und nachhaltiges Wachstum schafft.",
+      "ctaLabel": "Unser Team kennenlernen",
+      "imageAltBuilding": "Firmengebäude",
+      "imageAltMeeting": "Geschäftsmeeting",
+      "imageAltOffice": "Modernes Büro"
+    },
+    "leadershipPhilosophy": {
+      "title": "Führungs-Philosophie",
+      "intro": "Wir glauben, dass echte Führung nicht nur Entscheidungen trifft, sondern starke Teams aufbaut, Ressourcen effektiv lenkt und strategische Vision mit praktischer Umsetzung verbindet. Unsere Führungs-Philosophie ruht auf drei Säulen:",
+      "pillars": [
+        {
+          "title": "Klare Vision",
+          "description": "Führung mit einer strategischen Vision, die wirtschaftliche Veränderungen antizipiert und Zukunftschancen erkennt.",
+          "imageAlt": "Klare Vision"
+        },
+        {
+          "title": "Professionelles Management",
+          "description": "Anwendung bester Managementpraktiken für Effizienz und Zielerreichung.",
+          "imageAlt": "Professionelles Management"
+        },
+        {
+          "title": "Integrierte Zusammenarbeit",
+          "description": "Förderung der Kooperation zwischen Abteilungen für integrierte Dienstleistungen und optimale Ergebnisse.",
+          "imageAlt": "Integrierte Zusammenarbeit"
+        }
+      ]
+    },
+    "executivePositions": {
+      "title": "Führungspositionen",
+      "intro": "Der Verwaltungsapparat des Unternehmens besteht aus einer Gruppe exekutiver Führungskräfte, die alle Bereiche der Beratungs- und Investmenttätigkeit überwachen.",
+      "cards": [
+        {
+          "title": "Vorsitzender des Aufsichtsrats",
+          "description": "Verantwortlich für die Gesamtstrategie und die Festlegung von Hochlevel-Policies zur Vision und Marktexpansion."
+        },
+        {
+          "title": "Chief Executive Officer",
+          "description": "Leitet die operativen Aktivitäten und setzt die Gesamtstrategien um."
+        },
+        {
+          "title": "Director Investment Management",
+          "description": "Überwacht die Entwicklung und Verwaltung von Investitionen in verschiedenen Sektoren sowie Portfolio-Analyse."
+        },
+        {
+          "title": "Director Strategic Consultations",
+          "description": "Leitet strategische Planung, Geschäftsmodellentwicklung und Marktanalysen."
+        },
+        {
+          "title": "Director Project Development",
+          "description": "Verantwortlich für die Unterstützung von Investmentprojekt-Entwicklung und Überwachung von Planung und Ausführung."
+        },
+        {
+          "title": "Director Financial and Banking Consultations",
+          "description": "Überwacht Finanzierungs-, Bankstrategie- und Finanzstruktur-Beratung."
+        },
+        {
+          "title": "Director Sectoral Consultations",
+          "description": "Leitet spezialisierte Beratung in Branchen wie Gesundheit, Bildung, Energie, Tourismus und Industrie."
+        },
+        {
+          "title": "Director Public Relations and Media",
+          "description": "Steuert institutionelle und Medienbeziehungen sowie die mediale Präsenz des Unternehmens und seiner Partner."
+        },
+        {
+          "title": "Director Marketing and Digital Media",
+          "description": "Leitet Marketingstrategien und Management digitaler Medien und Kommunikation."
+        }
+      ]
+    },
+    "process": {
+      "title": "Wie funktioniert der Verwaltungsapparat?",
+      "intro": "Der Verwaltungsapparat basiert auf einem integrierten Arbeitssystem, das Koordination zwischen Abteilungen sicherstellt. Der Prozess umfasst folgende Grundphasen:",
+      "steps": [
+        {
+          "title": "Strategische Planung",
+          "description": "Festlegung von Plänen und Visionen für kurz- und langfristige Ausrichtung.",
+          "imageAlt": "Planung"
+        },
+        {
+          "title": "Institutionelle Koordination",
+          "description": "Zusammenarbeit der Abteilungen für effiziente Projekt- und Dienstleistungsumsetzung.",
+          "imageAlt": "Koordination"
+        },
+        {
+          "title": "Überwachung und Nachverfolgung",
+          "description": "Kontrolle der Planumsetzung zur Zielerreichung.",
+          "imageAlt": "Überwachung"
+        },
+        {
+          "title": "Bewertung und Weiterentwicklung",
+          "description": "Kontinuierliche Performance-Evaluation und Optimierung von Operationen.",
+          "imageAlt": "Bewertung"
+        }
+      ]
+    },
+    "coreValues": {
+      "title": "Unsere Kernwerte",
+      "intro": "Das Arbeitssystem des Unternehmens basiert auf Werten, die Entscheidungen leiten und unsere institutionelle Identität prägen.",
+      "values": [
+        {
+          "title": "Professionalität",
+          "description": "Wir verpflichten uns zu höchsten professionellen Standards in allen Dienstleistungen.",
+          "imageAlt": "Professionalität"
+        },
+        {
+          "title": "Integrität",
+          "description": "Wir stehen für Transparenz und Klarheit in allen Transaktionen.",
+          "imageAlt": "Integrität"
+        },
+        {
+          "title": "Innovation",
+          "description": "Wir entwickeln kontinuierlich neue Lösungen für Wachstum und Fortschritt.",
+          "imageAlt": "Innovation"
+        },
+        {
+          "title": "Verantwortung",
+          "description": "Der Erfolg unserer Partner ist Teil unserer professionellen Verantwortung.",
+          "imageAlt": "Verantwortung"
+        },
+        {
+          "title": "Partnerschaft",
+          "description": "Echter Erfolg entsteht durch Zusammenarbeit und langfristige Beziehungen.",
+          "imageAlt": "Partnerschaft"
+        },
+        {
+          "title": "Exzellenz",
+          "description": "Wir streben nach höchsten Qualitäts- und Exzellenzstandards in Beratung und Lösungen.",
+          "imageAlt": "Exzellenz"
+        }
+      ]
+    },
+    "qualityStandards": {
+      "title": "Qualitätsstandards",
+      "intro": "Wir wenden höchste Qualitätsstandards in allen Dienstleistungen und Prozessen an. Unser Qualitätssystem ruht auf soliden Fundamenten.",
+      "imageAlt": "Datenanalyse",
+      "standards": [
+        {
+          "title": "Präzise Analyse",
+          "description": "Wissenschaftliche und systematische Untersuchung von Projekten und Investmentchancen."
+        },
+        {
+          "title": "Effektive Planung",
+          "description": "Klare und umsetzbare Aktionspläne."
+        },
+        {
+          "title": "Einhaltung professioneller Standards",
+          "description": "Anwendung weltbester Praktiken in Beratung und Projektmanagement."
+        },
+        {
+          "title": "Kontinuierliche Verbesserung",
+          "description": "Regelmäßige Performance-Überprüfung und Optimierung von Operationen."
+        }
+      ]
+    },
+    "successRoadmap": {
+      "title": "Erfolgs-Roadmap",
+      "intro": "Wir arbeiten mit einer klaren Roadmap, die unseren Partnern hilft, in Projekten und Investitionen erfolgreich zu sein.",
+      "steps": [
+        {
+          "title": "Zielsetzung",
+          "description": "Verständnis der Vision und Definition strategischer Projektziele.",
+          "phaseLabel": "Erste Phase",
+          "imageAlt": "Zielsetzung"
+        },
+        {
+          "title": "Chancenanalyse",
+          "description": "Marktstudie und Identifikation von Investmentchancen.",
+          "phaseLabel": "Zweite Phase",
+          "imageAlt": "Chancenanalyse"
+        },
+        {
+          "title": "Strategieentwicklung",
+          "description": "Erstellung eines integrierten Aktionsplans.",
+          "phaseLabel": "Dritte Phase",
+          "imageAlt": "Strategieentwicklung"
+        },
+        {
+          "title": "Ausführung",
+          "description": "Umsetzung der Pläne nach Best Practices.",
+          "phaseLabel": "Vierte Phase",
+          "imageAlt": "Ausführung"
+        },
+        {
+          "title": "Nachhaltiges Wachstum",
+          "description": "Unterstützung bei weiterer Expansion und zukünftiger Entwicklung.",
+          "phaseLabel": "Fünfte Phase",
+          "imageAlt": "Nachhaltiges Wachstum"
+        }
+      ]
+    },
+    "finalCta": {
+      "headline": "Suchen Sie einen Partner mit Führungs-Expertise und exekutiver Stärke für Ihre Projekte und Investitionen…",
+      "paragraphMain": "Dann steht unser Verwaltungsteam bereit, mit Ihnen zusammenzuarbeiten.",
+      "paragraphHighlight": "Lassen Sie uns gemeinsam den Weg zum nachhaltigen Erfolg gehen.",
+      "buttonLabel": "Jetzt kontaktieren",
+      "imageAltTeam": "Team",
+      "imageAltBuilding": "Gebäude",
+      "imageAltCollaboration": "Zusammenarbeit"
+    }
+  },
+  "identity": {
+    "hero": {
+      "badge": "Sheikh Abdulaziz bin Abdullah Al Mualla Allgemeine Beratungen",
+      "titleLine1": "Eine starke institutionelle Identität…",
+      "titleLine2": "die in jedem Schritt den Unterschied macht",
+      "description": "In einer sich schnell verändernden Welt bleibt die institutionelle Identität der Kompass unserer Arbeit. Wir sehen Identität nicht nur als Logo oder Design, sondern als unsere Werte, unser Versprechen und unseren Arbeitsansatz. Wir bauen festes Vertrauen zu Kunden und Partnern durch Transparenz, Professionalität und messbare Ergebnisse auf.",
+      "ctaLabel": "Entdecken Sie unsere institutionelle Identität und ihren Einfluss auf unsere Partner"
+    },
+    "intro": {
+      "badge": "Wer wir sind",
+      "title": "Einführung",
+      "body": "Institutionelle Identität ist der Geist und die Persönlichkeit des Unternehmens und beantwortet Fragen wie: Wer sind wir? Wofür stehen wir? Warum heben wir uns ab? Sie umfasst nicht nur visuelle Elemente, sondern unsere Denkweise, Arbeitsweise und unser Engagement gegenüber Kunden und Team. Unsere Identität spiegelt alles wider, was wir tun und entscheiden – intern wie extern."
+    },
+    "definition": {
+      "title": "Definition der Identität",
+      "description": "Institutionelle Identität ist eine Mischung aus Werten, Kultur und Versprechen, die das Unternehmen der Welt bietet. Sie umfasst:",
+      "cards": [
+        {
+          "title": "Unsere Kernwerte",
+          "desc": "Die jedes Verhalten und jede Entscheidung leiten."
+        },
+        {
+          "title": "Unsere Arbeits- und Investmentphilosophie",
+          "desc": "Die effektive und nachhaltige Lösungen garantiert."
+        },
+        {
+          "title": "Unser Versprechen an Kunden und Partner",
+          "desc": "Immer das Beste zu liefern."
+        },
+        {
+          "title": "Glaubwürdigkeit und greifbare Ergebnisse",
+          "desc": "Wie wir Glaubwürdigkeit durch Leistung und messbare Ergebnisse beweisen."
+        }
+      ],
+      "quote": "Bei jedem Projekt, an dem wir teilnehmen, sorgen wir dafür, dass die Ergebnisse ein Spiegel unserer Werte und Mission sind."
+    },
+    "entityStatement": {
+      "title": "Unternehmenserklärung",
+      "bodyPart1": "Wir sind ein führendes institutionelles Unternehmen im Bereich allgemeiner und Investmentberatung und verpflichten uns, Vision in greifbare Realität zu verwandeln. Wir bieten integrierte Lösungen, die",
+      "highlightAnalysis": "strategische Analyse",
+      "highlightExecution": "hervorragende Ausführung",
+      "highlightRisk": "Risikomanagement",
+      "bodyPart2": " kombinieren, um messbare und verlässliche Ergebnisse zu garantieren. Wir sind mehr als ein Beratungsunternehmen – wir sind ein langfristiger Erfolgspartner für jeden Kunden."
+    },
+    "philosophy": {
+      "title": "Unsere Philosophie",
+      "subtitle": "Unsere Philosophie basiert auf drei Säulen:",
+      "pillars": [
+        {
+          "title": "Absoluter Professionalismus",
+          "desc": "Höchste Qualität und Expertise in jedem Service."
+        },
+        {
+          "title": "Kontinuierliche Innovation",
+          "desc": "Entwicklung neuer, innovativer Lösungen für Markt-Herausforderungen."
+        },
+        {
+          "title": "Echte Partnerschaft",
+          "desc": "Aufbau fester Beziehungen auf Basis von Vertrauen, Transparenz und kontinuierlicher Unterstützung."
+        }
+      ],
+      "exampleTitle": "Praktisches Beispiel",
+      "exampleBody": "Jedes Projekt beginnt mit einer Lageanalyse, gefolgt von einem klaren Plan und anschließender Ausführungsbegleitung zur Sicherstellung der gewünschten Ergebnisse."
+    },
+    "visionMission": {
+      "missionBadge": "Zweck und Ziel",
+      "missionTitle": "Unsere Mission",
+      "missionBody": "Integrierte Beratung und Investmentstrategien bereitzustellen, die unseren Kunden nachhaltiges Wachstum und die Erreichung ihrer Ziele ermöglichen – bei Einhaltung höchster Standards von Qualität, Transparenz und Glaubwürdigkeit.",
+      "visionBadge": "Zukunft und Ambition",
+      "visionTitle": "Unsere Vision",
+      "visionLead": "Die führende und vertrauenswürdigste Gesellschaft im Bereich allgemeiner und Investmentberatung zu werden durch:",
+      "bullets": [
+        "Innovative und einflussreiche Führung",
+        "Entwicklung nachhaltiger Lösungen",
+        "Positiven Einfluss auf unsere Partner und Kunden"
+      ]
+    },
+    "whatMakesDifferent": {
+      "bannerPart1": "Was macht uns",
+      "bannerPart2": "anders?",
+      "features": [
+        {
+          "title": "Spezialisierte und tiefgehende Expertise",
+          "desc": "in Projekt- und Investmentmanagement."
+        },
+        {
+          "title": "Integrierte Arbeitsmethodik",
+          "desc": "Die Strategie mit praktischer Ausführung verbindet."
+        },
+        {
+          "title": "Verpflichtung zu Glaubwürdigkeit und Transparenz",
+          "desc": "in jeder Transaktion."
+        },
+        {
+          "title": "Flexible und innovative Lösungen",
+          "desc": "Individuell auf die Bedürfnisse jedes Kunden zugeschnitten."
+        },
+        {
+          "title": "Kontinuierliche und wirksame Kommunikation",
+          "desc": "Die Vertrauen und langfristige Beziehungen aufbaut."
+        }
+      ],
+      "quote": "In jedem Projekt verbinden wir präzise Analyse mit klarer Vision, um den maximalen Wert zu schaffen."
+    },
+    "provingValue": {
+      "titleLine1": "Wie beweisen wir unseren Wert?",
+      "titleLine2": "Und wie zeigen wir unsere Glaubwürdigkeit?",
+      "metrics": [
+        {
+          "title": "Messbare Ergebnisse",
+          "desc": "Jedes Projekt und jede Beratung wird anhand klarer Kennzahlen bewertet."
+        },
+        {
+          "title": "Beste globale Standards",
+          "desc": "Wir wenden weltweit führende Best Practices an."
+        },
+        {
+          "title": "Transparenz und Kommunikation",
+          "desc": "Jeder Projektschritt wird dem Kunden erläutert, ergänzt durch regelmäßige Berichte."
+        },
+        {
+          "title": "Verlässliche Erfolgshistorie",
+          "desc": "Wir verfügen über eine reiche Geschichte erfolgreicher Projekte und Partnerschaften."
+        }
+      ],
+      "successBadge": "Erfolgsgeschichte",
+      "successQuote": "Einer unserer Kunden konnte die Effizienz seines Geschäfts nach Anwendung unserer integrierten Strategie um 40 % steigern.",
+      "successHighlight": "40%",
+      "successLabel": "Effizienzsteigerung"
+    },
+    "brandPromise": {
+      "badge": "Unser Versprechen an Sie",
+      "title": "Markenversprechen",
+      "body": "Wir versprechen unseren Kunden, dass jede Interaktion mit uns eine Investition in Vertrauen, Professionalität und Ergebnisse ist. Wir versprechen nicht mit Worten – wir beweisen Wert durch messbare Leistung und langfristige Partnerschaften.",
+      "ctaLabel": "Jetzt kontaktieren"
+    },
+    "targetAudience": {
+      "headingPart1": "Für wen schreiben wir",
+      "headingPart2": "diese Identität?",
+      "audiences": [
+        {
+          "title": "Partner und Kunden",
+          "desc": "Die einen verlässlichen und wirksamen Partner suchen."
+        },
+        {
+          "title": "Internes Team",
+          "desc": "Das eine klare Leitlinie zur Repräsentation des Unternehmens braucht."
+        },
+        {
+          "title": "Investoren",
+          "desc": "Die die Glaubwürdigkeit und Stabilität des Unternehmens sehen möchten."
+        }
+      ]
+    },
+    "finalCta": {
+      "headline": "Suchen Sie einen verlässlichen institutionellen Partner…",
+      "bodyLine1": "Dann sind wir Ihr Begleiter auf dem Weg zu Wachstum und Erfolg.",
+      "bodyLine2": "Lassen Sie uns gemeinsam Ihre Identität und Projekte auf ein neues Niveau heben.",
+      "ctaLabel": "Jetzt kontaktieren"
+    }
+  }
+}

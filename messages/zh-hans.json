@@ -1,0 +1,1540 @@
+{
+  "page": {
+      "title": "首页"
+  },
+  "navbar": {
+      "cta": "预约您的咨询",
+      "navMenu": "导航菜单",
+      "openMenu": "打开导航菜单",
+      "closeMenu": "关闭导航菜单",
+      "routes": [
+      {
+          "label": "首页",
+          "href": "/"
+      },
+      {
+          "label": "服务",
+          "href": "/services"
+      },
+      {
+          "label": "行政机构",
+          "href": "/administrative-apparatus"
+      },
+      {
+          "label": "身份",
+          "href": "/identity"
+      },
+      {
+          "label": "执行",
+          "href": "/execution"
+      }
+      ]
+  },
+  "content": {
+      "title": "组件",
+      "description": "组件描述"
+  },
+  "header": {
+      "title": "杰出法律顾问",
+      "subtitle": "可靠的法律专业知识与黄金标准",
+      "cta": {
+      "bookConsultation": "预约您的咨询",
+      "exploreServices": "探索我们的服务"
+      }
+  },
+  "footer": {
+      "company": {
+      "name": "Sheikh Abdulaziz bin Abdullah Al Mualla",
+      "tagline": "综合咨询",
+      "description": "我们是一家咨询与投资实体，通过投资、项目管理和战略咨询领域的专业集成系统，支持机构和投资者。"
+      },
+      "contact": {
+      "title": "联系我们",
+      "phone": "+971 521068882",
+      "email": "info@shazmlc.com",
+      "location": "阿拉伯联合酋长国"
+      },
+      "quickLinks": {
+      "title": "快速链接",
+      "links": [
+          {
+          "label": "首页",
+          "href": "/"
+          },
+          {
+          "label": "服务",
+          "href": "/services"
+          },
+          {
+          "label": "行政机构",
+          "href": "/administrative-apparatus"
+          },
+          {
+          "label": "身份",
+          "href": "/identity"
+          },
+          {
+          "label": "执行",
+          "href": "/execution"
+          }
+      ]
+      },
+      "services": {
+      "title": "我们的服务",
+      "items": [
+          "投资管理",
+          "战略咨询",
+          "项目开发",
+          "财务咨询",
+          "业务发展"
+      ]
+      },
+      "description": "在阿拉伯联合酋长国全境提供黄金标准的法律卓越服务，对客户的成功矢志不渝。",
+      "copyright": "© 2026 Sheikh Abdul Aziz Bin Abdulla Al Mualla General Consultancy FZC LLC — 保留所有权利。",
+      "socialMedia": {
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter",
+      "instagram": "Instagram",
+      "facebook": "Facebook"
+      }
+  },
+  "meta": {
+      "home": {
+      "title": "首页 | Sheikh Abdulaziz bin Abdullah Al Mualla 综合咨询",
+      "description": "由Sheikh Abdulaziz bin Abdullah Al Mualla领导的综合咨询与投资平台，通过提供专业的战略和法律解决方案，支持机构和投资者实现可持续增长并做出更稳定、高质量的决策。"
+      },
+      "services": {
+      "title": "服务 | Sheikh Abdulaziz bin Abdullah Al Mualla 综合咨询",
+      "description": "根据合作伙伴需求量身定制的广泛咨询与投资服务，包括投资管理、项目开发、战略与法律咨询，以及构建能够适应和成长于变化市场的机构架构。"
+      },
+      "administrativeApparatus": {
+      "title": "行政机构 | Sheikh Abdulaziz bin Abdullah Al Mualla 综合咨询",
+      "description": "以效率、治理和透明度为基础的专业行政机构，支持战略决策并确保按照最高质量和机构纪律标准实施举措和项目，以实现领导层愿景和合作伙伴目标。"
+      },
+      "identity": {
+      "title": "身份 | Sheikh Abdulaziz bin Abdullah Al Mualla 综合咨询",
+      "description": "坚实的机构身份，融合真实性和前瞻性愿景，体现基于伙伴关系、信任、服务卓越以及为各行业客户构建真实可持续价值的工哲学。"
+      },
+      "execution": {
+      "title": "执行 | Sheikh Abdulaziz bin Abdullah Al Mualla 综合咨询",
+      "description": "专业的执行系统，通过专业工作团队、清晰流程和精确质量标准，将策略和计划转化为实地可触及的现实，确保项目和举措高效有效完成。"
+      },
+      "notFound": {
+      "title": "404 错误 | 页面未找到",
+      "description": "您正在查找的页面目前不可用。它可能已被移动、删除或您使用的链接不正确。您可以返回首页继续浏览。"
+      }
+  },
+  "backToTop": {
+      "title": "返回顶部"
+  },
+  "notFound": {
+      "badge": "页面未找到",
+      "title": "我们无法找到此页面",
+      "description": "您正在查找的页面可能已被移动、删除或从未存在。请检查链接或返回首页。",
+      "cta": "返回首页",
+      "statusLabel": "404 错误 · 页面未找到"
+  },
+  "home": {
+      "hero": {
+      "badge": "面向未来的战略愿景",
+      "titleLine1": "我们塑造投资路径…",
+      "titleLine2": "并构建创造未来的决策。",
+      "descriptionMain": "在一个经济方程式快速变化、投资者和决策者挑战加剧的世界中，拥有清晰愿景和精确方法论已成为不可或缺。",
+      "descriptionSecondary": "Sheikh Abdulaziz bin Abdullah Al Mualla 综合咨询公司致力于构建战略咨询、投资管理和项目开发的集成系统，赋能机构和投资者自信决策、高效管理项目，并在各经济领域开辟可持续增长的新天地。",
+      "ctaExploreServices": "探索我们的服务",
+      "ctaLearnMore": "了解我们"
+      },
+      "about": {
+      "badge": "我们是谁？",
+      "titlePrefix": "我们构建一个集成系统，帮助合作伙伴实现",
+      "titleHighlight": "自信而稳定的增长",
+      "paragraph1": "我们是一家咨询与投资实体，通过投资、项目管理和战略咨询领域的专业集成系统，支持机构和投资者。",
+      "paragraph2": "Sheikh Abdulaziz bin Abdullah Al Mualla 综合咨询公司以清晰愿景启动，旨在赋能投资者和机构实体将机会转化为成功项目、构建强大运营结构，并开发能够在市场中实现可持续价值的投资。",
+      "paragraph3": "我们通过多学科专业网络运营，结合经济分析、战略管理、业务发展和涵盖工业、能源、医疗、教育、旅游、科技等多个重要领域的专业咨询。",
+      "highlight": "我们不仅提供解决方案… 更是致力于构建一个集成系统，帮助合作伙伴自信稳定地成长。",
+      "badgeVision": "战略愿景",
+      "badgeGrowth": "可持续增长"
+      },
+      "visionMission": {
+      "badge": "战略基础",
+      "title": "我们的使命与愿景",
+      "visionTitle": "我们的愿景",
+      "visionDescription": "成为区域内领先的战略咨询与投资管理实体，并为支持高质量项目贡献力量，促进经济发展、提升创新与可持续性。",
+      "missionTitle": "我们的使命",
+      "missionDescription": "提供集成咨询与投资服务系统，使机构和投资者能够做出精准决策、开发成功项目，并构建能够在本地和国际市场实现增长与扩张的商业模式。"
+      },
+      "coreServices": {
+      "sectionTitlePart1": "我们的",
+      "sectionTitlePart2": "核心服务",
+      "sectionDescription": "我们在广泛的咨询与投资领域运营，帮助机构实现目标并提升竞争力。",
+      "detailsLabel": "查看详情",
+      "modalClose": "关闭",
+      "modalDetailsSubtitle": "服务详情",
+      "services": [
+          {
+          "title": "投资管理服务",
+          "description": "我们提供集成系统，用于管理投资并开发投资组合，以实现可持续回报并提升项目经济价值。",
+          "items": [
+              "组合管理",
+              "私人投资管理",
+              "投资俱乐部设立与管理",
+              "风险投资公司支持",
+              "长期投资策略开发",
+              "投资风险分析",
+              "组合重组",
+              "新投资机会评估"
+          ]
+          },
+          {
+          "title": "财务与银行咨询",
+          "description": "我们提供财务与银行领域的专业咨询服务，帮助机构和投资者构建坚实的财务结构。",
+          "items": [
+              "银行咨询",
+              "融资结构化",
+              "财务计划编制",
+              "投资评估",
+              "抵押相关咨询",
+              "融资与投资模型编制"
+          ]
+          },
+          {
+          "title": "战略与行政咨询",
+          "description": "我们帮助机构制定有效策略，在竞争市场中实现增长与可持续性。",
+          "items": [
+              "战略计划编制",
+              "商业模式开发",
+              "行政重组",
+              "市场研究",
+              "扩张策略开发",
+              "行政研究与分析编制"
+          ]
+          },
+          {
+          "title": "专业医疗咨询",
+          "description": "我们提供医疗领域的先进咨询服务，支持医疗机构发展服务并提升运营效率。",
+          "items": [
+              "医疗机构管理咨询",
+              "医疗规划",
+              "医疗服务开发",
+              "职业安全与健康咨询",
+              "健康与生活方式咨询",
+              "机构健康计划开发"
+          ]
+          }
+      ]
+      },
+      "sectorServices": {
+      "titlePrefix": "行业",
+      "titleHighlight": "投资与项目开发",
+      "description": "我们通过专业研究和清晰运营计划，为多个经济行业的投资开发与管理做出贡献。",
+      "sectors": [
+          {
+          "title": "工业领域",
+          "items": [
+              "工业项目投资",
+              "工厂与生产设施开发",
+              "运营效率提升"
+          ]
+          },
+          {
+          "title": "农业领域",
+          "items": [
+              "农业项目开发",
+              "粮食安全投资",
+              "现代农业项目管理"
+          ]
+          },
+          {
+          "title": "旅游领域",
+          "items": [
+              "旅游项目开发",
+              "度假村与设施投资",
+              "旅游目的地开发"
+          ]
+          },
+          {
+          "title": "能源领域",
+          "items": [
+              "传统与可再生能源投资",
+              "清洁能源项目开发",
+              "能源基础设施管理"
+          ]
+          },
+          {
+          "title": "医疗领域",
+          "items": [
+              "医疗项目投资",
+              "医疗中心与医院开发",
+              "医疗规划"
+          ]
+          },
+          {
+          "title": "教育领域",
+          "items": [
+              "教育项目开发",
+              "学校与大学投资",
+              "教育机构管理"
+          ]
+          },
+          {
+          "title": "体育领域",
+          "items": [
+              "俱乐部与设施投资",
+              "体育项目开发",
+              "体育设施管理"
+          ]
+          },
+          {
+          "title": "贸易与零售领域",
+          "items": [
+              "零售贸易项目开发",
+              "品牌投资",
+              "商业中心管理与运营"
+          ]
+          },
+          {
+          "title": "科技领域",
+          "items": [
+              "科技公司投资",
+              "初创企业支持",
+              "数字与创新解决方案开发"
+          ]
+          }
+      ]
+      },
+      "whatWeOffer": {
+      "title": "我们提供什么？",
+      "description": "我们提供集成解决方案系统，帮助合作伙伴将愿景转化为现实、将雄心转化为成功项目。我们的服务包括：",
+      "offerings": [
+          "投资管理与组合开发",
+          "经济与可行性研究编制",
+          "项目开发与执行管理",
+          "战略与行政咨询",
+          "银行与财务咨询",
+          "业务发展与增长模型构建",
+          "专业行业咨询",
+          "本地与国际市场扩张支持"
+      ],
+      "highlightCount": "8",
+      "highlightText": "基于深度分析和专业专长的8项集成核心服务，构建实用且可执行的解决方案。",
+      "badgeIconLabel": "多项服务"
+      },
+      "clientJourney": {
+      "title": "与我们的客户旅程",
+      "description": "与我们合作不仅仅是咨询服务，而是一个从理解开始、以成果结束的集成路径。",
+      "steps": [
+          {
+          "title": "理解需求",
+          "description": "我们首先分析客户目标和当前挑战，以全面了解情况。"
+          },
+          {
+          "title": "分析与评估",
+          "description": "我们开展市场研究、评估可用机会并分析可能选项。"
+          },
+          {
+          "title": "构建战略路径",
+          "description": "我们基于最佳实践和专业专长设计清晰行动计划。"
+          },
+          {
+          "title": "执行与跟进",
+          "description": "我们陪伴合作伙伴完成执行阶段，确保实现预期结果。"
+          },
+          {
+          "title": "发展与增长",
+          "description": "我们持续支持合作伙伴发展业务并提升未来扩张能力。"
+          }
+      ]
+      },
+      "serviceLevels": {
+      "title": "服务级别",
+      "description": "我们提供多级服务，以满足不同合作伙伴的需求。",
+      "vipBadge": "VIP",
+      "levels": [
+          {
+          "title": "咨询级别",
+          "description": "提供研究、分析和战略建议。",
+          "features": [
+              "市场分析",
+              "可行性研究",
+              "战略建议"
+          ]
+          },
+          {
+          "title": "执行级别",
+          "description": "支持项目执行并管理相关运营。",
+          "features": [
+              "项目管理",
+              "执行监督",
+              "流程改进"
+          ]
+          },
+          {
+          "title": "高级战略级别",
+          "description": "提供包括规划、执行和跟进的集成解决方案。",
+          "features": [
+              "全面规划",
+              "集成执行",
+              "跟进与评估"
+          ]
+          },
+          {
+          "title": "私人级别",
+          "description": "为拥有重大项目的投资者和机构量身定制的咨询服务。",
+          "features": [
+              "定制解决方案",
+              "执行优先",
+              "持续咨询"
+          ]
+          }
+      ]
+      },
+      "valuesSection": {
+      "title": "我们的价值观与原则",
+      "description": "我们相信任何项目的成功都取决于指导工作与决策的清晰价值观体系。",
+      "values": [
+          {
+          "title": "专业性",
+          "description": "我们在所提供的一切中坚守最高专业标准。"
+          },
+          {
+          "title": "透明度",
+          "description": "我们相信分析、建议和结果的完全清晰。"
+          },
+          {
+          "title": "承诺",
+          "description": "我们将合作伙伴的成功视为我们的专业责任。"
+          },
+          {
+          "title": "创新",
+          "description": "我们始终致力于开发支持可持续增长的新解决方案。"
+          },
+          {
+          "title": "伙伴关系",
+          "description": "我们基于信任与合作构建长期关系。"
+          }
+      ]
+      },
+      "whoWeServe": {
+      "title": "我们服务于谁？",
+      "description": "我们为寻求增长与扩张的广泛投资者和机构提供服务。",
+      "clients": [
+          "商人与投资者",
+          "家族企业",
+          "初创企业",
+          "本地与国际公司",
+          "外国投资者",
+          "政府与半政府机构",
+          "寻求开发新项目或扩张投资的实体"
+      ]
+      },
+      "ourPromise": {
+      "title": "我们对您的承诺",
+      "description": "我们承诺为合作伙伴提供基于专业知识、精准分析和清晰愿景的咨询与投资服务。我们致力于成为帮助您：",
+      "promises": [
+          "做出经过充分研究的投资决策",
+          "开发成功且可持续的项目",
+          "构建强大的运营结构",
+          "发现市场中的新机会",
+          "实现自信而稳定的增长"
+      ],
+      "closing": "我们的目标是成为构建您投资未来的可靠伙伴。"
+      },
+      "ourApproach": {
+      "title": "我们的工作方法",
+      "description": "我们依赖基于以下的集成方法论：",
+      "items": [
+          "深度分析",
+          "战略规划",
+          "解决方案设计",
+          "执行与跟进",
+          "持续发展"
+      ]
+      },
+      "cta": {
+      "titleLine1": "今天迈出新一步，",
+      "titleLine2": "发展您的业务与投资。",
+      "descriptionMain": "我们的团队已准备好研究您的需求，并提供帮助您自信清晰地实现目标的解决方案。",
+      "descriptionSecondary": "立即联系我们，一起构建更强大、更可持续的投资路径。",
+      "button": "联系我们"
+      }
+  },
+  "services": {
+      "hero": {
+      "badge": "咨询与投资领导者",
+      "titleMain": "集成咨询系统",
+      "titleHighlight": "支持投资… 并构建机构成功。",
+      "descriptionMain": "在持续变化和竞争加剧的商业环境中，机构和投资者需要一个能够同时提供战略愿景和执行支持的服务系统。",
+      "descriptionSecondary": "我们不提供孤立解决方案… 而是构建互联服务系统，帮助合作伙伴实现增长与可持续性。",
+      "ctaPrimary": "与我们一起开启您的成功之旅",
+      "ctaSecondary": "探索我们的服务",
+      "floatingBadge1Title": "可持续增长",
+      "floatingBadge1Subtitle": "有效策略",
+      "floatingBadge2Years": "+20",
+      "floatingBadge2Title": "年经验",
+      "floatingBadge2Subtitle": "本地与国际市场"
+      },
+      "dividerQuote": {
+      "main": "我们不提供孤立解决方案… 而是构建互联服务系统，帮助合作伙伴实现增长与可持续性。"
+      },
+      "sections": {
+      "services": {
+          "heroTitle": "我们的集成服务系统",
+          "heroDescription": "我们的服务基于结合咨询专长与投资愿景的集成方法论，让机构和投资者获得支持决策并交付切实成果的实用解决方案。",
+          "filterAll": "显示全部",
+          "categoryServicesSuffix": "专业服务"
+      },
+      "howWeWork": {
+          "title": "我们如何工作",
+          "description": "我们的工作方法论基于对合作伙伴需求的深度理解、对机会与挑战的精准分析，以及随后开发实用可执行解决方案。我们的工作流程经过清晰阶段：",
+          "steps": [
+          {
+              "id": 1,
+              "title": "理解需求",
+              "description": "我们首先分析客户目标并识别挑战与机会。"
+          },
+          {
+              "id": 2,
+              "title": "研究与分析",
+              "description": "我们开展必要研究并分析市场与投资环境。"
+          },
+          {
+              "id": 3,
+              "title": "战略规划",
+              "description": "我们制定包含最佳可能解决方案的清晰行动计划。"
+          },
+          {
+              "id": 4,
+              "title": "执行与跟进",
+              "description": "我们陪伴合作伙伴完成执行阶段，确保实现预期结果。"
+          },
+          {
+              "id": 5,
+              "title": "持续发展",
+              "description": "我们持续支持合作伙伴发展项目并提升增长能力。"
+          }
+          ]
+      },
+      "whyChooseUs": {
+          "title": "为什么选择我们",
+          "description": "选择正确的咨询伙伴是任何项目成功的关键一步。我们以一系列因素脱颖而出，成为合作伙伴的理想选择。",
+          "overlayTitle": "战略伙伴关系",
+          "overlayDescription": "我们基于信任、透明和共享成功构建长期关系。",
+          "reasons": [
+          {
+              "title": "多行业专长",
+              "description": "我们拥有覆盖多个经济与投资领域的多元化专长。"
+          },
+          {
+              "title": "专业工作方法",
+              "description": "我们依靠科学分析和实践经验交付解决方案。"
+          },
+          {
+              "title": "广泛关系网络",
+              "description": "我们拥有支持项目成功与发展的广泛专业网络。"
+          },
+          {
+              "title": "集成解决方案",
+              "description": "我们提供全面服务系统而非部分解决方案。"
+          },
+          {
+              "title": "长期承诺",
+              "description": "我们相信基于信任与成果的可持续伙伴关系。"
+          },
+          {
+              "title": "创新与现代技术",
+              "description": "我们使用最新技术和数字工具开发支持业务增长的创新解决方案。"
+          }
+          ]
+      },
+      "faq": {
+          "badge": "知识中心",
+          "titleMain": "常见",
+          "titleHighlight": "问题",
+          "description": "关于我们服务和工作方法论的主要疑问解答。",
+          "overlayTitle": "清晰愿景",
+          "overlayDescription": "透明解答您的所有疑问",
+          "items": [
+          {
+              "question": "公司提供哪些类型的服务？",
+              "answer": "我们提供广泛的咨询与投资服务，包括投资管理、战略咨询、项目开发、可行性研究以及多个行业的专业咨询。"
+          },
+          {
+              "question": "你们为个人投资者提供服务吗？",
+              "answer": "是的，我们为个人投资者提供服务，同时也服务于公司、机构和政府实体。"
+          },
+          {
+              "question": "你们能支持新项目吗？",
+              "answer": "是的，我们提供从可行性研究、战略规划到执行阶段的集成服务，支持新项目。"
+          },
+          {
+              "question": "公司仅在特定行业运营吗？",
+              "answer": "不是，我们在工业、能源、医疗、教育、旅游、科技、贸易等广泛行业提供服务。"
+          }
+          ]
+      },
+      "cta": {
+          "title": "您正在寻找帮助发展业务与投资的咨询伙伴吗？",
+          "description": "我们的团队已准备好研究您的需求并提供合适解决方案以实现您的目标。让我们共同构建成功项目与可持续投资。",
+          "button": "立即联系我们"
+      }
+      },
+      "categories": {
+      "investment": {
+          "title": "投资服务与投资管理",
+          "subservices": {
+          "privateInvestment": {
+              "name": "私人账户投资活动",
+              "description": "为个人投资者和机构量身设计并实施私人投资机会，实现回报与风险平衡。"
+          },
+          "portfolioManagement": {
+              "name": "投资管理与组合开发",
+              "description": "组织并发展投资组合，确保可持续财务增长目标并控制风险。"
+          },
+          "publicInvestments": {
+              "name": "公共投资管理与运营",
+              "description": "为政府和私人投资提供运营与战略服务，以最大化资源效益。"
+          },
+          "industrialProjects": {
+              "name": "工业项目投资及其管理",
+              "description": "开发和管理工业项目，提升生产力并最大化投资者财务回报。"
+          },
+          "agriculturalProjects": {
+              "name": "农业项目投资及其管理",
+              "description": "为农业项目提供集成投资解决方案，提升生产力并确保环境可持续性。"
+          },
+          "tourismProjects": {
+              "name": "旅游项目投资及其管理",
+              "description": "开发和运营旅游项目，加强行业并吸引本地与国际投资。"
+          },
+          "energyProjects": {
+              "name": "能源项目投资及其管理",
+              "description": "在传统与可再生能源领域提供专业投资解决方案，确保运营效率与财务回报。"
+          },
+          "healthProjects": {
+              "name": "医疗与发展项目投资",
+              "description": "支持医疗领域投资，提升服务质量并实现可持续经济增长。"
+          },
+          "educationProjects": {
+              "name": "教育项目投资及其管理",
+              "description": "开发教育机构和创新培训项目，满足市场与发展需求。"
+          },
+          "sportsProjects": {
+              "name": "体育项目投资及其管理",
+              "description": "提供专业投资咨询，加强体育领域并管理赛事与设施。"
+          },
+          "retailProjects": {
+              "name": "零售贸易项目投资及其管理",
+              "description": "通过运营管理、商业绩效提升和盈利能力增加支持零售项目。"
+          },
+          "technologyProjects": {
+              "name": "科技项目投资及其管理",
+              "description": "开发和管理创新科技项目，实现技术增长并提升运营效率。"
+          }
+          }
+      },
+      "financial": {
+          "title": "财务与银行咨询",
+          "subservices": {
+          "mortgageConsulting": {
+              "name": "抵押咨询",
+              "description": "为投资者和公司提供财务建议，获得抵押与项目融资的最佳解决方案。"
+          },
+          "bankingConsulting": {
+              "name": "银行咨询",
+              "description": "提供管理银行关系和财务运营的专业解决方案，提升运营效率。"
+          },
+          "financeInvestmentConsulting": {
+              "name": "融资与投资相关咨询",
+              "description": "分析融资选项并制定投资策略，实现稳定财务回报。"
+          }
+          }
+      },
+      "health": {
+          "title": "医疗咨询与医疗行业管理",
+          "subservices": {
+          "healthInstitutionsManagement": {
+              "name": "医疗机构管理咨询服务",
+              "description": "提供咨询以改善医院和医疗中心管理并提升运营效率。"
+          },
+          "healthPlanning": {
+              "name": "医疗咨询与医疗规划",
+              "description": "制定策略和运营计划，提升医疗服务质量并扩大可及性。"
+          },
+          "occupationalSafety": {
+              "name": "职业安全与健康咨询",
+              "description": "提供解决方案，确保安全工作环境并降低工人健康风险。"
+          }
+          }
+      },
+      "strategic": {
+          "title": "战略与行政咨询",
+          "subservices": {
+          "strategicConsulting": {
+              "name": "战略咨询服务",
+              "description": "设计战略计划，帮助机构实现长期目标并获得竞争优势。"
+          },
+          "managementConsulting": {
+              "name": "行政咨询与组织研究",
+              "description": "分析组织结构并改进内部流程，提升行政绩效效率。"
+          },
+          "projectManagement": {
+              "name": "项目管理服务",
+              "description": "专业管理和执行项目，确保在时间和预算内达成目标。"
+          },
+          "projectDevelopment": {
+              "name": "项目开发咨询",
+              "description": "提供建议，将想法和举措转化为成功可执行的项目。"
+          },
+          "incubators": {
+              "name": "商业孵化器服务与初创支持",
+              "description": "通过培训、指导和实践咨询支持企业家和初创企业。"
+          },
+          "feasibilityStudies": {
+              "name": "经济可行性研究编制",
+              "description": "分析项目以评估经济可行性并识别成功机会与风险。"
+          }
+          }
+      },
+      "logistics": {
+          "title": "物流与技术咨询",
+          "subservices": {
+          "logisticsConsulting": {
+              "name": "物流咨询",
+              "description": "优化供应链和分销链，确保运营效率并降低成本。"
+          },
+          "freightConsulting": {
+              "name": "货运咨询",
+              "description": "提供本地与国际市场内外安全有效的货物运输专业解决方案。"
+          },
+          "customsConsulting": {
+              "name": "海关咨询",
+              "description": "协助公司遵守海关法规并简化程序，加速货物流动。"
+          },
+          "equipmentConsulting": {
+              "name": "技术与科技设备咨询",
+              "description": "提供选择合适设备并提升其运营效率的建议。"
+          },
+          "technicalSetupConsulting": {
+              "name": "技术与科技配置咨询",
+              "description": "设计并实施技术解决方案和配置，满足机构运营需求。"
+          },
+          "qualityConsulting": {
+              "name": "质量咨询与标准及测量规范化",
+              "description": "建立系统，确保质量、标准化规范并提升机构绩效。"
+          }
+          }
+      },
+      "tourism": {
+          "title": "旅游、酒店与体育咨询",
+          "subservices": {
+          "hospitalityManagement": {
+              "name": "酒店管理咨询",
+              "description": "提供解决方案，提升酒店与酒店服务质量并增加客户满意度。"
+          },
+          "hotelConsulting": {
+              "name": "酒店咨询",
+              "description": "制定酒店运营策略并提升财务与运营绩效。"
+          },
+          "tourismConsulting": {
+              "name": "旅游与娱乐咨询",
+              "description": "设计创新旅游与娱乐程序，吸引游客并增加回报。"
+          },
+          "sportsStudies": {
+              "name": "体育咨询与研究",
+              "description": "提供分析与规划，提升体育绩效并开发体育基础设施。"
+          },
+          "sportsMarketing": {
+              "name": "体育赛事营销",
+              "description": "制定营销策略，吸引观众和赞助商参与体育赛事。"
+          },
+          "destinationDevelopment": {
+              "name": "旅游目的地开发咨询",
+              "description": "通过集成策略分析并开发旅游目的地，提升旅游吸引力、改善游客体验并最大化经济回报。"
+          }
+          }
+      },
+      "cultural": {
+          "title": "文化与艺术咨询",
+          "subservices": {
+          "culturalConsulting": {
+              "name": "文化咨询",
+              "description": "支持机构和举措有效规划与执行文化项目。"
+          },
+          "fineArtsConsulting": {
+              "name": "美术咨询",
+              "description": "提供艺术专业知识，开发展览和艺术项目并提升观众体验。"
+          },
+          "heritageConsulting": {
+              "name": "遗产咨询",
+              "description": "通过可持续维护与开发项目保护和提升文化遗产。"
+          }
+          }
+      },
+      "pr": {
+          "title": "公共关系与广告服务",
+          "subservices": {
+          "prServices": {
+              "name": "公共关系服务",
+              "description": "为机构构建积极形象并提升与公众和合作伙伴的互动。"
+          },
+          "prManagement": {
+              "name": "公共关系管理",
+              "description": "组织活动和举措，加强机构的形象与声誉。"
+          },
+          "prConsulting": {
+              "name": "公共关系咨询",
+              "description": "提供战略建议，改善机构沟通并建立信任。"
+          },
+          "advertisingServices": {
+              "name": "广告服务",
+              "description": "设计并实施创新广告活动，触达目标受众。"
+          },
+          "brochures": {
+              "name": "宣传册与传单编制与发布",
+              "description": "创建反映机构身份与信息的印刷和视觉内容。"
+          },
+          "directMarketing": {
+              "name": "直销",
+              "description": "直接触达潜在客户的策略并提升销售。"
+          },
+          "salesPromotion": {
+              "name": "促销",
+              "description": "设计活动以激励销售并增加市场份额。"
+          },
+          "onlineAdvertising": {
+              "name": "在线广告",
+              "description": "管理网络数字活动，触达更广泛受众并取得切实成果。"
+          },
+          "webAdvertising": {
+              "name": "网站广告服务",
+              "description": "通过网站定向广告优化机构的数字存在。"
+          }
+          }
+      },
+      "digital": {
+          "title": "数字媒体与营销服务",
+          "subservices": {
+          "socialMedia": {
+              "name": "社交媒体服务",
+              "description": "管理社交媒体账户，构建有影响力的数字形象。"
+          },
+          "digitalMediaManagement": {
+              "name": "数字媒体管理",
+              "description": "设计集成数字策略，提升品牌知名度和互动。"
+          },
+          "socialMediaConsulting": {
+              "name": "社交媒体咨询",
+              "description": "提供建议，改善数字绩效并提升内容对受众的影响。"
+          },
+          "mediaStudies": {
+              "name": "媒体咨询与研究",
+              "description": "分析媒体环境并提供解决方案，加强机构媒体策略。"
+          },
+          "advertisingStudies": {
+              "name": "广告咨询与研究",
+              "description": "开发创新广告计划，确保有效传递营销信息。"
+          },
+          "marketingOperations": {
+              "name": "营销运营管理",
+              "description": "执行并跟进所有营销运营，实现增长与扩张目标。"
+          }
+          }
+      },
+      "talent": {
+          "title": "人才管理与艺术经纪公司",
+          "subservices": {
+          "castingAgencies": {
+              "name": "选角经纪公司管理与运营",
+              "description": "为艺术项目和媒体制作提供演员人才管理和选拔服务。"
+          },
+          "talentManagement": {
+              "name": "人才管理",
+              "description": "培养艺术人才，包括培训、指导、合同管理和专业机会。"
+          }
+          }
+      }
+      }
+  },
+  "execution": {
+      "hero": {
+      "badge": "机构执行卓越",
+      "title": "借助机构执行专家将您的愿景转化为切实现实",
+      "description": "在Sheikh Abdulaziz bin Abdullah Al Mualla 综合咨询公司，我们不止于制定计划，而是致力于将计划转化为您机构内的切实成就。我们采用综合方法论，整合战略规划、运营管理、质量控制和与客户的持续沟通，确保精准高效的结果。",
+      "primaryCta": "立即开启与我们的旅程",
+      "secondaryCta": "了解更多"
+      },
+      "about": {
+      "badge": "我们是谁",
+      "titlePrefix": "您实现",
+      "titleHighlight": "卓越与创新的可信伙伴",
+      "body": "我们是结合实践经验与深度战略的专业咨询与执行团队，能够管理大型复杂项目并确保将想法转化为清晰执行步骤。我们的经验覆盖多个行业，使我们成为每家寻求卓越与创新的机构的可靠伙伴。",
+      "imageAlt": "工作团队"
+      },
+      "entityDictionary": {
+      "title": "实体词典",
+      "subtitle": "便于沟通并确保对所有工作要素的统一理解",
+      "items": [
+          {
+          "title": "执行单元",
+          "description": "负责策略实际实施的团队。"
+          },
+          {
+          "title": "执行路径",
+          "description": "将想法转化为结果的实际步骤。"
+          },
+          {
+          "title": "质量标准",
+          "description": "确保执行精准与高效的规则和程序。"
+          },
+          {
+          "title": "服务级别",
+          "description": "决定每个项目资源与支持量的分类。"
+          }
+      ]
+      },
+      "executionPath": {
+      "badge": "我们的方法论",
+      "title": "执行路径",
+      "subtitle": "将想法转化为现实需要精确清晰的计划",
+      "steps": [
+          {
+          "title": "分析与评估",
+          "description": "详细研究项目并理解其目标。"
+          },
+          {
+          "title": "执行计划设计",
+          "description": "定义任务、资源和时间表。"
+          },
+          {
+          "title": "责任分配",
+          "description": "每个执行单元拥有清晰任务和特定绩效指标。"
+          },
+          {
+          "title": "运营执行",
+          "description": "精准跟进，确保遵守质量与标准。"
+          },
+          {
+          "title": "审查与持续改进",
+          "description": "评估结果并改进流程以获得最佳成果。"
+          },
+          {
+          "title": "最终交付给客户",
+          "description": "附带详细报告和绩效分析。"
+          }
+      ]
+      },
+      "executionUnits": {
+      "title": "执行单元",
+      "subtitle": "我们的团队为多单元，确保项目顺利推进",
+      "units": [
+          {
+          "title": "策略与规划单元",
+          "description": "根据客户目标以集成方式设计计划。"
+          },
+          {
+          "title": "运营与管理单元",
+          "description": "实施计划并监控执行进展。"
+          },
+          {
+          "title": "质量与卓越单元",
+          "description": "确保遵守国际标准。"
+          },
+          {
+          "title": "沟通与跟进单元",
+          "description": "将客户连接到执行过程，确保透明与可信。"
+          },
+          {
+          "title": "分析与报告单元",
+          "description": "提供准确可靠数据，用于绩效监控和决策。"
+          },
+          {
+          "title": "创新与发展单元",
+          "description": "使用最新技术和最佳实践开发新解决方案并改进方法。"
+          }
+      ]
+      },
+      "serviceLevels": {
+      "title": "服务级别",
+      "subtitle": "我们根据每个客户需求提供灵活解决方案",
+      "popularBadge": "最受欢迎",
+      "levels": {
+          "basic": {
+          "title": "基础",
+          "description": "有限运营支持与定期跟进。",
+          "features": [
+              "有限运营支持",
+              "定期跟进",
+              "月度报告"
+          ]
+          },
+          "advanced": {
+          "title": "高级",
+          "description": "持续监督和资源分配，确保最佳绩效。",
+          "features": [
+              "持续监督",
+              "资源分配",
+              "周报",
+              "专属客户经理"
+          ]
+          },
+          "full": {
+          "title": "集成",
+          "description": "全面项目管理，每阶段精准跟进并定期结果分析。",
+          "features": [
+              "全面项目管理",
+              "每阶段精准跟进",
+              "定期结果分析",
+              "集成支持团队",
+              "战略咨询"
+          ]
+          },
+          "vip": {
+          "title": "VIP服务",
+          "description": "高级管理层直接个人支持，定制报告与高级分析。",
+          "features": [
+              "直接个人支持",
+              "高级管理层介入",
+              "定制报告",
+              "高级分析",
+              "最高优先级",
+              "24/7覆盖"
+          ]
+          }
+      }
+      },
+      "fileJourney": {
+      "title": "文件如何在机构内流转？",
+      "subtitle": "我们确保所有各方路径清晰",
+      "phases": [
+          {
+          "title": "接收阶段",
+          "description": "登记请求并准确理解客户需求。"
+          },
+          {
+          "title": "规划阶段",
+          "description": "制定包含明确资源和任务的清晰执行计划。"
+          },
+          {
+          "title": "执行阶段",
+          "description": "分配任务并实时监控绩效。"
+          },
+          {
+          "title": "审查阶段",
+          "description": "评估绩效并改进流程。"
+          },
+          {
+          "title": "最终交付阶段",
+          "description": "交付结果并附完整文档化分析。"
+          }
+      ]
+      },
+      "whyChooseUs": {
+      "title": "为什么选择我们？",
+      "subtitle": "我们为您的机构提供真实价值与切实成果",
+      "reasons": [
+          {
+          "title": "长期多元经验",
+          "description": "在咨询与机构执行方面。"
+          },
+          {
+          "title": "全面质量承诺",
+          "description": "以及所有运营中的国际标准。"
+          },
+          {
+          "title": "精准项目管理",
+          "description": "确保高效透明地实现结果。"
+          },
+          {
+          "title": "定制解决方案",
+          "description": "符合每家机构性质与目标。"
+          },
+          {
+          "title": "持续跟进",
+          "description": "每个执行阶段，确保项目成功。"
+          }
+      ]
+      },
+      "services": {
+      "titleMain": "我们的",
+      "titleHighlight": "全面服务",
+      "description": "我们在清晰实用框架内提供公司所有咨询与执行服务，确保您的目标以最高质量与效率标准实现。",
+      "imageAlt": "咨询服务",
+      "items": [
+          {
+          "title": "战略规划"
+          },
+          {
+          "title": "运营与程序开发"
+          },
+          {
+          "title": "项目与机构管理"
+          },
+          {
+          "title": "机构绩效改进"
+          }
+      ]
+      },
+      "commitments": {
+      "title": "我们的响应承诺",
+      "subtitle": "我们致力于通过有效持续沟通为客户提供最佳体验",
+      "items": [
+          {
+          "title": "快速响应",
+          "description": "所有客户咨询在24小时内回复。"
+          },
+          {
+          "title": "持续跟进",
+          "description": "所有项目的精准持续跟进。"
+          },
+          {
+          "title": "即时解决方案",
+          "description": "为执行中任何挑战或障碍提供即时解决方案。"
+          },
+          {
+          "title": "透明与可信",
+          "description": "定期报告确保透明与可信。"
+          }
+      ]
+      },
+      "qualityStandards": {
+      "title": "质量与卓越标准",
+      "description": "质量不仅是目标，更是构建所有运营的基础。我们确保在执行每一步应用最高质量标准。",
+      "standards": [
+          {
+          "title": "国际标准",
+          "description": "在项目所有阶段承诺国际标准。"
+          },
+          {
+          "title": "定期审查",
+          "description": "每阶段定期审查，确保质量与效率。"
+          },
+          {
+          "title": "持续改进",
+          "description": "持续改进流程与程序，确保更好结果。"
+          },
+          {
+          "title": "绩效衡量",
+          "description": "采用客观透明的绩效衡量方法。"
+          }
+      ],
+      "stats": {
+          "commitmentPercentLabel": "100%",
+          "commitmentText": "标准承诺",
+          "monitoringLabel": "24/7",
+          "monitoringText": "质量监控",
+          "isoLabel": "ISO",
+          "isoText": "全球标准",
+          "kpiLabel": "+50",
+          "kpiText": "绩效指标"
+      }
+      },
+      "faq": {
+      "title": "常见问题",
+      "subtitle": "关于我们服务的最重要疑问的全面解答",
+      "sideTitle": "您有问题吗？",
+      "sideDescription": "我们的团队全天候准备回答您的所有疑问",
+      "items": [
+          {
+          "question": "如何为我的机构确定合适的服务级别？",
+          "answer": "我们举行初始咨询会议，了解您机构的运营规模、需求和目标。在此分析基础上，我们提出保证最佳投资回报并高效实现目标的服务级别。"
+          },
+          {
+          "question": "项目直接跟进机制是什么？",
+          "answer": "我们为客户提供定制数字仪表板，实现项目进展实时监控，并提供定期报告和与专属项目经理的安排会议，确保完全透明。"
+          },
+          {
+          "question": "执行计划可在工作中修改吗？",
+          "answer": "是的，我们采用灵活方法论，允许根据变量和新发展修改执行计划，同时确保不影响质量或项目主要目标。"
+          },
+          {
+          "question": "质量保证标准和定期报告标准是什么？",
+          "answer": "我们在所有运营中应用全球质量标准（ISO），并提供包含关键绩效指标（KPI）、风险分析和时间表达成百分比的详细定期报告。"
+          },
+          {
+          "question": "项目完成后提供哪些支持？",
+          "answer": "我们提供交付后支持期，确保运营稳定，并根据所选服务级别提供维护与持续更新选项，保证结果可持续性。"
+          }
+      ]
+      },
+      "finalCta": {
+      "title": "您准备好将计划从思考阶段推进到实际实现阶段了吗？",
+      "description": "立即联系我们，与专业团队开启旅程，保证理想执行并达成目标。"
+      }
+  },
+  "administrativeApparatus": {
+      "hero": {
+      "badge": "行政机构",
+      "titleLine1": "创建决策的机构领导力…",
+      "titleLine2": "并引导通往成功的路径。",
+      "paragraph1": "任何机构的成功取决于其领导系统的实力以及将愿景转化为切实结果的能力。在Sheikh Abdulaziz bin Abdullah Al Mualla 综合咨询公司，行政机构建立在精英领导和专业专长的基础上，和谐协作实现公司目标与合作伙伴目标。",
+      "paragraph2": "我们不仅管理业务… 更是领导支持投资、开发项目并实现可持续增长的集成系统。",
+      "ctaLabel": "认识我们的团队",
+      "imageAltBuilding": "企业大楼",
+      "imageAltMeeting": "商务会议",
+      "imageAltOffice": "现代办公室"
+      },
+      "leadershipPhilosophy": {
+      "title": "领导哲学",
+      "intro": "我们相信真正的领导力不仅限于决策，还包括构建强大工作团队、有效引导资源并在战略愿景与实践执行之间实现平衡的能力。我们公司的领导哲学基于三大支柱：",
+      "pillars": [
+          {
+          "title": "清晰愿景",
+          "description": "以跟上经济转型并预见未来机会的战略愿景领导运营。",
+          "imageAlt": "清晰愿景"
+          },
+          {
+          "title": "专业管理",
+          "description": "应用最佳管理实践，确保绩效效率与机构目标达成。",
+          "imageAlt": "专业管理"
+          },
+          {
+          "title": "集成工作",
+          "description": "加强不同部门间的合作，确保交付实现最佳结果的集成服务。",
+          "imageAlt": "集成工作"
+          }
+      ]
+      },
+      "executivePositions": {
+      "title": "执行职位",
+      "intro": "公司行政机构由监督咨询与投资各领域工作的执行领导团队组成。",
+      "cards": [
+          {
+          "title": "董事会主席",
+          "description": "监督公司整体战略方向并制定支持愿景实现与市场扩张的高层政策。",
+          "imageAlt": "董事会主席"
+          },
+          {
+          "title": "首席执行官",
+          "description": "领导公司运营活动并实施总体战略与机构目标。",
+          "imageAlt": "首席执行官"
+          },
+          {
+          "title": "投资管理总监",
+          "description": "监督各经济领域的投资开发与管理，并分析投资机会与开发投资组合。",
+          "imageAlt": "投资管理总监"
+          },
+          {
+          "title": "战略咨询总监",
+          "description": "领导战略规划、商业模式开发与市场分析相关的咨询服务。",
+          "imageAlt": "战略咨询总监"
+          },
+          {
+          "title": "项目开发总监",
+          "description": "负责支持投资项目开发并监督规划与执行阶段。",
+          "imageAlt": "项目开发总监"
+          },
+          {
+          "title": "财务与银行咨询总监",
+          "description": "监督融资、银行策略和项目财务结构相关的咨询服务。",
+          "imageAlt": "财务与银行咨询总监"
+          },
+          {
+          "title": "行业咨询总监",
+          "description": "领导医疗、教育、能源、旅游和工业等多个行业的专业咨询服务。",
+          "imageAlt": "行业咨询总监"
+          },
+          {
+          "title": "公共关系与媒体总监",
+          "description": "监督机构与媒体关系管理并加强公司及其合作伙伴的媒体存在。",
+          "imageAlt": "公共关系与媒体总监"
+          },
+          {
+          "title": "营销与数字媒体总监",
+          "description": "领导营销策略以及各平台数字媒体与沟通管理。",
+          "imageAlt": "营销与数字媒体总监"
+          }
+      ]
+      },
+      "process": {
+      "title": "行政机构如何运作？",
+      "intro": "公司行政机构依赖确保不同部门协调以实现最佳结果的集成工作系统。工作流程经过以下基本阶段：",
+      "steps": [
+          {
+          "title": "战略规划",
+          "description": "制定指导公司短期与长期工作的计划和愿景。",
+          "imageAlt": "规划"
+          },
+          {
+          "title": "机构协调",
+          "description": "不同部门合作，确保项目与服务高效执行。",
+          "imageAlt": "协调"
+          },
+          {
+          "title": "监督与跟进",
+          "description": "跟进计划与程序实施，确保达成既定目标。",
+          "imageAlt": "监督"
+          },
+          {
+          "title": "评估与发展",
+          "description": "持续绩效评估并改进运营与服务。",
+          "imageAlt": "评估"
+          }
+      ]
+      },
+      "coreValues": {
+      "title": "我们的核心价值观",
+      "intro": "公司工作系统基于指导决策并反映机构身份的一系列价值观。",
+      "values": [
+          {
+          "title": "专业性",
+          "description": "我们在所有工作与服务中坚守最高专业水平。",
+          "imageAlt": "专业性"
+          },
+          {
+          "title": "诚信",
+          "description": "我们相信所有交往中的透明与清晰。",
+          "imageAlt": "诚信"
+          },
+          {
+          "title": "创新",
+          "description": "我们始终致力于开发支持增长与进步的新解决方案。",
+          "imageAlt": "创新"
+          },
+          {
+          "title": "责任",
+          "description": "我们将合作伙伴的成功视为我们的专业责任。",
+          "imageAlt": "责任"
+          },
+          {
+          "title": "伙伴关系",
+          "description": "我们相信通过合作与长期关系构建实现真正成功。",
+          "imageAlt": "伙伴关系"
+          },
+          {
+          "title": "卓越",
+          "description": "我们在提供的所有咨询服务与解决方案中追求最高质量与卓越标准。",
+          "imageAlt": "卓越"
+          }
+      ]
+      },
+      "qualityStandards": {
+      "title": "质量标准",
+      "intro": "我们致力于在所有服务与运营中应用最高质量标准，确保合作伙伴获得最佳结果。我们的质量系统建立在坚实基础上。",
+      "imageAlt": "数据分析",
+      "standards": [
+          {
+          "title": "精准分析",
+          "description": "以科学系统方式研究项目和投资机会。"
+          },
+          {
+          "title": "有效规划",
+          "description": "制定清晰可执行的行动计划。"
+          },
+          {
+          "title": "专业标准承诺",
+          "description": "在咨询与项目管理领域应用全球最佳实践。"
+          },
+          {
+          "title": "持续改进",
+          "description": "定期绩效审查并致力于运营和服务发展。"
+          }
+      ]
+      },
+      "successRoadmap": {
+      "title": "成功路线图",
+      "intro": "我们在工作中依赖清晰路线图，帮助合作伙伴在项目与投资中取得成功。",
+      "steps": [
+          {
+          "title": "设定目标",
+          "description": "理解工作愿景并定义项目战略目标。",
+          "phaseLabel": "第一阶段",
+          "imageAlt": "设定目标"
+          },
+          {
+          "title": "机会分析",
+          "description": "研究市场并识别可用投资机会。",
+          "phaseLabel": "第二阶段",
+          "imageAlt": "机会分析"
+          },
+          {
+          "title": "策略开发",
+          "description": "构建集成行动计划以应用目标。",
+          "phaseLabel": "第三阶段",
+          "imageAlt": "策略开发"
+          },
+          {
+          "title": "执行",
+          "description": "根据最佳实践实施计划与程序。",
+          "phaseLabel": "第四阶段",
+          "imageAlt": "执行"
+          },
+          {
+          "title": "可持续增长",
+          "description": "支持项目继续扩张与未来发展。",
+          "phaseLabel": "第五阶段",
+          "imageAlt": "可持续增长"
+          }
+      ]
+      },
+      "finalCta": {
+      "headline": "如果您正在寻找具备领导专长和执行能力、支持项目与投资的伙伴…",
+      "paragraphMain": "那么我们的行政团队已准备好与您合作实现目标。",
+      "paragraphHighlight": "让我们共同开启构建可持续成功的旅程。",
+      "buttonLabel": "立即联系我们",
+      "imageAltTeam": "团队",
+      "imageAltBuilding": "大楼",
+      "imageAltCollaboration": "合作"
+      }
+  },
+  "identity": {
+      "hero": {
+      "badge": "Sheikh Abdulaziz bin Abdullah Al Mualla 综合咨询",
+      "titleLine1": "坚实的机构身份…",
+      "titleLine2": "在每一步中创造不同",
+      "description": "在快速变化的世界中，机构身份仍是指导我们工作的指南针。我们不将身份视为仅是标志或设计，而是我们的价值观、承诺和工作方法。我们通过透明、专业和切实成果与客户和伙伴构建坚实信任。",
+      "ctaLabel": "探索我们的机构身份及其对合作伙伴的影响"
+      },
+      "intro": {
+      "badge": "我们是谁",
+      "title": "引言",
+      "body": "机构身份代表公司的精神与个性，并回答诸如：我们是谁？我们代表什么？我们为何与众不同？等问题。它不仅是视觉元素，更是我们的思维方式、工作风格以及对客户和团队的承诺。我们的身份体现我们所做的一切和每一项决策，无论内部还是外部，使公司始终成为其价值观与原则的镜子。"
+      },
+      "definition": {
+      "title": "身份定义",
+      "description": "机构身份是公司向世界提供的价值观、文化与承诺的混合体。它包括：",
+      "cards": [
+          {
+          "title": "我们的核心价值观",
+          "desc": "指导每一种行为与决策。"
+          },
+          {
+          "title": "我们的工作与投资哲学",
+          "desc": "确保有效且可持续的解决方案。"
+          },
+          {
+          "title": "我们对客户与伙伴的承诺",
+          "desc": "始终交付最佳。"
+          },
+          {
+          "title": "可信与切实成果",
+          "desc": "我们通过绩效与切实成果证明可信的方式。"
+          }
+      ],
+      "quote": "在我们参与的每个项目中，我们确保成果反映我们的价值观与使命。"
+      },
+      "entityStatement": {
+      "title": "实体声明",
+      "bodyPart1": "我们是通用与投资咨询领域的领先机构实体，致力于将愿景转化为切实现实。我们提供结合",
+      "highlightAnalysis": "战略分析",
+      "highlightExecution": "卓越执行",
+      "highlightRisk": "风险管理",
+      "bodyPart2": "的集成解决方案，确保可衡量且可靠的结果。我们不仅仅是一家咨询公司；我们是每位客户的长期成功伙伴。"
+      },
+      "philosophy": {
+      "title": "我们的哲学",
+      "subtitle": "我们的哲学基于三大支柱：",
+      "pillars": [
+          {
+          "title": "绝对专业性",
+          "desc": "在每项服务中交付最高质量与专长。"
+          },
+          {
+          "title": "持续创新",
+          "desc": "开发新颖创新解决方案应对市场挑战。"
+          },
+          {
+          "title": "真正伙伴关系",
+          "desc": "基于信任、透明和持续支持构建坚实关系。"
+          }
+      ],
+      "exampleTitle": "实践示例",
+      "exampleBody": "我们以评估当前状况开始每个项目，制定清晰计划，然后跟进执行，确保实现预期结果。"
+      },
+      "visionMission": {
+      "missionBadge": "宗旨与目标",
+      "missionTitle": "我们的使命",
+      "missionBody": "提供集成咨询与投资策略，使客户实现目标与可持续增长，同时坚守最高质量、透明和可信标准。",
+      "visionBadge": "未来与雄心",
+      "visionTitle": "我们的愿景",
+      "visionLead": "成为通用与投资咨询领域领先且最可信的公司，通过：",
+      "bullets": [
+          "创新且有影响力的领导",
+          "可持续解决方案开发",
+          "对合作伙伴与客户产生积极影响"
+      ]
+      },
+      "whatMakesDifferent": {
+      "bannerPart1": "是什么让",
+      "bannerPart2": "我们与众不同？",
+      "features": [
+          {
+          "title": "专业且深度专长",
+          "desc": "在项目与投资管理方面。"
+          },
+          {
+          "title": "集成工作方法",
+          "desc": "将战略与实践执行连接。"
+          },
+          {
+          "title": "对可信与透明的承诺",
+          "desc": "在每一次交往中。"
+          },
+          {
+          "title": "灵活创新解决方案",
+          "desc": "根据每位客户需求个性化定制。"
+          },
+          {
+          "title": "持续且有影响力的沟通",
+          "desc": "构建信任与长期关系。"
+          }
+      ],
+      "quote": "在每个项目中，我们将精准分析与清晰愿景结合，实现最大可能价值。"
+      },
+      "provingValue": {
+      "titleLine1": "我们如何证明价值？",
+      "titleLine2": "以及如何展示我们的可信？",
+      "metrics": [
+          {
+          "title": "可衡量成果",
+          "desc": "每个项目或咨询均根据特定绩效指标评估。"
+          },
+          {
+          "title": "全球最佳标准",
+          "desc": "我们在所有领域应用最佳实践。"
+          },
+          {
+          "title": "透明与沟通",
+          "desc": "向客户说明项目每一步，并提供定期报告。"
+          },
+          {
+          "title": "可靠成功记录",
+          "desc": "我们拥有丰富成功项目和有影响力的伙伴关系历史。"
+          }
+      ],
+      "successBadge": "成功故事",
+      "successQuote": "我们的一位客户在应用我们的集成策略后，业务效率提升了40%。",
+      "successHighlight": "40%",
+      "successLabel": "效率提升"
+      },
+      "brandPromise": {
+      "badge": "我们对您的承诺",
+      "title": "品牌承诺",
+      "body": "我们承诺客户每次与我们的互动都是对信任、专业和成果的投资。我们不以言语承诺，而是通过切实绩效、可衡量结果和长期伙伴关系证明价值。",
+      "ctaLabel": "立即联系我们"
+      },
+      "targetAudience": {
+      "headingPart1": "我们为谁撰写",
+      "headingPart2": "这份身份？",
+      "audiences": [
+          {
+          "title": "伙伴与客户",
+          "desc": "寻求可靠有效伙伴的人。"
+          },
+          {
+          "title": "内部团队",
+          "desc": "需要清晰指南代表公司的人。"
+          },
+          {
+          "title": "投资者",
+          "desc": "希望看到公司可信与稳定的人。"
+          }
+      ]
+      },
+      "finalCta": {
+      "headline": "如果您正在寻找可靠的机构伙伴...",
+      "bodyLine1": "我们在此成为您增长与成功之旅的指南。",
+      "bodyLine2": "让我们共同将您的身份与项目提升到新高度。",
+      "ctaLabel": "立即联系我们"
+      }
+  }
+}

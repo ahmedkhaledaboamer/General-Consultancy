@@ -78,10 +78,12 @@ export function SectorServices() {
     colSpan:
       index === 0 || index === 5
         ? 'md:col-span-2 lg:col-span-2'
-        : index === 3 || index === 7
+        : index === 3 
         ? 'md:col-span-2 lg:col-span-1'
         : index === 6
         ? 'md:col-span-1 lg:col-span-1'
+        : index === 7
+        ? 'md:col-span-1 lg:col-span-2'
         : 'md:col-span-1 lg:col-span-1',
   }));
 
